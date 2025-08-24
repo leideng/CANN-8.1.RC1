@@ -1,0 +1,1364 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "InplaceMatmulAllReduceAddRmsNorm/d=0,p=1/1,2/1,2/1,2/1,2/1,2/1,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=0,p=0/1,2/1,2/1,2/1,2/1,2/1,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=1,p=1/1,2/1,2/1,2/1,2/1,2/1,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=1,p=0/1,2/1,2/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "dd8eea167ccbdd3b547e0c17052f9b28fcdadb324926aed4bb4876564bed89d8,028d59b891793ec64700a7c1e0b5707290a9dd97f3b4d3ecc53c03ece7b75ab5",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "residual",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 5,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 6,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale",
+          "index": 7,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "residual",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "norm_out",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "group",
+          "dtype": "string",
+          "value": ""
+        },
+        {
+          "name": "reduce_op",
+          "dtype": "string",
+          "value": "sum"
+        },
+        {
+          "name": "is_trans_a",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "is_trans_b",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "comm_turn",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_group_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-06
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/inplace_matmul_all_reduce_add_rms_norm/InplaceMatmulAllReduceAddRmsNorm_ND_ND_FP16_FP16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "InplaceMatmulAllReduceAddRmsNorm/d=0,p=1/27,2/27,2/27,2/27,2/27,2/27,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=0,p=0/27,2/27,2/27,2/27,2/27,2/27,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=1,p=1/27,2/27,2/27,2/27,2/27,2/27,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=1,p=0/27,2/27,2/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "eb4fe0d5c8da63252dcee3f4f24b60a478d9ba1d1048d131d18cba56353c80e0,c276de93c915250045cc36712d1115065a74eecf0b12f6f568c22521de65261a",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "residual",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 5,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 6,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale",
+          "index": 7,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "residual",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "norm_out",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "group",
+          "dtype": "string",
+          "value": ""
+        },
+        {
+          "name": "reduce_op",
+          "dtype": "string",
+          "value": "sum"
+        },
+        {
+          "name": "is_trans_a",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "is_trans_b",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "comm_turn",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_group_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-06
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/inplace_matmul_all_reduce_add_rms_norm/InplaceMatmulAllReduceAddRmsNorm_ND_ND_BF16_BF16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "InplaceMatmulAllReduceAddRmsNorm/d=0,p=1/1,2/2,2/1,2/1,2/1,2/1,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=0,p=0/1,2/2,2/1,2/1,2/1,2/1,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=1,p=1/1,2/2,2/1,2/1,2/1,2/1,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=1,p=0/1,2/2,2/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "48b252034dac91e23ea0ef7f063fb813533c23c42eceb0b6f0aef91e2bfa6454,1285f6d400d12f6ba6f51821fdd9298016c32e4337c5bcb684babcd521c416a5",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "residual",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 5,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 6,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale",
+          "index": 7,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "residual",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "norm_out",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "group",
+          "dtype": "string",
+          "value": ""
+        },
+        {
+          "name": "reduce_op",
+          "dtype": "string",
+          "value": "sum"
+        },
+        {
+          "name": "is_trans_a",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "is_trans_b",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "comm_turn",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_group_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-06
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/inplace_matmul_all_reduce_add_rms_norm/InplaceMatmulAllReduceAddRmsNorm_A16W8_ND_ND_FP16_INT8_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "InplaceMatmulAllReduceAddRmsNorm/d=0,p=1/27,2/2,2/27,2/27,2/27,2/27,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=0,p=0/27,2/2,2/27,2/27,2/27,2/27,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=1,p=1/27,2/2,2/27,2/27,2/27,2/27,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=1,p=0/27,2/2,2/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "ed283a187c5632e3fec83817bc4e874636903db6bcf7a03c2d5aac64519e3637,9340cdea09f4394788cb5fa4d34fe926506072bc2626c377eaa22e37340e7dc4",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "residual",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 5,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 6,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale",
+          "index": 7,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "residual",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "norm_out",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "group",
+          "dtype": "string",
+          "value": ""
+        },
+        {
+          "name": "reduce_op",
+          "dtype": "string",
+          "value": "sum"
+        },
+        {
+          "name": "is_trans_a",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "is_trans_b",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "comm_turn",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_group_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-06
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/inplace_matmul_all_reduce_add_rms_norm/InplaceMatmulAllReduceAddRmsNorm_A16W8_ND_ND_BF16_INT8_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "InplaceMatmulAllReduceAddRmsNorm/d=0,p=1/1,2/29,2/1,2/1,2/1,2/1,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=0,p=0/1,2/29,2/1,2/1,2/1,2/1,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=1,p=1/1,2/29,2/1,2/1,2/1,2/1,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=1,p=0/1,2/29,2/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "50e811df20e9da8e4c206026a41535baf5fe6a2091d03440ecb48a4dc3be4f6a,b44e27ed956268715b1054fa15e86d4788b197e4e78ca3201e55a0dc1997dccd",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int4",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "residual",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 5,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 6,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale",
+          "index": 7,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "residual",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "norm_out",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "group",
+          "dtype": "string",
+          "value": ""
+        },
+        {
+          "name": "reduce_op",
+          "dtype": "string",
+          "value": "sum"
+        },
+        {
+          "name": "is_trans_a",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "is_trans_b",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "comm_turn",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_group_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-06
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/inplace_matmul_all_reduce_add_rms_norm/InplaceMatmulAllReduceAddRmsNorm_A16W4_ND_ND_FP16_INT4_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "InplaceMatmulAllReduceAddRmsNorm/d=0,p=1/27,2/29,2/27,2/27,2/27,2/27,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=0,p=0/27,2/29,2/27,2/27,2/27,2/27,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=1,p=1/27,2/29,2/27,2/27,2/27,2/27,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=1,p=0/27,2/29,2/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "f7c8c2fe3ccf4a303084d9c1247bcfb4c9c1b149a541718a89f27ec657bb8167,5d8a274ecff3f4029b27e14762ab1cea86f1f25ac98fbad5171903a5c19f5d67",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int4",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "residual",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 5,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 6,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale",
+          "index": 7,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "residual",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "norm_out",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "group",
+          "dtype": "string",
+          "value": ""
+        },
+        {
+          "name": "reduce_op",
+          "dtype": "string",
+          "value": "sum"
+        },
+        {
+          "name": "is_trans_a",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "is_trans_b",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "comm_turn",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_group_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-06
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/inplace_matmul_all_reduce_add_rms_norm/InplaceMatmulAllReduceAddRmsNorm_A16W4_ND_ND_BF16_INT4_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "InplaceMatmulAllReduceAddRmsNorm/d=0,p=1/2,2/2,2/1,2/1,2/1,2/1,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=0,p=0/2,2/2,2/1,2/1,2/1,2/1,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=1,p=1/2,2/2,2/1,2/1,2/1,2/1,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=1,p=0/2,2/2,2/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "e03e2a58312d0dc92a76d1cc347e30a4ffbdc7391b3ee6ea347531aa50f9733f,439082b14934f9fb227e8197f0fd8ce4a8fade2b2760ced2f6799b15e8752d55",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "residual",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 5,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 6,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale",
+          "index": 7,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "residual",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "norm_out",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "group",
+          "dtype": "string",
+          "value": ""
+        },
+        {
+          "name": "reduce_op",
+          "dtype": "string",
+          "value": "sum"
+        },
+        {
+          "name": "is_trans_a",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "is_trans_b",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "comm_turn",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_group_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-06
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/inplace_matmul_all_reduce_add_rms_norm/InplaceMatmulAllReduceAddRmsNorm_A8W8_ND_ND_INT8_INT8_FP16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "InplaceMatmulAllReduceAddRmsNorm/d=0,p=1/2,2/2,2/27,2/27,2/27,2/27,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=0,p=0/2,2/2,2/27,2/27,2/27,2/27,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=1,p=1/2,2/2,2/27,2/27,2/27,2/27,2",
+        "InplaceMatmulAllReduceAddRmsNorm/d=1,p=0/2,2/2,2/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "107b94b625395e50cb15fc60e8e34097ad7217c74edb238cbfca12e28a49801d,ceff508a121fd2f59a35e4add6f1f345ad6b2019a9a9bece769304d83543a3fe",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "residual",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 5,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 6,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale",
+          "index": 7,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "residual",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "norm_out",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "group",
+          "dtype": "string",
+          "value": ""
+        },
+        {
+          "name": "reduce_op",
+          "dtype": "string",
+          "value": "sum"
+        },
+        {
+          "name": "is_trans_a",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "is_trans_b",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "comm_turn",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_group_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-06
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/inplace_matmul_all_reduce_add_rms_norm/InplaceMatmulAllReduceAddRmsNorm_A8W8_ND_ND_INT8_INT8_BF16_high_performance.json"
+      }
+    }
+  ]
+}

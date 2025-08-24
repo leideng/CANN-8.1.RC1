@@ -1,0 +1,259 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeGatingTopKSoftmax/d=0,p=1/27,2/27,2/3,2/3,2",
+        "MoeGatingTopKSoftmax/d=0,p=0/27,2/27,2/3,2/3,2",
+        "MoeGatingTopKSoftmax/d=1,p=1/27,2/27,2/3,2/3,2",
+        "MoeGatingTopKSoftmax/d=1,p=0/27,2/27,2/3,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "cd8c2085f999d16ef3233e231530e3d35dd7e2830ea737c2295bf731ac50d9b3,a7596521561921129854f2875920be9681b3261c26d05f5dff309b1a84a0f059",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "finished",
+          "index": 1,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "expert_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "row_idx",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "k",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_gating_top_k_softmax/MoeGatingTopKSoftmax_1ea4bd0e3cd9df67071f7a7aaec9c732_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeGatingTopKSoftmax/d=0,p=1/1,2/1,2/3,2/3,2",
+        "MoeGatingTopKSoftmax/d=0,p=0/1,2/1,2/3,2/3,2",
+        "MoeGatingTopKSoftmax/d=1,p=1/1,2/1,2/3,2/3,2",
+        "MoeGatingTopKSoftmax/d=1,p=0/1,2/1,2/3,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "b3a7ce20c23571ae1af85be0137bd403854915154fa2f238aa547cf2fab55dea,109073c1256c966b38aa6863dc7491b97ba54ec34e74a192c77d8b0bc8cd0f60",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "finished",
+          "index": 1,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "expert_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "row_idx",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "k",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_gating_top_k_softmax/MoeGatingTopKSoftmax_1ea4bd0e3cd9df67071f7a7aaec9c756_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeGatingTopKSoftmax/d=0,p=1/0,2/0,2/3,2/3,2",
+        "MoeGatingTopKSoftmax/d=0,p=0/0,2/0,2/3,2/3,2",
+        "MoeGatingTopKSoftmax/d=1,p=1/0,2/0,2/3,2/3,2",
+        "MoeGatingTopKSoftmax/d=1,p=0/0,2/0,2/3,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "986731f4e44a5ddb8c2be3d0598fab5c145ecf657a518e5b31f2f65788ad933b,d57481ebe1905649cc4c332ad9407b687551ab3440868bc3e9c17a4c3813845d",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "finished",
+          "index": 1,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "expert_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "row_idx",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "k",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_gating_top_k_softmax/MoeGatingTopKSoftmax_1ea4bd0e3cd9df67071f7a7aaec9c767_high_performance.json"
+      }
+    }
+  ]
+}

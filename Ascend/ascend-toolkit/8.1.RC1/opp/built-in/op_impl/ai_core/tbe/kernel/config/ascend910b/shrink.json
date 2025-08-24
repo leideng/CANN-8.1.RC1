@@ -1,0 +1,104 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Shrink/d=0,p=0/1,2/1,2",
+        "Shrink/d=1,p=0/1,2/1,2"
+      ],
+      "staticKey": "9017f05c9d2c08fe1324b3e2e0a0bc83c5709e86aa98f344d955310f96b4ada8",
+      "inputs": [
+        {
+          "name": "input_x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "lambd",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "bias",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/shrink/Shrink_e5c1249bd8c35b728317d220d4986437_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Shrink/d=0,p=0/0,2/0,2",
+        "Shrink/d=1,p=0/0,2/0,2"
+      ],
+      "staticKey": "c003cd8299fcbebbe79d29c760cadf468b97791575d331f792d53d37f0532a62",
+      "inputs": [
+        {
+          "name": "input_x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "lambd",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "bias",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/shrink/Shrink_fe83e9f89ad16bc72f249af44719ec27_high_performance.json"
+      }
+    }
+  ]
+}

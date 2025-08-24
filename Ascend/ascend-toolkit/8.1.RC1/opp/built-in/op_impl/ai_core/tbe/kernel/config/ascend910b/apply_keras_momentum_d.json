@@ -1,0 +1,440 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ApplyKerasMomentumD/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,0",
+        "ApplyKerasMomentumD/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,0"
+      ],
+      "staticKey": "3f4c120f294e365ac69c01e415dee0686c3a10e2b81eafaeea200335e324db29",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "accum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "lr",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "grad",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "momentum",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "accum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "use_locking",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "use_nesterov",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/apply_keras_momentum_d/ApplyKerasMomentumD_7ae095ae0165d634904504a32ba52cf6_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ApplyKerasMomentumD/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,1",
+        "ApplyKerasMomentumD/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,1"
+      ],
+      "staticKey": "d6bf87fbbf1b2d5fcceb4d84c5915cd2ade73399eb6ff2b352875e7f719dd7f4",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "accum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "lr",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "grad",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "momentum",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "accum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "use_locking",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "use_nesterov",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/apply_keras_momentum_d/ApplyKerasMomentumD_e533dda351657e4762e19645aea405db_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ApplyKerasMomentumD/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/1,0",
+        "ApplyKerasMomentumD/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/1,0"
+      ],
+      "staticKey": "835105c05acc3b9ff0fb6a55e159bffcc256e153eb31a86b68f8c67989521f64",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "accum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "lr",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "grad",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "momentum",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "accum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "use_locking",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "use_nesterov",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/apply_keras_momentum_d/ApplyKerasMomentumD_a8701f6e97fb4fe8b54eb1e6439d4480_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ApplyKerasMomentumD/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/1,1",
+        "ApplyKerasMomentumD/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/1,1"
+      ],
+      "staticKey": "6b261e86e5a4290bc226c47e6be3b7035225377da812d5b47c1e8d74b86d50a9",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "accum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "lr",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "grad",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "momentum",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "accum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "use_locking",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "use_nesterov",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/apply_keras_momentum_d/ApplyKerasMomentumD_8c42a4f1900d23ff22938a9a37154d2a_high_performance.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTokenPermute/d=0,p=1/27,2/9,2/27,2/3,2",
+        "MoeTokenPermute/d=0,p=0/27,2/9,2/27,2/3,2",
+        "MoeTokenPermute/d=1,p=1/27,2/9,2/27,2/3,2",
+        "MoeTokenPermute/d=1,p=0/27,2/9,2/27,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "97c8694fbdf95b441cd9de7744867da662648848d9b01a9b0898e34f71005f79,f9f47eb93a826312ae0389893daefa496c1ad05f23455bce844f61efd40a4b8b",
+      "inputs": [
+        {
+          "name": "tokens",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "permute_tokens",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_out_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "padded_mode",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_token_permute/MoeTokenPermute_3149abd2282f438b5fd7b6c698df2936_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTokenPermute/d=0,p=1/27,2/3,2/27,2/3,2",
+        "MoeTokenPermute/d=0,p=0/27,2/3,2/27,2/3,2",
+        "MoeTokenPermute/d=1,p=1/27,2/3,2/27,2/3,2",
+        "MoeTokenPermute/d=1,p=0/27,2/3,2/27,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "59c64ac34278c90441bb58855ecf227515e50065c4b22e28495d936c5203dd01,d315316801f696830a78a28e26d7714f42af2e756429e4a6965eba500bd4d442",
+      "inputs": [
+        {
+          "name": "tokens",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "permute_tokens",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_out_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "padded_mode",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_token_permute/MoeTokenPermute_0_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTokenPermute/d=0,p=1/1,2/9,2/1,2/3,2",
+        "MoeTokenPermute/d=0,p=0/1,2/9,2/1,2/3,2",
+        "MoeTokenPermute/d=1,p=1/1,2/9,2/1,2/3,2",
+        "MoeTokenPermute/d=1,p=0/1,2/9,2/1,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "c84898918e23dcb967679b90c2dda4306729d90e29703ac77773b47a1de47e44,499bc387c39febde4f3286340c66bff1f243bcd1135ae4432a7a098d3dbc1c3e",
+      "inputs": [
+        {
+          "name": "tokens",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "permute_tokens",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_out_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "padded_mode",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_token_permute/MoeTokenPermute_token_float16_indices_int64_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTokenPermute/d=0,p=1/1,2/3,2/1,2/3,2",
+        "MoeTokenPermute/d=0,p=0/1,2/3,2/1,2/3,2",
+        "MoeTokenPermute/d=1,p=1/1,2/3,2/1,2/3,2",
+        "MoeTokenPermute/d=1,p=0/1,2/3,2/1,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "041abd284832de44f7001b8805b5847f29bc5608e2df503581b55323987a91f1,f116c4228e7fce5e4bad3b20c2660aebb0704ef4ecc3104845b9c8ded8ef5aec",
+      "inputs": [
+        {
+          "name": "tokens",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "permute_tokens",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_out_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "padded_mode",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_token_permute/MoeTokenPermute_token_float16_indices_int32_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTokenPermute/d=0,p=1/0,2/9,2/0,2/3,2",
+        "MoeTokenPermute/d=0,p=0/0,2/9,2/0,2/3,2",
+        "MoeTokenPermute/d=1,p=1/0,2/9,2/0,2/3,2",
+        "MoeTokenPermute/d=1,p=0/0,2/9,2/0,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "9f4784f980e854019609fe8759729ac90c7d775935e97c4ef73a72fda50a2023,c971f88e0fe7c8651f1613036574a7384ee8ba773b5f00b6cfd2c3ab393bc171",
+      "inputs": [
+        {
+          "name": "tokens",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "permute_tokens",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_out_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "padded_mode",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_token_permute/MoeTokenPermute_token_float32_indices_int64_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTokenPermute/d=0,p=1/0,2/3,2/0,2/3,2",
+        "MoeTokenPermute/d=0,p=0/0,2/3,2/0,2/3,2",
+        "MoeTokenPermute/d=1,p=1/0,2/3,2/0,2/3,2",
+        "MoeTokenPermute/d=1,p=0/0,2/3,2/0,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "3e7a845a434d87747b8a4811ce8b0a134b45c55a2b6ffe8a9e33904fdce91e1a,7c88f4f44b6f371cbae4bf9752e85b36b25de94ab2689909db2c30d5b9b95d0c",
+      "inputs": [
+        {
+          "name": "tokens",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "permute_tokens",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_out_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "padded_mode",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_token_permute/MoeTokenPermute_token_float32_indices_int32_high_performance.json"
+      }
+    }
+  ]
+}

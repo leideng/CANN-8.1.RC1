@@ -1,0 +1,364 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RopeWithSinCosCache/d=0,p=1/9,2/27,2/27,2/27,2/27,2/27,2",
+        "RopeWithSinCosCache/d=0,p=0/9,2/27,2/27,2/27,2/27,2/27,2",
+        "RopeWithSinCosCache/d=1,p=1/9,2/27,2/27,2/27,2/27,2/27,2",
+        "RopeWithSinCosCache/d=1,p=0/9,2/27,2/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "049f13cdab6fd344188e4cdc9ad2f1563b2720618b7cf71cffa257453259403c,6833f2b1354dafa8b3079822d373c0d6e0310d0e852c698d72db4841a26871c7",
+      "inputs": [
+        {
+          "name": "positions",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "queryIn",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "keyIn",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cosSinCache",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "queryOut",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "keyOut",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "numQHeads",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "numKHeads",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "headSize",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "mropeSection",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "qStride",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "kStride",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "isNeoxStyle",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/rope_with_sin_cos_cache/RopeWithSinCosCache_0_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RopeWithSinCosCache/d=0,p=1/9,2/1,2/1,2/1,2/1,2/1,2",
+        "RopeWithSinCosCache/d=0,p=0/9,2/1,2/1,2/1,2/1,2/1,2",
+        "RopeWithSinCosCache/d=1,p=1/9,2/1,2/1,2/1,2/1,2/1,2",
+        "RopeWithSinCosCache/d=1,p=0/9,2/1,2/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "625b25da8ccbd8424486bb410a82ffd1d35b83ad4902ccae78ef65a64e0fea6b,0045a94437c712a466ed340af131084436354abab0e8a2ac8dea37ea18fc7241",
+      "inputs": [
+        {
+          "name": "positions",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "queryIn",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "keyIn",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cosSinCache",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "queryOut",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "keyOut",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "numQHeads",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "numKHeads",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "headSize",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "mropeSection",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "qStride",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "kStride",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "isNeoxStyle",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/rope_with_sin_cos_cache/RopeWithSinCosCache_1_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RopeWithSinCosCache/d=0,p=1/9,2/0,2/0,2/0,2/0,2/0,2",
+        "RopeWithSinCosCache/d=0,p=0/9,2/0,2/0,2/0,2/0,2/0,2",
+        "RopeWithSinCosCache/d=1,p=1/9,2/0,2/0,2/0,2/0,2/0,2",
+        "RopeWithSinCosCache/d=1,p=0/9,2/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "643faf961c4934b6e719d0db28f9cde16df6696648d276752197e954accabcb0,bedb7702c082c8ce0501858652fc21cc637e6e27fe95407cdb6f1341a97104f0",
+      "inputs": [
+        {
+          "name": "positions",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "queryIn",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "keyIn",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cosSinCache",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "queryOut",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "keyOut",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "numQHeads",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "numKHeads",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "headSize",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "mropeSection",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "qStride",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "kStride",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "isNeoxStyle",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/rope_with_sin_cos_cache/RopeWithSinCosCache_2_high_performance.json"
+      }
+    }
+  ]
+}

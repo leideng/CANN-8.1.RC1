@@ -1,0 +1,2644 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/27,0/27,0/,CRD,",
+        "DepthToSpace/d=1,p=0/27,0/27,0/,CRD,"
+      ],
+      "staticKey": "8c862ffee6f01af43a88bcad8a472a34c35e708cc00e779ace97d24aaa1351e3",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_4dfb95c157fdf08d7e11ed9b5c805bf3_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/27,0/27,0/,DCR,",
+        "DepthToSpace/d=1,p=0/27,0/27,0/,DCR,"
+      ],
+      "staticKey": "1533c983a3eaea1a779df32ba7a95489606513bbb4e52351bf54c111d1b072b3",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_89eba4ec7f35dba28dbfbdd1dc46e294_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/27,1/27,1/,CRD,",
+        "DepthToSpace/d=1,p=0/27,1/27,1/,CRD,"
+      ],
+      "staticKey": "e750064bd1ae8e595d2c5e3e3be85353daa1f7ca14966f6ca78829615c6df287",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_134f8381030621251992e90f8ddd99ea_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/27,1/27,1/,DCR,",
+        "DepthToSpace/d=1,p=0/27,1/27,1/,DCR,"
+      ],
+      "staticKey": "72537b85adc9d1ab1eb401953757dccd829d0c1978554f03504ea25a9a528ff4",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_52f51d22bcb98a808d25fb5741ba400f_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/1,0/1,0/,CRD,",
+        "DepthToSpace/d=1,p=0/1,0/1,0/,CRD,"
+      ],
+      "staticKey": "e50797938897bde693ae94f574f8b8d448e7ae58e3a365477baf7c32f94a8a95",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_e94af4076d9eaa56994bc70d05b75c96_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/1,0/1,0/,DCR,",
+        "DepthToSpace/d=1,p=0/1,0/1,0/,DCR,"
+      ],
+      "staticKey": "78ad2a63f5e5732b4e2b4ba24c97a62db20c2ea1fd3ce215c3b22e4240aa0b37",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_59ee2660f9330280bb159f43813020ce_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/1,1/1,1/,CRD,",
+        "DepthToSpace/d=1,p=0/1,1/1,1/,CRD,"
+      ],
+      "staticKey": "0c74a1f51f92f3a3f9f43789ba95d95c836a258764a00c2c995105cbb1e985a5",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_27f7eaf1336e065a92d854f8080b638b_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/1,1/1,1/,DCR,",
+        "DepthToSpace/d=1,p=0/1,1/1,1/,DCR,"
+      ],
+      "staticKey": "cdb1e8667f4514137697d9c54c19ba6deb0e20af39c46ff513d69d909c4d20dc",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_b160cce7f0f92355e7f6d1ae9161611d_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/0,0/0,0/,CRD,",
+        "DepthToSpace/d=1,p=0/0,0/0,0/,CRD,"
+      ],
+      "staticKey": "6dfd5b88322a517c98eeb5b44c756dd01935fc74cdfc4564c4e3675c3a12d509",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_34bafbbf4e8cd1192ffd3e756a293128_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/0,0/0,0/,DCR,",
+        "DepthToSpace/d=1,p=0/0,0/0,0/,DCR,"
+      ],
+      "staticKey": "bce69d1d5875bcdac4c51bd1828dc0d09a6558169c052920965a3af877f8e49f",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_94c169483449754b15a35514943dbe1d_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/0,1/0,1/,CRD,",
+        "DepthToSpace/d=1,p=0/0,1/0,1/,CRD,"
+      ],
+      "staticKey": "28f22f20c1fc8d338c3840a647059a5a0f5d83b6a79e613024ec575a09bac199",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_04687a8c410cef9065f87c48a4f00c4d_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/0,1/0,1/,DCR,",
+        "DepthToSpace/d=1,p=0/0,1/0,1/,DCR,"
+      ],
+      "staticKey": "c0c49b0edf59a6ff850b07459d3a98b4ac4e83813f6afb67e3a9338fa9350e57",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_2fb6c8e84bec200b3466963b17544a50_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/6,0/6,0/,CRD,",
+        "DepthToSpace/d=1,p=0/6,0/6,0/,CRD,"
+      ],
+      "staticKey": "5b680d55f50f1bb8beb41a037154e8c0f2b27df63f3b6e49c5ce067a0554d3c2",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_75b0b5bc8c3b8b1413c036ed5271f82b_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/6,0/6,0/,DCR,",
+        "DepthToSpace/d=1,p=0/6,0/6,0/,DCR,"
+      ],
+      "staticKey": "5f125fe4ed3e2ec114f8791a00eda3e9c1cc918fb5802144b27ffb29e7fa9c58",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_0d4be248f8b474afa67596aa77963051_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/6,1/6,1/,CRD,",
+        "DepthToSpace/d=1,p=0/6,1/6,1/,CRD,"
+      ],
+      "staticKey": "72a1ad983dec7c75b3df5f47c277cfd9498c93c649ff58431afb0f33c044eadf",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_745012e98381ec16530a2c9515d75cb5_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/6,1/6,1/,DCR,",
+        "DepthToSpace/d=1,p=0/6,1/6,1/,DCR,"
+      ],
+      "staticKey": "8d5cbf05e59e38335d835d0c9ee5847fee728052394d4fd2eece57d9b3b17384",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_f75fdad7b2357517092485697d6f88b0_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/3,0/3,0/,CRD,",
+        "DepthToSpace/d=1,p=0/3,0/3,0/,CRD,"
+      ],
+      "staticKey": "d918f1911e08eb60ceb25482541d85ad3e5391d518355aec274ec11566351809",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_ee3eb73a28165b42ae04dfcf0cff7b13_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/3,0/3,0/,DCR,",
+        "DepthToSpace/d=1,p=0/3,0/3,0/,DCR,"
+      ],
+      "staticKey": "0c310298af5e3b66d4009daa11fd8545e39712faf05f76eccf148e7524fa91ea",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_9d7b4af1380ae7a8404d59d0960c7fbb_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/3,1/3,1/,CRD,",
+        "DepthToSpace/d=1,p=0/3,1/3,1/,CRD,"
+      ],
+      "staticKey": "8cef64147bac3ac2c0f591fca2331292cadce6354d1b0a448b5a831f5f84608e",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_a946444547299c15bebd2ed740c8013d_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/3,1/3,1/,DCR,",
+        "DepthToSpace/d=1,p=0/3,1/3,1/,DCR,"
+      ],
+      "staticKey": "ee32469271a00832d96af5244e09bb3f3f36baeed47bd5ff391dd5e428b62177",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_ccb0265391c814f458f2ba81b91ea0d9_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/9,0/9,0/,CRD,",
+        "DepthToSpace/d=1,p=0/9,0/9,0/,CRD,"
+      ],
+      "staticKey": "9afde3f7cf1ed496f8bf256b853bbac79645e645f445848d58b298ac827725d4",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int64",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int64",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_3484856ff639d6ad78d9fe3ab6e15d1e_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/9,0/9,0/,DCR,",
+        "DepthToSpace/d=1,p=0/9,0/9,0/,DCR,"
+      ],
+      "staticKey": "20afbdf8d0c8cae4afed7f1e1d6ab6265c9043a7ec963cccf14f0ae482dff78a",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int64",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int64",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_d15dafda7e7902da9537fc1f16e5dff3_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/9,1/9,1/,CRD,",
+        "DepthToSpace/d=1,p=0/9,1/9,1/,CRD,"
+      ],
+      "staticKey": "99b32e78785e779a81c9e32948c5baca2e0a3affb9f1f0cd5119b4ec1927cbef",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int64",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int64",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_d5ed4add69b781d62a55b6ce51738456_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/9,1/9,1/,DCR,",
+        "DepthToSpace/d=1,p=0/9,1/9,1/,DCR,"
+      ],
+      "staticKey": "c9d4dd90233f8392cea700d74b4dde477361bb0cee01aa7963a96769e74d7af7",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int64",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int64",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_daf716a3ebe4e2bd6cd3e5b21700083a_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/2,0/2,0/,CRD,",
+        "DepthToSpace/d=1,p=0/2,0/2,0/,CRD,"
+      ],
+      "staticKey": "507b9d5cf6b973b5f9d7a20ea9e30b244336b5f72142915120e327156d6f8719",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_a92ed42d862a9739f62eb5184115fa2f_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/2,0/2,0/,DCR,",
+        "DepthToSpace/d=1,p=0/2,0/2,0/,DCR,"
+      ],
+      "staticKey": "85288a5f2b565f6934a083ca3588f3650aa247ad31ba5192da4fcb2c14ba2e6f",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_d2eff679832418a225051e2620b76c32_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/2,1/2,1/,CRD,",
+        "DepthToSpace/d=1,p=0/2,1/2,1/,CRD,"
+      ],
+      "staticKey": "3fc1ff920954e7018aac9a17723d34e92700b0aba8a41dc0a291cf825ff9fc93",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_e8c9fab2f1462af4a86b307f480040ea_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/2,1/2,1/,DCR,",
+        "DepthToSpace/d=1,p=0/2,1/2,1/,DCR,"
+      ],
+      "staticKey": "443a8a1ada2a566a35de93b162c5073b0eca7a820363004f504848233703a6af",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_b083ab96917a294547a65a51c9a2779b_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/7,0/7,0/,CRD,",
+        "DepthToSpace/d=1,p=0/7,0/7,0/,CRD,"
+      ],
+      "staticKey": "752787942563b3d55f5121e9171c3ecc7b15783ac2e1d34e3994893bdc5a2fe4",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_db98b52eb0e0bfc69a533643e2c1f09a_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/7,0/7,0/,DCR,",
+        "DepthToSpace/d=1,p=0/7,0/7,0/,DCR,"
+      ],
+      "staticKey": "3d5af938534632a8ed3ef8a2461c455ae2a3b60a3b83fb14b8b244f27a7585b4",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_e272afa85c4f790bbf411016da44b81a_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/7,1/7,1/,CRD,",
+        "DepthToSpace/d=1,p=0/7,1/7,1/,CRD,"
+      ],
+      "staticKey": "27925bce886ff73a4fe88f0862b6c291a514763e48c97d0141382cd5ebb26e8f",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_93dfe2ca6547d9f8a335ba315e251bbc_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/7,1/7,1/,DCR,",
+        "DepthToSpace/d=1,p=0/7,1/7,1/,DCR,"
+      ],
+      "staticKey": "f9c224dbfe6941b973c4f88edaf7ab56fba6a43981dd2852f31a918f711d1d8f",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_0fd22f0a303a992c79b1f145f2ee6c13_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/8,0/8,0/,CRD,",
+        "DepthToSpace/d=1,p=0/8,0/8,0/,CRD,"
+      ],
+      "staticKey": "6d390aef52bf4066a4d022908513956255d0ae8f0350acfa4a8c23c2f0da2251",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_9c0f0c8414a471c20fab2b63ed89686a_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/8,0/8,0/,DCR,",
+        "DepthToSpace/d=1,p=0/8,0/8,0/,DCR,"
+      ],
+      "staticKey": "39e686f6cc7b141a14e2c5acfc65b9bfe8470bdad7f62c9c5117238ad04ebdc7",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_beecccfec4d9def40058c5fb7835c1c7_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/8,1/8,1/,CRD,",
+        "DepthToSpace/d=1,p=0/8,1/8,1/,CRD,"
+      ],
+      "staticKey": "5240ea56e8d5f23f8f0b56d75cf5662f98a53fd67f04a1a6c7a6b924c5ae1342",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_46427009b8e90b0ee786af1cb5817bba_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/8,1/8,1/,DCR,",
+        "DepthToSpace/d=1,p=0/8,1/8,1/,DCR,"
+      ],
+      "staticKey": "b909bc2d5d0b0d56b55a337d67f98d16e686670df75248917f1051d13c81b86a",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_5c05b35fc558f644379b6562e5d923e0_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/10,0/10,0/,CRD,",
+        "DepthToSpace/d=1,p=0/10,0/10,0/,CRD,"
+      ],
+      "staticKey": "019e552248642a9c02ee03aaf7894f0a30feff23170a21d67d24de4c58110c3a",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint64",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint64",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_ba942452e1c2a6ce55661a69fcbcb5b2_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/10,0/10,0/,DCR,",
+        "DepthToSpace/d=1,p=0/10,0/10,0/,DCR,"
+      ],
+      "staticKey": "2b100fc355d5a848e3599f04ea3e3e8e0b8e41cae52414cca75a32f9d5896e12",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint64",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint64",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_b456becf86bdf73b3dff9a9aad89868f_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/10,1/10,1/,CRD,",
+        "DepthToSpace/d=1,p=0/10,1/10,1/,CRD,"
+      ],
+      "staticKey": "36dae2924f2f05eb64e8cab3653c0b6361feffd08de0d876820ef53d4e3c4080",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint64",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint64",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_582569aa9cdc794899428b6cd861f461_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/10,1/10,1/,DCR,",
+        "DepthToSpace/d=1,p=0/10,1/10,1/,DCR,"
+      ],
+      "staticKey": "00919d7537f462c12cb15b5d7bbe42d381be5de8e4f5a0db25b3317815e3f2b7",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint64",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint64",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_7f6c0b9b7b6a7c88b9352a4281c56d6e_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/4,0/4,0/,CRD,",
+        "DepthToSpace/d=1,p=0/4,0/4,0/,CRD,"
+      ],
+      "staticKey": "da711f07b8e034dfc47ff204b6a5bb0a56518df029caa91562aa85ea807656cb",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_016c4831926e56d79386e3a00ad9e4ed_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/4,0/4,0/,DCR,",
+        "DepthToSpace/d=1,p=0/4,0/4,0/,DCR,"
+      ],
+      "staticKey": "d547d65ea13375da12d0394fb95e923a9bbb5deb46b8451e9a5e7c5ff7d3e0c6",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_751cce4a80656f03d7ce6043830c7970_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/4,1/4,1/,CRD,",
+        "DepthToSpace/d=1,p=0/4,1/4,1/,CRD,"
+      ],
+      "staticKey": "15850bc34333e51df73a3c86a2862f30dfd46a0b8c4f4e15e6b665d0cf70e3fa",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "CRD",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_2c2b0936aa31832231491e8fa557b386_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DepthToSpace/d=0,p=0/4,1/4,1/,DCR,",
+        "DepthToSpace/d=1,p=0/4,1/4,1/,DCR,"
+      ],
+      "staticKey": "33a6c949255a5157237cefc4624f99296e3624c059a31608d0ee0cbc46a49626",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "DCR",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/depth_to_space/DepthToSpace_3e1a97afd280f08199256dff12cb4cb6_high_performance.json"
+      }
+    }
+  ]
+}

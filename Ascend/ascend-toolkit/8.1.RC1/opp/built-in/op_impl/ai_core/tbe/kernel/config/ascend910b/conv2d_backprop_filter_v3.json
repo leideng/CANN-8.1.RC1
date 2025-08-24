@@ -1,0 +1,532 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Conv2DBackpropFilterV3/d=0,p=1/27,3/3,2/27,3/0,4",
+        "Conv2DBackpropFilterV3/d=0,p=0/27,3/3,2/27,3/0,4"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "48a390a6f080adf2ca67f5b3cfe322390bf41731ba52bd37dfcf32cc186cb71e,4645c994024bdc733fdf1fae177a2fb7ecc13ef9d498ad5d983b2ea794180117",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "filter_size",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "out_backprop",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/conv2d_backprop_filter_v3/Conv2DBackpropFilterV3_NC1HWC0_FRACTALZ_BF16_FP32_NCHW_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Conv2DBackpropFilterV3/d=1,p=1/27,3/3,2/27,3/0,4",
+        "Conv2DBackpropFilterV3/d=1,p=0/27,3/3,2/27,3/0,4"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "48a390a6f080adf2ca67f5b3cfe322390bf41731ba52bd37dfcf32cc186cb71e,4645c994024bdc733fdf1fae177a2fb7ecc13ef9d498ad5d983b2ea794180117",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "filter_size",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "out_backprop",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/conv2d_backprop_filter_v3/Conv2DBackpropFilterV3_NC1HWC0_FRACTALZ_BF16_FP32_NCHW_high_performance_deterministic.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Conv2DBackpropFilterV3/d=0,p=1/0,3/3,2/0,3/0,4",
+        "Conv2DBackpropFilterV3/d=0,p=0/0,3/3,2/0,3/0,4"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "ea3ef958e4bcafc4291fb6ac50734cb3dc5091b09ca26e69e1b235e15eceb129,d7be20a35e3b7ec19ed9bf0d698a303a214071e7e858bafcd34febed2a0f90e8",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "filter_size",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "out_backprop",
+          "index": 2,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/conv2d_backprop_filter_v3/Conv2DBackpropFilterV3_NC1HWC0_FRACTALZ_FP32_FP32_NCHW_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Conv2DBackpropFilterV3/d=1,p=1/0,3/3,2/0,3/0,4",
+        "Conv2DBackpropFilterV3/d=1,p=0/0,3/3,2/0,3/0,4"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "ea3ef958e4bcafc4291fb6ac50734cb3dc5091b09ca26e69e1b235e15eceb129,d7be20a35e3b7ec19ed9bf0d698a303a214071e7e858bafcd34febed2a0f90e8",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "filter_size",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "out_backprop",
+          "index": 2,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/conv2d_backprop_filter_v3/Conv2DBackpropFilterV3_NC1HWC0_FRACTALZ_FP32_FP32_NCHW_high_performance_deterministic.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Conv2DBackpropFilterV3/d=0,p=1/1,3/3,2/1,3/0,4",
+        "Conv2DBackpropFilterV3/d=0,p=0/1,3/3,2/1,3/0,4"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "357b28cda0c24df4ac491603392e8a61f596be65e688334f04e696092f104b8b,1ec1fa29f86a96e16bd184d0b1bccd6aababc693f72a04f6bf249c5a4df17755",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "filter_size",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "out_backprop",
+          "index": 2,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/conv2d_backprop_filter_v3/Conv2DBackpropFilterV3_NC1HWC0_FRACTALZ_FP16_FP32_NCHW_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Conv2DBackpropFilterV3/d=1,p=1/1,3/3,2/1,3/0,4",
+        "Conv2DBackpropFilterV3/d=1,p=0/1,3/3,2/1,3/0,4"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "357b28cda0c24df4ac491603392e8a61f596be65e688334f04e696092f104b8b,1ec1fa29f86a96e16bd184d0b1bccd6aababc693f72a04f6bf249c5a4df17755",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "filter_size",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "out_backprop",
+          "index": 2,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/conv2d_backprop_filter_v3/Conv2DBackpropFilterV3_NC1HWC0_FRACTALZ_FP16_FP32_NCHW_high_performance_deterministic.json"
+      }
+    }
+  ]
+}

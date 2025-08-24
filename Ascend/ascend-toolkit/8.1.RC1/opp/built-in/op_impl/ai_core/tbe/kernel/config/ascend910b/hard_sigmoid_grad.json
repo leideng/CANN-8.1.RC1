@@ -1,0 +1,184 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "HardSigmoidGrad/d=0,p=0/1,2/1,2/1,2",
+        "HardSigmoidGrad/d=1,p=0/1,2/1,2/1,2"
+      ],
+      "staticKey": "158f1c645a15338a4d6288bae68b477ab0f18529ec363e453556d81cb0b369b1",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "alpha",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "beta",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/hard_sigmoid_grad/HardSigmoidGrad_fp16_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "HardSigmoidGrad/d=0,p=0/0,2/0,2/0,2",
+        "HardSigmoidGrad/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "staticKey": "213f8c8dbf7c5df73347cafc6280e3f87ee17980315d0911f15aae65b8822260",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "alpha",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "beta",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/hard_sigmoid_grad/HardSigmoidGrad_fp32_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "HardSigmoidGrad/d=0,p=0/27,2/27,2/27,2",
+        "HardSigmoidGrad/d=1,p=0/27,2/27,2/27,2"
+      ],
+      "staticKey": "66671d2eb463ea99ef566ff64d2726d0ba74b8a54e3dfab64d137ccf1d46e706",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "alpha",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "beta",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/hard_sigmoid_grad/HardSigmoidGrad_bf16_high_performance.json"
+      }
+    }
+  ]
+}

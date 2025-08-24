@@ -1,0 +1,94 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SignBitsPack/d=0,p=0/1,2/4,2",
+        "SignBitsPack/d=1,p=0/1,2/4,2"
+      ],
+      "staticKey": "46e2a8deb874c9ef5cb7b7eaa9717f91c9b2826cc7a249bea9951de2090b6683",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "size",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sign_bits_pack/SignBitsPack_0_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SignBitsPack/d=0,p=0/0,2/4,2",
+        "SignBitsPack/d=1,p=0/0,2/4,2"
+      ],
+      "staticKey": "f5a7f1f6a8f5fc2f9bbed49f5fb456780094250b216b69e462294d0731352c7b",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "size",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sign_bits_pack/SignBitsPack_1_high_performance.json"
+      }
+    }
+  ]
+}

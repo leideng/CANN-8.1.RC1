@@ -1,0 +1,604 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReluGradV2/d=0,p=1/27,3/30,2/27,3",
+        "ReluGradV2/d=0,p=0/27,3/30,2/27,3",
+        "ReluGradV2/d=1,p=1/27,3/30,2/27,3",
+        "ReluGradV2/d=1,p=0/27,3/30,2/27,3"
+      ],
+      "staticKey": "5d08e3151ffbd465273f91697ca652023162c0d8fbe1eddfe3ad642db8420b1a,c37438fecefd5218cecadaa0eb8a215cf49ce11bd2d8974e551ef69aa5f9e1b1",
+      "inputs": [
+        {
+          "name": "gradients",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "uint1",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "backprops",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/relu_grad_v2/ReluGradV2_ba25f0ac52c80d5c7b1aa27fa34cb10e_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReluGradV2/d=0,p=1/1,3/30,2/1,3",
+        "ReluGradV2/d=0,p=0/1,3/30,2/1,3",
+        "ReluGradV2/d=1,p=1/1,3/30,2/1,3",
+        "ReluGradV2/d=1,p=0/1,3/30,2/1,3"
+      ],
+      "staticKey": "04611739d7ee8bbcb70e04016fad54a087fb41666da1b67e83f808e163cc030a,647f1aac4b4e7042214e9f1373a1aa1737c1f4ea2e26583e063ba71af8157efb",
+      "inputs": [
+        {
+          "name": "gradients",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "uint1",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "backprops",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/relu_grad_v2/ReluGradV2_e1759e2b792120852dd9d7b84aa90e54_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReluGradV2/d=0,p=1/0,3/30,2/0,3",
+        "ReluGradV2/d=0,p=0/0,3/30,2/0,3",
+        "ReluGradV2/d=1,p=1/0,3/30,2/0,3",
+        "ReluGradV2/d=1,p=0/0,3/30,2/0,3"
+      ],
+      "staticKey": "bbad11d0a8fff169e6aa68eeaad8f8a91a580c00da580b7e50d19f6d31216770,90e6ea0f687b2348b10cbed7dea820d2eaaa7f79eabf7ab5c1e92837bbf598e4",
+      "inputs": [
+        {
+          "name": "gradients",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "uint1",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "backprops",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/relu_grad_v2/ReluGradV2_5ad32a03ba5d748fd1603e0ff48b699d_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReluGradV2/d=0,p=1/3,3/30,2/3,3",
+        "ReluGradV2/d=0,p=0/3,3/30,2/3,3",
+        "ReluGradV2/d=1,p=1/3,3/30,2/3,3",
+        "ReluGradV2/d=1,p=0/3,3/30,2/3,3"
+      ],
+      "staticKey": "9dc95045e6bc20d357b3df807b5ebc89b5cb86c6f7f3da2ffc8b6edcc034dd2a,c50ec7bc1a0d70c6d7e253b553b292f064296fb12bdbef7a17e526c4c4dbc9b6",
+      "inputs": [
+        {
+          "name": "gradients",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "uint1",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "backprops",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/relu_grad_v2/ReluGradV2_99518cac5700b0a6489285e62db716ce_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReluGradV2/d=0,p=1/2,3/30,2/2,3",
+        "ReluGradV2/d=0,p=0/2,3/30,2/2,3",
+        "ReluGradV2/d=1,p=1/2,3/30,2/2,3",
+        "ReluGradV2/d=1,p=0/2,3/30,2/2,3"
+      ],
+      "staticKey": "a819899139abec00c318e063fbbd445bcb178783dbc52b8bb49d5a1e397dd27a,76ddba2fd85c11d2092ed27d8bf3f218426a24ecfbe6b66e7393036fc668ca8b",
+      "inputs": [
+        {
+          "name": "gradients",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "uint1",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "backprops",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/relu_grad_v2/ReluGradV2_fd2d2b43ba293a761dd769dd99db2e3a_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReluGradV2/d=0,p=1/4,3/30,2/4,3",
+        "ReluGradV2/d=0,p=0/4,3/30,2/4,3",
+        "ReluGradV2/d=1,p=1/4,3/30,2/4,3",
+        "ReluGradV2/d=1,p=0/4,3/30,2/4,3"
+      ],
+      "staticKey": "50552d9a3ea3ba14836d35609f165816b10ae29194d7ef31fe9ae679ac2cfe38,931450c8c7269f9c1d2fa256aa326f1ad5735eba2a9edab5e052e3045ad7a5c2",
+      "inputs": [
+        {
+          "name": "gradients",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "uint1",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "backprops",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/relu_grad_v2/ReluGradV2_f26b540b588d442ecf92aed489251a5c_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReluGradV2/d=0,p=2/27,3/30,2/27,3",
+        "ReluGradV2/d=1,p=2/27,3/30,2/27,3"
+      ],
+      "staticKey": "3be03b935314ad099ce45d994a8a43fb9a2a791ad386b894c1e1fcc16c967de4",
+      "inputs": [
+        {
+          "name": "gradients",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "uint1",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "backprops",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/relu_grad_v2/ReluGradV2_ba25f0ac52c80d5c7b1aa27fa34cb10e_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReluGradV2/d=0,p=2/1,3/30,2/1,3",
+        "ReluGradV2/d=1,p=2/1,3/30,2/1,3"
+      ],
+      "staticKey": "e63fbe906358f7edccd7923f60094ef5c2539ff5bf5f22a84348bcb1ba7db330",
+      "inputs": [
+        {
+          "name": "gradients",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "uint1",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "backprops",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/relu_grad_v2/ReluGradV2_e1759e2b792120852dd9d7b84aa90e54_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReluGradV2/d=0,p=2/0,3/30,2/0,3",
+        "ReluGradV2/d=1,p=2/0,3/30,2/0,3"
+      ],
+      "staticKey": "5a0a500a8326b3980e4d3707647d8dbf5212c114047b9373481d89918168b5bc",
+      "inputs": [
+        {
+          "name": "gradients",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "uint1",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "backprops",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/relu_grad_v2/ReluGradV2_5ad32a03ba5d748fd1603e0ff48b699d_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReluGradV2/d=0,p=2/3,3/30,2/3,3",
+        "ReluGradV2/d=1,p=2/3,3/30,2/3,3"
+      ],
+      "staticKey": "80ce53b25230087fd43ceb520f7c25af3233106138e16259a500de675eda5d96",
+      "inputs": [
+        {
+          "name": "gradients",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "uint1",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "backprops",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/relu_grad_v2/ReluGradV2_99518cac5700b0a6489285e62db716ce_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReluGradV2/d=0,p=2/2,3/30,2/2,3",
+        "ReluGradV2/d=1,p=2/2,3/30,2/2,3"
+      ],
+      "staticKey": "bd93c9091ec265a5ecbdaf8304aeab407d34125b085fb0253b1b338a5aaf980b",
+      "inputs": [
+        {
+          "name": "gradients",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "uint1",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "backprops",
+          "index": 0,
+          "dtype": "int8",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/relu_grad_v2/ReluGradV2_fd2d2b43ba293a761dd769dd99db2e3a_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReluGradV2/d=0,p=2/4,3/30,2/4,3",
+        "ReluGradV2/d=1,p=2/4,3/30,2/4,3"
+      ],
+      "staticKey": "534f0a8d90d658eb26bdce47777e91febedcb21dae6bb54e886bbff190c32f96",
+      "inputs": [
+        {
+          "name": "gradients",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "uint1",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "backprops",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/relu_grad_v2/ReluGradV2_f26b540b588d442ecf92aed489251a5c_high_precision.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "UpsampleNearestExact2dBackward/d=0,p=1/27,2/27,2",
+        "UpsampleNearestExact2dBackward/d=0,p=0/27,2/27,2",
+        "UpsampleNearestExact2dBackward/d=1,p=1/27,2/27,2",
+        "UpsampleNearestExact2dBackward/d=1,p=0/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "7a13ff53c208d8c6e4b1bfa98c6c4eaa39a302fbbf140d1879660a60c596db4f,8448d917c305d2a853c1f2392a6dff22abd408cc3949a459da32031a09bd23e7",
+      "inputs": [
+        {
+          "name": "grad_output",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_input",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "output_size",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "input_size",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "scales_h",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "scales_w",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/upsample_nearest_exact2d_grad/UpsampleNearestExact2dGrad_8229ddc25d7090caaff157551de7d9f7_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "UpsampleNearestExact2dBackward/d=0,p=1/1,2/1,2",
+        "UpsampleNearestExact2dBackward/d=0,p=0/1,2/1,2",
+        "UpsampleNearestExact2dBackward/d=1,p=1/1,2/1,2",
+        "UpsampleNearestExact2dBackward/d=1,p=0/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "91d74e77ff00d9a5019211d173f326a6c40223676480cf77740d52f012a43b60,42d4ce0927cf65ce991b16ece0abe1ed9cb3d34e0ec6a94fccdd9cc4cb076425",
+      "inputs": [
+        {
+          "name": "grad_output",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_input",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "output_size",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "input_size",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "scales_h",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "scales_w",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/upsample_nearest_exact2d_grad/UpsampleNearestExact2dGrad_ad4cf62ad630c2ce240cfdd2c0a859c1_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "UpsampleNearestExact2dBackward/d=0,p=1/0,2/0,2",
+        "UpsampleNearestExact2dBackward/d=0,p=0/0,2/0,2",
+        "UpsampleNearestExact2dBackward/d=1,p=1/0,2/0,2",
+        "UpsampleNearestExact2dBackward/d=1,p=0/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "6d1fb77166758f9dbb6136f97958364697b5d1831321d1b06224280ad86b94c6,2e175991232f43a5e61533b790c5a759fd3f31b882c4cb57ca63314c40eb9c49",
+      "inputs": [
+        {
+          "name": "grad_output",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_input",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "output_size",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "input_size",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "scales_h",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "scales_w",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/upsample_nearest_exact2d_grad/UpsampleNearestExact2dGrad_fd2dd5a847df190f5cf7bde02678d293_high_performance.json"
+      }
+    }
+  ]
+}

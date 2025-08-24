@@ -1,0 +1,117 @@
+[
+    {
+        "case_name": "Test_LpNorm_001",
+        "op": "LpNorm",
+        "input_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float",
+                    "float16"
+                ],
+                "shape": [
+                    [
+                        400,
+                        416,
+                        5,
+                        59
+                    ],
+                    [
+                        400,
+                        416,
+                        5,
+                        1
+                    ],
+                    [
+                        32,
+                        2,
+                        4,
+                        16
+                    ],
+                    [
+                        4,
+                        16
+                    ],
+                    [
+                        1,
+                        2
+                    ]
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "x"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float",
+                    "float16"
+                ],
+                "shape": [
+                    [
+                        400,
+                        416,
+                        5,
+                        59
+                    ],
+                    [
+                        400,
+                        416,
+                        5,
+                        1
+                    ],
+                    [
+                        32,
+                        2,
+                        4,
+                        16
+                    ],
+                    [
+                        4,
+                        16
+                    ],
+                    [
+                        1,
+                        2
+                    ]
+                ],
+                "name": "y"
+            }
+        ],
+        "attr": [
+            {
+                "name": "p",
+                "type": "int",
+                "value": 2
+            },
+            {
+                "name": "axes",
+                "type": "list_int",
+                "value": []
+            },
+            {
+                "name": "keepdim",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "epsilon",
+                "type": "float",
+                "value": 1e-12
+            }
+        ]
+    }
+]

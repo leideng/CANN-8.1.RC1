@@ -1,0 +1,83 @@
+[
+    {
+        "case_name": "Test_SmoothL1Loss_001",
+        "op": "SmoothL1Loss",
+        "input_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float",
+                    "float16"
+                ],
+                "shape": [
+                    1,
+                    24,
+                    1,
+                    256
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "predict"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float",
+                    "float16"
+                ],
+                "shape": [
+                    1,
+                    24,
+                    1,
+                    256
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "label"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float",
+                    "float16"
+                ],
+                "shape": [
+                    1,
+                    24,
+                    1,
+                    256
+                ],
+                "name": "loss"
+            }
+        ],
+        "attr": [
+            {
+                "name": "sigma",
+                "type": "float",
+                "value": 2.3
+            }
+        ]
+    }
+]

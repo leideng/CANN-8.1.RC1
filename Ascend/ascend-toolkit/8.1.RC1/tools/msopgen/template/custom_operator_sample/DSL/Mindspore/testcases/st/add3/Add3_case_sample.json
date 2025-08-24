@@ -1,0 +1,65 @@
+[{
+    "case_name": "Test_Add3_001",
+    "st_mode": "ms_python_train",
+    "op": "Add3",
+    "calc_expect_func_file": "",
+    "input_desc": [
+        {
+            "name": "input1",
+            "format": "NCHW",
+            "type": [
+                "float16",
+                "float32"
+            ],
+            "shape": [
+                3
+            ],
+            "value_range": [
+                [
+                    1,
+                    2
+                ]
+            ],
+            "data_distribute": [
+                "uniform"
+            ]
+        },
+        {
+            "name": "input2",
+            "format": "NCHW",
+            "type": [
+                "float16",
+                "float32"
+            ],
+            "shape": [
+                3
+            ],
+            "value_range": [
+                [
+                    1,
+                    2
+                ]
+            ],
+            "data_distribute": [
+                "uniform"
+            ]
+        }
+    ],
+    "output_desc": [
+        {
+            "name": "sum",
+            "format": "NCHW",
+            "type": [
+                "float16",
+                "float32"
+            ],
+            "shape": [
+                3
+            ]
+    }],
+    "attr": [{
+        "name": "const_bias",
+        "value": 1.0,
+        "type": "float"
+    }]
+}]

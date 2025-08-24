@@ -1,0 +1,904 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BN3DTrainingReduce/d=0,p=0/27,30/0,30/0,30"
+      ],
+      "staticKey": "dc85c1721f360007684dd5f063a26e6c1de04b7329b43e666dff2aa87c9e8b5b",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sum",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "square_sum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bn3d_training_reduce/BN3DTrainingReduce_03e223d0b21cd89471a9fbfbc179190a_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BN3DTrainingReduce/d=1,p=0/27,30/0,30/0,30"
+      ],
+      "staticKey": "dc85c1721f360007684dd5f063a26e6c1de04b7329b43e666dff2aa87c9e8b5b",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sum",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "square_sum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bn3d_training_reduce/BN3DTrainingReduce_03e223d0b21cd89471a9fbfbc179190a_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BN3DTrainingReduce/d=0,p=0/27,0/0,0/0,0"
+      ],
+      "staticKey": "8e3a4ccfd025cc736563821870d41fd9c6d0b97375099261bda9a9cd95375b5b",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sum",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "square_sum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bn3d_training_reduce/BN3DTrainingReduce_0af7c84e3afac2f338904d15851cf1ba_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BN3DTrainingReduce/d=1,p=0/27,0/0,0/0,0"
+      ],
+      "staticKey": "8e3a4ccfd025cc736563821870d41fd9c6d0b97375099261bda9a9cd95375b5b",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sum",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "square_sum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bn3d_training_reduce/BN3DTrainingReduce_0af7c84e3afac2f338904d15851cf1ba_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BN3DTrainingReduce/d=0,p=0/27,32/0,32/0,32"
+      ],
+      "staticKey": "37f4526f5f7aad3d00af556d4793a61beb3d7e052c75c87652b5d314624e7950",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sum",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "square_sum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bn3d_training_reduce/BN3DTrainingReduce_da7cb34542beafcbfc163ded6e26c3ca_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BN3DTrainingReduce/d=1,p=0/27,32/0,32/0,32"
+      ],
+      "staticKey": "37f4526f5f7aad3d00af556d4793a61beb3d7e052c75c87652b5d314624e7950",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sum",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "square_sum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bn3d_training_reduce/BN3DTrainingReduce_da7cb34542beafcbfc163ded6e26c3ca_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BN3DTrainingReduce/d=0,p=0/1,30/0,30/0,30"
+      ],
+      "staticKey": "4d5996409c4c6ed8ab514a9212c1826f1da73eceaaac7a354d701a4d58104631",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sum",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "square_sum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bn3d_training_reduce/BN3DTrainingReduce_0fdaa3f8b14d21317273ef0e6aaba114_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BN3DTrainingReduce/d=1,p=0/1,30/0,30/0,30"
+      ],
+      "staticKey": "4d5996409c4c6ed8ab514a9212c1826f1da73eceaaac7a354d701a4d58104631",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sum",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "square_sum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bn3d_training_reduce/BN3DTrainingReduce_0fdaa3f8b14d21317273ef0e6aaba114_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BN3DTrainingReduce/d=0,p=0/1,0/0,0/0,0"
+      ],
+      "staticKey": "e39588e548953ce1c25800d99695e19569322bacfdafa2bd5d3d52ad6bfb07f4",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sum",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "square_sum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bn3d_training_reduce/BN3DTrainingReduce_169e2bd4c946482fc921d3fc60235972_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BN3DTrainingReduce/d=1,p=0/1,0/0,0/0,0"
+      ],
+      "staticKey": "e39588e548953ce1c25800d99695e19569322bacfdafa2bd5d3d52ad6bfb07f4",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sum",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "square_sum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bn3d_training_reduce/BN3DTrainingReduce_169e2bd4c946482fc921d3fc60235972_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BN3DTrainingReduce/d=0,p=0/1,32/0,32/0,32"
+      ],
+      "staticKey": "006d4cb6530a26867bd1a1eb695d2c60bbae6bd727c8a46da79f14e87b5b47cf",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sum",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "square_sum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bn3d_training_reduce/BN3DTrainingReduce_9aaa86f18173f47c7bd5dd399d467abd_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BN3DTrainingReduce/d=1,p=0/1,32/0,32/0,32"
+      ],
+      "staticKey": "006d4cb6530a26867bd1a1eb695d2c60bbae6bd727c8a46da79f14e87b5b47cf",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sum",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "square_sum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bn3d_training_reduce/BN3DTrainingReduce_9aaa86f18173f47c7bd5dd399d467abd_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BN3DTrainingReduce/d=0,p=0/0,30/0,30/0,30"
+      ],
+      "staticKey": "d3cac94ccfd03e7840e02f9c45bae90e231179bf6b9f9cfe9105b662b5726290",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sum",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "square_sum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bn3d_training_reduce/BN3DTrainingReduce_1b88bd5907e496ce4071c1c36711e292_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BN3DTrainingReduce/d=1,p=0/0,30/0,30/0,30"
+      ],
+      "staticKey": "d3cac94ccfd03e7840e02f9c45bae90e231179bf6b9f9cfe9105b662b5726290",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sum",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "square_sum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bn3d_training_reduce/BN3DTrainingReduce_1b88bd5907e496ce4071c1c36711e292_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BN3DTrainingReduce/d=0,p=0/0,0/0,0/0,0"
+      ],
+      "staticKey": "75d914cc135028ab07b607a6739b2f3204b37894394c1a749de8d42ed0a77286",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sum",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "square_sum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bn3d_training_reduce/BN3DTrainingReduce_859ed9fd76624157c65519a0828d2e1f_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BN3DTrainingReduce/d=1,p=0/0,0/0,0/0,0"
+      ],
+      "staticKey": "75d914cc135028ab07b607a6739b2f3204b37894394c1a749de8d42ed0a77286",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sum",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "square_sum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bn3d_training_reduce/BN3DTrainingReduce_859ed9fd76624157c65519a0828d2e1f_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BN3DTrainingReduce/d=0,p=0/0,32/0,32/0,32"
+      ],
+      "staticKey": "c0aea6a3dad95956e95006168caf23007ff3ac3580ba34035bda262d4078b488",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sum",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "square_sum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bn3d_training_reduce/BN3DTrainingReduce_51bab2ae8fc87eb072bfb69617aaf382_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BN3DTrainingReduce/d=1,p=0/0,32/0,32/0,32"
+      ],
+      "staticKey": "c0aea6a3dad95956e95006168caf23007ff3ac3580ba34035bda262d4078b488",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sum",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "square_sum",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bn3d_training_reduce/BN3DTrainingReduce_51bab2ae8fc87eb072bfb69617aaf382_high_performance_deterministic.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,634 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RotaryPosEmbInfer/d=0,p=1/1,2/1,2/1,2/1,2/1,2/1,2",
+        "RotaryPosEmbInfer/d=0,p=0/1,2/1,2/1,2/1,2/1,2/1,2",
+        "RotaryPosEmbInfer/d=1,p=1/1,2/1,2/1,2/1,2/1,2/1,2",
+        "RotaryPosEmbInfer/d=1,p=0/1,2/1,2/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "f74008b05d33a1f0bed859bd5768455c8dd726c43f7bf1a0ce43f03462e8425e,c82019142ea666c8a19367cd515560d90470901103e01005cdf82a4245fa09bc",
+      "inputs": [
+        {
+          "name": "q",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "k",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cos",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sin",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "seqLen",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "outQ",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "outK",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "rotaryCoeff",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "cosFormat",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/rotary_pos_emb_infer/RotaryPosEmbInfer_2453a9de_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RotaryPosEmbInfer/d=0,p=1/1,2/1,2/0,2/0,2/1,2/1,2",
+        "RotaryPosEmbInfer/d=0,p=0/1,2/1,2/0,2/0,2/1,2/1,2",
+        "RotaryPosEmbInfer/d=1,p=1/1,2/1,2/0,2/0,2/1,2/1,2",
+        "RotaryPosEmbInfer/d=1,p=0/1,2/1,2/0,2/0,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "6e0bdd9d1216efe4dde999bbc0882875e4ee819905465fa087ca0d15e7b2f9ba,80c4dddfb1d311a4dedfae58120d2f5ea3b39386e2bef6d4b9b7b1c33bd4d822",
+      "inputs": [
+        {
+          "name": "q",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "k",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cos",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sin",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "seqLen",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "outQ",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "outK",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "rotaryCoeff",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "cosFormat",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/rotary_pos_emb_infer/RotaryPosEmbInfer_6983da08_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RotaryPosEmbInfer/d=0,p=1/27,2/27,2/27,2/27,2/27,2/27,2",
+        "RotaryPosEmbInfer/d=0,p=0/27,2/27,2/27,2/27,2/27,2/27,2",
+        "RotaryPosEmbInfer/d=1,p=1/27,2/27,2/27,2/27,2/27,2/27,2",
+        "RotaryPosEmbInfer/d=1,p=0/27,2/27,2/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "ccbefa5c052570fd4cc8d0b27babdd7eee595e7ab4985fa1a20f82b96c589636,f02d5602f3341e24e527fc38994abf3671113b8300d3be9ea9df28dd4350d0b2",
+      "inputs": [
+        {
+          "name": "q",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "k",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cos",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sin",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "seqLen",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "outQ",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "outK",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "rotaryCoeff",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "cosFormat",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/rotary_pos_emb_infer/RotaryPosEmbInfer_291bc416_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RotaryPosEmbInfer/d=0,p=1/1,2/1,2/1,2/1,2/1,2/1,2",
+        "RotaryPosEmbInfer/d=0,p=0/1,2/1,2/1,2/1,2/1,2/1,2",
+        "RotaryPosEmbInfer/d=1,p=1/1,2/1,2/1,2/1,2/1,2/1,2",
+        "RotaryPosEmbInfer/d=1,p=0/1,2/1,2/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "f74008b05d33a1f0bed859bd5768455c8dd726c43f7bf1a0ce43f03462e8425e,c82019142ea666c8a19367cd515560d90470901103e01005cdf82a4245fa09bc",
+      "inputs": [
+        {
+          "name": "q",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "k",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cos",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sin",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "seqLen",
+          "index": 4,
+          "dtype": "uint32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "outQ",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "outK",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "rotaryCoeff",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "cosFormat",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/rotary_pos_emb_infer/RotaryPosEmbInfer_abf90c1e_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RotaryPosEmbInfer/d=0,p=1/1,2/1,2/0,2/0,2/1,2/1,2",
+        "RotaryPosEmbInfer/d=0,p=0/1,2/1,2/0,2/0,2/1,2/1,2",
+        "RotaryPosEmbInfer/d=1,p=1/1,2/1,2/0,2/0,2/1,2/1,2",
+        "RotaryPosEmbInfer/d=1,p=0/1,2/1,2/0,2/0,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "6e0bdd9d1216efe4dde999bbc0882875e4ee819905465fa087ca0d15e7b2f9ba,80c4dddfb1d311a4dedfae58120d2f5ea3b39386e2bef6d4b9b7b1c33bd4d822",
+      "inputs": [
+        {
+          "name": "q",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "k",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cos",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sin",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "seqLen",
+          "index": 4,
+          "dtype": "uint32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "outQ",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "outK",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "rotaryCoeff",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "cosFormat",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/rotary_pos_emb_infer/RotaryPosEmbInfer_f0349507_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RotaryPosEmbInfer/d=0,p=1/27,2/27,2/27,2/27,2/27,2/27,2",
+        "RotaryPosEmbInfer/d=0,p=0/27,2/27,2/27,2/27,2/27,2/27,2",
+        "RotaryPosEmbInfer/d=1,p=1/27,2/27,2/27,2/27,2/27,2/27,2",
+        "RotaryPosEmbInfer/d=1,p=0/27,2/27,2/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "ccbefa5c052570fd4cc8d0b27babdd7eee595e7ab4985fa1a20f82b96c589636,f02d5602f3341e24e527fc38994abf3671113b8300d3be9ea9df28dd4350d0b2",
+      "inputs": [
+        {
+          "name": "q",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "k",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cos",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sin",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "seqLen",
+          "index": 4,
+          "dtype": "uint32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "outQ",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "outK",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "rotaryCoeff",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "cosFormat",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/rotary_pos_emb_infer/RotaryPosEmbInfer_9559467a_high_performance.json"
+      }
+    }
+  ]
+}

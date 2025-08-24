@@ -1,0 +1,604 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "simplifiedKeyMode": 2,
+      "simplifiedKey": [
+        "MatMulV3/d=0,p=1/diy,2/2/2/2/1/1/1/1",
+        "MatMulV3/d=0,p=2/diy,2/2/2/2/1/1/1/1",
+        "MatMulV3/d=0,p=5/diy,2/2/2/2/1/1/1/1",
+        "MatMulV3/d=0,p=6/diy,2/2/2/2/1/1/1/1",
+        "MatMulV3/d=0,p=0/diy,2/2/2/2/1/1/1/1",
+        "MatMulV3/d=1,p=1/diy,2/2/2/2/1/1/1/1",
+        "MatMulV3/d=1,p=2/diy,2/2/2/2/1/1/1/1",
+        "MatMulV3/d=1,p=5/diy,2/2/2/2/1/1/1/1",
+        "MatMulV3/d=1,p=6/diy,2/2/2/2/1/1/1/1",
+        "MatMulV3/d=1,p=0/diy,2/2/2/2/1/1/1/1"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "staticKey": "4cf5df4a7e7fe4fe0ec96965228eb99659770a05b9c52579b9d618748ad1fa88,40edf46d0d4b7588396d8335a30b9d74df17b8e83de311e63c94d27608fceb1c,998394623a94d8dc73663f18afe8902d0336d44e875156845ecaffc904b29ac1,b7ea29f25bec5ce046fe90637d91c7332374e7f671c2797b6d10b669cf86f0d6,8062f40c960d18cadc67bcc25fd4b56a83628a4bb30aae3704e863b61f306c4d",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset_w",
+          "index": 3,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "enable_hf32",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mat_mul_v3/MatMulV3_ND_ND_ND_ND_FP16_FP16_FP16_FP16_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "simplifiedKeyMode": 2,
+      "simplifiedKey": [
+        "MatMulV3/d=0,p=1/diy,2/2/2/2/1/1/0/1",
+        "MatMulV3/d=0,p=2/diy,2/2/2/2/1/1/0/1",
+        "MatMulV3/d=0,p=5/diy,2/2/2/2/1/1/0/1",
+        "MatMulV3/d=0,p=6/diy,2/2/2/2/1/1/0/1",
+        "MatMulV3/d=0,p=0/diy,2/2/2/2/1/1/0/1",
+        "MatMulV3/d=1,p=1/diy,2/2/2/2/1/1/0/1",
+        "MatMulV3/d=1,p=2/diy,2/2/2/2/1/1/0/1",
+        "MatMulV3/d=1,p=5/diy,2/2/2/2/1/1/0/1",
+        "MatMulV3/d=1,p=6/diy,2/2/2/2/1/1/0/1",
+        "MatMulV3/d=1,p=0/diy,2/2/2/2/1/1/0/1"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "staticKey": "4cf5df4a7e7fe4fe0ec96965228eb99659770a05b9c52579b9d618748ad1fa88,40edf46d0d4b7588396d8335a30b9d74df17b8e83de311e63c94d27608fceb1c,998394623a94d8dc73663f18afe8902d0336d44e875156845ecaffc904b29ac1,b7ea29f25bec5ce046fe90637d91c7332374e7f671c2797b6d10b669cf86f0d6,8062f40c960d18cadc67bcc25fd4b56a83628a4bb30aae3704e863b61f306c4d",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset_w",
+          "index": 3,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "enable_hf32",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mat_mul_v3/MatMulV3_ND_ND_ND_ND_FP16_FP16_FP32_FP16_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "simplifiedKeyMode": 2,
+      "simplifiedKey": [
+        "MatMulV3/d=0,p=1/diy,2/2/2/2/27/27/27/27",
+        "MatMulV3/d=0,p=2/diy,2/2/2/2/27/27/27/27",
+        "MatMulV3/d=0,p=5/diy,2/2/2/2/27/27/27/27",
+        "MatMulV3/d=0,p=6/diy,2/2/2/2/27/27/27/27",
+        "MatMulV3/d=0,p=0/diy,2/2/2/2/27/27/27/27",
+        "MatMulV3/d=1,p=1/diy,2/2/2/2/27/27/27/27",
+        "MatMulV3/d=1,p=2/diy,2/2/2/2/27/27/27/27",
+        "MatMulV3/d=1,p=5/diy,2/2/2/2/27/27/27/27",
+        "MatMulV3/d=1,p=6/diy,2/2/2/2/27/27/27/27",
+        "MatMulV3/d=1,p=0/diy,2/2/2/2/27/27/27/27"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "staticKey": "07bd2ecc179f748043c979bc99773f223b0c67236ae8d9f127709aa9a8d5e8a1,5b7f5ec8ed6b444c7cf44dd9d319969fb30da7ac74d1f57054b982a1a5095642,31276e68402673f48c0423f92147855328f9ed26cdeb3edf63418f370b8f5639,6e9c4ca65a664dfc3bc48ec4d02c59984d15e12d43b3920215c595593bab9a6d,e7e8c20636897c0060bd431bb57e1c12c165c7ee360b63927d26416387a51f93",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset_w",
+          "index": 3,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "enable_hf32",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mat_mul_v3/MatMulV3_ND_ND_ND_ND_BF16_BF16_BF16_BF16_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "simplifiedKeyMode": 2,
+      "simplifiedKey": [
+        "MatMulV3/d=0,p=1/diy,2/2/2/2/27/27/0/27",
+        "MatMulV3/d=0,p=2/diy,2/2/2/2/27/27/0/27",
+        "MatMulV3/d=0,p=5/diy,2/2/2/2/27/27/0/27",
+        "MatMulV3/d=0,p=6/diy,2/2/2/2/27/27/0/27",
+        "MatMulV3/d=0,p=0/diy,2/2/2/2/27/27/0/27",
+        "MatMulV3/d=1,p=1/diy,2/2/2/2/27/27/0/27",
+        "MatMulV3/d=1,p=2/diy,2/2/2/2/27/27/0/27",
+        "MatMulV3/d=1,p=5/diy,2/2/2/2/27/27/0/27",
+        "MatMulV3/d=1,p=6/diy,2/2/2/2/27/27/0/27",
+        "MatMulV3/d=1,p=0/diy,2/2/2/2/27/27/0/27"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "staticKey": "07bd2ecc179f748043c979bc99773f223b0c67236ae8d9f127709aa9a8d5e8a1,5b7f5ec8ed6b444c7cf44dd9d319969fb30da7ac74d1f57054b982a1a5095642,31276e68402673f48c0423f92147855328f9ed26cdeb3edf63418f370b8f5639,6e9c4ca65a664dfc3bc48ec4d02c59984d15e12d43b3920215c595593bab9a6d,e7e8c20636897c0060bd431bb57e1c12c165c7ee360b63927d26416387a51f93",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset_w",
+          "index": 3,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "enable_hf32",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mat_mul_v3/MatMulV3_ND_ND_ND_ND_BF16_BF16_FP32_BF16_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "simplifiedKeyMode": 2,
+      "simplifiedKey": [
+        "MatMulV3/d=0,p=1/diy,2/2/2/2/0/0/0/0",
+        "MatMulV3/d=0,p=2/diy,2/2/2/2/0/0/0/0",
+        "MatMulV3/d=0,p=5/diy,2/2/2/2/0/0/0/0",
+        "MatMulV3/d=0,p=6/diy,2/2/2/2/0/0/0/0",
+        "MatMulV3/d=0,p=0/diy,2/2/2/2/0/0/0/0",
+        "MatMulV3/d=1,p=1/diy,2/2/2/2/0/0/0/0",
+        "MatMulV3/d=1,p=2/diy,2/2/2/2/0/0/0/0",
+        "MatMulV3/d=1,p=5/diy,2/2/2/2/0/0/0/0",
+        "MatMulV3/d=1,p=6/diy,2/2/2/2/0/0/0/0",
+        "MatMulV3/d=1,p=0/diy,2/2/2/2/0/0/0/0"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "staticKey": "cd199afcc37aafb59dc94f7f8b6e56cb77400d56d572e61f9d885c7d597cad4f,fdf20ad0d0d08d4697235ecef9dabd439372ae80ddf10cd95d9546725d49d970,39facb66045f4ddb34b6d7cfb48f42c2ac3351c5cf377f215c8df57d54a46836,64f231d698b776bf6b3a314a2780e8a549399073b16ae852ff7a81425e41a7d2,74e11c394b8fb3cd39df5e273c7c1323bd09b51f1eb6f02266783ffc05495f67",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset_w",
+          "index": 3,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "enable_hf32",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mat_mul_v3/MatMulV3_ND_ND_ND_ND_FP32_FP32_FP32_FP32_all.json"
+      }
+    },
+    {
+      "implMode": "high_performance,high_precision,enable_float_32_execution,enable_hi_float_32_execution",
+      "int64Mode": false,
+      "simplifiedKeyMode": 2,
+      "simplifiedKey": [
+        "MatMulV3/d=0,p=1/diy,2/29/2/2/1/1/1/1",
+        "MatMulV3/d=0,p=2/diy,2/29/2/2/1/1/1/1",
+        "MatMulV3/d=0,p=5/diy,2/29/2/2/1/1/1/1",
+        "MatMulV3/d=0,p=6/diy,2/29/2/2/1/1/1/1",
+        "MatMulV3/d=0,p=0/diy,2/29/2/2/1/1/1/1",
+        "MatMulV3/d=1,p=1/diy,2/29/2/2/1/1/1/1",
+        "MatMulV3/d=1,p=2/diy,2/29/2/2/1/1/1/1",
+        "MatMulV3/d=1,p=5/diy,2/29/2/2/1/1/1/1",
+        "MatMulV3/d=1,p=6/diy,2/29/2/2/1/1/1/1",
+        "MatMulV3/d=1,p=0/diy,2/29/2/2/1/1/1/1"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "staticKey": "02cdab4c66d2f88ba7ba4cd35f9a31b06d46bb73e2bf226be46839bb51c29e3d,30df4830d5afe71072179df99372279569dd5a78bd0f7a2583a4d39e352aeeec,363fa849031de446ebc623e4e9d48e4e7c8cd87871acf556376ab3d73fbf3f60,a771347f2dadbb3ea70a0e70df49cbd5dd1f3ad6354785955756511eedaf5ca1,c4753a8175b8d8809145a1e0300c3d891e34b93852476ff213752e8a0ee7513f",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset_w",
+          "index": 3,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "enable_hf32",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mat_mul_v3/MatMulV3_ND_NZ_ND_ND_FP16_FP16_FP16_FP16_all.json"
+      }
+    }
+  ]
+}

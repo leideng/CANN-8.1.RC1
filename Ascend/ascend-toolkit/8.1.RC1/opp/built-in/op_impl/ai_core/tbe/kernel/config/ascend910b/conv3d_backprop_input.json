@@ -1,0 +1,416 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "staticKey": "700b7ff570c7ce9f6b4556bd05455f359b6d8b5be57f869b6e34d01f0b866b71",
+      "inputs": [
+        {
+          "name": "input_size",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            5
+          ],
+          "ori_shape": [
+            5
+          ]
+        },
+        {
+          "name": "filter",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_Z_3D",
+          "ori_format": "NCDHW",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "out_backprop",
+          "index": 2,
+          "dtype": "float16",
+          "format": "NDC1HWC0",
+          "ori_format": "NCDHW",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NDC1HWC0",
+          "ori_format": "NCDHW",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCDHW"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/conv3d_backprop_input/Conv3DBackpropInput_NDC1HWC0_NDC1HWC0_FP16_FP16_NCDHW_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "517a44420f2f903a1792ef59e357f2fec7b3e872ba4296391cef0f0ab131750f",
+      "inputs": [
+        {
+          "name": "input_size",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            5
+          ],
+          "ori_shape": [
+            5
+          ]
+        },
+        {
+          "name": "filter",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_Z_3D",
+          "ori_format": "NCDHW",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "out_backprop",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "NDC1HWC0",
+          "ori_format": "NCDHW",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NDC1HWC0",
+          "ori_format": "NCDHW",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCDHW"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/conv3d_backprop_input/Conv3DBackpropInput_NDC1HWC0_NDC1HWC0_BF16_BF16_NCDHW_high_performance.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1500 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ROIAlign/d=0,p=1/1,3/1,2/,/1,3/,,,,,avg",
+        "ROIAlign/d=0,p=0/1,3/1,2/,/1,3/,,,,,avg",
+        "ROIAlign/d=1,p=1/1,3/1,2/,/1,3/,,,,,avg",
+        "ROIAlign/d=1,p=0/1,3/1,2/,/1,3/,,,,,avg"
+      ],
+      "staticKey": "c419f5612af179ec828d7262ebfbe11eabaa7a30eb900b837990942492760d78,0c2f7f689d24965e99afb14fa7a2c8e0720fdca5e294bcd9fbd19c1d8c908754",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_height",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_width",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sample_num",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi_end_mode",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pool_mode",
+          "dtype": "string",
+          "value": "avg",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_align/ROIAlign_edcf31450212c7e616c0efb01af72e14_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ROIAlign/d=0,p=1/1,3/1,2/,/1,3/,,,,,max",
+        "ROIAlign/d=0,p=0/1,3/1,2/,/1,3/,,,,,max",
+        "ROIAlign/d=1,p=1/1,3/1,2/,/1,3/,,,,,max",
+        "ROIAlign/d=1,p=0/1,3/1,2/,/1,3/,,,,,max"
+      ],
+      "staticKey": "e4dc0909f662de35fa9994919299abdd1b748894a859f416997d1b54882c0465,a7b76cf9f4fce4a7be6b2462238586b171b987f934a590a71255ef4d67b6b9c1",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_height",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_width",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sample_num",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi_end_mode",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pool_mode",
+          "dtype": "string",
+          "value": "max",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_align/ROIAlign_3d0da82b95fb3e8ed041e291baa86960_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ROIAlign/d=0,p=1/1,3/1,2/3,2/1,3/,,,,,avg",
+        "ROIAlign/d=0,p=0/1,3/1,2/3,2/1,3/,,,,,avg",
+        "ROIAlign/d=1,p=1/1,3/1,2/3,2/1,3/,,,,,avg",
+        "ROIAlign/d=1,p=0/1,3/1,2/3,2/1,3/,,,,,avg"
+      ],
+      "staticKey": "62b7eec31f44be008c5b621ec28be715023378813ee3aa4db96d6e9cd9dc2afd,ec0764adb3aa8e504bff406889fc97980346c6109d84f0a369bea7c3ac73f192",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois_n",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_height",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_width",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sample_num",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi_end_mode",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pool_mode",
+          "dtype": "string",
+          "value": "avg",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_align/ROIAlign_983cf9cbda199ef06318f52cb05717af_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ROIAlign/d=0,p=1/1,3/1,2/3,2/1,3/,,,,,max",
+        "ROIAlign/d=0,p=0/1,3/1,2/3,2/1,3/,,,,,max",
+        "ROIAlign/d=1,p=1/1,3/1,2/3,2/1,3/,,,,,max",
+        "ROIAlign/d=1,p=0/1,3/1,2/3,2/1,3/,,,,,max"
+      ],
+      "staticKey": "caf9f871606cc82403771caaf46a32398948100797e6abd0ef5557ceb3cb11d0,26d68fad2b39dcda1c911207a8fa74b572f6233acf3bd2014d219eb6060de347",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois_n",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_height",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_width",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sample_num",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi_end_mode",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pool_mode",
+          "dtype": "string",
+          "value": "max",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_align/ROIAlign_3d2ce9e3c7a3f12186ac0d3a9c19b825_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ROIAlign/d=0,p=1/0,3/0,2/,/0,3/,,,,,avg",
+        "ROIAlign/d=0,p=0/0,3/0,2/,/0,3/,,,,,avg",
+        "ROIAlign/d=1,p=1/0,3/0,2/,/0,3/,,,,,avg",
+        "ROIAlign/d=1,p=0/0,3/0,2/,/0,3/,,,,,avg"
+      ],
+      "staticKey": "20e4a5c42408ce3d246a061229a8c4b5a46d27b7a50faf1035f3c54638c129b3,e7db188a5cb10e9a224c3c6edede6e389a1d56382e36a56d4b745faef19bd782",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_height",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_width",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sample_num",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi_end_mode",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pool_mode",
+          "dtype": "string",
+          "value": "avg",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_align/ROIAlign_c6435d2d87ed2d640363f4391e54b432_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ROIAlign/d=0,p=1/0,3/0,2/,/0,3/,,,,,max",
+        "ROIAlign/d=0,p=0/0,3/0,2/,/0,3/,,,,,max",
+        "ROIAlign/d=1,p=1/0,3/0,2/,/0,3/,,,,,max",
+        "ROIAlign/d=1,p=0/0,3/0,2/,/0,3/,,,,,max"
+      ],
+      "staticKey": "24103f102280289978bcb2a6e567b03bf8c233d6ab2800ac76d3901d2947268c,cf165a5158743cd8ea8b1a91134cb1fb013e1e3a28a5405c5ce7cc43671d9e7b",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_height",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_width",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sample_num",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi_end_mode",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pool_mode",
+          "dtype": "string",
+          "value": "max",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_align/ROIAlign_ba4a70a1d5e2195ffc19948adcb3d276_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ROIAlign/d=0,p=1/0,3/0,2/3,2/0,3/,,,,,avg",
+        "ROIAlign/d=0,p=0/0,3/0,2/3,2/0,3/,,,,,avg",
+        "ROIAlign/d=1,p=1/0,3/0,2/3,2/0,3/,,,,,avg",
+        "ROIAlign/d=1,p=0/0,3/0,2/3,2/0,3/,,,,,avg"
+      ],
+      "staticKey": "14535b9a518f636aa22f1cd08e1440c4e4b3f52e3fcd91b4e393f14100d70f06,a9d73b2d985b542bf7a9de9d22121f49a7de1a8d61901bd9110cc781e6144e76",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois_n",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_height",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_width",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sample_num",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi_end_mode",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pool_mode",
+          "dtype": "string",
+          "value": "avg",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_align/ROIAlign_feb88324a846d5727fa097be05c7bf88_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ROIAlign/d=0,p=1/0,3/0,2/3,2/0,3/,,,,,max",
+        "ROIAlign/d=0,p=0/0,3/0,2/3,2/0,3/,,,,,max",
+        "ROIAlign/d=1,p=1/0,3/0,2/3,2/0,3/,,,,,max",
+        "ROIAlign/d=1,p=0/0,3/0,2/3,2/0,3/,,,,,max"
+      ],
+      "staticKey": "5d78891c4719d73c15e8e2033b6540283ba67cc65a655ad0564b7f221bbe408a,6c57892d5a9e5e839bd1054d6f787ce10ba1bd0e7ca969f868c67f0dccd255e1",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois_n",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_height",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_width",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sample_num",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi_end_mode",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pool_mode",
+          "dtype": "string",
+          "value": "max",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_align/ROIAlign_d4c5473db5bbdaca586bcaf0c7fde88a_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ROIAlign/d=0,p=2/1,3/1,2/,/1,3/,,,,,avg",
+        "ROIAlign/d=1,p=2/1,3/1,2/,/1,3/,,,,,avg"
+      ],
+      "staticKey": "eadd32253b555fad96826cc9ee7df3cc7dd9b8de5a0bf1b320b475da617d54d6",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_height",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_width",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sample_num",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi_end_mode",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pool_mode",
+          "dtype": "string",
+          "value": "avg",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_align/ROIAlign_edcf31450212c7e616c0efb01af72e14_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ROIAlign/d=0,p=2/1,3/1,2/,/1,3/,,,,,max",
+        "ROIAlign/d=1,p=2/1,3/1,2/,/1,3/,,,,,max"
+      ],
+      "staticKey": "4d886eb46969ef5e5b2d6d9a83a7aea0112aebc95c071d64d231397482e7d817",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_height",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_width",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sample_num",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi_end_mode",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pool_mode",
+          "dtype": "string",
+          "value": "max",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_align/ROIAlign_3d0da82b95fb3e8ed041e291baa86960_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ROIAlign/d=0,p=2/1,3/1,2/3,2/1,3/,,,,,avg",
+        "ROIAlign/d=1,p=2/1,3/1,2/3,2/1,3/,,,,,avg"
+      ],
+      "staticKey": "0cd9fd5998aa539799c9fc83b5715cfb2571840838bea9882951933040189bae",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois_n",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_height",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_width",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sample_num",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi_end_mode",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pool_mode",
+          "dtype": "string",
+          "value": "avg",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_align/ROIAlign_983cf9cbda199ef06318f52cb05717af_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ROIAlign/d=0,p=2/1,3/1,2/3,2/1,3/,,,,,max",
+        "ROIAlign/d=1,p=2/1,3/1,2/3,2/1,3/,,,,,max"
+      ],
+      "staticKey": "0990aa67a0c1ef2180942aadcdd5bd2a1242ead1d44819f488c0d63afb7cbe79",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois_n",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_height",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_width",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sample_num",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi_end_mode",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pool_mode",
+          "dtype": "string",
+          "value": "max",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_align/ROIAlign_3d2ce9e3c7a3f12186ac0d3a9c19b825_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ROIAlign/d=0,p=2/0,3/0,2/,/0,3/,,,,,avg",
+        "ROIAlign/d=1,p=2/0,3/0,2/,/0,3/,,,,,avg"
+      ],
+      "staticKey": "d9933dbe44701c04767839785c3f7271f52fd1fe4fc588bc90ad4c703c37acf2",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_height",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_width",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sample_num",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi_end_mode",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pool_mode",
+          "dtype": "string",
+          "value": "avg",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_align/ROIAlign_c6435d2d87ed2d640363f4391e54b432_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ROIAlign/d=0,p=2/0,3/0,2/,/0,3/,,,,,max",
+        "ROIAlign/d=1,p=2/0,3/0,2/,/0,3/,,,,,max"
+      ],
+      "staticKey": "9aca26bc7dbc955ede7e9c57c9530ed80556cd62efaa57a7216c1ab888811067",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_height",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_width",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sample_num",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi_end_mode",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pool_mode",
+          "dtype": "string",
+          "value": "max",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_align/ROIAlign_ba4a70a1d5e2195ffc19948adcb3d276_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ROIAlign/d=0,p=2/0,3/0,2/3,2/0,3/,,,,,avg",
+        "ROIAlign/d=1,p=2/0,3/0,2/3,2/0,3/,,,,,avg"
+      ],
+      "staticKey": "32dea81e548518d954952dbc831a8097b5014843231053c893be9d7150c7f0be",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois_n",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_height",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_width",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sample_num",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi_end_mode",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pool_mode",
+          "dtype": "string",
+          "value": "avg",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_align/ROIAlign_feb88324a846d5727fa097be05c7bf88_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ROIAlign/d=0,p=2/0,3/0,2/3,2/0,3/,,,,,max",
+        "ROIAlign/d=1,p=2/0,3/0,2/3,2/0,3/,,,,,max"
+      ],
+      "staticKey": "13a7374cdcdf42cc8b614f4b61fff9100d76f6d219ad394acdc48e662a3f9956",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois_n",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_height",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_width",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sample_num",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi_end_mode",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pool_mode",
+          "dtype": "string",
+          "value": "max",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_align/ROIAlign_d4c5473db5bbdaca586bcaf0c7fde88a_high_precision.json"
+      }
+    }
+  ]
+}

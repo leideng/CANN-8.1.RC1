@@ -1,0 +1,466 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "EluGradV2/d=0,p=0/27,2/27,2/27,2/,,,0",
+        "EluGradV2/d=1,p=0/27,2/27,2/27,2/,,,0"
+      ],
+      "staticKey": "8225e9a79b3e21382f2acc4a3aaf08d0262c85a2b7f6e80d6ea190f3380693a2",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "activations",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "alpha",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "input_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "is_result",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/elu_grad_v2/EluGradV2_bca8d7b97fd48624e0f393b4822421a3_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "EluGradV2/d=0,p=0/27,2/27,2/27,2/,,,1",
+        "EluGradV2/d=1,p=0/27,2/27,2/27,2/,,,1"
+      ],
+      "staticKey": "58f1073d4810db984a87eece86526b5a692563af4133572704803bfa51a015e1",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "activations",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "alpha",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "input_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "is_result",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/elu_grad_v2/EluGradV2_d2847544c6efbaa8ebd942d21c701736_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "EluGradV2/d=0,p=0/1,2/1,2/1,2/,,,0",
+        "EluGradV2/d=1,p=0/1,2/1,2/1,2/,,,0"
+      ],
+      "staticKey": "3250178b4e832287536107cdfb95057a1b12791428ac66036a9a52784d027910",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "activations",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "alpha",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "input_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "is_result",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/elu_grad_v2/EluGradV2_1c2d311a52d715e2d830e5c82c5ce2a7_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "EluGradV2/d=0,p=0/1,2/1,2/1,2/,,,1",
+        "EluGradV2/d=1,p=0/1,2/1,2/1,2/,,,1"
+      ],
+      "staticKey": "42f91895197f2d64580237d2e95eb37479319a9ac35fcd36fd993bd377825c95",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "activations",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "alpha",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "input_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "is_result",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/elu_grad_v2/EluGradV2_811dd17f953babbd0857a3a465298e9e_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "EluGradV2/d=0,p=0/0,2/0,2/0,2/,,,0",
+        "EluGradV2/d=1,p=0/0,2/0,2/0,2/,,,0"
+      ],
+      "staticKey": "cc30720e054b2b311be49fe46d4079dc017abd402855a4983641ebd977f0c62f",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "activations",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "alpha",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "input_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "is_result",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/elu_grad_v2/EluGradV2_b10fb8d3846dab1d7af1173889aff103_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "EluGradV2/d=0,p=0/0,2/0,2/0,2/,,,1",
+        "EluGradV2/d=1,p=0/0,2/0,2/0,2/,,,1"
+      ],
+      "staticKey": "5ce18818862eb3a12f9c47359cfd04940b3ac9cd817298fa036a8e489b34b657",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "activations",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "alpha",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "input_scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "is_result",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/elu_grad_v2/EluGradV2_60344b05afd5a1b08c9041e353617efb_high_performance.json"
+      }
+    }
+  ]
+}

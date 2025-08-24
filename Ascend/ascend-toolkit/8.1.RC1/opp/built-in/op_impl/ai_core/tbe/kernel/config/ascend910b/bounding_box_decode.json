@@ -1,0 +1,144 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BoundingBoxDecode/d=0,p=0/1,2/1,2/1,2",
+        "BoundingBoxDecode/d=1,p=0/1,2/1,2/1,2"
+      ],
+      "staticKey": "d8f39537ae4febac97ece35aab54c28b0530c7156ac5b74b6503b0dca7441e93",
+      "inputs": [
+        {
+          "name": "rois",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "deltas",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "means",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "stds",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "max_shape",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "wh_ratio_clip",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bounding_box_decode/BoundingBoxDecode_1_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "BoundingBoxDecode/d=0,p=0/0,2/0,2/0,2",
+        "BoundingBoxDecode/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "staticKey": "04f9334fccdc2e913d820bff3250795bdbd8ad30b9caa440d2f9212f627bed84",
+      "inputs": [
+        {
+          "name": "rois",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "deltas",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "means",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "stds",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "max_shape",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "wh_ratio_clip",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/bounding_box_decode/BoundingBoxDecode_2_high_performance.json"
+      }
+    }
+  ]
+}

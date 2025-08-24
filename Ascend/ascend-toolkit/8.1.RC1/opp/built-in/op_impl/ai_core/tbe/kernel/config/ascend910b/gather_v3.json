@@ -1,0 +1,2404 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/6,2/3,2/3,2/6,2/,0",
+        "GatherV3/d=1,p=1/6,2/3,2/3,2/6,2/,0"
+      ],
+      "staticKey": "3597b4c984cc500b0624cf15a043efb8779730cbeeb37cb5c419fb38201fcbd7",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_94f61cf93ebcf75d4da2704c171c1fcb_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/6,2/3,2/3,2/6,2/,1",
+        "GatherV3/d=1,p=1/6,2/3,2/3,2/6,2/,1"
+      ],
+      "staticKey": "459574ca9f5c3c5791fc6fabb1992f3372ea7d2ec67e1b205273268fbbc65927",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_248a85d4b004ebe0f03187eec0b52668_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/6,2/3,2/9,2/6,2/,0",
+        "GatherV3/d=1,p=1/6,2/3,2/9,2/6,2/,0"
+      ],
+      "staticKey": "fb48ceb3236dfd9b479a206df3bb3e66a6de765a5c17ac572e22b24621380154",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_81f85b8118942f9275eea83b86babe7d_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/6,2/3,2/9,2/6,2/,1",
+        "GatherV3/d=1,p=1/6,2/3,2/9,2/6,2/,1"
+      ],
+      "staticKey": "ab8602fdc8307fc9d22087b6344ae922730e18db15cb5b6e675a65d26f521878",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_3ca3c5c6f27cab7a38c1ed65f6882f8d_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/6,2/9,2/3,2/6,2/,0",
+        "GatherV3/d=1,p=1/6,2/9,2/3,2/6,2/,0"
+      ],
+      "staticKey": "a106a30503e74c901fce04b7448d69f030cddcc79cc177d5a6d5eb81e57b5b80",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_adf7a434d5c68e20b0d2b0918fb5bc9c_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/6,2/9,2/3,2/6,2/,1",
+        "GatherV3/d=1,p=1/6,2/9,2/3,2/6,2/,1"
+      ],
+      "staticKey": "cd753e9b70c5f8f40fbe19155b8fc3230274d6d5ed74f1be9a6f650dc55212e6",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_e577406cf374e97e8103eca482427524_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/6,2/9,2/9,2/6,2/,0",
+        "GatherV3/d=1,p=1/6,2/9,2/9,2/6,2/,0"
+      ],
+      "staticKey": "050c4997d1b81fff71cd1edd252190469f798800d26ac0572d8fe1fe529ee341",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_7869a97190b9b4d296d9414a005b954b_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/6,2/9,2/9,2/6,2/,1",
+        "GatherV3/d=1,p=1/6,2/9,2/9,2/6,2/,1"
+      ],
+      "staticKey": "57922363604ad516857623520153dd579b5e32d7ec4d09c08c37380d312b57f8",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_1c9a805ec7b802670afc6a88f738ebeb_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/3,2/3,2/3,2/3,2/,0",
+        "GatherV3/d=1,p=1/3,2/3,2/3,2/3,2/,0"
+      ],
+      "staticKey": "861ba646ddf60beb425d06e7a8f967c481fcba19f4460ca782ffeb135b4c50f8",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_daad10a93d32be95786cd6e84e734751_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/3,2/3,2/3,2/3,2/,1",
+        "GatherV3/d=1,p=1/3,2/3,2/3,2/3,2/,1"
+      ],
+      "staticKey": "5df4a4b9b8ecab88a5e1eeb3653c1ab1356c05024c17b730c43fd48901b0db52",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_b10bba2570dea3386c52456cbcd67f10_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/3,2/3,2/9,2/3,2/,0",
+        "GatherV3/d=1,p=1/3,2/3,2/9,2/3,2/,0"
+      ],
+      "staticKey": "83618d60f2179085c78dc2b203d954cefa4a1e3a7d3f71231280febbab1b9e67",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_7beee77dd8bc124a96bc6f1da51c82cc_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/3,2/3,2/9,2/3,2/,1",
+        "GatherV3/d=1,p=1/3,2/3,2/9,2/3,2/,1"
+      ],
+      "staticKey": "c08d65a008d8b1cb610a59e9b032052fd48f77ac101b7df6d41ecd8e455e0438",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_8a4a30935d142234c5377e470a7f9c99_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/3,2/9,2/3,2/3,2/,0",
+        "GatherV3/d=1,p=1/3,2/9,2/3,2/3,2/,0"
+      ],
+      "staticKey": "034ef61697b6d7ef8df8617481b20e616c97bba824eee685001e4db8e7f07a7e",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_924490418309f434001437ccacf871af_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/3,2/9,2/3,2/3,2/,1",
+        "GatherV3/d=1,p=1/3,2/9,2/3,2/3,2/,1"
+      ],
+      "staticKey": "827a76532aabd9ae9e35bf77d3abe90171821a07c299b24f58ea1afdf3f57a7d",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_66661dba3d1512cc35027f18b21fa16e_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/3,2/9,2/9,2/3,2/,0",
+        "GatherV3/d=1,p=1/3,2/9,2/9,2/3,2/,0"
+      ],
+      "staticKey": "1176a0366ba33082ee501500b877eb1592710802347ddef9c13a0bd4d316c59b",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_9e31943a1a48bf81ddff1fc6379e0be3_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/3,2/9,2/9,2/3,2/,1",
+        "GatherV3/d=1,p=1/3,2/9,2/9,2/3,2/,1"
+      ],
+      "staticKey": "947e5bece9fcd715284cde3975e515be625ef8e889a71474087f8dacda1d438d",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_452ce1d45053ae47754fa10e76e3a424_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/9,2/3,2/3,2/9,2/,0",
+        "GatherV3/d=1,p=1/9,2/3,2/3,2/9,2/,0"
+      ],
+      "staticKey": "b5a4da86ed1799d39c1c1eb2f7573e132ccfcb09e9fcdb77584358dcf55ec94d",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_4cd38d7973caada8ff2971e217c02769_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/9,2/3,2/3,2/9,2/,1",
+        "GatherV3/d=1,p=1/9,2/3,2/3,2/9,2/,1"
+      ],
+      "staticKey": "b2b93b2e5b9fea5c4c0af993b97e513b409256b8fbd583abe7380ad6a454695d",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_dd05461255025124be224eafb94c2ab5_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/9,2/3,2/9,2/9,2/,0",
+        "GatherV3/d=1,p=1/9,2/3,2/9,2/9,2/,0"
+      ],
+      "staticKey": "c8cafaf6a06c52e702c7ea96a33166fc1dc524b480c76f222535a8374a91394d",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_e9b6eba7780749dc7a31c6224838748d_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/9,2/3,2/9,2/9,2/,1",
+        "GatherV3/d=1,p=1/9,2/3,2/9,2/9,2/,1"
+      ],
+      "staticKey": "8ca7daaadd7c0607f41e01477d494c6ba7be593912e9c379633f549f75089afa",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_bb06bb463b0afa2fbf42cabfbd210981_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/9,2/9,2/3,2/9,2/,0",
+        "GatherV3/d=1,p=1/9,2/9,2/3,2/9,2/,0"
+      ],
+      "staticKey": "2abf6242b468181374e41de827af2b16d5f2e22f46e30278186c68606a236358",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_57560c15606f858da25e3c1eb57da3e4_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/9,2/9,2/3,2/9,2/,1",
+        "GatherV3/d=1,p=1/9,2/9,2/3,2/9,2/,1"
+      ],
+      "staticKey": "8c5d6d7b8fd432a687da85dd0c561298649a2c520ebcb70b234f9e4be5826bb3",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_f1a815e100e0bcd8f71b4d9d3b4d1603_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/9,2/9,2/9,2/9,2/,0",
+        "GatherV3/d=1,p=1/9,2/9,2/9,2/9,2/,0"
+      ],
+      "staticKey": "f9abc4a2bea9ac7d8ea936f67f6a8e21fe3e31534b68f932168098cd0977b594",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_6e0a7b5d2997737bc58691a24106b5ff_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/9,2/9,2/9,2/9,2/,1",
+        "GatherV3/d=1,p=1/9,2/9,2/9,2/9,2/,1"
+      ],
+      "staticKey": "6bda1af1eabb78b6da966071d905836bfae69980e05cf07f45d3bcc0c6914844",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_74b9cd924a5c863b60883b91341fb252_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/2,2/3,2/3,2/2,2/,0",
+        "GatherV3/d=1,p=1/2,2/3,2/3,2/2,2/,0"
+      ],
+      "staticKey": "9900907414eba168a8b6dd2d6c81169f314b0cc28f5e76435a91c79c8c07a5ec",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_63ed5375687ed184aa642d482c119dc2_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/2,2/3,2/3,2/2,2/,1",
+        "GatherV3/d=1,p=1/2,2/3,2/3,2/2,2/,1"
+      ],
+      "staticKey": "c44ffa3501704dda9b3033042cef48b746117da0b523c6480b8ff6f12cedf9cb",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_89b275c2f1054ba83fbff6d15adc47b8_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/2,2/3,2/9,2/2,2/,0",
+        "GatherV3/d=1,p=1/2,2/3,2/9,2/2,2/,0"
+      ],
+      "staticKey": "13f31fcd29bdf59f312f5cb63c01c27eea9d4ee762572863d269950586da29ad",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_837e702cf823c1cad2aa3c1344655c8a_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/2,2/3,2/9,2/2,2/,1",
+        "GatherV3/d=1,p=1/2,2/3,2/9,2/2,2/,1"
+      ],
+      "staticKey": "2f02e49dc25b1f40d329a98a7076ec91a42a2845ce89238fea40101a91d2759d",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_7e36ea110093284a4ce1543f119d8661_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/2,2/9,2/3,2/2,2/,0",
+        "GatherV3/d=1,p=1/2,2/9,2/3,2/2,2/,0"
+      ],
+      "staticKey": "9c86df63c28f5f115fb6bddbcc52aa649aee7555c762a6828f39a38d580958df",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_1faf38982fe955409b8df5311de85a5b_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/2,2/9,2/3,2/2,2/,1",
+        "GatherV3/d=1,p=1/2,2/9,2/3,2/2,2/,1"
+      ],
+      "staticKey": "ef6287e531a383947cdd75236e264765abb9b98b1190ba0f385e69d72463df48",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_bdac1c58e7a05ad56ca78154b21b57df_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/2,2/9,2/9,2/2,2/,0",
+        "GatherV3/d=1,p=1/2,2/9,2/9,2/2,2/,0"
+      ],
+      "staticKey": "bdb6fd9476fe6228a8d9ccc188eba6f64f74ad10d5ed613e265cc0e320532ce3",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_ad80b7db73592721c30942a54ba123b4_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GatherV3/d=0,p=1/2,2/9,2/9,2/2,2/,1",
+        "GatherV3/d=1,p=1/2,2/9,2/9,2/2,2/,1"
+      ],
+      "staticKey": "552d269e212241d9984639d209f4f562e0ae5509552c877770d730cff41a0921",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "axis",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "dtype_match_mode": "DtypeByte"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "batch_dims",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "negative_index_support",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gather_v3/GatherV3_85fc66915ad4b1641c93736715f1b88b_high_performance.json"
+      }
+    }
+  ]
+}

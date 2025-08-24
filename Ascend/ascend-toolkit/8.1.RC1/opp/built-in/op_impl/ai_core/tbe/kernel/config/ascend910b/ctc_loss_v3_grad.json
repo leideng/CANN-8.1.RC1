@@ -1,0 +1,1444 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3Grad/d=0,p=1/27,2/27,2/9,2/9,2/9,2/27,2/27,2/27,2",
+        "CTCLossV3Grad/d=0,p=0/27,2/27,2/9,2/9,2/9,2/27,2/27,2/27,2",
+        "CTCLossV3Grad/d=1,p=1/27,2/27,2/9,2/9,2/9,2/27,2/27,2/27,2",
+        "CTCLossV3Grad/d=1,p=0/27,2/27,2/9,2/9,2/9,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "a40a71008447c23fa5635e6ff08ac5c5774dc7163bbfa1484a39faa8881b76d4,be5316dc04322c0d3e73d656bc49dda6d430d27c649979ee79bcddd0bfe5bcb6",
+      "inputs": [
+        {
+          "name": "grad_out",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_probs",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 3,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 4,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "neg_log_likelihood",
+          "index": 5,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 6,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3_grad/CTCLossV3Grad_29c31f1cf4ff36cc24e50afde0c7082d_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3Grad/d=0,p=1/1,2/1,2/3,2/3,2/3,2/1,2/1,2/1,2",
+        "CTCLossV3Grad/d=0,p=0/1,2/1,2/3,2/3,2/3,2/1,2/1,2/1,2",
+        "CTCLossV3Grad/d=1,p=1/1,2/1,2/3,2/3,2/3,2/1,2/1,2/1,2",
+        "CTCLossV3Grad/d=1,p=0/1,2/1,2/3,2/3,2/3,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "cb7f4344875d5f11984eb547210571b1dec41add711de2e92c455b4241875d98,6ed49836c1516832c08690e0ca2bbbfeeab561cc84235e22f2d11a7b5ee122bc",
+      "inputs": [
+        {
+          "name": "grad_out",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_probs",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "neg_log_likelihood",
+          "index": 5,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 6,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3_grad/CTCLossV3Grad_41677bc912b290c53075bc95e8a5ecae_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3Grad/d=0,p=1/0,2/0,2/9,2/9,2/9,2/0,2/0,2/0,2",
+        "CTCLossV3Grad/d=0,p=0/0,2/0,2/9,2/9,2/9,2/0,2/0,2/0,2",
+        "CTCLossV3Grad/d=1,p=1/0,2/0,2/9,2/9,2/9,2/0,2/0,2/0,2",
+        "CTCLossV3Grad/d=1,p=0/0,2/0,2/9,2/9,2/9,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "f49d9c8ca42ba3f6cb56186086ea081b133fcd8c1050a33928b8d13e5e48a76a,2aeda266511103c12684c75f968344249c0e92a40c91ba70de989ac9efc469b7",
+      "inputs": [
+        {
+          "name": "grad_out",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_probs",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 3,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 4,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "neg_log_likelihood",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 6,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3_grad/CTCLossV3Grad_613989f5f0c9d37e1262b045c1a1da8c_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3Grad/d=0,p=1/1,2/1,2/9,2/9,2/9,2/1,2/1,2/1,2",
+        "CTCLossV3Grad/d=0,p=0/1,2/1,2/9,2/9,2/9,2/1,2/1,2/1,2",
+        "CTCLossV3Grad/d=1,p=1/1,2/1,2/9,2/9,2/9,2/1,2/1,2/1,2",
+        "CTCLossV3Grad/d=1,p=0/1,2/1,2/9,2/9,2/9,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "d3754e2f92192627c9befae72702bcf8e9c6500dd0e5d6a1e0a14f6c221451cf,913bc0fd69c6b73542ba9bc33a1bc96a981f3eaf07387c9e61ec51588f36730d",
+      "inputs": [
+        {
+          "name": "grad_out",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_probs",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 3,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 4,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "neg_log_likelihood",
+          "index": 5,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 6,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3_grad/CTCLossV3Grad_935020ba82dd3d9f44cf937991b043cf_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3Grad/d=0,p=1/27,2/27,2/3,2/3,2/3,2/27,2/27,2/27,2",
+        "CTCLossV3Grad/d=0,p=0/27,2/27,2/3,2/3,2/3,2/27,2/27,2/27,2",
+        "CTCLossV3Grad/d=1,p=1/27,2/27,2/3,2/3,2/3,2/27,2/27,2/27,2",
+        "CTCLossV3Grad/d=1,p=0/27,2/27,2/3,2/3,2/3,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "28d4532cbb6a0bcfe6ab2b64185b36e7d7f7712810b0c2f3637c9a20c6cf76f7,be683750d2eeec55d8501ba28e3aa03b6fbaad83837853f562dab63bb576f89d",
+      "inputs": [
+        {
+          "name": "grad_out",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_probs",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "neg_log_likelihood",
+          "index": 5,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 6,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3_grad/CTCLossV3Grad_ce44fffbb16d73a4d37126102b2576b4_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3Grad/d=0,p=1/0,2/0,2/3,2/3,2/3,2/0,2/0,2/0,2",
+        "CTCLossV3Grad/d=0,p=0/0,2/0,2/3,2/3,2/3,2/0,2/0,2/0,2",
+        "CTCLossV3Grad/d=1,p=1/0,2/0,2/3,2/3,2/3,2/0,2/0,2/0,2",
+        "CTCLossV3Grad/d=1,p=0/0,2/0,2/3,2/3,2/3,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "1f14b816632179ff7c59e1279f5dec5782599b07c9ba53150812e68db58cc423,86c651af42d74e11a69b5ee7c00027966abc2439e5cbea3c07b07315a4a3d29f",
+      "inputs": [
+        {
+          "name": "grad_out",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_probs",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "neg_log_likelihood",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 6,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3_grad/CTCLossV3Grad_d954288f5f4b2838da6ec62fb7071fc2_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3Grad/d=0,p=1/27,2/27,2/9,2/9,2/9,2/27,2/27,2/27,2",
+        "CTCLossV3Grad/d=0,p=0/27,2/27,2/9,2/9,2/9,2/27,2/27,2/27,2",
+        "CTCLossV3Grad/d=1,p=1/27,2/27,2/9,2/9,2/9,2/27,2/27,2/27,2",
+        "CTCLossV3Grad/d=1,p=0/27,2/27,2/9,2/9,2/9,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "8d6de2a4e4bf712db2aae45b54f8f6d9fe2329ca2af9fb19610b9f88db1edd7f,c1149050b5fb558d221bec720d6ce30bc171207fbb146997754d489726098426",
+      "inputs": [
+        {
+          "name": "grad_out",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_probs",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 3,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 4,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "neg_log_likelihood",
+          "index": 5,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 6,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3_grad/CTCLossV3Grad_29c31f1cf4ff36cc24e50afde0c7082d1_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3Grad/d=0,p=1/1,2/1,2/3,2/3,2/3,2/1,2/1,2/1,2",
+        "CTCLossV3Grad/d=0,p=0/1,2/1,2/3,2/3,2/3,2/1,2/1,2/1,2",
+        "CTCLossV3Grad/d=1,p=1/1,2/1,2/3,2/3,2/3,2/1,2/1,2/1,2",
+        "CTCLossV3Grad/d=1,p=0/1,2/1,2/3,2/3,2/3,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "186f6d5491354b7aba4907e1c04751fc409af4b6423a8d12055e99bc6ca58e4d,be5c60a9b018329acc8dbebaabd13396ab6f1f4b6d8c5b9bd3f32eea51e3b8f1",
+      "inputs": [
+        {
+          "name": "grad_out",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_probs",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "neg_log_likelihood",
+          "index": 5,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 6,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3_grad/CTCLossV3Grad_41677bc912b290c53075bc95e8a5ecae1_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3Grad/d=0,p=1/0,2/0,2/9,2/9,2/9,2/0,2/0,2/0,2",
+        "CTCLossV3Grad/d=0,p=0/0,2/0,2/9,2/9,2/9,2/0,2/0,2/0,2",
+        "CTCLossV3Grad/d=1,p=1/0,2/0,2/9,2/9,2/9,2/0,2/0,2/0,2",
+        "CTCLossV3Grad/d=1,p=0/0,2/0,2/9,2/9,2/9,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "f4c8994eb0aaf538e0c6ed52a9bd1c73811b084e3132533d8ea7a77d87e326d4,07d887a661dc09cf86199edb89a148e378dcab873f334ac2c28ac82423a7e52d",
+      "inputs": [
+        {
+          "name": "grad_out",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_probs",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 3,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 4,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "neg_log_likelihood",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 6,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3_grad/CTCLossV3Grad_613989f5f0c9d37e1262b045c1a1da8c1_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3Grad/d=0,p=1/1,2/1,2/9,2/9,2/9,2/1,2/1,2/1,2",
+        "CTCLossV3Grad/d=0,p=0/1,2/1,2/9,2/9,2/9,2/1,2/1,2/1,2",
+        "CTCLossV3Grad/d=1,p=1/1,2/1,2/9,2/9,2/9,2/1,2/1,2/1,2",
+        "CTCLossV3Grad/d=1,p=0/1,2/1,2/9,2/9,2/9,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "25d288a4ec5dd0202013b281175ee97590ddc58be979c46cafb25b13e93262dd,b261ee1de76f5d8f5e0c38131d11ce68a719771e52dddecc2c8ce83c6c4ac8c7",
+      "inputs": [
+        {
+          "name": "grad_out",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_probs",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 3,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 4,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "neg_log_likelihood",
+          "index": 5,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 6,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3_grad/CTCLossV3Grad_935020ba82dd3d9f44cf937991b043cf1_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3Grad/d=0,p=1/27,2/27,2/3,2/3,2/3,2/27,2/27,2/27,2",
+        "CTCLossV3Grad/d=0,p=0/27,2/27,2/3,2/3,2/3,2/27,2/27,2/27,2",
+        "CTCLossV3Grad/d=1,p=1/27,2/27,2/3,2/3,2/3,2/27,2/27,2/27,2",
+        "CTCLossV3Grad/d=1,p=0/27,2/27,2/3,2/3,2/3,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "ebe34b06d1b98139d0565a8d21aeb17cef71d22b66e365e6b9f307784f5606ae,c46ab346328c6ce5415494865561ce3334e1303caf13b580afe2af49a740f86c",
+      "inputs": [
+        {
+          "name": "grad_out",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_probs",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "neg_log_likelihood",
+          "index": 5,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 6,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3_grad/CTCLossV3Grad_ce44fffbb16d73a4d37126102b2576b41_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3Grad/d=0,p=1/0,2/0,2/3,2/3,2/3,2/0,2/0,2/0,2",
+        "CTCLossV3Grad/d=0,p=0/0,2/0,2/3,2/3,2/3,2/0,2/0,2/0,2",
+        "CTCLossV3Grad/d=1,p=1/0,2/0,2/3,2/3,2/3,2/0,2/0,2/0,2",
+        "CTCLossV3Grad/d=1,p=0/0,2/0,2/3,2/3,2/3,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "1d0b7dcbdfc5a4379b64dcab58cf2ee63736606d2e401a740c12d31c1abda5a1,ca54e3bc97df1e358aaf6cee61565d3f6d67834924fb7a5882482eb397593916",
+      "inputs": [
+        {
+          "name": "grad_out",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_probs",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "neg_log_likelihood",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 6,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3_grad/CTCLossV3Grad_d954288f5f4b2838da6ec62fb7071fc21_high_performance.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CheckValid/d=0,p=0/1,2/1,2/12,2",
+        "CheckValid/d=1,p=0/1,2/1,2/12,2"
+      ],
+      "staticKey": "fab9d5b9e4fa35c3391849330ae71a6f01ffa43837aeb82f1637ceb83fad0571",
+      "inputs": [
+        {
+          "name": "bbox_tensor",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "img_metas",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "valid_tensor",
+          "index": 0,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/check_valid/CheckValid_493c5303765d8d03bed3dd3e01206ee8_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CheckValid/d=0,p=0/1,2/1,2/2,2",
+        "CheckValid/d=1,p=0/1,2/1,2/2,2"
+      ],
+      "staticKey": "a9d7e6eb4b4c415630df7da94253712f724881ffa7d7b669e9ddb121d16911f7",
+      "inputs": [
+        {
+          "name": "bbox_tensor",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "img_metas",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "valid_tensor",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/check_valid/CheckValid_a849da3af01a85510f176da51b124a34_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CheckValid/d=0,p=0/0,2/0,2/12,2",
+        "CheckValid/d=1,p=0/0,2/0,2/12,2"
+      ],
+      "staticKey": "2f13550e83999705538acdcd56349dcbceed3b86b99ca3f662e6377ab0004aa3",
+      "inputs": [
+        {
+          "name": "bbox_tensor",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "img_metas",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "valid_tensor",
+          "index": 0,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/check_valid/CheckValid_001_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CheckValid/d=0,p=0/0,2/0,2/2,2",
+        "CheckValid/d=1,p=0/0,2/0,2/2,2"
+      ],
+      "staticKey": "b832a5a1de663a1c1dd9d38ae8c7dcb053591d9ad9c6ab259be4a10d7d729404",
+      "inputs": [
+        {
+          "name": "bbox_tensor",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "img_metas",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "valid_tensor",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/check_valid/CheckValid_002_high_performance.json"
+      }
+    }
+  ]
+}

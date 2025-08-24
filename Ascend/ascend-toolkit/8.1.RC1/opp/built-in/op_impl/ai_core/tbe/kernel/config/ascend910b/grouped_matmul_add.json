@@ -1,0 +1,194 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupedMatmulAdd/d=0,p=1/1,2/1,2/9,2/0,2/0,2",
+        "GroupedMatmulAdd/d=0,p=0/1,2/1,2/9,2/0,2/0,2",
+        "GroupedMatmulAdd/d=1,p=1/1,2/1,2/9,2/0,2/0,2",
+        "GroupedMatmulAdd/d=1,p=0/1,2/1,2/9,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "604b0a1c7408f6068aea719167f30a2bfb6b8f5bcee970de02d5df62334fd3c4,19e720df4c30e9fbb191d9c1441d8bbe6c3ccc95d16cfc5c71328012aa98460a",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "weight",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "group_list",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "y",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "transpose_weight",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "group_type",
+          "dtype": "int",
+          "value": 2
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grouped_matmul_add/GroupedMatmulAdd_fp16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupedMatmulAdd/d=0,p=1/27,2/27,2/9,2/0,2/0,2",
+        "GroupedMatmulAdd/d=0,p=0/27,2/27,2/9,2/0,2/0,2",
+        "GroupedMatmulAdd/d=1,p=1/27,2/27,2/9,2/0,2/0,2",
+        "GroupedMatmulAdd/d=1,p=0/27,2/27,2/9,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "1333ee02a1208f7aea4dca4d2e87b6f03392e7a326d0289458b85c24c5e77812,2a93de228a85133bd39d514495079305d6644ce86bee5549f391051af695fbd6",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "weight",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "group_list",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "y",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "transpose_weight",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "group_type",
+          "dtype": "int",
+          "value": 2
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grouped_matmul_add/GroupedMatmulAdd_bf16_high_performance.json"
+      }
+    }
+  ]
+}

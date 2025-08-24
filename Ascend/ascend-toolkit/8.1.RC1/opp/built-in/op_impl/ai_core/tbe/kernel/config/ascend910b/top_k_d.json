@@ -1,0 +1,1012 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "TopKD/d=0,p=0/27,2/1,2/27,2/3,2/,0,,0",
+        "TopKD/d=1,p=0/27,2/1,2/27,2/3,2/,0,,0"
+      ],
+      "staticKey": "9ad27a2771e2f9608facf329a6c2acb74ccd0d5e39d02b9692d9316f853d83a2",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "assist_seq",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "values",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "k",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sorted",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "largest",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/top_k_d/TopKD_40a4744e1582296aa642441327370ab5_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "TopKD/d=0,p=0/27,2/1,2/27,2/3,2/,0,,1",
+        "TopKD/d=1,p=0/27,2/1,2/27,2/3,2/,0,,1"
+      ],
+      "staticKey": "9df541b2abfae4060d8f2ee8e70cb503c80c361a34ef1c524ebbeacd80fb27ce",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "assist_seq",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "values",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "k",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sorted",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "largest",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/top_k_d/TopKD_a83b4d8ed23655416f19cb541724d240_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "TopKD/d=0,p=0/27,2/1,2/27,2/3,2/,1,,0",
+        "TopKD/d=1,p=0/27,2/1,2/27,2/3,2/,1,,0"
+      ],
+      "staticKey": "c4520a7eebed9bc10ac022dfaead0543bdfc3e23d58c59b8d9f82a4bd288b589",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "assist_seq",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "values",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "k",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sorted",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "largest",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/top_k_d/TopKD_6f8d846b53af1c061f5d2f2c29c96374_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "TopKD/d=0,p=0/27,2/1,2/27,2/3,2/,1,,1",
+        "TopKD/d=1,p=0/27,2/1,2/27,2/3,2/,1,,1"
+      ],
+      "staticKey": "63714612eea059d15c318f1a60e9f12ff39465c46540fbead62ca11e02e68389",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "assist_seq",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "values",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "k",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sorted",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "largest",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/top_k_d/TopKD_f6c76e33f11020bd3e64847a58fe4089_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "TopKD/d=0,p=0/1,2/1,2/1,2/3,2/,0,,0",
+        "TopKD/d=1,p=0/1,2/1,2/1,2/3,2/,0,,0"
+      ],
+      "staticKey": "fe8354a3d2e5ee128708c647eb1340884fe06194d5ea9116f2a6206a010599a8",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "assist_seq",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "values",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "k",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sorted",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "largest",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/top_k_d/TopKD_598569c3cf0de155117d9a6cc5e91ae3_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "TopKD/d=0,p=0/1,2/1,2/1,2/3,2/,0,,1",
+        "TopKD/d=1,p=0/1,2/1,2/1,2/3,2/,0,,1"
+      ],
+      "staticKey": "d1b35852408f681a14ba6176c19d4ac0757a7542d877045a5951cd4cb3b6a491",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "assist_seq",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "values",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "k",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sorted",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "largest",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/top_k_d/TopKD_187e5778c94383a7ff100c9565ba192d_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "TopKD/d=0,p=0/1,2/1,2/1,2/3,2/,1,,0",
+        "TopKD/d=1,p=0/1,2/1,2/1,2/3,2/,1,,0"
+      ],
+      "staticKey": "4bbac56ab3dcf7cbfed80f6e1f5e92710ac1f0ccdc4c5e7245aea50c5215f5eb",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "assist_seq",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "values",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "k",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sorted",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "largest",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/top_k_d/TopKD_d04f14d5155d9313e25f82d712b51c52_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "TopKD/d=0,p=0/1,2/1,2/1,2/3,2/,1,,1",
+        "TopKD/d=1,p=0/1,2/1,2/1,2/3,2/,1,,1"
+      ],
+      "staticKey": "4f3745bd587c355bda7a502d8955922109c33dc05e1b055de61cb0ccc1e01236",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "assist_seq",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "values",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "k",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sorted",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "largest",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/top_k_d/TopKD_3c0ca23a4661048d2cdc48d9d5412d3c_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "TopKD/d=0,p=0/0,2/1,2/0,2/3,2/,0,,0",
+        "TopKD/d=1,p=0/0,2/1,2/0,2/3,2/,0,,0"
+      ],
+      "staticKey": "c849ca47e06e8c91e2af347afc952e999fa4615017f30771cd45f94bb3de777d",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "assist_seq",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "values",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "k",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sorted",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "largest",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/top_k_d/TopKD_f95283e82794acba199eb99fac061c60_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "TopKD/d=0,p=0/0,2/1,2/0,2/3,2/,0,,1",
+        "TopKD/d=1,p=0/0,2/1,2/0,2/3,2/,0,,1"
+      ],
+      "staticKey": "803d29044f4bc71c3df6fafdad220e7122ca42d6e3f8e991b18f5ca63eb7ddca",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "assist_seq",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "values",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "k",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sorted",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "largest",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/top_k_d/TopKD_853a45066b185f2ef04009387eb769b6_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "TopKD/d=0,p=0/0,2/1,2/0,2/3,2/,1,,0",
+        "TopKD/d=1,p=0/0,2/1,2/0,2/3,2/,1,,0"
+      ],
+      "staticKey": "8a7576d2fa1ba910cb8411876e83fccafa2974789d648b12b2e058806707cdfe",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "assist_seq",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "values",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "k",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sorted",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "largest",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/top_k_d/TopKD_c7a73825f920fa25e7da925ed8173b02_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "TopKD/d=0,p=0/0,2/1,2/0,2/3,2/,1,,1",
+        "TopKD/d=1,p=0/0,2/1,2/0,2/3,2/,1,,1"
+      ],
+      "staticKey": "a55c0a9e40d15b2d779dec62429a70e0dbdf2c33b37fd9113e5e6741ce83df63",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "assist_seq",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "values",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "k",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "sorted",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "largest",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/top_k_d/TopKD_1aafd665bf3b948599115b13911c80f4_high_performance.json"
+      }
+    }
+  ]
+}

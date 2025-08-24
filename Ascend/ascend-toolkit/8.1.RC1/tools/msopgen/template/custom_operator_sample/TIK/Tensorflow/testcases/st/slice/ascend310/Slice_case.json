@@ -1,0 +1,79 @@
+[{
+	"case_name": "test_slice_001",
+	"op": "Slice",
+	"calc_expect_func_file": "",
+	"gui_calc_expect_func_file": "",
+	"fuzz_impl": "",
+	"user_fuzz_impl": "",
+	"input_desc": [{
+			"name": "x",
+			"format": "ND",
+			"type": "int32",
+			"shape": [
+				5,
+				13,
+				4
+			],
+			"value_range": [
+				[
+					0,
+					5
+				]
+			],
+			"data_distribute": "uniform"
+		},
+		{
+			"name": "offsets",
+			"format": "ND",
+			"type": "int32",
+			"shape": [
+				3
+			],
+			"value_range": [
+				[
+					0,
+					5
+				]
+			],
+			"data_distribute": "uniform",
+			"value": [
+				0,
+				1,
+				1
+			],
+			"is_const": true
+		},
+		{
+			"name": "size",
+			"format": "ND",
+			"type": "int32",
+			"shape": [
+				3
+			],
+			"value_range": [
+				[
+					0,
+					5
+				]
+			],
+			"data_distribute": "uniform",
+			"value": [
+				2,
+				12,
+				3
+			],
+			"is_const": true
+		}
+	],
+	"output_desc": [{
+		"name": "y",
+		"format": "ND",
+		"type": "int32",
+		"shape": [
+			2,
+			12,
+			3
+		]
+	}],
+	"attr": []
+}]

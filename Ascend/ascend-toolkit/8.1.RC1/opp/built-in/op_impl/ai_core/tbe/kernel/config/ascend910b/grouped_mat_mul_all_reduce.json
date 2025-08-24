@@ -1,0 +1,212 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupedMatMulAllReduce/d=0,p=1/27,2/27,2/0,2/27,2",
+        "GroupedMatMulAllReduce/d=0,p=0/27,2/27,2/0,2/27,2",
+        "GroupedMatMulAllReduce/d=1,p=1/27,2/27,2/0,2/27,2",
+        "GroupedMatMulAllReduce/d=1,p=0/27,2/27,2/0,2/27,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "4428ca23f1fb51a7d5e544f42d66b3e23002773e7ddda40594d68dab0b64b5d4,126f09e96d8908786e4f0974b05330a5cf8e3de5e01da1c889647b2aa3d99de4",
+      "inputs": [
+        [
+          {
+            "name": "x",
+            "index": 0,
+            "dtype": "bfloat16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ],
+        [
+          {
+            "name": "weight",
+            "index": 1,
+            "dtype": "bfloat16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ],
+        [
+          {
+            "name": "bias",
+            "index": 2,
+            "dtype": "float32",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ],
+        {
+          "name": "group_list",
+          "index": 3,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        [
+          {
+            "name": "y",
+            "index": 0,
+            "dtype": "bfloat16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ]
+      ],
+      "attrs": [
+        {
+          "name": "splitItem",
+          "dtype": "int64",
+          "value": 0
+        },
+        {
+          "name": "group",
+          "dtype": "string",
+          "value": ""
+        },
+        {
+          "name": "reduceOp",
+          "dtype": "string",
+          "value": "sum"
+        },
+        {
+          "name": "commTurn",
+          "dtype": "int64",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grouped_mat_mul_all_reduce/GroupedMatMulAllReduce_ND_ND_BF16_BF16_BF16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupedMatMulAllReduce/d=0,p=1/1,2/1,2/1,2/1,2",
+        "GroupedMatMulAllReduce/d=0,p=0/1,2/1,2/1,2/1,2",
+        "GroupedMatMulAllReduce/d=1,p=1/1,2/1,2/1,2/1,2",
+        "GroupedMatMulAllReduce/d=1,p=0/1,2/1,2/1,2/1,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "17346e1a2841f8c581faefe422ed8f04cda6fe57a7a88e4bd860eac5b3b02d39,56349307a570f135821bd7bd4fef2dc44e5a4f28b69613ee300e98af38610318",
+      "inputs": [
+        [
+          {
+            "name": "x",
+            "index": 0,
+            "dtype": "float16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ],
+        [
+          {
+            "name": "weight",
+            "index": 1,
+            "dtype": "float16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ],
+        [
+          {
+            "name": "bias",
+            "index": 2,
+            "dtype": "float16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ],
+        {
+          "name": "group_list",
+          "index": 3,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        [
+          {
+            "name": "y",
+            "index": 0,
+            "dtype": "float16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ]
+      ],
+      "attrs": [
+        {
+          "name": "splitItem",
+          "dtype": "int64",
+          "value": 0
+        },
+        {
+          "name": "group",
+          "dtype": "string",
+          "value": ""
+        },
+        {
+          "name": "reduceOp",
+          "dtype": "string",
+          "value": "sum"
+        },
+        {
+          "name": "commTurn",
+          "dtype": "int64",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grouped_mat_mul_all_reduce/GroupedMatMulAllReduce_ND_ND_FP16_FP16_FP16_high_performance.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+[
+    {
+        "case_name": "Test_SpaceToDepth_001",
+        "op": "SpaceToDepth",
+        "input_desc": [
+            {
+                "format": [
+                    "NHWC"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    100,
+                    87,
+                    870,
+                    11
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "x"
+            },
+            {
+                "format": [
+                    "UNDEFINED"
+                ],
+                "type": [
+                    "UNDEFINED"
+                ],
+                "shape": [],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "filter"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "NHWC"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    100,
+                    87,
+                    870,
+                    11
+                ],
+                "name": "y"
+            }
+        ],
+        "attr": [
+            {
+                "name": "block_size",
+                "type": "int",
+                "value": 87
+            },
+            {
+                "name": "data_format",
+                "type": "string",
+                "value": "NHWC"
+            }
+        ]
+    }
+]

@@ -1,0 +1,94 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GridSampler3DGrad/d=0,p=1/0,2/0,2/0,2/0,2/0,2",
+        "GridSampler3DGrad/d=0,p=0/0,2/0,2/0,2/0,2/0,2",
+        "GridSampler3DGrad/d=1,p=1/0,2/0,2/0,2/0,2/0,2",
+        "GridSampler3DGrad/d=1,p=0/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "9be5f4bae61cac59e2e0254d0f9b38ba2d85349abd14bf441b341755bb4338fd,d238d61336eba935f9f30b9f1fe8e1f04055d5f9553a6530948130c79ce77177",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grid",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgrid",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "interpolation_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "padding_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grid_sampler3_d_grad/GridSampler3DGrad_d23cef93fff814791ef8041ed2fc7e93_high_performance.json"
+      }
+    }
+  ]
+}

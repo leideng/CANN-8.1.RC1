@@ -1,0 +1,364 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RepeatInterleaveGrad/d=0,p=1/1,2/3,2/1,2",
+        "RepeatInterleaveGrad/d=0,p=0/1,2/3,2/1,2",
+        "RepeatInterleaveGrad/d=1,p=1/1,2/3,2/1,2",
+        "RepeatInterleaveGrad/d=1,p=0/1,2/3,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "762c2c46d2588310c5324df253acf83321e87542dbc9580490942d315f94513f,ac0a91e3a4431f181d5f5bf4e689962e37f37952f975b6aa4f4913b151d04748",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "repeats",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/repeat_interleave_grad/RepeatInterleaveGrad_0_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RepeatInterleaveGrad/d=0,p=1/27,2/3,2/27,2",
+        "RepeatInterleaveGrad/d=0,p=0/27,2/3,2/27,2",
+        "RepeatInterleaveGrad/d=1,p=1/27,2/3,2/27,2",
+        "RepeatInterleaveGrad/d=1,p=0/27,2/3,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "eab8c58fc06c4cefcc793c083b11cd381ddb94fe122e3906ae586aa9fd559a2d,b3183f68eae42c44afc4ccdd4d65ba0fe6389d99dc95c2ff63c45940f7d07d56",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "repeats",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/repeat_interleave_grad/RepeatInterleaveGrad_1_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RepeatInterleaveGrad/d=0,p=1/0,2/3,2/0,2",
+        "RepeatInterleaveGrad/d=0,p=0/0,2/3,2/0,2",
+        "RepeatInterleaveGrad/d=1,p=1/0,2/3,2/0,2",
+        "RepeatInterleaveGrad/d=1,p=0/0,2/3,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "3d93e997352d308d14734b84f778fad999a86fd0d49b3a59cb353149712a3d6c,bd58c54eb3381f19f343fa40ff662d8b182ef57c22e28bfe2b130973a97a7c6f",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "repeats",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/repeat_interleave_grad/RepeatInterleaveGrad_2_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RepeatInterleaveGrad/d=0,p=1/1,2/9,2/1,2",
+        "RepeatInterleaveGrad/d=0,p=0/1,2/9,2/1,2",
+        "RepeatInterleaveGrad/d=1,p=1/1,2/9,2/1,2",
+        "RepeatInterleaveGrad/d=1,p=0/1,2/9,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "d604753c5263756be867bc999bb55be9279bb9fe48aa4b56406bb30dea710df4,e5fec2f52287429c1f23b3de2b0528d0f3c3d4571badb8915673ad8ff30d908d",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "repeats",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/repeat_interleave_grad/RepeatInterleaveGrad_3_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RepeatInterleaveGrad/d=0,p=1/27,2/9,2/27,2",
+        "RepeatInterleaveGrad/d=0,p=0/27,2/9,2/27,2",
+        "RepeatInterleaveGrad/d=1,p=1/27,2/9,2/27,2",
+        "RepeatInterleaveGrad/d=1,p=0/27,2/9,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "dd8d52846a8a25f1e3af3df685c1f846faee4429967876a7c92987bd1cc8f87d,773e288920da2d935ebcbbc29064c88aa2d846b0131c19f7d1e227984db8d88a",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "repeats",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/repeat_interleave_grad/RepeatInterleaveGrad_4_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RepeatInterleaveGrad/d=0,p=1/0,2/9,2/0,2",
+        "RepeatInterleaveGrad/d=0,p=0/0,2/9,2/0,2",
+        "RepeatInterleaveGrad/d=1,p=1/0,2/9,2/0,2",
+        "RepeatInterleaveGrad/d=1,p=0/0,2/9,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "372f159fce52d62d556978d8f293bc346e1e9ed7699b951b5af9b13d48dfae4d,a6274213578de7ce46b46c2b89015226cae5d9dca953ce2b6468f68ea2ee6fb9",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "repeats",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/repeat_interleave_grad/RepeatInterleaveGrad_5_high_performance.json"
+      }
+    }
+  ]
+}

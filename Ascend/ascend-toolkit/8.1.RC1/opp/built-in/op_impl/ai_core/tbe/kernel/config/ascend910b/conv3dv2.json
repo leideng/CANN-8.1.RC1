@@ -1,0 +1,1453 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "583945e5216a29c9d17791295240e1c17e12e49202e6aa03f20581f9b0dd7526,c4b8ce68ff9868a64593147a537cda9b3b388c42f332b9b6ebe1a05bd73f05c2",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NDC1HWC0",
+          "ori_format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "filter",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_Z_3D",
+          "ori_format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "ori_format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -1
+          ],
+          "ori_shape": [
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "offset_w",
+          "index": 3,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -1
+          ],
+          "ori_shape": [
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NDC1HWC0",
+          "ori_format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCDHW"
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/conv3dv2/Conv3DV2_NDC1HWC0_BF16_FRACTAL_Z_3D_BF16_FP32_NDC1HWC0_BF16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "74d3a051e7c8890e589bf493ade5dc7001d840b44d1545055728b946fc0268ee,6cd35e1405cb22ab017d78b492917755b8721c4f8948ad67725236d2503da0b4",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NDC1HWC0",
+          "ori_format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "filter",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_Z_3D",
+          "ori_format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "ori_format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -1
+          ],
+          "ori_shape": [
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "offset_w",
+          "index": 3,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -1
+          ],
+          "ori_shape": [
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NDC1HWC0",
+          "ori_format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCDHW"
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/conv3dv2/Conv3DV2_NDC1HWC0_FP32_FRACTAL_Z_3D_FP32_FP32_NDC1HWC0_FP32_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "b0090add63d5e14d226b8e2dddd03118c791da4404aa12f88bcf29c082cf44da,4b19fd9b4eae8eac7b895ce289d95bf70d9c0dc30362cea273729b0c88a9dedc",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NDC1HWC0",
+          "ori_format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "filter",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_Z_3D",
+          "ori_format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -1
+          ],
+          "ori_shape": [
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "offset_w",
+          "index": 3,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -1
+          ],
+          "ori_shape": [
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NDC1HWC0",
+          "ori_format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCDHW"
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/conv3dv2/Conv3DV2_NDC1HWC0_FP16_FRACTAL_Z_3D_FP16_FP16_NDC1HWC0_FP16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "2089197d7f9b67f21077b244faaba9e408b96a685b675d32f7909dab41e3f436,8c56950142d2763b507ed760038b4ce83f1d2501d54ef414aff4094b6674fb2f",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NCDHW",
+          "ori_format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "filter",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "NCDHW",
+          "ori_format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "ori_format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -1
+          ],
+          "ori_shape": [
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "offset_w",
+          "index": 3,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -1
+          ],
+          "ori_shape": [
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NCDHW",
+          "ori_format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCDHW"
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/conv3dv2/Conv3DV2_NCDHW_BF16_NCDHW_BF16_FP32_NCDHW_BF16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "bbab92c08f74961f21e0eb2d97e212bbd9726d3b0d83be444dd62dbf9fba513d,b97b7a188f66dbb5443d7f922917d3d470da027228486f4c506e4f2ae986c546",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCDHW",
+          "ori_format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "filter",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NCDHW",
+          "ori_format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "ori_format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -1
+          ],
+          "ori_shape": [
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "offset_w",
+          "index": 3,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -1
+          ],
+          "ori_shape": [
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCDHW",
+          "ori_format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCDHW"
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/conv3dv2/Conv3DV2_NCDHW_FP32_NCDHW_FP32_FP32_NCDHW_FP32_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "d226706f67a0fbdc9f7836f979f9850b2aa242a4c5154cf4d748b73758b85c72,ab5879c10027aeb088c884a3836b06ef807e5d7e20cf4f2f560121104e0b89f9",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCDHW",
+          "ori_format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "filter",
+          "index": 1,
+          "dtype": "float16",
+          "format": "NCDHW",
+          "ori_format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "ori_format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -1
+          ],
+          "ori_shape": [
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ]
+          ]
+        },
+        {
+          "name": "offset_w",
+          "index": 3,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -1
+          ],
+          "ori_shape": [
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCDHW",
+          "ori_format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCDHW"
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/conv3dv2/Conv3DV2_NCDHW_FP16_NCDHW_FP16_FP32_NCDHW_FP16_high_performance.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4972 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "FusedInferAttentionScore/d=0,p=1/2,2/2,2/2,2/1,2/0,2",
+        "FusedInferAttentionScore/d=0,p=0/2,2/2,2/2,2/1,2/0,2",
+        "FusedInferAttentionScore/d=1,p=1/2,2/2,2/2,2/1,2/0,2",
+        "FusedInferAttentionScore/d=1,p=0/2,2/2,2/2,2/1,2/0,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "staticKey": "639ed267f632b995a415c9c6e9286b9a6e6d29b6d27e9312c88a2e82451377a1,546ddc2f15f6f32a921a7b599e2c0e32d89961871b4415c654d7958cfdbfc68c",
+      "inputs": [
+        {
+          "name": "query",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        [
+          {
+            "name": "key",
+            "index": 1,
+            "dtype": "int8",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        [
+          {
+            "name": "value",
+            "index": 2,
+            "dtype": "int8",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        {
+          "name": "pse_shift",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "atten_mask",
+          "index": 4,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths",
+          "index": 5,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths_kv",
+          "index": 6,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale1",
+          "index": 7,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale1",
+          "index": 8,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale2",
+          "index": 9,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale2",
+          "index": 10,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_offset2",
+          "index": 11,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 12,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 13,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "block_table",
+          "index": 14,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_padding_size",
+          "index": 15,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "kv_padding_size",
+          "index": 16,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_scale",
+          "index": 17,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_offset",
+          "index": 18,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_scale",
+          "index": 19,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_offset",
+          "index": 20,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_shared_prefix",
+          "index": 21,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_shared_prefix",
+          "index": 22,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_shared_prefix_len",
+          "index": 23,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_rope",
+          "index": 24,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope",
+          "index": 25,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope_antiquant_scale",
+          "index": 26,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "attention_out",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "softmax_lse",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "pre_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "next_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "input_layout",
+          "dtype": "str",
+          "value": ""
+        },
+        {
+          "name": "num_key_value_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "sparse_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "inner_precise",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "softmax_lse_flag",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "key_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "value_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "optionalOutputMode": "gen_placeholder",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/fused_infer_attention_score/FusedInferAttentionScore_0ee41be630ae47e5130b075378909838.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "FusedInferAttentionScore/d=0,p=1/27,2/27,2/27,2/2,2/0,2",
+        "FusedInferAttentionScore/d=0,p=0/27,2/27,2/27,2/2,2/0,2",
+        "FusedInferAttentionScore/d=1,p=1/27,2/27,2/27,2/2,2/0,2",
+        "FusedInferAttentionScore/d=1,p=0/27,2/27,2/27,2/2,2/0,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "staticKey": "62b475d5b3a5204f0fd02eee993806a86be1ab7aa36d8f203adb174eb32938b6,6b8c8ce76ec26d5524cee08768611b4b0e58be3400a9812eae668869264516b6",
+      "inputs": [
+        {
+          "name": "query",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        [
+          {
+            "name": "key",
+            "index": 1,
+            "dtype": "bfloat16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        [
+          {
+            "name": "value",
+            "index": 2,
+            "dtype": "bfloat16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        {
+          "name": "pse_shift",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "atten_mask",
+          "index": 4,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths",
+          "index": 5,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths_kv",
+          "index": 6,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale1",
+          "index": 7,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale1",
+          "index": 8,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale2",
+          "index": 9,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale2",
+          "index": 10,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_offset2",
+          "index": 11,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 12,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 13,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "block_table",
+          "index": 14,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_padding_size",
+          "index": 15,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "kv_padding_size",
+          "index": 16,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_scale",
+          "index": 17,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_offset",
+          "index": 18,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_scale",
+          "index": 19,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_offset",
+          "index": 20,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_shared_prefix",
+          "index": 21,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_shared_prefix",
+          "index": 22,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_shared_prefix_len",
+          "index": 23,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_rope",
+          "index": 24,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope",
+          "index": 25,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope_antiquant_scale",
+          "index": 26,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "attention_out",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "softmax_lse",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "pre_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "next_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "input_layout",
+          "dtype": "str",
+          "value": ""
+        },
+        {
+          "name": "num_key_value_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "sparse_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "inner_precise",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "softmax_lse_flag",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "key_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "value_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "optionalOutputMode": "gen_placeholder",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/fused_infer_attention_score/FusedInferAttentionScore_240724ced1fb04e4018ac50a48d67485.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "FusedInferAttentionScore/d=0,p=1/27,2/2,2/2,2/2,2/0,2",
+        "FusedInferAttentionScore/d=0,p=0/27,2/2,2/2,2/2,2/0,2",
+        "FusedInferAttentionScore/d=1,p=1/27,2/2,2/2,2/2,2/0,2",
+        "FusedInferAttentionScore/d=1,p=0/27,2/2,2/2,2/2,2/0,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "staticKey": "6d645e6dcd52b8226ca4946052b2fce18b6db6eb304b68dd9648f63e27cc0135,8b0e1ba07027195714c723801edd8ee4701377ee92846fa854cd5c5b023d34f2",
+      "inputs": [
+        {
+          "name": "query",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        [
+          {
+            "name": "key",
+            "index": 1,
+            "dtype": "int8",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        [
+          {
+            "name": "value",
+            "index": 2,
+            "dtype": "int8",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        {
+          "name": "pse_shift",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "atten_mask",
+          "index": 4,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths",
+          "index": 5,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths_kv",
+          "index": 6,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale1",
+          "index": 7,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale1",
+          "index": 8,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale2",
+          "index": 9,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale2",
+          "index": 10,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_offset2",
+          "index": 11,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 12,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 13,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "block_table",
+          "index": 14,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_padding_size",
+          "index": 15,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "kv_padding_size",
+          "index": 16,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_scale",
+          "index": 17,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_offset",
+          "index": 18,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_scale",
+          "index": 19,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_offset",
+          "index": 20,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_shared_prefix",
+          "index": 21,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_shared_prefix",
+          "index": 22,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_shared_prefix_len",
+          "index": 23,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_rope",
+          "index": 24,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope",
+          "index": 25,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope_antiquant_scale",
+          "index": 26,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "attention_out",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "softmax_lse",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "pre_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "next_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "input_layout",
+          "dtype": "str",
+          "value": ""
+        },
+        {
+          "name": "num_key_value_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "sparse_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "inner_precise",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "softmax_lse_flag",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "key_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "value_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "optionalOutputMode": "gen_placeholder",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/fused_infer_attention_score/FusedInferAttentionScore_37f25008a2cab6731a513272bf332688.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "FusedInferAttentionScore/d=0,p=1/27,2/27,2/27,2/27,2/0,2",
+        "FusedInferAttentionScore/d=0,p=0/27,2/27,2/27,2/27,2/0,2",
+        "FusedInferAttentionScore/d=1,p=1/27,2/27,2/27,2/27,2/0,2",
+        "FusedInferAttentionScore/d=1,p=0/27,2/27,2/27,2/27,2/0,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "staticKey": "d62d7c962621b24a2cf1dfec3141e1879a75415333143cfaa9bf14fe1502c4ba,37430fa8ea1354eaff9dfbe2216e7a33949269790b4d9a408e4b5968fb7bd3cb",
+      "inputs": [
+        {
+          "name": "query",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        [
+          {
+            "name": "key",
+            "index": 1,
+            "dtype": "bfloat16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        [
+          {
+            "name": "value",
+            "index": 2,
+            "dtype": "bfloat16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        {
+          "name": "pse_shift",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "atten_mask",
+          "index": 4,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths",
+          "index": 5,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths_kv",
+          "index": 6,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale1",
+          "index": 7,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale1",
+          "index": 8,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale2",
+          "index": 9,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale2",
+          "index": 10,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_offset2",
+          "index": 11,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 12,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 13,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "block_table",
+          "index": 14,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_padding_size",
+          "index": 15,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "kv_padding_size",
+          "index": 16,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_scale",
+          "index": 17,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_offset",
+          "index": 18,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_scale",
+          "index": 19,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_offset",
+          "index": 20,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_shared_prefix",
+          "index": 21,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_shared_prefix",
+          "index": 22,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_shared_prefix_len",
+          "index": 23,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_rope",
+          "index": 24,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope",
+          "index": 25,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope_antiquant_scale",
+          "index": 26,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "attention_out",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "softmax_lse",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "pre_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "next_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "input_layout",
+          "dtype": "str",
+          "value": ""
+        },
+        {
+          "name": "num_key_value_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "sparse_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "inner_precise",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "softmax_lse_flag",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "key_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "value_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "optionalOutputMode": "gen_placeholder",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/fused_infer_attention_score/FusedInferAttentionScore_5b333b32f2e17033216afc8caff9c59e.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "FusedInferAttentionScore/d=0,p=1/1,2/1,2/1,2/2,2/0,2",
+        "FusedInferAttentionScore/d=0,p=0/1,2/1,2/1,2/2,2/0,2",
+        "FusedInferAttentionScore/d=1,p=1/1,2/1,2/1,2/2,2/0,2",
+        "FusedInferAttentionScore/d=1,p=0/1,2/1,2/1,2/2,2/0,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "staticKey": "110be42af9cfd589322ab54ed282ff40bd7c6ff337b0a624f892b1d0b3f8f770,227952815742df899704e6a34e61fcde251377cc74f615aea1f5ea80055f76d8",
+      "inputs": [
+        {
+          "name": "query",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        [
+          {
+            "name": "key",
+            "index": 1,
+            "dtype": "float16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        [
+          {
+            "name": "value",
+            "index": 2,
+            "dtype": "float16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        {
+          "name": "pse_shift",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "atten_mask",
+          "index": 4,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths",
+          "index": 5,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths_kv",
+          "index": 6,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale1",
+          "index": 7,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale1",
+          "index": 8,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale2",
+          "index": 9,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale2",
+          "index": 10,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_offset2",
+          "index": 11,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 12,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 13,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "block_table",
+          "index": 14,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_padding_size",
+          "index": 15,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "kv_padding_size",
+          "index": 16,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_scale",
+          "index": 17,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_offset",
+          "index": 18,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_scale",
+          "index": 19,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_offset",
+          "index": 20,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_shared_prefix",
+          "index": 21,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_shared_prefix",
+          "index": 22,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_shared_prefix_len",
+          "index": 23,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_rope",
+          "index": 24,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope",
+          "index": 25,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope_antiquant_scale",
+          "index": 26,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "attention_out",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "softmax_lse",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "pre_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "next_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "input_layout",
+          "dtype": "str",
+          "value": ""
+        },
+        {
+          "name": "num_key_value_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "sparse_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "inner_precise",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "softmax_lse_flag",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "key_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "value_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "optionalOutputMode": "gen_placeholder",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/fused_infer_attention_score/FusedInferAttentionScore_6aa9b424936ca0d8f92fe8c95e69ab23.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "FusedInferAttentionScore/d=0,p=1/1,2/2,2/2,2/1,2/0,2",
+        "FusedInferAttentionScore/d=0,p=0/1,2/2,2/2,2/1,2/0,2",
+        "FusedInferAttentionScore/d=1,p=1/1,2/2,2/2,2/1,2/0,2",
+        "FusedInferAttentionScore/d=1,p=0/1,2/2,2/2,2/1,2/0,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "staticKey": "07d864b228c664a8598390aae6db444a3f3605b616902568c536e5fc7a7efd6f,38007f85e98d26c325214a7d1bfe4e05d4c8f0135ac8f1e2150d3d8744ff1509",
+      "inputs": [
+        {
+          "name": "query",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        [
+          {
+            "name": "key",
+            "index": 1,
+            "dtype": "int8",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        [
+          {
+            "name": "value",
+            "index": 2,
+            "dtype": "int8",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        {
+          "name": "pse_shift",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "atten_mask",
+          "index": 4,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths",
+          "index": 5,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths_kv",
+          "index": 6,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale1",
+          "index": 7,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale1",
+          "index": 8,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale2",
+          "index": 9,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale2",
+          "index": 10,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_offset2",
+          "index": 11,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 12,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 13,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "block_table",
+          "index": 14,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_padding_size",
+          "index": 15,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "kv_padding_size",
+          "index": 16,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_scale",
+          "index": 17,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_offset",
+          "index": 18,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_scale",
+          "index": 19,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_offset",
+          "index": 20,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_shared_prefix",
+          "index": 21,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_shared_prefix",
+          "index": 22,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_shared_prefix_len",
+          "index": 23,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_rope",
+          "index": 24,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope",
+          "index": 25,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope_antiquant_scale",
+          "index": 26,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "attention_out",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "softmax_lse",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "pre_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "next_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "input_layout",
+          "dtype": "str",
+          "value": ""
+        },
+        {
+          "name": "num_key_value_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "sparse_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "inner_precise",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "softmax_lse_flag",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "key_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "value_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "optionalOutputMode": "gen_placeholder",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/fused_infer_attention_score/FusedInferAttentionScore_6ce8948b88f2953647c27ffbd09cc416.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "FusedInferAttentionScore/d=0,p=1/1,2/29,2/29,2/1,2/0,2",
+        "FusedInferAttentionScore/d=0,p=0/1,2/29,2/29,2/1,2/0,2",
+        "FusedInferAttentionScore/d=1,p=1/1,2/29,2/29,2/1,2/0,2",
+        "FusedInferAttentionScore/d=1,p=0/1,2/29,2/29,2/1,2/0,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "staticKey": "9c56301c63f9cf0c32359c99af71ad91d134151b29e44e8f443129ee01b897c2,47fc93af7e9b7349b923343f45a8213bc7f576cff383726b468fc424efb81eaa",
+      "inputs": [
+        {
+          "name": "query",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        [
+          {
+            "name": "key",
+            "index": 1,
+            "dtype": "int4",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        [
+          {
+            "name": "value",
+            "index": 2,
+            "dtype": "int4",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        {
+          "name": "pse_shift",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "atten_mask",
+          "index": 4,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths",
+          "index": 5,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths_kv",
+          "index": 6,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale1",
+          "index": 7,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale1",
+          "index": 8,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale2",
+          "index": 9,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale2",
+          "index": 10,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_offset2",
+          "index": 11,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 12,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 13,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "block_table",
+          "index": 14,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_padding_size",
+          "index": 15,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "kv_padding_size",
+          "index": 16,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_scale",
+          "index": 17,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_offset",
+          "index": 18,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_scale",
+          "index": 19,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_offset",
+          "index": 20,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_shared_prefix",
+          "index": 21,
+          "dtype": "int4",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_shared_prefix",
+          "index": 22,
+          "dtype": "int4",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_shared_prefix_len",
+          "index": 23,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_rope",
+          "index": 24,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope",
+          "index": 25,
+          "dtype": "int4",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope_antiquant_scale",
+          "index": 26,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "attention_out",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "softmax_lse",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "pre_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "next_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "input_layout",
+          "dtype": "str",
+          "value": ""
+        },
+        {
+          "name": "num_key_value_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "sparse_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "inner_precise",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "softmax_lse_flag",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "key_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "value_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "optionalOutputMode": "gen_placeholder",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/fused_infer_attention_score/FusedInferAttentionScore_7f09971e491ee1b09e0134ca760a4ced.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "FusedInferAttentionScore/d=0,p=1/1,2/1,2/1,2/1,2/0,2",
+        "FusedInferAttentionScore/d=0,p=0/1,2/1,2/1,2/1,2/0,2",
+        "FusedInferAttentionScore/d=1,p=1/1,2/1,2/1,2/1,2/0,2",
+        "FusedInferAttentionScore/d=1,p=0/1,2/1,2/1,2/1,2/0,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "staticKey": "e8b0432aaf8bbda537cc003273ade67710e3bb03aac4a4c8300454ebb014097b,ea31e039760a06642d6de57e2452b142a17204772af866395b86bd8321fcf388",
+      "inputs": [
+        {
+          "name": "query",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        [
+          {
+            "name": "key",
+            "index": 1,
+            "dtype": "float16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        [
+          {
+            "name": "value",
+            "index": 2,
+            "dtype": "float16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        {
+          "name": "pse_shift",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "atten_mask",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths",
+          "index": 5,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths_kv",
+          "index": 6,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale1",
+          "index": 7,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale1",
+          "index": 8,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale2",
+          "index": 9,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale2",
+          "index": 10,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_offset2",
+          "index": 11,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 12,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 13,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "block_table",
+          "index": 14,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_padding_size",
+          "index": 15,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "kv_padding_size",
+          "index": 16,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_scale",
+          "index": 17,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_offset",
+          "index": 18,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_scale",
+          "index": 19,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_offset",
+          "index": 20,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_shared_prefix",
+          "index": 21,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_shared_prefix",
+          "index": 22,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_shared_prefix_len",
+          "index": 23,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_rope",
+          "index": 24,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope",
+          "index": 25,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope_antiquant_scale",
+          "index": 26,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "attention_out",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "softmax_lse",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "pre_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "next_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "input_layout",
+          "dtype": "str",
+          "value": ""
+        },
+        {
+          "name": "num_key_value_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "sparse_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "inner_precise",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "softmax_lse_flag",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "key_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "value_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "optionalOutputMode": "gen_placeholder",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/fused_infer_attention_score/FusedInferAttentionScore_b48a38f6e36989a2c4f21e80764a3953.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "FusedInferAttentionScore/d=0,p=1/1,2/2,2/2,2/2,2/0,2",
+        "FusedInferAttentionScore/d=0,p=0/1,2/2,2/2,2/2,2/0,2",
+        "FusedInferAttentionScore/d=1,p=1/1,2/2,2/2,2/2,2/0,2",
+        "FusedInferAttentionScore/d=1,p=0/1,2/2,2/2,2/2,2/0,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "staticKey": "14ccd679082133b8b36040a7361aa782be2ad814985ecfff4e247267d17d6d1f,04484de83116f31c62c1bf8fe9b2712bd1b1ac4c25e443b480deca03ef15f035",
+      "inputs": [
+        {
+          "name": "query",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        [
+          {
+            "name": "key",
+            "index": 1,
+            "dtype": "int8",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        [
+          {
+            "name": "value",
+            "index": 2,
+            "dtype": "int8",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        {
+          "name": "pse_shift",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "atten_mask",
+          "index": 4,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths",
+          "index": 5,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths_kv",
+          "index": 6,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale1",
+          "index": 7,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale1",
+          "index": 8,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale2",
+          "index": 9,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale2",
+          "index": 10,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_offset2",
+          "index": 11,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 12,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 13,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "block_table",
+          "index": 14,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_padding_size",
+          "index": 15,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "kv_padding_size",
+          "index": 16,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_scale",
+          "index": 17,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_offset",
+          "index": 18,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_scale",
+          "index": 19,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_offset",
+          "index": 20,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_shared_prefix",
+          "index": 21,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_shared_prefix",
+          "index": 22,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_shared_prefix_len",
+          "index": 23,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_rope",
+          "index": 24,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope",
+          "index": 25,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope_antiquant_scale",
+          "index": 26,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "attention_out",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "softmax_lse",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "pre_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "next_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "input_layout",
+          "dtype": "str",
+          "value": ""
+        },
+        {
+          "name": "num_key_value_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "sparse_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "inner_precise",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "softmax_lse_flag",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "key_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "value_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "optionalOutputMode": "gen_placeholder",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/fused_infer_attention_score/FusedInferAttentionScore_b718fa126bfda9f89174410d6d30d291.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "FusedInferAttentionScore/d=0,p=1/27,2/2,2/2,2/27,2/0,2",
+        "FusedInferAttentionScore/d=0,p=0/27,2/2,2/2,2/27,2/0,2",
+        "FusedInferAttentionScore/d=1,p=1/27,2/2,2/2,2/27,2/0,2",
+        "FusedInferAttentionScore/d=1,p=0/27,2/2,2/2,2/27,2/0,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "staticKey": "84e2f57c9487ecde2f8c4bd1eb0ad7e32b0daf1af185bcb971d93c8bd036c6ce,f0d703cb9402dfba7979512a2109eee1c1cd0e71b788b62f3ceaa086bde5ac77",
+      "inputs": [
+        {
+          "name": "query",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        [
+          {
+            "name": "key",
+            "index": 1,
+            "dtype": "int8",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        [
+          {
+            "name": "value",
+            "index": 2,
+            "dtype": "int8",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        {
+          "name": "pse_shift",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "atten_mask",
+          "index": 4,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths",
+          "index": 5,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths_kv",
+          "index": 6,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale1",
+          "index": 7,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale1",
+          "index": 8,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale2",
+          "index": 9,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale2",
+          "index": 10,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_offset2",
+          "index": 11,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 12,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 13,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "block_table",
+          "index": 14,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_padding_size",
+          "index": 15,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "kv_padding_size",
+          "index": 16,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_scale",
+          "index": 17,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_offset",
+          "index": 18,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_scale",
+          "index": 19,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_offset",
+          "index": 20,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_shared_prefix",
+          "index": 21,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_shared_prefix",
+          "index": 22,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_shared_prefix_len",
+          "index": 23,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_rope",
+          "index": 24,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope",
+          "index": 25,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope_antiquant_scale",
+          "index": 26,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "attention_out",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "softmax_lse",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "pre_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "next_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "input_layout",
+          "dtype": "str",
+          "value": ""
+        },
+        {
+          "name": "num_key_value_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "sparse_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "inner_precise",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "softmax_lse_flag",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "key_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "value_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "optionalOutputMode": "gen_placeholder",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/fused_infer_attention_score/FusedInferAttentionScore_d9487acd30a4fe27e94a909d51eda08e.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "FusedInferAttentionScore/d=0,p=1/27,2/29,2/29,2/27,2/0,2",
+        "FusedInferAttentionScore/d=0,p=0/27,2/29,2/29,2/27,2/0,2",
+        "FusedInferAttentionScore/d=1,p=1/27,2/29,2/29,2/27,2/0,2",
+        "FusedInferAttentionScore/d=1,p=0/27,2/29,2/29,2/27,2/0,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "staticKey": "ff626510efa51d3f3772e0b0a23488d26a4a9737b96080e084edcaace2bf57ad,8ec71a024467463f954e4e9a4968f65e40f2f8312d8d740e71a2014a1b83edfe",
+      "inputs": [
+        {
+          "name": "query",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        [
+          {
+            "name": "key",
+            "index": 1,
+            "dtype": "int4",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        [
+          {
+            "name": "value",
+            "index": 2,
+            "dtype": "int4",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        {
+          "name": "pse_shift",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "atten_mask",
+          "index": 4,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths",
+          "index": 5,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths_kv",
+          "index": 6,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale1",
+          "index": 7,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale1",
+          "index": 8,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale2",
+          "index": 9,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale2",
+          "index": 10,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_offset2",
+          "index": 11,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 12,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 13,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "block_table",
+          "index": 14,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_padding_size",
+          "index": 15,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "kv_padding_size",
+          "index": 16,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_scale",
+          "index": 17,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_offset",
+          "index": 18,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_scale",
+          "index": 19,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_offset",
+          "index": 20,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_shared_prefix",
+          "index": 21,
+          "dtype": "int4",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_shared_prefix",
+          "index": 22,
+          "dtype": "int4",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_shared_prefix_len",
+          "index": 23,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_rope",
+          "index": 24,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope",
+          "index": 25,
+          "dtype": "int4",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope_antiquant_scale",
+          "index": 26,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "attention_out",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "softmax_lse",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "pre_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "next_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "input_layout",
+          "dtype": "str",
+          "value": ""
+        },
+        {
+          "name": "num_key_value_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "sparse_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "inner_precise",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "softmax_lse_flag",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "key_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "value_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "optionalOutputMode": "gen_placeholder",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/fused_infer_attention_score/FusedInferAttentionScore_e5a3bcd0f28108d991ed8a357938d456.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "FusedInferAttentionScore/d=0,p=1/2,2/2,2/2,2/2,2/0,2",
+        "FusedInferAttentionScore/d=0,p=0/2,2/2,2/2,2/2,2/0,2",
+        "FusedInferAttentionScore/d=1,p=1/2,2/2,2/2,2/2,2/0,2",
+        "FusedInferAttentionScore/d=1,p=0/2,2/2,2/2,2/2,2/0,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "staticKey": "d9d38d878d37c4f18fbd299783829baf74f46f48102cceffce0139c0882d7f45,8bc4918c6f45f017f85a24787f8cf3bbcacd50a79ad8862b7219296fee268a48",
+      "inputs": [
+        {
+          "name": "query",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        [
+          {
+            "name": "key",
+            "index": 1,
+            "dtype": "int8",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        [
+          {
+            "name": "value",
+            "index": 2,
+            "dtype": "int8",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        {
+          "name": "pse_shift",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "atten_mask",
+          "index": 4,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths",
+          "index": 5,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_seq_lengths_kv",
+          "index": 6,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale1",
+          "index": 7,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale1",
+          "index": 8,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "dequant_scale2",
+          "index": 9,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_scale2",
+          "index": 10,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "quant_offset2",
+          "index": 11,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_scale",
+          "index": 12,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "antiquant_offset",
+          "index": 13,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "block_table",
+          "index": 14,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_padding_size",
+          "index": 15,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "kv_padding_size",
+          "index": 16,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_scale",
+          "index": 17,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_antiquant_offset",
+          "index": 18,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_scale",
+          "index": 19,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_antiquant_offset",
+          "index": 20,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_shared_prefix",
+          "index": 21,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value_shared_prefix",
+          "index": 22,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "actual_shared_prefix_len",
+          "index": 23,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "query_rope",
+          "index": 24,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope",
+          "index": 25,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key_rope_antiquant_scale",
+          "index": 26,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "attention_out",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "softmax_lse",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "pre_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "next_tokens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "input_layout",
+          "dtype": "str",
+          "value": ""
+        },
+        {
+          "name": "num_key_value_heads",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "sparse_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "inner_precise",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "softmax_lse_flag",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "key_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "value_antiquant_mode",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "optionalOutputMode": "gen_placeholder",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/fused_infer_attention_score/FusedInferAttentionScore_f5370090b5d982fc77d4d1cb2f49fb08.json"
+      }
+    }
+  ]
+}

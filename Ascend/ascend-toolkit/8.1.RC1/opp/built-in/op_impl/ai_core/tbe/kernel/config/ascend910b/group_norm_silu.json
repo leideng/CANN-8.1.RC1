@@ -1,0 +1,1074 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GroupNormSilu/d=0,p=1/1,2/1,2/1,2/1,2/1,2/1,2/,,1",
+        "GroupNormSilu/d=0,p=0/1,2/1,2/1,2/1,2/1,2/1,2/,,1",
+        "GroupNormSilu/d=1,p=1/1,2/1,2/1,2/1,2/1,2/1,2/,,1",
+        "GroupNormSilu/d=1,p=0/1,2/1,2/1,2/1,2/1,2/1,2/,,1"
+      ],
+      "staticKey": "a6f20a150ffc26e8df0869d75faba3f0e0f97a005d680bc3e479453f25196b2b,96ba85e6f525673b9b17edb5f7502919319471be595fe9452d4c7965724201b5",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "beta",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "eps",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "activate_silu",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_silu/GroupNormSilu_c629c03f5922badb3407bf2e66751e02_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GroupNormSilu/d=0,p=1/0,2/0,2/0,2/0,2/0,2/0,2/,,1",
+        "GroupNormSilu/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/,,1",
+        "GroupNormSilu/d=1,p=1/0,2/0,2/0,2/0,2/0,2/0,2/,,1",
+        "GroupNormSilu/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/,,1"
+      ],
+      "staticKey": "da18a552f68a26020c6a93aaa28f02b79cbe6cc76ef3055b5c2b7209ecf30bd7,83e6f451e7a8d7e814664fe35aa346780ec7817dcc81cbe25318b3ad8562a0d1",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "beta",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "eps",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "activate_silu",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_silu/GroupNormSilu_c629c03f5922badb3407bf2e66752e03_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GroupNormSilu/d=0,p=1/27,2/27,2/27,2/27,2/27,2/27,2/,,1",
+        "GroupNormSilu/d=0,p=0/27,2/27,2/27,2/27,2/27,2/27,2/,,1",
+        "GroupNormSilu/d=1,p=1/27,2/27,2/27,2/27,2/27,2/27,2/,,1",
+        "GroupNormSilu/d=1,p=0/27,2/27,2/27,2/27,2/27,2/27,2/,,1"
+      ],
+      "staticKey": "4678de29ca270f10fae9d1ee431bf3c3eb6bf738dd2975a62b54dbc2becf4421,5b1182a21e4ec8ccf6cec419dbded7ca460cfa09252f6f0901e02b68a2e1cc87",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "beta",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "eps",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "activate_silu",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_silu/GroupNormSilu_c629c03f5922badb3407bf2e66753e04_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GroupNormSilu/d=0,p=1/1,2/0,2/0,2/1,2/1,2/1,2/,,1",
+        "GroupNormSilu/d=0,p=0/1,2/0,2/0,2/1,2/1,2/1,2/,,1",
+        "GroupNormSilu/d=1,p=1/1,2/0,2/0,2/1,2/1,2/1,2/,,1",
+        "GroupNormSilu/d=1,p=0/1,2/0,2/0,2/1,2/1,2/1,2/,,1"
+      ],
+      "staticKey": "7b5cbea2dd0850cb9706936d1b168d0a942e716f492cc36938e9c76d790dea3b,145b15e968361c2fb76cbaa24c3334fd86794283b34cd15cc0b9f22b544db28c",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "beta",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "eps",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "activate_silu",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_silu/GroupNormSilu_c629c03f5922badb3407bf2e66754e05_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GroupNormSilu/d=0,p=1/27,2/0,2/0,2/27,2/27,2/27,2/,,1",
+        "GroupNormSilu/d=0,p=0/27,2/0,2/0,2/27,2/27,2/27,2/,,1",
+        "GroupNormSilu/d=1,p=1/27,2/0,2/0,2/27,2/27,2/27,2/,,1",
+        "GroupNormSilu/d=1,p=0/27,2/0,2/0,2/27,2/27,2/27,2/,,1"
+      ],
+      "staticKey": "ac8baed52705b401fc972c84628b4fdde24a19613f77e37947d6805b5e0ee519,fcdd363e7d70f73dd1c987824e9833456dad6583faae2e3f3fcbb3380149b2ec",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "beta",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "eps",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "activate_silu",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_silu/GroupNormSilu_c629c03f5922badb3407bf2e66755e06_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GroupNormSilu/d=0,p=1/1,2/1,2/1,2/1,2/1,2/1,2/,,0",
+        "GroupNormSilu/d=0,p=0/1,2/1,2/1,2/1,2/1,2/1,2/,,0",
+        "GroupNormSilu/d=1,p=1/1,2/1,2/1,2/1,2/1,2/1,2/,,0",
+        "GroupNormSilu/d=1,p=0/1,2/1,2/1,2/1,2/1,2/1,2/,,0"
+      ],
+      "staticKey": "4698857c6c37564cc22e0d37e650c74534b3b25f1fce0734448b031a678c7e9d,ca2adc6b713fbfe389c73a13a439c179726e5746c33c205678bcc31b7c10b254",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "beta",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "eps",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "activate_silu",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_silu/GroupNormSilu_c629c03f5922badb3407bf2e66756e12_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GroupNormSilu/d=0,p=1/0,2/0,2/0,2/0,2/0,2/0,2/,,0",
+        "GroupNormSilu/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/,,0",
+        "GroupNormSilu/d=1,p=1/0,2/0,2/0,2/0,2/0,2/0,2/,,0",
+        "GroupNormSilu/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/,,0"
+      ],
+      "staticKey": "4d35c18b2751decc4354d6a566487fad28ce13d47bf834bfe81b6d14dc55d46f,e6f8cfe886a1bc8177c8f1def17343e7fe38031ac7d46b9410e6d85167e1a0f2",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "beta",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "eps",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "activate_silu",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_silu/GroupNormSilu_c629c03f5922badb3407bf2e66757e13_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GroupNormSilu/d=0,p=1/27,2/27,2/27,2/27,2/27,2/27,2/,,0",
+        "GroupNormSilu/d=0,p=0/27,2/27,2/27,2/27,2/27,2/27,2/,,0",
+        "GroupNormSilu/d=1,p=1/27,2/27,2/27,2/27,2/27,2/27,2/,,0",
+        "GroupNormSilu/d=1,p=0/27,2/27,2/27,2/27,2/27,2/27,2/,,0"
+      ],
+      "staticKey": "65493d6fc7c743d7c32ddfda934e16d28f24cf3d4f9dbbc81a85fcfc9b758669,8bfa5eaa2b1b2156d37b49d70d9957eaaeb0c3de3d9cc7cf6614a686ab1f2ed3",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "beta",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "eps",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "activate_silu",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_silu/GroupNormSilu_c629c03f5922badb3407bf2e66758e14_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GroupNormSilu/d=0,p=1/1,2/0,2/0,2/1,2/1,2/1,2/,,0",
+        "GroupNormSilu/d=0,p=0/1,2/0,2/0,2/1,2/1,2/1,2/,,0",
+        "GroupNormSilu/d=1,p=1/1,2/0,2/0,2/1,2/1,2/1,2/,,0",
+        "GroupNormSilu/d=1,p=0/1,2/0,2/0,2/1,2/1,2/1,2/,,0"
+      ],
+      "staticKey": "209d1318f3d96806df51bc31377816d9f286916f9b84e43a54d3e18bc533d0d7,17177b843c0e96783ae12d6261678aeb82d97d00814961ce5f3849685316e3f6",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "beta",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "eps",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "activate_silu",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_silu/GroupNormSilu_c629c03f5922badb3407bf2e66759e15_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GroupNormSilu/d=0,p=1/27,2/0,2/0,2/27,2/27,2/27,2/,,0",
+        "GroupNormSilu/d=0,p=0/27,2/0,2/0,2/27,2/27,2/27,2/,,0",
+        "GroupNormSilu/d=1,p=1/27,2/0,2/0,2/27,2/27,2/27,2/,,0",
+        "GroupNormSilu/d=1,p=0/27,2/0,2/0,2/27,2/27,2/27,2/,,0"
+      ],
+      "staticKey": "63df1920aaf74232cf47ab9f9bcc3e4865579520b26df19bf45add705d8b0c02,56105e70b78de7506fd514be968f576274d36c2b12629bc06783a99d1c9de26a",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "beta",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "eps",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "activate_silu",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_silu/GroupNormSilu_c629c03f5922badb3407bf2e66760e16_high_performance.json"
+      }
+    }
+  ]
+}

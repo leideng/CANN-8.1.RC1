@@ -1,0 +1,142 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "PSROIPoolingGradV2D/d=0,p=0/0,3/0,2/0,3"
+      ],
+      "staticKey": "484ca44f87805a18c33749b23e7b32da8532fff55814f11ec16105dd54126e97",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "output_dim",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "group_size",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "input_size",
+          "dtype": "list_int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/psroipooling_grad_v2d/PSROIPoolingGradV2D_1_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "PSROIPoolingGradV2D/d=1,p=0/0,3/0,2/0,3"
+      ],
+      "staticKey": "484ca44f87805a18c33749b23e7b32da8532fff55814f11ec16105dd54126e97",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "output_dim",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "group_size",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "input_size",
+          "dtype": "list_int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/psroipooling_grad_v2d/PSROIPoolingGradV2D_1_high_performance_deterministic.json"
+      }
+    }
+  ]
+}

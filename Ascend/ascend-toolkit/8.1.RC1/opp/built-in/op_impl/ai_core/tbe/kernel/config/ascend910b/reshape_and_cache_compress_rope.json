@@ -1,0 +1,250 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReshapeAndCacheCompressRope/d=0,p=1/1,2/1,2/1,2/1,2/3,2/3,2/3,2/3,2/1,2/1,2",
+        "ReshapeAndCacheCompressRope/d=0,p=0/1,2/1,2/1,2/1,2/3,2/3,2/3,2/3,2/1,2/1,2",
+        "ReshapeAndCacheCompressRope/d=1,p=1/1,2/1,2/1,2/1,2/3,2/3,2/3,2/3,2/1,2/1,2",
+        "ReshapeAndCacheCompressRope/d=1,p=0/1,2/1,2/1,2/1,2/3,2/3,2/3,2/3,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "fd4430d4a10d27ceb381c29978220239a66e51eb64c1ac0ddd0f20b052b63e99,e2fbb29172e67f98da1f79978137173857c35ece29461a282b4f78a9060d03ee",
+      "inputs": [
+        {
+          "name": "keyIn",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "valueIn",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "keyCacheIn",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "valueCacheIn",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "slotMapping",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "winsIn",
+          "index": 5,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "seqLenIn",
+          "index": 6,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offsetIdx",
+          "index": 7,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "keyCacheOut",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "valueCacheOut",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/reshape_and_cache_compress_rope/ReshapeAndCacheCompressRope_ca57fe06_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReshapeAndCacheCompressRope/d=0,p=1/27,2/27,2/27,2/27,2/3,2/3,2/3,2/3,2/27,2/27,2",
+        "ReshapeAndCacheCompressRope/d=0,p=0/27,2/27,2/27,2/27,2/3,2/3,2/3,2/3,2/27,2/27,2",
+        "ReshapeAndCacheCompressRope/d=1,p=1/27,2/27,2/27,2/27,2/3,2/3,2/3,2/3,2/27,2/27,2",
+        "ReshapeAndCacheCompressRope/d=1,p=0/27,2/27,2/27,2/27,2/3,2/3,2/3,2/3,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "6ee1fa20b8b8b5f1265d7248e170f383fb4e0ad08cc1477f475c88f9689f0961,a52b02692c0b6d37549aebaadeb2b7ba1ea6a2fb0b659811b0f728e06819f503",
+      "inputs": [
+        {
+          "name": "keyIn",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "valueIn",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "keyCacheIn",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "valueCacheIn",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "slotMapping",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "winsIn",
+          "index": 5,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "seqLenIn",
+          "index": 6,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offsetIdx",
+          "index": 7,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "keyCacheOut",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "valueCacheOut",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/reshape_and_cache_compress_rope/ReshapeAndCacheCompressRope_b7e5fa5e_high_performance.json"
+      }
+    }
+  ]
+}

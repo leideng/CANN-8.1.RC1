@@ -1,0 +1,202 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MatmulReduceScatter/d=0,p=1/1,2/1,2/1,2",
+        "MatmulReduceScatter/d=0,p=0/1,2/1,2/1,2",
+        "MatmulReduceScatter/d=1,p=1/1,2/1,2/1,2",
+        "MatmulReduceScatter/d=1,p=0/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "6a6cb370d2c6d159de8488e083cd4983968c3078387974ee2cd221d3e7cbeaab,9a9dddd6768e403eb1e288c77aa372f8746cad3b81c674affe1863651a2e2c74",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "group",
+          "dtype": "string",
+          "value": ""
+        },
+        {
+          "name": "reduce_op",
+          "dtype": "string",
+          "value": "sum"
+        },
+        {
+          "name": "is_trans_a",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "is_trans_b",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "comm_turn",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "rank_size",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/matmul_reduce_scatter/MatmulReduceScatter_ND_ND_FP16_FP16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MatmulReduceScatter/d=0,p=1/27,2/27,2/27,2",
+        "MatmulReduceScatter/d=0,p=0/27,2/27,2/27,2",
+        "MatmulReduceScatter/d=1,p=1/27,2/27,2/27,2",
+        "MatmulReduceScatter/d=1,p=0/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "e0cc1ab3053ef58026c6562851bef861d01f6836704963bc207f10648eb4d14e,8b3c7f09f47789b3fbe8642243684df1a4243a0424df5a53e73cfa94c1490c8b",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "group",
+          "dtype": "string",
+          "value": ""
+        },
+        {
+          "name": "reduce_op",
+          "dtype": "string",
+          "value": "sum"
+        },
+        {
+          "name": "is_trans_a",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "is_trans_b",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "comm_turn",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "rank_size",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/matmul_reduce_scatter/MatmulReduceScatter_ND_ND_BF16_BF16_high_performance.json"
+      }
+    }
+  ]
+}

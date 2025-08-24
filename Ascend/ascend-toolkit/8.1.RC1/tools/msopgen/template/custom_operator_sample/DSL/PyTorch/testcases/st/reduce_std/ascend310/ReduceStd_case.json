@@ -1,0 +1,87 @@
+[
+    {
+        "case_name": "Test_ReduceStd_001",
+        "op": "ReduceStd",
+        "input_desc": [
+            {
+                "format": [
+                    "NHWC",
+                    "NCHW",
+                    "ND"
+                ],
+                "type": [
+                    "float16",
+                    "float"
+                ],
+                "shape": [
+                    3,
+                    4,
+                    5
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "x"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "NHWC",
+                    "NCHW",
+                    "ND"
+                ],
+                "type": [
+                    "float16",
+                    "float"
+                ],
+                "shape": [
+                    3,
+                    4
+                ],
+                "name": "y1"
+            },
+            {
+                "format": [
+                    "NHWC",
+                    "NCHW",
+                    "ND"
+                ],
+                "type": [
+                    "float16",
+                    "float"
+                ],
+                "shape": [
+                    3,
+                    4
+                ],
+                "name": "y2"
+            }
+        ],
+        "attr": [
+            {
+                "name": "dim",
+                "type": "list_int",
+                "value": [
+                    2
+                ]
+            },
+            {
+                "name": "unbiased",
+                "type": "bool",
+                "value": true
+            },
+            {
+                "name": "keepdim",
+                "type": "bool",
+                "value": false
+            }
+        ]
+    }
+]

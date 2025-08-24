@@ -1,0 +1,436 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantizeAddLayerNorm/d=0,p=1/1,2/1,2/1,2/1,2/1,2/0,2/2,2/1,2",
+        "QuantizeAddLayerNorm/d=0,p=0/1,2/1,2/1,2/1,2/1,2/0,2/2,2/1,2",
+        "QuantizeAddLayerNorm/d=1,p=1/1,2/1,2/1,2/1,2/1,2/0,2/2,2/1,2",
+        "QuantizeAddLayerNorm/d=1,p=0/1,2/1,2/1,2/1,2/1,2/0,2/2,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "829154f8467081d63a8dc049fffcf96c6dfbea82b88af0e56a416f6b7a4ccb24,3be9a0ce623216278626870b55e1475049cbb78dd13ad715ba2339fef60fbe8c",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "beta",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "scales",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "zero_points",
+          "index": 6,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 2
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-05
+        },
+        {
+          "name": "additional_output",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quantize_add_layer_norm/QuantizeAddLayerNorm_0d50fc765571e12d6f39ca937a697980_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantizeAddLayerNorm/d=0,p=1/0,2/0,2/0,2/0,2/0,2/0,2/2,2/0,2",
+        "QuantizeAddLayerNorm/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/2,2/0,2",
+        "QuantizeAddLayerNorm/d=1,p=1/0,2/0,2/0,2/0,2/0,2/0,2/2,2/0,2",
+        "QuantizeAddLayerNorm/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/2,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "45b13d839599e86e97eecad34b32d4d2a2e15a0cc30d83c0d1c3f88dc42d195a,d5fb21d1ced1f503a420aac09eee7381a553a6a83875742aea7ca9ab8d411c10",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "beta",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "scales",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "zero_points",
+          "index": 6,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 2
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-05
+        },
+        {
+          "name": "additional_output",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quantize_add_layer_norm/QuantizeAddLayerNorm_080a18d7a9b44a2ff097e2f3bb351a34_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantizeAddLayerNorm/d=0,p=1/27,2/27,2/27,2/27,2/27,2/27,2/2,2/27,2",
+        "QuantizeAddLayerNorm/d=0,p=0/27,2/27,2/27,2/27,2/27,2/27,2/2,2/27,2",
+        "QuantizeAddLayerNorm/d=1,p=1/27,2/27,2/27,2/27,2/27,2/27,2/2,2/27,2",
+        "QuantizeAddLayerNorm/d=1,p=0/27,2/27,2/27,2/27,2/27,2/27,2/2,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "25799d2080ee18ffedc945a0e7adea8fb62b41c7de82fde575cd5a6f57939cad,ad898b67a3a192061c1038ca34622e3718482a3d803ccd3b32a0badbe50e6337",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gamma",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "beta",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "scales",
+          "index": 5,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "zero_points",
+          "index": 6,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 2
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-05
+        },
+        {
+          "name": "additional_output",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quantize_add_layer_norm/QuantizeAddLayerNorm_d753115930040e2ab79fab9db8a2a1ee_high_performance.json"
+      }
+    }
+  ]
+}

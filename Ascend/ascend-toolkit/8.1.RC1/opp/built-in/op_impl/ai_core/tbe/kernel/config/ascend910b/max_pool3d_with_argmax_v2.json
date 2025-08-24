@@ -1,0 +1,259 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MaxPool3DWithArgmaxV2/d=0,p=1/0,30/0,30/3,30",
+        "MaxPool3DWithArgmaxV2/d=0,p=0/0,30/0,30/3,30",
+        "MaxPool3DWithArgmaxV2/d=1,p=1/0,30/0,30/3,30",
+        "MaxPool3DWithArgmaxV2/d=1,p=0/0,30/0,30/3,30"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "9d6b7baa8908ea3c26572a3f3bfb0dbbae6bf008a4c589d626cefd6e13d52983,e0682a4fb0064edbcbc3c44094f108ffd20945f656f1bac79b1a8919244f725f",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "argmax",
+          "index": 1,
+          "dtype": "int32",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "ksize",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "dilation",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "ceil_mode",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCDHW"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/max_pool3d_with_argmax_v2/MaxPool3DWithArgmaxV2_7fs1d6j3os14nhkg4n8cg12h3p1k7bn1_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MaxPool3DWithArgmaxV2/d=0,p=1/1,30/1,30/3,30",
+        "MaxPool3DWithArgmaxV2/d=0,p=0/1,30/1,30/3,30",
+        "MaxPool3DWithArgmaxV2/d=1,p=1/1,30/1,30/3,30",
+        "MaxPool3DWithArgmaxV2/d=1,p=0/1,30/1,30/3,30"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "cd52d97d40fa6a3021387aaeabb6da8fafab7f41ec055e9294a2c91bfaa4ca7e,b3d6913fca0392ecc26fba85fd684cfcd73df9b73726ad33758e2dbe4c919e0e",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "argmax",
+          "index": 1,
+          "dtype": "int32",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "ksize",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "dilation",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "ceil_mode",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCDHW"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/max_pool3d_with_argmax_v2/MaxPool3DWithArgmaxV2_7fs1d6j3os14nhkg4n8cg12h3p1k7bn2_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MaxPool3DWithArgmaxV2/d=0,p=1/27,30/27,30/3,30",
+        "MaxPool3DWithArgmaxV2/d=0,p=0/27,30/27,30/3,30",
+        "MaxPool3DWithArgmaxV2/d=1,p=1/27,30/27,30/3,30",
+        "MaxPool3DWithArgmaxV2/d=1,p=0/27,30/27,30/3,30"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "89a4dbc1db2836f38266a70c1b472916913196f16a80126c3baaba81ddbf5da9,8c09227a44334d3a2cfd81b3aa88ac629273223a4f2ecfff5b25c61bce786a38",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "argmax",
+          "index": 1,
+          "dtype": "int32",
+          "format": "NCDHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "ksize",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "dilation",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "ceil_mode",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCDHW"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/max_pool3d_with_argmax_v2/MaxPool3DWithArgmaxV2_7fs1d6j3os14nhkg4n8cg12h3p1k7bn3_high_performance.json"
+      }
+    }
+  ]
+}

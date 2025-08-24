@@ -1,0 +1,304 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupedMatmulSwigluQuant/d=0,p=1/2,2/2,29/0,2/0,2/9,2/2,2/0,2",
+        "GroupedMatmulSwigluQuant/d=0,p=0/2,2/2,29/0,2/0,2/9,2/2,2/0,2",
+        "GroupedMatmulSwigluQuant/d=1,p=1/2,2/2,29/0,2/0,2/9,2/2,2/0,2",
+        "GroupedMatmulSwigluQuant/d=1,p=0/2,2/2,29/0,2/0,2/9,2/2,2/0,2"
+      ],
+      "staticKey": "fe43342ad08cf2df7da38d21191e2b4e5fc7f74500af66c069743a1b303f0af4,95e20a804809cf1aafed1b9bada1434fa5fac107b9c4039a2dc7e329a65c8a23",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "weight",
+          "index": 1,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "weight_scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x_scale",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "group_list",
+          "index": 4,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "y_scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "optionalOutputMode": "gen_placeholder",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grouped_matmul_swiglu_quant/GroupedMatmulSwigluQuant_03d44b04e2e63e614389b28a5cf3b452.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupedMatmulSwigluQuant/d=0,p=1/2,2/2,29/27,2/0,2/9,2/2,2/0,2",
+        "GroupedMatmulSwigluQuant/d=0,p=0/2,2/2,29/27,2/0,2/9,2/2,2/0,2",
+        "GroupedMatmulSwigluQuant/d=1,p=1/2,2/2,29/27,2/0,2/9,2/2,2/0,2",
+        "GroupedMatmulSwigluQuant/d=1,p=0/2,2/2,29/27,2/0,2/9,2/2,2/0,2"
+      ],
+      "staticKey": "31a5bb09d68eda1ffe0de07b1122a1d05b566f6cf525e4414bd905786527b48f,46f6e1e01ff7992a297218559f2f252a31877c65631785e400045dc3bb02e92d",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "weight",
+          "index": 1,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "weight_scale",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x_scale",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "group_list",
+          "index": 4,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "y_scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "optionalOutputMode": "gen_placeholder",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grouped_matmul_swiglu_quant/GroupedMatmulSwigluQuant_ae7e8baa154b202a66766b74f012c5e8.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupedMatmulSwigluQuant/d=0,p=1/2,2/2,29/1,2/0,2/9,2/2,2/0,2",
+        "GroupedMatmulSwigluQuant/d=0,p=0/2,2/2,29/1,2/0,2/9,2/2,2/0,2",
+        "GroupedMatmulSwigluQuant/d=1,p=1/2,2/2,29/1,2/0,2/9,2/2,2/0,2",
+        "GroupedMatmulSwigluQuant/d=1,p=0/2,2/2,29/1,2/0,2/9,2/2,2/0,2"
+      ],
+      "staticKey": "2c0716de1a6a8a89c5a0d0546f034c128f6fd0011c73402d0a78f41fb1045873,431051b974088161861dad2a8391aee6389ae1ed85f94f6e91772ad62b7bc310",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "weight",
+          "index": 1,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "weight_scale",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x_scale",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "group_list",
+          "index": 4,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "y_scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "optionalOutputMode": "gen_placeholder",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grouped_matmul_swiglu_quant/GroupedMatmulSwigluQuant_b0bae2cecac30c2436efcd77db403962.json"
+      }
+    }
+  ]
+}

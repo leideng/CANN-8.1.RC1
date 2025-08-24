@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+source /usr/local/Ascend/ascend-toolkit/8.1.RC1/runtime/bin/setenv.bash
+source /usr/local/Ascend/ascend-toolkit/8.1.RC1/compiler/bin/setenv.bash
+source /usr/local/Ascend/ascend-toolkit/8.1.RC1/hccl/bin/setenv.bash
+source /usr/local/Ascend/ascend-toolkit/8.1.RC1/opp/bin/setenv.bash
+source /usr/local/Ascend/ascend-toolkit/8.1.RC1/toolkit/bin/setenv.bash
+source /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/aoe/bin/setenv.bash
+source /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/ncs/bin/setenv.bash
+source /usr/local/Ascend/ascend-toolkit/8.1.RC1/opp_kernel/bin/setenv.bash

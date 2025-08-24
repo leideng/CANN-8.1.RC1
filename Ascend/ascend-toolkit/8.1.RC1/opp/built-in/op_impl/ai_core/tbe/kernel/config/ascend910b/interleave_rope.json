@@ -1,0 +1,130 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "InterleaveRope/d=0,p=1/1,2/1,2/1,2/1,2",
+        "InterleaveRope/d=0,p=0/1,2/1,2/1,2/1,2",
+        "InterleaveRope/d=1,p=1/1,2/1,2/1,2/1,2",
+        "InterleaveRope/d=1,p=0/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "0097d631691c744af37a23c6735dbba2cc47550817f183ea9b648c43517f0d22,f43dcf857ee48ae11387644d1717d8b737e9604ac48eb661601db1e572bea414",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cos",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sin",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/interleave_rope/InterleaveRope_B8B1918CF4B1F919BC0F2A58138E37AB_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "InterleaveRope/d=0,p=1/27,2/27,2/27,2/27,2",
+        "InterleaveRope/d=0,p=0/27,2/27,2/27,2/27,2",
+        "InterleaveRope/d=1,p=1/27,2/27,2/27,2/27,2",
+        "InterleaveRope/d=1,p=0/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "5c7038d2b145cc9a090be575ad00dfc2ecda5d75f495c24ef2212310de7dc5c0,2393458add0c83dd74610baeebb9d593208362b2fe0676ce3052661873a1d6e6",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cos",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sin",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/interleave_rope/InterleaveRope_5A99F786F3FB24A70D3CBC0A8D16CA01_high_performance.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "DynamicQuantUpdateScatter/d=0,p=1/2,2/0,2/9,2/1,2/2,2/0,2",
+        "DynamicQuantUpdateScatter/d=0,p=0/2,2/0,2/9,2/1,2/2,2/0,2",
+        "DynamicQuantUpdateScatter/d=1,p=1/2,2/0,2/9,2/1,2/2,2/0,2",
+        "DynamicQuantUpdateScatter/d=1,p=0/2,2/0,2/9,2/1,2/2,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "30df54c2ba0103ec3dec9f4f318301c83ed6bcb64c5fc3e54a0fc828c2d1b067,49c50fe96033dbed79c62c315b946f629886c5aeb0314949be05c44570a1e3a7",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "var_scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "smooth_scales",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "var_scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "update"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/dynamic_quant_update_scatter/DynamicQuantUpdateScatter_cb3aed229db395d6916252dda9b1db2f_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "DynamicQuantUpdateScatter/d=0,p=1/2,2/0,2/3,2/1,2/2,2/0,2",
+        "DynamicQuantUpdateScatter/d=0,p=0/2,2/0,2/3,2/1,2/2,2/0,2",
+        "DynamicQuantUpdateScatter/d=1,p=1/2,2/0,2/3,2/1,2/2,2/0,2",
+        "DynamicQuantUpdateScatter/d=1,p=0/2,2/0,2/3,2/1,2/2,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "ee6814dff4ccf76b5141865f30085d55f381e8bb024b9c7815116d6f57833c34,5e3bb20a4a915aeabf199a38f04a1410771182f0b3572bdb1b0a418712767eb9",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "var_scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "smooth_scales",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "var_scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "update"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/dynamic_quant_update_scatter/DynamicQuantUpdateScatter_b11ea338c5e5249a3723d76ecb46a94f_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "DynamicQuantUpdateScatter/d=0,p=1/2,2/0,2/9,2/27,2/2,2/0,2",
+        "DynamicQuantUpdateScatter/d=0,p=0/2,2/0,2/9,2/27,2/2,2/0,2",
+        "DynamicQuantUpdateScatter/d=1,p=1/2,2/0,2/9,2/27,2/2,2/0,2",
+        "DynamicQuantUpdateScatter/d=1,p=0/2,2/0,2/9,2/27,2/2,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "f35c87b3f32037ef1eef7ee1b3c5eac7f504c4fa630f92855829b24c9121ac6d,1a24ec19a876bf30f60820d911081bde44e29d2f862627f6dc542a711e4f4d0f",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "var_scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "smooth_scales",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "var_scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "update"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/dynamic_quant_update_scatter/DynamicQuantUpdateScatter_397230388b47f24df4cb0f97493cce90_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "DynamicQuantUpdateScatter/d=0,p=1/2,2/0,2/3,2/27,2/2,2/0,2",
+        "DynamicQuantUpdateScatter/d=0,p=0/2,2/0,2/3,2/27,2/2,2/0,2",
+        "DynamicQuantUpdateScatter/d=1,p=1/2,2/0,2/3,2/27,2/2,2/0,2",
+        "DynamicQuantUpdateScatter/d=1,p=0/2,2/0,2/3,2/27,2/2,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "d8d3fc1a752c7a896c0c3ef210ea95d28f7f53e6b4074976db7548b87b122c57,a824b10e55a2b4861ca16f0038870b0d5c93485ee7827b841f123a6e0e96144f",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "var_scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "smooth_scales",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "var_scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "update"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/dynamic_quant_update_scatter/DynamicQuantUpdateScatter_860bd7c3eb3041876bbd68cf8813eb2a_high_performance.json"
+      }
+    }
+  ]
+}

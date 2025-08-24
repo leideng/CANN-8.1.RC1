@@ -1,0 +1,394 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "PadV3GradReplicate/d=0,p=1/0,2/3,2/0,2",
+        "PadV3GradReplicate/d=0,p=0/0,2/3,2/0,2",
+        "PadV3GradReplicate/d=1,p=1/0,2/3,2/0,2",
+        "PadV3GradReplicate/d=1,p=0/0,2/3,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "769dbdec51a581aff5396f0c3b7f756186d32afaf800c557c988d436e9766ca6,b22989af41833246bb873c498dd9c59cfab4d88eea0ce6968c07cb7d85fa33d8",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "str",
+          "value": ""
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad_replicate/PadV3GradReplicate_d29e11e68a355baf739ab1967dd70c0c_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "PadV3GradReplicate/d=0,p=1/0,2/9,2/0,2",
+        "PadV3GradReplicate/d=0,p=0/0,2/9,2/0,2",
+        "PadV3GradReplicate/d=1,p=1/0,2/9,2/0,2",
+        "PadV3GradReplicate/d=1,p=0/0,2/9,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "874d55f2edd0c48706fbdc7397c514f69b28bd2c916d66aeb9f2073eaa188c31,6ae6badaf18329992cfb46f2d90b7f36af4ab3e65f5e9476639a5e072206ba27",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "str",
+          "value": ""
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad_replicate/PadV3GradReplicate_1d77c57cc8faa91f86a5ebe5342d7e62_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "PadV3GradReplicate/d=0,p=1/1,2/3,2/1,2",
+        "PadV3GradReplicate/d=0,p=0/1,2/3,2/1,2",
+        "PadV3GradReplicate/d=1,p=1/1,2/3,2/1,2",
+        "PadV3GradReplicate/d=1,p=0/1,2/3,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "494396435bb1069f1262f9d9934a18fc36720527a754ecd814f1bed84effa838,bd1a6cd3af9cc93854eae770e5bf9cccb9ea1349af85fba02c08299015bea1a9",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "str",
+          "value": ""
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad_replicate/PadV3GradReplicate_b89bebf47dc08b98c87ae6f4148416b1_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "PadV3GradReplicate/d=0,p=1/1,2/9,2/1,2",
+        "PadV3GradReplicate/d=0,p=0/1,2/9,2/1,2",
+        "PadV3GradReplicate/d=1,p=1/1,2/9,2/1,2",
+        "PadV3GradReplicate/d=1,p=0/1,2/9,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "a99706b75d5d6f2aa2bd5fa5d4f77b9cc1c6a856f39d1cfd87d87c1c0d228f4d,5f633ad0ca9db0061d0553ffb25900e8d83f704778b6f4cfa18198fa9c0eb9f4",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "str",
+          "value": ""
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad_replicate/PadV3GradReplicate_fa1e30876d1e646eafa42f35705c8c6f_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "PadV3GradReplicate/d=0,p=1/27,2/3,2/27,2",
+        "PadV3GradReplicate/d=0,p=0/27,2/3,2/27,2",
+        "PadV3GradReplicate/d=1,p=1/27,2/3,2/27,2",
+        "PadV3GradReplicate/d=1,p=0/27,2/3,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "0750f506fdb239f71e86ba6a90d93a220bf4442878a756faba49de159fc40724,2f7c902336c61fffaf700543e5e1017159bd5ca83662e7ef5332a87fc686e1af",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "str",
+          "value": ""
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad_replicate/PadV3GradReplicate_222fbd5c92a80d1cdba541994fd36672_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "PadV3GradReplicate/d=0,p=1/27,2/9,2/27,2",
+        "PadV3GradReplicate/d=0,p=0/27,2/9,2/27,2",
+        "PadV3GradReplicate/d=1,p=1/27,2/9,2/27,2",
+        "PadV3GradReplicate/d=1,p=0/27,2/9,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "bd163e94d7854d7281ea4b57b2a2d0bba37d3b661162ad49d5fcc1c6ea5a995e,7ddc371180bb694c1215d3715cbf4ced6058cef877d738f87145f2ede2b48edc",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "str",
+          "value": ""
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad_replicate/PadV3GradReplicate_fb58d6e2be64c1b35bfea90bdcf27c69_high_performance.json"
+      }
+    }
+  ]
+}

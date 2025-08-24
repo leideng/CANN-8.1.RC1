@@ -1,0 +1,11 @@
+prefix=/usr1/Tuscany/asl/devtools/hcc/build/hcc_arm64le/../../../../../out/hcc_compile/arm64le_build_dir/hcc_arm64le
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: GNU MP
+Description: GNU Multiple Precision Arithmetic Library
+URL: https://gmplib.org
+Version: 6.2.1
+Cflags: -I${includedir}
+Libs: -L${libdir} -lgmp

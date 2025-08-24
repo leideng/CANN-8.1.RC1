@@ -1,0 +1,652 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Im2col/d=0,p=0/27,0/27,0/,,,CALCULATED,",
+        "Im2col/d=1,p=0/27,0/27,0/,,,CALCULATED,"
+      ],
+      "staticKey": "1087d47bb64e8eb0d1b8fb70d9155616512784c01e51698a02d2e57e23c2d923",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "ksizes",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "padding_mode",
+          "dtype": "string",
+          "value": "CALCULATED",
+          "mode": "value"
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/im2col/Im2col_ffb76657d92d772d5446c0912a9051c1_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Im2col/d=0,p=0/27,0/27,0/,,,SAME,",
+        "Im2col/d=1,p=0/27,0/27,0/,,,SAME,"
+      ],
+      "staticKey": "7a9785b587c526592d5ec1ccdcd0b3bb796e32d75b8e03a7c7737ceb9f31060d",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "ksizes",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "padding_mode",
+          "dtype": "string",
+          "value": "SAME",
+          "mode": "value"
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/im2col/Im2col_2c87c67c0d3cc5145a5b3a303bbfa9c9_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Im2col/d=0,p=0/27,0/27,0/,,,VALID,",
+        "Im2col/d=1,p=0/27,0/27,0/,,,VALID,"
+      ],
+      "staticKey": "1a686c509ced305f20e3dd8300bbc2e8fc991fe602018bf36b69ce96a3a4bf89",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "ksizes",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "padding_mode",
+          "dtype": "string",
+          "value": "VALID",
+          "mode": "value"
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/im2col/Im2col_0dfdcea121aa7d576f11d3ea37bb4eb9_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Im2col/d=0,p=0/1,0/1,0/,,,CALCULATED,",
+        "Im2col/d=1,p=0/1,0/1,0/,,,CALCULATED,"
+      ],
+      "staticKey": "dfe3ac5be07c3ce3dbbc653f886e3ab6a3235a1a9da18778fc13fe2f57978d98",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "ksizes",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "padding_mode",
+          "dtype": "string",
+          "value": "CALCULATED",
+          "mode": "value"
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/im2col/Im2col_105df1e1146280985ca25b341404ebcd_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Im2col/d=0,p=0/1,0/1,0/,,,SAME,",
+        "Im2col/d=1,p=0/1,0/1,0/,,,SAME,"
+      ],
+      "staticKey": "1c56f69678a2d5ab4f1455f689a5abf04de7b9a9a22d1f320fc6c0b6479e0e92",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "ksizes",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "padding_mode",
+          "dtype": "string",
+          "value": "SAME",
+          "mode": "value"
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/im2col/Im2col_c3b111e90ad98c465788f75d5e090679_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Im2col/d=0,p=0/1,0/1,0/,,,VALID,",
+        "Im2col/d=1,p=0/1,0/1,0/,,,VALID,"
+      ],
+      "staticKey": "d69106d7c5641c6cf0b75c3d60cc609ed37c9309104283d28054d2102b61665e",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "ksizes",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "padding_mode",
+          "dtype": "string",
+          "value": "VALID",
+          "mode": "value"
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/im2col/Im2col_405d4f636d8dbe6b9fe68a5a9306c989_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Im2col/d=0,p=0/0,0/0,0/,,,CALCULATED,",
+        "Im2col/d=1,p=0/0,0/0,0/,,,CALCULATED,"
+      ],
+      "staticKey": "3a4a5b262300220f05dea00f123f85cc8ca1b9d1f69499d7a91e1a574384d82f",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "ksizes",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "padding_mode",
+          "dtype": "string",
+          "value": "CALCULATED",
+          "mode": "value"
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/im2col/Im2col_69c5c0d9206f791d994b9db95bb299f8_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Im2col/d=0,p=0/0,0/0,0/,,,SAME,",
+        "Im2col/d=1,p=0/0,0/0,0/,,,SAME,"
+      ],
+      "staticKey": "7f19d901e464ad57f3cc02300f7270ab11f6257218279ddfb026911640180d49",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "ksizes",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "padding_mode",
+          "dtype": "string",
+          "value": "SAME",
+          "mode": "value"
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/im2col/Im2col_0f09d47019591a87cf0cf77f56af7e3a_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Im2col/d=0,p=0/0,0/0,0/,,,VALID,",
+        "Im2col/d=1,p=0/0,0/0,0/,,,VALID,"
+      ],
+      "staticKey": "9778d75341d64c9a59c15d15421b7c00432da6082dd910d5c4bb9fe21e3a4808",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "ksizes",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "padding_mode",
+          "dtype": "string",
+          "value": "VALID",
+          "mode": "value"
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/im2col/Im2col_c88b9d7d7804853366c9588a795cd08d_high_performance.json"
+      }
+    }
+  ]
+}

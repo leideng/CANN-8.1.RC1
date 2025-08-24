@@ -1,0 +1,193 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReshapeAndCacheNdSiso/d=0,p=1/2,2/2,2/3,2/2,2",
+        "ReshapeAndCacheNdSiso/d=0,p=0/2,2/2,2/3,2/2,2",
+        "ReshapeAndCacheNdSiso/d=1,p=1/2,2/2,2/3,2/2,2",
+        "ReshapeAndCacheNdSiso/d=1,p=0/2,2/2,2/3,2/2,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "0bfb8938342aab29a3cdbd9b2274db65113d15aa31ae28afb9aa7006e8854a35,f911f07331a1cf15826a7abc1e54d32ec20ccab04c5d02ed9999f0af60afb472",
+      "inputs": [
+        {
+          "name": "keyIn",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "keyCacheIn",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "slotMapping",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "keyCacheOut",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/reshape_and_cache_nd_siso/ReshapeAndCacheNdSiso_a817ee19_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReshapeAndCacheNdSiso/d=0,p=1/1,2/1,2/3,2/1,2",
+        "ReshapeAndCacheNdSiso/d=0,p=0/1,2/1,2/3,2/1,2",
+        "ReshapeAndCacheNdSiso/d=1,p=1/1,2/1,2/3,2/1,2",
+        "ReshapeAndCacheNdSiso/d=1,p=0/1,2/1,2/3,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "33341e5459bbc26e645b3bb435a38a81a5872c9f560abde2f4bbca3bc9683ab0,26b4847bcdcbf1a10ad749655782739a613e31f4000b1f18c8d79981e35b8a32",
+      "inputs": [
+        {
+          "name": "keyIn",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "keyCacheIn",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "slotMapping",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "keyCacheOut",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/reshape_and_cache_nd_siso/ReshapeAndCacheNdSiso_88344e59_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReshapeAndCacheNdSiso/d=0,p=1/27,2/27,2/3,2/27,2",
+        "ReshapeAndCacheNdSiso/d=0,p=0/27,2/27,2/3,2/27,2",
+        "ReshapeAndCacheNdSiso/d=1,p=1/27,2/27,2/3,2/27,2",
+        "ReshapeAndCacheNdSiso/d=1,p=0/27,2/27,2/3,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "82088c74d6a548cd5e0030f4e8ca591542e04862daa43d2fcfe11238c7cfc4bd,d9f1a4639160865035ab4486d897a409f325f986f4611bf0539b2960fe230812",
+      "inputs": [
+        {
+          "name": "keyIn",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "keyCacheIn",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "slotMapping",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "keyCacheOut",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/reshape_and_cache_nd_siso/ReshapeAndCacheNdSiso_33573702_high_performance.json"
+      }
+    }
+  ]
+}

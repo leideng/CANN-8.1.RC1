@@ -1,0 +1,194 @@
+{
+ "binFileName": "DetectMatMul_eda69cf3595595b264c67db53bce79f3",
+ "binFileSuffix": ".o",
+ "blockDim": -1,
+ "coreType": "MIX",
+ "intercoreSync": 1,
+ "kernelName": "DetectMatMul_eda69cf3595595b264c67db53bce79f3",
+ "magic": "RT_DEV_BINARY_MAGIC_ELF",
+ "memoryStamping": [],
+ "opParaSize": 272,
+ "parameters": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "sha256": "a6792684e09bb11aa6ebe91c01a4491c051f4307709421da07472e4fa06dbcd5",
+ "workspace": {
+  "num": 1,
+  "size": [
+   -1
+  ],
+  "type": [
+   0
+  ]
+ },
+ "kernelList": [
+  {
+   "tilingKey": 10000000000000000000,
+   "kernelType": "MIX_AIC",
+   "crossCoreSync": 1,
+   "taskRation": "1:2",
+   "kernelName": "DetectMatMul_eda69cf3595595b264c67db53bce79f3_10000000000000000000"
+  },
+  {
+   "tilingKey": 10000000000000000021,
+   "kernelType": "MIX_AIC",
+   "crossCoreSync": 1,
+   "taskRation": "1:2",
+   "kernelName": "DetectMatMul_eda69cf3595595b264c67db53bce79f3_10000000000000000021"
+  },
+  {
+   "tilingKey": 10000000000000000020,
+   "kernelType": "MIX_AIC",
+   "crossCoreSync": 1,
+   "taskRation": "1:2",
+   "kernelName": "DetectMatMul_eda69cf3595595b264c67db53bce79f3_10000000000000000020"
+  },
+  {
+   "tilingKey": 10000000000000000031,
+   "kernelType": "MIX_AIC",
+   "crossCoreSync": 1,
+   "taskRation": "1:2",
+   "kernelName": "DetectMatMul_eda69cf3595595b264c67db53bce79f3_10000000000000000031"
+  },
+  {
+   "tilingKey": 10000000000000000030,
+   "kernelType": "MIX_AIC",
+   "crossCoreSync": 1,
+   "taskRation": "1:2",
+   "kernelName": "DetectMatMul_eda69cf3595595b264c67db53bce79f3_10000000000000000030"
+  },
+  {
+   "tilingKey": 10000000000000000001,
+   "kernelType": "MIX_AIC",
+   "taskRation": "1:0",
+   "crossCoreSync": 0,
+   "kernelName": "DetectMatMul_eda69cf3595595b264c67db53bce79f3_10000000000000000001"
+  },
+  {
+   "tilingKey": 10000000000000000201,
+   "kernelType": "MIX_AIC",
+   "taskRation": "1:0",
+   "crossCoreSync": 0,
+   "kernelName": "DetectMatMul_eda69cf3595595b264c67db53bce79f3_10000000000000000201"
+  },
+  {
+   "tilingKey": 10000000000000010201,
+   "kernelType": "MIX_AIC",
+   "crossCoreSync": 1,
+   "taskRation": "1:2",
+   "kernelName": "DetectMatMul_eda69cf3595595b264c67db53bce79f3_10000000000000010201"
+  },
+  {
+   "tilingKey": 10000000000000000200,
+   "kernelType": "MIX_AIC",
+   "crossCoreSync": 1,
+   "taskRation": "1:2",
+   "kernelName": "DetectMatMul_eda69cf3595595b264c67db53bce79f3_10000000000000000200"
+  }
+ ],
+ "taskRation": "tilingKey",
+ "optionalInputMode": "gen_placeholder",
+ "compileInfo": {},
+ "supportInfo": {
+  "implMode": "high_performance",
+  "int64Mode": false,
+  "simplifiedKeyMode": 0,
+  "simplifiedKey": [
+   "DetectMatMul/d=0,p=1/1,2/1,2/1,2",
+   "DetectMatMul/d=0,p=0/1,2/1,2/1,2",
+   "DetectMatMul/d=1,p=1/1,2/1,2/1,2",
+   "DetectMatMul/d=1,p=0/1,2/1,2/1,2"
+  ],
+  "staticKey": "4cf5df4a7e7fe4fe0ec96965228eb99659770a05b9c52579b9d618748ad1fa88,8062f40c960d18cadc67bcc25fd4b56a83628a4bb30aae3704e863b61f306c4d",
+  "inputs": [
+   {
+    "name": "x1",
+    "index": 0,
+    "dtype": "float16",
+    "format": "ND",
+    "paramType": "required",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "x2",
+    "index": 1,
+    "dtype": "float16",
+    "format": "ND",
+    "paramType": "required",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "bias",
+    "index": 2,
+    "dtype": "float16",
+    "format": "ND",
+    "paramType": "optional",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "offset_w",
+    "index": 3,
+    "dtype": "int8",
+    "format": "ND",
+    "paramType": "optional",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "y",
+    "index": 0,
+    "dtype": "float16",
+    "format": "ND",
+    "paramType": "required",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   }
+  ],
+  "attrs": [
+   {
+    "name": "transpose_x1",
+    "dtype": "bool",
+    "value": false
+   },
+   {
+    "name": "transpose_x2",
+    "dtype": "bool",
+    "value": false
+   },
+   {
+    "name": "offset_x",
+    "dtype": "int",
+    "value": 0
+   },
+   {
+    "name": "enable_hf32",
+    "dtype": "bool",
+    "value": false
+   }
+  ],
+  "opMode": "dynamic",
+  "optionalInputMode": "gen_placeholder",
+  "deterministic": "ignore"
+ },
+ "filePath": "ascend910b/bin/detect_mat_mul/DetectMatMul_eda69cf3595595b264c67db53bce79f3.json"
+}

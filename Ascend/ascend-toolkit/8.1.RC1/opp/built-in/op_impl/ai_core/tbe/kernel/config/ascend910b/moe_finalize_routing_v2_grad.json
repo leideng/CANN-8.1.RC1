@@ -1,0 +1,379 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeFinalizeRoutingV2Grad/d=0,p=1/0,2/3,2/0,2/0,2",
+        "MoeFinalizeRoutingV2Grad/d=0,p=0/0,2/3,2/0,2/0,2",
+        "MoeFinalizeRoutingV2Grad/d=1,p=1/0,2/3,2/0,2/0,2",
+        "MoeFinalizeRoutingV2Grad/d=1,p=0/0,2/3,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "a6d2aca2783965d604f6244ffd35d81cd0d29ca708209c58116d41c03c0fe07e,31601d35d7648b1094c4addf80b926b22bb303ea55775acb32be6272d83f7384",
+      "inputs": [
+        {
+          "name": "grad_y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_row_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_x",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scales",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_idx",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_expanded_x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_scales",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "drop_pad_mode",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "active_num",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "expert_num",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "expert_capacity",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_finalize_routing_v2_grad/MoeFinalizeRoutingV2Grad_fp32d2db1a80c523e7e59a032c9596988fp32_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeFinalizeRoutingV2Grad/d=0,p=1/1,2/3,2/1,2/1,2",
+        "MoeFinalizeRoutingV2Grad/d=0,p=0/1,2/3,2/1,2/1,2",
+        "MoeFinalizeRoutingV2Grad/d=1,p=1/1,2/3,2/1,2/1,2",
+        "MoeFinalizeRoutingV2Grad/d=1,p=0/1,2/3,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "fd6d88c2d04920ece45e564b462ae715e1a15886cb913c1b721715f8e5f552e6,1c6936b7730b3b476a501a0c4d022cb42e357b58e87e4de08a2b7d962439f1f2",
+      "inputs": [
+        {
+          "name": "grad_y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_row_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_x",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scales",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_idx",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 5,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_expanded_x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_scales",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "drop_pad_mode",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "active_num",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "expert_num",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "expert_capacity",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_finalize_routing_v2_grad/MoeFinalizeRoutingV2Grad_fp168098b79498645e9c0da095babdeaffp16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeFinalizeRoutingV2Grad/d=0,p=1/27,2/3,2/27,2/27,2",
+        "MoeFinalizeRoutingV2Grad/d=0,p=0/27,2/3,2/27,2/27,2",
+        "MoeFinalizeRoutingV2Grad/d=1,p=1/27,2/3,2/27,2/27,2",
+        "MoeFinalizeRoutingV2Grad/d=1,p=0/27,2/3,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "a3d3d6363dbe94887ba916a8145b83ce4edf0d145dc97028f2fbc2481673e54e,a38d893d5eca57d6c61ff8aec6bb5c20ce069e5001697fb50a128f15ca23f5fc",
+      "inputs": [
+        {
+          "name": "grad_y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_row_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_x",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scales",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_idx",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 5,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_expanded_x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_scales",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "drop_pad_mode",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "active_num",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "expert_num",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "expert_capacity",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_finalize_routing_v2_grad/MoeFinalizeRoutingV2Grad_bf165c5e58e043224cccf51a06108010abf16_high_performance.json"
+      }
+    }
+  ]
+}

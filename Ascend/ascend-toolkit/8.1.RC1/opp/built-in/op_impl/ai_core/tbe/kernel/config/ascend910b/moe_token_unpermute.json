@@ -1,0 +1,679 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTokenUnpermute/d=0,p=1/27,2/3,2/27,2",
+        "MoeTokenUnpermute/d=0,p=0/27,2/3,2/27,2",
+        "MoeTokenUnpermute/d=1,p=1/27,2/3,2/27,2",
+        "MoeTokenUnpermute/d=1,p=0/27,2/3,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "c90af3158cb84628cb30af0298a3e94de2c4ddacbab7fb2d2e6fb0237ad1c926,fe188c194568a961fa430b8078ba9aaa6a99fea7709ec9c93aa39f29ea9e5296",
+      "inputs": [
+        {
+          "name": "permuted_tokens",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "probs",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "unpermuted_tokens",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "padded_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "restore_shape",
+          "dtype": "list_int",
+          "value": []
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_token_unpermute/MoeTokenUnpermute_0_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTokenUnpermute/d=0,p=1/1,2/3,2/1,2",
+        "MoeTokenUnpermute/d=0,p=0/1,2/3,2/1,2",
+        "MoeTokenUnpermute/d=1,p=1/1,2/3,2/1,2",
+        "MoeTokenUnpermute/d=1,p=0/1,2/3,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "e477a18aafbd3a2bc1fd182325c93fc7723a5047dfbdd978397767febfc46e7a,69ca1ba54b19c6ce9895dca3f43944a154d9c443f6da30ccafdc82eef48a8b56",
+      "inputs": [
+        {
+          "name": "permuted_tokens",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "probs",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "unpermuted_tokens",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "padded_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "restore_shape",
+          "dtype": "list_int",
+          "value": []
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_token_unpermute/MoeTokenUnpermute_1_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTokenUnpermute/d=0,p=1/0,2/3,2/0,2",
+        "MoeTokenUnpermute/d=0,p=0/0,2/3,2/0,2",
+        "MoeTokenUnpermute/d=1,p=1/0,2/3,2/0,2",
+        "MoeTokenUnpermute/d=1,p=0/0,2/3,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "1be6c62e390ce0e024149679f244889805d41cafd8945e8d96f2e9bdf0552c68,6789d528281158aa0e7a1a6512bfec86a9a64b1ee3f4e899d53ad852c24b073b",
+      "inputs": [
+        {
+          "name": "permuted_tokens",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "probs",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "unpermuted_tokens",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "padded_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "restore_shape",
+          "dtype": "list_int",
+          "value": []
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_token_unpermute/MoeTokenUnpermute_2_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTokenUnpermute/d=0,p=1/27,2/3,2/27,2",
+        "MoeTokenUnpermute/d=0,p=0/27,2/3,2/27,2",
+        "MoeTokenUnpermute/d=1,p=1/27,2/3,2/27,2",
+        "MoeTokenUnpermute/d=1,p=0/27,2/3,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "c90af3158cb84628cb30af0298a3e94de2c4ddacbab7fb2d2e6fb0237ad1c926,fe188c194568a961fa430b8078ba9aaa6a99fea7709ec9c93aa39f29ea9e5296",
+      "inputs": [
+        {
+          "name": "permuted_tokens",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "probs",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "unpermuted_tokens",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "padded_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "restore_shape",
+          "dtype": "list_int",
+          "value": []
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_token_unpermute/MoeTokenUnpermute_3_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTokenUnpermute/d=0,p=1/1,2/3,2/1,2",
+        "MoeTokenUnpermute/d=0,p=0/1,2/3,2/1,2",
+        "MoeTokenUnpermute/d=1,p=1/1,2/3,2/1,2",
+        "MoeTokenUnpermute/d=1,p=0/1,2/3,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "e477a18aafbd3a2bc1fd182325c93fc7723a5047dfbdd978397767febfc46e7a,69ca1ba54b19c6ce9895dca3f43944a154d9c443f6da30ccafdc82eef48a8b56",
+      "inputs": [
+        {
+          "name": "permuted_tokens",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "probs",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "unpermuted_tokens",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "padded_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "restore_shape",
+          "dtype": "list_int",
+          "value": []
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_token_unpermute/MoeTokenUnpermute_4_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTokenUnpermute/d=0,p=1/27,2/3,2/27,2",
+        "MoeTokenUnpermute/d=0,p=0/27,2/3,2/27,2",
+        "MoeTokenUnpermute/d=1,p=1/27,2/3,2/27,2",
+        "MoeTokenUnpermute/d=1,p=0/27,2/3,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "c90af3158cb84628cb30af0298a3e94de2c4ddacbab7fb2d2e6fb0237ad1c926,fe188c194568a961fa430b8078ba9aaa6a99fea7709ec9c93aa39f29ea9e5296",
+      "inputs": [
+        {
+          "name": "permuted_tokens",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "probs",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "unpermuted_tokens",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "padded_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "restore_shape",
+          "dtype": "list_int",
+          "value": []
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_token_unpermute/MoeTokenUnpermute_5_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTokenUnpermute/d=0,p=1/1,2/3,2/1,2",
+        "MoeTokenUnpermute/d=0,p=0/1,2/3,2/1,2",
+        "MoeTokenUnpermute/d=1,p=1/1,2/3,2/1,2",
+        "MoeTokenUnpermute/d=1,p=0/1,2/3,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "e477a18aafbd3a2bc1fd182325c93fc7723a5047dfbdd978397767febfc46e7a,69ca1ba54b19c6ce9895dca3f43944a154d9c443f6da30ccafdc82eef48a8b56",
+      "inputs": [
+        {
+          "name": "permuted_tokens",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "probs",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "unpermuted_tokens",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "padded_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "restore_shape",
+          "dtype": "list_int",
+          "value": []
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_token_unpermute/MoeTokenUnpermute_6_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTokenUnpermute/d=0,p=1/0,2/3,2/0,2",
+        "MoeTokenUnpermute/d=0,p=0/0,2/3,2/0,2",
+        "MoeTokenUnpermute/d=1,p=1/0,2/3,2/0,2",
+        "MoeTokenUnpermute/d=1,p=0/0,2/3,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "1be6c62e390ce0e024149679f244889805d41cafd8945e8d96f2e9bdf0552c68,6789d528281158aa0e7a1a6512bfec86a9a64b1ee3f4e899d53ad852c24b073b",
+      "inputs": [
+        {
+          "name": "permuted_tokens",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "probs",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "unpermuted_tokens",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "padded_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "restore_shape",
+          "dtype": "list_int",
+          "value": []
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_token_unpermute/MoeTokenUnpermute_7_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTokenUnpermute/d=0,p=1/0,2/3,2/0,2",
+        "MoeTokenUnpermute/d=0,p=0/0,2/3,2/0,2",
+        "MoeTokenUnpermute/d=1,p=1/0,2/3,2/0,2",
+        "MoeTokenUnpermute/d=1,p=0/0,2/3,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "1be6c62e390ce0e024149679f244889805d41cafd8945e8d96f2e9bdf0552c68,6789d528281158aa0e7a1a6512bfec86a9a64b1ee3f4e899d53ad852c24b073b",
+      "inputs": [
+        {
+          "name": "permuted_tokens",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "probs",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "unpermuted_tokens",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "padded_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "restore_shape",
+          "dtype": "list_int",
+          "value": []
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_token_unpermute/MoeTokenUnpermute_8_high_performance.json"
+      }
+    }
+  ]
+}

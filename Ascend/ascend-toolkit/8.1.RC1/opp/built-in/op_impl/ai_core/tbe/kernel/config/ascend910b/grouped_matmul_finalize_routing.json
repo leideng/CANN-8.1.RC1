@@ -1,0 +1,174 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupedMatmulFinalizeRouting/d=0,p=1/2,2/2,29/0,2",
+        "GroupedMatmulFinalizeRouting/d=0,p=0/2,2/2,29/0,2",
+        "GroupedMatmulFinalizeRouting/d=1,p=1/2,2/2,29/0,2",
+        "GroupedMatmulFinalizeRouting/d=1,p=0/2,2/2,29/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "6f634f63546bb8a07d22b049a78c9234b8175a791acff9d92217b1c1d33f71e4,70ff39ccdc5999f6bb3ab9aaf81a3f82b9dd284ae8b488c98790339471cef1f3",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "w",
+          "index": 1,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "group_list",
+          "index": 5,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "shared_input",
+          "index": 6,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "logit",
+          "index": 7,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "row_index",
+          "index": 8,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "shared_input_weight",
+          "dtype": "float32",
+          "value": 1.0
+        },
+        {
+          "name": "shared_input_offset",
+          "dtype": "int32",
+          "value": 0
+        },
+        {
+          "name": "transpose_x",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_w",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "output_bs",
+          "dtype": "int32",
+          "value": 0
+        },
+        {
+          "name": "group_list_type",
+          "dtype": "int32",
+          "value": 1
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grouped_matmul_finalize_routing/GroupedMatmulFinalizeRouting_ND_NZ_int8_int8_float32_high_performance.json"
+      }
+    }
+  ]
+}

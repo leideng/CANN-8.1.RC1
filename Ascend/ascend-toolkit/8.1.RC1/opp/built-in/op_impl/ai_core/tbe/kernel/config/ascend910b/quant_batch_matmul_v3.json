@@ -1,0 +1,2836 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,2/2,2/9,2/1,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,2/2,2/9,2/1,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,2/2,2/9,2/1,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,2/2,2/9,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "ba3d04131cce8bee8cf658c5579c8197118a44b6cbe74ba546bb615c0b8be96a,b0cb7b07fc147e299f2f98ca9b3a9c75dc2777d81df48654537773e0b525b2b6",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_ND_ND_int8_int8_uint64_fp16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,2/2,2/3,2/1,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,2/2,2/3,2/1,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,2/2,2/3,2/1,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,2/2,2/3,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "0f28a2af1fb32f55fc55e5150403d5f56c440ab0397b57e2a8d41385e1476c1c,3909b6bfa0a147929e8e6eb7eb10338923d5d2d373ce7f53c258b54fafd22548",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_ND_ND_int8_int8_fp32_fp16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,2/2,2/9,2/2,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,2/2,2/9,2/2,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,2/2,2/9,2/2,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,2/2,2/9,2/2,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "cdaddf28e60dd76cd751b461ca6579fed5e949a9ab955f1c7461ecf19bc4ead9,762e828028b498810d346d349802ad777e1864290d6d75a04068fa12f2553440",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 2
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_ND_ND_int8_int8_int8_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,2/2,2/6,2/27,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,2/2,2/6,2/27,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,2/2,2/6,2/27,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,2/2,2/6,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "352beeaa0969265001fd4106f060cd1230bce880954c78310594dfe907234b55,8a68226251a3790501c197175f45c19dc34e2c60d3f499376a193e4e1844b365",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 27
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_ND_ND_int8_int8_bf16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,2/2,29/9,2/1,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,2/2,29/9,2/1,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,2/2,29/9,2/1,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,2/2,29/9,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "7d70a0c8bacb500bfc272bc39a75a30f08ab5dfb716e2edd666fecd3f343bfb8,dc3a8f8494341129d9b49ca2e33f8dadb15a14dd182a1959580bdad8bf41300c",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_ND_NZ_int8_int8_uint64_fp16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,2/2,29/3,2/1,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,2/2,29/3,2/1,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,2/2,29/3,2/1,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,2/2,29/3,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "1f59599d4dcfded6feb620777e73effd04e37e010953cad372d19909438242ab,abb4983b574976349f5b131ad32f543060e78d516f6eaa20158853f5fb1febd0",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_ND_NZ_int8_int8_fp32_fp16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,2/2,29/9,2/2,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,2/2,29/9,2/2,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,2/2,29/9,2/2,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,2/2,29/9,2/2,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "90304e22de780b9947d293af6bdeb7b50f2736ca4c1112b4e4d40001e0e6a15b,3204acb629b17099289fdb557480b7b4dd281b09e9217ea9d90f1a517dce2fbc",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 2
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_ND_NZ_int8_int8_int8_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,2/2,29/6,2/27,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,2/2,29/6,2/27,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,2/2,29/6,2/27,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,2/2,29/6,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "bba0fb5d0b2650f1c8ee1d2e7e767eac2a6779aae034cbbc064ea869c5d8b741,449ee4b8c9494e908fbff1cfb61f8b0f0700263a5e03a4fde9eaf1add6463629",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 27
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_ND_NZ_int8_int8_bf16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/29,2/29,2/9,2/1,2",
+        "QuantBatchMatmulV3/d=0,p=0/29,2/29,2/9,2/1,2",
+        "QuantBatchMatmulV3/d=1,p=1/29,2/29,2/9,2/1,2",
+        "QuantBatchMatmulV3/d=1,p=0/29,2/29,2/9,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "c0b21b27467215b426164e2b6d9945116a0839aacac83b6702e9ecfa9390cca3,2b4ffdc86fe951e75b68606207ca6d562e41488162406d71888d33ea4cd74c03",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int4",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int4",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_ND_ND_int4_int4_fp16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,2/2,2/3,2/27,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,2/2,2/3,2/27,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,2/2,2/3,2/27,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,2/2,2/3,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "b0dd5d10b336c6751719abab786ed2dbc3a676078cd6a45a7078735635c88bf7,8401d961fb3412e1be47707d24c14aea485edf222f04a031ea66a3ae4af7bf94",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 27
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_ND_ND_int8_int8_fp32_bf16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,2/2,29/3,2/27,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,2/2,29/3,2/27,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,2/2,29/3,2/27,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,2/2,29/3,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "0e376d8b39e8a2a95c45aee531079cb8b4bfae43a0baa4a6053085eaf353e985,f4494f884672ede5255712aca88f73c2dd35dae211cd0ad8cd605b426cea9449",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 27
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_ND_NZ_int8_int8_fp32_bf16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,2/2,2/3,2/3,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,2/2,2/3,2/3,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,2/2,2/3,2/3,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,2/2,2/3,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "12a3a8961a054a476d77305cd8bad60afe9a1a135a3497ff299629d76ab0374a,af4dbcd4d01ee9840dfbfa14ce2981f6f9fd17db7ec918a1f3afd96dacfdd9bf",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 3
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_ND_ND_int8_int8_fp32_int32_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,2/2,29/3,2/3,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,2/2,29/3,2/3,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,2/2,29/3,2/3,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,2/2,29/3,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "86a99fd35505444987b3cf069dff3f8dc65bcaf9e0f955a5088794411ba7217b,4122ee882d3763e03cc71d2fe978a216bbfd5d1f15c999a25a48af450eb64f9f",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 3
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_ND_NZ_int8_int8_fp32_int32_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,2/2,2/6,2/3,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,2/2,2/6,2/3,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,2/2,2/6,2/3,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,2/2,2/6,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "33bb2cdf45aeafa1ecf14f42b5baa3fec10127d488703a12d94671be0d57af8d,adfd128dac6388f84fff8d2aa5d1c542d9f492a5186279bb6199f233185e7dc8",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 3
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_ND_ND_int8_int8_bf16_int32_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,2/2,29/6,2/3,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,2/2,29/6,2/3,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,2/2,29/6,2/3,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,2/2,29/6,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "05095d1f49baded4b81f1ad4d0c31ee3067f252d06c10b21cad6777d908e280d,0fd221c1aea299990334ab01a8c86131cc826e29c8aaf616b8f4587896ada209",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 3
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_ND_NZ_int8_int8_bf16_int32_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/29,2/29,2/3,2/1,2",
+        "QuantBatchMatmulV3/d=0,p=0/29,2/29,2/3,2/1,2",
+        "QuantBatchMatmulV3/d=1,p=1/29,2/29,2/3,2/1,2",
+        "QuantBatchMatmulV3/d=1,p=0/29,2/29,2/3,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "b8eb3000fb290bc02e9705fccb6abb3f2236e54098f0274c32bb47a83af52dbf,5da75fc970866b5a4ac817806f36a32761c2a8fd204c4b40925f31da3a768894",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int4",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int4",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_ND_ND_int4_int4_fp32_fp16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/29,2/29,2/6,2/27,2",
+        "QuantBatchMatmulV3/d=0,p=0/29,2/29,2/6,2/27,2",
+        "QuantBatchMatmulV3/d=1,p=1/29,2/29,2/6,2/27,2",
+        "QuantBatchMatmulV3/d=1,p=0/29,2/29,2/6,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "e15f1f7bbcd50ad2a27ea0cdb6875f15484911a1436c4a5bff6cf91b418c9878,22e0dbbb91cadd2883b96060f122698130cfb52e0fa8839ba46d3f4ab3d557a4",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int4",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int4",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 27
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_ND_ND_int4_int4_bf16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/29,2/29,2/3,2/27,2",
+        "QuantBatchMatmulV3/d=0,p=0/29,2/29,2/3,2/27,2",
+        "QuantBatchMatmulV3/d=1,p=1/29,2/29,2/3,2/27,2",
+        "QuantBatchMatmulV3/d=1,p=0/29,2/29,2/3,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "5351f2fa58d4d928f2831a757e1c1d48c1e5648c84c9629aa2ac0324e15ba68c,b96fd20740541dbfb0f15853caa6bda1aac3f9d3a10ff4fccf1c19461b877ad8",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int4",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int4",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 27
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_ND_ND_int4_int4_fp32_bf16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,29/2,29/9,2/1,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,29/2,29/9,2/1,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,29/2,29/9,2/1,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,29/2,29/9,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "e9a73fbc61a181d7c2004eb9edc00bb576370d004012905779f6d816f1f6a271,a5f507e692c409a1881492173edad015c8cf2baea1795f873dc71fc804412892",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_NZ_NZ_int8_int8_uint64_fp16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,29/2,29/3,2/1,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,29/2,29/3,2/1,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,29/2,29/3,2/1,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,29/2,29/3,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "df60298bc53d3a05fbc922086ab1d04d5821c7d54afee91b75d106fab1375fed,4da25800cef7e3e2f5ccc8779376854d04168daf7188652cd18de7187813f92b",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_NZ_NZ_int8_int8_fp32_fp16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,29/2,29/3,2/27,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,29/2,29/3,2/27,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,29/2,29/3,2/27,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,29/2,29/3,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "3f33d4407a73a05cae2762344836bab6e80a61749235e21129c951e0d4c79a62,235eaae2db4ca55038ae60986c40141f4939914ee62441a21acee4075607417b",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 27
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_NZ_NZ_int8_int8_fp32_bf16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,29/2,29/6,2/27,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,29/2,29/6,2/27,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,29/2,29/6,2/27,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,29/2,29/6,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "616091e99c6b9fa7d66be8ada3b0c5e1636be3a00985e01c48bc1f641d406ab8,d63b71817d1b08e11fd95bb8e99ed7bafd94598e9ca1840d96d538a9f120800c",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 27
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_NZ_NZ_int8_int8_bf16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,29/2,29/3,2/3,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,29/2,29/3,2/3,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,29/2,29/3,2/3,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,29/2,29/3,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "6945d5ff6fa70376e3f7f0388c1755384da9c9c2a9d5897f18bccbc2442297c7,1451d066bd6548b8f76c4ad8c60aca77a3f29f31a00e004c32aea2b83663a7ce",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 3
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_NZ_NZ_int8_int8_fp32_int32_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantBatchMatmulV3/d=0,p=1/2,29/2,29/6,2/3,2",
+        "QuantBatchMatmulV3/d=0,p=0/2,29/2,29/6,2/3,2",
+        "QuantBatchMatmulV3/d=1,p=1/2,29/2,29/6,2/3,2",
+        "QuantBatchMatmulV3/d=1,p=0/2,29/2,29/6,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "1e15e472fd95781ba9b311fe79fb3066925cf76f4287f2dc201c444d877f5eec,e3ac978160c08f78d7bb47913fcc3c1634257d5303602f210b7c0c18641bf307",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault",
+          "dtype_match_mode": "DtypeByte"
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "bias",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        },
+        {
+          "name": "pertoken_scale",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 3
+        },
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_batch_matmul_v3/QuantBatchMatmulV3_NZ_NZ_int8_int8_bf16_int32_high_performance.json"
+      }
+    }
+  ]
+}

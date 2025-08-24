@@ -1,0 +1,297 @@
+#include <stddef.h> /* for size_t */
+#include <stdio.h>
+#include <stdlib.h>
+#ifdef HAS_PROFILER
+#include <sys/syscall.h>
+#include <unistd.h>
+#endif
+
+#if defined(__GNUC__)
+#if defined(__clang__) || (__GNUC__ > 4 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 6))
+#pragma GCC diagnostic push
+#endif
+#if defined(__clang__) || (__GNUC__ > 4 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 2))
+#pragma GCC diagnostic ignored "-Wcast-qual"
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+#pragma GCC diagnostic ignored "-Wunused-variable"
+#pragma GCC diagnostic ignored "-Wunused-function"
+#endif
+#endif
+
+static void *CCEFatCubinHandleAICore;
+static void *CCEFatCubinHandleAICpu;
+
+extern "C" {
+extern int rtDevBinaryRegister(
+  void *fatCubin,
+  void **fatCubinHandle
+);
+extern int rtBinaryRegisterToFastMemory(
+  void *fatCubinHandle
+);
+extern int rtDependencyRegister(
+  void *handleMaster,
+  void *handleSlave
+);
+extern int rtMetadataRegister(
+  void *handle,
+  const char *metaData
+);
+
+extern void rtDevBinaryUnRegister(
+  void *fatCubinHandle
+);
+static void rtUnregisterBinaryUtilAICore(void)
+{
+  rtDevBinaryUnRegister(CCEFatCubinHandleAICore);
+}
+static void rtUnregisterBinaryUtilAICpu(void)
+{
+  rtDevBinaryUnRegister(CCEFatCubinHandleAICpu);
+}
+
+//#if defined(__GNUC__) && !defined(__ANDROID__)
+//
+//extern int atexit(void(*)(void)) throw();
+//
+//#else /* __GNUC__ && !__ANDROID__ */
+//
+//extern int __cdecl atexit(void(__cdecl *)(void));
+//
+//#endif /* __GNUC__ && !__ANDROID__ */
+
+}
+
+#include <__clang_cce_fatBinaryCtl.h>
+
+
+extern "C" {
+#if defined(_WIN32)
+#pragma data_seg("__nv_module_id")
+#endif /* _WIN32 */
+//#include REGISTERLINKBINARYFILE
+#if defined(_WIN32)
+#pragma data_seg()
+#endif /* _WIN32 */
+}
+
+#include CCEFATBINFILE
+
+#if defined(__PGI)
+__attribute__((unused))
+#endif /* __PGI */
+
+extern "C" {
+  __attribute__ ((visibility("hidden"))) void rtLinkedDevBinaryRegister(
+                                 const __fatBinC_Wrapper_t *prelinked_fatbinc,
+                                 void (*callback_fp)(void *),
+                                 int DevBinaryMagicNum)
+  {
+    bool IsAICore = false;
+    bool IsAICpu = false;
+
+    // record the return value when registering binary.
+    // Return value of 0 represents that register binary successfully.
+    int RegisterAICoreRet = 0;
+    int RegisterAICpuRet = 0;
+    const int RT_ERROR_NONE = 0;
+
+    static bool IsAICoreFirstRegister = true;
+    static bool IsAICpuFirstRegister = true;
+    // AICore has two types of cores, one is general, and another one
+    // is specific for vector's compute.
+    if (DevBinaryMagicNum == AICORE_MAGIC_NUM ||
+        DevBinaryMagicNum == AICORE_MAGIC_NUM_VEC ||
+        DevBinaryMagicNum == AICORE_MAGIC_NUM_CUBE) {
+      IsAICore = true;
+    } else if (DevBinaryMagicNum == AICPU_MAGIC_NUM) {
+      IsAICpu = true;
+    } else {
+      unsigned int MagicNumber = prelinked_fatbinc->magic;
+      // AICore has two types of cores, one is general, and another one
+      // is specific for vector's compute.
+      if (MagicNumber == AICORE_MAGIC_NUM ||
+          MagicNumber == AICORE_MAGIC_NUM_VEC ||
+          MagicNumber == AICORE_MAGIC_NUM_CUBE) {
+        IsAICore = true;
+      } else if (MagicNumber == AICPU_MAGIC_NUM) {
+        IsAICpu = true;
+      }
+    }
+
+     // when this function is called, it must have kernels in the binary,
+     // so we don't need to check whether the callback_fp is not null which
+     // is guaranteed by the compiler.
+
+     // if the binary is registered firstly, then register it, or never
+     // register the binary later.
+#ifdef CCE_FATBINSECTION
+     // CCE_FATBINSECTION macro is defined in the AICore binary C file,
+     // it denotes a valid C file for AICore be present
+     if (IsAICoreFirstRegister && IsAICore) {
+       IsAICoreFirstRegister = false;
+       RegisterAICoreRet = rtDevBinaryRegister((void*)&__fatDeviceTextAICore, &CCEFatCubinHandleAICore);
+
+#ifdef LOAD_BIN_TO_FAST_MEM
+       // Runtime will report error if binary registers unsuccessfully.
+       if (RegisterAICoreRet == RT_ERROR_NONE) {
+         rtBinaryRegisterToFastMemory(CCEFatCubinHandleAICore);
+       }
+#endif
+
+       atexit(rtUnregisterBinaryUtilAICore);
+     }
+#endif
+
+#ifdef CCE_FATBINSECTIONAICPU
+     if (IsAICpuFirstRegister && IsAICpu) {
+       IsAICpuFirstRegister = false;
+       RegisterAICpuRet = rtDevBinaryRegister((void*)&__fatDeviceTextAICpu, &CCEFatCubinHandleAICpu);
+       atexit(rtUnregisterBinaryUtilAICpu);
+     }
+#endif
+     // we should register kernel functions every time this function is called
+     // the callback_fp checking can be removed
+     // Runtime will report error if binary registers unsuccessfully.
+     if (IsAICore && callback_fp != nullptr &&
+         RegisterAICoreRet == RT_ERROR_NONE)
+       (*callback_fp)(CCEFatCubinHandleAICore);
+     if (IsAICpu && callback_fp != nullptr &&
+         RegisterAICpuRet == RT_ERROR_NONE)
+       (*callback_fp)(CCEFatCubinHandleAICpu);
+  }
+}
+
+extern "C" {
+  extern int rtLaunch(void *stubFunc);
+#ifdef HAS_PROFILER
+#pragma pack(1)
+  typedef struct ApiDef { 
+      unsigned short int magicNumber;
+      unsigned short int level;
+      unsigned int type;
+      unsigned int threadId;
+      unsigned int reserve;
+      unsigned long int beginTime;
+      unsigned long int endTime;
+      unsigned long int itemId;
+  }MsprofApi;
+
+  typedef struct HandleDef{
+      unsigned long int profSwitch;
+      unsigned long int tmp[34];
+      unsigned int type;
+  }MsprofCommandHandle;
+
+  typedef struct NodeBasicInfo {
+      unsigned long int opName;
+      unsigned int taskType;
+      unsigned long int opType;
+      unsigned int blockDim;
+      unsigned int opFlag;
+  }MsprofNodeBasicInfo;
+
+  typedef struct CompactInfo { 
+      unsigned short int magicNumber;
+      unsigned short int level;
+      unsigned int type;
+      unsigned int threadId;
+      unsigned int dataLen;
+      unsigned long int timeStamp;
+      union {
+          unsigned char info[40];
+          MsprofNodeBasicInfo nodeBasicInfo;
+      } data;
+  }MsprofCompactInfo;
+
+  typedef int (* callback)(unsigned int type, void* data, unsigned int len);
+  extern int MsprofReportApi(unsigned int  agingFlag, const MsprofApi *api);
+  extern int MsprofReportCompactInfo(unsigned int  agingFlag, const void* data, unsigned int  length);
+  extern unsigned long int  MsprofGetHashId(char *hashInfo, size_t length);
+  extern unsigned long int  MsprofSysCycleTime();
+  extern int MsprofRegisterCallback(unsigned int moduleId, callback handle);
+  static unsigned int __MsprofFlagL0  = 0;
+  static unsigned int __MsprofFlagL1  = 0;
+
+  int ProfCtrlHandle(unsigned int CtrlType, void* CtrlData, unsigned int DataLen) {
+    if ((CtrlData == nullptr) || (DataLen == 0U)) {
+      return 1;
+    }
+
+    if (CtrlType == 1) {
+      MsprofCommandHandle* handle = (MsprofCommandHandle *)(CtrlData);
+      if (handle->type >= 6)  // 6 is not used here
+        return 1;
+      if (handle->type == 1) {  // init - 0  , start - 1
+        __MsprofFlagL0 = ((0x00000800ULL & handle->profSwitch) == 0x00000800ULL) ? 1 : 0;
+        __MsprofFlagL1 = ((0x00000002ULL & handle->profSwitch) == 0x00000002ULL) ? 1 : 0;
+      }
+    }
+    return 0;
+  }
+
+  __attribute__ ((visibility("hidden"))) __attribute__((weak)) void __cce_rtLaunch(
+                                 void *stubFunc,
+                                 char *kernelName,
+                                 unsigned long int  length,
+                                 unsigned int bolckNum)
+  {
+    unsigned long int  beginTime = 0;
+    unsigned long int endTime = 0;
+    unsigned long int opName = 0;
+    unsigned int threadId = 0;
+    MsprofRegisterCallback(8, ProfCtrlHandle);      // 8 - CCE defined in msprof headerfile slog.h
+    if (__MsprofFlagL0 || __MsprofFlagL1) {
+      beginTime = MsprofSysCycleTime();
+    }
+    rtLaunch(stubFunc);
+    if (__MsprofFlagL0 || __MsprofFlagL1) {
+      endTime = MsprofSysCycleTime();
+      opName = MsprofGetHashId(kernelName, length);
+      threadId = (unsigned int)(syscall(SYS_gettid));
+      MsprofApi info;
+      info.magicNumber = 0x5a5a;      //MSPROF_REPORT_DATA_MAGIC_NUM
+      info.level = 10000;             //MSPROF_REPORT_NODE_LEVEL
+      info.type = 5;                  //MSPROF_REPORT_NODE_LAUNCH_TYPE
+      info.threadId = threadId;
+      info.reserve = 0;
+      info.beginTime = beginTime;
+      info.endTime = endTime;
+      info.itemId = opName;
+      MsprofReportApi(0, &info);
+    }
+
+    if (__MsprofFlagL1) {
+      MsprofCompactInfo nodeBasicInfo;
+      nodeBasicInfo.magicNumber = 0x5a5a;      //MSPROF_REPORT_DATA_MAGIC_NUM
+      nodeBasicInfo.level = 10000;             //MSPROF_REPORT_NODE_LEVEL
+      nodeBasicInfo.type = 0;                  //MSPROF_REPORT_NODE_BASIC_INFO_TYPE
+      nodeBasicInfo.threadId = threadId;
+      nodeBasicInfo.timeStamp = endTime;
+      nodeBasicInfo.data.nodeBasicInfo.opName = opName;
+      nodeBasicInfo.data.nodeBasicInfo.taskType = 0; //MSPROF_GE_TASK_TYPE_AI_CORE
+      nodeBasicInfo.data.nodeBasicInfo.opType = opName;
+      nodeBasicInfo.data.nodeBasicInfo.blockDim = bolckNum;
+      MsprofReportCompactInfo(0, &nodeBasicInfo, sizeof(MsprofCompactInfo));
+    }
+  }
+#else
+  __attribute__ ((visibility("hidden"))) __attribute__((weak)) void __cce_rtLaunch(
+                                 void *stubFunc,
+                                 char *kernelName,
+                                 unsigned long int  length,
+                                 unsigned int bolckNum)
+  {
+    (void)kernelName;
+    (void)length;
+    (void)bolckNum;
+    rtLaunch(stubFunc);
+  }
+#endif
+}
+
+#if defined(__GNUC__)
+#if defined(__clang__) || (__GNUC__ > 4 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 6))
+#pragma GCC diagnostic pop
+#endif
+#endif

@@ -1,0 +1,154 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SwiGlu/d=0,p=1/1,2/1,2",
+        "SwiGlu/d=0,p=0/1,2/1,2",
+        "SwiGlu/d=1,p=1/1,2/1,2",
+        "SwiGlu/d=1,p=0/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "f2b24250dedb72fbda9359d0c5998fa300557fcfcc4e99587bd7a7585c539dbc,4f8b8225fc282a08577eb78589dc93784353c0490e4b5277bc57f4d0c020af49",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dim",
+          "dtype": "int64",
+          "value": -1
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/swi_glu/SwiGlu_1_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SwiGlu/d=0,p=1/0,2/0,2",
+        "SwiGlu/d=0,p=0/0,2/0,2",
+        "SwiGlu/d=1,p=1/0,2/0,2",
+        "SwiGlu/d=1,p=0/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "5a4f0938ea6e39be5368bee9df307fc06fa0bb41dd4d03c2718db7449222027d,65946550f41d5349e494fbe7b566f9932b93b729a95a84cea34925577c181118",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dim",
+          "dtype": "int64",
+          "value": -1
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/swi_glu/SwiGlu_2_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SwiGlu/d=0,p=1/27,2/27,2",
+        "SwiGlu/d=0,p=0/27,2/27,2",
+        "SwiGlu/d=1,p=1/27,2/27,2",
+        "SwiGlu/d=1,p=0/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "a586c8e9bee01601864ffb778b232e638627ab8793d09982d67bbdc2eca2926e,f4fe32164fdce4240aa9a6eebad240b189759b4cdf1f6b2cbbef4a884738cc5f",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dim",
+          "dtype": "int64",
+          "value": -1
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/swi_glu/SwiGlu_3_high_performance.json"
+      }
+    }
+  ]
+}

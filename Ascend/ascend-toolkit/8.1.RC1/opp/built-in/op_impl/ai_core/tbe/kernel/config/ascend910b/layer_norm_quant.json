@@ -1,0 +1,184 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "LayerNormQuant/d=0,p=1/1,2/1,2/1,2/1,2/2,2/2,2",
+        "LayerNormQuant/d=0,p=0/1,2/1,2/1,2/1,2/2,2/2,2",
+        "LayerNormQuant/d=1,p=1/1,2/1,2/1,2/1,2/2,2/2,2",
+        "LayerNormQuant/d=1,p=0/1,2/1,2/1,2/1,2/2,2/2,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "6ce74c312ebfd0a993ea4f984db5f6d62bbca497d7291fcd1df9d9472e6d09b1,3b57ae4cf34570d5e6a027569f9ffdcd9d90d8fd0d864d97b5968462ec6c7fff",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "beta",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset",
+          "index": 4,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/layer_norm_quant/LayerNormQuant_9dabaff0581092d922bc87c0fad68561_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "LayerNormQuant/d=0,p=1/27,2/27,2/27,2/27,2/2,2/2,2",
+        "LayerNormQuant/d=0,p=0/27,2/27,2/27,2/27,2/2,2/2,2",
+        "LayerNormQuant/d=1,p=1/27,2/27,2/27,2/27,2/2,2/2,2",
+        "LayerNormQuant/d=1,p=0/27,2/27,2/27,2/27,2/2,2/2,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "849a246e4e877ae73683bacc075311b7d244b2acac7f33664f6cdfd9b9fd2089,25acb9e84b66802f4b73393ad1e4147a4674af19321c0a4e7bdca7268b0a8c5c",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "beta",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset",
+          "index": 4,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "result",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/layer_norm_quant/LayerNormQuant_c643ff43b3b498e6d39e62b870977073_high_performance.json"
+      }
+    }
+  ]
+}

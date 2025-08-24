@@ -1,0 +1,8 @@
+#ifndef OPP_VERSION_H
+#define OPP_VERSION_H
+
+#define OPP_VERSION_STR "8.1.RC1"
+#define OPP_VERSION ((9 * 100000000) + (2 * 1000000) + ((2 * 100) + 5000))
+#define OPP_TIMESTAMP 20250428203017761
+
+#endif /* OPP_VERSION_H */

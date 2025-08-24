@@ -1,0 +1,312 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MultiHeadAttentionScore/d=0,p=1/0,2/0,2/0,2/0,2/0,2",
+        "MultiHeadAttentionScore/d=0,p=0/0,2/0,2/0,2/0,2/0,2",
+        "MultiHeadAttentionScore/d=1,p=1/0,2/0,2/0,2/0,2/0,2",
+        "MultiHeadAttentionScore/d=1,p=0/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "ecc764279a279a91277e610c7b82f8e236ad9bd1b0942c45326f5e9119e57722,8713a8d17234baccecaf52d6c6d93562184ef333c769c903677aba500b737d39",
+      "inputs": [
+        {
+          "name": "query",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "pse_shift",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "drop_mask",
+          "index": 4,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "padding_mask",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "atten_mask",
+          "index": 6,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax_out",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "attention_out",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale_value",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "keep_prob",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "pre_tockens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "next_tockens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "head_num",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "input_layout",
+          "dtype": "string",
+          "value": "BSH"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/multi_head_attention_score/MultiHeadAttentionScore_27924884b483847e59295f9be109d93d_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MultiHeadAttentionScore/d=0,p=1/1,2/1,2/1,2/1,2/1,2",
+        "MultiHeadAttentionScore/d=0,p=0/1,2/1,2/1,2/1,2/1,2",
+        "MultiHeadAttentionScore/d=1,p=1/1,2/1,2/1,2/1,2/1,2",
+        "MultiHeadAttentionScore/d=1,p=0/1,2/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "07a02dc1e691e8bce8e518f131982c72d8111b0db4b52be93f4c21aaf20b730d,2d766c57397fc1e20e0a327cae2f2fc627e1b8e799f8dd86a8ffc7c846c46fee",
+      "inputs": [
+        {
+          "name": "query",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "key",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "value",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "pse_shift",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "drop_mask",
+          "index": 4,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "padding_mask",
+          "index": 5,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "atten_mask",
+          "index": 6,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "softmax_out",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "attention_out",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale_value",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "keep_prob",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "pre_tockens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "next_tockens",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "head_num",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "input_layout",
+          "dtype": "string",
+          "value": "BSH"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/multi_head_attention_score/MultiHeadAttentionScore_b41515b4034a9fe4be1e8395e44dd5ab_high_performance.json"
+      }
+    }
+  ]
+}

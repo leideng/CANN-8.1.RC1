@@ -1,0 +1,3124 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=1,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "16b58e051fc0b32c7749cf93dd67fcd2610cd48728b78bce1e4a59b51310c3c7,b24ede3dc004a2583e98d3aa61020672497428ce867061bd70130b7c9c9f6774",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_fp32_01_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=1,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "16ca5a37cad9e037e93f76427966eed7d47894ba2fbed99e7714a796441cf0ba,9cb231cdb111e3e9d5fe962be84d7a42a3e5f3a3dbbcc5e3b9ba11abb6c97ed1",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_fp32_02_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=1,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "1cd7c59bd43017c982dae2ec7cc07ba197859cf11e0749fe6a110d1444e863a8,b71ff932edc580b06eda4a95135bd4e7301afc43cc29cbbc16fe9958bf8fb1fe",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_fp32_03_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=1,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "58fd4b0e330d913f53c73d01cad83b2c2bb2b31d8c3a1577a6a6cbff38ea7495,bb3cda138a54f29ef319faec77ff6a34766cfb489c377ee0f64d8fef9aec7415",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_fp32_04_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=1,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "ac769f2fcadd793038a93b844a704c6284f9071608eacfaa98bb837fb8ca8016,22b255925d5868ba16ad3765f07fb22b7e9ae2ccf3f2dadaf24fc45cc80eec4d",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_fp32_05_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=1,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "c2838a49406c564331be2f89372b18905cae97d930e38d77d90d9ba3ab249abb,ffa642d071bf1122ab36ed207df971a67f787a1921b4e83ac592fea2603502a9",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_fp32_06_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=1,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "52f0f9c9c5a20f1ada20f2d2f34dc40fb5c9421583429b8ceb6edba7d59e14bb,263b4f3a06d7698cfbaeded4d61492b9e144222e8ee2ac49e34eb40d14f7aa67",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_fp32_07_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=1,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "GroupNormGrad/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "ada4a489e932aa1227283a2b66bccd4ac37945f93f5e6d319f55750d422609b4,052c6ce5be5697bd2fea614b41c050f2fbfaa72c37e86d82aec746c28baafc50",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_fp32_08_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=0,p=0/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=1,p=1/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=1,p=0/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "f833a04e8d17ad1f01f7268c0bd1122e7851e61ca9d9b4d69cec99728df710f8,15b16fd2ac5df42c4f8613508567ef5c05c5174ddccefcb7e7981c2f70ec7d05",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_fp16_01_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=0,p=0/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=1,p=1/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=1,p=0/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "926a063a66be228307fdf69a00a29e181fbd44bcd0405c597b3b448a726270da,f25c704acc56d7155c653b921cd4b54b83885e9926c8a803a8f8370ad28fc1d1",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_fp16_02_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=0,p=0/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=1,p=1/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=1,p=0/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "087d74d276725a2579e0dbc0098d68a479eaacb7878bce5b2e8a190dbfe75ac3,59e964c34b58170d7c18dde2ecf984e3b39b350e608b250b8e5bd9b31ecb608b",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_fp16_03_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=0,p=0/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=1,p=1/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=1,p=0/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "f66428c70148c2c7b52dc7456d1052c1232ff7231282427ca4c7738eae7372aa,962b65c1470683ed44925af4ec18643a44c3933897f8314fece16bdef9f638fa",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_fp16_04_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=0,p=0/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=1,p=1/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=1,p=0/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "2052ca247e0632329d8de8cdd0d036d91655c85d1b71b611628b7cd54ddbd75b,7c946de138db2ca42dabeb266cb91570d59745a2afa4240d84b158ca8487de53",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_fp16_05_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=0,p=0/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=1,p=1/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=1,p=0/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "2c3bc36763a9aee1d64e14d113d9b33c52a06076fc584a6e8d6aaaa4b9409224,58b51858da0a07ed40701bc794d7a7db1b467789f95fa22a01937ef410824074",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_fp16_06_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=0,p=0/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=1,p=1/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "GroupNormGrad/d=1,p=0/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "caec7311b18c376a69b47a40e5a941a1dce006341d71b4627bfdf870be1b08cb,5c49d180cdf7988c35d6b1445c9f30f0155ff4123e02ced3ec9f0a9041a6e466",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_fp16_07_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=0,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=1,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=1,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "07835521aa099e4ba0d243aa827c1864a2a832bdb851e93e5513dd4956d99f20,859b87788b8e6bd924f3bfeb9a8318e913a2601962e8aad33941a98c8d66e776",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_fp16_08_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=0,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=1,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=1,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "5c24272ac77b1e5b403c354016d0b2cc2beb58953acf038b08e1d1b6d445c157,39c1c4e43a044d574dc2da8cf9b4499fbef4595f3f5f53adffa332dcfdf4f2cb",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_bf16_01_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=0,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=1,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=1,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "ab9aa89eb09571174626377e4ea48eb02b4e25a566ead4175dd6a75487dd0dde,6128a73c122284bdd25f1fd459504388c9f74d21f8194ebc4982a9f596cc8cba",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_bf16_02_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=0,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=1,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=1,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "a9a85afb3f80239a1e5b0fece220028f42fda9f15d0f56249eaf6ec55f18158e,296e9886585189e659fcd746f6bd89189c5117c230b80d25b84278449fbfa5c3",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_bf16_03_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=0,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=1,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=1,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "70348c79709cce7b7880caee8c75233c2eaac657fc6fec48457ccfa68843f1e1,1643c2bb727cbfb948c80195510e14ae6ff8abf63b6729bed3e1fcc809765134",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_bf16_04_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=0,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=1,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=1,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "3ee9cbd85d7677d22342301c6d8a0d41476342586d8c8b162d41d1d33b39f77f,e54af6e1d4bfa00fde7d3abecb56fc7158e0716cac55d78049b318de8e9ed936",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_bf16_05_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=0,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=1,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=1,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "d81f1da8a53c0bb15daefb32a5f8268d85e54691a81692bd1bf1c0c8d7f001ef,af7aa6f18109ef0e37283e5dacbe7bd87f95b26d970f2a398e81238f52e9dff7",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_bf16_06_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=0,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=1,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=1,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "6ec9e894bc4600b5d72a16bbfce203bcb2a1d4192e612e62253efb3e452665f3,c6fce33771a2109b54143c77e962c0b0628aec42adbf0fd96757e57e71456b6f",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_bf16_07_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupNormGrad/d=0,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=0,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=1,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "GroupNormGrad/d=1,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "07835521aa099e4ba0d243aa827c1864a2a832bdb851e93e5513dd4956d99f20,859b87788b8e6bd924f3bfeb9a8318e913a2601962e8aad33941a98c8d66e776",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgamma",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dbeta",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_groups",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "dx_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dgamma_is_require",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "dbeta_is_require",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/group_norm_grad/GroupNormGrad_bf16_08_high_performance.json"
+      }
+    }
+  ]
+}

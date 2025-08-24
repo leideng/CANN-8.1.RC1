@@ -1,0 +1,286 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "LogSoftmaxV2/d=0,p=1/27,2/27,2",
+        "LogSoftmaxV2/d=0,p=0/27,2/27,2",
+        "LogSoftmaxV2/d=1,p=1/27,2/27,2",
+        "LogSoftmaxV2/d=1,p=0/27,2/27,2"
+      ],
+      "staticKey": "ad6d0eeefc18eb7db820d4b0b385494310be4854eebe065c7c9a6530c63107a6,e5edeb15b35b169e93a48f7c56fe7810f236f384583770fc95197829f2ace461",
+      "inputs": [
+        {
+          "name": "logits",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axes",
+          "dtype": "list_int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/log_softmax_v2/LogSoftmaxV2_299cf4d7f9ef0f745d89d88c666b45aa_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "LogSoftmaxV2/d=0,p=1/1,2/1,2",
+        "LogSoftmaxV2/d=0,p=0/1,2/1,2",
+        "LogSoftmaxV2/d=1,p=1/1,2/1,2",
+        "LogSoftmaxV2/d=1,p=0/1,2/1,2"
+      ],
+      "staticKey": "bcd20ad9ac8b401a6fe7e4457dce030ffb2131122141d875d5030b3df6eb6721,9440d3d1379630754a7bc88c462fa2ea5d685e35196f1cef6d005e217c33845b",
+      "inputs": [
+        {
+          "name": "logits",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axes",
+          "dtype": "list_int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/log_softmax_v2/LogSoftmaxV2_a8d63cbe8795eef99c620173d4757e59_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "LogSoftmaxV2/d=0,p=1/0,2/0,2",
+        "LogSoftmaxV2/d=0,p=0/0,2/0,2",
+        "LogSoftmaxV2/d=1,p=1/0,2/0,2",
+        "LogSoftmaxV2/d=1,p=0/0,2/0,2"
+      ],
+      "staticKey": "014ececa58d1c759a8c909f3ce9e793fe1af4c3f6042793b2e17f12fd733f42e,63266b7cac8cd8b44311d55e412ffee810a440050d8d87b304a95819734f55f4",
+      "inputs": [
+        {
+          "name": "logits",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axes",
+          "dtype": "list_int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/log_softmax_v2/LogSoftmaxV2_291664ae3e88b38b8b46c2efbbea27c9_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "LogSoftmaxV2/d=0,p=2/27,2/27,2",
+        "LogSoftmaxV2/d=1,p=2/27,2/27,2"
+      ],
+      "staticKey": "f2d77c1ed6927d50e8098b2055326921da8dca7012dc84ba7b65e931d94751fc",
+      "inputs": [
+        {
+          "name": "logits",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axes",
+          "dtype": "list_int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/log_softmax_v2/LogSoftmaxV2_299cf4d7f9ef0f745d89d88c666b45aa_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "LogSoftmaxV2/d=0,p=2/1,2/1,2",
+        "LogSoftmaxV2/d=1,p=2/1,2/1,2"
+      ],
+      "staticKey": "c932601368dc0e80674a4b12b9905f6bb3e02eb2e445d0ab4752ed4b0ae067c7",
+      "inputs": [
+        {
+          "name": "logits",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axes",
+          "dtype": "list_int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/log_softmax_v2/LogSoftmaxV2_a8d63cbe8795eef99c620173d4757e59_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "LogSoftmaxV2/d=0,p=2/0,2/0,2",
+        "LogSoftmaxV2/d=1,p=2/0,2/0,2"
+      ],
+      "staticKey": "cdce248c720eb17e5f3c1beb18e5e931329acb82937e742092c83f8ad71c3a47",
+      "inputs": [
+        {
+          "name": "logits",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "logsoftmax",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axes",
+          "dtype": "list_int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/log_softmax_v2/LogSoftmaxV2_291664ae3e88b38b8b46c2efbbea27c9_high_precision.json"
+      }
+    }
+  ]
+}

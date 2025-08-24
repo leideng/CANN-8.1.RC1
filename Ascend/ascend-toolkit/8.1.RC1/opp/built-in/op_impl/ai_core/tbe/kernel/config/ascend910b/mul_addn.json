@@ -1,0 +1,208 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MulAddn/d=0,p=1/27,2/27,2/27,2",
+        "MulAddn/d=0,p=0/27,2/27,2/27,2",
+        "MulAddn/d=1,p=1/27,2/27,2/27,2",
+        "MulAddn/d=1,p=0/27,2/27,2/27,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "af36c6fdff3ab37b6e2e26e11047bf8afaa571d73f8e3493c87a56bcb8d5565d,9cf2b582297e949a2a7b9ae044117fd3499af10bb41907057ce219f23bff1032",
+      "inputs": [
+        [
+          {
+            "name": "x1",
+            "index": 0,
+            "dtype": "bfloat16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        [
+          {
+            "name": "x2",
+            "index": 1,
+            "dtype": "bfloat16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ]
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "N",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mul_addn/MulAddn_bfloat_0_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MulAddn/d=0,p=1/1,2/1,2/1,2",
+        "MulAddn/d=0,p=0/1,2/1,2/1,2",
+        "MulAddn/d=1,p=1/1,2/1,2/1,2",
+        "MulAddn/d=1,p=0/1,2/1,2/1,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "60d30d0ef1e06e91f398fd4faa40a29b2e91a6504bf01af22c488313dc52bd70,46bf669b410c9e2f99a044f7a6ea308ef67515e4c2958823dccced7d54054441",
+      "inputs": [
+        [
+          {
+            "name": "x1",
+            "index": 0,
+            "dtype": "float16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        [
+          {
+            "name": "x2",
+            "index": 1,
+            "dtype": "float16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ]
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "N",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mul_addn/MulAddn_float16_0_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MulAddn/d=0,p=1/0,2/0,2/0,2",
+        "MulAddn/d=0,p=0/0,2/0,2/0,2",
+        "MulAddn/d=1,p=1/0,2/0,2/0,2",
+        "MulAddn/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "c3a0f6cc2d7358ea68669fc5c386d96540eccca23df2449246b7df49d2025cd0,6b4e6c42629a114a3967f859dab9016f7c737dc7759a2e001695bc15f6907613",
+      "inputs": [
+        [
+          {
+            "name": "x1",
+            "index": 0,
+            "dtype": "float32",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ],
+        [
+          {
+            "name": "x2",
+            "index": 1,
+            "dtype": "float32",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ],
+            "format_match_mode": "FormatAgnostic"
+          }
+        ]
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "N",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mul_addn/MulAddn_float32_0_high_performance.json"
+      }
+    }
+  ]
+}

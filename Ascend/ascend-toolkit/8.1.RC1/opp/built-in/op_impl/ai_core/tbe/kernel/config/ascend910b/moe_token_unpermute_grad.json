@@ -1,0 +1,289 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTokenUnpermuteGrad/d=0,p=1/27,2/27,2/3,2/27,2/27,2",
+        "MoeTokenUnpermuteGrad/d=0,p=0/27,2/27,2/3,2/27,2/27,2",
+        "MoeTokenUnpermuteGrad/d=1,p=1/27,2/27,2/3,2/27,2/27,2",
+        "MoeTokenUnpermuteGrad/d=1,p=0/27,2/27,2/3,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "74d4fa024d93c25350c3e1b6af7f758d7581d477580dd2a4f78d3ba81ade4739,b616874a23f247561ba1b6b6fdaa3d05943c2b8047aeb0acb07e5b9d4cf63151",
+      "inputs": [
+        {
+          "name": "permuted_tokens",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "unpermuted_tokens_grad",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "probs",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "permuted_tokens_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "probs_grad",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "padded_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "restore_shape",
+          "dtype": "list_int",
+          "value": []
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_token_unpermute_grad/MoeTokenUnpermuteGrad_input_bf16_indices_int32_0_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTokenUnpermuteGrad/d=0,p=1/1,2/1,2/3,2/1,2/1,2",
+        "MoeTokenUnpermuteGrad/d=0,p=0/1,2/1,2/3,2/1,2/1,2",
+        "MoeTokenUnpermuteGrad/d=1,p=1/1,2/1,2/3,2/1,2/1,2",
+        "MoeTokenUnpermuteGrad/d=1,p=0/1,2/1,2/3,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "6df4b4e4bd5729ac33ce6d2b4f55562f2b9a98412e098dd1387f0b3fe5f8d447,cdc9d495e98c06f0f9bd4b4b09a18b05698bf71085e7c30c0c576693ced3b574",
+      "inputs": [
+        {
+          "name": "permuted_tokens",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "unpermuted_tokens_grad",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "probs",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "permuted_tokens_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "probs_grad",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "padded_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "restore_shape",
+          "dtype": "list_int",
+          "value": []
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_token_unpermute_grad/MoeTokenUnpermuteGrad_input_float16_indices_int32_0_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTokenUnpermuteGrad/d=0,p=1/0,2/0,2/3,2/0,2/0,2",
+        "MoeTokenUnpermuteGrad/d=0,p=0/0,2/0,2/3,2/0,2/0,2",
+        "MoeTokenUnpermuteGrad/d=1,p=1/0,2/0,2/3,2/0,2/0,2",
+        "MoeTokenUnpermuteGrad/d=1,p=0/0,2/0,2/3,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "45e91722b65097e2db166400da93009adc141eec19bae5326c2e701ede65a3b9,88d413081e77db36bf28080fe46b5580fb6837f9d50653a952ab61e6e77a986a",
+      "inputs": [
+        {
+          "name": "permuted_tokens",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "unpermuted_tokens_grad",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "probs",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "permuted_tokens_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "probs_grad",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "padded_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "restore_shape",
+          "dtype": "list_int",
+          "value": []
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_token_unpermute_grad/MoeTokenUnpermuteGrad_input_float32_indices_int32_0_high_performance.json"
+      }
+    }
+  ]
+}

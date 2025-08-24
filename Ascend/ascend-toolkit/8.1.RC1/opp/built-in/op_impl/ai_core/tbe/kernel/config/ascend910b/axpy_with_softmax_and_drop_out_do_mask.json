@@ -1,0 +1,174 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "AxpyWithSoftmaxAndDropOutDoMask/d=0,p=0/1,29/1,29/4,2/1,29/1,29",
+        "AxpyWithSoftmaxAndDropOutDoMask/d=1,p=0/1,29/1,29/4,2/1,29/1,29"
+      ],
+      "staticKey": "a93d3c2b5df8dcba3da2a3c8c2dcfe74e79d2e4b699c7973abe69234d9cbb8b5",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 2,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "alpha",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "input_keep_prob",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "axis",
+          "dtype": "list_int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/axpy_with_softmax_and_drop_out_do_mask/AxpyWithSoftmaxAndDropOutDoMask_6d3f7c2ccfe87b6bb5981d1133fa3698_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "AxpyWithSoftmaxAndDropOutDoMask/d=0,p=0/0,29/0,29/4,2/0,29/0,29",
+        "AxpyWithSoftmaxAndDropOutDoMask/d=1,p=0/0,29/0,29/4,2/0,29/0,29"
+      ],
+      "staticKey": "8fd54912912f6ef3447026ff59190d059a770bcf7f1d57742185571fc501e7bf",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 2,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y1",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y2",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "alpha",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "input_keep_prob",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "axis",
+          "dtype": "list_int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/axpy_with_softmax_and_drop_out_do_mask/AxpyWithSoftmaxAndDropOutDoMask_683cd9b9ec44d10fac190e6c51973cd8_high_performance.json"
+      }
+    }
+  ]
+}

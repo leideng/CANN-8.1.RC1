@@ -1,0 +1,214 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeInitRoutingV2Grad/d=0,p=1/1,2/3,2/1,2",
+        "MoeInitRoutingV2Grad/d=0,p=0/1,2/3,2/1,2",
+        "MoeInitRoutingV2Grad/d=1,p=1/1,2/3,2/1,2",
+        "MoeInitRoutingV2Grad/d=1,p=0/1,2/3,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "9f097417b52303737e8e84a90c67f924aafafa61acbc59429baa61d690893e6d,49ffd9781a071379923ad3612327e7d39998b1ea1046a12ce838b0921f64b3f2",
+      "inputs": [
+        {
+          "name": "grad_expanded_x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_row_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "top_k",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "drop_pad_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "active_num",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_init_routing_v2_grad/MoeInitRoutingV2Grad_1980d2db1a80c523e7e59a032c95969880af8_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeInitRoutingV2Grad/d=0,p=1/0,2/3,2/0,2",
+        "MoeInitRoutingV2Grad/d=0,p=0/0,2/3,2/0,2",
+        "MoeInitRoutingV2Grad/d=1,p=1/0,2/3,2/0,2",
+        "MoeInitRoutingV2Grad/d=1,p=0/0,2/3,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "b3c91c63f758d6db99e09ce6beaea35491325edec0c638b14720ae384a537618,3db50318bfcf9e830a5a89dc14ce5ae89f5347698c8e142b5ed987147048fedb",
+      "inputs": [
+        {
+          "name": "grad_expanded_x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_row_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "top_k",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "drop_pad_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "active_num",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_init_routing_v2_grad/MoeInitRoutingV2Grad_19808098b79498645e9c0da095babdeaf862i16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeInitRoutingV2Grad/d=0,p=1/27,2/3,2/27,2",
+        "MoeInitRoutingV2Grad/d=0,p=0/27,2/3,2/27,2",
+        "MoeInitRoutingV2Grad/d=1,p=1/27,2/3,2/27,2",
+        "MoeInitRoutingV2Grad/d=1,p=0/27,2/3,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "e9c7d455c412df704fb89723a89a3bf336e6d3a95394c071fa7fc15e80d4f283,d0a3d0e91636b25bd342a853eb82ab8445c2281a452f3e31c88188b25c99b207",
+      "inputs": [
+        {
+          "name": "grad_expanded_x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_row_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "top_k",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "drop_pad_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "active_num",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_init_routing_v2_grad/MoeInitRoutingV2Grad_19805c5e58e043224cccf51a06108010ae13i32_high_performance.json"
+      }
+    }
+  ]
+}

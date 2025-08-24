@@ -1,0 +1,289 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SwiGluQuant/d=0,p=1/1,2/2,2/0,2",
+        "SwiGluQuant/d=0,p=0/1,2/2,2/0,2",
+        "SwiGluQuant/d=1,p=1/1,2/2,2/0,2",
+        "SwiGluQuant/d=1,p=0/1,2/2,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "b3e3089fc80e86281c5f7511c334790ef6001df47a457a8eb8ff72ea9f8d18de,1f290d0ae41c6ff1294c036e916166018d3985726a8630c09646d752e3f4693a",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "smooth_scales",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offsets",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "group_index",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "activate_left",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "quant_mode",
+          "dtype": "string",
+          "value": "static"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/swi_glu_quant/SwiGluQuant_float16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SwiGluQuant/d=0,p=1/27,2/2,2/0,2",
+        "SwiGluQuant/d=0,p=0/27,2/2,2/0,2",
+        "SwiGluQuant/d=1,p=1/27,2/2,2/0,2",
+        "SwiGluQuant/d=1,p=0/27,2/2,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "8a713698142cd0f290d364eda9bdeaff286a971c411c3cccadb8aacf6d460b58,c384f702e8d85de3f10ffdb1db339ce0995304d83432979f67fed18abdbf3bb0",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "smooth_scales",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offsets",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "group_index",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "activate_left",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "quant_mode",
+          "dtype": "string",
+          "value": "dynamic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/swi_glu_quant/SwiGluQuant_bfloat16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SwiGluQuant/d=0,p=1/0,2/2,2/0,2",
+        "SwiGluQuant/d=0,p=0/0,2/2,2/0,2",
+        "SwiGluQuant/d=1,p=1/0,2/2,2/0,2",
+        "SwiGluQuant/d=1,p=0/0,2/2,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "fd0477a8169bbc82cce3c7a34222e5a79415f0fa72e3ab0ff1edb388bb714494,cfc5024ed4db8916fe4df949ec9858c1d72f9d0933f2443799d9ec017bde2beb",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "smooth_scales",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offsets",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "group_index",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "activate_left",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "quant_mode",
+          "dtype": "string",
+          "value": "static"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/swi_glu_quant/SwiGluQuant_float32_high_performance.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,748 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmax/d=0,p=0/27,29/12,29/27,29/,0",
+        "ScaledMaskedSoftmax/d=1,p=0/27,29/12,29/27,29/,0"
+      ],
+      "staticKey": "de3708a859177a13908f89ea58601e02c6406f797eae895461b0710a76ab1dd5",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "bool",
+          "format": "FRACTAL_NZ",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax/ScaledMaskedSoftmax_bf16_nz_false_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmax/d=0,p=0/27,29/12,29/27,29/,1",
+        "ScaledMaskedSoftmax/d=1,p=0/27,29/12,29/27,29/,1"
+      ],
+      "staticKey": "d926980d3da6ea3c21463f8be8259821d11da93690a61b82f2f987290c4c04cb",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "bool",
+          "format": "FRACTAL_NZ",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax/ScaledMaskedSoftmax_bf16_nz_true_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmax/d=0,p=0/27,2/12,2/27,2/,0",
+        "ScaledMaskedSoftmax/d=1,p=0/27,2/12,2/27,2/,0"
+      ],
+      "staticKey": "f7f1e8a05836e9a0485dd73ce3fc9001dc5964bc0e43d7d7bfabb4584dabc5c3",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax/ScaledMaskedSoftmax_bf16_nd_false_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmax/d=0,p=0/27,2/12,2/27,2/,1",
+        "ScaledMaskedSoftmax/d=1,p=0/27,2/12,2/27,2/,1"
+      ],
+      "staticKey": "a87d14ca9c79ddc17888d1fdaadaa45d23182e642edec5844903865e7d6feea2",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax/ScaledMaskedSoftmax_bf16_nd_true_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmax/d=0,p=0/1,29/12,29/1,29/,0",
+        "ScaledMaskedSoftmax/d=1,p=0/1,29/12,29/1,29/,0"
+      ],
+      "staticKey": "b1eb0bc7631fb6812fddb0ebf2c117042db81b76471cea8582b4f036da202e56",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "bool",
+          "format": "FRACTAL_NZ",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax/ScaledMaskedSoftmax_fp16_nz_false_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmax/d=0,p=0/1,29/12,29/1,29/,1",
+        "ScaledMaskedSoftmax/d=1,p=0/1,29/12,29/1,29/,1"
+      ],
+      "staticKey": "dd0c91e5d9efe09cd4adcff326f79c2141159b4819012748b9102d34887ac1b2",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "bool",
+          "format": "FRACTAL_NZ",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax/ScaledMaskedSoftmax_fp16_nz_true_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmax/d=0,p=0/1,2/12,2/1,2/,0",
+        "ScaledMaskedSoftmax/d=1,p=0/1,2/12,2/1,2/,0"
+      ],
+      "staticKey": "d807c39781f59b19d3695c910986b8fd1c913a5228a477b86153227c06daf784",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax/ScaledMaskedSoftmax_fp16_nd_false_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmax/d=0,p=0/1,2/12,2/1,2/,1",
+        "ScaledMaskedSoftmax/d=1,p=0/1,2/12,2/1,2/,1"
+      ],
+      "staticKey": "f9f19009823ce337872ec98d0899bf531a2d1f8e30ad3aa07e23925ec9d51b03",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax/ScaledMaskedSoftmax_fp16_nd_true_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmax/d=0,p=0/0,29/12,29/0,29/,0",
+        "ScaledMaskedSoftmax/d=1,p=0/0,29/12,29/0,29/,0"
+      ],
+      "staticKey": "018265f010cf938a325bd639c4e43c64ed43864beca067a3df864e97bd0e89cb",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "bool",
+          "format": "FRACTAL_NZ",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax/ScaledMaskedSoftmax_fp32_nz_false_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmax/d=0,p=0/0,29/12,29/0,29/,1",
+        "ScaledMaskedSoftmax/d=1,p=0/0,29/12,29/0,29/,1"
+      ],
+      "staticKey": "f629fb424067361b4f09a156bf16ba7c679464af6d1b71fd941a8b7735f6d056",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "bool",
+          "format": "FRACTAL_NZ",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax/ScaledMaskedSoftmax_fp32_nz_true_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmax/d=0,p=0/0,2/12,2/0,2/,0",
+        "ScaledMaskedSoftmax/d=1,p=0/0,2/12,2/0,2/,0"
+      ],
+      "staticKey": "4117aa525cffd5a1ee1631591f3555de9ef1bd994fe5f7f7361e156253c77dbb",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax/ScaledMaskedSoftmax_fp32_nd_false_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmax/d=0,p=0/0,2/12,2/0,2/,1",
+        "ScaledMaskedSoftmax/d=1,p=0/0,2/12,2/0,2/,1"
+      ],
+      "staticKey": "67775dcc38f2600eeffa30335ff9441eb3554ec4a67c4ae47279ab0df64d1cdb",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax/ScaledMaskedSoftmax_fp32_nd_true_high_performance.json"
+      }
+    }
+  ]
+}

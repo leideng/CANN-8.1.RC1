@@ -1,0 +1,154 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "DropoutWithMulsAndSoftmaxGrad/d=0,p=0/1,29/4,2/1,29/1,29",
+        "DropoutWithMulsAndSoftmaxGrad/d=1,p=0/1,29/4,2/1,29/1,29"
+      ],
+      "staticKey": "039dadf6b357ae84472dad959a756134f994da2e5430b072b3e1dc3e6750cb98",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "softmax_output",
+          "index": 2,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "input_keep_prob",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "alpha",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "axes",
+          "dtype": "list_int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/drop_out_with_muls_and_softmax_grad/DropoutWithMulsAndSoftmaxGrad_2a7163fd144cfe879b030f0de4620363_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "DropoutWithMulsAndSoftmaxGrad/d=0,p=0/0,29/4,2/0,29/0,29",
+        "DropoutWithMulsAndSoftmaxGrad/d=1,p=0/0,29/4,2/0,29/0,29"
+      ],
+      "staticKey": "9e8738578481d5642e937102e6002c8e80b72c1c60e18e6dda302274e2998573",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 1,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "softmax_output",
+          "index": 2,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "input_keep_prob",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "alpha",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "axes",
+          "dtype": "list_int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/drop_out_with_muls_and_softmax_grad/DropoutWithMulsAndSoftmaxGrad_90d512c33b7ee2c046230fe41e42f5aa_high_performance.json"
+      }
+    }
+  ]
+}

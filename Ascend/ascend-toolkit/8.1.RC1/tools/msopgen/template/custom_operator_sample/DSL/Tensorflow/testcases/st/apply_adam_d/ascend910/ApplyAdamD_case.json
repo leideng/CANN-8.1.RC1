@@ -1,0 +1,281 @@
+[
+    {
+        "case_name": "Test_ApplyAdamD_001",
+        "op": "ApplyAdamD",
+        "input_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16",
+                    "float"
+                ],
+                "shape": [
+                    1
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "var"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16",
+                    "float"
+                ],
+                "shape": [
+                    1
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "m"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16",
+                    "float"
+                ],
+                "shape": [
+                    1
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "v"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16",
+                    "float"
+                ],
+                "shape": [
+                    1
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "beta1_power"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16",
+                    "float"
+                ],
+                "shape": [
+                    1
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "beta2_power"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16",
+                    "float"
+                ],
+                "shape": [
+                    1
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "lr"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16",
+                    "float"
+                ],
+                "shape": [
+                    1
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "beta1"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16",
+                    "float"
+                ],
+                "shape": [
+                    1
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "beta2"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16",
+                    "float"
+                ],
+                "shape": [
+                    1
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "epsilon"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16",
+                    "float"
+                ],
+                "shape": [
+                    1
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "grad"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16",
+                    "float"
+                ],
+                "shape": [
+                    1
+                ],
+                "name": "var"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16",
+                    "float"
+                ],
+                "shape": [
+                    1
+                ],
+                "name": "m"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16",
+                    "float"
+                ],
+                "shape": [
+                    1
+                ],
+                "name": "v"
+            }
+        ],
+        "attr": [
+            {
+                "name": "use_locking",
+                "type": "bool",
+                "value": false
+            },
+            {
+                "name": "use_nesterov",
+                "type": "bool",
+                "value": false
+            }
+        ]
+    }
+]

@@ -1,0 +1,868 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmaxGrad/d=0,p=0/27,29/27,29/12,29/27,29/,0",
+        "ScaledMaskedSoftmaxGrad/d=1,p=0/27,29/27,29/12,29/27,29/,0"
+      ],
+      "staticKey": "33c49e1b9761aadef8e3200051cb57a76644b7f2e87e0f9fefa3ed7b44c17679",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 2,
+          "dtype": "bool",
+          "format": "FRACTAL_NZ",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax_grad/ScaledMaskedSoftmaxGrad_bf16_nz_false_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmaxGrad/d=0,p=0/27,29/27,29/12,29/27,29/,1",
+        "ScaledMaskedSoftmaxGrad/d=1,p=0/27,29/27,29/12,29/27,29/,1"
+      ],
+      "staticKey": "0ac5394cc160a9a90f74a8477b00aa6cc514d3802f41001f6a6b5d74105867cd",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 2,
+          "dtype": "bool",
+          "format": "FRACTAL_NZ",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax_grad/ScaledMaskedSoftmaxGrad_bf16_nz_true_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmaxGrad/d=0,p=0/27,2/27,2/12,2/27,2/,0",
+        "ScaledMaskedSoftmaxGrad/d=1,p=0/27,2/27,2/12,2/27,2/,0"
+      ],
+      "staticKey": "3127bd1dd776cba216c3b1e7644aea9b3b8a5e12b7f241b866bdbc86ec30c183",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 2,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax_grad/ScaledMaskedSoftmaxGrad_bf16_nd_false_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmaxGrad/d=0,p=0/27,2/27,2/12,2/27,2/,1",
+        "ScaledMaskedSoftmaxGrad/d=1,p=0/27,2/27,2/12,2/27,2/,1"
+      ],
+      "staticKey": "820dfca1201a39faceaae28fdac408cc18a631a88456db0a65a11449640a6454",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 2,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax_grad/ScaledMaskedSoftmaxGrad_bf16_nd_true_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmaxGrad/d=0,p=0/1,29/1,29/12,29/1,29/,0",
+        "ScaledMaskedSoftmaxGrad/d=1,p=0/1,29/1,29/12,29/1,29/,0"
+      ],
+      "staticKey": "b653e1656ddaf5039907282de15e57e46c4b5b841b59a0902e092a968730bce4",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 2,
+          "dtype": "bool",
+          "format": "FRACTAL_NZ",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax_grad/ScaledMaskedSoftmaxGrad_fp16_nz_false_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmaxGrad/d=0,p=0/1,29/1,29/12,29/1,29/,1",
+        "ScaledMaskedSoftmaxGrad/d=1,p=0/1,29/1,29/12,29/1,29/,1"
+      ],
+      "staticKey": "0d608921c1af3136921fb11d48ac36183b817a468e98d77d45b0e181abd3e379",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 2,
+          "dtype": "bool",
+          "format": "FRACTAL_NZ",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax_grad/ScaledMaskedSoftmaxGrad_fp16_nz_true_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmaxGrad/d=0,p=0/1,2/1,2/12,2/1,2/,0",
+        "ScaledMaskedSoftmaxGrad/d=1,p=0/1,2/1,2/12,2/1,2/,0"
+      ],
+      "staticKey": "f5824fa03a38b4b0ab2bee892fea655c763e1b29657370bec0cac28c78378b5f",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 2,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax_grad/ScaledMaskedSoftmaxGrad_fp16_nd_false_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmaxGrad/d=0,p=0/1,2/1,2/12,2/1,2/,1",
+        "ScaledMaskedSoftmaxGrad/d=1,p=0/1,2/1,2/12,2/1,2/,1"
+      ],
+      "staticKey": "99b7feba3998b8496d32491f6d9962b9cd5b4db768d649415836113b1d6c1363",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 2,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax_grad/ScaledMaskedSoftmaxGrad_fp16_nd_true_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmaxGrad/d=0,p=0/0,29/0,29/12,29/0,29/,0",
+        "ScaledMaskedSoftmaxGrad/d=1,p=0/0,29/0,29/12,29/0,29/,0"
+      ],
+      "staticKey": "fd830eb985ea3d16a08253172419f42d92f054a013676ee7d518fe015c5c6f4b",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 2,
+          "dtype": "bool",
+          "format": "FRACTAL_NZ",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax_grad/ScaledMaskedSoftmaxGrad_fp32_nz_false_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmaxGrad/d=0,p=0/0,29/0,29/12,29/0,29/,1",
+        "ScaledMaskedSoftmaxGrad/d=1,p=0/0,29/0,29/12,29/0,29/,1"
+      ],
+      "staticKey": "fd97708601d799a76d7400709bb85cd9b5040a5ac32a2dbeee3126b358da2dad",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 2,
+          "dtype": "bool",
+          "format": "FRACTAL_NZ",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax_grad/ScaledMaskedSoftmaxGrad_fp32_nz_true_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmaxGrad/d=0,p=0/0,2/0,2/12,2/0,2/,0",
+        "ScaledMaskedSoftmaxGrad/d=1,p=0/0,2/0,2/12,2/0,2/,0"
+      ],
+      "staticKey": "f9f42e7787badc012e0a62c68e8a4afeeb16f220b6d5a57c065188209781c644",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 2,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax_grad/ScaledMaskedSoftmaxGrad_fp32_nd_false_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmaxGrad/d=0,p=0/0,2/0,2/12,2/0,2/,1",
+        "ScaledMaskedSoftmaxGrad/d=1,p=0/0,2/0,2/12,2/0,2/,1"
+      ],
+      "staticKey": "1f6e79a6bc6c5b440208fe3bcc32cf68f433599b2eb7879792654e72c4307a72",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 2,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax_grad/ScaledMaskedSoftmaxGrad_fp32_nd_true_high_performance.json"
+      }
+    }
+  ]
+}

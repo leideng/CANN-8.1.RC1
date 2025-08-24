@@ -1,0 +1,259 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GeluQuant/d=0,p=1/1,2/2,2/0,2",
+        "GeluQuant/d=0,p=0/1,2/2,2/0,2",
+        "GeluQuant/d=1,p=1/1,2/2,2/0,2",
+        "GeluQuant/d=1,p=0/1,2/2,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "f9b47ee8e1a33f8917869f282c92f351a4ea3c21c4e1a66b0d5f0589759a9144,e70456b59e7bd32f21cf8dca3e41cd617e91fa6f4b1d85101cd44e371442d973",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_scale",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_offset",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "out_scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "quant_mode",
+          "dtype": "string",
+          "value": "ALL"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_quant/GeluQuant_1_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GeluQuant/d=0,p=1/27,2/2,2/0,2",
+        "GeluQuant/d=0,p=0/27,2/2,2/0,2",
+        "GeluQuant/d=1,p=1/27,2/2,2/0,2",
+        "GeluQuant/d=1,p=0/27,2/2,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "455780ce6d71d48c4921e68552244dd7ea96e1f9ca7e2851c8f0cc335540741c,7d5dc9ac48b8478380a6b91bfb3f7e81c1cbd9829b7b7efb9290b8eb1529052a",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_scale",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_offset",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "out_scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "quant_mode",
+          "dtype": "string",
+          "value": "ALL"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_quant/GeluQuant_2_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GeluQuant/d=0,p=1/0,2/2,2/0,2",
+        "GeluQuant/d=0,p=0/0,2/2,2/0,2",
+        "GeluQuant/d=1,p=1/0,2/2,2/0,2",
+        "GeluQuant/d=1,p=0/0,2/2,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "6730537f26d76c1f46ef0a72dfdc1f6c5394a0b7716309d332719dd7dd34f6c9,138abf80c5b9278c34b92eb3175288fe4b902a419df9d0282e32c7e3e2e6fdd9",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_offset",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "out_scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "ALL"
+        },
+        {
+          "name": "quant_mode",
+          "dtype": "string",
+          "value": "ALL"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_quant/GeluQuant_3_high_performance.json"
+      }
+    }
+  ]
+}

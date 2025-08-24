@@ -1,0 +1,184 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SwiGluGrad/d=0,p=1/1,2/1,2/1,2",
+        "SwiGluGrad/d=0,p=0/1,2/1,2/1,2",
+        "SwiGluGrad/d=1,p=1/1,2/1,2/1,2",
+        "SwiGluGrad/d=1,p=0/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "34ffb94ea46850849a5222ff9c88fa4066e9f4e2f32188ee8e789cbdacc6388c,473f58a2e4be58800fcd04864d67994c986e09972d442a7e995c52b91197c36b",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dim",
+          "dtype": "int64",
+          "value": -1
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/swi_glu_grad/SwiGluGrad_1_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SwiGluGrad/d=0,p=1/0,2/0,2/0,2",
+        "SwiGluGrad/d=0,p=0/0,2/0,2/0,2",
+        "SwiGluGrad/d=1,p=1/0,2/0,2/0,2",
+        "SwiGluGrad/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "8a4a51ac38dbf95a52c36367d4898311c5f60fffd450edb25fde850b6e98c156,b85746ace547bf1c527f0556fb12578b0bb949f372b81e02d67ed0bdf9a4ccf3",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dim",
+          "dtype": "int64",
+          "value": -1
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/swi_glu_grad/SwiGluGrad_2_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SwiGluGrad/d=0,p=1/27,2/27,2/27,2",
+        "SwiGluGrad/d=0,p=0/27,2/27,2/27,2",
+        "SwiGluGrad/d=1,p=1/27,2/27,2/27,2",
+        "SwiGluGrad/d=1,p=0/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "8d45b9353635ecf8eab91ebc3eb9b003650575687e565d6388a50f077bbc8d7d,68c4c21a34f7e8c2a6e6689268ef90b8f87e6ed9a6cf1c4b5f7f10e54d1bbd51",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dim",
+          "dtype": "int64",
+          "value": -1
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/swi_glu_grad/SwiGluGrad_3_high_performance.json"
+      }
+    }
+  ]
+}

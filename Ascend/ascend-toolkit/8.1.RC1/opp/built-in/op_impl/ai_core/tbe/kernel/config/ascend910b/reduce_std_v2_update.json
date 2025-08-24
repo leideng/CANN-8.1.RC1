@@ -1,0 +1,229 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReduceStdV2Update/d=0,p=0/1,2/1,2/1,2",
+        "ReduceStdV2Update/d=1,p=0/1,2/1,2/1,2"
+      ],
+      "staticKey": "d8dcfe724d6897bc765c18bbf4878a97e55846ef0620e2a3c6599b826f47fde5",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_var",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dim",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "if_std",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "unbiased",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "keepdim",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "correction",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/reduce_std_v2_update/ReduceStdV2Update_fp16_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReduceStdV2Update/d=0,p=0/0,2/0,2/0,2",
+        "ReduceStdV2Update/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "staticKey": "759e8f3d219df3d22d30f2feaac64e6d0d16d57e63b19ccc8c568f6dba246ace",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dim",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "if_std",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "unbiased",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "keepdim",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "correction",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/reduce_std_v2_update/ReduceStdV2Update_fp32_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ReduceStdV2Update/d=0,p=0/27,2/27,2/27,2",
+        "ReduceStdV2Update/d=1,p=0/27,2/27,2/27,2"
+      ],
+      "staticKey": "8d282a98047b95ebb1ce085a7f2a5ee71949b697c4d38d436b0a4cd8aa890def",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_var",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dim",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "if_std",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "unbiased",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "keepdim",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "correction",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/reduce_std_v2_update/ReduceStdV2Update_bf16_high_performance.json"
+      }
+    }
+  ]
+}

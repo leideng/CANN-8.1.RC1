@@ -1,0 +1,534 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "DynamicRNN/d=0,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "DynamicRNN/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "DynamicRNN/d=1,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "DynamicRNN/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "7b133abdf1e8dc878768860bceb0978373bf46a11f14480287ff8c01604c8144,fdf5fd7fbf9c443a4447e959c11cdce7995763015a1a450d3ed32603d35c2d4f",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "w",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "b",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "seq_length",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "init_h",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "init_c",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "wci",
+          "index": 6,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "wcf",
+          "index": 7,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "wco",
+          "index": 8,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 9,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "output_h",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "output_c",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "i",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "j",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "f",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "o",
+          "index": 6,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhc",
+          "index": 7,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "cell_type",
+          "dtype": "string",
+          "value": "LSTM"
+        },
+        {
+          "name": "direction",
+          "dtype": "string",
+          "value": "UNIDIRECTIONAL"
+        },
+        {
+          "name": "cell_depth",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "use_peephole",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "keep_prob",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "cell_clip",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "num_proj",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "time_major",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "activation",
+          "dtype": "string",
+          "value": "tanh"
+        },
+        {
+          "name": "forget_bias",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "gate_order",
+          "dtype": "string",
+          "value": "ifjo"
+        },
+        {
+          "name": "is_training",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/dynamic_rnn_910b/DynamicRNN_FP32_BIN_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "DynamicRNN/d=0,p=1/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "DynamicRNN/d=0,p=0/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "DynamicRNN/d=1,p=1/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "DynamicRNN/d=1,p=0/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "e26f37b20d9fb18ba16f051820d4a70c1520c4ea62de39b7534d808e78ac8ab0,431ce4e8e542a9b08e3b32bcebb36af8a2ab885185354f4fe735fba44c2d7971",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "w",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "b",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "seq_length",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "init_h",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "init_c",
+          "index": 5,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "wci",
+          "index": 6,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "wcf",
+          "index": 7,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "wco",
+          "index": 8,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 9,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "output_h",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "output_c",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "i",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "j",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "f",
+          "index": 5,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "o",
+          "index": 6,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhc",
+          "index": 7,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "cell_type",
+          "dtype": "string",
+          "value": "LSTM"
+        },
+        {
+          "name": "direction",
+          "dtype": "string",
+          "value": "REDIRECTIONAL"
+        },
+        {
+          "name": "cell_depth",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "use_peephole",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "keep_prob",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "cell_clip",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "num_proj",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "time_major",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "activation",
+          "dtype": "string",
+          "value": "tanh"
+        },
+        {
+          "name": "forget_bias",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "gate_order",
+          "dtype": "string",
+          "value": "ijfo"
+        },
+        {
+          "name": "is_training",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/dynamic_rnn_910b/DynamicRNN_FP16_BIN_high_performance.json"
+      }
+    }
+  ]
+}

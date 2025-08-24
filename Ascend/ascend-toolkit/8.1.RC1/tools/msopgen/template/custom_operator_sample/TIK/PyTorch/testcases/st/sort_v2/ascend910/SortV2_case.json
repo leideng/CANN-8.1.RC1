@@ -1,0 +1,50 @@
+[
+    {
+        "case_name": "Test_SortV2_001",
+        "op": "SortV2",
+        "input_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [6, 5000],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "x"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [6, 5000]
+            }
+        ],
+        "attr": [
+            {
+                "name": "axis",
+                "type": "int",
+                "value": -1
+            },
+            {
+                "name": "descending",
+                "type": "bool",
+                "value": false
+            }
+        ]
+    }
+]

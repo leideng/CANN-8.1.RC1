@@ -1,0 +1,82 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "099d88e8b252303cd4852bad62bfe913ab8ee128e1dcec5c20b366717a42e961,1bdfb40bf42ccbc7eac610926b6f69aa3936f3d8b519648663cc25a647c59330",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "param_type": "required",
+          "format": "ND",
+          "dtype": "float32",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "param_type": "required",
+          "format": "ND",
+          "dtype": "float32",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "param_type": "required",
+          "format": "ND",
+          "dtype": "float32",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "pooled_h",
+          "dtype": "int",
+          "value": 2
+        },
+        {
+          "name": "pooled_w",
+          "dtype": "int",
+          "value": 2
+        },
+        {
+          "name": "spatial_scale",
+          "dtype": "float",
+          "value": 0.5
+        },
+        {
+          "name": "sampling_ratio",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "aligned",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "clockwise",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_align_rotated/roi_align_rotated_high_performance.json"
+      }
+    }
+  ]
+}

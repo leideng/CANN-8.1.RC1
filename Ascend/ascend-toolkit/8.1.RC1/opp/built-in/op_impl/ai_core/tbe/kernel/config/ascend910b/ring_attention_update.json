@@ -1,0 +1,394 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RingAttentionUpdate/d=0,p=1/1,2/0,2/0,2/1,2/0,2/0,2/1,2/0,2/0,2",
+        "RingAttentionUpdate/d=0,p=0/1,2/0,2/0,2/1,2/0,2/0,2/1,2/0,2/0,2",
+        "RingAttentionUpdate/d=1,p=1/1,2/0,2/0,2/1,2/0,2/0,2/1,2/0,2/0,2",
+        "RingAttentionUpdate/d=1,p=0/1,2/0,2/0,2/1,2/0,2/0,2/1,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "5b30a7ad67563418843d24c67d080342f7d2ac8d6cff4332cdc2896d244ab042,009dc1e1f3b8475cf1d7b518a5ce492659a1bcae30573a05a795228901289415",
+      "inputs": [
+        {
+          "name": "prev_attn_out",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "prev_softmax_max",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "prev_softmax_sum",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cur_attn_out",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cur_softmax_max",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cur_softmax_sum",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "actual_seq_qlen",
+          "index": 6,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "attn_out",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "softmax_max",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "softmax_sum",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "input_layout",
+          "dtype": "string",
+          "value": "ALL"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ring_attention_update/RingAttentionUpdate_0_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RingAttentionUpdate/d=0,p=1/27,2/0,2/0,2/27,2/0,2/0,2/27,2/0,2/0,2",
+        "RingAttentionUpdate/d=0,p=0/27,2/0,2/0,2/27,2/0,2/0,2/27,2/0,2/0,2",
+        "RingAttentionUpdate/d=1,p=1/27,2/0,2/0,2/27,2/0,2/0,2/27,2/0,2/0,2",
+        "RingAttentionUpdate/d=1,p=0/27,2/0,2/0,2/27,2/0,2/0,2/27,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "b1ee97dadf99e29824e1f83e47532cc97d0f7118ea314606e801cc04d98c9f28,b9abafac3cdb2a48e36306ba0a97d6824f7e26be335bd7899d65bf04694ecf89",
+      "inputs": [
+        {
+          "name": "prev_attn_out",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "prev_softmax_max",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "prev_softmax_sum",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cur_attn_out",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cur_softmax_max",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cur_softmax_sum",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "actual_seq_qlen",
+          "index": 6,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "attn_out",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "softmax_max",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "softmax_sum",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "input_layout",
+          "dtype": "string",
+          "value": "ALL"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ring_attention_update/RingAttentionUpdate_1_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RingAttentionUpdate/d=0,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "RingAttentionUpdate/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "RingAttentionUpdate/d=1,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "RingAttentionUpdate/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "92a922221ccf61084aad771f772e293ad6ebd697946c7bfc076e3a878b5b1e7d,e4477fa1407f3c9e5311199582b11fd15ef89ed29877577dda98f6c589158e6a",
+      "inputs": [
+        {
+          "name": "prev_attn_out",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "prev_softmax_max",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "prev_softmax_sum",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cur_attn_out",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cur_softmax_max",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cur_softmax_sum",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "actual_seq_qlen",
+          "index": 6,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "attn_out",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "softmax_max",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "softmax_sum",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "input_layout",
+          "dtype": "string",
+          "value": "ALL"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ring_attention_update/RingAttentionUpdate_2_high_performance.json"
+      }
+    }
+  ]
+}

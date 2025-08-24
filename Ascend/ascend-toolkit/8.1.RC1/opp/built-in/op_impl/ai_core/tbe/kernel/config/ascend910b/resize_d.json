@@ -1,0 +1,1874 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "staticKey": "b28d3998cc08665027cadc6396e72fe170f0918a7538a347439e2a355d45df57",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_ec3fbe50bdaa4a15b924dfc64dd39cd9_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "b28d3998cc08665027cadc6396e72fe170f0918a7538a347439e2a355d45df57",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_ec3fbe50bdaa4a15b924dfc64dd39cd9_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "04a41f91231e7d84f27bf4953731f6ab70e2e6c10509d4a04856b7267978713b",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_2b547db6bf5fe4bb230047da32c10eb3_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "788110983e8182651f7e8bd836eba42fa5442c134b55e87bda79a952b5372041",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "linear"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_a0eda2011eaca7cb52022e2a14b5e96b_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "e6e4426e5905c9f72472468cbf57bdb97b52bedd392965b60d129f11cb7d32f5",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "linear"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_f8577e7eaa08ff2542bdc6d5fc773b10_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "2da7b1346f7d72d3dd2cf5fb0e78e193aaa3ad442f57dcc2ef426e34f8ca680b",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_2caeb962d71e3aed2376751291f1fc21_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "2da7b1346f7d72d3dd2cf5fb0e78e193aaa3ad442f57dcc2ef426e34f8ca680b",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_2caeb962d71e3aed2376751291f1fc21_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "b0e840974c49bb630775fd6a034682ebe6f87a65f1fa887ff74922a6b10f9a56",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_897e13f412f9e75957d05e4a48bda1ef_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "f0dac451cdd915ef6cb2fd26b6daf041ee04554393189cb85a2771ff1fcd38ce",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "linear"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_2cd30f180b78c7044f2d7eb5b71c3094_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "97dd7bcf1aabc3747403050803ce285d7633b24ff28953b77e470683e7c9cde9",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "linear"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_d4d9b6d5718eb07c795f6b988723bce8_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "3cf2a9ffe0f7c0c0e59413355217604c1c5340998a8244f61eb4624710a448d9",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_55b2fa476ba449391c67776208d95371_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "3cf2a9ffe0f7c0c0e59413355217604c1c5340998a8244f61eb4624710a448d9",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_55b2fa476ba449391c67776208d95371_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "fc95f43404b4d4a872ddae5ca2d4df49f2dcbc9b48c537a9c657d0d5c04d87e8",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_703e5a1c191974f8f0769712be47e7a7_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "fc95f43404b4d4a872ddae5ca2d4df49f2dcbc9b48c537a9c657d0d5c04d87e8",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_703e5a1c191974f8f0769712be47e7a7_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "8b6ba4c0d0819c11f46cc4ba5f634a1d3fe6ec46ccd51bd48321070ebd035536",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "linear"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_eba15d6173d87dc6a0d68e2ed8c64fb6_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "49f9e1afeec5a33469d8e0a9485d28ad2c58e6a809f4d1a439d046a6aa159c9f",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "linear"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_cde5b8701fc887d98f7e29ffec54bd51_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "0d96357e2111fa2b93679a575af37fef9b4cb7bb52eef45245a39e81bc1d9540",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_48fdd341eb27b51033b039325c4979cd_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "0d96357e2111fa2b93679a575af37fef9b4cb7bb52eef45245a39e81bc1d9540",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_48fdd341eb27b51033b039325c4979cd_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "ce2b63103253f7b89140df4890121fd6ba1edcbb78757ab9f0118ddfa79fc881",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_778ac568bf27ffacbdd6f1c4c2acb6c7_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "ce2b63103253f7b89140df4890121fd6ba1edcbb78757ab9f0118ddfa79fc881",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_778ac568bf27ffacbdd6f1c4c2acb6c7_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "d7aa9064a2ac9ac3f78a0d6d62893919ee3933340985fe2e6a6e27709e214ade",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "linear"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_1381b5171c7d52dac2cb27ff0ef7395b_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "26973b0ac03398d3fbb25f361593dfcb9201d88da445ced847a73a04e91cde59",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sizes",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": -0.75
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "linear"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_d/ResizeD_aaa1a60094cc8240ed92e2f24f2e205e_high_performance.json"
+      }
+    }
+  ]
+}

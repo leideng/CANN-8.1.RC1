@@ -1,0 +1,74 @@
+[
+    {
+        "case_name": "Test_ReduceAll_001",
+        "op": "ReduceAll",
+        "input_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "bool",
+                    "bool"
+                ],
+                "shape": [
+                        1
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "x"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "int64",
+                    "int32"
+                ],
+                "shape": [
+                        1
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "axes"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "bool",
+                    "bool"
+                ],
+                "shape": [
+                        1
+                ],
+                "name": "y"
+            }
+        ],
+        "attr": [
+            {
+                "name": "keep_dims",
+                "type": "bool",
+                "value": false
+            }
+        ]
+    }
+]

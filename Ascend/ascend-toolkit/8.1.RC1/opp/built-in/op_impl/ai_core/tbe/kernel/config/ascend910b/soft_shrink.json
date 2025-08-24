@@ -1,0 +1,286 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftShrink/d=0,p=1/1,2/1,2",
+        "SoftShrink/d=0,p=0/1,2/1,2",
+        "SoftShrink/d=1,p=1/1,2/1,2",
+        "SoftShrink/d=1,p=0/1,2/1,2"
+      ],
+      "staticKey": "f9147208494976553a1de70562161fe6efc049266be888715891dc275f8c188f,6a2ad7562b2656bd8f5118a2cac862a01965970bbc7d0ab2e263e9bdb0e2d3d7",
+      "inputs": [
+        {
+          "name": "input_x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "lambd",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/soft_shrink/SoftShrink_fp16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftShrink/d=0,p=1/0,2/0,2",
+        "SoftShrink/d=0,p=0/0,2/0,2",
+        "SoftShrink/d=1,p=1/0,2/0,2",
+        "SoftShrink/d=1,p=0/0,2/0,2"
+      ],
+      "staticKey": "fc7c64e4a23910ca38d9ecf8e29c0a37df0c171f572768ed7a5ba0ab5d60d4ec,794cb4832899a70050bca87528bcf29bc742bfabd2bad2c5aa0b2e32ea7086fb",
+      "inputs": [
+        {
+          "name": "input_x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "lambd",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/soft_shrink/SoftShrink_fp32_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftShrink/d=0,p=1/27,2/27,2",
+        "SoftShrink/d=0,p=0/27,2/27,2",
+        "SoftShrink/d=1,p=1/27,2/27,2",
+        "SoftShrink/d=1,p=0/27,2/27,2"
+      ],
+      "staticKey": "4c5997c9ce45deed0863aadaf9daf82e0f3d045d9e5f7d0e57318ed07c24c1c6,f76b6301a1bc54517d56126ec22762591cc5750b956385d58b0851e874d5cac6",
+      "inputs": [
+        {
+          "name": "input_x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "lambd",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/soft_shrink/SoftShrink_bf16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftShrink/d=0,p=2/1,2/1,2",
+        "SoftShrink/d=1,p=2/1,2/1,2"
+      ],
+      "staticKey": "f95ffcb578efa6fcf8f7e99d2371f89885c732b898e8eb7f76988839870a3568",
+      "inputs": [
+        {
+          "name": "input_x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "lambd",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/soft_shrink/SoftShrink_fp16_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftShrink/d=0,p=2/0,2/0,2",
+        "SoftShrink/d=1,p=2/0,2/0,2"
+      ],
+      "staticKey": "f847500db969b0b11fc3b01eedcb63b57f5f39a2dcdfaed4c571172d4ff42c21",
+      "inputs": [
+        {
+          "name": "input_x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "lambd",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/soft_shrink/SoftShrink_fp32_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftShrink/d=0,p=2/27,2/27,2",
+        "SoftShrink/d=1,p=2/27,2/27,2"
+      ],
+      "staticKey": "3342af0ad25b521c4e9b1badcc0c121ccf752b2b175cf252036221594faa7f39",
+      "inputs": [
+        {
+          "name": "input_x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "lambd",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/soft_shrink/SoftShrink_bf16_high_precision.json"
+      }
+    }
+  ]
+}

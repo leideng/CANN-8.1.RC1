@@ -1,0 +1,184 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "UpsampleBicubic2dGrad/d=0,p=1/1,2/1,2",
+        "UpsampleBicubic2dGrad/d=0,p=0/1,2/1,2",
+        "UpsampleBicubic2dGrad/d=1,p=1/1,2/1,2",
+        "UpsampleBicubic2dGrad/d=1,p=0/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "2c603f184aba907cb3431d3fe1fbad74b36ab3f5268f32f5eb0b8ec5e8b8a475,4a8fbd464b1d61e65f4bc09898ae91f91c0aece94141fbe685f9499dc1c99579",
+      "inputs": [
+        {
+          "name": "grad_output",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_input",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "scales_h",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "scales_w",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/upsample_bicubic2d_grad/UpsampleBicubic2dGrad_95db369ebb530744260911f8b820489f_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "UpsampleBicubic2dGrad/d=0,p=1/0,2/0,2",
+        "UpsampleBicubic2dGrad/d=0,p=0/0,2/0,2",
+        "UpsampleBicubic2dGrad/d=1,p=1/0,2/0,2",
+        "UpsampleBicubic2dGrad/d=1,p=0/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "d6b6acf49dcb60efded1bdb01d9fa31955670c0f91b5e29d1dcd4f96376350ca,100f3e1072ea8d5770a01235936663a218ca12cfbcd6752f2a986da520cd423b",
+      "inputs": [
+        {
+          "name": "grad_output",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_input",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "scales_h",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "scales_w",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/upsample_bicubic2d_grad/UpsampleBicubic2dGrad_ab5509e7d46b4435b1c00dbd14d43c5c_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "UpsampleBicubic2dGrad/d=0,p=1/27,2/27,2",
+        "UpsampleBicubic2dGrad/d=0,p=0/27,2/27,2",
+        "UpsampleBicubic2dGrad/d=1,p=1/27,2/27,2",
+        "UpsampleBicubic2dGrad/d=1,p=0/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "9e4b18c09d1d90a9d28ab9bb2416244454aafb74d875c09c8eb99684ef84b3a5,57b2fae4dde1d4372503030674fa4a6b05a75d23881ecea407d82cc6616ba7bc",
+      "inputs": [
+        {
+          "name": "grad_output",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_input",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "scales_h",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "scales_w",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/upsample_bicubic2d_grad/UpsampleBicubic2dGrad_d228d67e95198fa38580615e7a58c66a_high_performance.json"
+      }
+    }
+  ]
+}

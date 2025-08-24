@@ -1,0 +1,1796 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/27,2/3,2/27,2/REFLECT",
+        "MirrorPad/d=1,p=0/27,2/3,2/27,2/REFLECT"
+      ],
+      "staticKey": "601647d169fe518d54c89c27895891d7d6df977d1f3fbed1215673950854c992",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "REFLECT",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_fc6081742909905d20d7bf59f60433fb_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/27,2/3,2/27,2/SYMMETRIC",
+        "MirrorPad/d=1,p=0/27,2/3,2/27,2/SYMMETRIC"
+      ],
+      "staticKey": "cbbf55eef091810f3a40840f2409cb40b1129e83567b5f160e141f21171d0863",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "SYMMETRIC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_c4b3104772008f56a4171c34721c985c_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/27,2/9,2/27,2/REFLECT",
+        "MirrorPad/d=1,p=0/27,2/9,2/27,2/REFLECT"
+      ],
+      "staticKey": "8fe7c50b948a3f9c528b328ffa44516e79cba3df212ecfc8d5a291155f6847aa",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "REFLECT",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_5d38c6e294460e59db23543a82b2032a_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/27,2/9,2/27,2/SYMMETRIC",
+        "MirrorPad/d=1,p=0/27,2/9,2/27,2/SYMMETRIC"
+      ],
+      "staticKey": "e94b7251f5520617c62616249fb7c8d0e0c778bada27d0aa1bdc7a1bb9b3415e",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "SYMMETRIC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_d5b3748d97b731aa03db32e316b635f9_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/1,2/3,2/1,2/REFLECT",
+        "MirrorPad/d=1,p=0/1,2/3,2/1,2/REFLECT"
+      ],
+      "staticKey": "b41e7a9bd2f3816a68872ad8db4f838a1493d9d16de16fd514a3e3dea16aac74",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "REFLECT",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_775f5684696e1bcffa54c5137ca04489_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/1,2/3,2/1,2/SYMMETRIC",
+        "MirrorPad/d=1,p=0/1,2/3,2/1,2/SYMMETRIC"
+      ],
+      "staticKey": "ca9dea284adf2484a9720327920898c0093ed81962941e86e299a40b03291603",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "SYMMETRIC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_974192d46a932f0d5b04407ef2c306cf_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/1,2/9,2/1,2/REFLECT",
+        "MirrorPad/d=1,p=0/1,2/9,2/1,2/REFLECT"
+      ],
+      "staticKey": "d77bd4d2ad738ee5089ad9dcd03e06ded34d4af721df69b7fd02af095f36960c",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "REFLECT",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_5ae475bf4d5058ce203015bee35e9a19_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/1,2/9,2/1,2/SYMMETRIC",
+        "MirrorPad/d=1,p=0/1,2/9,2/1,2/SYMMETRIC"
+      ],
+      "staticKey": "ec159d32635647ac4356980cdb8fcf37cf094d0a2ab73e1e679b9c2de7d0d067",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "SYMMETRIC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_77087a1d5d482457bc1a12744774c822_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/0,2/3,2/0,2/REFLECT",
+        "MirrorPad/d=1,p=0/0,2/3,2/0,2/REFLECT"
+      ],
+      "staticKey": "14b012f3adac3afa1db4e0d7db1c022d7fd3221ada75607711714e4158482d82",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "REFLECT",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_8dcf9dc1110d4fb9aa755e91af5c9f14_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/0,2/3,2/0,2/SYMMETRIC",
+        "MirrorPad/d=1,p=0/0,2/3,2/0,2/SYMMETRIC"
+      ],
+      "staticKey": "64c905a5b6a5c95417c1b65697b8c08fb4dbdfbd6aa360ecc130c234b4250944",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "SYMMETRIC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_4c6b89494cee038595931e531f118761_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/0,2/9,2/0,2/REFLECT",
+        "MirrorPad/d=1,p=0/0,2/9,2/0,2/REFLECT"
+      ],
+      "staticKey": "316938f01750a45673fd048802b6b7709ee2f2d6b4bdfc75310a5239e0a1aeae",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "REFLECT",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_9cf2f4768e2725c0cd6d2777112489c5_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/0,2/9,2/0,2/SYMMETRIC",
+        "MirrorPad/d=1,p=0/0,2/9,2/0,2/SYMMETRIC"
+      ],
+      "staticKey": "68d51ee7e83568323242feafbf8de3947c3e1a895edfe852e3319619dd100135",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "SYMMETRIC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_7a28a0aaf37c06fda29112c157877acf_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/6,2/3,2/6,2/REFLECT",
+        "MirrorPad/d=1,p=0/6,2/3,2/6,2/REFLECT"
+      ],
+      "staticKey": "f02e8762b4325e50f929ce072518d0b2c70902e52781228a58b368bea7d17c23",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "REFLECT",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_4858df99fc0db8444adb88ff5a910a88_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/6,2/3,2/6,2/SYMMETRIC",
+        "MirrorPad/d=1,p=0/6,2/3,2/6,2/SYMMETRIC"
+      ],
+      "staticKey": "ef68e92daa167a3d9f6fd28dabc9c871887edde807bd97c826069698cd3cf347",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "SYMMETRIC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_dbbdb761e5f87cd8312dde46d9eb9a75_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/6,2/9,2/6,2/REFLECT",
+        "MirrorPad/d=1,p=0/6,2/9,2/6,2/REFLECT"
+      ],
+      "staticKey": "f54798c08c009a6459e04bddcdfea0ded101cffe62c737626b639bafdf737613",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "REFLECT",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_68ae994602806373bceca670c694c792_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/6,2/9,2/6,2/SYMMETRIC",
+        "MirrorPad/d=1,p=0/6,2/9,2/6,2/SYMMETRIC"
+      ],
+      "staticKey": "394120bfc8fdf86f173db25de958ab5b2c28a191fb27c530c7ce0f7334a40a14",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "SYMMETRIC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_c4af379133d9f6bd1eedfbb2a69ab58d_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/3,2/3,2/3,2/REFLECT",
+        "MirrorPad/d=1,p=0/3,2/3,2/3,2/REFLECT"
+      ],
+      "staticKey": "da5e07939607d1cb7dac2dc5e76d7caa972adbdbf58be4ef2983d4b84f353071",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "REFLECT",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_18ea00c0c01094b26ae6174344ceeb57_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/3,2/3,2/3,2/SYMMETRIC",
+        "MirrorPad/d=1,p=0/3,2/3,2/3,2/SYMMETRIC"
+      ],
+      "staticKey": "35119e8c0d4d3d7fc8b8a0174740d87d1ba7a0860966206f69fca02cfccaafd0",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "SYMMETRIC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_a6b5bb8c511720f426a9ef6cb567081d_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/3,2/9,2/3,2/REFLECT",
+        "MirrorPad/d=1,p=0/3,2/9,2/3,2/REFLECT"
+      ],
+      "staticKey": "957c86a81117c3d50c8f049c1d2d0e96d8d02e6c5376fc8d1b2e1168001c91ca",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "REFLECT",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_28781b6332f504809829b114b70a5fa9_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/3,2/9,2/3,2/SYMMETRIC",
+        "MirrorPad/d=1,p=0/3,2/9,2/3,2/SYMMETRIC"
+      ],
+      "staticKey": "35a4ac539cf9a3dcd8f422cab4f92641f2a91c6b22a6439c8cdea7bbed6eef36",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "SYMMETRIC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_95e1be1120aec1eb1df0640432552815_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/9,2/3,2/9,2/REFLECT",
+        "MirrorPad/d=1,p=0/9,2/3,2/9,2/REFLECT"
+      ],
+      "staticKey": "d337a258e7127da5c23ea770a69dd9059bcacf62fcc7b4c44f63b0c514e421c6",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "REFLECT",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_32e977ee16c22abc47df546d8870d62e_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/9,2/3,2/9,2/SYMMETRIC",
+        "MirrorPad/d=1,p=0/9,2/3,2/9,2/SYMMETRIC"
+      ],
+      "staticKey": "2704c80d3746ca10d90b22fca34a3f9c76085c15d6fcdec8ad9f48850d3cfd29",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "SYMMETRIC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_844d4b63abf76460e2e624e0d75844bd_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/9,2/9,2/9,2/REFLECT",
+        "MirrorPad/d=1,p=0/9,2/9,2/9,2/REFLECT"
+      ],
+      "staticKey": "3be8b187670486f66b2dca8146ec95dc31a76dd9306b157419f104b18fc95344",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "REFLECT",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_ad33dc9543512c1cb78c5d90ddf92928_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/9,2/9,2/9,2/SYMMETRIC",
+        "MirrorPad/d=1,p=0/9,2/9,2/9,2/SYMMETRIC"
+      ],
+      "staticKey": "896e2bdae70a4eb8746ecaf625ac8d4886271432047d971d7752f7023c0e9dc8",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "SYMMETRIC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_7de0ae85e7e158e285ac42947aa8ae5e_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/7,2/3,2/7,2/REFLECT",
+        "MirrorPad/d=1,p=0/7,2/3,2/7,2/REFLECT"
+      ],
+      "staticKey": "f1539dd68d2b7eacb8c89d8379560aaef57e073cdc3f9031a653396cb3e3c332",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "REFLECT",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_ac0a5879acf7c5ac1fa41c5726e77d7e_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/7,2/3,2/7,2/SYMMETRIC",
+        "MirrorPad/d=1,p=0/7,2/3,2/7,2/SYMMETRIC"
+      ],
+      "staticKey": "aeaa6738713d191b9ba62c7dbabec9e8bef5f5de88e3cd3c985be2c12112e335",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "SYMMETRIC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_4cd93c2334b741eb7ba04272b8898a7b_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/7,2/9,2/7,2/REFLECT",
+        "MirrorPad/d=1,p=0/7,2/9,2/7,2/REFLECT"
+      ],
+      "staticKey": "25ea5b094bdb2215679e7ca750e99ebdfd8abfd85d116f8b9e49a553edc359b7",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "REFLECT",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_966888e5a5484b67edf0c510193862a2_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/7,2/9,2/7,2/SYMMETRIC",
+        "MirrorPad/d=1,p=0/7,2/9,2/7,2/SYMMETRIC"
+      ],
+      "staticKey": "9eb3a63075a442083e467af3526deb98092d71c66d3d226c14e8489d518c6936",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "SYMMETRIC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_ea132390dd7a4c00d23fb7dd1823af21_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/8,2/3,2/8,2/REFLECT",
+        "MirrorPad/d=1,p=0/8,2/3,2/8,2/REFLECT"
+      ],
+      "staticKey": "6325890f4dc81eb1b3799595b87dfb01db531c49f232ee45f776a45989681cee",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "REFLECT",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_aa1b4ce2a2be9abf6d25ee1d19401674_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/8,2/3,2/8,2/SYMMETRIC",
+        "MirrorPad/d=1,p=0/8,2/3,2/8,2/SYMMETRIC"
+      ],
+      "staticKey": "5a2955919a5136197642c8aba6ec3328e7ae0cd5a9f96566f65b0d6ec06cdf17",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "SYMMETRIC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_0000bbd205e1b53c3d3fbc8966efd70c_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/8,2/9,2/8,2/REFLECT",
+        "MirrorPad/d=1,p=0/8,2/9,2/8,2/REFLECT"
+      ],
+      "staticKey": "1bfbd73a08413dbcb36818ca6172af0a1f3aaf22f561ee9992c2ac060873ae77",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "REFLECT",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_305bda6d0c2eee77bf2d39341174b603_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MirrorPad/d=0,p=0/8,2/9,2/8,2/SYMMETRIC",
+        "MirrorPad/d=1,p=0/8,2/9,2/8,2/SYMMETRIC"
+      ],
+      "staticKey": "d2739109a8c60fa6cfcbe19f6ffa95100bac8ceefa8f446ae48ca1af84099303",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "SYMMETRIC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mirror_pad/MirrorPad_5b3d32a5f89ad21f2b1c32c831af1bb7_high_performance.json"
+      }
+    }
+  ]
+}

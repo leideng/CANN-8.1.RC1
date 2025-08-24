@@ -1,0 +1,10 @@
+#!/usr/bin/env fish
+set -gx ASCEND_HOME_PATH "/usr/local/Ascend/ascend-toolkit/latest"
+source /usr/local/Ascend/ascend-toolkit/latest/runtime/bin/setenv.fish "multi_version"
+source /usr/local/Ascend/ascend-toolkit/latest/compiler/bin/setenv.fish "multi_version"
+source /usr/local/Ascend/ascend-toolkit/latest/hccl/bin/setenv.fish "multi_version"
+source /usr/local/Ascend/ascend-toolkit/latest/opp/bin/setenv.fish "multi_version"
+source /usr/local/Ascend/ascend-toolkit/latest/toolkit/bin/setenv.fish "multi_version"
+source /usr/local/Ascend/ascend-toolkit/latest/tools/aoe/bin/setenv.fish "multi_version"
+source /usr/local/Ascend/ascend-toolkit/latest/tools/ncs/bin/setenv.fish "multi_version"
+source /usr/local/Ascend/ascend-toolkit/latest/opp_kernel/bin/setenv.fish "multi_version"

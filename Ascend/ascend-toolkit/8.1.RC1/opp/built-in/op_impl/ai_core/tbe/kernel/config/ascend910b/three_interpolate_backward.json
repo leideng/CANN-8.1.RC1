@@ -1,0 +1,288 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ThreeInterpolateBackward/d=0,p=1/0,3/3,2/0,2/0,3",
+        "ThreeInterpolateBackward/d=0,p=0/0,3/3,2/0,2/0,3",
+        "ThreeInterpolateBackward/d=1,p=1/0,3/3,2/0,2/0,3",
+        "ThreeInterpolateBackward/d=1,p=0/0,3/3,2/0,2/0,3"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "9412294570d430704fe41e24cd159bb3c6d42d247bc2d92f00250c84581f7cde,9dccb54c6578cde8c8df759d9506e031a42dde3b8f7fda0572f679b754f27f00",
+      "inputs": [
+        {
+          "name": "grad_x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "weight",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "m",
+          "paramType": "required",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/three_interpolate_backward/ThreeInterpolateBackward_fp32_int32_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ThreeInterpolateBackward/d=0,p=1/0,3/9,2/0,2/0,3",
+        "ThreeInterpolateBackward/d=0,p=0/0,3/9,2/0,2/0,3",
+        "ThreeInterpolateBackward/d=1,p=1/0,3/9,2/0,2/0,3",
+        "ThreeInterpolateBackward/d=1,p=0/0,3/9,2/0,2/0,3"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "2de90fb3b274ff8a64c8e26d07c79d8a79e19cff081b4d5ab131695602478cfd,1bfb8cfd43e7b9e0ec800e3255e4e7c8ebeac0bfdd05b165e05ec31ec87e0aec",
+      "inputs": [
+        {
+          "name": "grad_x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "idx",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "weight",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "m",
+          "paramType": "required",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/three_interpolate_backward/ThreeInterpolateBackward_fp32_int64_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ThreeInterpolateBackward/d=0,p=1/1,3/3,2/1,2/1,3",
+        "ThreeInterpolateBackward/d=0,p=0/1,3/3,2/1,2/1,3",
+        "ThreeInterpolateBackward/d=1,p=1/1,3/3,2/1,2/1,3",
+        "ThreeInterpolateBackward/d=1,p=0/1,3/3,2/1,2/1,3"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "59423dd1d9e52c5b73a9e7a7bb5b356bd2571ff46950d488bd2a4148a12b429f,d1b27758ddeaa05002279bdd8aa53044a6d2c627cb74b75675ab45bd7437691f",
+      "inputs": [
+        {
+          "name": "grad_x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "weight",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "m",
+          "paramType": "required",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/three_interpolate_backward/ThreeInterpolateBackward_fp16_int32_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ThreeInterpolateBackward/d=0,p=1/1,3/9,2/1,2/1,3",
+        "ThreeInterpolateBackward/d=0,p=0/1,3/9,2/1,2/1,3",
+        "ThreeInterpolateBackward/d=1,p=1/1,3/9,2/1,2/1,3",
+        "ThreeInterpolateBackward/d=1,p=0/1,3/9,2/1,2/1,3"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "e0e924e6d1a9d270e0503c4e9c182eb9ddc97b7fb8f02706d8b9f6343bd6c9aa,ffc355dfe8499482c1091963aac134178044a7d7ce4a22e2db3def4230cdd955",
+      "inputs": [
+        {
+          "name": "grad_x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "idx",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "weight",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "m",
+          "paramType": "required",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/three_interpolate_backward/ThreeInterpolateBackward_fp16_int64_high_performance.json"
+      }
+    }
+  ]
+}

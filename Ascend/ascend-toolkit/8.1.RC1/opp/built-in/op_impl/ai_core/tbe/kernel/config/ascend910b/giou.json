@@ -1,0 +1,1092 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GIoU/d=0,p=0/1,2/1,2/1,2/0,0,iof",
+        "GIoU/d=1,p=0/1,2/1,2/1,2/0,0,iof"
+      ],
+      "staticKey": "500513f8ffb189bcfa448301bd0589c74152d442ce167a2fcf25b05b5ef68238",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/giou/GIoU_e8150986cc8b3d24fabd8f64fb217605_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GIoU/d=0,p=0/1,2/1,2/1,2/0,0,iou",
+        "GIoU/d=1,p=0/1,2/1,2/1,2/0,0,iou"
+      ],
+      "staticKey": "9c1f168f358f9ca8250be8108acc90bab2bcb0a837ea2c6b5b3e3e16ae8f7ace",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/giou/GIoU_87cb06c3608dea2302fb2ebd433c70de_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GIoU/d=0,p=0/1,2/1,2/1,2/0,1,iof",
+        "GIoU/d=1,p=0/1,2/1,2/1,2/0,1,iof"
+      ],
+      "staticKey": "ed1f43abe4f79bd335125b18f8bc1ee884d1d0fe62ae412e0577391c17405c0c",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/giou/GIoU_3b367d27aac83f1211036d75f9ea6343_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GIoU/d=0,p=0/1,2/1,2/1,2/0,1,iou",
+        "GIoU/d=1,p=0/1,2/1,2/1,2/0,1,iou"
+      ],
+      "staticKey": "a58a949e73c22bb56380f327934681ff16a1696bde19b3824a6abf5a6a07521d",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/giou/GIoU_ff56b70812cbccac295cecac56a6b271_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GIoU/d=0,p=0/1,2/1,2/1,2/1,0,iof",
+        "GIoU/d=1,p=0/1,2/1,2/1,2/1,0,iof"
+      ],
+      "staticKey": "cef6b9657489da66c5b5c10464be3924226d19226f940ca5c593f2ef4b02cac1",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/giou/GIoU_536aaeb075007eee7728c964065067de_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GIoU/d=0,p=0/1,2/1,2/1,2/1,0,iou",
+        "GIoU/d=1,p=0/1,2/1,2/1,2/1,0,iou"
+      ],
+      "staticKey": "4d39393accfe4c2de0ceef191f2ad408dff7eed53b09ce32ccc7196c41f536db",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/giou/GIoU_a7af88140f926bc5768cb3021190ca07_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GIoU/d=0,p=0/1,2/1,2/1,2/1,1,iof",
+        "GIoU/d=1,p=0/1,2/1,2/1,2/1,1,iof"
+      ],
+      "staticKey": "37142d93c7b6f8303b11631f0f09dc6d81ea19591482c03293c641819b4538ec",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/giou/GIoU_6c4e2c78935292b2492e5e6b16b1d551_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GIoU/d=0,p=0/1,2/1,2/1,2/1,1,iou",
+        "GIoU/d=1,p=0/1,2/1,2/1,2/1,1,iou"
+      ],
+      "staticKey": "21d3ad7eef2b1251272ddf853d6a3f8a32d41b4d40aad8b5b8b19789210e2bc3",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/giou/GIoU_85da0916a6d13cb64ab2b66c6e750278_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GIoU/d=0,p=0/0,2/0,2/0,2/0,0,iof",
+        "GIoU/d=1,p=0/0,2/0,2/0,2/0,0,iof"
+      ],
+      "staticKey": "46de934f92dcb791e2cfbd0235571e1d9e53c07661517a0f08261de1d8f8d632",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/giou/GIoU_7de5127f1bd35d5fee631866d9296654_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GIoU/d=0,p=0/0,2/0,2/0,2/0,0,iou",
+        "GIoU/d=1,p=0/0,2/0,2/0,2/0,0,iou"
+      ],
+      "staticKey": "40dbb794cafd9e9ea844d1c65bbbdf36d118de3319611c812132f56753d549e9",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/giou/GIoU_8f93a66057cdcae9c6a4fb0da2f7c62c_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GIoU/d=0,p=0/0,2/0,2/0,2/0,1,iof",
+        "GIoU/d=1,p=0/0,2/0,2/0,2/0,1,iof"
+      ],
+      "staticKey": "2fc5e9c7ee797c2b4cc9ec2bac79f199a6e7689c0cf8a926fef17ecffd9d2e0b",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/giou/GIoU_5516d2002a4f48b1ff267e11c692243a_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GIoU/d=0,p=0/0,2/0,2/0,2/0,1,iou",
+        "GIoU/d=1,p=0/0,2/0,2/0,2/0,1,iou"
+      ],
+      "staticKey": "a13f9a8f79939187304028c9392a3bf258ecd474e83b40898d8428da1fb6927a",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/giou/GIoU_b3c6bc96287d7ff074c79049fcd359da_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GIoU/d=0,p=0/0,2/0,2/0,2/1,0,iof",
+        "GIoU/d=1,p=0/0,2/0,2/0,2/1,0,iof"
+      ],
+      "staticKey": "15af36e08f093769d5b575b3dfe365820b5074ce23877005b0e0628213f8a3a3",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/giou/GIoU_59376cd4590cae4e2602e503755c6e1b_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GIoU/d=0,p=0/0,2/0,2/0,2/1,0,iou",
+        "GIoU/d=1,p=0/0,2/0,2/0,2/1,0,iou"
+      ],
+      "staticKey": "d239349819474e5d58217af334811aa86cd594b72465a20ee5635d7bc34e81fc",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/giou/GIoU_e07ed616418397dc1da13d707f72eb21_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GIoU/d=0,p=0/0,2/0,2/0,2/1,1,iof",
+        "GIoU/d=1,p=0/0,2/0,2/0,2/1,1,iof"
+      ],
+      "staticKey": "e8638e52e560f9286c4f8471888c1e4dbea713290d4f14d637be3edb8666ba4a",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/giou/GIoU_2cd592c236fe3ab09821d3de5258b867_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GIoU/d=0,p=0/0,2/0,2/0,2/1,1,iou",
+        "GIoU/d=1,p=0/0,2/0,2/0,2/1,1,iou"
+      ],
+      "staticKey": "231f6956154abb5ca894dd82d0c5b5780fbfb69df721bae8713cb4886d18984b",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/giou/GIoU_7d0d7f28befc3d6136b8b0c5e8317ade_high_performance.json"
+      }
+    }
+  ]
+}

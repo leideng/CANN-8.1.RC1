@@ -1,0 +1,146 @@
+[
+    {
+        "case_name": "Test_SigmoidCrossEntropyWithLogitsGrad_001",
+        "op": "SigmoidCrossEntropyWithLogitsGrad",
+        "input_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float",
+                    "float16"
+                ],
+                "shape": [
+                    [
+                        1,
+                        2,
+                        4
+                    ],
+                    [
+                        16,
+                        16
+                    ],
+                    [
+                        32,
+                        2,
+                        4,
+                        16
+                    ]
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "predict"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float",
+                    "float16"
+                ],
+                "shape": [
+                    [
+                        1,
+                        2,
+                        4
+                    ],
+                    [
+                        16,
+                        16
+                    ],
+                    [
+                        32,
+                        2,
+                        4,
+                        16
+                    ]
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "target"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float",
+                    "float16"
+                ],
+                "shape": [
+                    [
+                        1,
+                        2,
+                        4
+                    ],
+                    [
+                        16,
+                        16
+                    ],
+                    [
+                        32,
+                        2,
+                        4,
+                        16
+                    ]
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "dout"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float",
+                    "float16"
+                ],
+                "shape": [
+                    [
+                        1,
+                        2,
+                        4
+                    ],
+                    [
+                        16,
+                        16
+                    ],
+                    [
+                        32,
+                        2,
+                        4,
+                        16
+                    ]
+                ],
+                "name": "gradient"
+            }
+        ],
+        "attr":[]
+    }
+]

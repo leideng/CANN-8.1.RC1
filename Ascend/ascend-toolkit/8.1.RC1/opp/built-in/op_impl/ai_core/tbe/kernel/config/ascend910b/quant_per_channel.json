@@ -1,0 +1,130 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantPerChannel/d=0,p=1/1,2/1,2/2,2",
+        "QuantPerChannel/d=0,p=0/1,2/1,2/2,2",
+        "QuantPerChannel/d=1,p=1/1,2/1,2/2,2",
+        "QuantPerChannel/d=1,p=0/1,2/1,2/2,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "f83f962d283ece500cd98907dd6c2ff9d06a746b0c080f44bdd7209bf2c68b7f,e495591b594e90177ef44e3116b9fc0387b0face11637b1e64dd66e509b95373",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset",
+          "index": 2,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_per_channel/QuantPerChannel_6727d480_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "QuantPerChannel/d=0,p=1/27,2/27,2/2,2",
+        "QuantPerChannel/d=0,p=0/27,2/27,2/2,2",
+        "QuantPerChannel/d=1,p=1/27,2/27,2/2,2",
+        "QuantPerChannel/d=1,p=0/27,2/27,2/2,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "ae536600c18bed143007f024fafff2ac31dc05b242955ea316ed2179cc08aab1,06cd1c151f5719dbf866cfb77dfa0bbb038d098c3cd74383d9e0f998d4db7011",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset",
+          "index": 2,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/quant_per_channel/QuantPerChannel_fc3944c8_high_performance.json"
+      }
+    }
+  ]
+}

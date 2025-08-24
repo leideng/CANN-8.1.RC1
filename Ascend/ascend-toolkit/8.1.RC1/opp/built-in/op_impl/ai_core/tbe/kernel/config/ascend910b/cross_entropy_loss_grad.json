@@ -1,0 +1,349 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CrossEntropyLossGrad/d=0,p=1/27,2/27,2/9,2/27,2",
+        "CrossEntropyLossGrad/d=0,p=0/27,2/27,2/9,2/27,2",
+        "CrossEntropyLossGrad/d=1,p=1/27,2/27,2/9,2/27,2",
+        "CrossEntropyLossGrad/d=1,p=0/27,2/27,2/9,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "73281fd3bb618f2b3f17af6e5c4c74ec993672954f8d55c77bf63fa4458bc591,918b70826d777da8d279a615aa1acb057ea28ed51ca2230c5808db1d920ddca5",
+      "inputs": [
+        {
+          "name": "grad_loss",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_prob",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "weight",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_zloss",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "lse_for_zloss",
+          "index": 5,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "ignore_index",
+          "dtype": "int",
+          "value": -100
+        },
+        {
+          "name": "label_smoothing",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "lse_square_scale_for_zloss",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/cross_entropy_loss_grad/CrossEntropyLossGrad_bfloat16_0_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CrossEntropyLossGrad/d=0,p=1/1,2/1,2/9,2/1,2",
+        "CrossEntropyLossGrad/d=0,p=0/1,2/1,2/9,2/1,2",
+        "CrossEntropyLossGrad/d=1,p=1/1,2/1,2/9,2/1,2",
+        "CrossEntropyLossGrad/d=1,p=0/1,2/1,2/9,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "87987d881b3385e7151a45a248f5539b5bb7f4ea6379a8878b3d4ece339ad6c9,db83cefa61706c8b510e82d637b464a5c81909bc232f41c1d20b120d482dd8ff",
+      "inputs": [
+        {
+          "name": "grad_loss",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_prob",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "weight",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_zloss",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "lse_for_zloss",
+          "index": 5,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "ignore_index",
+          "dtype": "int",
+          "value": -100
+        },
+        {
+          "name": "label_smoothing",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "lse_square_scale_for_zloss",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/cross_entropy_loss_grad/CrossEntropyLossGrad_float16_0_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CrossEntropyLossGrad/d=0,p=1/0,2/0,2/9,2/0,2",
+        "CrossEntropyLossGrad/d=0,p=0/0,2/0,2/9,2/0,2",
+        "CrossEntropyLossGrad/d=1,p=1/0,2/0,2/9,2/0,2",
+        "CrossEntropyLossGrad/d=1,p=0/0,2/0,2/9,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "f1a39847e830419c67f678daf8daa11390ad5bbdf0bd92be844c74c0963c0bca,eb6fc37b67ff570fa26343420c4a4c6e3af0ceba547a3eddfd8a5fe21693eca3",
+      "inputs": [
+        {
+          "name": "grad_loss",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_prob",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "weight",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_zloss",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "lse_for_zloss",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "ignore_index",
+          "dtype": "int",
+          "value": -100
+        },
+        {
+          "name": "label_smoothing",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "lse_square_scale_for_zloss",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/cross_entropy_loss_grad/CrossEntropyLossGrad_float32_0_high_performance.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SoftmaxV2/d=0,p=1/27,2/27,2/,0",
+        "SoftmaxV2/d=0,p=0/27,2/27,2/,0",
+        "SoftmaxV2/d=1,p=1/27,2/27,2/,0",
+        "SoftmaxV2/d=1,p=0/27,2/27,2/,0"
+      ],
+      "staticKey": "3872e98a02d42195451224bf8e1a0698b0529f1fc9383609da52bf7dd5fe29a8,6e0c82c6e228e03f297dd7a43865baff0cf28e55f4aabd5bc3882e7c1f0b4136",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axes",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "half_to_float",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softmax_v2/SoftmaxV2_299cf4d7f9ef0f745d89d88c666b45aa_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SoftmaxV2/d=0,p=1/1,2/1,2/,0",
+        "SoftmaxV2/d=0,p=0/1,2/1,2/,0",
+        "SoftmaxV2/d=1,p=1/1,2/1,2/,0",
+        "SoftmaxV2/d=1,p=0/1,2/1,2/,0"
+      ],
+      "staticKey": "dfe00fadeda5fdc07c103bf96fce1895e1c3bcafa23564df2681dff91fab3220,e7aa97f0009694946e01ebd1e2bbdeb84071cca1feedeb40bd14f4fb90587f63",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axes",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "half_to_float",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softmax_v2/SoftmaxV2_a8d63cbe8795eef99c620173d4757e59_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SoftmaxV2/d=0,p=1/1,2/0,2/,1",
+        "SoftmaxV2/d=0,p=0/1,2/0,2/,1",
+        "SoftmaxV2/d=1,p=1/1,2/0,2/,1",
+        "SoftmaxV2/d=1,p=0/1,2/0,2/,1"
+      ],
+      "staticKey": "551896117375cd66aed562652c26880c181886c4449535e74240e6776ce1648c,1eba57267754b9aa6890f25ae8880da6d4a9dcc08d0def2da7b06d5b6b622a98",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axes",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "half_to_float",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softmax_v2/SoftmaxV2_b66f9511c73ff92e636ba75a35cffe08_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SoftmaxV2/d=0,p=1/0,2/0,2/,0",
+        "SoftmaxV2/d=0,p=0/0,2/0,2/,0",
+        "SoftmaxV2/d=1,p=1/0,2/0,2/,0",
+        "SoftmaxV2/d=1,p=0/0,2/0,2/,0"
+      ],
+      "staticKey": "b7e4a6ff982ff0a61b28fd0a6a972692c862c59dcfaa69118111a0b3be70ecfc,dc2cb5c9e31288cc268f131345de6e451c6676b44451d2935c868d5ef682a3f3",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axes",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "half_to_float",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softmax_v2/SoftmaxV2_291664ae3e88b38b8b46c2efbbea27c9_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SoftmaxV2/d=0,p=2/27,2/27,2/,0",
+        "SoftmaxV2/d=1,p=2/27,2/27,2/,0"
+      ],
+      "staticKey": "276a51dd00dcc53885f9f1ad80943d8b7cfd0fc412f1894bfa2942eef669203e",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axes",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "half_to_float",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softmax_v2/SoftmaxV2_299cf4d7f9ef0f745d89d88c666b45aa_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SoftmaxV2/d=0,p=2/1,2/1,2/,0",
+        "SoftmaxV2/d=1,p=2/1,2/1,2/,0"
+      ],
+      "staticKey": "c3055ba24896cf209fb4937b73ae9c6bb82643bb0207ffb413f8f310e8e234e1",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axes",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "half_to_float",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softmax_v2/SoftmaxV2_a8d63cbe8795eef99c620173d4757e59_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SoftmaxV2/d=0,p=2/1,2/0,2/,1",
+        "SoftmaxV2/d=1,p=2/1,2/0,2/,1"
+      ],
+      "staticKey": "a7c33173a43cbc8bf4721d4384d097c685e4e3d6f5ddcabafa1380d1f6753c4f",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axes",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "half_to_float",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softmax_v2/SoftmaxV2_b66f9511c73ff92e636ba75a35cffe08_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SoftmaxV2/d=0,p=2/0,2/0,2/,0",
+        "SoftmaxV2/d=1,p=2/0,2/0,2/,0"
+      ],
+      "staticKey": "fe336fcd8072029cb0dd301f909450ad974ad0653db9c06fe9661d02bd957ab8",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axes",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "half_to_float",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softmax_v2/SoftmaxV2_291664ae3e88b38b8b46c2efbbea27c9_high_precision.json"
+      }
+    }
+  ]
+}

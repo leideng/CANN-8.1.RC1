@@ -1,0 +1,668 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "staticKey": "5a334bb413ac01210e1e51d2c74c10974d3c3d50ed21afa4431b88dc61a12a5e,40897b79054b371d89b723f91ca42486b5887356875bc35a7e47d2749865c9c6",
+      "inputs": [
+        {
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              16,
+              16
+            ]
+          ],
+          "shape": [
+            1,
+            1,
+            16,
+            16
+          ]
+        },
+        {
+          "index": 2,
+          "type": "null"
+        }
+      ],
+      "outputs": [
+        {
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "ori_shape": [
+            -2
+          ],
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "window",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "stride",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "int",
+          "value": 2
+        },
+        {
+          "name": "pad",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "global_pooling",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "ceil_mode",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "dilation",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pooling/Pooling_NC1HWC0_FRACTAL_Z_FP16_FP16_NO_BIAS_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "staticKey": "c9e48d024b226fe8160c938ccf70dd6077e7a8e7ab2131795e60d13307d959a1,b9684c7fef005866dbe35bb5b5520856626461945b28e50a8ea55c0bbd16dce7",
+      "inputs": [
+        {
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              2,
+              2
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "shape": [
+            2,
+            1,
+            16,
+            8
+          ]
+        },
+        {
+          "index": 2,
+          "type": "null"
+        }
+      ],
+      "outputs": [
+        {
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "ori_shape": [
+            -2
+          ],
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "window",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "stride",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "int",
+          "value": 2
+        },
+        {
+          "name": "pad",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "global_pooling",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "ceil_mode",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "dilation",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pooling/Pooling_NC1HWC0_FRACTAL_Z_FP32_FP32_NO_BIAS_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "staticKey": "369f993f284360b0a249ea2e5337700e457525cff82043906a82809fb08408f1,40897b79054b371d89b723f91ca42486b5887356875bc35a7e47d2749865c9c6",
+      "inputs": [
+        {
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              16,
+              16
+            ]
+          ],
+          "shape": [
+            1,
+            1,
+            16,
+            16
+          ]
+        },
+        {
+          "index": 2,
+          "type": "null"
+        }
+      ],
+      "outputs": [
+        {
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "ori_shape": [
+            -2
+          ],
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "window",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "stride",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "int",
+          "value": 2
+        },
+        {
+          "name": "pad",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "global_pooling",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "ceil_mode",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "dilation",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pooling/Pooling_NC1HWC0_FRACTAL_Z_FP16_FP16_NO_BIAS_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "staticKey": "3e43762031363ad06a69e2a5ff9ac1841e1a582d3fcab32463359ae2cef9b3c1,b9684c7fef005866dbe35bb5b5520856626461945b28e50a8ea55c0bbd16dce7",
+      "inputs": [
+        {
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              -1
+            ]
+          ],
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "ori_shape": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "range": [
+            [
+              2,
+              2
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              16,
+              16
+            ],
+            [
+              8,
+              8
+            ]
+          ],
+          "shape": [
+            2,
+            1,
+            16,
+            8
+          ]
+        },
+        {
+          "index": 2,
+          "type": "null"
+        }
+      ],
+      "outputs": [
+        {
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "ori_shape": [
+            -2
+          ],
+          "shape": [
+            -1,
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "window",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "stride",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "int",
+          "value": 2
+        },
+        {
+          "name": "pad",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "global_pooling",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "ceil_mode",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "dilation",
+          "dtype": "list_int",
+          "value": [
+            -1,
+            -1,
+            -1,
+            -1
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pooling/Pooling_NC1HWC0_FRACTAL_Z_FP32_FP32_NO_BIAS_high_precision.json"
+      }
+    }
+  ]
+}

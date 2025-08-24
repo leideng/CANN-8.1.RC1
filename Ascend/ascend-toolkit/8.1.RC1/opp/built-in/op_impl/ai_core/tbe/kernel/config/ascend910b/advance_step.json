@@ -1,0 +1,108 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "AdvanceStep/d=0,p=1/9,2/9,2/9,2/9,2/9,2/9,2",
+        "AdvanceStep/d=0,p=0/9,2/9,2/9,2/9,2/9,2/9,2",
+        "AdvanceStep/d=1,p=1/9,2/9,2/9,2/9,2/9,2/9,2",
+        "AdvanceStep/d=1,p=0/9,2/9,2/9,2/9,2/9,2/9,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "staticKey": "2aa05f10a1d9d8f539fd6af48f3488ea8c3e71f45528cebec08868d27f4dbe4f,097f9793bdff7f2936eac92c4eaf892fbce11304d747ecdf0766f9c0d0f32104",
+      "inputs": [
+        {
+          "name": "input_tokens",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "sampled_token_ids",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "input_positions",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "seq_lens",
+          "index": 3,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "slot_mapping",
+          "index": 4,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "block_tables",
+          "index": 5,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [],
+      "attrs": [
+        {
+          "name": "num_seqs",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "num_queries",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "block_size",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/advance_step/AdvanceStep_b66329fcd4da47a2ea4563aedd1f6bfa_high_performance.json"
+      }
+    }
+  ]
+}

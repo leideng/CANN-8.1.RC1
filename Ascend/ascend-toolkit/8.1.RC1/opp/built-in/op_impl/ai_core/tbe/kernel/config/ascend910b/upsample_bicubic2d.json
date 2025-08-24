@@ -1,0 +1,199 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "UpsampleBicubic2d/d=0,p=1/1,2/1,2",
+        "UpsampleBicubic2d/d=0,p=0/1,2/1,2",
+        "UpsampleBicubic2d/d=1,p=1/1,2/1,2",
+        "UpsampleBicubic2d/d=1,p=0/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "e3494d32f55137e683f03eb0c9f192a35b488e64de597046be1fb8db05575b44,8069111f6e9153f887b6cd681b9e71673dc506ca289b7b9c69499ab1323012ce",
+      "inputs": [
+        {
+          "name": "input",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "output_size",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "scales_h",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "scales_w",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/upsample_bicubic2d/UpsampleBicubic2d_0005808c9aaa8193f6eee0baf87a3504_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "UpsampleBicubic2d/d=0,p=1/0,2/0,2",
+        "UpsampleBicubic2d/d=0,p=0/0,2/0,2",
+        "UpsampleBicubic2d/d=1,p=1/0,2/0,2",
+        "UpsampleBicubic2d/d=1,p=0/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "f422fcb7bb1bbb71cb808de755a26301399882553a5de16b500f51eebec3441f,8653aada685202bc98ad3e7040c4ed9c4d1fa977070e841c6bf6c03afefa020c",
+      "inputs": [
+        {
+          "name": "input",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "output_size",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "scales_h",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "scales_w",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/upsample_bicubic2d/UpsampleBicubic2d_1e9d64c662a3bc48932ecc2eac4c6ebf_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "UpsampleBicubic2d/d=0,p=1/27,2/27,2",
+        "UpsampleBicubic2d/d=0,p=0/27,2/27,2",
+        "UpsampleBicubic2d/d=1,p=1/27,2/27,2",
+        "UpsampleBicubic2d/d=1,p=0/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "6eb0fa17f3a7cf46d6cad681a89d6ad0b8010fcf0accce6189c8626cfa37759e,b91eefcdd31f22c11cb4fe4364e318374df7d79b3ca93039275dd20302d43e16",
+      "inputs": [
+        {
+          "name": "input",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "output_size",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "scales_h",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "scales_w",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/upsample_bicubic2d/UpsampleBicubic2d_61a43973fce8f19813540dc1e88181c8_high_performance.json"
+      }
+    }
+  ]
+}

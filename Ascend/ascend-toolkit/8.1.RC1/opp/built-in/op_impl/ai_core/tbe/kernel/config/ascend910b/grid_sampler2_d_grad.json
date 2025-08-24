@@ -1,0 +1,544 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GridSampler2DGrad/d=0,p=1/1,1/1,1/1,2/1,1/1,2",
+        "GridSampler2DGrad/d=0,p=0/1,1/1,1/1,2/1,1/1,2",
+        "GridSampler2DGrad/d=1,p=1/1,1/1,1/1,2/1,1/1,2",
+        "GridSampler2DGrad/d=1,p=0/1,1/1,1/1,2/1,1/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "fea725087849bc80703616a7bb108dda577d8ac5e6a3227e6c67c62b6bbb180d,a69da815ec8e156ce5a6506f78680a30a195181cc7c2cd560539cc305fb6c515",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grid",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgrid",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "interpolation_mode",
+          "dtype": "str",
+          "value": "ALL"
+        },
+        {
+          "name": "padding_mode",
+          "dtype": "str",
+          "value": "ALL"
+        },
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grid_sampler2_d_grad/GridSamplerGrad_fp16_align_false_json_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GridSampler2DGrad/d=0,p=1/1,1/1,1/1,2/1,1/1,2",
+        "GridSampler2DGrad/d=0,p=0/1,1/1,1/1,2/1,1/1,2",
+        "GridSampler2DGrad/d=1,p=1/1,1/1,1/1,2/1,1/1,2",
+        "GridSampler2DGrad/d=1,p=0/1,1/1,1/1,2/1,1/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "0199a2c28b227ec0ed76225032a2bb0a561d9e24d54edb30a5c3df4db8698fbb,4e589237d79d72227ba17cf8175881da2723e7263a8027199b50f4e040378950",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grid",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgrid",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "interpolation_mode",
+          "dtype": "str",
+          "value": "ALL"
+        },
+        {
+          "name": "padding_mode",
+          "dtype": "str",
+          "value": "ALL"
+        },
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grid_sampler2_d_grad/GridSamplerGrad_fp16_align_true_json_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GridSampler2DGrad/d=0,p=1/27,1/27,1/27,2/27,1/27,2",
+        "GridSampler2DGrad/d=0,p=0/27,1/27,1/27,2/27,1/27,2",
+        "GridSampler2DGrad/d=1,p=1/27,1/27,1/27,2/27,1/27,2",
+        "GridSampler2DGrad/d=1,p=0/27,1/27,1/27,2/27,1/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "8c78ca7dce26b0e354276ad371c2e0fa14b12ef0bcf579b77d2028091ccdd891,339fbfce089e428498a598b911b08ddbf1301cd09bea093f95a00d50001276ac",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grid",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgrid",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "interpolation_mode",
+          "dtype": "str",
+          "value": "ALL"
+        },
+        {
+          "name": "padding_mode",
+          "dtype": "str",
+          "value": "ALL"
+        },
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grid_sampler2_d_grad/GridSamplerGrad_bf16_align_false_json_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GridSampler2DGrad/d=0,p=1/27,1/27,1/27,2/27,1/27,2",
+        "GridSampler2DGrad/d=0,p=0/27,1/27,1/27,2/27,1/27,2",
+        "GridSampler2DGrad/d=1,p=1/27,1/27,1/27,2/27,1/27,2",
+        "GridSampler2DGrad/d=1,p=0/27,1/27,1/27,2/27,1/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "ee014bee8625147607b7c0d5137dcba7b3180f59e87426f6454bf2ac9645739e,265298fabd38181ece0feaa2b6184cd4ad8c11755839c91503f911ed31cec64f",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grid",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgrid",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "interpolation_mode",
+          "dtype": "str",
+          "value": "ALL"
+        },
+        {
+          "name": "padding_mode",
+          "dtype": "str",
+          "value": "ALL"
+        },
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grid_sampler2_d_grad/GridSamplerGrad_bf16_align_true_json_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GridSampler2DGrad/d=0,p=1/0,1/0,1/0,2/0,1/0,2",
+        "GridSampler2DGrad/d=0,p=0/0,1/0,1/0,2/0,1/0,2",
+        "GridSampler2DGrad/d=1,p=1/0,1/0,1/0,2/0,1/0,2",
+        "GridSampler2DGrad/d=1,p=0/0,1/0,1/0,2/0,1/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "7311296b8cf2b336a82c51fa9e0ba19a3445732de54e25871ad5675238138785,f86b2ca78722b6f23a091c93dbee322f3a01a3cc6c3f7434cbe358fc47bd5234",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grid",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgrid",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "interpolation_mode",
+          "dtype": "str",
+          "value": "ALL"
+        },
+        {
+          "name": "padding_mode",
+          "dtype": "str",
+          "value": "ALL"
+        },
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grid_sampler2_d_grad/GridSamplerGrad_fp32_align_false_json_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GridSampler2DGrad/d=0,p=1/0,1/0,1/0,2/0,1/0,2",
+        "GridSampler2DGrad/d=0,p=0/0,1/0,1/0,2/0,1/0,2",
+        "GridSampler2DGrad/d=1,p=1/0,1/0,1/0,2/0,1/0,2",
+        "GridSampler2DGrad/d=1,p=0/0,1/0,1/0,2/0,1/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "5433c54a45b04ebff54c77211cc091e9df33bd66d756ff160a9fc9dce23eea5b,3451c3d1a432b579e56feffb4e61ad24967908720f2e10cc037018d248cf2df0",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grid",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "dx",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NHWC",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "dgrid",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "interpolation_mode",
+          "dtype": "str",
+          "value": "ALL"
+        },
+        {
+          "name": "padding_mode",
+          "dtype": "str",
+          "value": "ALL"
+        },
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grid_sampler2_d_grad/GridSamplerGrad_fp32_align_true_json_high_performance.json"
+      }
+    }
+  ]
+}

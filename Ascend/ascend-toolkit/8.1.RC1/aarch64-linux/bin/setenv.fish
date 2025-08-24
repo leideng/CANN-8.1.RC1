@@ -1,0 +1,9 @@
+#!/usr/bin/env fish
+source /usr/local/Ascend/ascend-toolkit/8.1.RC1/runtime/bin/setenv.fish
+source /usr/local/Ascend/ascend-toolkit/8.1.RC1/compiler/bin/setenv.fish
+source /usr/local/Ascend/ascend-toolkit/8.1.RC1/hccl/bin/setenv.fish
+source /usr/local/Ascend/ascend-toolkit/8.1.RC1/opp/bin/setenv.fish
+source /usr/local/Ascend/ascend-toolkit/8.1.RC1/toolkit/bin/setenv.fish
+source /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/aoe/bin/setenv.fish
+source /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/ncs/bin/setenv.fish
+source /usr/local/Ascend/ascend-toolkit/8.1.RC1/opp_kernel/bin/setenv.fish

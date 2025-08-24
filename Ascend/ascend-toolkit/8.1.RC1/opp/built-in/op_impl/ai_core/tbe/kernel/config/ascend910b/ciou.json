@@ -1,0 +1,2692 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/1,2/1,2/1,2/1,2/0,0,iof,0",
+        "CIoU/d=1,p=0/1,2/1,2/1,2/1,2/0,0,iof,0"
+      ],
+      "staticKey": "c66285e18b80ddbe1ec46ebd9aa9102dc99c569d2a9ffddda799a7d1d89afa0b",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_0642613b22711bddfd0b3a4b9c2aad84_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/1,2/1,2/1,2/1,2/0,0,iof,1",
+        "CIoU/d=1,p=0/1,2/1,2/1,2/1,2/0,0,iof,1"
+      ],
+      "staticKey": "f2df5e80a8f58cbc3176bec610655e40a6ca0b27109a50532707a028b690c467",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_ce84dc90ebcf595e1d1d6a6167d6de9f_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/1,2/1,2/1,2/1,2/0,0,iou,0",
+        "CIoU/d=1,p=0/1,2/1,2/1,2/1,2/0,0,iou,0"
+      ],
+      "staticKey": "66edd63f87ae231e5736575ae4d9d3171deed32eb575c316ec09ece5be14a60d",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_1c1870b25cdbd4db08815ef26caabda2_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/1,2/1,2/1,2/1,2/0,0,iou,1",
+        "CIoU/d=1,p=0/1,2/1,2/1,2/1,2/0,0,iou,1"
+      ],
+      "staticKey": "f89f6fa123879dd313dcef61ad06f3899b4d4cfccaa24fc884d55c69a2523ba0",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_2deaadc28c6885eeecde2253480f92c8_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/1,2/1,2/1,2/1,2/0,1,iof,0",
+        "CIoU/d=1,p=0/1,2/1,2/1,2/1,2/0,1,iof,0"
+      ],
+      "staticKey": "9f74db348003a156a571dfb152aa236a2b31ec742000ddc4df62a546e1bf15ff",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_4b40cccbbe49d7021b522010c1ec4ad5_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/1,2/1,2/1,2/1,2/0,1,iof,1",
+        "CIoU/d=1,p=0/1,2/1,2/1,2/1,2/0,1,iof,1"
+      ],
+      "staticKey": "f276c71e7940d6f9984b8b564c72339da712af6a5caa6aab3ecdcc2093af71aa",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_d7be796e54c3c48bcfd2dae619cea8c0_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/1,2/1,2/1,2/1,2/0,1,iou,0",
+        "CIoU/d=1,p=0/1,2/1,2/1,2/1,2/0,1,iou,0"
+      ],
+      "staticKey": "05cabaa5933a1129e7e7f3b6f9a92d2becc0ee3909d10f0afad62c4cf2b53161",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_205aba0cb94f736884ddef6b7906d9aa_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/1,2/1,2/1,2/1,2/0,1,iou,1",
+        "CIoU/d=1,p=0/1,2/1,2/1,2/1,2/0,1,iou,1"
+      ],
+      "staticKey": "a035cae4db2e275161ac6b4e19762ea977d7b15b68d2f4ad8bf0330e13454868",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_cb3da3fc82eca779c1f8e3f1e1180daf_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/1,2/1,2/1,2/1,2/1,0,iof,0",
+        "CIoU/d=1,p=0/1,2/1,2/1,2/1,2/1,0,iof,0"
+      ],
+      "staticKey": "0f26a0cd7d47eb4a32f7191ce661a41f81d71f71f2d8d3e6d0d082c79a1f1c4a",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_9e9c77ff160832d73e50cfea5f0a9d0f_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/1,2/1,2/1,2/1,2/1,0,iof,1",
+        "CIoU/d=1,p=0/1,2/1,2/1,2/1,2/1,0,iof,1"
+      ],
+      "staticKey": "44be85b6279e87cc746f6e4763e6e9dc333ecbec8408ea04d2ba1e8adad597e2",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_a479172c44fbb602e7d8ccd65f36b909_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/1,2/1,2/1,2/1,2/1,0,iou,0",
+        "CIoU/d=1,p=0/1,2/1,2/1,2/1,2/1,0,iou,0"
+      ],
+      "staticKey": "d6fb9040e9429a3c7691a8711c7840ac200aa5f48d97dcd76ca0533f8f9592bf",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_5d3ebba54fa30e371130aebe09ef8d15_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/1,2/1,2/1,2/1,2/1,0,iou,1",
+        "CIoU/d=1,p=0/1,2/1,2/1,2/1,2/1,0,iou,1"
+      ],
+      "staticKey": "b8781d6d74872aaa0df523a0015de3ebc4081091131a37ba8e7ad57359b4ba8f",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_d0250a065baa0a087181873de8747855_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/1,2/1,2/1,2/1,2/1,1,iof,0",
+        "CIoU/d=1,p=0/1,2/1,2/1,2/1,2/1,1,iof,0"
+      ],
+      "staticKey": "20da4cbb89e949eb063d51df77faeeaab6bb343899767aaeec04195bebf0a21f",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_259da812180bad12d3df83968bee32aa_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/1,2/1,2/1,2/1,2/1,1,iof,1",
+        "CIoU/d=1,p=0/1,2/1,2/1,2/1,2/1,1,iof,1"
+      ],
+      "staticKey": "2f1993e9b18ea29700b2a2cbafecb2a227a030f10bd5d78d5a028a5ffdb6c550",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_c602c38f97fef31961bff9b29a08957b_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/1,2/1,2/1,2/1,2/1,1,iou,0",
+        "CIoU/d=1,p=0/1,2/1,2/1,2/1,2/1,1,iou,0"
+      ],
+      "staticKey": "4148addf16f84793fc53f54a926334e9858aab999cb68896da1935a453005e3c",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_5c9d56c69c951dd8c43a0a492f5eeb8a_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/1,2/1,2/1,2/1,2/1,1,iou,1",
+        "CIoU/d=1,p=0/1,2/1,2/1,2/1,2/1,1,iou,1"
+      ],
+      "staticKey": "d96162a1d3287059f451bbc6445830cc6aea927a47e167e6a2241fd5fdca2d1a",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_0412af56836e569daaf4d933e9ee3282_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/0,2/0,2/0,2/0,2/0,0,iof,0",
+        "CIoU/d=1,p=0/0,2/0,2/0,2/0,2/0,0,iof,0"
+      ],
+      "staticKey": "489a7e1da24744f064d5698ce42100fb089e20d6f6f3ccc86e6d815e8b4e61e1",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_ce297c7c1e809254db254e2d557c3c37_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/0,2/0,2/0,2/0,2/0,0,iof,1",
+        "CIoU/d=1,p=0/0,2/0,2/0,2/0,2/0,0,iof,1"
+      ],
+      "staticKey": "6a669cabe00ecdb61e323994bb62410ac67fde7ee106855455cac7a5652667c0",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_792a26e2bb76b067fd696c50e5557fbd_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/0,2/0,2/0,2/0,2/0,0,iou,0",
+        "CIoU/d=1,p=0/0,2/0,2/0,2/0,2/0,0,iou,0"
+      ],
+      "staticKey": "d2be8d8079426b677d8ce63dc7806832d848c915b2a7b6be5da518554e3b6a3f",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_37a505bc02b6216eb394b07149bfefbd_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/0,2/0,2/0,2/0,2/0,0,iou,1",
+        "CIoU/d=1,p=0/0,2/0,2/0,2/0,2/0,0,iou,1"
+      ],
+      "staticKey": "ace21509c5191b74e27a6a2e97a5b3b5d22a1a9c02fb1efab433e4cb1135124c",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_946b2a97fe4f4e2f9945ebf6b7ac461b_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/0,2/0,2/0,2/0,2/0,1,iof,0",
+        "CIoU/d=1,p=0/0,2/0,2/0,2/0,2/0,1,iof,0"
+      ],
+      "staticKey": "1c92f89b2099e39f9a5781acfa97f209bdd8de67c2fddde1be89147604cd9e0a",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_26f78dc5ea9c1dcb9bc61888c1ef0438_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/0,2/0,2/0,2/0,2/0,1,iof,1",
+        "CIoU/d=1,p=0/0,2/0,2/0,2/0,2/0,1,iof,1"
+      ],
+      "staticKey": "bff1e31f19d98fa553cc28f3e9abd7fa29a0fc543417b6e9c12f26a809920e64",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_d592738ef926631db5e2e10d298959d6_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/0,2/0,2/0,2/0,2/0,1,iou,0",
+        "CIoU/d=1,p=0/0,2/0,2/0,2/0,2/0,1,iou,0"
+      ],
+      "staticKey": "447418df76898b62435068f6d4443aa7943178436fdbdc8aca8040d9e2d38b49",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_9f9d0ea5c3e2d540e58c933c548346ea_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/0,2/0,2/0,2/0,2/0,1,iou,1",
+        "CIoU/d=1,p=0/0,2/0,2/0,2/0,2/0,1,iou,1"
+      ],
+      "staticKey": "12df0434b1e97c7d7dc545efc87f56fc13a188e8562dd8e9fe9dab631b196698",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_44fb195913581b0149851273224f2165_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/0,2/0,2/0,2/0,2/1,0,iof,0",
+        "CIoU/d=1,p=0/0,2/0,2/0,2/0,2/1,0,iof,0"
+      ],
+      "staticKey": "08931e7fdc118554fb7c2d9edf306ac5eaf682bdc6f4c01888dce3b4d6444476",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_d59838e9cfbc74a19d9e380f349e9581_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/0,2/0,2/0,2/0,2/1,0,iof,1",
+        "CIoU/d=1,p=0/0,2/0,2/0,2/0,2/1,0,iof,1"
+      ],
+      "staticKey": "3a814ad716192369f0eb660bfd415e7c8477e3f1652d9bb389d28f74b8872946",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_2185497218ae30a546df700ed5b8900c_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/0,2/0,2/0,2/0,2/1,0,iou,0",
+        "CIoU/d=1,p=0/0,2/0,2/0,2/0,2/1,0,iou,0"
+      ],
+      "staticKey": "843e4c214a6233f3743c88af3c62eb40d95d060185d17b92d5fe87d08a2602f1",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_a601076653ddb57e97fbccbabcf65e2d_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/0,2/0,2/0,2/0,2/1,0,iou,1",
+        "CIoU/d=1,p=0/0,2/0,2/0,2/0,2/1,0,iou,1"
+      ],
+      "staticKey": "304e5827cda71dccc5c774ac3cdc559ac67a1953a20d9f4683285acb6dd29b05",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_51270d36dd7a2b619b7b47ee0c06c50a_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/0,2/0,2/0,2/0,2/1,1,iof,0",
+        "CIoU/d=1,p=0/0,2/0,2/0,2/0,2/1,1,iof,0"
+      ],
+      "staticKey": "3085a034689f4d56339c2e1279c4ae6afc6cb428a1f7be72386ef1026ba9a009",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_f1a1941b1ec7bfdcc4dde88889167dbf_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/0,2/0,2/0,2/0,2/1,1,iof,1",
+        "CIoU/d=1,p=0/0,2/0,2/0,2/0,2/1,1,iof,1"
+      ],
+      "staticKey": "0f4cb5055bcab4ad5857a82cfbf4c42a57e4884a449b1bfa24718a895df375e2",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_12824338adad6e8d0d3a72c45715f991_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/0,2/0,2/0,2/0,2/1,1,iou,0",
+        "CIoU/d=1,p=0/0,2/0,2/0,2/0,2/1,1,iou,0"
+      ],
+      "staticKey": "2bf7702a3b1e333c2acd7c859fbaefecfb246cb96d7f90869e66096df530a019",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_b1c1f2e6dfde64bfe5ddd475d837e486_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "CIoU/d=0,p=0/0,2/0,2/0,2/0,2/1,1,iou,1",
+        "CIoU/d=1,p=0/0,2/0,2/0,2/0,2/1,1,iou,1"
+      ],
+      "staticKey": "b4afbbbc70e2721b2d3a57afd3da773d33e305df0f40752c555c6b9f330fd2b8",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "atan_sub",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trans",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "is_cross",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou",
+          "mode": "value"
+        },
+        {
+          "name": "atan_sub_flag",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ciou/CIoU_5c995530121287559f558be716f62d43_high_performance.json"
+      }
+    }
+  ]
+}

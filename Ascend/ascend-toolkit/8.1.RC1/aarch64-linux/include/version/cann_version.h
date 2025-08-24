@@ -1,0 +1,8 @@
+#ifndef CANN_VERSION_H
+#define CANN_VERSION_H
+
+#define CANN_VERSION_STR "8.1.RC1"
+#define CANN_VERSION ((9 * 100000000) + (2 * 1000000) + ((2 * 100) + 5000))
+#define CANN_TIMESTAMP 20250428203017761
+
+#endif /* CANN_VERSION_H */

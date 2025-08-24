@@ -1,0 +1,1075 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeInitRoutingV3/d=0,p=1/2,2/3,2/2,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=0,p=0/2,2/3,2/2,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=1,p=1/2,2/3,2/2,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=1,p=0/2,2/3,2/2,2/3,2/9,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "569394bd7011bd5624de881197af857c3ef463858e234e11fd7b3d1994de070c,dceb41444f4798d15c5c7ade598e322499969f9948df31c58999d8da547d4b23",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "expanded_x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_row_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_tokens_count_or_cumsum",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_scale",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "active_num",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "expert_capacity",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "expert_num",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "drop_pad_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "expert_tokens_num_type",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "expert_tokens_num_flag",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "quant_mode",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "active_expert_range",
+          "dtype": "listInt",
+          "value": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "row_idx_type",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_init_routing_v3/MoeInitRoutingV3_19802a760bc5088fa9a91fb0460dbe6b2ab7780_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeInitRoutingV3/d=0,p=1/1,2/3,2/1,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=0,p=0/1,2/3,2/1,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=1,p=1/1,2/3,2/1,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=1,p=0/1,2/3,2/1,2/3,2/9,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "7f9070c9aa0dfb8d28b3087e913e0530e96d34ead54da25ef3fbc05f7e320117,5bcc3e4918cad227b8873d02531e0850e1d1d0c95266f8a9f4a8e16b26447f77",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "expanded_x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_row_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_tokens_count_or_cumsum",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_scale",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "active_num",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "expert_capacity",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "expert_num",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "drop_pad_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "expert_tokens_num_type",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "expert_tokens_num_flag",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "quant_mode",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "active_expert_range",
+          "dtype": "listInt",
+          "value": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "row_idx_type",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_init_routing_v3/MoeInitRoutingV3_1980e0d5e7d8bd7551e6da8dc4405c95636e856_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeInitRoutingV3/d=0,p=1/0,2/3,2/0,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=0,p=0/0,2/3,2/0,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=1,p=1/0,2/3,2/0,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=1,p=0/0,2/3,2/0,2/3,2/9,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "4e5f9291d3329c7d9ceb254dd9374ac70d754746a6d777ae52cf427a3b324264,8387ab0d9ca2dc3077020e36fb2fdf04e2bb982a407591c910923401eea09ad6",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "expanded_x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_row_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_tokens_count_or_cumsum",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_scale",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "active_num",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "expert_capacity",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "expert_num",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "drop_pad_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "expert_tokens_num_type",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "expert_tokens_num_flag",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "quant_mode",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "active_expert_range",
+          "dtype": "listInt",
+          "value": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "row_idx_type",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_init_routing_v3/MoeInitRoutingV3_1980496b1b9ec80b4fd54986c0ab5efde892bd5_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeInitRoutingV3/d=0,p=1/27,2/3,2/27,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=0,p=0/27,2/3,2/27,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=1,p=1/27,2/3,2/27,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=1,p=0/27,2/3,2/27,2/3,2/9,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "12ed43f076d8cfdf0e17ef74f50cbd3c7a7dddcece75bfe4599fd43fe904ce29,2f4895bce3247545c1e1580749d833db778d776eaeb62c98f977b0471985ecf3",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "expanded_x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_row_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_tokens_count_or_cumsum",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_scale",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "active_num",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "expert_capacity",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "expert_num",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "drop_pad_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "expert_tokens_num_type",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "expert_tokens_num_flag",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "quant_mode",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "active_expert_range",
+          "dtype": "listInt",
+          "value": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "row_idx_type",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_init_routing_v3/MoeInitRoutingV3_1980c8125ae488a35de917abd987e737de48b75_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeInitRoutingV3/d=0,p=1/1,2/3,2/2,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=0,p=0/1,2/3,2/2,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=1,p=1/1,2/3,2/2,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=1,p=0/1,2/3,2/2,2/3,2/9,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "fe87e22d8f1940ffcbd9101de92d9b42b1097f96d98b27c3a14e25e7ac63f411,e5ce96d313ddc1a26c7e6503e20a1ff5488305cf8f801ce7471b9af0e63d20e8",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "expanded_x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_row_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_tokens_count_or_cumsum",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_scale",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "active_num",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "expert_capacity",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "expert_num",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "drop_pad_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "expert_tokens_num_type",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "expert_tokens_num_flag",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "quant_mode",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "active_expert_range",
+          "dtype": "listInt",
+          "value": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "row_idx_type",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_init_routing_v3/MoeInitRoutingV3_1980b1bd061d55581315881fb583bf1618aeac2_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeInitRoutingV3/d=0,p=1/0,2/3,2/2,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=0,p=0/0,2/3,2/2,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=1,p=1/0,2/3,2/2,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=1,p=0/0,2/3,2/2,2/3,2/9,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "24c7eba50489a5d606586b8408bf85be93aee6078be131fdf424848a10166e7c,b9be2392897b2a73a2330e1fcb6cb62837c6314bd7ab53049a01b6e83b0db394",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "expanded_x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_row_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_tokens_count_or_cumsum",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_scale",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "active_num",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "expert_capacity",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "expert_num",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "drop_pad_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "expert_tokens_num_type",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "expert_tokens_num_flag",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "quant_mode",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "active_expert_range",
+          "dtype": "listInt",
+          "value": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "row_idx_type",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_init_routing_v3/MoeInitRoutingV3_1980e9e0676bcc6cc94e29b277fa89c7e762f59_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeInitRoutingV3/d=0,p=1/27,2/3,2/2,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=0,p=0/27,2/3,2/2,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=1,p=1/27,2/3,2/2,2/3,2/9,2/0,2",
+        "MoeInitRoutingV3/d=1,p=0/27,2/3,2/2,2/3,2/9,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "5142e080145d63e3c766ce5e483ea09fe912836822c3b7ee9ee4c2c89e36c68a,c0df24406e11bfed7d893ff2104c9f9b855d9ee85546949ac822b0cd51cb92b7",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "expanded_x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_row_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_tokens_count_or_cumsum",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_scale",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "active_num",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "expert_capacity",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "expert_num",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "drop_pad_mode",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "expert_tokens_num_type",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "expert_tokens_num_flag",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "quant_mode",
+          "dtype": "int",
+          "value": -1
+        },
+        {
+          "name": "active_expert_range",
+          "dtype": "listInt",
+          "value": [
+            -1,
+            -1
+          ]
+        },
+        {
+          "name": "row_idx_type",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_init_routing_v3/MoeInitRoutingV3_1980d0e17bdfe77244a95d4b14f25a883ab433b_high_performance.json"
+      }
+    }
+  ]
+}

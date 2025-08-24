@@ -1,0 +1,1944 @@
+{
+    "Common": {
+        "Framework": {
+            "type": "enum",
+            "key": "framework",
+            "enum_value": [
+                {
+                    "name": "TENSORFLOW",
+                    "value": "3"
+                },
+                {
+                    "name": "CAFFE",
+                    "value": "0"
+                },
+                {
+                    "name": "ONNX",
+                    "value": "5"
+                },
+                {
+                    "name": "MINDSPORE",
+                    "value": "1"
+                }
+            ]
+        },
+        "InputNodesType": {
+            "type": "enum",
+            "enum_value": [
+                "FP16",
+                "FP32",
+                "UINT8"
+            ],
+            "depend": "Framework",
+            "depend_rules": [
+                {
+                    "case": "3",
+                    "enum_value": [
+                        "FP16",
+                        "FP32",
+                        "UINT8",
+                        "Int32",
+                        "Int64",
+                        "Bool"
+                    ]
+                },
+                {
+                    "case": "1",
+                    "enum_value": [
+                        "FP32",
+                        "UINT8"
+                    ]
+                }
+            ]
+        },
+        "OutputNodesType": {
+            "type": "enum",
+            "enum_value": [
+                "FP32",
+                "FP16",
+                "UINT8"
+            ]
+        },
+        "InputFormat": {
+            "key": "input_format",
+            "type": "enum",
+            "enum_value": [
+                "NCHW"
+            ],
+            "default": "NCHW",
+            "depend": "Framework",
+            "depend_rules": [
+                {
+                    "case": "3",
+                    "enum_value": [
+                        "NHWC",
+                        "NCHW",
+                        "ND",
+                        "NCDHW",
+                        "NDHWC"
+                    ],
+                    "default": "NHWC"
+                },
+                {
+                    "case": "0",
+                    "enum_value": [
+                        "NCHW",
+                        "ND"
+                    ]
+                },
+                {
+                    "case": "5",
+                    "enum_value": [
+                        "NCHW",
+                        "NCDHW",
+                        "ND",
+                    ],
+                    "default": "NCHW"
+                }
+            ]
+        },
+        "AippModel": {
+            "key": "aipp_mode",
+            "type": "enum",
+            "enum_value": [
+                {
+                    "name": "Static",
+                    "value": "static"
+                },
+                {
+                    "name": "Dynamic",
+                    "value": "dynamic"
+                }
+            ]
+        },
+        "InputImageFormat": {
+            "key": "input_format",
+            "type": "enum",
+            "enum_value": [
+                {
+                    "value": "YUV400_U8",
+                    "name": "YUV400"
+                },
+                {
+                    "value": "YUV422SP_U8",
+                    "name": "YUV422 sp"
+                },
+                {
+                    "value": "YVU422SP_U8",
+                    "name": "YVU422 sp"
+                },
+                {
+                    "value": "YUV420SP_U8",
+                    "name": "YUV420 sp"
+                },
+                {
+                    "value": "YVU420SP_U8",
+                    "name": "YVU420 sp"
+                },
+                {
+                    "value": "RGB888_U8",
+                    "name": "RGB package"
+                },
+                {
+                    "value": "BGR888_U8",
+                    "name": "BGR package"
+                },
+                {
+                    "value": "BGRA8888_U8",
+                    "name": "BGRA package"
+                },
+                {
+                    "value": "RGBA8888_U8",
+                    "name": "RGBA package"
+                },
+                {
+                    "value": "ABGR8888_U8",
+                    "name": "ABGR package"
+                },
+                {
+                    "value": "ARGB8888_U8",
+                    "name": "ARGB package"
+                }
+            ]
+        },
+        "ModelImageType": {
+            "type": "enum",
+            "enum_value": [
+                {
+                    "value": "BT_601NARROW",
+                    "name": "BT.601 (Video Range)"
+                },
+                {
+                    "value": "BT_601WIDE",
+                    "name": "BT.601 (Full Range)"
+                },
+                {
+                    "value": "BT_709NARROW",
+                    "name": "BT.709 (Video Range)"
+                },
+                {
+                    "value": "BT_709WIDE",
+                    "name": "BT.709 (Full Range)"
+                }
+            ],
+            "depend": "InputImageFormat",
+            "depend_rules": [
+                {
+                    "case": [
+                        "YUV400_U8",
+                        "RGB888_U8",
+                        "BGR888_U8",
+                        "BGRA8888_U8",
+                        "RGBA8888_U8",
+                        "ABGR8888_U8",
+                        "ARGB8888_U8"
+                    ],
+                    "enable": false
+                }
+            ]
+        },
+        "ModelImageFormatEnable": {
+            "type": "bool"
+        },
+        "ModelImageFormat": {
+            "key": "model_format",
+            "type": "enum",
+            "enum_value": [
+                "RGB",
+                "BGR",
+                "RGBA",
+                "BGRA",
+                "GRAY"
+            ],
+            "depend": "InputImageFormat",
+            "depend_rules": [
+                {
+                    "case": "YUV400_U8",
+                    "enum_value": [
+                        "GRAY"
+                    ]
+                },
+                {
+                    "case": "YUV422SP_U8",
+                    "enum_value": [
+                        "RGB",
+                        "BGR"
+                    ]
+                },
+                {
+                    "case": "YVU422SP_U8",
+                    "enum_value": [
+                        "RGB",
+                        "BGR"
+                    ]
+                },
+                {
+                    "case": "YUV420SP_U8",
+                    "enum_value": [
+                        "RGB",
+                        "BGR"
+                    ]
+                },
+                {
+                    "case": "YVU420SP_U8",
+                    "enum_value": [
+                        "RGB",
+                        "BGR"
+                    ]
+                },
+                {
+                    "case": "RGB888_U8",
+                    "enum_value": [
+                        "RGB",
+                        "BGR",
+                        "GRAY"
+                    ]
+                },
+                {
+                    "case": "BGR888_U8",
+                    "enum_value": [
+                        "RGB",
+                        "BGR"
+                    ]
+                },
+                {
+                    "case": "BGRA8888_U8",
+                    "enum_value": [
+                        "RGBA",
+                        "BGRA"
+                    ]
+                },
+                {
+                    "case": "RGBA8888_U8",
+                    "enum_value": [
+                        "RGBA",
+                        "BGRA"
+                    ]
+                },
+                {
+                    "case": "ABGR8888_U8",
+                    "enum_value": [
+                        "RGBA",
+                        "BGRA"
+                    ]
+                },
+                {
+                    "case": "ARGB8888_U8",
+                    "enum_value": [
+                        "RGBA",
+                        "BGRA"
+                    ]
+                }
+            ]
+        },
+        "InputImageResolution": {
+            "type": "group",
+            "group": [
+                "SrcImageSizeWidth",
+                "SrcImageSizeHeight"
+            ]
+        },
+        "SrcImageSizeWidth": {
+            "key": "src_image_size_w",
+            "type": "int",
+            "int_max": 4096,
+            "int_min": 0,
+            "not_eq": "1",
+            "depend": "InputImageFormat",
+            "depend_rules": [
+                {
+                    "case": "YUV420SP_U8",
+                    "int_divisible": 2
+                }
+            ]
+        },
+        "SrcImageSizeHeight": {
+            "key": "src_image_size_h",
+            "type": "int",
+            "int_max": 4096,
+            "int_min": 0,
+            "depend": "InputImageFormat",
+            "depend_rules": [
+                {
+                    "case": "YUV420SP_U8",
+                    "int_divisible": 2
+                }
+            ]
+        },
+        "ConversionTypeEnable": {
+            "type": "bool",
+            "enable": true
+        },
+        "Crop": {
+            "type": "bool",
+            "key": "crop"
+        },
+        "CropGroup": {
+            "type": "group",
+            "group": [
+                "LoadStartPosWidth",
+                "LoadStartPosHeight",
+                "CropSizeWidth",
+                "CropSizeHeight"
+            ],
+            "depend": "Crop",
+            "depend_rules": [
+                {
+                    "case": "false",
+                    "enable": false
+                }
+            ]
+        },
+        "LoadStartPosWidth": {
+            "key": "load_start_pos_w",
+            "type": "int",
+            "int_min": 0,
+            "depend": "InputImageFormat",
+            "depend_rules": [
+                {
+                    "case": [
+                        "YUV420SP_U8",
+                        "YVU420SP_U8",
+                        "YUV422SP_U8",
+                        "YVU422SP_U8"
+                    ],
+                    "int_divisible": 2
+                }
+            ]
+        },
+        "LoadStartPosHeight": {
+            "key": "load_start_pos_h",
+            "type": "int",
+            "int_min": 0,
+            "depend": "InputImageFormat",
+            "depend_rules": [
+                {
+                    "case": [
+                        "YUV420SP_U8",
+                        "YVU420SP_U8"
+                    ],
+                    "int_divisible": 2
+                }
+            ]
+        },
+        "CropSizeWidth": {
+            "key": "crop_size_w",
+            "type": "int",
+            "int_min": 0
+        },
+        "CropSizeHeight": {
+            "key": "crop_size_h",
+            "type": "int",
+            "int_min": 0
+        },
+        "Resize": {
+            "type": "bool",
+            "key": "resize"
+        },
+        "ResizeGroup": {
+            "type": "group",
+            "group": [
+                "ResizeAreaH",
+                "ResizeAreaW"
+            ],
+            "depend": "Resize",
+            "depend_rules": [
+                {
+                    "case": "false",
+                    "enable": false
+                }
+            ]
+        },
+        "ResizeAreaH": {
+            "key": "resize_output_h",
+            "type": "int",
+            "int_max": 4096,
+            "int_min": 0,
+            "depend": "Padding",
+            "depend_rules": [
+                {
+                    "case": "true",
+                    "not_eq": "0"
+                }
+            ]
+        },
+        "ResizeAreaW": {
+            "key": "resize_output_w",
+            "type": "int",
+            "int_max": 1920,
+            "int_min": 0,
+            "depend": "Padding",
+            "depend_rules": [
+                {
+                    "case": "true",
+                    "not_eq": "0"
+                }
+            ]
+        },
+        "Padding": {
+            "type": "bool",
+            "key": "padding"
+        },
+        "PaddingGroup": {
+            "type": "group",
+            "group": [
+                "LeftPaddingSize",
+                "RightPaddingSize",
+                "TopPaddingSize",
+                "BottomPaddingSize"
+            ],
+            "depend": "Padding",
+            "depend_rules": [
+                {
+                    "case": "false",
+                    "enable": false
+                }
+            ]
+        },
+        "LeftPaddingSize": {
+            "key": "left_padding_size",
+            "type": "int",
+            "int_min": 0,
+            "int_max": 32
+        },
+        "RightPaddingSize": {
+            "key": "right_padding_size",
+            "type": "int",
+            "int_min": 0,
+            "int_max": 32
+        },
+        "TopPaddingSize": {
+            "key": "top_padding_size",
+            "type": "int",
+            "int_min": 0,
+            "int_max": 32
+        },
+        "BottomPaddingSize": {
+            "key": "bottom_padding_size",
+            "type": "int",
+            "int_min": 0,
+            "int_max": 32
+        },
+        "Mean": {
+            "type": "group",
+            "group": [
+                "MeanChn0",
+                "MeanChn1",
+                "MeanChn2",
+                "MeanChn3"
+            ]
+        },
+        "MeanChn0": {
+            "key": "mean_chn_0",
+            "type": "int",
+            "int_max": 255,
+            "int_min": 0,
+            "default": 104
+        },
+        "MeanChn1": {
+            "key": "mean_chn_1",
+            "type": "int",
+            "int_max": 255,
+            "int_min": 0,
+            "default": 117
+        },
+        "MeanChn2": {
+            "key": "mean_chn_2",
+            "type": "int",
+            "int_max": 255,
+            "int_min": 0,
+            "default": 123
+        },
+        "MeanChn3": {
+            "key": "mean_chn_3",
+            "type": "int",
+            "int_max": 255,
+            "int_min": 0,
+            "default": 0,
+            "depend": "InputImageFormat",
+            "depend_rules": [
+                {
+                    "case": [
+                        "YUV400_U8",
+                        "YUV422SP_U8",
+                        "YVU422SP_U8",
+                        "YUV420SP_U8",
+                        "YVU420SP_U8",
+                        "RGB888_U8",
+                        "BGR888_U8"
+                    ],
+                    "enable": false
+                }
+            ]
+        },
+        "Min": {
+            "type": "group",
+            "group": [
+                "MinChn0",
+                "MinChn1",
+                "MinChn2",
+                "MinChn3"
+            ]
+        },
+        "MinChn0": {
+            "key": "min_chn_0",
+            "type": "float",
+            "int_max": 255,
+            "int_min": 0,
+            "default": "0.0"
+        },
+        "MinChn1": {
+            "key": "min_chn_1",
+            "type": "float",
+            "int_max": 255,
+            "int_min": 0,
+            "default": "0.0"
+        },
+        "MinChn2": {
+            "key": "min_chn_2",
+            "type": "float",
+            "int_max": 255,
+            "int_min": 0,
+            "default": "0.0"
+        },
+        "MinChn3": {
+            "key": "min_chn_3",
+            "type": "float",
+            "int_max": 255,
+            "int_min": 0,
+            "default": "0.0",
+            "depend": "InputImageFormat",
+            "depend_rules": [
+                {
+                    "case": [
+                        "YUV400_U8",
+                        "YUV422SP_U8",
+                        "YVU422SP_U8",
+                        "YUV420SP_U8",
+                        "YVU420SP_U8",
+                        "RGB888_U8",
+                        "BGR888_U8"
+                    ],
+                    "enable": false
+                }
+            ]
+        },
+        "ModelChnTranslate": {
+            "type": "bool",
+            "default": false
+        },
+        "Variance": {
+            "type": "group",
+            "group": [
+                "VarianceChn0",
+                "VarianceChn1",
+                "VarianceChn2",
+                "VarianceChn3"
+            ]
+        },
+        "VarianceChn0": {
+            "key": "var_reci_chn_0",
+            "type": "float",
+            "int_max": 1,
+            "int_min": 0.0,
+            "default": "1.0"
+        },
+        "VarianceChn1": {
+            "key": "var_reci_chn_1",
+            "type": "float",
+            "int_max": 1,
+            "int_min": 0.0,
+            "default": "1.0"
+        },
+        "VarianceChn2": {
+            "key": "var_reci_chn_2",
+            "type": "float",
+            "int_max": 1,
+            "int_min": 0.0,
+            "default": "1.0"
+        },
+        "VarianceChn3": {
+            "key": "var_reci_chn_3",
+            "type": "float",
+            "int_max": 1,
+            "int_min": 0.0,
+            "default": "1.0",
+            "depend": "InputImageFormat",
+            "depend_rules": [
+                {
+                    "case": [
+                        "YUV400_U8",
+                        "YUV422SP_U8",
+                        "YVU422SP_U8",
+                        "YUV420SP_U8",
+                        "YVU420SP_U8",
+                        "RGB888_U8",
+                        "BGR888_U8"
+                    ],
+                    "enable": false
+                }
+            ]
+        },
+        "FusionSwitchFile": {
+            "type": "bool",
+            "key": "fusion_switch_file"
+        },
+        "FusionPass": {
+            "key": "fusion_pass",
+            "type": "string",
+            "depend": "FusionSwitchFile",
+            "depend_rules": [
+                {
+                    "case": "true",
+                    "is_empty": false,
+                    "enable": true
+                },
+                {
+                    "case": "false",
+                    "is_empty": false,
+                    "enable": false
+                }
+            ],
+            "default": [
+                "V100RequantFusionPass:off",
+                "V200RequantFusionPass:off",
+                "ConvConcatFusionPass:off",
+                "SplitConvConcatFusionPass:off",
+                "TbeEltwiseQuantFusionPass:off",
+                "TbeConvDequantVaddReluQuantFusionPass:off",
+                "TbeConvDequantVaddReluFusionPass:off",
+                "TbeConvDequantQuantFusionPass:off",
+                "TbeDepthwiseConvDequantFusionPass:off",
+                "TbeFullyconnectionElemwiseDequantFusionPass:off",
+                "TbeConv2DAddMulQuantPass:off",
+                "TbePool2dQuantFusionPass:off",
+                "TbeCommonRules0FusionPass:off",
+                "TbeCommonRules2FusionPass:off"
+            ]
+        },
+        "RequantFusionPass": {
+            "type": "bool",
+            "key": "RequantFusionPass",
+            "bool_value": [
+                "off",
+                "on"
+            ],
+            "default": false
+        },
+        "TbeConvDequantVaddReluQuantFusionPass": {
+            "type": "bool",
+            "key": "TbeConvDequantVaddReluQuantFusionPass",
+            "bool_value": [
+                "off",
+                "on"
+            ],
+            "default": false
+        },
+        "TbeConvDequantQuantFusionPass": {
+            "type": "bool",
+            "key": "TbeConvDequantQuantFusionPass",
+            "bool_value": [
+                "off",
+                "on"
+            ],
+            "default": false
+        },
+        "TbePool2dQuantFusionPass": {
+            "type": "bool",
+            "key": "TbePool2dQuantFusionPass",
+            "bool_value": [
+                "off",
+                "on"
+            ],
+            "default": false
+        },
+        "DynamicBatchSize": {
+            "key": "dynamic_batch_size",
+            "type": "string",
+            "depend": "InputFormat",
+            "depend_rules": [
+                {
+                    "case": "ND",
+                    "enable": false
+                }
+            ]
+        },
+        "DynamicDims": {
+            "key": "dynamic_dims",
+            "type": "string",
+            "depend": "InputFormat",
+            "depend_rules": [
+                {
+                    "case": "ND",
+                    "enable": true
+                }
+            ],
+            "enable": false
+        },
+        "CalConf": {
+            "key": "cal_conf",
+            "type": "string"
+        },
+        "CheckReport": {
+            "key": "check_report",
+            "type": "string"
+        },
+        "OpNameMap": {
+            "key": "op_name_map",
+            "type": "string"
+        }
+    },
+    "Ascend310": {
+        "ADK_Version": "1.8,6.1,6.2,6.3,6.4",
+        "platform": "dc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ],
+        "PaddingLimit": {
+            "type": "int",
+            "default": 1080
+        }
+    },
+    "Ascend610": {
+        "ADK_Version": "3.",
+        "platform": "mdc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW",
+            "DynamicBatchSize",
+            "DynamicDims"
+        ],
+        "PaddingLimit": {
+            "type": "int",
+            "default": 1080
+        }
+    },
+    "BS9SX1AA": {
+        "ADK_Version": "3.",
+        "platform": "mdc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW",
+            "DynamicBatchSize",
+            "DynamicDims"
+        ]
+    },
+    "AS31XM1X": {
+        "ADK_Version": "7.10",
+        "platform": "mdc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ],
+        "PaddingLimit": {
+            "type": "int",
+            "default": 4096
+        }
+    },
+    "Ascend310P3": {
+        "ADK_Version": "2.1,1.8,6.1,6.2,6.3,6.4",
+        "platform": "dc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ],
+        "PaddingLimit": {
+            "type": "int",
+            "default": 1080
+        }
+    },
+    "Ascend310P4": {
+        "ADK_Version": "2.1,1.8,6.1,6.2,6.3,6.4",
+        "platform": "dc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ],
+        "PaddingLimit": {
+            "type": "int",
+            "default": 1080
+        }
+    },
+    "Ascend310P1": {
+        "ADK_Version": "2.1,1.8,6.1,6.2,6.3,6.4",
+        "platform": "dc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ]
+    },
+    "Ascend310P2": {
+        "ADK_Version": "2.1,1.8,6.1,6.2,6.3,6.4",
+        "platform": "dc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ]
+    },
+    "Ascend910A": {
+        "ADK_Version": "1.8,6.1,6.2,6.3,6.4",
+        "platform": "dc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ]
+    },
+    "Ascend910B": {
+        "ADK_Version": "1.8,6.1,6.2,6.3,6.4",
+        "platform": "dc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ]
+    },
+    "Ascend310B1": {
+        "ADK_Version": "6.2",
+        "platform": "dc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ],
+        "PaddingLimit": {
+            "type": "int",
+            "default": 4096
+        }
+    },
+    "Ascend310B2": {
+        "ADK_Version": "6.2",
+        "platform": "dc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ],
+        "PaddingLimit": {
+            "type": "int",
+            "default": 4096
+        }
+    },
+    "Ascend310B3": {
+        "ADK_Version": "6.2",
+        "platform": "dc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ],
+        "PaddingLimit": {
+            "type": "int",
+            "default": 4096
+        }
+    },
+    "Ascend310B4": {
+        "ADK_Version": "6.2",
+        "platform": "dc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ],
+        "PaddingLimit": {
+            "type": "int",
+            "default": 4096
+        }
+    },
+    "Ascend910B1": {
+        "ADK_Version": "6.1",
+        "platform": "dc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ],
+        "PaddingLimit": {
+            "type": "int",
+            "default": 4096
+        }
+    },
+    "Ascend910B2": {
+        "ADK_Version": "6.1",
+        "platform": "dc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ],
+        "PaddingLimit": {
+            "type": "int",
+            "default": 4096
+        }
+    },
+    "Ascend910B2C": {
+        "ADK_Version": "6.1",
+        "platform": "dc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ],
+        "PaddingLimit": {
+            "type": "int",
+            "default": 4096
+        }
+    },
+    "Ascend910B3": {
+        "ADK_Version": "6.1",
+        "platform": "dc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ],
+        "PaddingLimit": {
+            "type": "int",
+            "default": 4096
+        }
+    },
+    "Ascend910B4": {
+        "ADK_Version": "6.1",
+        "platform": "dc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ],
+        "PaddingLimit": {
+            "type": "int",
+            "default": 4096
+        }
+    },
+    "Ascend910PremiumA": {
+        "ADK_Version": "1.8,6.1,6.2,6.3,6.4",
+        "platform": "dc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ]
+    },
+    "Ascend910ProA": {
+        "ADK_Version": "1.8,6.1,6.2,6.3,6.4",
+        "platform": "dc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ]
+    },
+    "Ascend910ProB": {
+        "ADK_Version": "1.8,6.1,6.2,6.3,6.4",
+        "platform": "dc",
+        "exclude_keys": [
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW"
+        ]
+    },
+    "Hi3796CV300CS": {
+        "ADK_Version": "5.1",
+        "platform": "dlite",
+        "exclude_keys": [
+            "DynamicDims"
+        ],
+        "InputNodesType": {
+            "type": "enum",
+            "enum_value": [
+                "FP16",
+                "UINT8"
+            ],
+            "depend": "Framework",
+            "depend_rules": [
+                {
+                    "case": "3",
+                    "enum_value": [
+                        "FP16",
+                        "FP32",
+                        "UINT8",
+                        "Int32",
+                        "Int64",
+                        "Bool"
+                    ]
+                },
+                {
+                    "case": "1",
+                    "enum_value": [
+                        "UINT8"
+                    ]
+                }
+            ]
+        },
+        "SrcImageSizeWidth": {
+            "key": "src_image_size_w",
+            "type": "int",
+            "int_max": 4096,
+            "int_min": 0,
+            "depend": "InputImageFormat",
+            "depend_rules": [
+                {
+                    "case": [
+                        "YUV420SP_U8",
+                        "YUV422SP_U8",
+                        "YVU420SP_U8",
+                        "YVU422SP_U8",
+                        "YUV400_U8"
+                    ],
+                    "int_divisible": 16
+                },
+                {
+                    "case": [
+                        "RGB888_U8",
+                        "BGR888_U8"
+                    ],
+                    "int_divisible": 16
+                },
+                {
+                    "case": [
+                        "RGBA8888_U8",
+                        "ARGB8888_U8",
+                        "ABGR8888_U8",
+                        "BGRA8888_U8"
+                    ],
+                    "int_divisible": 4
+                }
+            ]
+        },
+        "PaddingLimit": {
+            "type": "int",
+            "default": 4096
+        }
+    },
+    "Hi3796CV300ES": {
+        "ADK_Version": "5.1",
+        "platform": "dlite",
+        "exclude_keys": [
+            "DynamicDims"
+        ],
+        "InputNodesType": {
+            "type": "enum",
+            "enum_value": [
+                "FP16",
+                "UINT8"
+            ],
+            "depend": "Framework",
+            "depend_rules": [
+                {
+                    "case": "3",
+                    "enum_value": [
+                        "FP16",
+                        "FP32",
+                        "UINT8",
+                        "Int32",
+                        "Int64",
+                        "Bool"
+                    ]
+                },
+                {
+                    "case": "1",
+                    "enum_value": [
+                        "UINT8"
+                    ]
+                }
+            ]
+        },
+        "SrcImageSizeWidth": {
+            "key": "src_image_size_w",
+            "type": "int",
+            "int_max": 4096,
+            "int_min": 0,
+            "depend": "InputImageFormat",
+            "depend_rules": [
+                {
+                    "case": [
+                        "YUV420SP_U8",
+                        "YUV422SP_U8",
+                        "YVU420SP_U8",
+                        "YVU422SP_U8",
+                        "YUV400_U8"
+                    ],
+                    "int_divisible": 16
+                },
+                {
+                    "case": [
+                        "RGB888_U8",
+                        "BGR888_U8"
+                    ],
+                    "int_divisible": 16
+                },
+                {
+                    "case": [
+                        "RGBA8888_U8",
+                        "ARGB8888_U8",
+                        "ABGR8888_U8",
+                        "BGRA8888_U8"
+                    ],
+                    "int_divisible": 4
+                }
+            ]
+        },
+        "PaddingLimit": {
+            "type": "int",
+            "default": 4096
+        }
+    },
+    "SD3403": {
+        "ADK_Version": "5.1",
+        "platform": "dlite",
+        "exclude_keys": [
+            "DynamicDims"
+        ],
+        "InputNodesType": {
+            "type": "enum",
+            "enum_value": [
+                "FP16",
+                "UINT8"
+            ],
+            "depend": "Framework",
+            "depend_rules": [
+                {
+                    "case": "3",
+                    "enum_value": [
+                        "FP16",
+                        "FP32",
+                        "UINT8",
+                        "Int32",
+                        "Int64",
+                        "Bool"
+                    ]
+                },
+                {
+                    "case": "1",
+                    "enum_value": [
+                        "UINT8"
+                    ]
+                }
+            ]
+        },
+        "SrcImageSizeWidth": {
+            "key": "src_image_size_w",
+            "type": "int",
+            "int_max": 4096,
+            "int_min": 0,
+            "depend": "InputImageFormat",
+            "depend_rules": [
+                {
+                    "case": [
+                        "YUV420SP_U8",
+                        "YUV422SP_U8",
+                        "YVU420SP_U8",
+                        "YVU422SP_U8",
+                        "YUV400_U8"
+                    ],
+                    "int_divisible": 16
+                },
+                {
+                    "case": [
+                        "RGB888_U8",
+                        "BGR888_U8"
+                    ],
+                    "int_divisible": 16
+                },
+                {
+                    "case": [
+                        "RGBA8888_U8",
+                        "ARGB8888_U8",
+                        "ABGR8888_U8",
+                        "BGRA8888_U8"
+                    ],
+                    "int_divisible": 4
+                }
+            ]
+        },
+        "ConversionTypeEnable": {
+            "type": "bool",
+            "enable": false
+        },
+        "PaddingLimit": {
+            "type": "int",
+            "default": 4096
+        }
+    },
+    "SS626V100": {
+        "ADK_Version": "6.1",
+        "platform": "dpico",
+        "exclude_keys": [
+            "ModelImageType",
+            "InputImageResolution",
+            "SrcImageSizeWidth",
+            "SrcImageSizeHeight",
+            "Crop",
+            "CropGroup",
+            "LoadStartPosWidth",
+            "LoadStartPosHeight",
+            "CropSizeWidth",
+            "CropSizeHeight",
+            "Resize",
+            "ResizeGroup",
+            "ResizeAreaH",
+            "ResizeAreaW",
+            "Padding",
+            "PaddingGroup",
+            "LeftPaddingSize",
+            "RightPaddingSize",
+            "TopPaddingSize",
+            "BottomPaddingSize",
+            "Min",
+            "MinChn0",
+            "MinChn1",
+            "MinChn2",
+            "MinChn3",
+            "RequantFusionPass",
+            "TbeConvDequantVaddReluQuantFusionPass",
+            "TbeConvDequantQuantFusionPass",
+            "TbePool2dQuantFusionPass",
+            "DynamicBatchSize",
+            "DynamicDims",
+            "CalConf",
+            "CheckReport",
+            "OpNameMap"
+        ],
+        "InputNodesType": {
+            "type": "enum",
+            "enum_value": [
+                "FP32",
+                "UINT8"
+            ],
+            "depend": "Framework",
+            "depend_rules": [
+                {
+                    "case": "3",
+                    "enum_value": [
+                        "FP16",
+                        "FP32",
+                        "UINT8",
+                        "Int32",
+                        "Int64",
+                        "Bool"
+                    ]
+                },
+                {
+                    "case": "1",
+                    "enum_value": [
+                        "FP32",
+                        "UINT8"
+                    ]
+                }
+            ]
+        },
+        "OutputNodesType": {
+            "type": "enum",
+            "enum_value": [
+                "FP32",
+                "INT8",
+                "INT16",
+                "UINT8",
+                "UINT16"
+            ]
+        },
+        "InputFormat": {
+            "key": "input_format",
+            "type": "enum",
+            "enum_value": [
+                "NCHW"
+            ],
+            "default": "NCHW",
+            "depend": "Framework",
+            "depend_rules": [
+                {
+                    "case": "3",
+                    "enum_value": [
+                        "NHWC",
+                        "NCHW",
+                        "ND",
+                        "NCDHW",
+                        "NDHWC"
+                    ],
+                    "default": "NHWC"
+                },
+                {
+                    "case": "0",
+                    "enum_value": [
+                        "NCHW"
+                    ]
+                }
+            ]
+        },
+        "AippModel": {
+            "key": "aipp_mode",
+            "type": "enum",
+            "enum_value": [
+                {
+                    "name": "Static",
+                    "value": "static"
+                }
+            ]
+        },
+        "InputImageFormat": {
+            "key": "input_format",
+            "type": "enum",
+            "enum_value": [
+                {
+                    "value": "YUV420SP",
+                    "name": "YUV420 sp"
+                },
+                {
+                    "value": "YUV400",
+                    "name": "YUV400"
+                },
+                {
+                    "value": "YUV422SP",
+                    "name": "YUV422 sp"
+                },
+                {
+                    "value": "YVU422SP",
+                    "name": "YVU422 sp"
+                },
+                {
+                    "value": "YVU420SP",
+                    "name": "YVU420 sp"
+                },
+                {
+                    "value": "RGB_PACKAGE",
+                    "name": "RGB package"
+                },
+                {
+                    "value": "RGB_PLANAR",
+                    "name": "RGB planar"
+                },
+                {
+                    "value": "BGR_PACKAGE",
+                    "name": "BGR package"
+                },
+                {
+                    "value": "BGR_PLANAR",
+                    "name": "BGR planar"
+                },
+                {
+                    "value": "BGRA_PACKAGE",
+                    "name": "BGRA package"
+                },
+                {
+                    "value": "BGRA_PLANAR",
+                    "name": "BGRA planar"
+                },
+                {
+                    "value": "RGBA_PACKAGE",
+                    "name": "RGBA package"
+                },
+                {
+                    "value": "RGBA_PLANAR",
+                    "name": "RGBA planar"
+                },
+                {
+                    "value": "ABGR_PACKAGE",
+                    "name": "ABGR package"
+                },
+                {
+                    "value": "ABGR_PLANAR",
+                    "name": "ABGR planar"
+                },
+                {
+                    "value": "ARGB_PACKAGE",
+                    "name": "ARGB package"
+                },
+                {
+                    "value": "ARGB_PLANAR",
+                    "name": "ARGB planar"
+                },
+                {
+                    "value": "RAW_RGGB",
+                    "name": "RAW_RGGB"
+                },
+                {
+                    "value": "RAW_GRBG",
+                    "name": "RAW_GRBG"
+                },
+                {
+                    "value": "RAW_GBRG",
+                    "name": "RAW_GBRG"
+                },
+                {
+                    "value": "RAW_BGGR",
+                    "name": "RAW_BGGR"
+                }
+            ]
+        },
+        "ModelImageFormatEnable": {
+            "type": "bool",
+            "depend": "InputImageFormat",
+            "depend_rules": [
+                {
+                    "case": [
+                        "YUV420SP",
+                        "YUV400",
+                        "YUV422SP",
+                        "YVU422SP",
+                        "YVU420SP"
+                    ],
+                    "not_eq": "false"
+                }
+            ]
+        },
+        "ModelImageFormat": {
+            "key": "model_format",
+            "type": "enum",
+            "enum_value": [
+                "RGB",
+                "BGR",
+                "RGBA",
+                "BGRA",
+                "ARGB",
+                "ABGR",
+                "RGGB",
+                "GRBG",
+                "GBRG",
+                "BGGR"
+            ],
+            "default": "RGB",
+            "depend": "InputImageFormat",
+            "depend_rules": [
+                {
+                    "case": "YUV420SP",
+                    "enum_value": [
+                        "RGB",
+                        "BGR"
+                    ]
+                },
+                {
+                    "case": "YUV400",
+                    "enum_value": [
+                        "RGB",
+                        "BGR"
+                    ]
+                },
+                {
+                    "case": "YUV422SP",
+                    "enum_value": [
+                        "RGB",
+                        "BGR"
+                    ]
+                },
+                {
+                    "case": "YVU422SP",
+                    "enum_value": [
+                        "RGB",
+                        "BGR"
+                    ]
+                },
+                {
+                    "case": "YVU420SP",
+                    "enum_value": [
+                        "RGB",
+                        "BGR"
+                    ]
+                },
+                {
+                    "case": "RGB_PACKAGE",
+                    "enum_value": [
+                        "RGB",
+                        "BGR"
+                    ]
+                },
+                {
+                    "case": "RGB_PLANAR",
+                    "enum_value": [
+                        "RGB",
+                        "BGR"
+                    ]
+                },
+                {
+                    "case": "BGR_PACKAGE",
+                    "enum_value": [
+                        "RGB",
+                        "BGR"
+                    ]
+                },
+                {
+                    "case": "BGR_PLANAR",
+                    "enum_value": [
+                        "RGB",
+                        "BGR"
+                    ]
+                },
+                {
+                    "case": "BGRA_PACKAGE",
+                    "enum_value": [
+                        "RGBA",
+                        "BGRA",
+                        "ARGB",
+                        "ABGR"
+                    ]
+                },
+                {
+                    "case": "BGRA_PLANAR",
+                    "enum_value": [
+                        "RGBA",
+                        "BGRA",
+                        "ARGB",
+                        "ABGR"
+                    ]
+                },
+                {
+                    "case": "RGBA_PACKAGE",
+                    "enum_value": [
+                        "RGBA",
+                        "BGRA",
+                        "ARGB",
+                        "ABGR"
+                    ]
+                },
+                {
+                    "case": "RGBA_PLANAR",
+                    "enum_value": [
+                        "RGBA",
+                        "BGRA",
+                        "ARGB",
+                        "ABGR"
+                    ]
+                },
+                {
+                    "case": "ABGR_PACKAGE",
+                    "enum_value": [
+                        "RGBA",
+                        "BGRA",
+                        "ARGB",
+                        "ABGR"
+                    ]
+                },
+                {
+                    "case": "ABGR_PLANAR",
+                    "enum_value": [
+                        "RGBA",
+                        "BGRA",
+                        "ARGB",
+                        "ABGR"
+                    ]
+                },
+                {
+                    "case": "ARGB_PACKAGE",
+                    "enum_value": [
+                        "RGBA",
+                        "BGRA",
+                        "ARGB",
+                        "ABGR"
+                    ]
+                },
+                {
+                    "case": "ARGB_PLANAR",
+                    "enum_value": [
+                        "RGBA",
+                        "BGRA",
+                        "ARGB",
+                        "ABGR"
+                    ]
+                },
+                {
+                    "case": "RAW_RGGB",
+                    "enum_value": [
+                        "RGGB",
+                        "GRBG",
+                        "GBRG",
+                        "BGGR"
+                    ]
+                },
+                {
+                    "case": "RAW_GRBG",
+                    "enum_value": [
+                        "RGGB",
+                        "GRBG",
+                        "GBRG",
+                        "BGGR"
+                    ]
+                },
+                {
+                    "case": "RAW_GBRG",
+                    "enum_value": [
+                        "RGGB",
+                        "GRBG",
+                        "GBRG",
+                        "BGGR"
+                    ]
+                },
+                {
+                    "case": "RAW_BGGR",
+                    "enum_value": [
+                        "RGGB",
+                        "GRBG",
+                        "GBRG",
+                        "BGGR"
+                    ]
+                }
+            ]
+        },
+        "Mean": {
+            "type": "group",
+            "group": [
+                "MeanChn0",
+                "MeanChn1",
+                "MeanChn2",
+                "MeanChn3"
+            ]
+        },
+        "MeanChn0": {
+            "key": "mean_chn_0",
+            "type": "float",
+            "int_max": 255,
+            "int_min": 0,
+            "default": 0
+        },
+        "MeanChn1": {
+            "key": "mean_chn_1",
+            "type": "float",
+            "int_max": 255,
+            "int_min": 0,
+            "default": 0
+        },
+        "MeanChn2": {
+            "key": "mean_chn_2",
+            "type": "float",
+            "int_max": 255,
+            "int_min": 0,
+            "default": 0
+        },
+        "MeanChn3": {
+            "key": "mean_chn_3",
+            "type": "float",
+            "int_max": 255,
+            "int_min": 0,
+            "default": 0,
+            "depend": "InputImageFormat",
+            "depend_rules": [
+                {
+                    "case": [
+                        "YUV420SP",
+                        "YUV400",
+                        "YUV422SP",
+                        "YVU422SP",
+                        "YVU420SP",
+                        "RGB_PACKAGE",
+                        "RGB_PLANAR",
+                        "BGR_PACKAGE",
+                        "BGR_PLANAR"
+                    ],
+                    "enable": false
+                }
+            ]
+        },
+        "VarianceChn3": {
+            "key": "var_reci_chn_3",
+            "type": "float",
+            "int_max": 65504,
+            "int_min": -65504,
+            "default": "1.0",
+            "depend": "InputImageFormat",
+            "depend_rules": [
+                {
+                    "case": [
+                        "YUV420SP",
+                        "YUV400",
+                        "YUV422SP",
+                        "YVU422SP",
+                        "YVU420SP",
+                        "RGB_PACKAGE",
+                        "RGB_PLANAR",
+                        "BGR_PACKAGE",
+                        "BGR_PLANAR"
+                    ],
+                    "enable": false
+                }
+            ]
+        },
+        "ConversionTypeEnable": {
+            "type": "bool",
+            "enable": false
+        },
+        "FusionPass": {
+            "type": "group",
+            "depend": "FusionSwitchFile",
+            "depend_rules": [
+                {
+                    "is_empty": false,
+                    "enable": false
+                }
+            ],
+            "group": [
+                "AbsMerge",
+                "BatchNormMergeToConvActive",
+                "BatchNormMergeToConvWeight",
+                "BiasMergeToConv",
+                "PReluMerge",
+                "ReluMerge",
+                "ScaleMergeToConvActive",
+                "ScaleMergeToConvWeight"
+            ]
+        },
+        "AbsMerge": {
+            "type": "bool",
+            "key": "AbsMerge",
+            "bool_value": [
+                "off",
+                "on"
+            ],
+            "default": false
+        },
+        "BatchNormMergeToConvActive": {
+            "type": "bool",
+            "key": "BatchNormMergeToConvActive",
+            "bool_value": [
+                "off",
+                "on"
+            ],
+            "default": false
+        },
+        "BatchNormMergeToConvWeight": {
+            "type": "bool",
+            "key": "BatchNormMergeToConvWeight",
+            "bool_value": [
+                "off",
+                "on"
+            ],
+            "default": false
+        },
+        "BiasMergeToConv": {
+            "type": "bool",
+            "key": "BiasMergeToConv",
+            "bool_value": [
+                "off",
+                "on"
+            ],
+            "default": false
+        },
+        "PReluMerge": {
+            "type": "bool",
+            "key": "PReluMerge",
+            "bool_value": [
+                "off",
+                "on"
+            ],
+            "default": false
+        },
+        "ReluMerge": {
+            "type": "bool",
+            "key": "ReluMerge",
+            "bool_value": [
+                "off",
+                "on"
+            ],
+            "default": false
+        },
+        "ScaleMergeToConvActive": {
+            "type": "bool",
+            "key": "ScaleMergeToConvActive",
+            "bool_value": [
+                "off",
+                "on"
+            ],
+            "default": false
+        },
+        "ScaleMergeToConvWeight": {
+            "type": "bool",
+            "key": "ScaleMergeToConvWeight",
+            "bool_value": [
+                "off",
+                "on"
+            ],
+            "default": false
+        },
+        "QuantParamFile": {
+            "type": "string",
+            "key": "gfpq_param_file"
+        },
+        "ImagesFile": {
+            "type": "string",
+            "key": "image_list"
+        },
+        "CompileMode": {
+            "key": "compile_mode",
+            "type": "enum",
+            "enum_value": [
+                {
+                    "name": "Low-bandwidth",
+                    "value": "0"
+                },
+                {
+                    "name": "High-precision",
+                    "value": "1"
+                }
+            ]
+        },
+        "DumpData": {
+            "key": "dump_data",
+            "type": "enum",
+            "enum_value": [
+                {
+                    "name": "None",
+                    "value": "0"
+                },
+                {
+                    "name": "FakeQuant and Simulation Data",
+                    "value": "3"
+                },
+                {
+                    "name": "All Data",
+                    "value": "7"
+                }
+            ]
+        },
+        "OnlineModelType": {
+            "key": "online_model_type",
+            "type": "enum",
+            "enum_value": [
+                {
+                    "name": "Release",
+                    "value": "0"
+                },
+                {
+                    "name": "Debug for profile",
+                    "value": "2"
+                },
+                {
+                    "name": "Debug for dump and compare",
+                    "value": "4"
+                }
+            ]
+        },
+        "Precheck": {
+            "key": "is_precheck",
+            "type": "int",
+            "int_max": 1,
+            "int_min": 0,
+            "default": 1
+        },
+        "LogLevel": {
+            "key": "log_level",
+            "type": "enum",
+            "enum_value": [
+                {
+                    "name": "Not print",
+                    "value": "0"
+                },
+                {
+                    "name": "Interface level",
+                    "value": "1"
+                },
+                {
+                    "name": "Module level",
+                    "value": "2"
+                },
+                {
+                    "name": "Function level",
+                    "value": "3"
+                }
+            ]
+        },
+        "BatchNum": {
+            "key": "batch_num",
+            "type": "int",
+            "int_max": 256,
+            "int_min": 0,
+            "default": 256
+        },
+        "SaveOriginalModel": {
+            "key": "save_original_model",
+            "type": "bool",
+            "default": false
+        },
+        "ModelChnTranslate": {
+            "type": "bool",
+            "default": true
+        }
+    }
+}

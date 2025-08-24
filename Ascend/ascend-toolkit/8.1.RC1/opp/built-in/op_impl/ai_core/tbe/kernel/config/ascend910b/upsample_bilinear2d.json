@@ -1,0 +1,199 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "UpsampleBilinear2d/d=0,p=1/0,2/3,2/0,2",
+        "UpsampleBilinear2d/d=0,p=0/0,2/3,2/0,2",
+        "UpsampleBilinear2d/d=1,p=1/0,2/3,2/0,2",
+        "UpsampleBilinear2d/d=1,p=0/0,2/3,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "c64b9553337a3048e8590106e4f67d4def2f727246708fa1ba0ac865a192bca3,faead31dd94ff26421678981e393b57ad31a8b94d0ed55b9d8a41bcc12efccf4",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "size",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": []
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/upsample_bilinear2d/UpsampleBilinear2d_67bd56acf76139f047b50fcf4a255dbe_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "UpsampleBilinear2d/d=0,p=1/1,2/3,2/1,2",
+        "UpsampleBilinear2d/d=0,p=0/1,2/3,2/1,2",
+        "UpsampleBilinear2d/d=1,p=1/1,2/3,2/1,2",
+        "UpsampleBilinear2d/d=1,p=0/1,2/3,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "f1002252815088468ce2b3d5ad3b2600c27c2397e388a8d67155a83094b91f6e,ed1996369f38136b16eaa8edf613d405ba4031df2c4d2a7b4b227c3938fc137d",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "size",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": []
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/upsample_bilinear2d/UpsampleBilinear2d_c14dadc4cc100115ea9dcc9cf91e98a9_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "UpsampleBilinear2d/d=0,p=1/27,2/3,2/27,2",
+        "UpsampleBilinear2d/d=0,p=0/27,2/3,2/27,2",
+        "UpsampleBilinear2d/d=1,p=1/27,2/3,2/27,2",
+        "UpsampleBilinear2d/d=1,p=0/27,2/3,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "d6d2bf3bfeca3f6bdad491d66e850136276dcd8847066c517cf6ba6eba4b6bc9,9a816d0ba38352f32b5911a4efd9b20b5cbe4629f51e65404adef47fd6d2e75a",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "size",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": []
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/upsample_bilinear2d/UpsampleBilinear2d_e72b7e8e51e49afcceb539b52aca5aa0_high_performance.json"
+      }
+    }
+  ]
+}

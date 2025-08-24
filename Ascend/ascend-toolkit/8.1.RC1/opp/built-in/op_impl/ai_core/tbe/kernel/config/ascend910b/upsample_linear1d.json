@@ -1,0 +1,199 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "UpsampleLinear1d/d=0,p=1/0,2/3,2/0,2",
+        "UpsampleLinear1d/d=0,p=0/0,2/3,2/0,2",
+        "UpsampleLinear1d/d=1,p=1/0,2/3,2/0,2",
+        "UpsampleLinear1d/d=1,p=0/0,2/3,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "dd617fa84ef6bf69ff8865dff5c5ef67bd954637613a9dd5721aa846434b3fa1,a146d96fceb548ab8e33b1fca7b12e5fec849a6f693ea096336db2e9696de24c",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "size",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/upsample_linear1d/UpsampleLinear1d_8e4a38fbe03a205af1e81a07cc9330d4_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "UpsampleLinear1d/d=0,p=1/1,2/3,2/1,2",
+        "UpsampleLinear1d/d=0,p=0/1,2/3,2/1,2",
+        "UpsampleLinear1d/d=1,p=1/1,2/3,2/1,2",
+        "UpsampleLinear1d/d=1,p=0/1,2/3,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "300a402f57b442d30f6925f1fcdc17c028fe28896ff1b771e527baaad7dbf50f,e5565dd0704e1fa7666afbea6db35e4bad4a0043df866111185e8ea4764c0dea",
+      "inputs": [
+        {
+          "name": "input",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "size",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/upsample_linear1d/UpsampleLinear1d_9d28fbc4d6edde5d9ec696ebb3515afd_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "UpsampleLinear1d/d=0,p=1/27,2/3,2/27,2",
+        "UpsampleLinear1d/d=0,p=0/27,2/3,2/27,2",
+        "UpsampleLinear1d/d=1,p=1/27,2/3,2/27,2",
+        "UpsampleLinear1d/d=1,p=0/27,2/3,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "e505a059a117b833366e67f3558319d0901b9c807fe44883ce4aef47d0487acc,659f52020c4ca3aaea9cbfe6e9a0143fa9a3135c0a6510908ff7dc5dd131d26d",
+      "inputs": [
+        {
+          "name": "input",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "size",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/upsample_linear1d/UpsampleLinear1d_c6c82571c09acc43bf95ccc3a3bf275b_high_performance.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,514 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "IndexPutWithSort/d=0,p=1/0,2/3,2/3,2/0,2/0,2",
+        "IndexPutWithSort/d=0,p=0/0,2/3,2/3,2/0,2/0,2",
+        "IndexPutWithSort/d=1,p=1/0,2/3,2/3,2/0,2/0,2",
+        "IndexPutWithSort/d=1,p=0/0,2/3,2/3,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "8eef77f25a7e12508d895f9e58d9f41d7dc1cfd47ac877282314895ac14a8799,347459217f0d91f2947a1cb5b32a83fe82051e869b3436750844fe6787815bbf",
+      "inputs": [
+        {
+          "name": "self",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "linear_index",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pos_idx",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "values",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "slice_size",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "accumulate",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/index_put_with_sort/IndexPutWithSort_accumulate_true_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "IndexPutWithSort/d=0,p=1/0,2/3,2/3,2/0,2/0,2",
+        "IndexPutWithSort/d=0,p=0/0,2/3,2/3,2/0,2/0,2",
+        "IndexPutWithSort/d=1,p=1/0,2/3,2/3,2/0,2/0,2",
+        "IndexPutWithSort/d=1,p=0/0,2/3,2/3,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "affc0a97c2a8fc6bf293312d9b4595259673871e86d555286da92df62562f10f,ba52b09e08441b5581b8ff7956c66675cec84110504eea62bbba581d20b49fb1",
+      "inputs": [
+        {
+          "name": "self",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "linear_index",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pos_idx",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "values",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "slice_size",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "accumulate",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/index_put_with_sort/IndexPutWithSort_accumulate_false_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "IndexPutWithSort/d=0,p=1/1,2/3,2/3,2/1,2/1,2",
+        "IndexPutWithSort/d=0,p=0/1,2/3,2/3,2/1,2/1,2",
+        "IndexPutWithSort/d=1,p=1/1,2/3,2/3,2/1,2/1,2",
+        "IndexPutWithSort/d=1,p=0/1,2/3,2/3,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "3d4a5c31a085e536d5871d37844e36ba3f202ebf3eca299b7d4f850ffdc42151,5c6addbeed19a8b93f0ef2fe73eff162486fde5a383901e518112aa6cd7e308f",
+      "inputs": [
+        {
+          "name": "self",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "linear_index",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pos_idx",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "values",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "slice_size",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "accumulate",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/index_put_with_sort/IndexPutWithSort_accumulate_false_fp16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "IndexPutWithSort/d=0,p=1/1,2/3,2/3,2/1,2/1,2",
+        "IndexPutWithSort/d=0,p=0/1,2/3,2/3,2/1,2/1,2",
+        "IndexPutWithSort/d=1,p=1/1,2/3,2/3,2/1,2/1,2",
+        "IndexPutWithSort/d=1,p=0/1,2/3,2/3,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "0b64985eef29859b661fad503267a7b2312d6e19ad4d31dc100adbac1f3246b4,b8962ddde6987e1babfad358206a36cd6758024b2bb8781b23a1258356f81166",
+      "inputs": [
+        {
+          "name": "self",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "linear_index",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pos_idx",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "values",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "slice_size",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "accumulate",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/index_put_with_sort/IndexPutWithSort_accumulate_true_fp16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "IndexPutWithSort/d=0,p=1/27,2/3,2/3,2/27,2/27,2",
+        "IndexPutWithSort/d=0,p=0/27,2/3,2/3,2/27,2/27,2",
+        "IndexPutWithSort/d=1,p=1/27,2/3,2/3,2/27,2/27,2",
+        "IndexPutWithSort/d=1,p=0/27,2/3,2/3,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "007bdd8a06fa81556bd19694f647995686353fed7e717a3ee8bc9132bfd68f79,d8619fc3f6c26501adf2d85ea42a69db036e9c243d5d2558d36fafe85cbfe205",
+      "inputs": [
+        {
+          "name": "self",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "linear_index",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pos_idx",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "values",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "slice_size",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "accumulate",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/index_put_with_sort/IndexPutWithSort_accumulate_false_bf16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "IndexPutWithSort/d=0,p=1/27,2/3,2/3,2/27,2/27,2",
+        "IndexPutWithSort/d=0,p=0/27,2/3,2/3,2/27,2/27,2",
+        "IndexPutWithSort/d=1,p=1/27,2/3,2/3,2/27,2/27,2",
+        "IndexPutWithSort/d=1,p=0/27,2/3,2/3,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "75552bfb030d0b4ad79c9e466868a89e0ae4a569cc899f4fc6491044d8071478,a29e4d058fc0ed65d7f1f3910200cff43b7614bafae690913775e9f93c5a9b09",
+      "inputs": [
+        {
+          "name": "self",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "linear_index",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pos_idx",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "values",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "slice_size",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "accumulate",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/index_put_with_sort/IndexPutWithSort_accumulate_true_bf16_high_performance.json"
+      }
+    }
+  ]
+}

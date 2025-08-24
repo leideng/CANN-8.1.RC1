@@ -1,0 +1,70 @@
+[
+    {
+        "case_name": "Test_Sort_001",
+        "op": "Sort",
+        "input_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    2,
+                    10
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "x"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    2,
+                    10
+                ],
+                "name": "y1"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "int32"
+                ],
+                "shape": [
+                    2,
+                    10
+                ],
+                "name": "y2"
+            }
+        ],
+        "attr": [
+            {
+                "name": "axis",
+                "type": "int",
+                "value": -1
+            },
+            {
+                "name": "descending",
+                "type": "bool",
+                "value": false
+            }
+        ]
+    }
+]

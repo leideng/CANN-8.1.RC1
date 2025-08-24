@@ -1,0 +1,166 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ForeachNonFiniteCheckAndUnscale/d=0,p=1/1,2/0,2/0,2",
+        "ForeachNonFiniteCheckAndUnscale/d=0,p=0/1,2/0,2/0,2",
+        "ForeachNonFiniteCheckAndUnscale/d=1,p=1/1,2/0,2/0,2",
+        "ForeachNonFiniteCheckAndUnscale/d=1,p=0/1,2/0,2/0,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "optionalInputMode": "gen_placeholder",
+      "staticKey": "c1a86a361619f4540e3d18a926b6d1f4ecd0c63d0bc8cf2340e8a5b228dc4f0e,db646d90db6f46f0c037752289916c250feb00cde4c44b855c2aa3d70ce7a350",
+      "inputs": [
+        [
+          {
+            "name": "scaled_grads",
+            "index": 0,
+            "dtype": "float16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ],
+        {
+          "name": "found_inf",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "inv_scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/foreach_non_finite_check_and_unscale/ForeachNonFiniteCheckAndUnscale_870c7f7c65038f795b7ed298b0b54b9b_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ForeachNonFiniteCheckAndUnscale/d=0,p=1/0,2/0,2/0,2",
+        "ForeachNonFiniteCheckAndUnscale/d=0,p=0/0,2/0,2/0,2",
+        "ForeachNonFiniteCheckAndUnscale/d=1,p=1/0,2/0,2/0,2",
+        "ForeachNonFiniteCheckAndUnscale/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "optionalInputMode": "gen_placeholder",
+      "staticKey": "42443eaa27f667d1fc168dca68c8f91f11c3a7cc8f2754614d17376417be320e,b550d76dbd5cc3069121b778a03255e749490b78654383b33c7754e38f670de1",
+      "inputs": [
+        [
+          {
+            "name": "scaled_grads",
+            "index": 0,
+            "dtype": "float32",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ],
+        {
+          "name": "found_inf",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "inv_scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/foreach_non_finite_check_and_unscale/ForeachNonFiniteCheckAndUnscale_a704359d68c4abd7b14f6c9dc18c4980_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ForeachNonFiniteCheckAndUnscale/d=0,p=1/27,2/0,2/0,2",
+        "ForeachNonFiniteCheckAndUnscale/d=0,p=0/27,2/0,2/0,2",
+        "ForeachNonFiniteCheckAndUnscale/d=1,p=1/27,2/0,2/0,2",
+        "ForeachNonFiniteCheckAndUnscale/d=1,p=0/27,2/0,2/0,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "optionalInputMode": "gen_placeholder",
+      "staticKey": "5508e406bc88583502aac7082545c9a0bc38dfc1911550a9db22fa0f3101daad,33834840b260052f2ab9d2e238e0b7fd5b2d261bcf71a6018823fc43feab8cbb",
+      "inputs": [
+        [
+          {
+            "name": "scaled_grads",
+            "index": 0,
+            "dtype": "bfloat16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ],
+        {
+          "name": "found_inf",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "inv_scale",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/foreach_non_finite_check_and_unscale/ForeachNonFiniteCheckAndUnscale_a2660f34dd0edf38ba0bb4247b36c091_high_performance.json"
+      }
+    }
+  ]
+}

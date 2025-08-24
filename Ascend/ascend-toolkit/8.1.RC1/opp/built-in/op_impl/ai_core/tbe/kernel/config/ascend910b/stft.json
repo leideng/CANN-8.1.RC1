@@ -1,0 +1,384 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "STFT/d=0,p=1/0,2/0,2/0,2",
+        "STFT/d=0,p=0/0,2/0,2/0,2",
+        "STFT/d=1,p=1/0,2/0,2/0,2",
+        "STFT/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "b32e298995b96e278c13066a99c56cc8738374059df0139dd771129c61f0cadf,e5e24d68c823202534c942298d42ecfca04510d582e2eec6d88afe1f8af02dc5",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        },
+        {
+          "name": "plan",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        },
+        {
+          "name": "window",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "optional"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "hop_length",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "win_length",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "normalized",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "onesided",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "return_complex",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "n_fft",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/stft/STFT_1ea4bd0e3cd9df67072f7z7aaec9c583_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "STFT/d=0,p=1/0,2/0,2/16,2",
+        "STFT/d=0,p=0/0,2/0,2/16,2",
+        "STFT/d=1,p=1/0,2/0,2/16,2",
+        "STFT/d=1,p=0/0,2/0,2/16,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "0f56f75266a402371c6fcdd1453b482a0914d9d76cd26df7169cd07c2d7d4fd5,0647a2466c0b85098ef8cd13adbf90444c9a86d28693aea9e15c72e871a6cf27",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        },
+        {
+          "name": "plan",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        },
+        {
+          "name": "window",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "optional"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "complex64",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "hop_length",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "win_length",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "normalized",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "onesided",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "return_complex",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "n_fft",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/stft/STFT_1ea4bd0e3cd9df67072f7z7aaec9c584_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "STFT/d=0,p=1/16,2/0,2/0,2",
+        "STFT/d=0,p=0/16,2/0,2/0,2",
+        "STFT/d=1,p=1/16,2/0,2/0,2",
+        "STFT/d=1,p=0/16,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "1bbf1084c6e6dd108f5fcbf6152ee0e365b313b831e16952ba1e430d5d12d7eb,d3af0b10021937fe8b5eefc154fbbd67992ebc0a70643e25a4e80e39eea5d7ff",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "complex64",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        },
+        {
+          "name": "plan",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        },
+        {
+          "name": "window",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "optional"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "hop_length",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "win_length",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "normalized",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "onesided",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "return_complex",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "n_fft",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/stft/STFT_1ea4bd0e3cd9df67072f7z7aaec9c585_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "STFT/d=0,p=1/16,2/0,2/16,2",
+        "STFT/d=0,p=0/16,2/0,2/16,2",
+        "STFT/d=1,p=1/16,2/0,2/16,2",
+        "STFT/d=1,p=0/16,2/0,2/16,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "6e0da1af6906c3d2a212f3d106edee34c461ad552006906b40d1bed23fc0080c,b769b5c56720a31f425e907dec8e226d005ac013491a07ba406cda7e3bd932f0",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "complex64",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        },
+        {
+          "name": "plan",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        },
+        {
+          "name": "window",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "optional"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "complex64",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "hop_length",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "win_length",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "normalized",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "onesided",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "return_complex",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "n_fft",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/stft/STFT_1ea4bd0e3cd9df67072f7z7aaec9c586_high_performance.json"
+      }
+    }
+  ]
+}

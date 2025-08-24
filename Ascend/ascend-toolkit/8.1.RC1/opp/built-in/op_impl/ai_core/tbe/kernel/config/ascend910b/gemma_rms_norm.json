@@ -1,0 +1,214 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GemmaRmsNorm/d=0,p=1/1,2/1,2/1,2/0,2",
+        "GemmaRmsNorm/d=0,p=0/1,2/1,2/1,2/0,2",
+        "GemmaRmsNorm/d=1,p=1/1,2/1,2/1,2/0,2",
+        "GemmaRmsNorm/d=1,p=0/1,2/1,2/1,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "6017d19fe5c4c6c0523ed9886222cb28c86cb6c0148af960aa21ee24b0abd217,e8d4d832c73e0aea978bdb98d0f6eab1c2b8796a41573ccba45fd8a63ba8c569",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-06
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gemma_rms_norm/GemmaRmsNorm_4a6d4ebf75ee9fc8e3e139a350115182_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GemmaRmsNorm/d=0,p=1/27,2/27,2/27,2/0,2",
+        "GemmaRmsNorm/d=0,p=0/27,2/27,2/27,2/0,2",
+        "GemmaRmsNorm/d=1,p=1/27,2/27,2/27,2/0,2",
+        "GemmaRmsNorm/d=1,p=0/27,2/27,2/27,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "75e7449232482d55831cc0689bc2a7b52270d9c4d4a5d223a33fef34dccab58c,1223b56c16910e150aefe127b0214b9307c9cbe287f124852c3811f5651a8c0a",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-06
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gemma_rms_norm/GemmaRmsNorm_3f68f4a3c27727c75887c7423ff14492_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GemmaRmsNorm/d=0,p=1/0,2/0,2/0,2/0,2",
+        "GemmaRmsNorm/d=0,p=0/0,2/0,2/0,2/0,2",
+        "GemmaRmsNorm/d=1,p=1/0,2/0,2/0,2/0,2",
+        "GemmaRmsNorm/d=1,p=0/0,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "c08f212226d97886595288690ba78541821fe4ee909cf7bec2e43f356c23eaf2,5749cf0a5888f97ebaa1a792ef6d721b00011ea5782d2fe9b408e034a46e7f99",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rstd",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 1e-06
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gemma_rms_norm/GemmaRmsNorm_8b336983e6334928c227df335dc3f28f_high_performance.json"
+      }
+    }
+  ]
+}

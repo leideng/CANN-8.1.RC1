@@ -1,0 +1,508 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SoftMarginLoss/d=0,p=0/27,2/27,2/27,2/mean",
+        "SoftMarginLoss/d=1,p=0/27,2/27,2/27,2/mean"
+      ],
+      "staticKey": "1dfb38706bd62136dad74ee16fa0307aba60432d740b3c10ae016ffccd798ed2",
+      "inputs": [
+        {
+          "name": "input_x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_y",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_z",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/soft_margin_loss/SoftMarginLoss_5f663b762fb3ebcc6cf374c50cb744c4_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SoftMarginLoss/d=0,p=0/27,2/27,2/27,2/none",
+        "SoftMarginLoss/d=1,p=0/27,2/27,2/27,2/none"
+      ],
+      "staticKey": "6bf51552ae6f6732f612924621bbf03928789d5da850307b5192872f2f70fec6",
+      "inputs": [
+        {
+          "name": "input_x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_y",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_z",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/soft_margin_loss/SoftMarginLoss_d8772b4716068dbf317365c879b50952_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SoftMarginLoss/d=0,p=0/27,2/27,2/27,2/sum",
+        "SoftMarginLoss/d=1,p=0/27,2/27,2/27,2/sum"
+      ],
+      "staticKey": "3e6e652a5f2cf8af87feba8fd67aff59aa7bf8fc70d839b900c52743a324fc08",
+      "inputs": [
+        {
+          "name": "input_x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_y",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_z",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "sum",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/soft_margin_loss/SoftMarginLoss_1ea4bd0e3cd9df67071f7a7aaec1c732_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SoftMarginLoss/d=0,p=0/1,2/1,2/1,2/mean",
+        "SoftMarginLoss/d=1,p=0/1,2/1,2/1,2/mean"
+      ],
+      "staticKey": "dce1064338803c15d5ad3a6dcb28fed942f49ca41d9b77896addace31ee7d66f",
+      "inputs": [
+        {
+          "name": "input_x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_y",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_z",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/soft_margin_loss/SoftMarginLoss_9d3db7c86d0f4f86db65ba005bddcc36_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SoftMarginLoss/d=0,p=0/1,2/1,2/1,2/none",
+        "SoftMarginLoss/d=1,p=0/1,2/1,2/1,2/none"
+      ],
+      "staticKey": "c79d3c9fa69906b69b6fd5dceac0d08490355c7ef12f4fc0e8b37e928c5c6c49",
+      "inputs": [
+        {
+          "name": "input_x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_y",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_z",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/soft_margin_loss/SoftMarginLoss_b2fba0aa15d212b864b2621380db5ea6_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SoftMarginLoss/d=0,p=0/1,2/1,2/1,2/sum",
+        "SoftMarginLoss/d=1,p=0/1,2/1,2/1,2/sum"
+      ],
+      "staticKey": "52d07bd66b3ea391783646136c5b64effd026c8ddcec8975e0b1ec8e5bfd75b2",
+      "inputs": [
+        {
+          "name": "input_x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_y",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_z",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "sum",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/soft_margin_loss/SoftMarginLoss_a5c6155a02b8afcac2e42ec5c47ad867_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SoftMarginLoss/d=0,p=0/0,2/0,2/0,2/mean",
+        "SoftMarginLoss/d=1,p=0/0,2/0,2/0,2/mean"
+      ],
+      "staticKey": "2fea30242a52a2dc6002df1cd3b9b02168c73ea27642159f2b5ac3ea9d7fda6f",
+      "inputs": [
+        {
+          "name": "input_x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_y",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_z",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/soft_margin_loss/SoftMarginLoss_da108e2b93888391f77942ed86091eaa_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SoftMarginLoss/d=0,p=0/0,2/0,2/0,2/none",
+        "SoftMarginLoss/d=1,p=0/0,2/0,2/0,2/none"
+      ],
+      "staticKey": "8f9619d0e1d94465b41f5e836094aa003042fc0a5126c81c94a7fb5bb67e6db8",
+      "inputs": [
+        {
+          "name": "input_x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_y",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_z",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/soft_margin_loss/SoftMarginLoss_566557f06ac93e8917f399e0e1eff264_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SoftMarginLoss/d=0,p=0/0,2/0,2/0,2/sum",
+        "SoftMarginLoss/d=1,p=0/0,2/0,2/0,2/sum"
+      ],
+      "staticKey": "e9d1dfcb1142511656a984404f968d0d5a791b4167a9d8dce4043316616d2a79",
+      "inputs": [
+        {
+          "name": "input_x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_y",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_z",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "sum",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/soft_margin_loss/SoftMarginLoss_51752af4c2dcd6f469311ebeac06a4e1_high_performance.json"
+      }
+    }
+  ]
+}

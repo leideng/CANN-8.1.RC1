@@ -1,0 +1,112 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DataFormatDimMap/d=0,p=0/3,3/3,3/NHWC,NCHW",
+        "DataFormatDimMap/d=1,p=0/3,3/3,3/NHWC,NCHW"
+      ],
+      "staticKey": "f3ddd8c1b26bb618fc9a62665dfee657042c822ed1ffa08497c7d74e5a0bba0c",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": "NHWC",
+          "mode": "value"
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": "NCHW",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/data_format_dim_map/DataFormatDimMap_600a67539885c22ed95f927033fb0fa4_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "DataFormatDimMap/d=0,p=0/3,2/3,2/NHWC,NCHW",
+        "DataFormatDimMap/d=1,p=0/3,2/3,2/NHWC,NCHW"
+      ],
+      "staticKey": "58892ed18226775bebe720bad6a8e86714695a76b7d039cca639ace761d61d51",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatDefault"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "src_format",
+          "dtype": "string",
+          "value": "NHWC",
+          "mode": "value"
+        },
+        {
+          "name": "dst_format",
+          "dtype": "string",
+          "value": "NCHW",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/data_format_dim_map/DataFormatDimMap_1e2a5ee07a65659172928dbca94e434c_high_performance.json"
+      }
+    }
+  ]
+}

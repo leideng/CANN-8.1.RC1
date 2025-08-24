@@ -1,0 +1,304 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeInitRoutingQuant/d=0,p=1/1,2/3,2/3,2/2,2/3,2/3,2",
+        "MoeInitRoutingQuant/d=0,p=0/1,2/3,2/3,2/2,2/3,2/3,2",
+        "MoeInitRoutingQuant/d=1,p=1/1,2/3,2/3,2/2,2/3,2/3,2",
+        "MoeInitRoutingQuant/d=1,p=0/1,2/3,2/3,2/2,2/3,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "b5d6f43987cbd1ef22d3ecf4afe36dd93525ba6a2c92b7b8f7e05f586c97c3ac,a6dde2b201155204b9eae3c645498fca03b0648d7a4abf70af2b6ba8ea0db4ed",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "row_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_idx",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "expanded_x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_row_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_expert_idx",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "active_num",
+          "dtype": "int",
+          "value": 99
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 1.0
+        },
+        {
+          "name": "offset",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_init_routing_quant/MoeInitRoutingQuant_1971d2db1a80c523e7e59a032c95969880af8_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeInitRoutingQuant/d=0,p=1/27,2/3,2/3,2/2,2/3,2/3,2",
+        "MoeInitRoutingQuant/d=0,p=0/27,2/3,2/3,2/2,2/3,2/3,2",
+        "MoeInitRoutingQuant/d=1,p=1/27,2/3,2/3,2/2,2/3,2/3,2",
+        "MoeInitRoutingQuant/d=1,p=0/27,2/3,2/3,2/2,2/3,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "40e5f5aa6c7cefbcaf1d6447f00b75df134b483c94bc7673033a074ebb3fd53e,adeaa96d46c27dbd71c26d4de2da35cb0d2bdba8a447782b8d33a427722eaf7f",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "row_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_idx",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "expanded_x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_row_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_expert_idx",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "active_num",
+          "dtype": "int",
+          "value": 99
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 1.0
+        },
+        {
+          "name": "offset",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_init_routing_quant/MoeInitRoutingQuant_1971d2db1a80c523e7e59a032c95969880af9_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeInitRoutingQuant/d=0,p=1/0,2/3,2/3,2/2,2/3,2/3,2",
+        "MoeInitRoutingQuant/d=0,p=0/0,2/3,2/3,2/2,2/3,2/3,2",
+        "MoeInitRoutingQuant/d=1,p=1/0,2/3,2/3,2/2,2/3,2/3,2",
+        "MoeInitRoutingQuant/d=1,p=0/0,2/3,2/3,2/2,2/3,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "59209838a787aa68f40b6e5d71f676369a99693e7ad0e0a4d46f8b7832f85e07,c380f6b140cec8fcc8c1d05cf8bed676023ca71c2aed4fbc0731c2bdb691f633",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "row_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expert_idx",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "expanded_x",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_row_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "expanded_expert_idx",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "active_num",
+          "dtype": "int",
+          "value": 99
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 1.0
+        },
+        {
+          "name": "offset",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_init_routing_quant/MoeInitRoutingQuant_1971d2db1a80c523e7e59a032c95969880afa_high_performance.json"
+      }
+    }
+  ]
+}

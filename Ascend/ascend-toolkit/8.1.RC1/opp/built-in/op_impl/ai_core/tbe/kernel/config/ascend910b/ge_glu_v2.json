@@ -1,0 +1,223 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GeGluV2/d=0,p=1/1,2/1,2/1,2",
+        "GeGluV2/d=0,p=0/1,2/1,2/1,2",
+        "GeGluV2/d=1,p=1/1,2/1,2/1,2",
+        "GeGluV2/d=1,p=0/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "c657a48a83e05d3c1f7949f791848a1772a826aa9652552639d04afef4bb1102,199cc0a7e20c59b42c0914b825bcfafc32448a5eabf30892caf2fe09e293ab30",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gelu",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "approximate",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "activate_left",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ge_glu_v2/GeGluV2_c629c03f5922badb3407bf2e66751e02_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GeGluV2/d=0,p=1/0,2/0,2/0,2",
+        "GeGluV2/d=0,p=0/0,2/0,2/0,2",
+        "GeGluV2/d=1,p=1/0,2/0,2/0,2",
+        "GeGluV2/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "45b00256756808e3fb730876d45f0cff70ddc018070398244f0f36226c68870d,2f275661b3cdbd4f3b95dd9f67d4abf940118b047cd7b13a2f432c455a369677",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gelu",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "approximate",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "activate_left",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ge_glu_v2/GeGluV2_b629c03f5922badb3407bf2e66751e02_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GeGluV2/d=0,p=1/27,2/27,2/27,2",
+        "GeGluV2/d=0,p=0/27,2/27,2/27,2",
+        "GeGluV2/d=1,p=1/27,2/27,2/27,2",
+        "GeGluV2/d=1,p=0/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "fdfbc7a812302d4f391c56df8d9b9a3e53d6a3c2ff05050596e589139e5a0bae,e1236d4f1bfee55859ea93908f03e0c0510e91fff14245e647f641e4fe110a82",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gelu",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "approximate",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "activate_left",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ge_glu_v2/GeGluV2_a629c03f5922badb3407bf2e66751e02_high_performance.json"
+      }
+    }
+  ]
+}

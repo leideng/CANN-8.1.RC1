@@ -1,0 +1,55 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "LogicalOr/d=0,p=0/12,2/12,2/12,2",
+        "LogicalOr/d=1,p=0/12,2/12,2/12,2"
+      ],
+      "staticKey": "03e83636f4a9f250456e57339c52a818b17d58cc239a30f5e2be56833de250ae",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/logical_or/LogicalOr_91d2a3cdd75d915a368582ec5f440af1_high_performance.json"
+      }
+    }
+  ]
+}

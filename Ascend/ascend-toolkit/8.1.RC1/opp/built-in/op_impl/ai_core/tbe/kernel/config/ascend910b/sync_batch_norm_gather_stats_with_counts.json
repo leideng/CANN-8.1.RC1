@@ -1,0 +1,343 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SyncBatchNormGatherStatsWithCounts/d=0,p=1/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "SyncBatchNormGatherStatsWithCounts/d=0,p=0/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "SyncBatchNormGatherStatsWithCounts/d=1,p=1/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2",
+        "SyncBatchNormGatherStatsWithCounts/d=1,p=0/1,2/1,2/1,2/1,2/1,2/1,2/1,2/1,2"
+      ],
+      "staticKey": "cdd5a8659fb2b351b084f9adb8a5ecfcd7950a218819bee6536efbd3f0c37c42,6e43035a15d03cf8bee672e0d28a4ca3d5134aec9dc5fa1bd25130aecfac6db4",
+      "inputs": [
+        {
+          "name": "mean_all",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "invert_std_all",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "count_all",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean_broadcast",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "count_sum",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "running_var",
+          "index": 5,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "invert_std",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "running_var_update",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "momentum",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sync_batch_norm_gather_stats_with_counts/SyncBatchNormGatherStatsWithCounts_fp16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SyncBatchNormGatherStatsWithCounts/d=0,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "SyncBatchNormGatherStatsWithCounts/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "SyncBatchNormGatherStatsWithCounts/d=1,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "SyncBatchNormGatherStatsWithCounts/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "staticKey": "8c866dd5206a8da62392764f87f6bdacfefa5625baf997d32ab958ed3ed8d38b,6dac87bc731e16d40736d92edbc4e77c0ef1a50b223a97e4d9e3abce9d9ddff4",
+      "inputs": [
+        {
+          "name": "mean_all",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "invert_std_all",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "count_all",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean_broadcast",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "count_sum",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "running_var",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "invert_std",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "running_var_update",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "momentum",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sync_batch_norm_gather_stats_with_counts/SyncBatchNormGatherStatsWithCounts_fp32_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SyncBatchNormGatherStatsWithCounts/d=0,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "SyncBatchNormGatherStatsWithCounts/d=0,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "SyncBatchNormGatherStatsWithCounts/d=1,p=1/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2",
+        "SyncBatchNormGatherStatsWithCounts/d=1,p=0/27,2/27,2/27,2/27,2/27,2/27,2/27,2/27,2"
+      ],
+      "staticKey": "2a55988aed1369a30788d803deba98b90c79dff098a28b9def00fd58b06ef7a6,cf6f71680622462c852431f76a60794165b41b7de40b6f6b59b4f0d8b684197d",
+      "inputs": [
+        {
+          "name": "mean_all",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "invert_std_all",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "count_all",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mean_broadcast",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "count_sum",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "running_var",
+          "index": 5,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "invert_std",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "running_var_update",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "momentum",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sync_batch_norm_gather_stats_with_counts/SyncBatchNormGatherStatsWithCounts_bf16_high_performance.json"
+      }
+    }
+  ]
+}

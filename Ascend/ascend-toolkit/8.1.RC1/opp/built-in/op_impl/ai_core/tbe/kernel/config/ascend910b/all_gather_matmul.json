@@ -1,0 +1,234 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "AllGatherMatmul/d=0,p=1/1,2/1,2/1,2/1,2",
+        "AllGatherMatmul/d=0,p=0/1,2/1,2/1,2/1,2",
+        "AllGatherMatmul/d=1,p=1/1,2/1,2/1,2/1,2",
+        "AllGatherMatmul/d=1,p=0/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "06353d0b55d07b7e602271789e4eea0fca3cc7cffa53516aa4322103f3d6f110,341163d653f2c9638aa3afce1705710f7590652c0c0e35b1fb8f03bbfd223a99",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gather_out",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "group",
+          "dtype": "string",
+          "value": ""
+        },
+        {
+          "name": "is_trans_a",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "is_trans_b",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "gather_index",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "comm_turn",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "rank_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "is_gather_out",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/all_gather_matmul/AllGatherMatmul_ND_ND_FP16_FP16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "AllGatherMatmul/d=0,p=1/27,2/27,2/27,2/27,2",
+        "AllGatherMatmul/d=0,p=0/27,2/27,2/27,2/27,2",
+        "AllGatherMatmul/d=1,p=1/27,2/27,2/27,2/27,2",
+        "AllGatherMatmul/d=1,p=0/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "572cf6b9f5f700a236b06d5bf7f31b9c8ce6cb1df05b51f373d7e509dc3ac60b,f56b12b30e51c54ca025cff3231823a0bd75cad20efdd21e53302498b2056143",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "gather_out",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "group",
+          "dtype": "string",
+          "value": ""
+        },
+        {
+          "name": "is_trans_a",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "is_trans_b",
+          "dtype": "bool",
+          "value": null
+        },
+        {
+          "name": "gather_index",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "comm_turn",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "rank_size",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "is_gather_out",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/all_gather_matmul/AllGatherMatmul_ND_ND_BF16_BF16_high_performance.json"
+      }
+    }
+  ]
+}

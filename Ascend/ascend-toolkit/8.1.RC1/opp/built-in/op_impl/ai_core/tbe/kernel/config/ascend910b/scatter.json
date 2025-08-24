@@ -1,0 +1,1504 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/3,2/3,2/3,2/3,2/none,",
+        "Scatter/d=0,p=0/3,2/3,2/3,2/3,2/none,",
+        "Scatter/d=1,p=1/3,2/3,2/3,2/3,2/none,",
+        "Scatter/d=1,p=0/3,2/3,2/3,2/3,2/none,"
+      ],
+      "staticKey": "5cdee4b5ffc8a084f23183de54ea5041bf609fcae3e26170b46afd518f0b44af,a3f6cfe99b68daa61c8ff58d5009a44cb0b25af4d983ca7d468d2f23ca8a9521",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_7mrv5grrnyrtgt4kvomhdl2cuzhouf8r_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/3,2/3,2/3,2/3,2/update,",
+        "Scatter/d=0,p=0/3,2/3,2/3,2/3,2/update,",
+        "Scatter/d=1,p=1/3,2/3,2/3,2/3,2/update,",
+        "Scatter/d=1,p=0/3,2/3,2/3,2/3,2/update,"
+      ],
+      "staticKey": "5fe1ee79681db62edd5b7912cf587e06ea5e41f59d3ae1df677d7ee97ae27765,ce938db7c514152976db764b493fd4a9dc7490565e2ba0f820462b017f342446",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "update",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_3c23azvxbuhpvgpsfwkhm3bpbxpywdsh_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/3,2/9,2/3,2/3,2/none,",
+        "Scatter/d=0,p=0/3,2/9,2/3,2/3,2/none,",
+        "Scatter/d=1,p=1/3,2/9,2/3,2/3,2/none,",
+        "Scatter/d=1,p=0/3,2/9,2/3,2/3,2/none,"
+      ],
+      "staticKey": "40025797b76fd5da7506ef4bdb4bf4400f3ced122850c951b3352d9675eb55e9,f302f9e23e0b71bf89a7be9a5e1a8c947ebdf66b79c50c5cd40b9150a1aba7a2",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_eao1i3ov4rn2ppc8azi1ngfkphncfedc_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/3,2/9,2/3,2/3,2/update,",
+        "Scatter/d=0,p=0/3,2/9,2/3,2/3,2/update,",
+        "Scatter/d=1,p=1/3,2/9,2/3,2/3,2/update,",
+        "Scatter/d=1,p=0/3,2/9,2/3,2/3,2/update,"
+      ],
+      "staticKey": "3187efb3be505595d0d107dbd9de42525f2b36a33da7b3ce8e58486b85784bb5,f2b7b0ecc843f60e80d9f85733241dfbed7418bd9363866e632df7f3d393e9f6",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "update",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_vyu7ieg310aqaxcoamn3isjhehkzcbnd_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/27,2/3,2/27,2/27,2/none,",
+        "Scatter/d=0,p=0/27,2/3,2/27,2/27,2/none,",
+        "Scatter/d=1,p=1/27,2/3,2/27,2/27,2/none,",
+        "Scatter/d=1,p=0/27,2/3,2/27,2/27,2/none,"
+      ],
+      "staticKey": "31e9177a67e2ad55042485816732ba71a18766323ac372e4a276f8f14c609a06,608f22d9e6d143e37af2c4970ffc7ad0f4e9c47bab8ca096fb74331c6051a0f7",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_6c39a01270e5cc309f704228d56c08ac_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/27,2/3,2/27,2/27,2/update,",
+        "Scatter/d=0,p=0/27,2/3,2/27,2/27,2/update,",
+        "Scatter/d=1,p=1/27,2/3,2/27,2/27,2/update,",
+        "Scatter/d=1,p=0/27,2/3,2/27,2/27,2/update,"
+      ],
+      "staticKey": "ccc5d10a503e98c9608b22d05243edcac87cf877a0e669bd0547095afcef2210,e8688be4da3bb76b3455b110bd78deb844bbd70c724e6cd0b651cdc6a5e65c1e",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "update",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_a69c950763acb46236b38d30f1a13c8e_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/27,2/9,2/27,2/27,2/none,",
+        "Scatter/d=0,p=0/27,2/9,2/27,2/27,2/none,",
+        "Scatter/d=1,p=1/27,2/9,2/27,2/27,2/none,",
+        "Scatter/d=1,p=0/27,2/9,2/27,2/27,2/none,"
+      ],
+      "staticKey": "3dd058d8fa6dbcfee2126c10f3218e13ccd252b8bc4b209f652cdc83f31f2db0,9b6b47b7876313549a9958a9f801e766cb4eb5aea7e65e4ad083a38de1a8c27f",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_bc333e1910a01784d66f7e60fd0d3e5f_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/27,2/9,2/27,2/27,2/update,",
+        "Scatter/d=0,p=0/27,2/9,2/27,2/27,2/update,",
+        "Scatter/d=1,p=1/27,2/9,2/27,2/27,2/update,",
+        "Scatter/d=1,p=0/27,2/9,2/27,2/27,2/update,"
+      ],
+      "staticKey": "bdd883064392809d8fdb64f22e57defacd449aade2e62f098817302fea64d8f4,36535534b0d6e81540200aa8628a1aa9c297f9d1f2fcc98475a723d81ee1a6e9",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "update",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_11cde143124b1daa816e7f71d79516e7_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/1,2/3,2/1,2/1,2/none,",
+        "Scatter/d=0,p=0/1,2/3,2/1,2/1,2/none,",
+        "Scatter/d=1,p=1/1,2/3,2/1,2/1,2/none,",
+        "Scatter/d=1,p=0/1,2/3,2/1,2/1,2/none,"
+      ],
+      "staticKey": "337fd392e17ab11a7019ad6be4cff484022cae2407029485bd3da920f800c145,13eddfa320cde27eb3016887704684d73ed74f17bc0fbd8e2baf10039e6403c7",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_d8871276c0ad0d1d945bf6deb8e34c36_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/1,2/3,2/1,2/1,2/update,",
+        "Scatter/d=0,p=0/1,2/3,2/1,2/1,2/update,",
+        "Scatter/d=1,p=1/1,2/3,2/1,2/1,2/update,",
+        "Scatter/d=1,p=0/1,2/3,2/1,2/1,2/update,"
+      ],
+      "staticKey": "7467bca1d3e97f1b83521ee61fdf676040115bdd2f4fd0b27966ef618bdea610,e4d9b35ac2b3515aa8de0f8fe80197a73d56843c950223f19f8645ba6173aa28",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "update",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_24e460f5ce31ef9fb521fa6af2e0d1ee_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/1,2/9,2/1,2/1,2/none,",
+        "Scatter/d=0,p=0/1,2/9,2/1,2/1,2/none,",
+        "Scatter/d=1,p=1/1,2/9,2/1,2/1,2/none,",
+        "Scatter/d=1,p=0/1,2/9,2/1,2/1,2/none,"
+      ],
+      "staticKey": "5d7b71afcac1b1b7ec6b4be7a14b7c5a97a270a061068fbc66b5fd9875489596,5267a4e70665c9580dea34d3351f1c8e0fbf3af4c8b48c594f532cd741d603aa",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_16a9b18b16fbae6a6debc80d492ab185_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/1,2/9,2/1,2/1,2/update,",
+        "Scatter/d=0,p=0/1,2/9,2/1,2/1,2/update,",
+        "Scatter/d=1,p=1/1,2/9,2/1,2/1,2/update,",
+        "Scatter/d=1,p=0/1,2/9,2/1,2/1,2/update,"
+      ],
+      "staticKey": "9ca5bd274ea47fe2c7f2c6125dff9bbf3f64e0d45f8bd6c7a9cb3993b649da14,26007aa045f65270ee45e2eb58fcae192c87d15c93a7878ec85ecc625593a5b3",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "update",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_2b324b89d1ed6cfd2e5267f4d5896753_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/0,2/3,2/0,2/0,2/none,",
+        "Scatter/d=0,p=0/0,2/3,2/0,2/0,2/none,",
+        "Scatter/d=1,p=1/0,2/3,2/0,2/0,2/none,",
+        "Scatter/d=1,p=0/0,2/3,2/0,2/0,2/none,"
+      ],
+      "staticKey": "ef038b4704c98757b3514fd667990c24fddaf0036d4c97fc6e70917ac815c47f,662061075bcd98db0f90487ac17433c9182039b34df650c7ed740b634a65ea93",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_434076a5c87ade6634a19a59510d46b4_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/0,2/3,2/0,2/0,2/update,",
+        "Scatter/d=0,p=0/0,2/3,2/0,2/0,2/update,",
+        "Scatter/d=1,p=1/0,2/3,2/0,2/0,2/update,",
+        "Scatter/d=1,p=0/0,2/3,2/0,2/0,2/update,"
+      ],
+      "staticKey": "5c5ea3daf96d6163eae729779acb776e55a84461c882b2d50bd74eba7703c959,13ce14574019d54f46dc351d8270e46503379384f11602a923b4610a8e41d3c9",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "update",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_0b4dfde66e9be719876adda6e25f5657_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/0,2/9,2/0,2/0,2/none,",
+        "Scatter/d=0,p=0/0,2/9,2/0,2/0,2/none,",
+        "Scatter/d=1,p=1/0,2/9,2/0,2/0,2/none,",
+        "Scatter/d=1,p=0/0,2/9,2/0,2/0,2/none,"
+      ],
+      "staticKey": "fe59b90f77a1cb47c59f329e14e70d36ddcfd215f2b32edca2d8c75473cfd2fa,a08ef77e3d23761cd92091689783dc51502a0bd1b77b0c8d787509c7feed36bd",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_17d4d504c5545b8629788518993af346_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/0,2/9,2/0,2/0,2/update,",
+        "Scatter/d=0,p=0/0,2/9,2/0,2/0,2/update,",
+        "Scatter/d=1,p=1/0,2/9,2/0,2/0,2/update,",
+        "Scatter/d=1,p=0/0,2/9,2/0,2/0,2/update,"
+      ],
+      "staticKey": "7d91b33cbba91d6044ad0cec1f4e7db1073d9ce9f302d2773be53363aa5b6036,75f0e642cfa6e1f618a4f925645f0794199b50e7623e841683bf083fcaf8be74",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "update",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_ef5629fda4d614885424c29dd0ce8649_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/2,2/3,2/2,2/2,2/none,",
+        "Scatter/d=0,p=0/2,2/3,2/2,2/2,2/none,",
+        "Scatter/d=1,p=1/2,2/3,2/2,2/2,2/none,",
+        "Scatter/d=1,p=0/2,2/3,2/2,2/2,2/none,"
+      ],
+      "staticKey": "57197d114d44cfa1e0f8debf89cde24ec140c3ece229aabdf630278e6402658d,2d2505c8ea03fb125c4e3eea3a029ac82c4f7b8e77cf556f39315500aabbbcde",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_141c61cb1e77a72d682246e2e4211fcb_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/2,2/3,2/2,2/2,2/update,",
+        "Scatter/d=0,p=0/2,2/3,2/2,2/2,2/update,",
+        "Scatter/d=1,p=1/2,2/3,2/2,2/2,2/update,",
+        "Scatter/d=1,p=0/2,2/3,2/2,2/2,2/update,"
+      ],
+      "staticKey": "9e7407310b07554e82560daf4902bb435766af815d9dfb40b5e304e8692028b1,e2c3a9cd469b7bc7e24f44676f57301bde8fe82ba119508909e6e0601ca99d3d",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "update",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_5aeee6218bbd501d84411eb6c3acfd04_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/2,2/9,2/2,2/2,2/none,",
+        "Scatter/d=0,p=0/2,2/9,2/2,2/2,2/none,",
+        "Scatter/d=1,p=1/2,2/9,2/2,2/2,2/none,",
+        "Scatter/d=1,p=0/2,2/9,2/2,2/2,2/none,"
+      ],
+      "staticKey": "0ad4d07d0fb51466de0d50e497add2764d083fd67426ad6cd9a965095501c45f,f91c00cbe6fb30541eee0074cc92138ea51f6e6106adb2b8a9a81f59cccdcdf9",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_4a163827d46ae59eff75f2e47138a02d_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "Scatter/d=0,p=1/2,2/9,2/2,2/2,2/update,",
+        "Scatter/d=0,p=0/2,2/9,2/2,2/2,2/update,",
+        "Scatter/d=1,p=1/2,2/9,2/2,2/2,2/update,",
+        "Scatter/d=1,p=0/2,2/9,2/2,2/2,2/update,"
+      ],
+      "staticKey": "26308bc9acc0ce2a80fe475b05ee2084bf0e9a3c1bba1a57656cd0d46d36520c,6a5f1ed4638f1eb7d5b3e5763cf1fc501c64b0e38ed66c9b665bcc75e82644ea",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updates",
+          "index": 2,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduce",
+          "dtype": "string",
+          "value": "update",
+          "mode": "value"
+        },
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scatter/Scatter_1f7e30eb90ce159745aef10b606f7e01_high_performance.json"
+      }
+    }
+  ]
+}

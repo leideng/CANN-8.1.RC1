@@ -1,0 +1,220 @@
+[
+    {
+        "case_name": "Test_SigmoidCrossEntropyWithLogitsGradV2_001",
+        "op": "SigmoidCrossEntropyWithLogitsGradV2",
+        "input_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    [
+                        18,
+                        21,
+                        34
+                    ],
+                    [
+                        2,
+                        3,
+                        4
+                    ],
+                    [
+                        8,
+                        16,
+                        32
+                    ],
+                    [
+                        2,
+                        4,
+                        6,
+                        8
+                    ]
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "predict"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    [
+                        18,
+                        21,
+                        34
+                    ],
+                    [
+                        2,
+                        3,
+                        4
+                    ],
+                    [
+                        8,
+                        16,
+                        32
+                    ],
+                    [
+                        2,
+                        4,
+                        6,
+                        8
+                    ]
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "target"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    [
+                        18,
+                        21,
+                        34
+                    ],
+                    [
+                        2,
+                        3,
+                        4
+                    ],
+                    [
+                        8,
+                        16,
+                        32
+                    ],
+                    [
+                        2,
+                        4,
+                        6,
+                        8
+                    ]
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "dout"
+            },
+            {
+                "format": [
+                    "UNDEFINED"
+                ],
+                "type": [
+                    "UNDEFINED"
+                ],
+                "shape": [
+                    [],
+                    [],
+                    [],
+                    []
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "weight"
+            },
+            {
+                "format": [
+                    "UNDEFINED"
+                ],
+                "type": [
+                    "UNDEFINED"
+                ],
+                "shape": [
+                    [],
+                    [],
+                    [],
+                    []
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "pos_weight"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    [
+                        18,
+                        21,
+                        34
+                    ],
+                    [
+                        2,
+                        3,
+                        4
+                    ],
+                    [
+                        8,
+                        16,
+                        32
+                    ],
+                    [
+                        2,
+                        4,
+                        6,
+                        8
+                    ]
+                ],
+                "name": "gradient"
+            }
+        ],
+        "attr": [
+            {
+                "name": "reduction",
+                "type": "string",
+                "value": "mean"
+            }
+        ]
+    }
+]

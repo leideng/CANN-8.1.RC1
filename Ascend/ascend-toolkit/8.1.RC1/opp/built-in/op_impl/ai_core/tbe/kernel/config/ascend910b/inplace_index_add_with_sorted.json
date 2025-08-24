@@ -1,0 +1,454 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "InplaceIndexAddWithSorted/d=0,p=1/27,2/27,2/3,2/3,2/27,2",
+        "InplaceIndexAddWithSorted/d=0,p=0/27,2/27,2/3,2/3,2/27,2",
+        "InplaceIndexAddWithSorted/d=1,p=1/27,2/27,2/3,2/3,2/27,2",
+        "InplaceIndexAddWithSorted/d=1,p=0/27,2/27,2/3,2/3,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "08f88aeec48391cfb1da433973f23e3f1193086355d2a7526ee4ec463c5aa72e,7d48828372b421d37659d206c33702440f47e7d28cf23ce1dfec7038ff499a12",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "value",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pos",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "alpha",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/inplace_index_add_with_sorted/InplaceIndexAddWithSorted_bfloat16_first_dim_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "InplaceIndexAddWithSorted/d=0,p=1/1,2/1,2/3,2/3,2/1,2",
+        "InplaceIndexAddWithSorted/d=0,p=0/1,2/1,2/3,2/3,2/1,2",
+        "InplaceIndexAddWithSorted/d=1,p=1/1,2/1,2/3,2/3,2/1,2",
+        "InplaceIndexAddWithSorted/d=1,p=0/1,2/1,2/3,2/3,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "64d657e70200412ab98132b4f7485456cac4271c773ed00067d4b2632eae1f5d,242536ca4e5a46a4c2cb83d7d5d77754e15ba3c31d47b489b3df96f72a09d7ae",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "value",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pos",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "alpha",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/inplace_index_add_with_sorted/InplaceIndexAddWithSorted_float16_first_dim_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "InplaceIndexAddWithSorted/d=0,p=1/0,2/0,2/3,2/3,2/0,2",
+        "InplaceIndexAddWithSorted/d=0,p=0/0,2/0,2/3,2/3,2/0,2",
+        "InplaceIndexAddWithSorted/d=1,p=1/0,2/0,2/3,2/3,2/0,2",
+        "InplaceIndexAddWithSorted/d=1,p=0/0,2/0,2/3,2/3,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "039cd5416b23c7cfa19413291fee38a361232994e1f5a9aabea1ec93e2de0261,1cbd1f034f9d9152f3b4600f76b29a38f008fc7baf596b4b55df256558f13121",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "value",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pos",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "alpha",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/inplace_index_add_with_sorted/InplaceIndexAddWithSorted_float32_first_dim_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "InplaceIndexAddWithSorted/d=0,p=1/6,2/6,2/3,2/3,2/6,2",
+        "InplaceIndexAddWithSorted/d=0,p=0/6,2/6,2/3,2/3,2/6,2",
+        "InplaceIndexAddWithSorted/d=1,p=1/6,2/6,2/3,2/3,2/6,2",
+        "InplaceIndexAddWithSorted/d=1,p=0/6,2/6,2/3,2/3,2/6,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "08e9dfb6c3ebc08c564d01557623a15f5647526b711b249513b7bcaca985d9fb,18b6d4a4cf9ebb20109d75d7e915cef064abcc1ab03f1c1fd326a9864b4ac4fd",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "value",
+          "index": 1,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pos",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "alpha",
+          "index": 4,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/inplace_index_add_with_sorted/InplaceIndexAddWithSorted_int16_first_dim_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "InplaceIndexAddWithSorted/d=0,p=1/3,2/3,2/3,2/3,2/3,2",
+        "InplaceIndexAddWithSorted/d=0,p=0/3,2/3,2/3,2/3,2/3,2",
+        "InplaceIndexAddWithSorted/d=1,p=1/3,2/3,2/3,2/3,2/3,2",
+        "InplaceIndexAddWithSorted/d=1,p=0/3,2/3,2/3,2/3,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "672a7dadfc2a04bd3a21a1b2f266500d21cbf6a157fdcad2e2f05ac66d289645,bc7dd61a4c8502dae55759a3abc6aaf42e96cbcdc9d90f5629d2ecf9f67e43fe",
+      "inputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "value",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sorted_indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pos",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "alpha",
+          "index": 4,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/inplace_index_add_with_sorted/InplaceIndexAddWithSorted_int32_first_dim_high_performance.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "FakeQuantAffineCachemask/d=0,p=1/0,2/0,2/3,2/0,2/12,2",
+        "FakeQuantAffineCachemask/d=0,p=0/0,2/0,2/3,2/0,2/12,2",
+        "FakeQuantAffineCachemask/d=1,p=1/0,2/0,2/3,2/0,2/12,2",
+        "FakeQuantAffineCachemask/d=1,p=0/0,2/0,2/3,2/0,2/12,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "2466726525f59d19eaa9ab2ef865c96e721a79ae872ec133d933a937ce3bc491,380127e68bf659ce20848425f21d0d8e72b29ce52ddcfdede66fc430c7a15542",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "zero_point",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 0,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "quant_min",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "quant_max",
+          "dtype": "int",
+          "value": 1
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/fake_quant_affine_cachemask/FakeQuantAffineCachemask_fp32_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "FakeQuantAffineCachemask/d=0,p=1/1,2/1,2/3,2/1,2/12,2",
+        "FakeQuantAffineCachemask/d=0,p=0/1,2/1,2/3,2/1,2/12,2",
+        "FakeQuantAffineCachemask/d=1,p=1/1,2/1,2/3,2/1,2/12,2",
+        "FakeQuantAffineCachemask/d=1,p=0/1,2/1,2/3,2/1,2/12,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "2752fb92f6f66bae1e0150ff0f7162912871817ce8f0acc88bb6c30d0b50830b,a97a35e425370f8eebdedd373999ae427447744497770f7ae32e6b41b0609a83",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "zero_point",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 0,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "axis",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "quant_min",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "quant_max",
+          "dtype": "int",
+          "value": 1
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/fake_quant_affine_cachemask/FakeQuantAffineCachemask_fp16_high_performance.json"
+      }
+    }
+  ]
+}

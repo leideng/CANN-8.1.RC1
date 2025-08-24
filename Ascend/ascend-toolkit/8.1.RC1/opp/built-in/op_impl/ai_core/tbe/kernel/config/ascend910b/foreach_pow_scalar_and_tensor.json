@@ -1,0 +1,236 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ForeachPowScalarAndTensor/d=0,p=1/0,2/1,2/1,2",
+        "ForeachPowScalarAndTensor/d=0,p=0/0,2/1,2/1,2",
+        "ForeachPowScalarAndTensor/d=1,p=1/0,2/1,2/1,2",
+        "ForeachPowScalarAndTensor/d=1,p=0/0,2/1,2/1,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "9255fecef7c361f13107b136f5e34ba7f89d46b6dee339ddbe690321dee9c087,f2728010a30a992e50ee7985a638226f13955e845235e599c30b4a0362238e45",
+      "inputs": [
+        {
+          "name": "scalar",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        [
+          {
+            "name": "x",
+            "index": 1,
+            "dtype": "float16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ]
+      ],
+      "outputs": [
+        [
+          {
+            "name": "y",
+            "index": 0,
+            "dtype": "float16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ]
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/foreach_pow_scalar_and_tensor/ForeachPowScalarAndTensor_2b6ee9e173c641783d476b0f8980672e_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ForeachPowScalarAndTensor/d=0,p=1/0,2/0,2/0,2",
+        "ForeachPowScalarAndTensor/d=0,p=0/0,2/0,2/0,2",
+        "ForeachPowScalarAndTensor/d=1,p=1/0,2/0,2/0,2",
+        "ForeachPowScalarAndTensor/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "4aa0c6dbfc91bd36d51cfa02de09167162773ce9b66d6e500edb676de578aaa9,19c4297e6eb70092c17b9b13d78c274f53bd07bd66abe5ab4122a600b79c1b3a",
+      "inputs": [
+        {
+          "name": "scalar",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        [
+          {
+            "name": "x",
+            "index": 1,
+            "dtype": "float32",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ]
+      ],
+      "outputs": [
+        [
+          {
+            "name": "y",
+            "index": 0,
+            "dtype": "float32",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ]
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/foreach_pow_scalar_and_tensor/ForeachPowScalarAndTensor_3b3ab0973a9c78d314edd5bc741192ee_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ForeachPowScalarAndTensor/d=0,p=1/9,2/3,2/3,2",
+        "ForeachPowScalarAndTensor/d=0,p=0/9,2/3,2/3,2",
+        "ForeachPowScalarAndTensor/d=1,p=1/9,2/3,2/3,2",
+        "ForeachPowScalarAndTensor/d=1,p=0/9,2/3,2/3,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "9ab284efaf976c33889ad2ef15f8d3c1f1d122cc0e4a41fbbeb47f849f472453,a5f77f46c4b2e6e3a27cdd26d953738d8cdd665df43309a28899b1b2b4b87e40",
+      "inputs": [
+        {
+          "name": "scalar",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        [
+          {
+            "name": "x",
+            "index": 1,
+            "dtype": "int32",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ]
+      ],
+      "outputs": [
+        [
+          {
+            "name": "y",
+            "index": 0,
+            "dtype": "int32",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ]
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/foreach_pow_scalar_and_tensor/ForeachPowScalarAndTensor_4b5c74c17edac119a1e531261ab8a87b_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ForeachPowScalarAndTensor/d=0,p=1/0,2/27,2/27,2",
+        "ForeachPowScalarAndTensor/d=0,p=0/0,2/27,2/27,2",
+        "ForeachPowScalarAndTensor/d=1,p=1/0,2/27,2/27,2",
+        "ForeachPowScalarAndTensor/d=1,p=0/0,2/27,2/27,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "e6807b12fba4312ab751d4197b91c7d0345aabeda5ac415083a878279dfdf443,6221df446020837bc4c2fb17f005348afbf2280dcf2a0acc36317f2c47acd819",
+      "inputs": [
+        {
+          "name": "scalar",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        [
+          {
+            "name": "x",
+            "index": 1,
+            "dtype": "bfloat16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ]
+      ],
+      "outputs": [
+        [
+          {
+            "name": "y",
+            "index": 0,
+            "dtype": "bfloat16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ]
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/foreach_pow_scalar_and_tensor/ForeachPowScalarAndTensor_a81970532250399f662a917a57d39bf2_high_performance.json"
+      }
+    }
+  ]
+}

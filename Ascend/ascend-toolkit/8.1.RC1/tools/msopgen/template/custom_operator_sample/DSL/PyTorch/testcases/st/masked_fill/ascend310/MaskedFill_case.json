@@ -1,0 +1,126 @@
+[
+    {
+        "case_name": "Test_MaskedFill_001",
+        "op": "MaskedFill",
+        "input_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16",
+                    "int8",
+                    "int32"
+                ],
+                "shape": [
+                    [
+                        8192,
+                        1
+                    ],
+                    [
+                        2,
+                        1,
+                        16
+                    ]
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "x"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "bool",
+                    "bool",
+                    "bool"
+                ],
+                "shape": [
+                    [
+                        8192,
+                        1
+                    ],
+                    [
+                        2,
+                        1,
+                        16
+                    ]
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "mask"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16",
+                    "int8",
+                    "int32"
+                ],
+                "shape": [
+                    [
+                        8192,
+                        1
+                    ],
+                    [
+                        2,
+                        1,
+                        16
+                    ]
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "value"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16",
+                    "int8",
+                    "int32"
+                ],
+                "shape": [
+                    [
+                        8192,
+                        1
+                    ],
+                    [
+                        2,
+                        1,
+                        16
+                    ]
+                ],
+                "name": "y"
+            }
+        ],
+        "attr":[]
+    }
+]

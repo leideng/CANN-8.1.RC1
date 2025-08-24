@@ -1,0 +1,724 @@
+{
+    "annotations": {
+      "list": [
+        {
+          "builtIn": 1,
+          "datasource": {
+            "type": "grafana",
+            "uid": "-- Grafana --"
+          },
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations & Alerts",
+          "type": "dashboard"
+        }
+      ]
+    },
+    "editable": true,
+    "fiscalYearStartMonth": 0,
+    "graphTooltip": 0,
+    "id": 62,
+    "links": [],
+    "panels": [
+      {
+        "datasource": {
+          "type": "frser-sqlite-datasource",
+          "uid": "be9gcyy5a15hcd"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisGridShow": true,
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "fillOpacity": 50,
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "pointShape": "circle",
+              "pointSize": {
+                "fixed": 5
+              },
+              "pointStrokeWidth": 1,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "show": "points+lines"
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 10,
+          "x": 0,
+          "y": 0
+        },
+        "id": 1,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "mapping": "auto",
+          "series": [
+            {}
+          ],
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "11.3.0",
+        "targets": [
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "be9gcyy5a15hcd"
+            },
+            "queryText": "\nWITH numbered_data AS (\n    SELECT \n        ROW_NUMBER() OVER (ORDER BY `start_time(microsecond)`) - 1 AS batch_id,\n        batch_size,\n        batch_type\n    FROM batch\n    WHERE name in ('BatchSchedule', 'batchFrameworkProcessing')\n)\nSELECT \n    batch_id, \n    CASE \n        WHEN batch_type = 'Prefill' THEN batch_size\n        ELSE NULL\n    END AS Prefill_batch_size,\n    CASE \n        WHEN batch_type = 'Decode' THEN batch_size\n        ELSE NULL\n    END AS Decode_batch_size\nFROM numbered_data\nORDER BY batch_id;\n",
+            "queryType": "table",
+            "rawQueryText": "\nWITH numbered_data AS (\n    SELECT \n        ROW_NUMBER() OVER (ORDER BY `start_time(microsecond)`) - 1 AS batch_id,\n        batch_size,\n        batch_type\n    FROM batch\n    WHERE name in ('BatchSchedule', 'batchFrameworkProcessing')\n)\nSELECT \n    batch_id, \n    CASE \n        WHEN batch_type = 'Prefill' THEN batch_size\n        ELSE NULL\n    END AS Prefill_batch_size,\n    CASE \n        WHEN batch_type = 'Decode' THEN batch_size\n        ELSE NULL\n    END AS Decode_batch_size\nFROM numbered_data\nORDER BY batch_id;\n",
+            "refId": "A"
+          }
+        ],
+        "title": "Batch Size by Batch ID",
+        "type": "xychart"
+      },
+      {
+        "datasource": {
+          "type": "frser-sqlite-datasource",
+          "uid": "be9gcyy5a15hcd"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "Time-consuming    μs",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "barWidthFactor": 0.6,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 1,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 10,
+          "x": 10,
+          "y": 0
+        },
+        "id": 2,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "11.3.0",
+        "targets": [
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "be9gcyy5a15hcd"
+            },
+            "queryText": "\nWITH converted AS (\n    SELECT\n        substr(timestamp, 1, 10) || 'T' || substr(timestamp, 12, 8) || '.' || substr(timestamp, 21, 6) || 'Z' AS datetime,\n        avg,\n        p99,\n        p90,\n        p50\n    FROM\n        first_token_latency\n)\nSELECT\n    datetime as time,\n    cast(avg as REAL) as \"avg\",\n    cast(p99 as REAL) as \"p99\",\n    cast(p90 as REAL) as \"p90\",\n    cast(p50 as REAL) as \"p50\"\nFROM\n    converted\nORDER BY\n    datetime ASC;\n",
+            "queryType": "time series",
+            "rawQueryText": "\nWITH converted AS (\n    SELECT\n        substr(timestamp, 1, 10) || 'T' || substr(timestamp, 12, 8) || '.' || substr(timestamp, 21, 6) || 'Z' AS datetime,\n        avg,\n        p99,\n        p90,\n        p50\n    FROM\n        first_token_latency\n)\nSELECT\n    datetime as time,\n    cast(avg as REAL) as \"avg\",\n    cast(p99 as REAL) as \"p99\",\n    cast(p90 as REAL) as \"p90\",\n    cast(p50 as REAL) as \"p50\"\nFROM\n    converted\nORDER BY\n    datetime ASC;\n",
+            "refId": "A",
+            "timeColumns": [
+              "time",
+              "ts"
+            ]
+          }
+        ],
+        "title": "first_token_latency",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "frser-sqlite-datasource",
+          "uid": "be9gcyy5a15hcd"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "Tokens/second   个/s",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "barWidthFactor": 0.6,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 1,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 6,
+          "w": 10,
+          "x": 10,
+          "y": 7
+        },
+        "id": 3,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "11.3.0",
+        "targets": [
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "be9gcyy5a15hcd"
+            },
+            "queryText": "\nWITH converted AS (\n    SELECT\n        substr(timestamp, 1, 10) || 'T' || substr(timestamp, 12, 8) || '.' || substr(timestamp, 21, 6) || 'Z' AS datetime,\n        avg,\n        p99,\n        p90,\n        p50\n    FROM\n        prefill_gen_speed\n)\nSELECT\n    datetime as time,\n    cast(avg as REAL) as \"avg\",\n    cast(p99 as REAL) as \"p99\",\n    cast(p90 as REAL) as \"p90\",\n    cast(p50 as REAL) as \"p50\"\nFROM\n    converted\nORDER BY\n    datetime ASC;\n",
+            "queryType": "time series",
+            "rawQueryText": "\nWITH converted AS (\n    SELECT\n        substr(timestamp, 1, 10) || 'T' || substr(timestamp, 12, 8) || '.' || substr(timestamp, 21, 6) || 'Z' AS datetime,\n        avg,\n        p99,\n        p90,\n        p50\n    FROM\n        prefill_gen_speed\n)\nSELECT\n    datetime as time,\n    cast(avg as REAL) as \"avg\",\n    cast(p99 as REAL) as \"p99\",\n    cast(p90 as REAL) as \"p90\",\n    cast(p50 as REAL) as \"p50\"\nFROM\n    converted\nORDER BY\n    datetime ASC;\n",
+            "refId": "A",
+            "timeColumns": [
+              "time",
+              "ts"
+            ]
+          }
+        ],
+        "title": "prefill_generate_speed_latency",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "frser-sqlite-datasource",
+          "uid": "be9gcyy5a15hcd"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "Req Num    个",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "barWidthFactor": 0.6,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 1,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 10,
+          "w": 10,
+          "x": 0,
+          "y": 8
+        },
+        "id": 6,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "11.3.0",
+        "targets": [
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "be9gcyy5a15hcd"
+            },
+            "queryText": "\nSELECT\n    substr(timestamp, 1, 10) || 'T' || substr(timestamp, 12, 8) || '.' || substr(timestamp, 21, 6) || 'Z' AS time,\n    WAITING,\n    PENDING,\n    RUNNING\nFROM\n    request_status\nORDER BY\n    time ASC;",
+            "queryType": "time series",
+            "rawQueryText": "\nSELECT\n    substr(timestamp, 1, 10) || 'T' || substr(timestamp, 12, 8) || '.' || substr(timestamp, 21, 6) || 'Z' AS time,\n    WAITING,\n    PENDING,\n    RUNNING\nFROM\n    request_status\nORDER BY\n    time ASC;",
+            "refId": "A",
+            "timeColumns": [
+              "time",
+              "ts"
+            ]
+          }
+        ],
+        "title": "Request Status",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "frser-sqlite-datasource",
+          "uid": "be9gcyy5a15hcd"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "Tokens/second   个/s",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "barWidthFactor": 0.6,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 1,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 10,
+          "x": 10,
+          "y": 13
+        },
+        "id": 4,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "11.3.0",
+        "targets": [
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "be9gcyy5a15hcd"
+            },
+            "queryText": "\nWITH converted AS (\n    SELECT\n        substr(timestamp, 1, 10) || 'T' || substr(timestamp, 12, 8) || '.' || substr(timestamp, 21, 6) || 'Z' AS datetime,\n        avg,\n        p99,\n        p90,\n        p50\n    FROM\n        decode_gen_speed\n)\nSELECT\n    datetime as time,\n    cast(avg as REAL) as \"avg\",\n    cast(p99 as REAL) as \"p99\",\n    cast(p90 as REAL) as \"p90\",\n    cast(p50 as REAL) as \"p50\"\nFROM\n    converted\nORDER BY\n    datetime ASC;\n",
+            "queryType": "time series",
+            "rawQueryText": "\nWITH converted AS (\n    SELECT\n        substr(timestamp, 1, 10) || 'T' || substr(timestamp, 12, 8) || '.' || substr(timestamp, 21, 6) || 'Z' AS datetime,\n        avg,\n        p99,\n        p90,\n        p50\n    FROM\n        decode_gen_speed\n)\nSELECT\n    datetime as time,\n    cast(avg as REAL) as \"avg\",\n    cast(p99 as REAL) as \"p99\",\n    cast(p90 as REAL) as \"p90\",\n    cast(p50 as REAL) as \"p50\"\nFROM\n    converted\nORDER BY\n    datetime ASC;\n",
+            "refId": "A",
+            "timeColumns": [
+              "time",
+              "ts"
+            ]
+          }
+        ],
+        "title": "decode_generate_speed_latency",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "frser-sqlite-datasource",
+          "uid": "be9gcyy5a15hcd"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "Kvcash Usage    %",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "barWidthFactor": 0.6,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 1,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 10,
+          "x": 0,
+          "y": 18
+        },
+        "id": 7,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "11.3.0",
+        "targets": [
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "be9gcyy5a15hcd"
+            },
+            "queryText": "\nWITH converted AS (\n    SELECT\n        kvcache_usage_rate * 100 AS kvcache_usage_percent,\n        substr(real_start_time, 1, 10) || 'T' || substr(real_start_time, 12, 8) || 'Z' AS datetime\n    FROM\n        kvcache\n)\nSELECT\n    datetime as time,\n    cast(kvcache_usage_percent as REAL) as \"kvcacge_usage\"\nFROM\n    converted\nORDER BY\n    datetime ASC;\n",
+            "queryType": "time series",
+            "rawQueryText": "\nWITH converted AS (\n    SELECT\n        kvcache_usage_rate * 100 AS kvcache_usage_percent,\n        substr(real_start_time, 1, 10) || 'T' || substr(real_start_time, 12, 8) || 'Z' AS datetime\n    FROM\n        kvcache\n)\nSELECT\n    datetime as time,\n    cast(kvcache_usage_percent as REAL) as \"kvcacge_usage\"\nFROM\n    converted\nORDER BY\n    datetime ASC;\n",
+            "refId": "A",
+            "timeColumns": [
+              "time",
+              "ts"
+            ]
+          }
+        ],
+        "title": "Kvcache usage percent",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "frser-sqlite-datasource",
+          "uid": "be9gcyy5a15hcd"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "Time-consuming    μs",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "barWidthFactor": 0.6,
+              "drawStyle": "line",
+              "fillOpacity": 0,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "linear",
+              "lineWidth": 1,
+              "pointSize": 5,
+              "scaleDistribution": {
+                "type": "linear"
+              },
+              "showPoints": "auto",
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": null
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            }
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 6,
+          "w": 10,
+          "x": 10,
+          "y": 20
+        },
+        "id": 5,
+        "options": {
+          "legend": {
+            "calcs": [],
+            "displayMode": "list",
+            "placement": "bottom",
+            "showLegend": true
+          },
+          "tooltip": {
+            "mode": "single",
+            "sort": "none"
+          }
+        },
+        "pluginVersion": "11.3.0",
+        "targets": [
+          {
+            "datasource": {
+              "type": "frser-sqlite-datasource",
+              "uid": "be9gcyy5a15hcd"
+            },
+            "queryText": "\nWITH converted AS (\n    SELECT\n        substr(timestamp, 1, 10) || 'T' || substr(timestamp, 12, 8) || '.' || substr(timestamp, 21, 6) || 'Z' AS datetime,\n        avg,\n        p99,\n        p90,\n        p50\n    FROM\n        req_latency\n)\nSELECT\n    datetime as time,\n    cast(avg as REAL) as \"avg\",\n    cast(p99 as REAL) as \"p99\",\n    cast(p90 as REAL) as \"p90\",\n    cast(p50 as REAL) as \"p50\"\nFROM\n    converted\nORDER BY\n    datetime ASC;\n",
+            "queryType": "time series",
+            "rawQueryText": "\nWITH converted AS (\n    SELECT\n        substr(timestamp, 1, 10) || 'T' || substr(timestamp, 12, 8) || '.' || substr(timestamp, 21, 6) || 'Z' AS datetime,\n        avg,\n        p99,\n        p90,\n        p50\n    FROM\n        req_latency\n)\nSELECT\n    datetime as time,\n    cast(avg as REAL) as \"avg\",\n    cast(p99 as REAL) as \"p99\",\n    cast(p90 as REAL) as \"p90\",\n    cast(p50 as REAL) as \"p50\"\nFROM\n    converted\nORDER BY\n    datetime ASC;\n",
+            "refId": "A",
+            "timeColumns": [
+              "time",
+              "ts"
+            ]
+          }
+        ],
+        "title": "request_latency",
+        "type": "timeseries"
+      }
+    ],
+    "preload": false,
+    "schemaVersion": 40,
+    "tags": [],
+    "templating": {
+      "list": []
+    },
+    "time": {
+      "from": "2025-01-09T07:18:08.213Z",
+      "to": "2025-01-09T07:34:57.856Z"
+    },
+    "timepicker": {},
+    "timezone": "browser",
+    "title": "Profiler Visualization",
+    "uid": "de854zjfowmwwd",
+    "version": 8,
+    "weekStart": ""
+}

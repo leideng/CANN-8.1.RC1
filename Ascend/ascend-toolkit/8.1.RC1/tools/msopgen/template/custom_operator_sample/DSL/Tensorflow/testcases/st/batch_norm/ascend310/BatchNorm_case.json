@@ -1,0 +1,219 @@
+[
+    {
+        "case_name": "Test_BatchNorm_001",
+        "op": "BatchNorm",
+        "input_desc": [
+            {
+                "format": [
+                    "NCHW"
+                ],
+                "type": [
+                    "float",
+                    "float16"
+                ],
+                "shape": [
+                    2,
+                    64,
+                    7
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "x"
+            },
+            {
+                "format": [
+                    "NCHW"
+                ],
+                "type": [
+                    "float",
+                    "float"
+                ],
+                "shape": [
+                    64
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "scale"
+            },
+            {
+                "format": [
+                    "NCHW"
+                ],
+                "type": [
+                    "float",
+                    "float"
+                ],
+                "shape": [
+                    64
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "offset"
+            },
+            {
+                "format": [
+                    "NCHW"
+                ],
+                "type": [
+                    "float",
+                    "float"
+                ],
+                "shape": [
+                    64
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "mean"
+            },
+            {
+                "format": [
+                    "NCHW"
+                ],
+                "type": [
+                    "float",
+                    "float"
+                ],
+                "shape": [
+                    64
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "variance"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "NCHW"
+                ],
+                "type": [
+                    "float",
+                    "float16"
+                ],
+                "shape": [
+                    2,
+                    64,
+                    7
+                ],
+                "name": "y"
+            },
+            {
+                "format": [
+                    "NCHW"
+                ],
+                "type": [
+                    "float",
+                    "float"
+                ],
+                "shape": [
+                    64
+                ],
+                "name": "batch_mean"
+            },
+            {
+                "format": [
+                    "NCHW"
+                ],
+                "type": [
+                    "float",
+                    "float"
+                ],
+                "shape": [
+                    64
+                ],
+                "name": "batch_variance"
+            },
+            {
+                "format": [
+                    "NCHW"
+                ],
+                "type": [
+                    "float",
+                    "float"
+                ],
+                "shape": [
+                    64
+                ],
+                "name": "reserve_space_1"
+            },
+            {
+                "format": [
+                    "NCHW"
+                ],
+                "type": [
+                    "float",
+                    "float"
+                ],
+                "shape": [
+                    64
+                ],
+                "name": "reserve_space_2"
+            },
+            {
+                "format": [
+                    "NCHW"
+                ],
+                "type": [
+                    "float",
+                    "float"
+                ],
+                "shape": [
+                    64
+                ],
+                "name": "reserve_space_3"
+            }
+        ],
+        "attr": [
+            {
+                "name": "epsilon",
+                "type": "float",
+                "value": 0.0001
+            },
+            {
+                "name": "data_format",
+                "type": "string",
+                "value": "NHWC"
+            },
+            {
+                "name": "is_training",
+                "type": "bool",
+                "value": false
+            }
+        ]
+    }
+]

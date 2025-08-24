@@ -1,0 +1,116 @@
+[
+    {
+        "case_name": "Test_Cast_001",
+        "op": "Cast",
+        "input_desc": [
+            {
+                "name": "x_tensor",
+                "format": ["ND"],
+                "type": ["int16"],
+                "shape": [2,5],
+                "data_distribute": ["uniform"],
+                "value_range": [[0.1, 10.0]],
+                "value": [[1,2,3,4,5],[6,7,8,9,0]]
+            }
+        ],
+        "output_desc": [
+            {
+                "format": ["ND"],
+                "type": ["int32"],
+                "shape": [2,5]
+            }
+        ],
+        "attr":[
+            {
+                "name": "dst_type",
+                "value": 3,
+                "type": "int"
+            }
+        ]
+    },
+    {
+        "case_name": "Test_Cast_002",
+        "op": "Cast",
+        "input_desc": [
+            {
+                "name": "x_tensor",
+                "format": ["ND"],
+                "type": ["int32"],
+                "shape": [2,3],
+                "data_distribute": ["uniform"],
+                "value_range": [[0.1, 10.0]],
+                "value": [[2,3,5],[6,80,20]]
+            }
+        ],
+        "output_desc": [
+            {
+                "format": ["ND"],
+                "type": ["int64"],
+                "shape": [2,3]
+            }
+        ],
+        "attr":[
+            {
+                "name": "dst_type",
+                "value": 9,
+                "type": "int"
+            }
+        ]
+    },
+    {
+        "case_name": "Test_Cast_003",
+        "op": "Cast",
+        "input_desc": [
+            {
+                "name": "x_tensor",
+                "format": ["ND"],
+                "type": ["float"],
+                "shape": [5,3],
+                "data_distribute": ["uniform"],
+                "value_range": [[-10.0, 10.0]]
+            }
+        ],
+        "output_desc": [
+            {
+                "format": ["ND"],
+                "type": ["int64"],
+                "shape": [5,3]
+            }
+        ],
+        "attr":[
+            {
+                "name": "dst_type",
+                "value": 9,
+                "type": "int"
+            }
+        ]
+    },
+    {
+        "case_name": "Test_Cast_004",
+        "op": "Cast",
+        "input_desc": [
+            {
+                "name": "x_tensor",
+                "format": ["ND"],
+                "type": ["int16"],
+                "shape": [4,3],
+                "data_distribute": ["uniform"],
+                "value_range": [[-10, 10]]
+            }
+        ],
+        "output_desc": [
+            {
+                "format": ["ND"],
+                "type": ["bool"],
+                "shape": [4,3]
+            }
+        ],
+        "attr":[
+            {
+                "name": "dst_type",
+                "value": 12,
+                "type": "int"
+            }
+        ]
+    }
+]

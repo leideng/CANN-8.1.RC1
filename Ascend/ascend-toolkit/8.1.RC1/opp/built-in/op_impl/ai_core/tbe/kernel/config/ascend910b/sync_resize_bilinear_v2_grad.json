@@ -1,0 +1,514 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SyncResizeBilinearV2Grad/d=0,p=0/0,3/0,3/0,3/,,,,0,0"
+      ],
+      "staticKey": "8ac6908cc1471a31df9df574d524ea33a74d8249b1fe40e41a42e679834e7632",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "original_image",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "ori_image_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "src_start_w",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "dst_start_w",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "half_pixel_centers",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sync_resize_bilinear_v2_grad/SyncResizeBilinearV2Grad_1_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SyncResizeBilinearV2Grad/d=1,p=0/0,3/0,3/0,3/,,,,0,0"
+      ],
+      "staticKey": "8ac6908cc1471a31df9df574d524ea33a74d8249b1fe40e41a42e679834e7632",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "original_image",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "ori_image_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "src_start_w",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "dst_start_w",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "half_pixel_centers",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sync_resize_bilinear_v2_grad/SyncResizeBilinearV2Grad_1_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SyncResizeBilinearV2Grad/d=0,p=0/0,3/0,3/0,3/,,,,0,1"
+      ],
+      "staticKey": "5118a0968a84bdf8756fe438f2bb655e61fb80efa99c2dadd82118d73fcb2e16",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "original_image",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "ori_image_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "src_start_w",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "dst_start_w",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "half_pixel_centers",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sync_resize_bilinear_v2_grad/SyncResizeBilinearV2Grad_2_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SyncResizeBilinearV2Grad/d=1,p=0/0,3/0,3/0,3/,,,,0,1"
+      ],
+      "staticKey": "5118a0968a84bdf8756fe438f2bb655e61fb80efa99c2dadd82118d73fcb2e16",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "original_image",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "ori_image_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "src_start_w",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "dst_start_w",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        },
+        {
+          "name": "half_pixel_centers",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sync_resize_bilinear_v2_grad/SyncResizeBilinearV2Grad_2_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SyncResizeBilinearV2Grad/d=0,p=0/0,3/0,3/0,3/,,,,1,0"
+      ],
+      "staticKey": "00aa89c45a66f50a9407c29f0c5a84b769d8f5a4191bc7a68201913df0decef4",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "original_image",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "ori_image_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "src_start_w",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "dst_start_w",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "half_pixel_centers",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sync_resize_bilinear_v2_grad/SyncResizeBilinearV2Grad_3_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "SyncResizeBilinearV2Grad/d=1,p=0/0,3/0,3/0,3/,,,,1,0"
+      ],
+      "staticKey": "00aa89c45a66f50a9407c29f0c5a84b769d8f5a4191bc7a68201913df0decef4",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "original_image",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "ori_image_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "src_start_w",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "dst_start_w",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "align_corners",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        },
+        {
+          "name": "half_pixel_centers",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sync_resize_bilinear_v2_grad/SyncResizeBilinearV2Grad_3_high_performance_deterministic.json"
+      }
+    }
+  ]
+}

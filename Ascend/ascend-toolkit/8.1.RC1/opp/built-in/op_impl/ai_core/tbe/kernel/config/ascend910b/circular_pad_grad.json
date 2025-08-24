@@ -1,0 +1,163 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CircularPadGrad/d=0,p=1/1,2/9,2/1,2",
+        "CircularPadGrad/d=0,p=0/1,2/9,2/1,2",
+        "CircularPadGrad/d=1,p=1/1,2/9,2/1,2",
+        "CircularPadGrad/d=1,p=0/1,2/9,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "158dc0217e0d274da8396aaf289aadf52686cc9d4535ed1d9e9aba58b9ab0009,b2372c46fb899c6a8f17a114dcc7e29ab40bd48cc4832b98c50df4ee9025fc4d",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/circular_pad_grad/CircularPadGrad_b5ae12d9dc09437584885fd41043fe84_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CircularPadGrad/d=0,p=1/27,2/9,2/27,2",
+        "CircularPadGrad/d=0,p=0/27,2/9,2/27,2",
+        "CircularPadGrad/d=1,p=1/27,2/9,2/27,2",
+        "CircularPadGrad/d=1,p=0/27,2/9,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "157e616bfa08aaa56b21ea978f86cc15b2996cb32e5b3096855461069ee9f94e,24f2ba6165283fb60cb3c1eda07cab403428afd1b46a91217a6b82b30effd81c",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/circular_pad_grad/CircularPadGrad_93c5fc1630d241308d3db2e826c9207c_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CircularPadGrad/d=0,p=1/0,2/9,2/0,2",
+        "CircularPadGrad/d=0,p=0/0,2/9,2/0,2",
+        "CircularPadGrad/d=1,p=1/0,2/9,2/0,2",
+        "CircularPadGrad/d=1,p=0/0,2/9,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "6047c106246a7bc9f72f058ddbdbb86887d0e1db5652ada7541c9f79ea4228a3,69433f1d5a00a61bd46fc4cf86fa3e823544f6b4bf66bd78a7ebd1f1b7c5fda3",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/circular_pad_grad/CircularPadGrad_6111489119d0406cba620d03f6f11054_high_performance.json"
+      }
+    }
+  ]
+}

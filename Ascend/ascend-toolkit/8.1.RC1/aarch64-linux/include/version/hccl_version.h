@@ -1,0 +1,8 @@
+#ifndef HCCL_VERSION_H
+#define HCCL_VERSION_H
+
+#define HCCL_VERSION_STR "8.1.RC1"
+#define HCCL_VERSION ((9 * 100000000) + (2 * 1000000) + ((2 * 100) + 5000))
+#define HCCL_TIMESTAMP 20250428203017761
+
+#endif /* HCCL_VERSION_H */

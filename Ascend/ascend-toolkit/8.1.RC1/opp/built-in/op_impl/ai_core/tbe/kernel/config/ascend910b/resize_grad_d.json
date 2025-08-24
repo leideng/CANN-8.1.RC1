@@ -1,0 +1,2192 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=0,p=0/1,2/1,2/,,,align_corners,,,,cubic,round_prefer_floor,HWNC"
+      ],
+      "staticKey": "9e2f4ab8d1fd4e22aef63b29f1bcc17129ad0a7ac8dffa9ea61c1cfcc2e7870f",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_360a604712241b734999d2b07a0cea47_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=1,p=0/1,2/1,2/,,,align_corners,,,,cubic,round_prefer_floor,HWNC"
+      ],
+      "staticKey": "9e2f4ab8d1fd4e22aef63b29f1bcc17129ad0a7ac8dffa9ea61c1cfcc2e7870f",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_360a604712241b734999d2b07a0cea47_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=0,p=0/1,2/1,2/,,,align_corners,,,,cubic,round_prefer_floor,NCHW",
+        "ResizeGradD/d=1,p=0/1,2/1,2/,,,align_corners,,,,cubic,round_prefer_floor,NCHW"
+      ],
+      "staticKey": "8ca303e2be5cc4cf6ab41b76b9a2a086116db5e757d87f3d2dce860f4cf7b3f5",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_6e08153944e692dd641404503313088f_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=0,p=0/1,2/1,2/,,,align_corners,,,,linear,round_prefer_floor,HWNC",
+        "ResizeGradD/d=1,p=0/1,2/1,2/,,,align_corners,,,,linear,round_prefer_floor,HWNC"
+      ],
+      "staticKey": "d1d98b8b275b7c3402190fba77a356e2c4c59da48150bba1c89c27544b8bf7d5",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "linear",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_6a9f9557ed2bce3b87e33fa82788f9fe_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=0,p=0/1,2/1,2/,,,align_corners,,,,linear,round_prefer_floor,NCHW",
+        "ResizeGradD/d=1,p=0/1,2/1,2/,,,align_corners,,,,linear,round_prefer_floor,NCHW"
+      ],
+      "staticKey": "152db960e78e61c8f54f6ec0092a4c0d8fbc429c1afd2bb0f159d00f5faf35db",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "linear",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_c2283f029c0cc001b8bcc5fef1c57500_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=0,p=0/1,2/1,2/,,,half_pixel,,,,cubic,round_prefer_floor,HWNC"
+      ],
+      "staticKey": "bd788a757a8bcbc68d90d33b8a24ea0fd86e6d79baba5a41357b281e3473c4c6",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_f648a22e6c1099b358a1d2fe525c40b9_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=1,p=0/1,2/1,2/,,,half_pixel,,,,cubic,round_prefer_floor,HWNC"
+      ],
+      "staticKey": "bd788a757a8bcbc68d90d33b8a24ea0fd86e6d79baba5a41357b281e3473c4c6",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_f648a22e6c1099b358a1d2fe525c40b9_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=0,p=0/1,2/1,2/,,,half_pixel,,,,cubic,round_prefer_floor,NCHW",
+        "ResizeGradD/d=1,p=0/1,2/1,2/,,,half_pixel,,,,cubic,round_prefer_floor,NCHW"
+      ],
+      "staticKey": "b8bf15d6901b50ed23aede69640ea1301523fb40c4ad868d166fed6e943e6d41",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_ed4d91d4a11032aa36545b196aaabcea_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=0,p=0/1,2/1,2/,,,half_pixel,,,,linear,round_prefer_floor,HWNC",
+        "ResizeGradD/d=1,p=0/1,2/1,2/,,,half_pixel,,,,linear,round_prefer_floor,HWNC"
+      ],
+      "staticKey": "50889ccce23e7963366c516302a0ebc78b98292fcca9bf1237680a154e2e0873",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "linear",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_751c1dbab806fb1ca84dea9a18c9c077_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=0,p=0/1,2/1,2/,,,half_pixel,,,,linear,round_prefer_floor,NCHW",
+        "ResizeGradD/d=1,p=0/1,2/1,2/,,,half_pixel,,,,linear,round_prefer_floor,NCHW"
+      ],
+      "staticKey": "5d68c3491dae4bef1d9d8f3199bdbb269ea2964d4397fa827523a4d0b0b4f2f7",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "linear",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_e30c2fa386e6b6e310a10a3fd0744495_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=0,p=0/0,2/0,2/,,,align_corners,,,,cubic,round_prefer_floor,HWNC"
+      ],
+      "staticKey": "e03949231bad74b752e2f5c4c0fe687147a2a4f37232781d7ee167a3ae172e50",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_49e38276eb045a99b664f32dce6cf12a_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=1,p=0/0,2/0,2/,,,align_corners,,,,cubic,round_prefer_floor,HWNC"
+      ],
+      "staticKey": "e03949231bad74b752e2f5c4c0fe687147a2a4f37232781d7ee167a3ae172e50",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_49e38276eb045a99b664f32dce6cf12a_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=0,p=0/0,2/0,2/,,,align_corners,,,,cubic,round_prefer_floor,NCHW"
+      ],
+      "staticKey": "c8c575a83a061e681f96a8d4deeb943b4ac36188ca2fd8f1562d4400b962be41",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_f95487cd8a7330c61fda3996705ec13d_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=1,p=0/0,2/0,2/,,,align_corners,,,,cubic,round_prefer_floor,NCHW"
+      ],
+      "staticKey": "c8c575a83a061e681f96a8d4deeb943b4ac36188ca2fd8f1562d4400b962be41",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_f95487cd8a7330c61fda3996705ec13d_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=0,p=0/0,2/0,2/,,,align_corners,,,,linear,round_prefer_floor,HWNC",
+        "ResizeGradD/d=1,p=0/0,2/0,2/,,,align_corners,,,,linear,round_prefer_floor,HWNC"
+      ],
+      "staticKey": "ab10dc5cbe6d4231fa5ab9feb5dcd555519cf74146b91f819320ffedbbf9ce2b",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "linear",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_79cc43e845953aaa50829a73f5b446bd_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=0,p=0/0,2/0,2/,,,align_corners,,,,linear,round_prefer_floor,NCHW",
+        "ResizeGradD/d=1,p=0/0,2/0,2/,,,align_corners,,,,linear,round_prefer_floor,NCHW"
+      ],
+      "staticKey": "6c35ccabebc69867ee6cb3713c8bea73a9a95f0e5789b04d46d3e29a02978984",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "align_corners",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "linear",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_c0cc4a4f6a1e988fb95b8ee58c1ce781_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=0,p=0/0,2/0,2/,,,half_pixel,,,,cubic,round_prefer_floor,HWNC"
+      ],
+      "staticKey": "139a3355ddb649f745d125ac7beafec9149fdb80f158d2c37a2f40086b0207d4",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_ce29aebc811b17adc1c14c44abacbaaf_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=1,p=0/0,2/0,2/,,,half_pixel,,,,cubic,round_prefer_floor,HWNC"
+      ],
+      "staticKey": "139a3355ddb649f745d125ac7beafec9149fdb80f158d2c37a2f40086b0207d4",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_ce29aebc811b17adc1c14c44abacbaaf_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=0,p=0/0,2/0,2/,,,half_pixel,,,,cubic,round_prefer_floor,NCHW"
+      ],
+      "staticKey": "69bff5085335600e90a2c98e113d5b1eab9b935504eb3f3794c7d24147a94d51",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_4af3e11778a9697f78ae252c46c960fe_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=1,p=0/0,2/0,2/,,,half_pixel,,,,cubic,round_prefer_floor,NCHW"
+      ],
+      "staticKey": "69bff5085335600e90a2c98e113d5b1eab9b935504eb3f3794c7d24147a94d51",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "cubic",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_4af3e11778a9697f78ae252c46c960fe_high_performance_deterministic.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=0,p=0/0,2/0,2/,,,half_pixel,,,,linear,round_prefer_floor,HWNC",
+        "ResizeGradD/d=1,p=0/0,2/0,2/,,,half_pixel,,,,linear,round_prefer_floor,HWNC"
+      ],
+      "staticKey": "9772e42c60dae6ffaea6b1be8d6d4329fa0a991f242d11b5e0f18f92f34972a2",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "linear",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "HWNC",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_53500db3c47ffe993dd2f4c3eda5ab05_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "ResizeGradD/d=0,p=0/0,2/0,2/,,,half_pixel,,,,linear,round_prefer_floor,NCHW",
+        "ResizeGradD/d=1,p=0/0,2/0,2/,,,half_pixel,,,,linear,round_prefer_floor,NCHW"
+      ],
+      "staticKey": "79076aea4144d2febdc9836d0bb0d67cb0dfbdeb70fd2dacda5fecd071fe0e56",
+      "inputs": [
+        {
+          "name": "grads",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "original_size",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "roi",
+          "dtype": "list_int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "scales",
+          "dtype": "list_float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "coordinate_transformation_mode",
+          "dtype": "string",
+          "value": "half_pixel",
+          "mode": "value"
+        },
+        {
+          "name": "cubic_coeff_a",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "exclude_outside",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "extrapolation_value",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "linear",
+          "mode": "value"
+        },
+        {
+          "name": "nearest_mode",
+          "dtype": "string",
+          "value": "round_prefer_floor",
+          "mode": "value"
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": "NCHW",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/resize_grad_d/ResizeGradD_9a9c5b566744fffaf519c2f9d924484b_high_performance.json"
+      }
+    }
+  ]
+}

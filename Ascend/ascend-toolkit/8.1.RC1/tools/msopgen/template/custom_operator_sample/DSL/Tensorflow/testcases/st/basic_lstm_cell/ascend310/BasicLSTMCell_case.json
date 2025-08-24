@@ -1,0 +1,251 @@
+[
+    {
+        "case_name": "Test_BasicLSTMCell_001",
+        "op": "BasicLSTMCell",
+        "input_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    64,
+                    48
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "x"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    64,
+                    32
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "h"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    64,
+                    32
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "c"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    80,
+                    128
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "w"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float32"
+                ],
+                "shape": [
+                    128
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "b"
+            },
+            {
+                "format": [
+                    "UNDEFINED"
+                ],
+                "type": [
+                    "UNDEFINED"
+                ],
+                "shape": [],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "mask"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float32"
+                ],
+                "shape": [
+                    64,
+                    32
+                ],
+                "name": "ct"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float32"
+                ],
+                "shape": [
+                    64,
+                    32
+                ],
+                "name": "ht"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float32"
+                ],
+                "shape": [
+                    64,
+                    32
+                ],
+                "name": "it"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float32"
+                ],
+                "shape": [
+                    64,
+                    32
+                ],
+                "name": "jt"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float32"
+                ],
+                "shape": [
+                    64,
+                    32
+                ],
+                "name": "ft"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float32"
+                ],
+                "shape": [
+                    64,
+                    32
+                ],
+                "name": "ot"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float32"
+                ],
+                "shape": [
+                    64,
+                    32
+                ],
+                "name": "tanhct"
+            }
+        ],
+        "attr": [
+            {
+                "name": "keep_prob",
+                "type": "float",
+                "value": 1.0
+            },
+            {
+                "name": "forget_bias",
+                "type": "float",
+                "value": 1.0
+            },
+            {
+                "name": "state_is_tuple",
+                "type": "bool",
+                "value": true
+            },
+            {
+                "name": "activation",
+                "type": "string",
+                "value": "tanh"
+            }
+        ]
+    }
+]

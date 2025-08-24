@@ -1,0 +1,364 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Conv2DTransposeV2/d=0,p=1/3,2/27,3/27,4/27,3",
+        "Conv2DTransposeV2/d=0,p=0/3,2/27,3/27,4/27,3",
+        "Conv2DTransposeV2/d=1,p=1/3,2/27,3/27,4/27,3",
+        "Conv2DTransposeV2/d=1,p=0/3,2/27,3/27,4/27,3"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "30e462ccb78c931862ead20b0d04ba0752a9adf373220be35e9f7a35f40cd9b4,aacae385d9ea538997e789c84a357c7eaa14a854c2e41fbfca90144300c4e85c",
+      "inputs": [
+        {
+          "name": "input_size",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "filter",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset_w",
+          "index": 4,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "output_padding",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/conv2d_transpose_v2/Conv2DTransposeV2_NC1HWC0_FRACTAL_Z_BF16_BF16_NC1HWC0_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Conv2DTransposeV2/d=0,p=1/3,2/0,3/0,4/0,3",
+        "Conv2DTransposeV2/d=0,p=0/3,2/0,3/0,4/0,3",
+        "Conv2DTransposeV2/d=1,p=1/3,2/0,3/0,4/0,3",
+        "Conv2DTransposeV2/d=1,p=0/3,2/0,3/0,4/0,3"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "4b16075a73f654d1131896353fd89f351d07b79f230531669b56b1f372aaaba3,8473889b70edfdd85bdab1db5db3ccd861a2b25159fc682f7448e84aa10493c7",
+      "inputs": [
+        {
+          "name": "input_size",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "filter",
+          "index": 2,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset_w",
+          "index": 4,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "output_padding",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/conv2d_transpose_v2/Conv2DTransposeV2_NC1HWC0_FRACTAL_Z_FP32_FP32_NC1HWC0_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Conv2DTransposeV2/d=0,p=1/3,2/1,3/1,4/1,3",
+        "Conv2DTransposeV2/d=0,p=0/3,2/1,3/1,4/1,3",
+        "Conv2DTransposeV2/d=1,p=1/3,2/1,3/1,4/1,3",
+        "Conv2DTransposeV2/d=1,p=0/3,2/1,3/1,4/1,3"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "4ac750e4ec31db3fcf1a45afcf2906e63076aa3992367ca2ef4af5cdde69d7ca,17be8a6f8f24936d86d914a9e3b4196fa1be15ff39833a833ce6668b94c8e29c",
+      "inputs": [
+        {
+          "name": "input_size",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "filter",
+          "index": 2,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset_w",
+          "index": 4,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "dilations",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "groups",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "data_format",
+          "dtype": "string",
+          "value": null
+        },
+        {
+          "name": "output_padding",
+          "dtype": "list_int",
+          "value": []
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/conv2d_transpose_v2/Conv2DTransposeV2_NC1HWC0_FRACTAL_Z_FP16_FP16_NC1HWC0_high_performance.json"
+      }
+    }
+  ]
+}

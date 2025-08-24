@@ -1,0 +1,57 @@
+<!--Configuration Description-->
+	<!--device id  : die id -->
+	<!--is_template: note that the configuration can be a template for default. -->
+	<!--group config -->
+		<!--group_id for stream config  : [1, 100]-->
+		<!--description : A string used to describe a grouping-->
+		<!--bw_high_rate_rate & bw_high_rate_rate : Bandwidth usage percentage, [0, 100]-->
+		<!--rules-->
+			<!--index : Label serial index belonging to this group, [0, 7]-->
+			<!--priority : Bandwidth scheduling priority, [0, 7]-->
+	<!--master config-->
+		<!--group_id for master config  : [100, 128]-->
+		<!--name : hardware master name-->
+			<!--MASTER_DVPP_VDEC/MASTER_DVPP_VPC/MASTER_DVPP_JPEGE/MASTER_DVPP_JPEGD/MASTER_PCIE-->
+		<!--bw_high_rate_rate & bw_high_rate_rate : Bandwidth usage percentage, [0, 100]-->
+		<!--hardlimit : Determines whether to forcibly limit the maximum bandwidth of the hardware master.-->
+			<!--true : forcibly limit, others : not forcibly limited-->
+		<!--priority : Bandwidth scheduling priority, [0, 7]-->
+<!--End-->
+
+<global_config enable = "false" tuning_en = "false" device_number = "16"/>
+<device id = '7' is_template = "true">
+		<group>
+			<qos_config group_id = "0" description = "Hallelujah" bwHighRate = "100" bwLowRate = "50">
+				<rule index = "0" priority = "5"/>
+				<rule index = "1" priority = "6"/>
+				<rule index = "2" priority = "4"/>
+			</qos_config>
+			<qos_config group_id = "3" description = "CMO_OPS" bwHighRate = "60" bwLowRate = "25">
+				<rule index = "0" priority = "2"/>
+				<rule index = "1" priority = "2"/>
+				<rule index = "7" priority = "2"/>
+			</qos_config>
+		</group>
+		<master>
+			<qos_config name = "MASTER_DVPP_VDEC" bwHighRate = "100" bwLowRate = "80" hardlimit = "false" group_id= "122" priority = "1"/>
+			<qos_config name = "MASTER_DVPP_VPC" bwHighRate = "100" bwLowRate = "80" hardlimit = "false" group_id= "123" priority = "1"/>
+			<qos_config name = "MASTER_DVPP_JPEGE" bwHighRate = "100" bwLowRate = "80" hardlimit = "false" group_id= "124" priority = "1"/>
+			<qos_config name = "MASTER_DVPP_JPEGD" bwHighRate = "100" bwLowRate = "80" hardlimit = "false" group_id= "125" priority = "1"/>
+			<qos_config name = "MASTER_PCIE" bwHighRate = "50" bwLowRate = "20" hardlimit = "false" group_id= "120" priority = "5"/>
+		</master>
+</device>
+<device id = '0' is_template = "false">
+		<group>
+			<qos_config group_id = "127" description = "FLUSH" bwHighRate = "60" bwLowRate = "25">
+				<rule index = "0" priority = "5"/>
+				<rule index = "1" priority = "5"/>
+				<rule index = "7" priority = "5"/>
+			</qos_config>
+		</group>
+		<master>
+			<qos_config name = "MASTER_DVPP_VDEC" bwHighRate = "100" bwLowRate = "80" hardlimit = "false" group_id= "122" priority = "1"/>
+			<qos_config name = "MASTER_DVPP_VPC" bwHighRate = "100" bwLowRate = "80" hardlimit = "false" group_id= "123" priority = "1"/>
+			<qos_config name = "MASTER_DVPP_JPEGE" bwHighRate = "100" bwLowRate = "80" hardlimit = "false" group_id= "124" priority = "1"/>
+		</master>
+</device>
+

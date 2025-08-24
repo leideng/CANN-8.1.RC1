@@ -1,0 +1,181 @@
+[
+    {
+        "case_name": "Test_Conv3D_001",
+        "op": "Conv3D",
+        "input_desc": [
+            {
+                "format": [
+                    "NDHWC"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    1,
+                    8,
+                    60,
+                    88,
+                    32
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "x"
+            },
+            {
+                "format": [
+                    "DHWCN"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    2,
+                    2,
+                    2,
+                    32,
+                    64
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "filter"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    5
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "value": [
+                    1,
+                    4,
+                    30,
+                    44,
+                    64
+                ],
+                "usr_value": [
+                    1,
+                    4,
+                    30,
+                    44,
+                    64
+                ],
+                "name": "bias"
+            },
+            {
+                "format": [
+                    "UNDEFINED"
+                ],
+                "type": [
+                    "UNDEFINED"
+                ],
+                "shape": [],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "offset_w"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "NDHWC"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    1,
+                    4,
+                    30,
+                    44,
+                    64
+                ],
+                "name": "y"
+            }
+        ],
+        "attr": [
+            {
+                "name": "strides",
+                "type": "list_int",
+                "value": [
+                    1,
+                    2,
+                    2,
+                    2,
+                    1
+                ]
+            },
+            {
+                "name": "pads",
+                "type": "list_int",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "name": "dilations",
+                "type": "list_int",
+                "value": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            {
+                "name": "groups",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "name": "data_format",
+                "type": "string",
+                "value": "NDHWC"
+            },
+            {
+                "name": "offset_x",
+                "type": "int",
+                "value": 0
+            }
+        ]
+    }
+]

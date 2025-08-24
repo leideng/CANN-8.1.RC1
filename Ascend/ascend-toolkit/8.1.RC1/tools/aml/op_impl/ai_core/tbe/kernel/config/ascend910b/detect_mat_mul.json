@@ -1,0 +1,301 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "DetectMatMul/d=0,p=1/0,2/0,2/0,2",
+        "DetectMatMul/d=0,p=0/0,2/0,2/0,2",
+        "DetectMatMul/d=1,p=1/0,2/0,2/0,2",
+        "DetectMatMul/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "staticKey": "cd199afcc37aafb59dc94f7f8b6e56cb77400d56d572e61f9d885c7d597cad4f,74e11c394b8fb3cd39df5e273c7c1323bd09b51f1eb6f02266783ffc05495f67",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "offset_w",
+          "index": 3,
+          "dtype": "int4",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "enable_hf32",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/detect_mat_mul/DetectMatMul_1890e7123cfc3c3ab413308e0a6806ad.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "DetectMatMul/d=0,p=1/27,2/27,2/27,2",
+        "DetectMatMul/d=0,p=0/27,2/27,2/27,2",
+        "DetectMatMul/d=1,p=1/27,2/27,2/27,2",
+        "DetectMatMul/d=1,p=0/27,2/27,2/27,2"
+      ],
+      "staticKey": "07bd2ecc179f748043c979bc99773f223b0c67236ae8d9f127709aa9a8d5e8a1,e7e8c20636897c0060bd431bb57e1c12c165c7ee360b63927d26416387a51f93",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "offset_w",
+          "index": 3,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "enable_hf32",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/detect_mat_mul/DetectMatMul_c096e5afb17703306cce405bf5d0eb71.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "DetectMatMul/d=0,p=1/1,2/1,2/1,2",
+        "DetectMatMul/d=0,p=0/1,2/1,2/1,2",
+        "DetectMatMul/d=1,p=1/1,2/1,2/1,2",
+        "DetectMatMul/d=1,p=0/1,2/1,2/1,2"
+      ],
+      "staticKey": "4cf5df4a7e7fe4fe0ec96965228eb99659770a05b9c52579b9d618748ad1fa88,8062f40c960d18cadc67bcc25fd4b56a83628a4bb30aae3704e863b61f306c4d",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "bias",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "offset_w",
+          "index": 3,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "transpose_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "transpose_x2",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "offset_x",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "enable_hf32",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "optionalInputMode": "gen_placeholder",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/detect_mat_mul/DetectMatMul_eda69cf3595595b264c67db53bce79f3.json"
+      }
+    }
+  ]
+}

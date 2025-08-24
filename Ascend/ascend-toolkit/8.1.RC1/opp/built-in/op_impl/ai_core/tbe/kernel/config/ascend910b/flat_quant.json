@@ -1,0 +1,164 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "FlatQuant/d=0,p=1/1,2/1,2/1,2/29,2/0,2",
+        "FlatQuant/d=0,p=0/1,2/1,2/1,2/29,2/0,2",
+        "FlatQuant/d=1,p=1/1,2/1,2/1,2/29,2/0,2",
+        "FlatQuant/d=1,p=0/1,2/1,2/1,2/29,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "6e073f5852d55404ed429cf696e1f1c9b9133f2a6e4cd9c88a4bcbf563589965,532ca3675c13eab21534f54f2c254d891d076b922d34baddfcc0955affcfdd81",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "kronecker_p1",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "kronecker_p2",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "out",
+          "index": 0,
+          "dtype": "int4",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "quant_scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "clip_ratio",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/flat_quant/FlatQuant_3703755a725dcc1f95ec73b7bc975607_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "FlatQuant/d=0,p=1/27,2/27,2/27,2/29,2/0,2",
+        "FlatQuant/d=0,p=0/27,2/27,2/27,2/29,2/0,2",
+        "FlatQuant/d=1,p=1/27,2/27,2/27,2/29,2/0,2",
+        "FlatQuant/d=1,p=0/27,2/27,2/27,2/29,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "fdfbaa6ec9b9bc95fbaeec458a323b4620f0f98f3f50892a62bc8d8d81b5555c,0aee9398b7873c3008c80a174fac8181b7d74d68d9f106474329d4df6a2b69a1",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "kronecker_p1",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "kronecker_p2",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "out",
+          "index": 0,
+          "dtype": "int4",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "quant_scale",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "clip_ratio",
+          "dtype": "float",
+          "value": 0.0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/flat_quant/FlatQuant_8cf01e6e64b7110750c9ec413cc6054e_high_performance.json"
+      }
+    }
+  ]
+}

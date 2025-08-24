@@ -1,0 +1,718 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 2,
+      "simplifiedKey": [
+        "Renorm/d=0,p=1/p=[null,null]/bfloat16",
+        "Renorm/d=0,p=0/p=[null,null]/bfloat16",
+        "Renorm/d=1,p=1/p=[null,null]/bfloat16",
+        "Renorm/d=1,p=0/p=[null,null]/bfloat16"
+      ],
+      "staticKey": "c9d06d2012c4801c21de78a29e96651fa8656614f8537b69c2097fc24bbb5402,3f66d5d31f6db6711f13541020938fc3d4f0432e03587456212a59fcf1999a17",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "dict",
+          "value_range": [
+            [
+              null,
+              null
+            ]
+          ],
+          "range_mode": "left_include"
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "maxnorm",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/renorm/Renorm_7b00407a812327191e201fe22ed9e4ae_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 2,
+      "simplifiedKey": [
+        "Renorm/d=0,p=1/p=0/bfloat16",
+        "Renorm/d=0,p=0/p=0/bfloat16",
+        "Renorm/d=1,p=1/p=0/bfloat16",
+        "Renorm/d=1,p=0/p=0/bfloat16"
+      ],
+      "staticKey": "36bfb48622dea6bded691456d419ab07e6fa5e13dd3bb8116a50afd744f07351,98f9fc7e16d8c131896341f2fcf9618dcde257e0d2a851ec74645f274cd83dde",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "maxnorm",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/renorm/Renorm_a2f1d694662a601aabf32feb011174ee_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 2,
+      "simplifiedKey": [
+        "Renorm/d=0,p=1/p=1/bfloat16",
+        "Renorm/d=0,p=0/p=1/bfloat16",
+        "Renorm/d=1,p=1/p=1/bfloat16",
+        "Renorm/d=1,p=0/p=1/bfloat16"
+      ],
+      "staticKey": "36bfb48622dea6bded691456d419ab07e6fa5e13dd3bb8116a50afd744f07351,98f9fc7e16d8c131896341f2fcf9618dcde257e0d2a851ec74645f274cd83dde",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "float",
+          "value": 1.0
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "maxnorm",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/renorm/Renorm_6a8ea67a18d9f86a2fd7a09e1e879e7e_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 2,
+      "simplifiedKey": [
+        "Renorm/d=0,p=1/p=2/bfloat16",
+        "Renorm/d=0,p=0/p=2/bfloat16",
+        "Renorm/d=1,p=1/p=2/bfloat16",
+        "Renorm/d=1,p=0/p=2/bfloat16"
+      ],
+      "staticKey": "36bfb48622dea6bded691456d419ab07e6fa5e13dd3bb8116a50afd744f07351,98f9fc7e16d8c131896341f2fcf9618dcde257e0d2a851ec74645f274cd83dde",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "float",
+          "value": 2.0
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "maxnorm",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/renorm/Renorm_5907683fa0f216cc3dbb89175f777f5d_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 2,
+      "simplifiedKey": [
+        "Renorm/d=0,p=1/p=[null,null]/float16",
+        "Renorm/d=0,p=0/p=[null,null]/float16",
+        "Renorm/d=1,p=1/p=[null,null]/float16",
+        "Renorm/d=1,p=0/p=[null,null]/float16"
+      ],
+      "staticKey": "b315c4a82c0963af0dae63d0efd476766d5cf0c452b3e2578acf1e32a2e281fa,00928343495e44441ab56c5c9cc3631dde1bcee6ff480f83d3964817617b1652",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "dict",
+          "value_range": [
+            [
+              null,
+              null
+            ]
+          ],
+          "range_mode": "left_include"
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "maxnorm",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/renorm/Renorm_8bed43affdbf596d834d2a0a046ee716_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 2,
+      "simplifiedKey": [
+        "Renorm/d=0,p=1/p=0/float16",
+        "Renorm/d=0,p=0/p=0/float16",
+        "Renorm/d=1,p=1/p=0/float16",
+        "Renorm/d=1,p=0/p=0/float16"
+      ],
+      "staticKey": "b8934dfb65fd888080058e5a994ed5400e3d00084ce1314910c41365b0520e56,f3131d5db0309c7a807ef7503901bd6f253cb64bb1cd0fa339c918ddfe8c1c03",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "maxnorm",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/renorm/Renorm_7432776b921817fbd1a1cc96d2e2b8fe_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 2,
+      "simplifiedKey": [
+        "Renorm/d=0,p=1/p=1/float16",
+        "Renorm/d=0,p=0/p=1/float16",
+        "Renorm/d=1,p=1/p=1/float16",
+        "Renorm/d=1,p=0/p=1/float16"
+      ],
+      "staticKey": "b8934dfb65fd888080058e5a994ed5400e3d00084ce1314910c41365b0520e56,f3131d5db0309c7a807ef7503901bd6f253cb64bb1cd0fa339c918ddfe8c1c03",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "float",
+          "value": 1.0
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "maxnorm",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/renorm/Renorm_a2102f291fc45f6d99f16bd841d6e4ba_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 2,
+      "simplifiedKey": [
+        "Renorm/d=0,p=1/p=2/float16",
+        "Renorm/d=0,p=0/p=2/float16",
+        "Renorm/d=1,p=1/p=2/float16",
+        "Renorm/d=1,p=0/p=2/float16"
+      ],
+      "staticKey": "b8934dfb65fd888080058e5a994ed5400e3d00084ce1314910c41365b0520e56,f3131d5db0309c7a807ef7503901bd6f253cb64bb1cd0fa339c918ddfe8c1c03",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "float",
+          "value": 2.0
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "maxnorm",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/renorm/Renorm_acbf26fcda2be32c9ef0170d98f637cd_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 2,
+      "simplifiedKey": [
+        "Renorm/d=0,p=1/p=[null,null]/float32",
+        "Renorm/d=0,p=0/p=[null,null]/float32",
+        "Renorm/d=1,p=1/p=[null,null]/float32",
+        "Renorm/d=1,p=0/p=[null,null]/float32"
+      ],
+      "staticKey": "e502e33c0bf0f7c53c11bdaa2179c2a4ce23dc40e0b066dff3a71755f37ebfa5,47b63c2667301a7d7f25f17bf8a696e2b58ddf4b3a54d96e23c9cceeb0f7ed38",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "dict",
+          "value_range": [
+            [
+              null,
+              null
+            ]
+          ],
+          "range_mode": "left_include"
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "maxnorm",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/renorm/Renorm_95ac5fad1a3f15e6199dc2819a15b1a8_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 2,
+      "simplifiedKey": [
+        "Renorm/d=0,p=1/p=0/float32",
+        "Renorm/d=0,p=0/p=0/float32",
+        "Renorm/d=1,p=1/p=0/float32",
+        "Renorm/d=1,p=0/p=0/float32"
+      ],
+      "staticKey": "dba7b6a115d034e286652317999783962d9711d2ecda140466e251b54510c37f,91b548f8bac7bc751aa4622226c8a33574f5e1e49ead3f37798218b732f4640a",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "maxnorm",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/renorm/Renorm_49ebb7bc1057f23132a146629c814876_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 2,
+      "simplifiedKey": [
+        "Renorm/d=0,p=1/p=1/float32",
+        "Renorm/d=0,p=0/p=1/float32",
+        "Renorm/d=1,p=1/p=1/float32",
+        "Renorm/d=1,p=0/p=1/float32"
+      ],
+      "staticKey": "dba7b6a115d034e286652317999783962d9711d2ecda140466e251b54510c37f,91b548f8bac7bc751aa4622226c8a33574f5e1e49ead3f37798218b732f4640a",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "float",
+          "value": 1.0
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "maxnorm",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/renorm/Renorm_e9fd33eb0c7c94efc12f1216acc753dc_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 2,
+      "simplifiedKey": [
+        "Renorm/d=0,p=1/p=2/float32",
+        "Renorm/d=0,p=0/p=2/float32",
+        "Renorm/d=1,p=1/p=2/float32",
+        "Renorm/d=1,p=0/p=2/float32"
+      ],
+      "staticKey": "dba7b6a115d034e286652317999783962d9711d2ecda140466e251b54510c37f,91b548f8bac7bc751aa4622226c8a33574f5e1e49ead3f37798218b732f4640a",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "p",
+          "dtype": "float",
+          "value": 2.0
+        },
+        {
+          "name": "dim",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "maxnorm",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/renorm/Renorm_8d3d70c081beb620647856890a07a09c_high_performance.json"
+      }
+    }
+  ]
+}

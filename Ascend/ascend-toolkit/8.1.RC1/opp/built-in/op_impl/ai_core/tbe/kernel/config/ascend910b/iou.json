@@ -1,0 +1,244 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "staticKey": "dc8fc82d3b754409ae9a65ce4fec933161da9a28f630b2a829580bff8e1498dc",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof"
+        },
+        {
+          "name": "eps",
+          "dtype": "float",
+          "value": 1.0
+        },
+        {
+          "name": "aligned",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/iou/Iou_1304667902bd20ea021136424cd2d97c_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "833b97b815b6a61f0567ec59b1c2887baff00c62a424a586adf1453663dd4952",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou"
+        },
+        {
+          "name": "eps",
+          "dtype": "float",
+          "value": 1.0
+        },
+        {
+          "name": "aligned",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/iou/Iou_5731635ce7ace0b7ec3f29d91f754cd3_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "dc8fc82d3b754409ae9a65ce4fec933161da9a28f630b2a829580bff8e1498dc",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iof"
+        },
+        {
+          "name": "eps",
+          "dtype": "float",
+          "value": 0.01
+        },
+        {
+          "name": "aligned",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/iou/Iou_5ce6ace8bdae5db15b1164ca6aaa0916_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "833b97b815b6a61f0567ec59b1c2887baff00c62a424a586adf1453663dd4952",
+      "inputs": [
+        {
+          "name": "bboxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gtboxes",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "overlap",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "iou"
+        },
+        {
+          "name": "eps",
+          "dtype": "float",
+          "value": 0.01
+        },
+        {
+          "name": "aligned",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/iou/Iou_c85eb743c5192aaaee1d6e864c231950_high_performance.json"
+      }
+    }
+  ]
+}

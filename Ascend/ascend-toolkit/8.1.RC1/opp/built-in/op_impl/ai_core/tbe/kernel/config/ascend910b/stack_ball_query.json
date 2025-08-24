@@ -1,0 +1,178 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "StackBallQuery/d=0,p=1/1,2/1,2/3,2/3,2/3,2",
+        "StackBallQuery/d=0,p=0/1,2/1,2/3,2/3,2/3,2",
+        "StackBallQuery/d=1,p=1/1,2/1,2/3,2/3,2/3,2",
+        "StackBallQuery/d=1,p=0/1,2/1,2/3,2/3,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "61d2cce2f43851da7fecbed7ef1c31232674d1c57cc695a9f2236de02b64ad9e,af122fe47f60c1180c9ae1ef889ffc4ac46b6702c9b7d6a253f9ff92cbb0fcfd",
+      "inputs": [
+        {
+          "name": "xyz",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "center_xyz",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "xyz_batch_cnt",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "center_xyz_batch_cnt",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "idx",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "max_radius",
+          "dtype": "float",
+          "paramType": "required",
+          "value": 0.1
+        },
+        {
+          "name": "sample_num",
+          "dtype": "int",
+          "paramType": "required",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/stack_ball_query/StackBallQuery_8dac16d0fd4cd4e7b20a7b4236e9c17d_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "StackBallQuery/d=0,p=1/0,2/0,2/3,2/3,2/3,2",
+        "StackBallQuery/d=0,p=0/0,2/0,2/3,2/3,2/3,2",
+        "StackBallQuery/d=1,p=1/0,2/0,2/3,2/3,2/3,2",
+        "StackBallQuery/d=1,p=0/0,2/0,2/3,2/3,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "2b81b5ef776963fc7a3cb1f538ed029d21fc99e3ff71beecaefde9a640e1f42e,111f1642b1cf6765336f9afc0d9fdd41f892875f7c33748a7b8be7f25fdd5fd0",
+      "inputs": [
+        {
+          "name": "xyz",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "center_xyz",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "xyz_batch_cnt",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "center_xyz_batch_cnt",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "idx",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "max_radius",
+          "dtype": "float",
+          "paramType": "required",
+          "value": 0.1
+        },
+        {
+          "name": "sample_num",
+          "dtype": "int",
+          "paramType": "required",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/stack_ball_query/StackBallQuery_3a3ec8506759d1b4dd35bc690207ddde_high_performance.json"
+      }
+    }
+  ]
+}

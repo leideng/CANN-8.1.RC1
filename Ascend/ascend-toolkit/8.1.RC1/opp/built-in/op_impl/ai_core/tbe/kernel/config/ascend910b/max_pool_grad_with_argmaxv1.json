@@ -1,0 +1,568 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "staticKey": "ecb89ce8d39a23611d8e1513ebdc1a7de9ed4c107e7b6681ccabe33738fd08d6",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "grad",
+          "index": 1,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "argmax",
+          "index": 2,
+          "dtype": "uint16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "ksize",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 3
+        },
+        {
+          "name": "dilation",
+          "dtype": "list_int",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "ceil_mode",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/max_pool_grad_with_argmaxv1/MaxPoolGradWithArgmaxV1_284cbb62163b9c48640a3f338acbc1be_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "cbaf38963e4dd7ff6e24a118ae0b6bd2c31479230b4298b093773c84dd53c67d",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "grad",
+          "index": 1,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "argmax",
+          "index": 2,
+          "dtype": "uint16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "ksize",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 3
+        },
+        {
+          "name": "dilation",
+          "dtype": "list_int",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "ceil_mode",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/max_pool_grad_with_argmaxv1/MaxPoolGradWithArgmaxV1_df3f78f6f443abfe1731ccc0fa778659_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "28d1058e4bdf9ab4f803a17f2fa3b22a8b721df8abb025e3ce620ff6a110aced",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "grad",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "argmax",
+          "index": 2,
+          "dtype": "uint16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "ksize",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 3
+        },
+        {
+          "name": "dilation",
+          "dtype": "list_int",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "ceil_mode",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/max_pool_grad_with_argmaxv1/MaxPoolGradWithArgmaxV1_689f170ccc1146a27ab0459b84a586c5_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "d25b1d7cb1f2a2f6874a29fceda2aba23694d9c47437417bb9b0d4004390594d",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "grad",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "argmax",
+          "index": 2,
+          "dtype": "uint16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "ksize",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 3
+        },
+        {
+          "name": "dilation",
+          "dtype": "list_int",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "ceil_mode",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/max_pool_grad_with_argmaxv1/MaxPoolGradWithArgmaxV1_d3b15b6dc614fe9c73d1e0ba44fbc3e9_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "bb48dcfe81aea4a91c553476fd3289e98b7fdff15b7bfa2d6465c2eaa78c8750",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "grad",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "argmax",
+          "index": 2,
+          "dtype": "int32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "ksize",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 3
+        },
+        {
+          "name": "dilation",
+          "dtype": "list_int",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "ceil_mode",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/max_pool_grad_with_argmaxv1/MaxPoolGradWithArgmaxV1_81959ad7d2521681626e63dff105e402_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "e2d202b9cc8f03acb5408f034963facd415f4353c7bbd816fc138b893e149354",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "grad",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        },
+        {
+          "name": "argmax",
+          "index": 2,
+          "dtype": "int32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NCHW",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatFixed"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "ksize",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "strides",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "pads",
+          "dtype": "list_int",
+          "value": null
+        },
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": 3
+        },
+        {
+          "name": "dilation",
+          "dtype": "list_int",
+          "value": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "name": "ceil_mode",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/max_pool_grad_with_argmaxv1/MaxPoolGradWithArgmaxV1_10b42f8ae728b2ec64b9f27e24c166ff_high_performance.json"
+      }
+    }
+  ]
+}

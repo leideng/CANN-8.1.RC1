@@ -1,0 +1,204 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "PreRmsNorm/d=0,p=1/1,2/1,2/1,2/1,2/1,2",
+        "PreRmsNorm/d=0,p=0/1,2/1,2/1,2/1,2/1,2",
+        "PreRmsNorm/d=1,p=1/1,2/1,2/1,2/1,2/1,2",
+        "PreRmsNorm/d=1,p=0/1,2/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "a742ea4e6616a827c0fc1867109983178b591e3a70f0b4d5c4da8878efc0ef25,02c54e17b652cbf4ef2ffa39e78971037876d93ec3b658c0a8bff3374c968a37",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_in",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "beta",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_out",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 0.1
+        },
+        {
+          "name": "high_precision_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "gemma_mode",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pre_rms_norm/PreRmsNorm_65c71c4f_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "PreRmsNorm/d=0,p=1/27,2/27,2/27,2/27,2/27,2",
+        "PreRmsNorm/d=0,p=0/27,2/27,2/27,2/27,2/27,2",
+        "PreRmsNorm/d=1,p=1/27,2/27,2/27,2/27,2/27,2",
+        "PreRmsNorm/d=1,p=0/27,2/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "79268c93c0eec7a35f4857561ee97c7f7317d00ca6941638c1a362c26fad04c6,360912d2280ee41108e8fd67c2ba4b72d96709f03f502280c8b680faa4a5d409",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_in",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "beta",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_out",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 0.1
+        },
+        {
+          "name": "high_precision_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "gemma_mode",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pre_rms_norm/PreRmsNorm_04d2fc1a_high_performance.json"
+      }
+    }
+  ]
+}

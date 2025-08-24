@@ -1,0 +1,996 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "PadV3Grad/d=0,p=0/1,2/3,2/1,2/edge,0",
+        "PadV3Grad/d=1,p=0/1,2/3,2/1,2/edge,0"
+      ],
+      "staticKey": "bd3fda2cf9eb6cfc42ee2d78d367c2cf75aead9c0198c3935967c31490736aaa",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "edge",
+          "mode": "value"
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad/PadV3Grad_932f2104d0f6d04b65d0559dd89b314a_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "PadV3Grad/d=0,p=0/1,2/3,2/1,2/edge,1",
+        "PadV3Grad/d=1,p=0/1,2/3,2/1,2/edge,1"
+      ],
+      "staticKey": "efe142e18c33a7274e905beef85c64f6ac0ded47975e16c14d2550ce56967ea4",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "edge",
+          "mode": "value"
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad/PadV3Grad_7b28512b63cf735c51c3e37dbc0d4e53_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "PadV3Grad/d=0,p=0/1,2/3,2/1,2/reflect,0",
+        "PadV3Grad/d=1,p=0/1,2/3,2/1,2/reflect,0"
+      ],
+      "staticKey": "6f932f06e875c46614dacf3adb749b21e1c48d941bcb337cc951d9242dde37a2",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "reflect",
+          "mode": "value"
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad/PadV3Grad_9637b73b00cbb66aa701c433479168df_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "PadV3Grad/d=0,p=0/1,2/3,2/1,2/reflect,1",
+        "PadV3Grad/d=1,p=0/1,2/3,2/1,2/reflect,1"
+      ],
+      "staticKey": "e9df20991ab385b533cb2666d216d9bf3bc2114b4ba4de4717dd8f36a7547518",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "reflect",
+          "mode": "value"
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad/PadV3Grad_3b40cc87419542b5448eb80445f3f577_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "PadV3Grad/d=0,p=0/1,2/9,2/1,2/edge,0",
+        "PadV3Grad/d=1,p=0/1,2/9,2/1,2/edge,0"
+      ],
+      "staticKey": "7c853672403971786391fb30f0f55bd4f71faef2f3f3e657e96bee81d197db7d",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "edge",
+          "mode": "value"
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad/PadV3Grad_37a18d91ed6e8f091a20318e477c80f6_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "PadV3Grad/d=0,p=0/1,2/9,2/1,2/edge,1",
+        "PadV3Grad/d=1,p=0/1,2/9,2/1,2/edge,1"
+      ],
+      "staticKey": "b6de5599241a01dedb956e87e0226b005dc9a899d28e9967b2a26a1c92625427",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "edge",
+          "mode": "value"
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad/PadV3Grad_f152b202c33e000be507bf4912905d38_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "PadV3Grad/d=0,p=0/1,2/9,2/1,2/reflect,0",
+        "PadV3Grad/d=1,p=0/1,2/9,2/1,2/reflect,0"
+      ],
+      "staticKey": "d9b46538bc56692e075191385f818b1025327396fff01a84dc513ab6e86d8548",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "reflect",
+          "mode": "value"
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad/PadV3Grad_6c0a56f859247d7da238b8abd61935c4_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "PadV3Grad/d=0,p=0/1,2/9,2/1,2/reflect,1",
+        "PadV3Grad/d=1,p=0/1,2/9,2/1,2/reflect,1"
+      ],
+      "staticKey": "dd09cf990de36d072d3cc54715b7391568d78c269f94f943de61f1223400db34",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "reflect",
+          "mode": "value"
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad/PadV3Grad_3d7cb133cab7ef71e39a186819999b05_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "PadV3Grad/d=0,p=0/0,2/3,2/0,2/edge,0",
+        "PadV3Grad/d=1,p=0/0,2/3,2/0,2/edge,0"
+      ],
+      "staticKey": "86b02137903303b4c0ee681c4609179b0b16ac092109da51518e600aa73cd7c1",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "edge",
+          "mode": "value"
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad/PadV3Grad_b6b20d7eaa59bc66c29a898a7793137e_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "PadV3Grad/d=0,p=0/0,2/3,2/0,2/edge,1",
+        "PadV3Grad/d=1,p=0/0,2/3,2/0,2/edge,1"
+      ],
+      "staticKey": "aa6ee2d5654c18aeedf2b86b5b4c00f3532f41c466301bfaf68f95854505411a",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "edge",
+          "mode": "value"
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad/PadV3Grad_1f30f3e2863a09840fc134571cf1d627_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "PadV3Grad/d=0,p=0/0,2/3,2/0,2/reflect,0",
+        "PadV3Grad/d=1,p=0/0,2/3,2/0,2/reflect,0"
+      ],
+      "staticKey": "ae2f691445b349a0a954b58e2b6138fa21f53fc3f636b9d13398d4e55264a5f7",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "reflect",
+          "mode": "value"
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad/PadV3Grad_4e124f04af727b23f2919cdc105b3247_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "PadV3Grad/d=0,p=0/0,2/3,2/0,2/reflect,1",
+        "PadV3Grad/d=1,p=0/0,2/3,2/0,2/reflect,1"
+      ],
+      "staticKey": "bb5d36fd0c0e71db909a668b211891a0ab464d779165adb7843ea5361506cbb6",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "reflect",
+          "mode": "value"
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad/PadV3Grad_30771bc3e0d6cca08ef9ba8c7c28468c_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "PadV3Grad/d=0,p=0/0,2/9,2/0,2/edge,0",
+        "PadV3Grad/d=1,p=0/0,2/9,2/0,2/edge,0"
+      ],
+      "staticKey": "fc879fcf0cbc43b04a0bf557d4845d6124a2b375c205554ef91559ae430b7405",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "edge",
+          "mode": "value"
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad/PadV3Grad_e78a882bb8cf5d1bd054250ec8eb8f17_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "PadV3Grad/d=0,p=0/0,2/9,2/0,2/edge,1",
+        "PadV3Grad/d=1,p=0/0,2/9,2/0,2/edge,1"
+      ],
+      "staticKey": "4eeb8293928a71d81aa0069976ce11a88a49518f14a26f09ccb85728ce5ca824",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "edge",
+          "mode": "value"
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad/PadV3Grad_2e86b4052d91ae13c17bd0f7a707973c_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "PadV3Grad/d=0,p=0/0,2/9,2/0,2/reflect,0",
+        "PadV3Grad/d=1,p=0/0,2/9,2/0,2/reflect,0"
+      ],
+      "staticKey": "0e44b2eeb8c8e787a7f3f686d598f03483d78e04fe420f9c94063442f8a25003",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "reflect",
+          "mode": "value"
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": false,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad/PadV3Grad_f066058638d0b32c87ed6c8418b3e54b_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "PadV3Grad/d=0,p=0/0,2/9,2/0,2/reflect,1",
+        "PadV3Grad/d=1,p=0/0,2/9,2/0,2/reflect,1"
+      ],
+      "staticKey": "af34fe21a08aeba6eb818edb4cac020fb4cb800757ffe4e7002adead8e950148",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "paddings",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "mode",
+          "dtype": "string",
+          "value": "reflect",
+          "mode": "value"
+        },
+        {
+          "name": "paddings_contiguous",
+          "dtype": "bool",
+          "value": true,
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pad_v3_grad/PadV3Grad_1f6cc9bf4e07d83b96a1bcfc0d716ff9_high_performance.json"
+      }
+    }
+  ]
+}

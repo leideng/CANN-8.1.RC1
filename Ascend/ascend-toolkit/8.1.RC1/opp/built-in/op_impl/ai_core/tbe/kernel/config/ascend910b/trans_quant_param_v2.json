@@ -1,0 +1,58 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "TransQuantParamV2/d=0,p=1/0,2/10,2",
+        "TransQuantParamV2/d=0,p=0/0,2/10,2",
+        "TransQuantParamV2/d=1,p=1/0,2/10,2",
+        "TransQuantParamV2/d=1,p=0/0,2/10,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "88d892c808348567145f94eb563f28af377c393910b990240216b2e5cff9a245,f0d831ff89cc6964cbb5496e02729d0524153bbf7a61af75ebc95e3f2dfa05ed",
+      "inputs": [
+        {
+          "name": "scale",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "uint64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/trans_quant_param_v2/TransQuantParamV2_high_performance.json"
+      }
+    }
+  ]
+}

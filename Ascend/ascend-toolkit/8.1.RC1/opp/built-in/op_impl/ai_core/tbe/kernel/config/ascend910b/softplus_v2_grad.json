@@ -1,0 +1,364 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftplusV2Grad/d=0,p=0/27,3/27,3/27,3",
+        "SoftplusV2Grad/d=1,p=0/27,3/27,3/27,3"
+      ],
+      "staticKey": "7e2d02b00be9e2b9a54b0f792237628cb54242a5cdeeb6d258625cb7c09065d5",
+      "inputs": [
+        {
+          "name": "input_gradients",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_features",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_backprops",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "beta",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "threshold",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softplus_v2_grad/SoftplusV2Grad_a813aece931d655069c8bb16e60978cd_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftplusV2Grad/d=0,p=0/27,2/27,2/27,2",
+        "SoftplusV2Grad/d=1,p=0/27,2/27,2/27,2"
+      ],
+      "staticKey": "66671d2eb463ea99ef566ff64d2726d0ba74b8a54e3dfab64d137ccf1d46e706",
+      "inputs": [
+        {
+          "name": "input_gradients",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_features",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_backprops",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "beta",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "threshold",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softplus_v2_grad/SoftplusV2Grad_11d58e928e0a768aec70c4f216e716ed_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftplusV2Grad/d=0,p=0/1,3/1,3/1,3",
+        "SoftplusV2Grad/d=1,p=0/1,3/1,3/1,3"
+      ],
+      "staticKey": "806066d652e2888794bc12c5b6cdecdd9e3efd36e76303732fe08b8799d7042a",
+      "inputs": [
+        {
+          "name": "input_gradients",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_features",
+          "index": 1,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_backprops",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "beta",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "threshold",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softplus_v2_grad/SoftplusV2Grad_904429d29ad4ad9fc1d4aae841177978_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftplusV2Grad/d=0,p=0/1,2/1,2/1,2",
+        "SoftplusV2Grad/d=1,p=0/1,2/1,2/1,2"
+      ],
+      "staticKey": "158f1c645a15338a4d6288bae68b477ab0f18529ec363e453556d81cb0b369b1",
+      "inputs": [
+        {
+          "name": "input_gradients",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_features",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_backprops",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "beta",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "threshold",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softplus_v2_grad/SoftplusV2Grad_3b961d1861411527363a37014a1e7f24_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftplusV2Grad/d=0,p=0/0,3/0,3/0,3",
+        "SoftplusV2Grad/d=1,p=0/0,3/0,3/0,3"
+      ],
+      "staticKey": "2b7b1c0681ffb6695c5323a2d0876af05067de389ccca096984cbc95e2ed0c46",
+      "inputs": [
+        {
+          "name": "input_gradients",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_features",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_backprops",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "beta",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "threshold",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softplus_v2_grad/SoftplusV2Grad_545d1c03aeb6683dbc7a406a308a6b24_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftplusV2Grad/d=0,p=0/0,2/0,2/0,2",
+        "SoftplusV2Grad/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "staticKey": "213f8c8dbf7c5df73347cafc6280e3f87ee17980315d0911f15aae65b8822260",
+      "inputs": [
+        {
+          "name": "input_gradients",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_features",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_backprops",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "beta",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "threshold",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softplus_v2_grad/SoftplusV2Grad_7d49df719c28feaad36819a8678ba365_high_performance.json"
+      }
+    }
+  ]
+}

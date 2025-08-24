@@ -1,0 +1,69 @@
+[
+    {
+        "case_name": "Test_Relu_001",
+        "op": "Relu",
+        "input_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "int32",
+                    "int8",
+                    "float16"
+                ],
+                "shape": [
+                    -1,
+                    2
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "shape_range": [
+                    [
+                        1,
+                        2
+                    ]
+                ],
+                "typical_shape": [
+                    2,
+                    2
+                ],
+                "name": "x"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "int32",
+                    "int8",
+                    "float16"
+                ],
+                "shape": [
+                    -1,
+                    2
+                ],
+                "shape_range": [
+                    [
+                        1,
+                        2
+                    ]
+                ],
+                "typical_shape": [
+                    2,
+                    2
+                ],
+                "name": "y"
+            }
+        ]
+    }
+]

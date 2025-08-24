@@ -1,0 +1,158 @@
+[
+    {
+        "case_name": "Test_Conv2D_001",
+        "op": "Conv2D",
+        "input_desc": [
+            {
+                "format": [
+                    "NCHW"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    1,
+                    32,
+                    1,
+                    1
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "x"
+            },
+            {
+                "format": [
+                    "NCHW"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    64,
+                    32,
+                    1,
+                    1
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "filter"
+            },
+            {
+                "format": [
+                    "UNDEFINED"
+                ],
+                "type": [
+                    "UNDEFINED"
+                ],
+                "shape": [],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "bias"
+            },
+            {
+                "format": [
+                    "UNDEFINED"
+                ],
+                "type": [
+                    "UNDEFINED"
+                ],
+                "shape": [],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "offset_w"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "NCHW"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    1,
+                    64,
+                    1,
+                    1
+                ],
+                "name": "y"
+            }
+        ],
+        "attr": [
+            {
+                "name": "strides",
+                "type": "list_int",
+                "value": [
+                    -1,
+                    -1,
+                    1,
+                    1
+                ]
+            },
+            {
+                "name": "pads",
+                "type": "list_int",
+                "value": [
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            },
+            {
+                "name": "dilations",
+                "type": "list_int",
+                "value": [
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            },
+            {
+                "name": "groups",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "name": "data_format",
+                "type": "string",
+                "value": "NHWC"
+            },
+            {
+                "name": "offset_x",
+                "type": "int",
+                "value": 0
+            }
+        ]
+    }
+]

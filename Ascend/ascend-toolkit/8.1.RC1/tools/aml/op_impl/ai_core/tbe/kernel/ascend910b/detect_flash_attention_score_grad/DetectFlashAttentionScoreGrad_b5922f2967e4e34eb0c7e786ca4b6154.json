@@ -1,0 +1,366 @@
+{
+ "binFileName": "DetectFlashAttentionScoreGrad_b5922f2967e4e34eb0c7e786ca4b6154",
+ "binFileSuffix": ".o",
+ "blockDim": -1,
+ "coreType": "MIX",
+ "intercoreSync": 1,
+ "kernelName": "DetectFlashAttentionScoreGrad_b5922f2967e4e34eb0c7e786ca4b6154",
+ "magic": "RT_DEV_BINARY_MAGIC_ELF",
+ "memoryStamping": [],
+ "opParaSize": 2032,
+ "parameters": [
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null
+ ],
+ "sha256": "76f0a6812dd252790879dd58526f2b597a21f80836a2ca72cb7d7e60729639af",
+ "workspace": {
+  "num": 1,
+  "size": [
+   -1
+  ],
+  "type": [
+   0
+  ]
+ },
+ "taskRation": "1:2",
+ "kernelList": [
+  {
+   "kernelName": "DetectFlashAttentionScoreGrad_b5922f2967e4e34eb0c7e786ca4b6154_10000001000000001434"
+  },
+  {
+   "kernelName": "DetectFlashAttentionScoreGrad_b5922f2967e4e34eb0c7e786ca4b6154_10000000000111001434"
+  },
+  {
+   "kernelName": "DetectFlashAttentionScoreGrad_b5922f2967e4e34eb0c7e786ca4b6154_10000000000000001134"
+  },
+  {
+   "kernelName": "DetectFlashAttentionScoreGrad_b5922f2967e4e34eb0c7e786ca4b6154_10000000000000001199"
+  },
+  {
+   "kernelName": "DetectFlashAttentionScoreGrad_b5922f2967e4e34eb0c7e786ca4b6154_10000000000000101099"
+  },
+  {
+   "kernelName": "DetectFlashAttentionScoreGrad_b5922f2967e4e34eb0c7e786ca4b6154_90"
+  }
+ ],
+ "optionalInputMode": "gen_placeholder",
+ "compileInfo": {},
+ "supportInfo": {
+  "implMode": "high_performance",
+  "int64Mode": false,
+  "simplifiedKeyMode": 0,
+  "simplifiedKey": [
+   "DetectFlashAttentionScoreGrad/d=0,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+   "DetectFlashAttentionScoreGrad/d=0,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+   "DetectFlashAttentionScoreGrad/d=1,p=1/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2",
+   "DetectFlashAttentionScoreGrad/d=1,p=0/0,2/0,2/0,2/0,2/0,2/0,2/0,2/0,2"
+  ],
+  "staticKey": "936e3a9587835bd6ab349b5a6ef5ac25ffbbd5dd8847765b7f7d46839f5123cd,bbda0c1e7d344a470a76ceb197622648cd4d234ef92617fe2fea973fbbbe6706",
+  "inputs": [
+   {
+    "name": "query",
+    "index": 0,
+    "dtype": "float32",
+    "format": "ND",
+    "paramType": "required",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "key",
+    "index": 1,
+    "dtype": "float32",
+    "format": "ND",
+    "paramType": "required",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "value",
+    "index": 2,
+    "dtype": "float32",
+    "format": "ND",
+    "paramType": "required",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "dy",
+    "index": 3,
+    "dtype": "float32",
+    "format": "ND",
+    "paramType": "required",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "pse_shift",
+    "index": 4,
+    "dtype": "float32",
+    "format": "ND",
+    "paramType": "optional",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "drop_mask",
+    "index": 5,
+    "dtype": "uint8",
+    "format": "ND",
+    "paramType": "optional",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "padding_mask",
+    "index": 6,
+    "dtype": "float32",
+    "format": "ND",
+    "paramType": "optional",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "atten_mask",
+    "index": 7,
+    "dtype": "bool",
+    "format": "ND",
+    "paramType": "optional",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "softmax_max",
+    "index": 8,
+    "dtype": "float32",
+    "format": "ND",
+    "paramType": "optional",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "softmax_sum",
+    "index": 9,
+    "dtype": "float32",
+    "format": "ND",
+    "paramType": "optional",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "softmax_in",
+    "index": 10,
+    "dtype": "float32",
+    "format": "ND",
+    "paramType": "optional",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "attention_in",
+    "index": 11,
+    "dtype": "float32",
+    "format": "ND",
+    "paramType": "optional",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "prefix",
+    "index": 12,
+    "dtype": "int64",
+    "format": "ND",
+    "paramType": "optional",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "actual_seq_qlen",
+    "index": 13,
+    "dtype": "int64",
+    "format": "ND",
+    "paramType": "optional",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "actual_seq_kvlen",
+    "index": 14,
+    "dtype": "int64",
+    "format": "ND",
+    "paramType": "optional",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "q_start_idx",
+    "index": 15,
+    "dtype": "int64",
+    "format": "ND",
+    "paramType": "optional",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "kv_start_idx",
+    "index": 16,
+    "dtype": "int64",
+    "format": "ND",
+    "paramType": "optional",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   }
+  ],
+  "outputs": [
+   {
+    "name": "dq",
+    "index": 0,
+    "dtype": "float32",
+    "format": "ND",
+    "paramType": "required",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "dk",
+    "index": 1,
+    "dtype": "float32",
+    "format": "ND",
+    "paramType": "required",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "dv",
+    "index": 2,
+    "dtype": "float32",
+    "format": "ND",
+    "paramType": "required",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   },
+   {
+    "name": "dpse",
+    "index": 3,
+    "dtype": "float32",
+    "format": "ND",
+    "paramType": "required",
+    "shape": [
+     -2
+    ],
+    "format_match_mode": "FormatAgnostic"
+   }
+  ],
+  "attrs": [
+   {
+    "name": "scale_value",
+    "dtype": "float",
+    "value": 0.0
+   },
+   {
+    "name": "keep_prob",
+    "dtype": "float",
+    "value": 0.0
+   },
+   {
+    "name": "pre_tockens",
+    "dtype": "int",
+    "value": 0
+   },
+   {
+    "name": "next_tockens",
+    "dtype": "int",
+    "value": 0
+   },
+   {
+    "name": "head_num",
+    "dtype": "int",
+    "value": 0
+   },
+   {
+    "name": "input_layout",
+    "dtype": "str",
+    "value": ""
+   },
+   {
+    "name": "inner_precise",
+    "dtype": "int",
+    "value": 0
+   },
+   {
+    "name": "sparse_mode",
+    "dtype": "int",
+    "value": 0
+   },
+   {
+    "name": "pse_type",
+    "dtype": "int",
+    "value": 0
+   }
+  ],
+  "opMode": "dynamic",
+  "optionalInputMode": "gen_placeholder",
+  "deterministic": "ignore"
+ },
+ "filePath": "ascend910b/bin/detect_flash_attention_score_grad/DetectFlashAttentionScoreGrad_b5922f2967e4e34eb0c7e786ca4b6154.json"
+}

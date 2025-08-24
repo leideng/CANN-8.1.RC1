@@ -1,0 +1,224 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "PreRmsNormQuant/d=0,p=1/1,2/1,2/1,2/2,2/2,2",
+        "PreRmsNormQuant/d=0,p=0/1,2/1,2/1,2/2,2/2,2",
+        "PreRmsNormQuant/d=1,p=1/1,2/1,2/1,2/2,2/2,2",
+        "PreRmsNormQuant/d=1,p=0/1,2/1,2/1,2/2,2/2,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "7d95e7d2fd3a9d6099026b245b4788b35788fef25c69cbf59b8092a10cbbab5f,289c8f1a0e4e84b2afbecb761dedc986ec840a1e99d215f8bd56574087907cf2",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_in",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "beta",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_out",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 0.1
+        },
+        {
+          "name": "high_precision_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "gemma_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 1.0
+        },
+        {
+          "name": "offset",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pre_rms_norm_quant/PreRmsNormQuant_c12f1c46_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "PreRmsNormQuant/d=0,p=1/27,2/27,2/27,2/2,2/2,2",
+        "PreRmsNormQuant/d=0,p=0/27,2/27,2/27,2/2,2/2,2",
+        "PreRmsNormQuant/d=1,p=1/27,2/27,2/27,2/2,2/2,2",
+        "PreRmsNormQuant/d=1,p=0/27,2/27,2/27,2/2,2/2,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "506da236d1427ead4555f5704dea144cf158790d127f3e648ae272015630ff21,303ccf0df9bdc72f013b7ef44151e18ecf64abed2ec7e5aa8b08abb0e21f93ed",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_in",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "beta",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "res_out",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 0.1
+        },
+        {
+          "name": "high_precision_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "gemma_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 1.0
+        },
+        {
+          "name": "offset",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/pre_rms_norm_quant/PreRmsNormQuant_ca26827e_high_performance.json"
+      }
+    }
+  ]
+}

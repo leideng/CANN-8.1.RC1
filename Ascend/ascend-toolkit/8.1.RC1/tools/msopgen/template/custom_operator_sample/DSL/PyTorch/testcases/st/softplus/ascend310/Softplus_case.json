@@ -1,0 +1,63 @@
+[
+    {
+        "case_name": "Test_Softplus_001",
+        "op": "Softplus",
+        "input_desc": [
+            {
+                "format": ["ND"],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    -1,
+                    4
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "shape_range": [
+                    [
+                        1,
+                        100
+                    ]
+                ],
+                "typical_shape": [
+                    2,
+                    4
+                ],
+                "name": "x"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    -1,
+                    4
+                ],
+                "shape_range": [
+                    [
+                        1,
+                        100
+                    ]
+                ],
+                "typical_shape": [
+                    2,
+                    4
+                ],
+                "name": "y"
+            }
+        ]
+    }
+]

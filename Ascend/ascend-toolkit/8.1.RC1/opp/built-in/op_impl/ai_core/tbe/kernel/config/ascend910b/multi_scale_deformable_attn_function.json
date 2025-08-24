@@ -1,0 +1,87 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MultiScaleDeformableAttnFunction/d=0,p=1/0,2/3,2/3,2/0,2/0,2/0,2",
+        "MultiScaleDeformableAttnFunction/d=0,p=0/0,2/3,2/3,2/0,2/0,2/0,2",
+        "MultiScaleDeformableAttnFunction/d=1,p=1/0,2/3,2/3,2/0,2/0,2/0,2",
+        "MultiScaleDeformableAttnFunction/d=1,p=0/0,2/3,2/3,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "824ac8cac48859dfc99e75e091f9ed2389e90261696653294d5057221c9ccad9,9f6d20e386208d39577b86f58608780f93609e43c4ecc4374e537f76633a9a04",
+      "inputs": [
+        {
+          "name": "value",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "value_spatial_shapes",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "value_level_start_index",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sampling_locations",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "attention_weights",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/multi_scale_deformable_attn_function/MultiScaleDeformableAttnFunction_fp32_int32_high_performance.json"
+      }
+    }
+  ]
+}

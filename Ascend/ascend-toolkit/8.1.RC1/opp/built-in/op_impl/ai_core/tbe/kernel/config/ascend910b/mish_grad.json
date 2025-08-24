@@ -1,0 +1,2446 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/27,4/27,4/,/27,4",
+        "MishGrad/d=0,p=0/27,4/27,4/,/27,4",
+        "MishGrad/d=1,p=1/27,4/27,4/,/27,4",
+        "MishGrad/d=1,p=0/27,4/27,4/,/27,4"
+      ],
+      "staticKey": "1fa1dcec254ea046304b393bbee192b0993eb6fce0668e0f0cc332d1eac72520,d3b6a1e0c1f5f6e58e5aebf36498031d715f64f2e322813a62002cad465b8402",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_57c6ff8d149d28de0ef4515195c5d536_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/27,4/27,4/27,4/27,4",
+        "MishGrad/d=0,p=0/27,4/27,4/27,4/27,4",
+        "MishGrad/d=1,p=1/27,4/27,4/27,4/27,4",
+        "MishGrad/d=1,p=0/27,4/27,4/27,4/27,4"
+      ],
+      "staticKey": "bf34cc649b3ecc22c2578ef6309bfdee4ae150da19e972239673ffee729e0d18,430b42e0b0df646be54019f3566de449a4c0e112e68b143d7b6790971d463dcd",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_Z",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_8d5fbae97e58c542e8a37ac0fa0ca229_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/27,3/27,3/,/27,3",
+        "MishGrad/d=0,p=0/27,3/27,3/,/27,3",
+        "MishGrad/d=1,p=1/27,3/27,3/,/27,3",
+        "MishGrad/d=1,p=0/27,3/27,3/,/27,3"
+      ],
+      "staticKey": "4bdc5d37f5b0c6b26bd2f3741b460729f82e7a7bef0b472961849eb2642919d1,94448c0bdbcfdebb50ac58bf5a7316469e0b87be50a0020f221dddcd30af549d",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_3947ae12d1104c6f817e58662a8217b5_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/27,3/27,3/27,3/27,3",
+        "MishGrad/d=0,p=0/27,3/27,3/27,3/27,3",
+        "MishGrad/d=1,p=1/27,3/27,3/27,3/27,3",
+        "MishGrad/d=1,p=0/27,3/27,3/27,3/27,3"
+      ],
+      "staticKey": "f514fdf6f9e19a2aa64769c6a226e15c0d7b651146b07ef0437fd81afe982cac,2a5baa32f2517990e29f75bb9ad09d693a4e0f283661d6c353dc61944b87e644",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_6e2ec2bdbd744f83d59dfce188e3cc13_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/27,2/27,2/,/27,2",
+        "MishGrad/d=0,p=0/27,2/27,2/,/27,2",
+        "MishGrad/d=1,p=1/27,2/27,2/,/27,2",
+        "MishGrad/d=1,p=0/27,2/27,2/,/27,2"
+      ],
+      "staticKey": "7264361c5ff5863cc2bc837e5b32974dda2e991da4e3344efb5b0aa450808526,fbb7ed1cd06ecf7b661dbd0960d13537991a9742181125ca97b74766b03cbe01",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_24b2b8ac685f4b8efb6c894d8501556e_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/27,2/27,2/27,2/27,2",
+        "MishGrad/d=0,p=0/27,2/27,2/27,2/27,2",
+        "MishGrad/d=1,p=1/27,2/27,2/27,2/27,2",
+        "MishGrad/d=1,p=0/27,2/27,2/27,2/27,2"
+      ],
+      "staticKey": "5c7038d2b145cc9a090be575ad00dfc2ecda5d75f495c24ef2212310de7dc5c0,2393458add0c83dd74610baeebb9d593208362b2fe0676ce3052661873a1d6e6",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_e87c9546cf2804355cf0d9445a2db01a_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/1,29/1,29/,/1,29",
+        "MishGrad/d=0,p=0/1,29/1,29/,/1,29",
+        "MishGrad/d=1,p=1/1,29/1,29/,/1,29",
+        "MishGrad/d=1,p=0/1,29/1,29/,/1,29"
+      ],
+      "staticKey": "484c9a4e6fa52cad1d5a4569b20a7fd571eb473653d7ee5bfcf7dc620ebadb58,5a1bbb62c462e7dd2750e7214ffec970f670a34e64e6cf0d0c3922ded3209924",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_2a3d07360a5edab18e7e0d0e4ce3de8c_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/1,29/1,29/1,29/1,29",
+        "MishGrad/d=0,p=0/1,29/1,29/1,29/1,29",
+        "MishGrad/d=1,p=1/1,29/1,29/1,29/1,29",
+        "MishGrad/d=1,p=0/1,29/1,29/1,29/1,29"
+      ],
+      "staticKey": "460665a2f57ff2360053640a984684fd3d82096b0f987ff6a43b7d76bb02f8b0,0ac82c42c97e50d31ff2b2dd18fbb9f00bd9c877df96c453fff5e479f51d7f29",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_03a0c034b2a50caacf53d0e34c3b94bc_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/1,4/1,4/,/1,4",
+        "MishGrad/d=0,p=0/1,4/1,4/,/1,4",
+        "MishGrad/d=1,p=1/1,4/1,4/,/1,4",
+        "MishGrad/d=1,p=0/1,4/1,4/,/1,4"
+      ],
+      "staticKey": "ed7266a58c38976c9d64d0a85f9e3fb8cdcf76847da3e84c41cd3c11f3e532e8,6d6e43092036db8e1d2d0a965767e7b3bda5f23e8e2f38eafbe1bbceaf73d2c7",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_3a89b3e53f4f733bcaa2ffd00feaa3a9_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/1,4/1,4/1,4/1,4",
+        "MishGrad/d=0,p=0/1,4/1,4/1,4/1,4",
+        "MishGrad/d=1,p=1/1,4/1,4/1,4/1,4",
+        "MishGrad/d=1,p=0/1,4/1,4/1,4/1,4"
+      ],
+      "staticKey": "f5e8234a30ae49e7dba96e0d2cd4b20f2b4907df22662d34282d97b060db2c43,7f5053a60e6d324becc041d5fab787ed78934005b5c28bb333699ed8172aedd9",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_a823aa72eb23ae8257bd9895bd04f881_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/1,3/1,3/,/1,3",
+        "MishGrad/d=0,p=0/1,3/1,3/,/1,3",
+        "MishGrad/d=1,p=1/1,3/1,3/,/1,3",
+        "MishGrad/d=1,p=0/1,3/1,3/,/1,3"
+      ],
+      "staticKey": "e20135c6db571e60b3b32feb93031c4e456734c436c44f057af0a26649926b73,b4a1ce60bfa16a551118e6bbb289d71b944bb351fcf584b6f5a9148c7f86a7f8",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_fd423b7da03ce4a6200c741e29ea0cc7_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/1,3/1,3/1,3/1,3",
+        "MishGrad/d=0,p=0/1,3/1,3/1,3/1,3",
+        "MishGrad/d=1,p=1/1,3/1,3/1,3/1,3",
+        "MishGrad/d=1,p=0/1,3/1,3/1,3/1,3"
+      ],
+      "staticKey": "e1d09ff9a41e55ddfd3be4cdbfea0bf48b91f8a8a4d6c555c9660d4a88697753,45c7c65488a57613a70e3775d25d5c21d148d3edc41745c884783f3f8051d534",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_48c8d00cb42af18375005dc8b290b7ee_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/1,2/1,2/,/1,2",
+        "MishGrad/d=0,p=0/1,2/1,2/,/1,2",
+        "MishGrad/d=1,p=1/1,2/1,2/,/1,2",
+        "MishGrad/d=1,p=0/1,2/1,2/,/1,2"
+      ],
+      "staticKey": "dbd89463312d6cffe14bd0dd03cf1b5f58b5f05f01d4635b0bd58ef471ffc51a,da0f79d29122978620618abe13fa830c6aa2ced068aa0f01e2d1c7622538c8ef",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_343e536bad50544c92b301ce62d30eb3_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/1,2/1,2/1,2/1,2",
+        "MishGrad/d=0,p=0/1,2/1,2/1,2/1,2",
+        "MishGrad/d=1,p=1/1,2/1,2/1,2/1,2",
+        "MishGrad/d=1,p=0/1,2/1,2/1,2/1,2"
+      ],
+      "staticKey": "0097d631691c744af37a23c6735dbba2cc47550817f183ea9b648c43517f0d22,f43dcf857ee48ae11387644d1717d8b737e9604ac48eb661601db1e572bea414",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_1056052785b43db3ca4234fbf5e08c0e_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/0,29/0,29/,/0,29",
+        "MishGrad/d=0,p=0/0,29/0,29/,/0,29",
+        "MishGrad/d=1,p=1/0,29/0,29/,/0,29",
+        "MishGrad/d=1,p=0/0,29/0,29/,/0,29"
+      ],
+      "staticKey": "c0fddabb2bcb6b7bcedde6e8473d4b42145610414d8fe01f90479cc921404dab,f3b0f328025258c7934e54a6a2c2fd10626e96808a6d0bd372bc814aed7ec891",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_b61b05dbf253144ed6c7cd693c12a7dd_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/0,29/0,29/0,29/0,29",
+        "MishGrad/d=0,p=0/0,29/0,29/0,29/0,29",
+        "MishGrad/d=1,p=1/0,29/0,29/0,29/0,29",
+        "MishGrad/d=1,p=0/0,29/0,29/0,29/0,29"
+      ],
+      "staticKey": "c806bb4f20c3d86bf410da9c6c01925c0c9c820c2450c423871eb74d156ccd73,f2db73afc6cfa23a2df95a422b1df9172d038eb2f150a4efebea5d12eac83060",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_54f4d2a5537627b0f85af5986d0ee8b8_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/0,4/0,4/,/0,4",
+        "MishGrad/d=0,p=0/0,4/0,4/,/0,4",
+        "MishGrad/d=1,p=1/0,4/0,4/,/0,4",
+        "MishGrad/d=1,p=0/0,4/0,4/,/0,4"
+      ],
+      "staticKey": "b522029cdbf5ec0a4448a154d008ff266a501674f10886b1f237049b9caf0ac2,5393294ed9f46fe408f50ad13553a9d29621219327d9c188db024dc25cdce5bd",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_338e4eb96cdaec40ca486fe9465de415_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/0,4/0,4/0,4/0,4",
+        "MishGrad/d=0,p=0/0,4/0,4/0,4/0,4",
+        "MishGrad/d=1,p=1/0,4/0,4/0,4/0,4",
+        "MishGrad/d=1,p=0/0,4/0,4/0,4/0,4"
+      ],
+      "staticKey": "5b3300fddd95f691162f47efdeab51f0714838099e905a62ffcd94cc9c431d5d,955a66d280b92dd6ce8ecd0585c45d38f159d2650c3e6277536d52f46466dd44",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_36bbf2f576e46feaee79a294eb8775be_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/0,3/0,3/,/0,3",
+        "MishGrad/d=0,p=0/0,3/0,3/,/0,3",
+        "MishGrad/d=1,p=1/0,3/0,3/,/0,3",
+        "MishGrad/d=1,p=0/0,3/0,3/,/0,3"
+      ],
+      "staticKey": "93db412be8e16ca2d5b8334ea9ff68f2d4fe87a8a79e8817af56ddc2ebcd2449,d850c60a7584c90a6746612126dd4439d0be0a9373b5ca7f7a6856b877ca1a0c",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_9f9d297cfc58069d80e003d5e4d61d90_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/0,3/0,3/0,3/0,3",
+        "MishGrad/d=0,p=0/0,3/0,3/0,3/0,3",
+        "MishGrad/d=1,p=1/0,3/0,3/0,3/0,3",
+        "MishGrad/d=1,p=0/0,3/0,3/0,3/0,3"
+      ],
+      "staticKey": "8d5f7293caeadc5e2a4abb10696ea25fb2874cebc6d6c1516bb3e85ab06a5909,ab854c91791bebfd02cab38c2b6d23d5127e8266338ec8fc8b20cb54c447188e",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_61ca81c7435e5502c1c7e5c076adb54f_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/0,2/0,2/,/0,2",
+        "MishGrad/d=0,p=0/0,2/0,2/,/0,2",
+        "MishGrad/d=1,p=1/0,2/0,2/,/0,2",
+        "MishGrad/d=1,p=0/0,2/0,2/,/0,2"
+      ],
+      "staticKey": "bcaa23944039f460aa9229c52f4e5bf15bd41fd132ae417f043e7301bc4908c7,dac6cd031db477016bda27ec34dcdc910d585117356f18f8d2680eb28c1b84b4",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_1e98fd55788457b283c603f752e7d0a9_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=1/0,2/0,2/0,2/0,2",
+        "MishGrad/d=0,p=0/0,2/0,2/0,2/0,2",
+        "MishGrad/d=1,p=1/0,2/0,2/0,2/0,2",
+        "MishGrad/d=1,p=0/0,2/0,2/0,2/0,2"
+      ],
+      "staticKey": "e7ee671befb09f01a579e6b447052e4f8660d41790aaa0c02a813a8d991f88b7,10ece6b820443a55859e93e431b9869965527700534b902d054c8d6c436c9db4",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_54f1d1caf8fe36c496f699fefe98fbca_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/27,4/27,4/,/27,4",
+        "MishGrad/d=1,p=2/27,4/27,4/,/27,4"
+      ],
+      "staticKey": "3cf74f3d065b78c880c3e7dca8d361f93e3788e7eed9664869d089f0e48a69f0",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_57c6ff8d149d28de0ef4515195c5d536_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/27,4/27,4/27,4/27,4",
+        "MishGrad/d=1,p=2/27,4/27,4/27,4/27,4"
+      ],
+      "staticKey": "85b6a0266a5ec90930a14003f5dbe818515a60c745c20187b512fcd35586d2f7",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_Z",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_8d5fbae97e58c542e8a37ac0fa0ca229_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/27,3/27,3/,/27,3",
+        "MishGrad/d=1,p=2/27,3/27,3/,/27,3"
+      ],
+      "staticKey": "a82232c2998d1a0966b1e8df2fefda2552ce60dfd4d092b44b4719d7fcb3b00e",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_3947ae12d1104c6f817e58662a8217b5_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/27,3/27,3/27,3/27,3",
+        "MishGrad/d=1,p=2/27,3/27,3/27,3/27,3"
+      ],
+      "staticKey": "cfe1972da1b1f526e1344231ca67dcf36804af93cbbc136cf9e9a16126268f76",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_6e2ec2bdbd744f83d59dfce188e3cc13_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/27,2/27,2/,/27,2",
+        "MishGrad/d=1,p=2/27,2/27,2/,/27,2"
+      ],
+      "staticKey": "939e4a44b6b54b46aa2ef524d1d23923b1ddb129100824412c5aa85964e2bd79",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_24b2b8ac685f4b8efb6c894d8501556e_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/27,2/27,2/27,2/27,2",
+        "MishGrad/d=1,p=2/27,2/27,2/27,2/27,2"
+      ],
+      "staticKey": "ef3e34173cab5c52ae3fe852ad15c8e935543b9842a9d6046291052e06a701be",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_e87c9546cf2804355cf0d9445a2db01a_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/1,29/1,29/,/1,29",
+        "MishGrad/d=1,p=2/1,29/1,29/,/1,29"
+      ],
+      "staticKey": "5c3845698c622bd23075685d1033418fbb86f6fc7b75909332d39df1aa002779",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_2a3d07360a5edab18e7e0d0e4ce3de8c_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/1,29/1,29/1,29/1,29",
+        "MishGrad/d=1,p=2/1,29/1,29/1,29/1,29"
+      ],
+      "staticKey": "c637855a259bc986ab3e835f259a21943078536bad48d763a4a754e39b01fc1b",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_03a0c034b2a50caacf53d0e34c3b94bc_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/1,4/1,4/,/1,4",
+        "MishGrad/d=1,p=2/1,4/1,4/,/1,4"
+      ],
+      "staticKey": "ab5ac409280d292ec02c2897015ce0acf2feac450ab621fdc0416ecd7ac75dbe",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_3a89b3e53f4f733bcaa2ffd00feaa3a9_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/1,4/1,4/1,4/1,4",
+        "MishGrad/d=1,p=2/1,4/1,4/1,4/1,4"
+      ],
+      "staticKey": "13bbf0d08fa6b1c5e9f049a15f9f50b92f106af4bfa6fc0aaf2ccabf281f7713",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_a823aa72eb23ae8257bd9895bd04f881_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/1,3/1,3/,/1,3",
+        "MishGrad/d=1,p=2/1,3/1,3/,/1,3"
+      ],
+      "staticKey": "001f8a3e8fe230337bfe69667e1ff6b3cb81af2bac16557f891b6201142e89ac",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_fd423b7da03ce4a6200c741e29ea0cc7_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/1,3/1,3/1,3/1,3",
+        "MishGrad/d=1,p=2/1,3/1,3/1,3/1,3"
+      ],
+      "staticKey": "969a05e0efe99202e5acea5ba7ed0eee3796c1a72685af8c8b803c73078fb871",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_48c8d00cb42af18375005dc8b290b7ee_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/1,2/1,2/,/1,2",
+        "MishGrad/d=1,p=2/1,2/1,2/,/1,2"
+      ],
+      "staticKey": "4c31a588e28b6c0349b241952ea0f9e6131b9910b3a837f0d723feed7474cfa7",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_343e536bad50544c92b301ce62d30eb3_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/1,2/1,2/1,2/1,2",
+        "MishGrad/d=1,p=2/1,2/1,2/1,2/1,2"
+      ],
+      "staticKey": "19778d7c0dbed9271ca8c009d1d4a8ed6ddb595e7ba4a7ea85327e805cd772ea",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_1056052785b43db3ca4234fbf5e08c0e_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/0,29/0,29/,/0,29",
+        "MishGrad/d=1,p=2/0,29/0,29/,/0,29"
+      ],
+      "staticKey": "f64f3a9a2b3c989a04a038bc935813b800f25cd866f08374e3f05c2049d985e9",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_b61b05dbf253144ed6c7cd693c12a7dd_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/0,29/0,29/0,29/0,29",
+        "MishGrad/d=1,p=2/0,29/0,29/0,29/0,29"
+      ],
+      "staticKey": "f2204b1adaef4eecaa34fe388218e8ad5ea4845f33ff61a654dfda10f3a10a78",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_54f4d2a5537627b0f85af5986d0ee8b8_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/0,4/0,4/,/0,4",
+        "MishGrad/d=1,p=2/0,4/0,4/,/0,4"
+      ],
+      "staticKey": "cc6618390078b83cb13e9ebebc96525ffdf80bc42b79bcefdac84bf7fcb2a7b5",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_338e4eb96cdaec40ca486fe9465de415_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/0,4/0,4/0,4/0,4",
+        "MishGrad/d=1,p=2/0,4/0,4/0,4/0,4"
+      ],
+      "staticKey": "2403201d8f216992ebd3a185a2a5a1a5844326f0eaa1309911f1117f343dd607",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_Z",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_36bbf2f576e46feaee79a294eb8775be_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/0,3/0,3/,/0,3",
+        "MishGrad/d=1,p=2/0,3/0,3/,/0,3"
+      ],
+      "staticKey": "e690c54662a138f870486ba7dd920ab362bca695a9fba1ec26500e82abde82b2",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_9f9d297cfc58069d80e003d5e4d61d90_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/0,3/0,3/0,3/0,3",
+        "MishGrad/d=1,p=2/0,3/0,3/0,3/0,3"
+      ],
+      "staticKey": "fa2ea962f4f303164414e7dbb2a77c17dd9ba80ed2de318235a9b6112121dc21",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_61ca81c7435e5502c1c7e5c076adb54f_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/0,2/0,2/,/0,2",
+        "MishGrad/d=1,p=2/0,2/0,2/,/0,2"
+      ],
+      "staticKey": "bbeb624b13813ea19cef8d35cc25c60a69f9d73983ccf3ac4fb6047cd88d5927",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_1e98fd55788457b283c603f752e7d0a9_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "MishGrad/d=0,p=2/0,2/0,2/0,2/0,2",
+        "MishGrad/d=1,p=2/0,2/0,2/0,2/0,2"
+      ],
+      "staticKey": "76818d3383fd7a2dd9828eb4d1daea403c98f9b2629de18816590cbe9fb35c29",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "tanhx",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/mish_grad/MishGrad_54f1d1caf8fe36c496f699fefe98fbca_high_precision.json"
+      }
+    }
+  ]
+}

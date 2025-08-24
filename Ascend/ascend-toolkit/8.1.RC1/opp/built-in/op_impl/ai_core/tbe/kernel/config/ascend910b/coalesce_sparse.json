@@ -1,0 +1,1000 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CoalesceSparse/d=0,p=1/9,2/9,2/9,2/0,2/9,2/0,2",
+        "CoalesceSparse/d=0,p=0/9,2/9,2/9,2/0,2/9,2/0,2",
+        "CoalesceSparse/d=1,p=1/9,2/9,2/9,2/0,2/9,2/0,2",
+        "CoalesceSparse/d=1,p=0/9,2/9,2/9,2/0,2/9,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "e8e82df427b143c7cff45b1cb06e256dd5b3ffdba8619db0338caca3b1291f54,7d1d8a60b70961f90ec4a3623a3e955250cdadcfd610a9c2f613e0f243861282",
+      "inputs": [
+        {
+          "name": "unique_len",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "unique_indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "values",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "new_indices",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "new_values",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/coalesce_sparse/CoalesceSparse_0_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CoalesceSparse/d=0,p=1/9,2/9,2/9,2/3,2/9,2/3,2",
+        "CoalesceSparse/d=0,p=0/9,2/9,2/9,2/3,2/9,2/3,2",
+        "CoalesceSparse/d=1,p=1/9,2/9,2/9,2/3,2/9,2/3,2",
+        "CoalesceSparse/d=1,p=0/9,2/9,2/9,2/3,2/9,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "0826756e24fde4723e52283beb7550016afa42d8a9097a6dca50c095b38c61d0,5e843c053c8d592ae0a6616318cc22f5696fdcd0efa9f5c3c401913640550956",
+      "inputs": [
+        {
+          "name": "unique_len",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "unique_indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "values",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "new_indices",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "new_values",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/coalesce_sparse/CoalesceSparse_1_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CoalesceSparse/d=0,p=1/9,2/9,2/9,2/1,2/9,2/1,2",
+        "CoalesceSparse/d=0,p=0/9,2/9,2/9,2/1,2/9,2/1,2",
+        "CoalesceSparse/d=1,p=1/9,2/9,2/9,2/1,2/9,2/1,2",
+        "CoalesceSparse/d=1,p=0/9,2/9,2/9,2/1,2/9,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "6c726cd72578ee6c74b3a6abee0585c3238096d2defdb8889b151bfa66ee2e54,473b1261d20da8c9005e7627c7c98e2ac51699c8852941a252d4226b92fb2093",
+      "inputs": [
+        {
+          "name": "unique_len",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "unique_indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "values",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "new_indices",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "new_values",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/coalesce_sparse/CoalesceSparse_2_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CoalesceSparse/d=0,p=1/9,2/9,2/3,2/0,2/3,2/0,2",
+        "CoalesceSparse/d=0,p=0/9,2/9,2/3,2/0,2/3,2/0,2",
+        "CoalesceSparse/d=1,p=1/9,2/9,2/3,2/0,2/3,2/0,2",
+        "CoalesceSparse/d=1,p=0/9,2/9,2/3,2/0,2/3,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "df8e68394e331d4fb40be46bd83bcde6e7fe51b27f42c08c5798dff4265b4762,9caa3c97993e71a3994c7bfd12afe3211dcf59cf9dc41647305dce0da0eddff9",
+      "inputs": [
+        {
+          "name": "unique_len",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "unique_indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "values",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "new_indices",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "new_values",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/coalesce_sparse/CoalesceSparse_3_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CoalesceSparse/d=0,p=1/9,2/9,2/3,2/3,2/3,2/3,2",
+        "CoalesceSparse/d=0,p=0/9,2/9,2/3,2/3,2/3,2/3,2",
+        "CoalesceSparse/d=1,p=1/9,2/9,2/3,2/3,2/3,2/3,2",
+        "CoalesceSparse/d=1,p=0/9,2/9,2/3,2/3,2/3,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "c433dac414b66b72bacab450ce50c98ae58f2b2ba0f05e212ab9624f6e9e47d4,78d9ccd4729f25606a9df3797f8ceb5a5c0b647f413de0340a30a696de42195f",
+      "inputs": [
+        {
+          "name": "unique_len",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "unique_indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "values",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "new_indices",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "new_values",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/coalesce_sparse/CoalesceSparse_4_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CoalesceSparse/d=0,p=1/9,2/9,2/3,2/1,2/3,2/1,2",
+        "CoalesceSparse/d=0,p=0/9,2/9,2/3,2/1,2/3,2/1,2",
+        "CoalesceSparse/d=1,p=1/9,2/9,2/3,2/1,2/3,2/1,2",
+        "CoalesceSparse/d=1,p=0/9,2/9,2/3,2/1,2/3,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "f5e57719af75c960cb6f13da8115f32c6dd3590e25cb8813bfab945884a4a569,375e2ffaaa376855507ec3bd7dacb4cf3128f7238307b6d3e885860580585442",
+      "inputs": [
+        {
+          "name": "unique_len",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "unique_indices",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "values",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "new_indices",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "new_values",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/coalesce_sparse/CoalesceSparse_5_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CoalesceSparse/d=0,p=1/3,2/3,2/9,2/0,2/9,2/0,2",
+        "CoalesceSparse/d=0,p=0/3,2/3,2/9,2/0,2/9,2/0,2",
+        "CoalesceSparse/d=1,p=1/3,2/3,2/9,2/0,2/9,2/0,2",
+        "CoalesceSparse/d=1,p=0/3,2/3,2/9,2/0,2/9,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "04c87dc01000dcf5c0464905d2d3025a5e2bdc2385063326cac6a8e1a7b40fe8,57a874498b0ca88f869577702094bcf5a7a78e2c292a0d283233fb2a826368de",
+      "inputs": [
+        {
+          "name": "unique_len",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "unique_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "values",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "new_indices",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "new_values",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/coalesce_sparse/CoalesceSparse_6_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CoalesceSparse/d=0,p=1/3,2/3,2/9,2/3,2/9,2/3,2",
+        "CoalesceSparse/d=0,p=0/3,2/3,2/9,2/3,2/9,2/3,2",
+        "CoalesceSparse/d=1,p=1/3,2/3,2/9,2/3,2/9,2/3,2",
+        "CoalesceSparse/d=1,p=0/3,2/3,2/9,2/3,2/9,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "4ea1ff7711ff870bbfea01d1603219926a32fb19ae703b1a59238855240203be,eca2a464cc13951d314405dc14e16ea75839eff1c61cf7a1733c450a089fa3b0",
+      "inputs": [
+        {
+          "name": "unique_len",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "unique_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "values",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "new_indices",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "new_values",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/coalesce_sparse/CoalesceSparse_7_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CoalesceSparse/d=0,p=1/3,2/3,2/9,2/1,2/9,2/1,2",
+        "CoalesceSparse/d=0,p=0/3,2/3,2/9,2/1,2/9,2/1,2",
+        "CoalesceSparse/d=1,p=1/3,2/3,2/9,2/1,2/9,2/1,2",
+        "CoalesceSparse/d=1,p=0/3,2/3,2/9,2/1,2/9,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "59c007cecf73e4653971d940df5b138176f9b0cf065309595c504eb37d5bd453,69d30410b974b79bd6b890c939acc334573339acd8af24a446b51b9348a2eb8e",
+      "inputs": [
+        {
+          "name": "unique_len",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "unique_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "values",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "new_indices",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "new_values",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/coalesce_sparse/CoalesceSparse_8_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CoalesceSparse/d=0,p=1/3,2/3,2/3,2/0,2/3,2/0,2",
+        "CoalesceSparse/d=0,p=0/3,2/3,2/3,2/0,2/3,2/0,2",
+        "CoalesceSparse/d=1,p=1/3,2/3,2/3,2/0,2/3,2/0,2",
+        "CoalesceSparse/d=1,p=0/3,2/3,2/3,2/0,2/3,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "0621cb594c3511febeeb81b88f7c7d9bfe607de0b5a7726dfa7309abd1703c8a,36135a69362b53e39128b639dbcc0c02b57b68f3d3bd75551b6550a487a74ea9",
+      "inputs": [
+        {
+          "name": "unique_len",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "unique_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "values",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "new_indices",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "new_values",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/coalesce_sparse/CoalesceSparse_9_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CoalesceSparse/d=0,p=1/3,2/3,2/3,2/3,2/3,2/3,2",
+        "CoalesceSparse/d=0,p=0/3,2/3,2/3,2/3,2/3,2/3,2",
+        "CoalesceSparse/d=1,p=1/3,2/3,2/3,2/3,2/3,2/3,2",
+        "CoalesceSparse/d=1,p=0/3,2/3,2/3,2/3,2/3,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "391c90d9a16cdca9e5f59742acf5ca7e245ffc1f69ae114fee863356ee7aca3a,e18c25a1c9830dbf748127fa21999c75cd438dab0eda65923780cb10193c40fe",
+      "inputs": [
+        {
+          "name": "unique_len",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "unique_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "values",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "new_indices",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "new_values",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/coalesce_sparse/CoalesceSparse_10_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CoalesceSparse/d=0,p=1/3,2/3,2/3,2/1,2/3,2/1,2",
+        "CoalesceSparse/d=0,p=0/3,2/3,2/3,2/1,2/3,2/1,2",
+        "CoalesceSparse/d=1,p=1/3,2/3,2/3,2/1,2/3,2/1,2",
+        "CoalesceSparse/d=1,p=0/3,2/3,2/3,2/1,2/3,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "8c0e3da76e72261c6025fe57b33b01f96d67aecd0326cf3aa3b8e7f040865c00,ca2be1262e9beebee291767b413ed6ff6bb6f98efec8c3c9fc015309873090ed",
+      "inputs": [
+        {
+          "name": "unique_len",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "unique_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "values",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "new_indices",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "new_values",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/coalesce_sparse/CoalesceSparse_11_high_performance.json"
+      }
+    }
+  ]
+}

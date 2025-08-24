@@ -1,0 +1,2092 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=1/27,29/27,29/27,29/none",
+        "GeluGradV2/d=1,p=1/27,29/27,29/27,29/none"
+      ],
+      "staticKey": "e4d761f0e1d589539ebd36cf2b1d82bad51d59b60ec74c40a4dec3f94ae54a20",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_c1fdd7cafdabd7da693fa947ad61f0bb_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=1/27,29/27,29/27,29/tanh",
+        "GeluGradV2/d=1,p=1/27,29/27,29/27,29/tanh"
+      ],
+      "staticKey": "20a72efc9292a64894a09f9bd3646307de0a693a1bb6c40a96c0e0c63fa32159",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "tanh",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_d27f615251219cbeb4d4d341f6100f34_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=1/27,3/27,3/27,3/none",
+        "GeluGradV2/d=1,p=1/27,3/27,3/27,3/none"
+      ],
+      "staticKey": "f0b166590ca75a38d8095e7b3d0a8e05b3b49f47871a5f893d8746ee9d08e5ba",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_23625bc6b8bc9a316a2db30065ac4166_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=1/27,3/27,3/27,3/tanh",
+        "GeluGradV2/d=1,p=1/27,3/27,3/27,3/tanh"
+      ],
+      "staticKey": "14fc4c810b79cd65ef95c25fdb1d2ec889d28d38b2162ae2d3c5cbdba81bf807",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "tanh",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_a459399a8e567fa5c89463bf4cc49cdc_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=1/27,2/27,2/27,2/none",
+        "GeluGradV2/d=1,p=1/27,2/27,2/27,2/none"
+      ],
+      "staticKey": "6943f7eae5365e36614f5b35b37fe7141c028153e0ab82ccffefcc836e565bca",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_d8772b4716068dbf317365c879b50952_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=1/27,2/27,2/27,2/tanh",
+        "GeluGradV2/d=1,p=1/27,2/27,2/27,2/tanh"
+      ],
+      "staticKey": "e8b824686a75b1afbfd063612b205a99528602ad06857bf302c18559d2a3325c",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "tanh",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_cd41d17f4622c69434b04aac864aff4c_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=1/1,29/1,29/1,29/none",
+        "GeluGradV2/d=1,p=1/1,29/1,29/1,29/none"
+      ],
+      "staticKey": "a3a29642c1a6d01018477bb016ab9ad8241b36aed3ca096c96b9b80cc81f094c",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_c52dc60e01570f6dfde75f9aef70ae44_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=1/1,29/1,29/1,29/tanh",
+        "GeluGradV2/d=1,p=1/1,29/1,29/1,29/tanh"
+      ],
+      "staticKey": "68f03c7a0c2b5fbb4f2942b2b07310cc9ada66a97aa4fa980f505e8be8b9416d",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "tanh",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_47b33ab90e6b4a9d28565c57a827b622_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=1/1,3/1,3/1,3/none",
+        "GeluGradV2/d=1,p=1/1,3/1,3/1,3/none"
+      ],
+      "staticKey": "ec16356639ce1aae858aa7b92364f8aeca298d4333dc4414a161d87765afff7b",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_4e31d41d1037ad62d9e7a174580bcee9_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=1/1,3/1,3/1,3/tanh",
+        "GeluGradV2/d=1,p=1/1,3/1,3/1,3/tanh"
+      ],
+      "staticKey": "ed4066b945012c913bb1dc1d11b939f73ef0b6f4175bf8050c00caea0e3e9d9a",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "tanh",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_8c5c471cee8c5a761bee4d09f654d053_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=1/1,2/1,2/1,2/none",
+        "GeluGradV2/d=1,p=1/1,2/1,2/1,2/none"
+      ],
+      "staticKey": "d4b41dee41967ec9f5a011671ea6965bc2be714200effcdc27a9a4555cb69b89",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_b2fba0aa15d212b864b2621380db5ea6_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=1/1,2/1,2/1,2/tanh",
+        "GeluGradV2/d=1,p=1/1,2/1,2/1,2/tanh"
+      ],
+      "staticKey": "1e52890cafb57cb567871352d8d858a618b1c0e76c1e33c781c4c13e297de5f2",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "tanh",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_1daccdfc3c1a4c7b0c58844b4b9c2e07_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=1/0,29/0,29/0,29/none",
+        "GeluGradV2/d=1,p=1/0,29/0,29/0,29/none"
+      ],
+      "staticKey": "d4c9e0afc801db3739329f3ee356c245147b25e3c485795d9487f3d7c96b2fb9",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_0ba5561856473e02a3d57befb6c1135e_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=1/0,29/0,29/0,29/tanh",
+        "GeluGradV2/d=1,p=1/0,29/0,29/0,29/tanh"
+      ],
+      "staticKey": "3ceec85d57ee57b8d2e2edc427d0c128eae9a8ae8f259fa7a733e70e3ccb7fe1",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "tanh",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_9a31fcf4e6f4c694e755ce29080f2b9e_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=1/0,3/0,3/0,3/none",
+        "GeluGradV2/d=1,p=1/0,3/0,3/0,3/none"
+      ],
+      "staticKey": "df4d1c9114b540ceb6e8f548aab7f11693699404b3e9850f276a8deeaaae36c8",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_5859333fd96869d9b4ecd45acc062b53_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=1/0,3/0,3/0,3/tanh",
+        "GeluGradV2/d=1,p=1/0,3/0,3/0,3/tanh"
+      ],
+      "staticKey": "3710380856c7428ab6130753e9f3c2936b16e68e26f140ae118e49b134539303",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "tanh",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_8d702ede4b3c48650b37991eb662bc7a_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=1/0,2/0,2/0,2/none",
+        "GeluGradV2/d=1,p=1/0,2/0,2/0,2/none"
+      ],
+      "staticKey": "7548c59008edc77e8a04cfea97576abbab452f20b3a28b216c4e6fdbfd6d294d",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_566557f06ac93e8917f399e0e1eff264_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=1/0,2/0,2/0,2/tanh",
+        "GeluGradV2/d=1,p=1/0,2/0,2/0,2/tanh"
+      ],
+      "staticKey": "8a51226615f1ed32c164fea0cdcf0de2871fd0c0eea429e0c088c918fd0bd633",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "tanh",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_22c4b0f0f01159c7b208129188f99fbd_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=2/27,29/27,29/27,29/none",
+        "GeluGradV2/d=0,p=0/27,29/27,29/27,29/none",
+        "GeluGradV2/d=1,p=2/27,29/27,29/27,29/none",
+        "GeluGradV2/d=1,p=0/27,29/27,29/27,29/none"
+      ],
+      "staticKey": "be168d3c8488bbad6d7e845f715361dc087fcfe039d8530437917d6e25f71b23,ff3778a44ade7831f8e9524e44ea3b554dda22681ba1281d73a5911458f3208c",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_c1fdd7cafdabd7da693fa947ad61f0bb_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=2/27,29/27,29/27,29/tanh",
+        "GeluGradV2/d=0,p=0/27,29/27,29/27,29/tanh",
+        "GeluGradV2/d=1,p=2/27,29/27,29/27,29/tanh",
+        "GeluGradV2/d=1,p=0/27,29/27,29/27,29/tanh"
+      ],
+      "staticKey": "5b2a312982d4ecbde5522b5347ddec6b424689e91142024f3826835900d9f541,6c4f49e6028a67a614a022c8971aee5ee50d00bf3cd0c16ca8a4e3057c77b259",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "tanh",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_d27f615251219cbeb4d4d341f6100f34_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=2/27,3/27,3/27,3/none",
+        "GeluGradV2/d=0,p=0/27,3/27,3/27,3/none",
+        "GeluGradV2/d=1,p=2/27,3/27,3/27,3/none",
+        "GeluGradV2/d=1,p=0/27,3/27,3/27,3/none"
+      ],
+      "staticKey": "f44ddfd0d31a47ad888288361d2bee6645212c4bfec9139930aeabb707b739c7,73da637bff7a15497762886b67d12539df9a43acfacbbe8d0848ba036e61411b",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_23625bc6b8bc9a316a2db30065ac4166_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=2/27,3/27,3/27,3/tanh",
+        "GeluGradV2/d=0,p=0/27,3/27,3/27,3/tanh",
+        "GeluGradV2/d=1,p=2/27,3/27,3/27,3/tanh",
+        "GeluGradV2/d=1,p=0/27,3/27,3/27,3/tanh"
+      ],
+      "staticKey": "a18d8f6d56559387dfa8d830fd0e6872345e0320d1e3e094b4742255c110a3af,837c2572d7f2cb6ed1925ddd7820f8fd3566a0a5e8ba2d3e229d88498dda0e84",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "tanh",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_a459399a8e567fa5c89463bf4cc49cdc_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=2/27,2/27,2/27,2/none",
+        "GeluGradV2/d=0,p=0/27,2/27,2/27,2/none",
+        "GeluGradV2/d=1,p=2/27,2/27,2/27,2/none",
+        "GeluGradV2/d=1,p=0/27,2/27,2/27,2/none"
+      ],
+      "staticKey": "0aa1958eca4e378a5570d78817f0c545f712e5db632be233ce5305661f7de33f,6bf51552ae6f6732f612924621bbf03928789d5da850307b5192872f2f70fec6",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_d8772b4716068dbf317365c879b50952_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=2/27,2/27,2/27,2/tanh",
+        "GeluGradV2/d=0,p=0/27,2/27,2/27,2/tanh",
+        "GeluGradV2/d=1,p=2/27,2/27,2/27,2/tanh",
+        "GeluGradV2/d=1,p=0/27,2/27,2/27,2/tanh"
+      ],
+      "staticKey": "2a62ac6bb36222f1ffe3d6f2d16c71939ca27e88f9cbb2e2f5b913c21408d587,34f09dbba797083e709840b58cd188302d2aaea3e570eb39d81a9469046b097b",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "tanh",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_cd41d17f4622c69434b04aac864aff4c_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=2/1,29/1,29/1,29/none",
+        "GeluGradV2/d=0,p=0/1,29/1,29/1,29/none",
+        "GeluGradV2/d=1,p=2/1,29/1,29/1,29/none",
+        "GeluGradV2/d=1,p=0/1,29/1,29/1,29/none"
+      ],
+      "staticKey": "b750f3f9a7d29f5f89c52f0ae52c8a4ff9845cd1378c31805f479d4c54d9811c,46130865f41366b2c6fcf8cd51d8d0fe3b1b9afcf20872f29650f6fa503434d7",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_c52dc60e01570f6dfde75f9aef70ae44_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=2/1,29/1,29/1,29/tanh",
+        "GeluGradV2/d=0,p=0/1,29/1,29/1,29/tanh",
+        "GeluGradV2/d=1,p=2/1,29/1,29/1,29/tanh",
+        "GeluGradV2/d=1,p=0/1,29/1,29/1,29/tanh"
+      ],
+      "staticKey": "1b1b756bfbd368a4a08e12af16706847fcd4363d35e595bb2bb2653141076db3,9bea82d2912a9100f56090aa154d0f9412404e18d217efa410da7b8dc4721b24",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float16",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "tanh",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_47b33ab90e6b4a9d28565c57a827b622_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=2/1,3/1,3/1,3/none",
+        "GeluGradV2/d=0,p=0/1,3/1,3/1,3/none",
+        "GeluGradV2/d=1,p=2/1,3/1,3/1,3/none",
+        "GeluGradV2/d=1,p=0/1,3/1,3/1,3/none"
+      ],
+      "staticKey": "869acf536da90bb5294fb848762414c057593b03cac9caf38352e8df70d5b21a,2c3bf3077f90651c3df918dad54838e8a2c5fc51bc275844668e426da2477966",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_4e31d41d1037ad62d9e7a174580bcee9_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=2/1,3/1,3/1,3/tanh",
+        "GeluGradV2/d=0,p=0/1,3/1,3/1,3/tanh",
+        "GeluGradV2/d=1,p=2/1,3/1,3/1,3/tanh",
+        "GeluGradV2/d=1,p=0/1,3/1,3/1,3/tanh"
+      ],
+      "staticKey": "34106b914c2479df88b43546e1fe2fd4bde4d52d8a00c41a45d715308d549357,685c03ccf6002449578a645596f50a6c47e71596c68e7dd36d628ec39cb9cd65",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "tanh",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_8c5c471cee8c5a761bee4d09f654d053_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=2/1,2/1,2/1,2/none",
+        "GeluGradV2/d=0,p=0/1,2/1,2/1,2/none",
+        "GeluGradV2/d=1,p=2/1,2/1,2/1,2/none",
+        "GeluGradV2/d=1,p=0/1,2/1,2/1,2/none"
+      ],
+      "staticKey": "41ad83237f2d38c7b8dbf9ea930522c69f6bdc5a50e7c7a74a51e2e45be68639,c79d3c9fa69906b69b6fd5dceac0d08490355c7ef12f4fc0e8b37e928c5c6c49",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_b2fba0aa15d212b864b2621380db5ea6_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=2/1,2/1,2/1,2/tanh",
+        "GeluGradV2/d=0,p=0/1,2/1,2/1,2/tanh",
+        "GeluGradV2/d=1,p=2/1,2/1,2/1,2/tanh",
+        "GeluGradV2/d=1,p=0/1,2/1,2/1,2/tanh"
+      ],
+      "staticKey": "4414abb9493b6dc3bddbd8ce15cad5d225843538f275429013d6d01d6c7d8e67,a168639dd7a0736211cd70f41a1197a0d9adbed9e5dff7f3a96c44e771dd63db",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "tanh",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_1daccdfc3c1a4c7b0c58844b4b9c2e07_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=2/0,29/0,29/0,29/none",
+        "GeluGradV2/d=0,p=0/0,29/0,29/0,29/none",
+        "GeluGradV2/d=1,p=2/0,29/0,29/0,29/none",
+        "GeluGradV2/d=1,p=0/0,29/0,29/0,29/none"
+      ],
+      "staticKey": "c850d404e9828f66c50604e163427a97220692f22c9d85c16a57da4eab47c7a1,dd375882c54864a34fc551f2adfda279aab1502d9fe01c0b58157e8d8545348f",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_0ba5561856473e02a3d57befb6c1135e_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=2/0,29/0,29/0,29/tanh",
+        "GeluGradV2/d=0,p=0/0,29/0,29/0,29/tanh",
+        "GeluGradV2/d=1,p=2/0,29/0,29/0,29/tanh",
+        "GeluGradV2/d=1,p=0/0,29/0,29/0,29/tanh"
+      ],
+      "staticKey": "c2be0971c82a0611f48d2c307137d07c5f96c8c8f8d52293df44de0edfcbd5de,f3a219855deb95f6b7c21c1c39dab9411312d8eaccb754a588c53fc277feb975",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float32",
+          "format": "FRACTAL_NZ",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "tanh",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_9a31fcf4e6f4c694e755ce29080f2b9e_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=2/0,3/0,3/0,3/none",
+        "GeluGradV2/d=0,p=0/0,3/0,3/0,3/none",
+        "GeluGradV2/d=1,p=2/0,3/0,3/0,3/none",
+        "GeluGradV2/d=1,p=0/0,3/0,3/0,3/none"
+      ],
+      "staticKey": "54e2e77ec777c091efe28aaa7123cad90d64e36449e078979158a158d4d5f39d,2452836e2d3f5bf15c6a7e44beec0854cd4e44b0f21db29b93dc85c2e6a66964",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_5859333fd96869d9b4ecd45acc062b53_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=2/0,3/0,3/0,3/tanh",
+        "GeluGradV2/d=0,p=0/0,3/0,3/0,3/tanh",
+        "GeluGradV2/d=1,p=2/0,3/0,3/0,3/tanh",
+        "GeluGradV2/d=1,p=0/0,3/0,3/0,3/tanh"
+      ],
+      "staticKey": "96e9fd225c1298732af483080de35e6fc61d241c196153368a2c9f38fd0751c7,180631ae4c26fbe316b39821d12c4837ba0db100be85e9d1cbbd76d6f3ad7e40",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "tanh",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_8d702ede4b3c48650b37991eb662bc7a_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=2/0,2/0,2/0,2/none",
+        "GeluGradV2/d=0,p=0/0,2/0,2/0,2/none",
+        "GeluGradV2/d=1,p=2/0,2/0,2/0,2/none",
+        "GeluGradV2/d=1,p=0/0,2/0,2/0,2/none"
+      ],
+      "staticKey": "0c25478d1e7dad0fdeb502f4a6f972446339178614ec2337f5be7b5573029d46,8f9619d0e1d94465b41f5e836094aa003042fc0a5126c81c94a7fb5bb67e6db8",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "none",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_566557f06ac93e8917f399e0e1eff264_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "GeluGradV2/d=0,p=2/0,2/0,2/0,2/tanh",
+        "GeluGradV2/d=0,p=0/0,2/0,2/0,2/tanh",
+        "GeluGradV2/d=1,p=2/0,2/0,2/0,2/tanh",
+        "GeluGradV2/d=1,p=0/0,2/0,2/0,2/tanh"
+      ],
+      "staticKey": "3eddfbb8257027c85857dc6c94a8d7c0d7cb8e27038a4c1b833546e5ee189b8e,1ee8a7212aae77b1bdae256820ec46590b3e66468c423825f499a755f8da99b4",
+      "inputs": [
+        {
+          "name": "dy",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "z",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "approximate",
+          "dtype": "string",
+          "value": "tanh",
+          "mode": "value"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/gelu_grad_v2/GeluGradV2_22c4b0f0f01159c7b208129188f99fbd_high_precision.json"
+      }
+    }
+  ]
+}

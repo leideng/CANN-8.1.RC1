@@ -1,0 +1,130 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "dequantPerChannel/d=0,p=1/2,2/1,2/1,2",
+        "dequantPerChannel/d=0,p=0/2,2/1,2/1,2",
+        "dequantPerChannel/d=1,p=1/2,2/1,2/1,2",
+        "dequantPerChannel/d=1,p=0/2,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "3fe69ea474cbd0888e556726c20b5943255dc492b28e2cab9dab6553cbecb618,1308608faaebbac29b8f48027837d252c4cf8d7477da684c1e7b6bc3141ffd47",
+      "inputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset",
+          "index": 2,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/dequant_per_channel/dequantPerChannel_64e923f5_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "dequantPerChannel/d=0,p=1/2,2/27,2/27,2",
+        "dequantPerChannel/d=0,p=0/2,2/27,2/27,2",
+        "dequantPerChannel/d=1,p=1/2,2/27,2/27,2",
+        "dequantPerChannel/d=1,p=0/2,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "d7cf7c734d329f193b238bbac69d9e62adbcc70be302505ee0fa576c472fc61f,b4842f93df9386983003fdff6c4834d3af42096519417bfd92f76b823a7d4564",
+      "inputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "scale",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "offset",
+          "index": 2,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/dequant_per_channel/dequantPerChannel_211eff0b_high_performance.json"
+      }
+    }
+  ]
+}

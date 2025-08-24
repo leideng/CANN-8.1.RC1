@@ -1,0 +1,25 @@
+[
+    {
+        "case_name": "Test_Where_001",
+        "op": "Where",
+        "input_desc": [
+            {
+                "name": "x",
+                "format": ["ND"],
+                "type": ["int8"],
+                "shape": [2,2],
+                "data_distribute": ["uniform"],
+                "value_range": [[1, 10]]
+            }
+        ],
+        "output_desc": [
+            {
+                "name": "y",
+                "format": ["ND"],
+                "type": ["int64"],
+                "shape": [3,2]
+            }
+        ],
+        "attr":[]
+    }
+]

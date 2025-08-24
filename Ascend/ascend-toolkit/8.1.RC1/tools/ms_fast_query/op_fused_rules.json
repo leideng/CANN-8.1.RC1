@@ -1,0 +1,24 @@
+{
+    "fused_rules": {
+        "Permute": [
+            "TransposeD"
+        ],
+        "SPP": [
+            "SppPooling",
+            "Concat"
+        ],
+        "SpatialTransformerD": [
+            "StnPre",
+            "StnCompute"
+        ],
+        "SparseSoftmaxCrossEntropyWithLogits": [
+            "OneHotD",
+            "SoftmaxCrossEntropyWithLogits",
+            "GatherV2"
+        ],
+        "LarsV2": [
+            "LarsV2Update",
+            "SquareSumAll"
+        ]
+    }
+}

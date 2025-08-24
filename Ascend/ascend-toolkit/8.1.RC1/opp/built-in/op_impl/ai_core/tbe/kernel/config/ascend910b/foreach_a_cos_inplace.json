@@ -1,0 +1,72 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ForeachACosInplace/d=0,p=1/1,2",
+        "ForeachACosInplace/d=0,p=0/1,2",
+        "ForeachACosInplace/d=1,p=1/1,2",
+        "ForeachACosInplace/d=1,p=0/1,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "optionalInputMode": "gen_placeholder",
+      "staticKey": "9b775d96aa028512a4bc161d506e5546f40040b06f5b892f191071f191f46f37,04f2a8d7787267e1e4eac2715d53691b3f2dd81f6f1bfc9c2e9da15d7e2d30b9",
+      "inputs": [
+        [
+          {
+            "name": "inputs",
+            "index": 0,
+            "dtype": "float16",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ]
+      ],
+      "outputs": [],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/foreach_a_cos_inplace/ForeachACosInplace_15eb2c0597f64a4883bd99306bf2ee4c_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ForeachACosInplace/d=0,p=1/0,2",
+        "ForeachACosInplace/d=0,p=0/0,2",
+        "ForeachACosInplace/d=1,p=1/0,2",
+        "ForeachACosInplace/d=1,p=0/0,2"
+      ],
+      "dynamicParamMode": "folded_with_desc",
+      "optionalInputMode": "gen_placeholder",
+      "staticKey": "d9d43cf101c0bd088870a61f9224ddebd7966e38e4e23cf0630dfc2afee09781,e9860c260dc5fc91168bddcf8935e5e082eee09d0ea4bace3424ed93b3596ddc",
+      "inputs": [
+        [
+          {
+            "name": "inputs",
+            "index": 0,
+            "dtype": "float32",
+            "format": "ND",
+            "paramType": "dynamic",
+            "shape": [
+              -2
+            ]
+          }
+        ]
+      ],
+      "outputs": [],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/foreach_a_cos_inplace/ForeachACosInplace_fb40dfdeb9d927d72619655c5f2e29a6_high_performance.json"
+      }
+    }
+  ]
+}

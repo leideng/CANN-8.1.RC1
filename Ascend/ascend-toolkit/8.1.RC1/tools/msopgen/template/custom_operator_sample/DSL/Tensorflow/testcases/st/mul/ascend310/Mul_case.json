@@ -1,0 +1,107 @@
+[
+    {
+        "case_name": "Test_Mul_001",
+        "op": "Mul",
+        "input_desc": [
+            {
+                "format": [
+                    "NHWC"
+                ],
+                "type": [
+                    "int32",
+                    "float16",
+                    "int8"
+                ],
+                "shape": [
+                    [
+                        8192,
+                        1
+                    ],
+                    [
+                        10,
+                        10241
+                    ],
+                    [
+                        3,
+                        16,
+                        16
+                    ]
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "x1"
+            },
+            {
+                "format": [
+                    "NHWC"
+                ],
+                "type": [
+                    "int32",
+                    "float16",
+                    "int8"
+                ],
+                "shape": [
+                    [
+                        8192,
+                        1
+                    ],
+                    [
+                        10,
+                        10241
+                    ],
+                    [
+                        3,
+                        16,
+                        16
+                    ]
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "x2"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "NHWC"
+                ],
+                "type": [
+                    "int32",
+                    "float16",
+                    "int8"
+                ],
+                "shape": [
+                    [
+                        8192,
+                        1
+                    ],
+                    [
+                        10,
+                        10241
+                    ],
+                    [
+                        3,
+                        16,
+                        16
+                    ]
+                ],
+                "name": "y"
+            }
+        ],
+        "attr":[]
+    }
+]

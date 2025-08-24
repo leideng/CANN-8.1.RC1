@@ -1,0 +1,97 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GetPaddingOffset/d=0,p=1/9,2/3,2/9,2/3,2/9,2/3,2/3,2",
+        "GetPaddingOffset/d=0,p=0/9,2/3,2/9,2/3,2/9,2/3,2/3,2",
+        "GetPaddingOffset/d=1,p=1/9,2/3,2/9,2/3,2/9,2/3,2/3,2",
+        "GetPaddingOffset/d=1,p=0/9,2/3,2/9,2/3,2/9,2/3,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "819a4f0bf63bb6aad43e2946287b6edbf931abfdf933c557136c5775504d46ca,4a954cf75e1fe54532e8bd99aca1bbc09626a470ba53c702c24c504ee566db08",
+      "inputs": [
+        {
+          "name": "input_ids",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cum_offsets_now",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "token_num",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "seq_len",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_remove_padding",
+          "index": 0,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "cum_offsets_out",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "padding_offset",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/get_padding_offset/GetPaddingOffset_036a9c5c8c3c476cd499c12be352ba5c_high_performance.json"
+      }
+    }
+  ]
+}

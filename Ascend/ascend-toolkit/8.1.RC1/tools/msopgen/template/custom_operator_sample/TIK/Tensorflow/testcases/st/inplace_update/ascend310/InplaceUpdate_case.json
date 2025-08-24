@@ -1,0 +1,152 @@
+[
+    {
+        "case_name": "Test_InplaceUpdate_001",
+        "op": "InplaceUpdate",
+        "input_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float32",
+                    "float16",
+                    "int32"
+                ],
+                "shape": [
+                    [
+                        32,
+                        5
+                    ],
+                    [
+                        16,
+                        4
+                    ],
+                    [
+                        4,
+                        16,
+                        16
+                    ],
+                    [
+                        32,
+                        16
+                    ]
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "x"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "int32",
+                    "int32",
+                    "int32"
+                ],
+                "shape": [
+                    [
+                        32
+                    ],
+                    [
+                        16
+                    ],
+                    [
+                        4
+                    ],
+                    [
+                        32
+                    ]
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "indices"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float32",
+                    "float16",
+                    "int32"
+                ],
+                "shape": [
+                    [
+                        32,
+                        5
+                    ],
+                    [
+                        16,
+                        4
+                    ],
+                    [
+                        4,
+                        16,
+                        16
+                    ],
+                    [
+                        32,
+                        16
+                    ]
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "v"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float32",
+                    "float16",
+                    "int32"
+                ],
+                "shape": [
+                    [
+                        32,
+                        5
+                    ],
+                    [
+                        16,
+                        4
+                    ],
+                    [
+                        4,
+                        16,
+                        16
+                    ],
+                    [
+                        32,
+                        16
+                    ]
+                ],
+                "name": "y"
+            }
+        ]
+    }
+]

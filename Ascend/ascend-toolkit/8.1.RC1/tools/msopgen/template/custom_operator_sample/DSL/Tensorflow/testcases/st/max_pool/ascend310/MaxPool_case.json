@@ -1,0 +1,101 @@
+[
+    {
+        "case_name": "Test_MaxPool_001",
+        "op": "MaxPool",
+        "input_desc": [
+            {
+                "format": [
+                    "NC1HWC0"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    [
+                        1,
+                        3,
+                        35,
+                        49,
+                        16
+                    ],
+                    [
+                        1,
+                        4,
+                        23,
+                        111,
+                        16
+                    ]
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "x"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "NC1HWC0"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    [
+                        1,
+                        3,
+                        35,
+                        49,
+                        16
+                    ],
+                    [
+                        1,
+                        4,
+                        23,
+                        111,
+                        16
+                    ]
+                ],
+                "name": "y"
+            }
+        ],
+        "attr": [
+            {
+                "name": "ksize",
+                "type": "list_int",
+                "value": [
+                    1,
+                    1,
+                    3,
+                    3
+                ]
+            },
+            {
+                "name": "strides",
+                "type": "list_int",
+                "value": [
+                    1,
+                    1,
+                    2,
+                    2
+                ]
+            },
+            {
+                "name": "padding",
+                "type": "string",
+                "value": "VALID"
+            },
+            {
+                "name": "data_format",
+                "type": "string",
+                "value": "NC1HWC0"
+            }
+        ]
+    }
+]

@@ -1,0 +1,376 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RoiPoolingWithArgMax/d=0,p=0/1,3/1,2/,/1,2/3,2",
+        "RoiPoolingWithArgMax/d=1,p=0/1,3/1,2/,/1,2/3,2"
+      ],
+      "staticKey": "b4011ec492f3b90a77102670ddad3bbfa82e4a7e4960c8638ae4bfed541ce467",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "argmax",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "pooled_h",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "pooled_w",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "spatial_scale_h",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "spatial_scale_w",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "pool_channel",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_pooling_with_arg_max/RoiPoolingWithArgMax_1_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "RoiPoolingWithArgMax/d=0,p=0/1,3/1,2/3,2/1,2/3,2/,,,,",
+        "RoiPoolingWithArgMax/d=1,p=0/1,3/1,2/3,2/1,2/3,2/,,,,"
+      ],
+      "staticKey": "df604b37f725f496bf0003062e6d88fc6960fd8992a973b0455d8e8ada9051b3",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "roi_actual_num",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "argmax",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "pooled_h",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_w",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "spatial_scale_h",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "spatial_scale_w",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pool_channel",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_pooling_with_arg_max/RoiPoolingWithArgMax_2_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RoiPoolingWithArgMax/d=0,p=0/0,3/0,2/,/0,2/3,2",
+        "RoiPoolingWithArgMax/d=1,p=0/0,3/0,2/,/0,2/3,2"
+      ],
+      "staticKey": "3cffeda350a388edc956d80446e7e9405f65308218f45efe89382486e34d6164",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "argmax",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "pooled_h",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "pooled_w",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "spatial_scale_h",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "spatial_scale_w",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "pool_channel",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_pooling_with_arg_max/RoiPoolingWithArgMax_3_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 1,
+      "simplifiedKey": [
+        "RoiPoolingWithArgMax/d=0,p=0/0,3/0,2/3,2/0,2/3,2/,,,,",
+        "RoiPoolingWithArgMax/d=1,p=0/0,3/0,2/3,2/0,2/3,2/,,,,"
+      ],
+      "staticKey": "b6761289de59ff51b7016575c9bba41d89ee4a50698dc49a89762222ab95dd55",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "rois",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "roi_actual_num",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "argmax",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "pooled_h",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pooled_w",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "spatial_scale_h",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "spatial_scale_w",
+          "dtype": "float",
+          "value": null,
+          "mode": "null"
+        },
+        {
+          "name": "pool_channel",
+          "dtype": "int",
+          "value": null,
+          "mode": "null"
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/roi_pooling_with_arg_max/RoiPoolingWithArgMax_4_high_performance.json"
+      }
+    }
+  ]
+}

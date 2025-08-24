@@ -1,0 +1,1204 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3/d=0,p=1/27,2/9,2/9,2/9,2/27,2/27,2",
+        "CTCLossV3/d=0,p=0/27,2/9,2/9,2/9,2/27,2/27,2",
+        "CTCLossV3/d=1,p=1/27,2/9,2/9,2/9,2/27,2/27,2",
+        "CTCLossV3/d=1,p=0/27,2/9,2/9,2/9,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "ecb7fcea2e960d45dde0dd651e3eced53c380d39bf1c134b45dad56afc562e7a,a9ffd106a47a093a469e0f8dba5edff4f4afdee74505e6e966f0e16caf32c712",
+      "inputs": [
+        {
+          "name": "log_probs",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 3,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "neg_log_likelihood",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3/CTCLossV3_7c89bbaab2307bc7d8428fb809806ee3_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3/d=0,p=1/1,2/3,2/3,2/3,2/1,2/1,2",
+        "CTCLossV3/d=0,p=0/1,2/3,2/3,2/3,2/1,2/1,2",
+        "CTCLossV3/d=1,p=1/1,2/3,2/3,2/3,2/1,2/1,2",
+        "CTCLossV3/d=1,p=0/1,2/3,2/3,2/3,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "48dad81ed39234d96d4d155929e4ebc1505da50a6065d3f66582a7d3141d3de6,ab4f32068c61de64e176e0410dbd10bcd8a2b39c6662a908a17eec7a9cf0f492",
+      "inputs": [
+        {
+          "name": "log_probs",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "neg_log_likelihood",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3/CTCLossV3_c1a1bc98f5111b474b2fdca761a38c99_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3/d=0,p=1/0,2/9,2/9,2/9,2/0,2/0,2",
+        "CTCLossV3/d=0,p=0/0,2/9,2/9,2/9,2/0,2/0,2",
+        "CTCLossV3/d=1,p=1/0,2/9,2/9,2/9,2/0,2/0,2",
+        "CTCLossV3/d=1,p=0/0,2/9,2/9,2/9,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "88ec06744b85cdfecefb68e4091e266a98abab7293b64468df9548acff5c4fc2,6776abc9c59a4b76616664254377cb56be8578b18c46aa32738b146f878317cd",
+      "inputs": [
+        {
+          "name": "log_probs",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 3,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "neg_log_likelihood",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3/CTCLossV3_636031b95d8c5ee5fd0ac4fb20d91aed_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3/d=0,p=1/1,2/9,2/9,2/9,2/1,2/1,2",
+        "CTCLossV3/d=0,p=0/1,2/9,2/9,2/9,2/1,2/1,2",
+        "CTCLossV3/d=1,p=1/1,2/9,2/9,2/9,2/1,2/1,2",
+        "CTCLossV3/d=1,p=0/1,2/9,2/9,2/9,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "b8bf0094b9bc60f2d1912e025203d201c9940ee54dbe970c1d8b1e8b62e55a13,d5b1c165907f067fc54172df4fc84a5f2a1a31ab6b71b8e89f8b47af815e2c5b",
+      "inputs": [
+        {
+          "name": "log_probs",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 3,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "neg_log_likelihood",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3/CTCLossV3_475b837f1f8f4fadcbe110f2bdbbc92b_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3/d=0,p=1/27,2/3,2/3,2/3,2/27,2/27,2",
+        "CTCLossV3/d=0,p=0/27,2/3,2/3,2/3,2/27,2/27,2",
+        "CTCLossV3/d=1,p=1/27,2/3,2/3,2/3,2/27,2/27,2",
+        "CTCLossV3/d=1,p=0/27,2/3,2/3,2/3,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "fa921f2d744a3d9f11962e07d5f5728df0936e156376cfc73c78f28036b4e265,4aefcd05caf651f24c4d603b672d39b7f830ddc380eae545665ed6b5425714ed",
+      "inputs": [
+        {
+          "name": "log_probs",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "neg_log_likelihood",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3/CTCLossV3_8bc28c53e0061b3cb29bba4254941e02_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3/d=0,p=1/0,2/3,2/3,2/3,2/0,2/0,2",
+        "CTCLossV3/d=0,p=0/0,2/3,2/3,2/3,2/0,2/0,2",
+        "CTCLossV3/d=1,p=1/0,2/3,2/3,2/3,2/0,2/0,2",
+        "CTCLossV3/d=1,p=0/0,2/3,2/3,2/3,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "53c4aad1c6779bdf9d9ffd95f9dc01edb24771768afba3b7a79c73b930297c9f,1bff59a9a3e612ce99c351995beb287a091586f6cefd99ba6cc239fa4bc07377",
+      "inputs": [
+        {
+          "name": "log_probs",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "neg_log_likelihood",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3/CTCLossV3_6a2243891a08717a5beb5d9873c0d8bf_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3/d=0,p=1/27,2/9,2/9,2/9,2/27,2/27,2",
+        "CTCLossV3/d=0,p=0/27,2/9,2/9,2/9,2/27,2/27,2",
+        "CTCLossV3/d=1,p=1/27,2/9,2/9,2/9,2/27,2/27,2",
+        "CTCLossV3/d=1,p=0/27,2/9,2/9,2/9,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "ce6f33ab151dc6a7ac8f33e0fd647e5cd35be181ca849fd1924b76ee6b2bdf7d,69ba60c5f9b55392b33f7e91dfdae96eda028680002dd6e5e1356add7a4ac689",
+      "inputs": [
+        {
+          "name": "log_probs",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 3,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "neg_log_likelihood",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3/CTCLossV3_b7bc611e22dfb043cc5eb58b8e09c8c4_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3/d=0,p=1/1,2/3,2/3,2/3,2/1,2/1,2",
+        "CTCLossV3/d=0,p=0/1,2/3,2/3,2/3,2/1,2/1,2",
+        "CTCLossV3/d=1,p=1/1,2/3,2/3,2/3,2/1,2/1,2",
+        "CTCLossV3/d=1,p=0/1,2/3,2/3,2/3,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "cecb7727d50d68c399f946906695386de9afcadd386411b97dee8697ad8a26a2,8277f9d5f79486d029781c293254ddc84ed39ba41be800d878b65e879ea56248",
+      "inputs": [
+        {
+          "name": "log_probs",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "neg_log_likelihood",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3/CTCLossV3_be54b67006db64f2a5840edec2004c73_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3/d=0,p=1/0,2/9,2/9,2/9,2/0,2/0,2",
+        "CTCLossV3/d=0,p=0/0,2/9,2/9,2/9,2/0,2/0,2",
+        "CTCLossV3/d=1,p=1/0,2/9,2/9,2/9,2/0,2/0,2",
+        "CTCLossV3/d=1,p=0/0,2/9,2/9,2/9,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "41ae87370aff16290fa1e85099b3f605aea77e28fc297eb9c7026e443f4b43e7,2f859d68e3da7dc78e621ed59b5c20a430837704819e3df013b6a415a4df902b",
+      "inputs": [
+        {
+          "name": "log_probs",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 3,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "neg_log_likelihood",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3/CTCLossV3_cd9fcb9058178ad440d1058e230a94aa_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3/d=0,p=1/1,2/9,2/9,2/9,2/1,2/1,2",
+        "CTCLossV3/d=0,p=0/1,2/9,2/9,2/9,2/1,2/1,2",
+        "CTCLossV3/d=1,p=1/1,2/9,2/9,2/9,2/1,2/1,2",
+        "CTCLossV3/d=1,p=0/1,2/9,2/9,2/9,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "3aa739239a8ec67e271808134b9d3b0770abf2372c0ae12e847ca4970be4e6b6,fc8538221588f20cd6a2c4de002acbc83f23ff1a2ecfe8bffd2fd98e2012fee3",
+      "inputs": [
+        {
+          "name": "log_probs",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 2,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 3,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "neg_log_likelihood",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3/CTCLossV3_96bf03e03e259aa47025bee21c4df034_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3/d=0,p=1/27,2/3,2/3,2/3,2/27,2/27,2",
+        "CTCLossV3/d=0,p=0/27,2/3,2/3,2/3,2/27,2/27,2",
+        "CTCLossV3/d=1,p=1/27,2/3,2/3,2/3,2/27,2/27,2",
+        "CTCLossV3/d=1,p=0/27,2/3,2/3,2/3,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "f9bd6c8f102fcd474e8cc9c998e4948f097663911342d30c80f98932e50de21e,c1f5253bc83a95023652b8f72b4ac532d832ee81fba919fe49cdc19738a0b3e3",
+      "inputs": [
+        {
+          "name": "log_probs",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "neg_log_likelihood",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3/CTCLossV3_2e04752af288292dc7cce81fac710f7a_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CTCLossV3/d=0,p=1/0,2/3,2/3,2/3,2/0,2/0,2",
+        "CTCLossV3/d=0,p=0/0,2/3,2/3,2/3,2/0,2/0,2",
+        "CTCLossV3/d=1,p=1/0,2/3,2/3,2/3,2/0,2/0,2",
+        "CTCLossV3/d=1,p=0/0,2/3,2/3,2/3,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "2000a877a1de5f38a566caee4ffeb3c5cf0a392c55c470c62affaacddd031e07,927a7639870951c1341bcfd0a31d8f64ecd94133612a557aaeb50feca2b18d4c",
+      "inputs": [
+        {
+          "name": "log_probs",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "targets",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_lengths",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target_lengths",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "neg_log_likelihood",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "log_alpha",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "blank",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "zero_infinity",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/ctc_loss_v3/CTCLossV3_7cc96b6fa8939ad9ee3dd33388bcecab_high_performance.json"
+      }
+    }
+  ]
+}

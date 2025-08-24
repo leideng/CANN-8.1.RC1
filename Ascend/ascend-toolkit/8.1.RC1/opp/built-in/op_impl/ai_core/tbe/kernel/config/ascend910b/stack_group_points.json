@@ -1,0 +1,150 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "StackGroupPoints/d=0,p=1/1,2/3,2/3,2/3,2/1,2",
+        "StackGroupPoints/d=0,p=0/1,2/3,2/3,2/3,2/1,2",
+        "StackGroupPoints/d=1,p=1/1,2/3,2/3,2/3,2/1,2",
+        "StackGroupPoints/d=1,p=0/1,2/3,2/3,2/3,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "537f172e22433e8bba84a8332b583daf99242235780c516c031f9a8e93df5c8e,07e682e470657ca0c16dd5526f6014c5f9fe814a4ebb8f1a68eb2062ab8d8d77",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "features_batch_cnt",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices_batch_cnt",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/stack_group_points/StackGroupPoints_0_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "StackGroupPoints/d=0,p=1/0,2/3,2/3,2/3,2/0,2",
+        "StackGroupPoints/d=0,p=0/0,2/3,2/3,2/3,2/0,2",
+        "StackGroupPoints/d=1,p=1/0,2/3,2/3,2/3,2/0,2",
+        "StackGroupPoints/d=1,p=0/0,2/3,2/3,2/3,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "c8ca47b61ec70d15685aabc89de470849aa8bf232a032a552a26670733b8ad8c,70243052a120fbd0afaf481f98977c4b9c80550d61915c3afc04dcc5db69c289",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "features_batch_cnt",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices_batch_cnt",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/stack_group_points/StackGroupPoints_1_high_performance.json"
+      }
+    }
+  ]
+}

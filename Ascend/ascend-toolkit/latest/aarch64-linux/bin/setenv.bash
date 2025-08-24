@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+export ASCEND_HOME_PATH="/usr/local/Ascend/ascend-toolkit/latest"
+source /usr/local/Ascend/ascend-toolkit/latest/runtime/bin/setenv.bash "multi_version"
+source /usr/local/Ascend/ascend-toolkit/latest/compiler/bin/setenv.bash "multi_version"
+source /usr/local/Ascend/ascend-toolkit/latest/hccl/bin/setenv.bash "multi_version"
+source /usr/local/Ascend/ascend-toolkit/latest/opp/bin/setenv.bash "multi_version"
+source /usr/local/Ascend/ascend-toolkit/latest/toolkit/bin/setenv.bash "multi_version"
+source /usr/local/Ascend/ascend-toolkit/latest/tools/aoe/bin/setenv.bash "multi_version"
+source /usr/local/Ascend/ascend-toolkit/latest/tools/ncs/bin/setenv.bash "multi_version"
+source /usr/local/Ascend/ascend-toolkit/latest/opp_kernel/bin/setenv.bash "multi_version"

@@ -1,0 +1,117 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MultiScaleDeformableAttentionGrad/d=0,p=1/0,2/3,2/3,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "MultiScaleDeformableAttentionGrad/d=0,p=0/0,2/3,2/3,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "MultiScaleDeformableAttentionGrad/d=1,p=1/0,2/3,2/3,2/0,2/0,2/0,2/0,2/0,2/0,2",
+        "MultiScaleDeformableAttentionGrad/d=1,p=0/0,2/3,2/3,2/0,2/0,2/0,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "6b515627d54ac4bc1cecc1db44fbaedece0ed330541788c805b49caf73ef20e8,96e6d412b727f892c0904d5df0144a42deda8f8ca93f9c2f121fa213748aec1b",
+      "inputs": [
+        {
+          "name": "value",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "value_spatial_shapes",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "value_level_start_index",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sampling_locations",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "attention_weights",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_output",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_value",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_sampling_locations",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "grad_attention_weights",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/multi_scale_deformable_attention_grad/MultiScaleDeformableAttentionGrad_fp32_01_high_performance.json"
+      }
+    }
+  ]
+}

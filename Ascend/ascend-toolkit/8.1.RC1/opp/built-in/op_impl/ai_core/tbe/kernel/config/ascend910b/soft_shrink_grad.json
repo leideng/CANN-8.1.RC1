@@ -1,0 +1,169 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftShrinkGrad/d=0,p=0/1,2/1,2/1,2",
+        "SoftShrinkGrad/d=1,p=0/1,2/1,2/1,2"
+      ],
+      "staticKey": "15d8ec37a346c693469692c69da1d6c8b538710121097569fcebf3e472b12707",
+      "inputs": [
+        {
+          "name": "input_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "lambd",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/soft_shrink_grad/SoftShrinkGrad_fp16_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftShrinkGrad/d=0,p=0/0,2/0,2/0,2",
+        "SoftShrinkGrad/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "staticKey": "f126c0ee3057ec4def2e340d56e977006e1e3b098c666baace8fe5750ac89dc3",
+      "inputs": [
+        {
+          "name": "input_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "lambd",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/soft_shrink_grad/SoftShrinkGrad_fp32_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftShrinkGrad/d=0,p=0/27,2/27,2/27,2",
+        "SoftShrinkGrad/d=1,p=0/27,2/27,2/27,2"
+      ],
+      "staticKey": "8a71d4121087bd96edc900c47cfe35ec002a9569935b762b7e1fc42668acd760",
+      "inputs": [
+        {
+          "name": "input_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "input_x",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output_y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "lambd",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/soft_shrink_grad/SoftShrinkGrad_bf16_high_performance.json"
+      }
+    }
+  ]
+}

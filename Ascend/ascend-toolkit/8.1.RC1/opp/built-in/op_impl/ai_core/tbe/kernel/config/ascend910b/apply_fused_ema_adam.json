@@ -1,0 +1,499 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ApplyFusedEmaAdam/d=0,p=1/27,2/27,2/27,2/27,2/27,2/9,2/27,2/27,2/27,2/27,2",
+        "ApplyFusedEmaAdam/d=0,p=0/27,2/27,2/27,2/27,2/27,2/9,2/27,2/27,2/27,2/27,2",
+        "ApplyFusedEmaAdam/d=1,p=1/27,2/27,2/27,2/27,2/27,2/9,2/27,2/27,2/27,2/27,2",
+        "ApplyFusedEmaAdam/d=1,p=0/27,2/27,2/27,2/27,2/27,2/9,2/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "8631764b92c28380b3ba1aab11e274235a358ab6dbc80522e882e883b1e5d342,0b9868c42f0b4eeded62a84f9b0b011765941e2ebbe75a85d3e6fdd6f6e286d3",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "var",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "m",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "v",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "s",
+          "index": 4,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "step",
+          "index": 5,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "m",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "v",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "s",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "lr",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "ema_decay",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "beta1",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "beta2",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "eps",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "bias_correction",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "weight_decay",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/apply_fused_ema_adam/ApplyFusedEmaAdam_0_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ApplyFusedEmaAdam/d=0,p=1/1,2/1,2/1,2/1,2/1,2/9,2/1,2/1,2/1,2/1,2",
+        "ApplyFusedEmaAdam/d=0,p=0/1,2/1,2/1,2/1,2/1,2/9,2/1,2/1,2/1,2/1,2",
+        "ApplyFusedEmaAdam/d=1,p=1/1,2/1,2/1,2/1,2/1,2/9,2/1,2/1,2/1,2/1,2",
+        "ApplyFusedEmaAdam/d=1,p=0/1,2/1,2/1,2/1,2/1,2/9,2/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "4d225067ebe0277778e1e6c5911544ca7ff8b053e2dd363a33026bdfa707dbfd,54cdda9bcd7e7db2ff34b307991f3d7e65c984888e809191a0f46a3005d8cb56",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "var",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "m",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "v",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "s",
+          "index": 4,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "step",
+          "index": 5,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "m",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "v",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "s",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "lr",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "ema_decay",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "beta1",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "beta2",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "eps",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "bias_correction",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "weight_decay",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/apply_fused_ema_adam/ApplyFusedEmaAdam_1_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ApplyFusedEmaAdam/d=0,p=1/0,2/0,2/0,2/0,2/0,2/9,2/0,2/0,2/0,2/0,2",
+        "ApplyFusedEmaAdam/d=0,p=0/0,2/0,2/0,2/0,2/0,2/9,2/0,2/0,2/0,2/0,2",
+        "ApplyFusedEmaAdam/d=1,p=1/0,2/0,2/0,2/0,2/0,2/9,2/0,2/0,2/0,2/0,2",
+        "ApplyFusedEmaAdam/d=1,p=0/0,2/0,2/0,2/0,2/0,2/9,2/0,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "0d262cac60f03bba6d4aa8381deaa081b5af50c2a690369dc3df4d91ef1de105,8140b75f6fda8b78671fc15ad095300d71dff52266e5d27d1cacaef6b75830eb",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "var",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "m",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "v",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "s",
+          "index": 4,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "step",
+          "index": 5,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "var",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "m",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "v",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "s",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "lr",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "ema_decay",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "beta1",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "beta2",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "eps",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "mode",
+          "dtype": "int",
+          "value": 1
+        },
+        {
+          "name": "bias_correction",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "weight_decay",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/apply_fused_ema_adam/ApplyFusedEmaAdam_2_high_performance.json"
+      }
+    }
+  ]
+}

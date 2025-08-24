@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# Copyright (c) Huawei Technologies Co., Ltd. 2022-2023. All rights reserved.
+
+from drv.env_type import LoadSoType
+from drv.env_var import EnvVarName

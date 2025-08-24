@@ -1,0 +1,10 @@
+#!/bin/bash
+  
+REAL_PATH=$(realpath "$0")
+BIN_PATH=$(dirname ${REAL_PATH})
+TOOL_PATH=$(realpath ${BIN_PATH}/../)
+LIB_PATH=$(realpath ${TOOL_PATH}/lib64)
+export LD_LIBRARY_PATH=${LIB_PATH}:${LD_LIBRARY_PATH}
+export LD_PRELOAD_PATH=${LIB_PATH}
+ 
+${BIN_PATH}/msleaks.bin "$@"

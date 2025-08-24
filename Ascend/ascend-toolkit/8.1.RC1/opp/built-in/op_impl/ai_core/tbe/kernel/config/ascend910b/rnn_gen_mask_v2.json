@@ -1,0 +1,114 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RnnGenMaskV2/d=0,p=0/3,2/1,2/1,2",
+        "RnnGenMaskV2/d=1,p=0/3,2/1,2/1,2"
+      ],
+      "staticKey": "e8393a17a2c0886a1c81523edecc4fc1851a99ff0378e5256874bc52c2915dd6",
+      "inputs": [
+        {
+          "name": "seq_length",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "seq_mask",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "hidden_size",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/rnn_gen_mask_v2/RnnGenMaskV2_a0404ad66179e6ab6ec7824e185d5bf3_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RnnGenMaskV2/d=0,p=0/3,2/0,2/0,2",
+        "RnnGenMaskV2/d=1,p=0/3,2/0,2/0,2"
+      ],
+      "staticKey": "7c898b7a0779a398136d88c6656b93a4e4e7e0c7341de543013a2e27709ad936",
+      "inputs": [
+        {
+          "name": "seq_length",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "seq_mask",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "hidden_size",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/rnn_gen_mask_v2/RnnGenMaskV2_447f310c3e16d10b65f22a5b7c6ab3a4_high_performance.json"
+      }
+    }
+  ]
+}

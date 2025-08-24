@@ -1,0 +1,104 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SignBitsUnpack/d=0,p=0/4,2/1,2",
+        "SignBitsUnpack/d=1,p=0/4,2/1,2"
+      ],
+      "staticKey": "20ec76296d134dd75be3a2d66c468a550cafb6ee2d0196395f3798ac4b761bbf",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "size",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sign_bits_unpack/SignBitsUnpack_46b6dafac9546a9b2b1433ed50b8f5f7_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SignBitsUnpack/d=0,p=0/4,2/0,2",
+        "SignBitsUnpack/d=1,p=0/4,2/0,2"
+      ],
+      "staticKey": "54a45f8048e629be6838fd2741dbc7d3ec7e8820395633b5d38c6ae7ab125771",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "size",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "dtype",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sign_bits_unpack/SignBitsUnpack_64e13f86606fa0e8428b71663c66da88_high_performance.json"
+      }
+    }
+  ]
+}

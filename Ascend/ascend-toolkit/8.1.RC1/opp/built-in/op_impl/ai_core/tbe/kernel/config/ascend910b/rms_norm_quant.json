@@ -1,0 +1,184 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RmsNormQuant/d=0,p=1/1,2/1,2/2,2",
+        "RmsNormQuant/d=0,p=0/1,2/1,2/2,2",
+        "RmsNormQuant/d=1,p=1/1,2/1,2/2,2",
+        "RmsNormQuant/d=1,p=0/1,2/1,2/2,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "a6352c01b8b5ef9e1a6278c8e6a2edcd40df291f63a3b22aa52f8c64ab6b2f8c,979bcb666dcc1a007a21445e68b36098a7b38b680fbb7dd9ab417843d24521f4",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "beta",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 0.1
+        },
+        {
+          "name": "high_precision_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "gemma_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 1.0
+        },
+        {
+          "name": "offset",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/rms_norm_quant/RmsNormQuant_95a8b0f0_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "RmsNormQuant/d=0,p=1/27,2/27,2/2,2",
+        "RmsNormQuant/d=0,p=0/27,2/27,2/2,2",
+        "RmsNormQuant/d=1,p=1/27,2/27,2/2,2",
+        "RmsNormQuant/d=1,p=0/27,2/27,2/2,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "cc5c392104334a37d322c1b8550bc951704aad6701a5cdea57ce1db5099236d8,50907097dc9edf3e1b62de7a2407b36e8fe4b7a65101d9bb7f63b8973668d42d",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gamma",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "beta",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "epsilon",
+          "dtype": "float",
+          "value": 0.1
+        },
+        {
+          "name": "high_precision_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "gemma_mode",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": 1.0
+        },
+        {
+          "name": "offset",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/rms_norm_quant/RmsNormQuant_db4bee3f_high_performance.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "EmbeddingDenseGradV2/d=0,p=1/0,2/3,2/3,2/0,2",
+        "EmbeddingDenseGradV2/d=0,p=0/0,2/3,2/3,2/0,2",
+        "EmbeddingDenseGradV2/d=1,p=1/0,2/3,2/3,2/0,2",
+        "EmbeddingDenseGradV2/d=1,p=0/0,2/3,2/3,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "ecd782efc32bdbfaf35dc4dc163d01053546c7653280a8b4120c6fe04ff9fc72,70f263b6a3c541411559964ffb3f81a84c2bc5fd37b15af62e8f9a0e26c43356",
+      "inputs": [
+        {
+          "name": "grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "sort_indices",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "pos_idx",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "num_weights",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "padding_idx",
+          "dtype": "int",
+          "value": null
+        },
+        {
+          "name": "scale_grad_by_freq",
+          "dtype": "bool",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/embedding_dense_grad_v2/EmbeddingDenseGrad_fp32_high_performance.json"
+      }
+    }
+  ]
+}

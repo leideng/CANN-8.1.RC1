@@ -1,0 +1,364 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupedBiasAddGrad/d=0,p=1/27,2/27,2",
+        "GroupedBiasAddGrad/d=0,p=0/27,2/27,2",
+        "GroupedBiasAddGrad/d=1,p=1/27,2/27,2",
+        "GroupedBiasAddGrad/d=1,p=0/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "d65c96881f15c910baf5dc12e80d35869f9fb0ce59ba406ab538a3fa7133d332,0c2d38f06cb36a7921e1af5eecef8ee366dec03296ebe24368d422b5f6c8edde",
+      "inputs": [
+        {
+          "name": "grad_y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "group_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_bias",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "group_idx_type",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grouped_bias_add_grad/GroupedBiasAddGrad_acff02ed31ef1ec2c7e4e1b8c3eac622_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupedBiasAddGrad/d=0,p=1/27,2/27,2",
+        "GroupedBiasAddGrad/d=0,p=0/27,2/27,2",
+        "GroupedBiasAddGrad/d=1,p=1/27,2/27,2",
+        "GroupedBiasAddGrad/d=1,p=0/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "d65c96881f15c910baf5dc12e80d35869f9fb0ce59ba406ab538a3fa7133d332,0c2d38f06cb36a7921e1af5eecef8ee366dec03296ebe24368d422b5f6c8edde",
+      "inputs": [
+        {
+          "name": "grad_y",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "group_idx",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_bias",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "group_idx_type",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grouped_bias_add_grad/GroupedBiasAddGrad_7e5992d3033ef32a3463c5d198e518a1_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupedBiasAddGrad/d=0,p=1/1,2/1,2",
+        "GroupedBiasAddGrad/d=0,p=0/1,2/1,2",
+        "GroupedBiasAddGrad/d=1,p=1/1,2/1,2",
+        "GroupedBiasAddGrad/d=1,p=0/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "afd8671e49b3d625b82b3ebcd5ce90d88eafeffd54f5affa6a7066d73025e89d,d334e36da031693ef4362530ca96d01361625d7f935ec2ab64abfa5cfff08803",
+      "inputs": [
+        {
+          "name": "grad_y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "group_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_bias",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "group_idx_type",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grouped_bias_add_grad/GroupedBiasAddGrad_5ce316c9f935f0585864b2d372bcc322_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupedBiasAddGrad/d=0,p=1/1,2/1,2",
+        "GroupedBiasAddGrad/d=0,p=0/1,2/1,2",
+        "GroupedBiasAddGrad/d=1,p=1/1,2/1,2",
+        "GroupedBiasAddGrad/d=1,p=0/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "afd8671e49b3d625b82b3ebcd5ce90d88eafeffd54f5affa6a7066d73025e89d,d334e36da031693ef4362530ca96d01361625d7f935ec2ab64abfa5cfff08803",
+      "inputs": [
+        {
+          "name": "grad_y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "group_idx",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_bias",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "group_idx_type",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grouped_bias_add_grad/GroupedBiasAddGrad_be837fe498fad076d01c0ce8dfd3d014_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupedBiasAddGrad/d=0,p=1/0,2/0,2",
+        "GroupedBiasAddGrad/d=0,p=0/0,2/0,2",
+        "GroupedBiasAddGrad/d=1,p=1/0,2/0,2",
+        "GroupedBiasAddGrad/d=1,p=0/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "ddda19d8518b16cc8cdbfb8ba96879f06adb43525f38ed53088bd92195aa606c,cd5286042eb03218a5cc6f0874fada83f05ad44546c1dc9c77711e612c33da4e",
+      "inputs": [
+        {
+          "name": "grad_y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "group_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_bias",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "group_idx_type",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grouped_bias_add_grad/GroupedBiasAddGrad_7538f6ca8b4e71ac38750eb26a539cca_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "GroupedBiasAddGrad/d=0,p=1/0,2/0,2",
+        "GroupedBiasAddGrad/d=0,p=0/0,2/0,2",
+        "GroupedBiasAddGrad/d=1,p=1/0,2/0,2",
+        "GroupedBiasAddGrad/d=1,p=0/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "ddda19d8518b16cc8cdbfb8ba96879f06adb43525f38ed53088bd92195aa606c,cd5286042eb03218a5cc6f0874fada83f05ad44546c1dc9c77711e612c33da4e",
+      "inputs": [
+        {
+          "name": "grad_y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "group_idx",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "grad_bias",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "group_idx_type",
+          "dtype": "int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/grouped_bias_add_grad/GroupedBiasAddGrad_9a632dc5b6be9e1b4215e3cf2b1aff0d_high_performance.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,436 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SigmoidCrossEntropyWithLogits/d=0,p=0/27,3/27,3/27,3",
+        "SigmoidCrossEntropyWithLogits/d=1,p=0/27,3/27,3/27,3"
+      ],
+      "staticKey": "f0200e77cfdf31f84183562676da72e4bd3b442d94d8bb1987dc5fbd1d925bd7",
+      "inputs": [
+        {
+          "name": "predict",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "loss",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sigmoid_cross_entropy_with_logits/SigmoidCrossEntropyWithLogits_015c87cb6a9cd6e0f5749944a27822fc_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SigmoidCrossEntropyWithLogits/d=0,p=0/27,32/27,32/27,32",
+        "SigmoidCrossEntropyWithLogits/d=1,p=0/27,32/27,32/27,32"
+      ],
+      "staticKey": "9af26fdd5520539300bdcd32426da62ddb0e496af4c65ffb7705abb17b210e32",
+      "inputs": [
+        {
+          "name": "predict",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "loss",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sigmoid_cross_entropy_with_logits/SigmoidCrossEntropyWithLogits_c93ca58cac95e506c9910059d09b0f34_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SigmoidCrossEntropyWithLogits/d=0,p=0/27,2/27,2/27,2",
+        "SigmoidCrossEntropyWithLogits/d=1,p=0/27,2/27,2/27,2"
+      ],
+      "staticKey": "6e574c20a066b3f7d982ef281c86da7d13b377e29fbd1bc09f34b574cf29a16b",
+      "inputs": [
+        {
+          "name": "predict",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "loss",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sigmoid_cross_entropy_with_logits/SigmoidCrossEntropyWithLogits_ce3d1ff8ba23a0bcb292da3577c1625d_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SigmoidCrossEntropyWithLogits/d=0,p=0/1,3/1,3/1,3",
+        "SigmoidCrossEntropyWithLogits/d=1,p=0/1,3/1,3/1,3"
+      ],
+      "staticKey": "04766ddd5e70f52c2ed53e36a51b8db205b6af64926c9d9e425580cc92983a76",
+      "inputs": [
+        {
+          "name": "predict",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target",
+          "index": 1,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "loss",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sigmoid_cross_entropy_with_logits/SigmoidCrossEntropyWithLogits_af52282cc05b86304705757ddb8a43b7_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SigmoidCrossEntropyWithLogits/d=0,p=0/1,32/1,32/1,32",
+        "SigmoidCrossEntropyWithLogits/d=1,p=0/1,32/1,32/1,32"
+      ],
+      "staticKey": "afc00e48a9f23f42ef592dacbb7ed950347001fb1bd41545fcfb83e34c644b76",
+      "inputs": [
+        {
+          "name": "predict",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target",
+          "index": 1,
+          "dtype": "float16",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "loss",
+          "index": 0,
+          "dtype": "float16",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sigmoid_cross_entropy_with_logits/SigmoidCrossEntropyWithLogits_4b65a9475816773e249ba3ffd8edc108_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SigmoidCrossEntropyWithLogits/d=0,p=0/1,2/1,2/1,2",
+        "SigmoidCrossEntropyWithLogits/d=1,p=0/1,2/1,2/1,2"
+      ],
+      "staticKey": "24db4d78a3a31c0287aa11345320c199348443901fef8fe630f68f86fd5dc348",
+      "inputs": [
+        {
+          "name": "predict",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "loss",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sigmoid_cross_entropy_with_logits/SigmoidCrossEntropyWithLogits_93b3f8e9594b4018902b635fff3a83c5_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SigmoidCrossEntropyWithLogits/d=0,p=0/0,3/0,3/0,3",
+        "SigmoidCrossEntropyWithLogits/d=1,p=0/0,3/0,3/0,3"
+      ],
+      "staticKey": "ab48e072d667181880953f3afa0502a9f3536be9d387cca63519fb5609e684a7",
+      "inputs": [
+        {
+          "name": "predict",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "loss",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sigmoid_cross_entropy_with_logits/SigmoidCrossEntropyWithLogits_dd54ffaf4d9387d892d630bdd05ea35b_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SigmoidCrossEntropyWithLogits/d=0,p=0/0,32/0,32/0,32",
+        "SigmoidCrossEntropyWithLogits/d=1,p=0/0,32/0,32/0,32"
+      ],
+      "staticKey": "78eb782bbb35a8cc4545e1b3d888cc91219c7fefec82ac3e3961dfe3c13d728b",
+      "inputs": [
+        {
+          "name": "predict",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target",
+          "index": 1,
+          "dtype": "float32",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "loss",
+          "index": 0,
+          "dtype": "float32",
+          "format": "NDC1HWC0",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sigmoid_cross_entropy_with_logits/SigmoidCrossEntropyWithLogits_51bab2ae8fc87eb072bfb69617aaf382_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SigmoidCrossEntropyWithLogits/d=0,p=0/0,2/0,2/0,2",
+        "SigmoidCrossEntropyWithLogits/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "staticKey": "295935613b943d6a71aa3e5b596ee7da1f284cfde70cbf59960f8c546b5d4d30",
+      "inputs": [
+        {
+          "name": "predict",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "target",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "loss",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/sigmoid_cross_entropy_with_logits/SigmoidCrossEntropyWithLogits_ee98c6628030785f610b924ab1557b31_high_performance.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CrossEntropyLoss/d=0,p=1/27,2/9,2/27,2/27,2/27,2/27,2",
+        "CrossEntropyLoss/d=0,p=0/27,2/9,2/27,2/27,2/27,2/27,2",
+        "CrossEntropyLoss/d=1,p=1/27,2/9,2/27,2/27,2/27,2/27,2",
+        "CrossEntropyLoss/d=1,p=0/27,2/9,2/27,2/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "d837486530c5a064c78fc784becb229a9442ab7eacedd6ce3c48798c263bdb4b,067ff8732f6af0f06a857a3aa46be63eec3c52bd3e8653a69f6f76e3ec539e74",
+      "inputs": [
+        {
+          "name": "input",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "target",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "weight",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "loss",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "log_prob",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "zloss",
+          "index": 2,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "lse_for_zloss",
+          "index": 3,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "ignore_index",
+          "dtype": "int",
+          "value": -100
+        },
+        {
+          "name": "label_smoothing",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "lse_square_scale_for_zloss",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "return_zloss",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/cross_entropy_loss/CrossEntropyLoss_bf16_1000_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CrossEntropyLoss/d=0,p=1/0,2/9,2/0,2/0,2/0,2/0,2",
+        "CrossEntropyLoss/d=0,p=0/0,2/9,2/0,2/0,2/0,2/0,2",
+        "CrossEntropyLoss/d=1,p=1/0,2/9,2/0,2/0,2/0,2/0,2",
+        "CrossEntropyLoss/d=1,p=0/0,2/9,2/0,2/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "d8cb965184f131a9eac248b58203c9bf10e1d1c014951268bb5524151c0b5364,02960a18c521ee5146928de6c628283a5011176fbced2ac9fae81e8b21212d00",
+      "inputs": [
+        {
+          "name": "input",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "target",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "weight",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "loss",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "log_prob",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "zloss",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "lse_for_zloss",
+          "index": 3,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "ignore_index",
+          "dtype": "int",
+          "value": -100
+        },
+        {
+          "name": "label_smoothing",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "lse_square_scale_for_zloss",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "return_zloss",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/cross_entropy_loss/CrossEntropyLoss_fp32_1001_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "CrossEntropyLoss/d=0,p=1/1,2/9,2/1,2/1,2/1,2/1,2",
+        "CrossEntropyLoss/d=0,p=0/1,2/9,2/1,2/1,2/1,2/1,2",
+        "CrossEntropyLoss/d=1,p=1/1,2/9,2/1,2/1,2/1,2/1,2",
+        "CrossEntropyLoss/d=1,p=0/1,2/9,2/1,2/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "77574bffb94f07e1555f05a23d247cce19537699866212d9d74d20d3cb1d74e9,9302d6f145681ffdb1da08c58ef2996d0404d559f422a6907ad9dc2f73635b45",
+      "inputs": [
+        {
+          "name": "input",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "target",
+          "index": 1,
+          "dtype": "int64",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "weight",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "loss",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "log_prob",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "zloss",
+          "index": 2,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        },
+        {
+          "name": "lse_for_zloss",
+          "index": 3,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ],
+          "format_match_mode": "FormatAgnostic"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "reduction",
+          "dtype": "string",
+          "value": "mean"
+        },
+        {
+          "name": "ignore_index",
+          "dtype": "int",
+          "value": -100
+        },
+        {
+          "name": "label_smoothing",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "lse_square_scale_for_zloss",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "return_zloss",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/cross_entropy_loss/CrossEntropyLoss_fp16_1002_high_performance.json"
+      }
+    }
+  ]
+}

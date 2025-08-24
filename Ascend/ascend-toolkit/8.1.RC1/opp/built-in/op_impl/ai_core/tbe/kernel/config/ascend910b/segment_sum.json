@@ -1,0 +1,298 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SegmentSum/d=0,p=1/1,2/3,2/1,2"
+      ],
+      "staticKey": "cb81ce004e3fb17e424c88cc58cf8f215178c6773ba1275a14b6199c9e0a6c80",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "segment_ids",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/segment_sum/SegmentSum_5ce316c9f935f0585864b2d372bcc322_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SegmentSum/d=1,p=1/1,2/3,2/1,2"
+      ],
+      "staticKey": "cb81ce004e3fb17e424c88cc58cf8f215178c6773ba1275a14b6199c9e0a6c80",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "segment_ids",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/segment_sum/SegmentSum_5ce316c9f935f0585864b2d372bcc322_high_performance_deterministic.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SegmentSum/d=0,p=1/3,2/3,2/3,2",
+        "SegmentSum/d=1,p=1/3,2/3,2/3,2"
+      ],
+      "staticKey": "f6782c278dbdc648fc679116b45c1ab4d26091832b8c64665b56ff094e242e26",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "segment_ids",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/segment_sum/SegmentSum_9342884c99c006e21fc9d5d9260b8bef_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SegmentSum/d=0,p=2/1,2/3,2/1,2",
+        "SegmentSum/d=0,p=0/1,2/3,2/1,2"
+      ],
+      "staticKey": "8fee4d730e51e92b88e05e708c4ee851fd7b1a79a637264e29dcada175350fd6,92aedcdb1fc8aeec6aaaafc1b81a0d3edf33bec691eff9a3bc1ab05f0352f8a1",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "segment_ids",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "false",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/segment_sum/SegmentSum_5ce316c9f935f0585864b2d372bcc322_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SegmentSum/d=1,p=2/1,2/3,2/1,2",
+        "SegmentSum/d=1,p=0/1,2/3,2/1,2"
+      ],
+      "staticKey": "8fee4d730e51e92b88e05e708c4ee851fd7b1a79a637264e29dcada175350fd6,92aedcdb1fc8aeec6aaaafc1b81a0d3edf33bec691eff9a3bc1ab05f0352f8a1",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "segment_ids",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "true",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/segment_sum/SegmentSum_5ce316c9f935f0585864b2d372bcc322_high_precision_deterministic.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SegmentSum/d=0,p=2/3,2/3,2/3,2",
+        "SegmentSum/d=0,p=0/3,2/3,2/3,2",
+        "SegmentSum/d=1,p=2/3,2/3,2/3,2",
+        "SegmentSum/d=1,p=0/3,2/3,2/3,2"
+      ],
+      "staticKey": "18bc57f9152df6f397d39c81601fd6fca3887a39934765f6d636f51606619a2f,75047c2edb77e42c0c726fa5413a1b9940aca6072fa87126160fc09d3d307b1a",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "segment_ids",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/segment_sum/SegmentSum_9342884c99c006e21fc9d5d9260b8bef_high_precision.json"
+      }
+    }
+  ]
+}

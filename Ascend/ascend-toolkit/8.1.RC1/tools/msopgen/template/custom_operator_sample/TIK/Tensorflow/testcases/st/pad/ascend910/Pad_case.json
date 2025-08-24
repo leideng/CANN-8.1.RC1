@@ -1,0 +1,95 @@
+[
+    {
+        "case_name": "Test_Pad_001",
+        "op": "Pad",
+        "input_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    -1,
+                    -1
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "shape_range": [
+                    [
+                        1,
+                        100000
+                    ],
+                    [
+                        1,
+                        100000
+                    ]
+                ],
+                "typical_shape": [
+                    2,
+                    3
+                ],
+                "name": "x"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "int32"
+                ],
+                "shape": [
+                    -1,
+                    -1
+                ],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "shape_range": [
+                    [
+                        1,
+                        100000
+                    ],
+                    [
+                        1,
+                        100000
+                    ]
+                ],
+                "typical_shape": [
+                    2,
+                    2
+                ],
+                "name": "paddings"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [
+                    4,
+                    7
+                ],
+                "name": "y"
+            }
+        ]
+    }
+]

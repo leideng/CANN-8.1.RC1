@@ -1,0 +1,314 @@
+Ascend
+|-- ascend-toolkit
+|   |-- 8.1 -> ./8.1.RC1
+|   |-- 8.1.RC1
+|   |   |-- aarch64-linux
+|   |   |   |-- ascend_toolkit_install.info
+|   |   |   |-- ascendc
+|   |   |   |-- ascendc_compiler
+|   |   |   |-- bin
+|   |   |   |-- ccec_compiler
+|   |   |   |-- conf
+|   |   |   |-- data
+|   |   |   |-- develop
+|   |   |   |-- devlib
+|   |   |   |-- include
+|   |   |   |-- install.conf
+|   |   |   |-- lib64
+|   |   |   |-- python
+|   |   |   |-- runtime -> ../runtime
+|   |   |   |-- script
+|   |   |   |-- simulator
+|   |   |   `-- tikcpp
+|   |   |-- acllib -> runtime
+|   |   |-- arm64-linux -> aarch64-linux
+|   |   |-- atc
+|   |   |   |-- ascend_install.info -> ../compiler/ascend_install.info
+|   |   |   |-- bin -> ../compiler/bin
+|   |   |   |-- ccec_compiler -> ../compiler/ccec_compiler
+|   |   |   |-- conf -> ../compiler/conf
+|   |   |   |-- data
+|   |   |   |-- include -> ../aarch64-linux/include
+|   |   |   |-- lib64
+|   |   |   |-- python -> ../compiler/python
+|   |   |   |-- scene.info -> ../compiler/scene.info
+|   |   |   |-- script -> ../compiler/script
+|   |   |   `-- version.info -> ../compiler/version.info
+|   |   |-- bin -> aarch64-linux/bin
+|   |   |-- cann_uninstall.sh
+|   |   |-- combo_script
+|   |   |   `-- uninstall.sh
+|   |   |-- compiler
+|   |   |   |-- ascend_install.info
+|   |   |   |-- ascendc -> ../aarch64-linux/ascendc
+|   |   |   |-- bin
+|   |   |   |-- ccec_compiler
+|   |   |   |-- conf
+|   |   |   |-- data
+|   |   |   |-- include
+|   |   |   |-- lib64
+|   |   |   |-- python
+|   |   |   |-- scene.info
+|   |   |   |-- script
+|   |   |   |-- tikcpp
+|   |   |   `-- version.info
+|   |   |-- conf -> aarch64-linux/conf
+|   |   |-- create_version_softlink.sh
+|   |   |-- fwkacllib
+|   |   |   |-- ascend_install.info -> ../compiler/ascend_install.info
+|   |   |   |-- bin -> ../compiler/bin
+|   |   |   |-- ccec_compiler -> ../compiler/ccec_compiler
+|   |   |   |-- conf -> ../compiler/conf
+|   |   |   |-- data
+|   |   |   |-- include -> ../aarch64-linux/include
+|   |   |   |-- lib64
+|   |   |   |-- python -> ../compiler/python
+|   |   |   |-- scene.info -> ../compiler/scene.info
+|   |   |   |-- script -> ../compiler/script
+|   |   |   `-- version.info -> ../compiler/version.info
+|   |   |-- hccl
+|   |   |   |-- ascend_install.info
+|   |   |   |-- bin
+|   |   |   |-- data
+|   |   |   |-- include
+|   |   |   |-- lib64
+|   |   |   |-- python
+|   |   |   |-- scene.info
+|   |   |   |-- script
+|   |   |   `-- version.info
+|   |   |-- include -> aarch64-linux/include
+|   |   |-- lib64 -> aarch64-linux/lib64
+|   |   |-- mindstudio-toolkit
+|   |   |   |-- ascend_install.info
+|   |   |   |-- scene.info
+|   |   |   |-- script
+|   |   |   |-- version.info
+|   |   |   `-- version_name.info
+|   |   |-- opp
+|   |   |   |-- Ascend
+|   |   |   |-- Ascend310
+|   |   |   |-- Ascend310P
+|   |   |   |-- Ascend310RC
+|   |   |   |-- Ascend910
+|   |   |   |-- ascend_install.info
+|   |   |   |-- bin
+|   |   |   |-- built-in
+|   |   |   |-- framework
+|   |   |   |-- include
+|   |   |   |-- lib64
+|   |   |   |-- op_impl
+|   |   |   |-- op_proto
+|   |   |   |-- scene.info
+|   |   |   |-- script
+|   |   |   |-- static_kernel
+|   |   |   |-- test-ops
+|   |   |   |-- vendors
+|   |   |   `-- version.info
+|   |   |-- opp_kernel
+|   |   |   |-- ascend_install.info
+|   |   |   |-- bin
+|   |   |   |-- scene.info
+|   |   |   |-- script
+|   |   |   `-- version.info
+|   |   |-- ops -> opp
+|   |   |-- pyACL
+|   |   |   |-- ascend-pyACL_install.info
+|   |   |   |-- python -> ../python
+|   |   |   |-- scene.info
+|   |   |   |-- script
+|   |   |   `-- version.info
+|   |   |-- python
+|   |   |   `-- site-packages
+|   |   |-- runtime
+|   |   |   |-- ascend_install.info
+|   |   |   |-- bin
+|   |   |   |-- conf
+|   |   |   |-- data
+|   |   |   |-- include
+|   |   |   |-- lib64
+|   |   |   |-- scene.info
+|   |   |   |-- script
+|   |   |   `-- version.info
+|   |   |-- test-ops -> ../8.1.RC1/opp/test-ops
+|   |   |-- toolkit
+|   |   |   |-- ascend_install.info
+|   |   |   |-- ascendc -> ../aarch64-linux/ascendc
+|   |   |   |-- bin
+|   |   |   |-- inc
+|   |   |   |-- lib64
+|   |   |   |-- python
+|   |   |   |-- scene.info
+|   |   |   |-- script
+|   |   |   |-- toolchain
+|   |   |   |-- tools -> ../tools
+|   |   |   `-- version.info
+|   |   |-- tools
+|   |   |   |-- ait_backend
+|   |   |   |-- aml
+|   |   |   |-- aoe
+|   |   |   |-- ascend_project
+|   |   |   |-- ascend_system_advisor
+|   |   |   |-- ascendc_kernel_sample
+|   |   |   |-- ascendc_tools
+|   |   |   |-- ccec_compiler
+|   |   |   |-- hccl_parser-0.1-py3-none-any.whl
+|   |   |   |-- hccl_test
+|   |   |   |-- ms_fast_query
+|   |   |   |-- ms_fmk_transplt
+|   |   |   |-- msaicerr
+|   |   |   |-- msdebug
+|   |   |   |-- msleaks
+|   |   |   |-- msmodelslim
+|   |   |   |-- msobjdump
+|   |   |   |-- msobjdump-0.1.0-py3-none-any.whl
+|   |   |   |-- msopgen
+|   |   |   |-- msopt
+|   |   |   |-- mspti
+|   |   |   |-- mssanitizer
+|   |   |   |-- msserviceprofiler
+|   |   |   |-- mstx
+|   |   |   |-- ncs
+|   |   |   |-- op_gen-0.1-py3-none-any.whl
+|   |   |   |-- op_project_templates
+|   |   |   |-- op_test_frame-0.1-py3-none-any.whl
+|   |   |   |-- opbuild
+|   |   |   |-- operator_cmp
+|   |   |   |-- profiler
+|   |   |   |-- show_kernel_debug_data
+|   |   |   |-- show_kernel_debug_data-0.1.0-py3-none-any.whl
+|   |   |   |-- simulator -> ../aarch64-linux/simulator
+|   |   |   |-- stacktrace
+|   |   |   |-- tikcpp
+|   |   |   `-- tikicpulib
+|   |   `-- var
+|   |       `-- ascend_package_db.info
+|   |-- latest
+|   |   |-- aarch64-linux
+|   |   |   |-- ascend_toolkit_install.info -> ../../8.1.RC1/aarch64-linux/ascend_toolkit_install.info
+|   |   |   |-- ascendc
+|   |   |   |-- ascendc_compiler
+|   |   |   |-- bin
+|   |   |   |-- ccec_compiler
+|   |   |   |-- conf
+|   |   |   |-- data
+|   |   |   |-- develop
+|   |   |   |-- devlib
+|   |   |   |-- include
+|   |   |   |-- install.conf -> ../../8.1.RC1/aarch64-linux/install.conf
+|   |   |   |-- lib64
+|   |   |   |-- python
+|   |   |   |-- runtime -> ../../8.1.RC1/aarch64-linux/runtime
+|   |   |   |-- script -> ../../8.1.RC1/aarch64-linux/script
+|   |   |   |-- simulator
+|   |   |   `-- tikcpp
+|   |   |-- acllib -> ../8.1.RC1/runtime
+|   |   |-- arm64-linux -> aarch64-linux
+|   |   |-- atc -> ../8.1.RC1/atc
+|   |   |-- bin -> aarch64-linux/bin
+|   |   |-- compiler -> ../8.1.RC1/compiler
+|   |   |-- conf -> aarch64-linux/conf
+|   |   |-- fwkacllib -> ../8.1.RC1/fwkacllib
+|   |   |-- hccl -> ../8.1.RC1/hccl
+|   |   |-- include -> aarch64-linux/include
+|   |   |-- lib64 -> aarch64-linux/lib64
+|   |   |-- mindstudio-toolkit -> ../8.1.RC1/mindstudio-toolkit
+|   |   |-- opp -> ../8.1.RC1/opp
+|   |   |-- opp_kernel -> ../8.1.RC1/opp_kernel
+|   |   |-- ops -> ../8.1.RC1/opp
+|   |   |-- platform.ini
+|   |   |-- pyACL -> ../8.1.RC1/pyACL
+|   |   |-- python
+|   |   |   `-- site-packages
+|   |   |-- remove_latest_softlink.sh
+|   |   |-- runtime -> ../8.1.RC1/runtime
+|   |   |-- test-ops -> ../8.1.RC1/opp/test-ops
+|   |   |-- toolkit -> ../8.1.RC1/toolkit
+|   |   |-- tools
+|   |   |   |-- ait_backend -> ../../8.1.RC1/tools/ait_backend
+|   |   |   |-- aml -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/aml
+|   |   |   |-- aoe -> ../../8.1.RC1/tools/aoe
+|   |   |   |-- ascend_project -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/ascend_project
+|   |   |   |-- ascend_system_advisor -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/ascend_system_advisor
+|   |   |   |-- ascendc_kernel_sample -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/ascendc_kernel_sample
+|   |   |   |-- ascendc_tools -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/ascendc_tools
+|   |   |   |-- ccec_compiler -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/ccec_compiler
+|   |   |   |-- hccl_parser-0.1-py3-none-any.whl -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/hccl_parser-0.1-py3-none-any.whl
+|   |   |   |-- hccl_test -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/hccl_test
+|   |   |   |-- ms_fast_query -> ../../8.1.RC1/tools/ms_fast_query
+|   |   |   |-- ms_fmk_transplt -> ../../8.1.RC1/tools/ms_fmk_transplt
+|   |   |   |-- msaicerr -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/msaicerr
+|   |   |   |-- msdebug -> ../../8.1.RC1/tools/msdebug
+|   |   |   |-- msleaks -> ../../8.1.RC1/tools/msleaks
+|   |   |   |-- msmodelslim -> ../../8.1.RC1/tools/msmodelslim
+|   |   |   |-- msobjdump -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/msobjdump
+|   |   |   |-- msobjdump-0.1.0-py3-none-any.whl -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/msobjdump-0.1.0-py3-none-any.whl
+|   |   |   |-- msopgen -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/msopgen
+|   |   |   |-- msopt -> ../../8.1.RC1/tools/msopt
+|   |   |   |-- mspti -> ../../8.1.RC1/tools/mspti
+|   |   |   |-- mssanitizer -> ../../8.1.RC1/tools/mssanitizer
+|   |   |   |-- msserviceprofiler -> ../../8.1.RC1/tools/msserviceprofiler
+|   |   |   |-- mstx -> ../../8.1.RC1/tools/mstx
+|   |   |   |-- ncs -> ../../8.1.RC1/tools/ncs
+|   |   |   |-- op_gen-0.1-py3-none-any.whl -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/op_gen-0.1-py3-none-any.whl
+|   |   |   |-- op_project_templates -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/op_project_templates
+|   |   |   |-- op_test_frame-0.1-py3-none-any.whl -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/op_test_frame-0.1-py3-none-any.whl
+|   |   |   |-- opbuild -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/opbuild
+|   |   |   |-- operator_cmp -> ../../8.1.RC1/tools/operator_cmp
+|   |   |   |-- profiler -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/profiler
+|   |   |   |-- show_kernel_debug_data -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/show_kernel_debug_data
+|   |   |   |-- show_kernel_debug_data-0.1.0-py3-none-any.whl -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/show_kernel_debug_data-0.1.0-py3-none-any.whl
+|   |   |   |-- simulator -> ../aarch64-linux/simulator
+|   |   |   |-- stacktrace -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/stacktrace
+|   |   |   |-- tikcpp -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/tikcpp
+|   |   |   `-- tikicpulib -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/tikicpulib
+|   |   |-- var
+|   |   |   |-- ascend_package_db.info
+|   |   |   |-- manager
+|   |   |   |-- manager.info
+|   |   |   |-- manager.sh
+|   |   |   `-- manager_refs
+|   |   `-- version.cfg
+|   `-- set_env.sh
+|-- driver
+|   |-- include
+|   |   |-- ascend_hal_error.h
+|   |   |-- dcmi_interface_api.h
+|   |   |-- dms_device_node_type.h
+|   |   `-- dsmi_common_interface.h
+|   `-- lib64
+|       |-- common
+|       |   |-- libaivault.so
+|       |   |-- libaivaulttee.so
+|       |   |-- libc_sec.so
+|       |   |-- libkmc.so.20
+|       |   |-- libmmpa.so
+|       |   |-- libsdp.so.20
+|       |   `-- libsecurec.so
+|       `-- driver
+|           |-- libadump.so
+|           |-- libaicpu_processer.so
+|           |-- libaicpu_prof.so
+|           |-- libaicpu_scheduler.so
+|           |-- libaicpu_sharder.so
+|           |-- libascend_hal.so
+|           |-- libascend_rdma_lite.so
+|           |-- libdcmi.so
+|           |-- libdrvdsmi_host.so
+|           |-- libqos_manager.so
+|           |-- libqueue_schedule.so
+|           |-- libstackcore.so
+|           |-- libtsd_common.so
+|           |-- libtsd_eventclient.so
+|           `-- libtsdaemon.so
+`-- nnal
+    `-- atb
+        |-- 8.1.RC1
+        |   |-- atb
+        |   |-- install.sh
+        |   |-- scripts
+        |   |-- version.info
+        |   `-- whl
+        |-- latest -> 8.1.RC1
+        `-- set_env.sh
+
+225 directories, 86 files

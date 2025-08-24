@@ -1,0 +1,223 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTutelCombineX/d=0,p=1/1,2/1,2/3,2/3,2/1,2",
+        "MoeTutelCombineX/d=0,p=0/1,2/1,2/3,2/3,2/1,2",
+        "MoeTutelCombineX/d=1,p=1/1,2/1,2/3,2/3,2/1,2",
+        "MoeTutelCombineX/d=1,p=0/1,2/1,2/3,2/3,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "682c37aa85aa4440012c38ba1a9aeef2d52c3a80ccccf25c86fe01a4ce66fffb,14efd1f4433bc09558cb16b9d3dbe0b580679ec68fddeddfb9341dd79e37dac0",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gates",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "locations",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_tutel_combine_x/MoeTutelCombineX_float16_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTutelCombineX/d=0,p=1/0,2/0,2/3,2/3,2/0,2",
+        "MoeTutelCombineX/d=0,p=0/0,2/0,2/3,2/3,2/0,2",
+        "MoeTutelCombineX/d=1,p=1/0,2/0,2/3,2/3,2/0,2",
+        "MoeTutelCombineX/d=1,p=0/0,2/0,2/3,2/3,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "cdb707f2d171b489013d279868c939367f416b982b8444f4da28e5440c3713a4,c8df40c6f2f121b1b314e91aec786b49a199e371dc2119f5815aa2eb10baa6e0",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gates",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "locations",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_tutel_combine_x/MoeTutelCombineX_float32_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "MoeTutelCombineX/d=0,p=1/27,2/27,2/3,2/3,2/27,2",
+        "MoeTutelCombineX/d=0,p=0/27,2/27,2/3,2/3,2/27,2",
+        "MoeTutelCombineX/d=1,p=1/27,2/27,2/3,2/3,2/27,2",
+        "MoeTutelCombineX/d=1,p=0/27,2/27,2/3,2/3,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "6c76d91f8a987ef97194a6b94b3413ff2ec74f765dfe4b62ce239028080ab211,2e1ae51a8e75adaf82f3af856ebd3e53ad9be9bca94afb962c9e9741f1fe4f8f",
+      "inputs": [
+        {
+          "name": "y_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "gates",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "indices",
+          "index": 2,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "locations",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "x_grad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/moe_tutel_combine_x/MoeTutelCombineX_bfloat16_high_performance.json"
+      }
+    }
+  ]
+}

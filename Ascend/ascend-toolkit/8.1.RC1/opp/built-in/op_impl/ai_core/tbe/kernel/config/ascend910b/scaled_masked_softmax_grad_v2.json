@@ -1,0 +1,229 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmaxGradV2/d=0,p=1/27,2/27,2/27,2",
+        "ScaledMaskedSoftmaxGradV2/d=0,p=0/27,2/27,2/27,2",
+        "ScaledMaskedSoftmaxGradV2/d=1,p=1/27,2/27,2/27,2",
+        "ScaledMaskedSoftmaxGradV2/d=1,p=0/27,2/27,2/27,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "8b68b7d02a2fea62a8ae01b8d1b4a7c1e42b6b3081322a6a803d8a9adcec795c,7d333b0abf29cca13cecd967e03c1cf52f7861b2fb4458dafdce6f2f2c0fd0ff",
+      "inputs": [
+        {
+          "name": "yGrad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 2,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "xGrad",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax_grad_v2/ScaledMaskedSoftmaxGradV2_bf16_nd_false_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmaxGradV2/d=0,p=1/1,2/1,2/1,2",
+        "ScaledMaskedSoftmaxGradV2/d=0,p=0/1,2/1,2/1,2",
+        "ScaledMaskedSoftmaxGradV2/d=1,p=1/1,2/1,2/1,2",
+        "ScaledMaskedSoftmaxGradV2/d=1,p=0/1,2/1,2/1,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "9ba4c42e9414637be1956fe5d5fde247ef6d463eaa446ab41008e62f2d1339d9,e73678dbb11cf826e243e79267eef9a25d92445212bc801a0fe0abb5483558fd",
+      "inputs": [
+        {
+          "name": "yGrad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 2,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "xGrad",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax_grad_v2/ScaledMaskedSoftmaxGradV2_fp16_nd_false_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "ScaledMaskedSoftmaxGradV2/d=0,p=1/0,2/0,2/0,2",
+        "ScaledMaskedSoftmaxGradV2/d=0,p=0/0,2/0,2/0,2",
+        "ScaledMaskedSoftmaxGradV2/d=1,p=1/0,2/0,2/0,2",
+        "ScaledMaskedSoftmaxGradV2/d=1,p=0/0,2/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "97835d004efe55ba8f1ee8270f10aa614c4541ca648298a4db1f1eac4f2cee0b,51974e4afc1ffa4e27f88099e47e9159f5e1a0681bdf62eab84684f90f87478f",
+      "inputs": [
+        {
+          "name": "yGrad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "y",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "mask",
+          "index": 2,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "optional",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "xGrad",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "scale",
+          "dtype": "float",
+          "value": null
+        },
+        {
+          "name": "fixed_triu_mask",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/scaled_masked_softmax_grad_v2/ScaledMaskedSoftmaxGradV2_fp32_nd_false_high_performance.json"
+      }
+    }
+  ]
+}

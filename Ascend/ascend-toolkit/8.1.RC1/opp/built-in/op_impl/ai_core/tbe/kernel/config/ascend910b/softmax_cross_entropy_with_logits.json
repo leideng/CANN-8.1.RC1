@@ -1,0 +1,364 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftmaxCrossEntropyWithLogits/d=0,p=1/27,2/27,2/27,2/27,2",
+        "SoftmaxCrossEntropyWithLogits/d=0,p=0/27,2/27,2/27,2/27,2",
+        "SoftmaxCrossEntropyWithLogits/d=1,p=1/27,2/27,2/27,2/27,2",
+        "SoftmaxCrossEntropyWithLogits/d=1,p=0/27,2/27,2/27,2/27,2"
+      ],
+      "staticKey": "a8995ced808573b30155fe871b17f7844edeb1f35b68844b1eb0f86569e59c8b,dedb93db11a711cb832329cde3d3d82f52f41e4e3b6d45e6ce34aab34ce3adab",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "labels",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "loss",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "backprop",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softmax_cross_entropy_with_logits/SoftmaxCrossEntropyWithLogits_2113be7c1a014a9b063cdf6ff866ccdc_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftmaxCrossEntropyWithLogits/d=0,p=1/1,2/1,2/1,2/1,2",
+        "SoftmaxCrossEntropyWithLogits/d=0,p=0/1,2/1,2/1,2/1,2",
+        "SoftmaxCrossEntropyWithLogits/d=1,p=1/1,2/1,2/1,2/1,2",
+        "SoftmaxCrossEntropyWithLogits/d=1,p=0/1,2/1,2/1,2/1,2"
+      ],
+      "staticKey": "368586298bece0ac1544dfffecf3e2f2780f96f3c615582e1cbc578245849cbd,5475870cb4e031eacb6fbd6271f1cf6ece67f9cb087fae063fed1a9d3031573c",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "labels",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "loss",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "backprop",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softmax_cross_entropy_with_logits/SoftmaxCrossEntropyWithLogits_dade9c10bd8e41d56b18cf577d4c46aa_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftmaxCrossEntropyWithLogits/d=0,p=1/0,2/0,2/0,2/0,2",
+        "SoftmaxCrossEntropyWithLogits/d=0,p=0/0,2/0,2/0,2/0,2",
+        "SoftmaxCrossEntropyWithLogits/d=1,p=1/0,2/0,2/0,2/0,2",
+        "SoftmaxCrossEntropyWithLogits/d=1,p=0/0,2/0,2/0,2/0,2"
+      ],
+      "staticKey": "82b7a6e22fbcf5e5136025022a75c6c0f6be7e606d58da4ff807636e280a6a72,894786f20316401f205d549c1a89c94aa4929a52bfe1a7ac6f743c75919cd8ca",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "labels",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "loss",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "backprop",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softmax_cross_entropy_with_logits/SoftmaxCrossEntropyWithLogits_15379a5c7566cb0cd2c4149400c9b052_high_performance.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftmaxCrossEntropyWithLogits/d=0,p=2/27,2/27,2/27,2/27,2",
+        "SoftmaxCrossEntropyWithLogits/d=1,p=2/27,2/27,2/27,2/27,2"
+      ],
+      "staticKey": "80217b40df43f0150d9c323c13795eac8ce6f3fcb50f2775f4cad334b1a4594b",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "labels",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "loss",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "backprop",
+          "index": 1,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softmax_cross_entropy_with_logits/SoftmaxCrossEntropyWithLogits_2113be7c1a014a9b063cdf6ff866ccdc_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftmaxCrossEntropyWithLogits/d=0,p=2/1,2/1,2/1,2/1,2",
+        "SoftmaxCrossEntropyWithLogits/d=1,p=2/1,2/1,2/1,2/1,2"
+      ],
+      "staticKey": "52edb70ba1783a7d9325a9a023cb7b813c61b3a7b6a551594b025154ea7b6a7e",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "labels",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "loss",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "backprop",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softmax_cross_entropy_with_logits/SoftmaxCrossEntropyWithLogits_dade9c10bd8e41d56b18cf577d4c46aa_high_precision.json"
+      }
+    },
+    {
+      "implMode": "high_precision",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "SoftmaxCrossEntropyWithLogits/d=0,p=2/0,2/0,2/0,2/0,2",
+        "SoftmaxCrossEntropyWithLogits/d=1,p=2/0,2/0,2/0,2/0,2"
+      ],
+      "staticKey": "b62074f2de31264a86ec5be6f6eb59b1b51ec2ca837bd7b517ce54e41940d8e9",
+      "inputs": [
+        {
+          "name": "features",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "labels",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "loss",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "backprop",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/softmax_cross_entropy_with_logits/SoftmaxCrossEntropyWithLogits_15379a5c7566cb0cd2c4149400c9b052_high_precision.json"
+      }
+    }
+  ]
+}

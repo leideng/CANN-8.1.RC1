@@ -1,0 +1,94 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "AmpUpdateScale/d=0,p=1/0,2/3,2/0,2/0,2/3,2",
+        "AmpUpdateScale/d=0,p=0/0,2/3,2/0,2/0,2/3,2",
+        "AmpUpdateScale/d=1,p=1/0,2/3,2/0,2/0,2/3,2",
+        "AmpUpdateScale/d=1,p=0/0,2/3,2/0,2/0,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "eca0b854adf444c9568700b6e1a24a91b5720eda640f2065ee6a32dcd4ab4314,8be93287d47bc9e64e3808cd788dac2e866f6b1d4e61da96cafb893d574e392d",
+      "inputs": [
+        {
+          "name": "current_scale",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "growth_tracker",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "found_inf",
+          "index": 2,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "updated_scale",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "updated_growth_tracker",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "growth_factor",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "backoff_factor",
+          "dtype": "float",
+          "value": 0.0
+        },
+        {
+          "name": "growth_interval",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/amp_update_scale/AmpUpdateScale_6993687eb06b70ac5aa102ddd4bef1c4_high_performance.json"
+      }
+    }
+  ]
+}

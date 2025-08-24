@@ -1,0 +1,83 @@
+[
+    {
+        "case_name": "Test_ScatterNdAdd_001",
+        "op": "ScatterNdAdd",
+        "input_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [2, 3, 4],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "var"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "int32"
+                ],
+                "shape": [2, 2, 2],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        1,
+                        2
+                    ]
+                ],
+                "name": "indices"
+            },
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [2, 2, 4],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        0.1,
+                        1.0
+                    ]
+                ],
+                "name": "updates"
+            }
+        ],
+        "output_desc": [
+            {
+                "format": [
+                    "ND"
+                ],
+                "type": [
+                    "float16"
+                ],
+                "shape": [2, 3, 4]
+            }
+        ],
+        "attr": [
+            {
+                "name": "use_locking",
+                "type": "bool",
+                "value": false
+            }
+        ]
+    }
+]

@@ -1,0 +1,394 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "NMSWithMask/d=0,p=0/27,2/27,2/3,2/12,2",
+        "NMSWithMask/d=1,p=0/27,2/27,2/3,2/12,2"
+      ],
+      "staticKey": "332e07739e9638fccfe8e2db352245322142d8449c6b3af967da4e2bdeb12c06",
+      "inputs": [
+        {
+          "name": "box_scores",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "selected_boxes",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "selected_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "selected_mask",
+          "index": 2,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "iou_threshold",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/nms_with_mask/NMSWithMask_60350731004b98ef59acd8796840c5fe_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "NMSWithMask/d=0,p=0/27,2/27,2/3,2/4,2",
+        "NMSWithMask/d=1,p=0/27,2/27,2/3,2/4,2"
+      ],
+      "staticKey": "2c68f8bcb55a9572228cb5f364172c41a4dba716d6d1127ad91fa554228caec2",
+      "inputs": [
+        {
+          "name": "box_scores",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "selected_boxes",
+          "index": 0,
+          "dtype": "bfloat16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "selected_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "selected_mask",
+          "index": 2,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "iou_threshold",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/nms_with_mask/NMSWithMask_14627cf96cf01a562a8f2740d34c9e03_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "NMSWithMask/d=0,p=0/1,2/1,2/3,2/12,2",
+        "NMSWithMask/d=1,p=0/1,2/1,2/3,2/12,2"
+      ],
+      "staticKey": "0503b0e97f483f8aa59dddb19fe18f8f48bb00709372ab6a1beee67d6d339180",
+      "inputs": [
+        {
+          "name": "box_scores",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "selected_boxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "selected_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "selected_mask",
+          "index": 2,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "iou_threshold",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/nms_with_mask/NMSWithMask_8c602bbd355e09d9b98aef12650e9f69_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "NMSWithMask/d=0,p=0/1,2/1,2/3,2/4,2",
+        "NMSWithMask/d=1,p=0/1,2/1,2/3,2/4,2"
+      ],
+      "staticKey": "9055ea4ffc94e2778e819bd262ca62052a6afc2e5c3a3fd0f1699383b00aa6b5",
+      "inputs": [
+        {
+          "name": "box_scores",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "selected_boxes",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "selected_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "selected_mask",
+          "index": 2,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "iou_threshold",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/nms_with_mask/NMSWithMask_7c35201bdf2fb4a02fc4ad3f69c6ea5a_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "NMSWithMask/d=0,p=0/0,2/0,2/3,2/12,2",
+        "NMSWithMask/d=1,p=0/0,2/0,2/3,2/12,2"
+      ],
+      "staticKey": "9822ee1d4eaf1acf886946ca1cf3639ac5ac415569b27b34cf6dc10d5336a1f5",
+      "inputs": [
+        {
+          "name": "box_scores",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "selected_boxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "selected_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "selected_mask",
+          "index": 2,
+          "dtype": "bool",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "iou_threshold",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/nms_with_mask/NMSWithMask_72e8e49ec6c2778d231806b2cbf4a531_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "NMSWithMask/d=0,p=0/0,2/0,2/3,2/4,2",
+        "NMSWithMask/d=1,p=0/0,2/0,2/3,2/4,2"
+      ],
+      "staticKey": "7c94c62b50eb519faa072fc149432d9f8515274002d611d98695d4457f424c5d",
+      "inputs": [
+        {
+          "name": "box_scores",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "selected_boxes",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "selected_idx",
+          "index": 1,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "selected_mask",
+          "index": 2,
+          "dtype": "uint8",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "iou_threshold",
+          "dtype": "float",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/nms_with_mask/NMSWithMask_3029a6fc4946b508e4c2e7fd24872298_high_performance.json"
+      }
+    }
+  ]
+}

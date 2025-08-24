@@ -1,0 +1,2059 @@
+Ascend
+|-- ascend-toolkit
+|   |-- 8.1 -> ./8.1.RC1
+|   |-- 8.1.RC1
+|   |   |-- aarch64-linux
+|   |   |   |-- ascend_toolkit_install.info
+|   |   |   |-- ascendc
+|   |   |   |   `-- include
+|   |   |   |-- ascendc_compiler
+|   |   |   |   `-- ascendc_compiler
+|   |   |   |-- bin
+|   |   |   |   |-- akt
+|   |   |   |   |-- amct_inner_graph_build
+|   |   |   |   |-- aoe
+|   |   |   |   |-- asc_dumper
+|   |   |   |   |-- ascendc_pack_kernel
+|   |   |   |   |-- atc
+|   |   |   |   |-- atc.bin
+|   |   |   |   |-- deployer_daemon
+|   |   |   |   |-- host_cpu_executor_main
+|   |   |   |   |-- msdebug -> ../../tools/msdebug/bin/msdebug
+|   |   |   |   |-- msleaks -> ../../tools/msleaks/bin/msleaks
+|   |   |   |   |-- mssanitizer -> ../../tools/mssanitizer/bin/mssanitizer
+|   |   |   |   |-- ncs
+|   |   |   |   |-- npu_executor_main
+|   |   |   |   |-- op_compiler
+|   |   |   |   |-- opc
+|   |   |   |   |-- prereq_check.bash
+|   |   |   |   |-- prereq_check.csh
+|   |   |   |   |-- prereq_check.fish
+|   |   |   |   |-- setenv.bash
+|   |   |   |   |-- setenv.csh
+|   |   |   |   |-- setenv.fish
+|   |   |   |   `-- udf_executor
+|   |   |   |-- ccec_compiler
+|   |   |   |   |-- bin
+|   |   |   |   |-- include
+|   |   |   |   `-- lib
+|   |   |   |-- conf
+|   |   |   |   |-- Ascend310P_config.json
+|   |   |   |   |-- Ascend310_config.json
+|   |   |   |   |-- Ascend610_config.json
+|   |   |   |   |-- Hi3796CV300ES_config.json
+|   |   |   |   |-- aipp
+|   |   |   |   |-- aoe.ini
+|   |   |   |   |-- atc_param_conf.json
+|   |   |   |   |-- compile_options_config.json
+|   |   |   |   |-- dump_tool_config.ini
+|   |   |   |   |-- error_manager
+|   |   |   |   |-- path.cfg
+|   |   |   |   `-- qos_config.xml
+|   |   |   |-- data
+|   |   |   |   |-- ascendcl_config
+|   |   |   |   |-- auto_deploy_op_cost
+|   |   |   |   |-- fusion_strategy
+|   |   |   |   |-- mdat_op_cost
+|   |   |   |   `-- platform_config
+|   |   |   |-- develop
+|   |   |   |   `-- lib64
+|   |   |   |-- devlib
+|   |   |   |   |-- aarch64 -> linux/aarch64
+|   |   |   |   |-- libacl_audio_mpi.so -> linux/aarch64/libacl_audio_mpi.so
+|   |   |   |   |-- libacl_cblas.so -> linux/aarch64/libacl_cblas.so
+|   |   |   |   |-- libacl_dvpp.so -> linux/aarch64/libacl_dvpp.so
+|   |   |   |   |-- libacl_dvpp_mpi.so -> linux/aarch64/libacl_dvpp_mpi.so
+|   |   |   |   |-- libacl_hdmi_mpi.so -> linux/aarch64/libacl_hdmi_mpi.so
+|   |   |   |   |-- libacl_isp_ae_mpi.so -> linux/aarch64/libacl_isp_ae_mpi.so
+|   |   |   |   |-- libacl_isp_awb_mpi.so -> linux/aarch64/libacl_isp_awb_mpi.so
+|   |   |   |   |-- libacl_isp_mpi.so -> linux/aarch64/libacl_isp_mpi.so
+|   |   |   |   |-- libacl_mfusion_mpi.so -> linux/aarch64/libacl_mfusion_mpi.so
+|   |   |   |   |-- libacl_op_compiler.so
+|   |   |   |   |-- libacl_retr.so -> linux/aarch64/libacl_retr.so
+|   |   |   |   |-- libacl_tde_mpi.so -> linux/aarch64/libacl_tde_mpi.so
+|   |   |   |   |-- libacl_tdt_channel.so
+|   |   |   |   |-- libacl_tdt_queue.so -> linux/aarch64/libacl_tdt_queue.so
+|   |   |   |   |-- libacl_vi_mpi.so -> linux/aarch64/libacl_vi_mpi.so
+|   |   |   |   |-- libacl_vo_mpi.so -> linux/aarch64/libacl_vo_mpi.so
+|   |   |   |   |-- libacl_vpss_mpi.so -> linux/aarch64/libacl_vpss_mpi.so
+|   |   |   |   |-- libascend_hal.so -> linux/aarch64/libascend_hal.so
+|   |   |   |   |-- libascendalog.so -> linux/aarch64/libascendalog.so
+|   |   |   |   |-- libascendcl.so -> linux/aarch64/libascendcl.so
+|   |   |   |   |-- libc_sec.so -> linux/aarch64/libc_sec.so
+|   |   |   |   |-- liberror_manager.so -> linux/aarch64/liberror_manager.so
+|   |   |   |   |-- libexe_graph.so -> linux/aarch64/libexe_graph.so
+|   |   |   |   |-- libfmk_onnx_parser.so
+|   |   |   |   |-- libfmk_parser.so
+|   |   |   |   |-- libge_common.so -> linux/aarch64/libge_common.so
+|   |   |   |   |-- libge_compiler.so
+|   |   |   |   |-- libge_runner.so
+|   |   |   |   |-- libgert.so -> linux/aarch64/libgert.so
+|   |   |   |   |-- libgraph.so -> linux/aarch64/libgraph.so
+|   |   |   |   |-- libhybrid_executor.so -> linux/aarch64/libhybrid_executor.so
+|   |   |   |   |-- liblowering.so -> linux/aarch64/liblowering.so
+|   |   |   |   |-- libmsprofiler.so -> linux/aarch64/libmsprofiler.so
+|   |   |   |   |-- libnnopbase.so -> linux/aarch64/libnnopbase.so
+|   |   |   |   |-- libop_common.so -> linux/aarch64/libop_common.so
+|   |   |   |   |-- libregister.so -> linux/aarch64/libregister.so
+|   |   |   |   |-- librt2_registry.a -> linux/aarch64/librt2_registry.a
+|   |   |   |   |-- libtiling_api.a -> linux/aarch64/libtiling_api.a
+|   |   |   |   |-- linux
+|   |   |   |   |-- minios
+|   |   |   |   `-- x86_64 -> linux/x86_64
+|   |   |   |-- include
+|   |   |   |   |-- acl
+|   |   |   |   |-- acldvppop
+|   |   |   |   |-- aclnn
+|   |   |   |   |-- aclnn_kernels
+|   |   |   |   |-- aclnnop
+|   |   |   |   |-- aicpu
+|   |   |   |   |-- amct
+|   |   |   |   |-- aoe
+|   |   |   |   |-- ascendc
+|   |   |   |   |-- base
+|   |   |   |   |-- exe_graph
+|   |   |   |   |-- experiment
+|   |   |   |   |-- external
+|   |   |   |   |-- flow_func
+|   |   |   |   |-- flow_graph
+|   |   |   |   |-- ge
+|   |   |   |   |-- graph
+|   |   |   |   |-- hccl
+|   |   |   |   |-- kernel_tiling -> ../ascendc/include/highlevel_api/kernel_tiling
+|   |   |   |   |-- llm_datadist
+|   |   |   |   |-- msServiceProfiler -> ../../tools/msserviceprofiler/include/msServiceProfiler
+|   |   |   |   |-- mspti -> ../../tools/mspti/include
+|   |   |   |   |-- mstx -> ../../tools/mstx/include/mstx
+|   |   |   |   |-- parser
+|   |   |   |   |-- proto
+|   |   |   |   |-- register
+|   |   |   |   |-- securec.h
+|   |   |   |   |-- securectype.h
+|   |   |   |   |-- tiling -> ../ascendc/include/highlevel_api/tiling
+|   |   |   |   |-- toolchain
+|   |   |   |   |-- utils
+|   |   |   |   `-- version
+|   |   |   |-- install.conf
+|   |   |   |-- lib64
+|   |   |   |   |-- UpdateModelParam_ascend910B.o
+|   |   |   |   |-- UpdateModelParam_ascend910_93.o
+|   |   |   |   |-- auto_deploy_utils-0.1.0-py3-none-any.whl
+|   |   |   |   |-- auto_tune-0.1.0-py3-none-any.whl
+|   |   |   |   |-- c
+|   |   |   |   |-- d2d_bandwidth_test.o
+|   |   |   |   |-- d2d_bandwidth_test_310b.o
+|   |   |   |   |-- d2d_bandwidth_write_test.o
+|   |   |   |   |-- dataflow-0.0.1-py3-none-any.whl
+|   |   |   |   |-- device
+|   |   |   |   |-- hbm_power.o
+|   |   |   |   |-- hbm_test_0.o
+|   |   |   |   |-- hbm_test_1.o
+|   |   |   |   |-- hbm_test_2.o
+|   |   |   |   |-- hbm_test_3.o
+|   |   |   |   |-- hbm_test_4.o
+|   |   |   |   |-- hbm_test_5.o
+|   |   |   |   |-- hccl-0.1.0-py3-none-any.whl
+|   |   |   |   |-- hccl_aiv_op_ascend910B.o
+|   |   |   |   |-- hccl_reduce_op_Ascend310P3.o
+|   |   |   |   |-- hccl_reduce_op_ascend910.o
+|   |   |   |   |-- hccl_reduce_op_ascend910B.o
+|   |   |   |   |-- infer_310b_model.o
+|   |   |   |   |-- infer_310b_model_int8.o
+|   |   |   |   |-- infer_mmad_model.o
+|   |   |   |   |-- infer_mmad_model_int8.o
+|   |   |   |   |-- infer_mmad_v200_model.o
+|   |   |   |   |-- infer_mmad_v200_model_int8.o
+|   |   |   |   |-- kfc_dump_stat_ascend310p3.o
+|   |   |   |   |-- kfc_dump_stat_ascend910B.o
+|   |   |   |   |-- lib_caffe_parser.so
+|   |   |   |   |-- libacl_audio_mpi.so
+|   |   |   |   |-- libacl_cblas.so
+|   |   |   |   |-- libacl_dvpp.so
+|   |   |   |   |-- libacl_dvpp_mpi.so
+|   |   |   |   |-- libacl_dvpp_op.so
+|   |   |   |   |-- libacl_hdmi_mpi.so
+|   |   |   |   |-- libacl_isp_ae_mpi.so
+|   |   |   |   |-- libacl_isp_awb_mpi.so
+|   |   |   |   |-- libacl_isp_mpi.so
+|   |   |   |   |-- libacl_mfusion_mpi.so
+|   |   |   |   |-- libacl_op_compiler.so
+|   |   |   |   |-- libacl_retr.so
+|   |   |   |   |-- libacl_tde_mpi.so
+|   |   |   |   |-- libacl_tdt_channel.so
+|   |   |   |   |-- libacl_tdt_queue.so
+|   |   |   |   |-- libacl_vi_mpi.so
+|   |   |   |   |-- libacl_vo_mpi.so
+|   |   |   |   |-- libacl_vpss_mpi.so
+|   |   |   |   |-- libaclnn_math.so -> ../../opp/built-in/op_impl/ai_core/tbe/op_api/lib/linux/aarch64/libaclnn_math.so
+|   |   |   |   |-- libaclnn_ops_infer.so -> ../../opp/built-in/op_impl/ai_core/tbe/op_api/lib/linux/aarch64/libaclnn_ops_infer.so
+|   |   |   |   |-- libaclnn_ops_train.so -> ../../opp/built-in/op_impl/ai_core/tbe/op_api/lib/linux/aarch64/libaclnn_ops_train.so
+|   |   |   |   |-- libaclnn_rand.so -> ../../opp/built-in/op_impl/ai_core/tbe/op_api/lib/linux/aarch64/libaclnn_rand.so
+|   |   |   |   |-- libadcore.a
+|   |   |   |   |-- libadump_server.a
+|   |   |   |   |-- libaicore_utils.so
+|   |   |   |   |-- libaicpu_const_folding.so
+|   |   |   |   |-- libaicpu_engine_common.so
+|   |   |   |   |-- libaihac_autofusion.so
+|   |   |   |   |-- libaihac_codegen.so
+|   |   |   |   |-- libaihac_ir.so
+|   |   |   |   |-- libaihac_ir_register.so
+|   |   |   |   |-- libaihac_symbolizer.so
+|   |   |   |   |-- libamctacl.so
+|   |   |   |   |-- libaoe_compiler.so
+|   |   |   |   |-- libaoe_executor.so
+|   |   |   |   |-- libaoe_opat.so
+|   |   |   |   |-- libaoe_plugin.so
+|   |   |   |   |-- libaoe_runner.so
+|   |   |   |   |-- libaoe_tuning.so
+|   |   |   |   |-- libascend_aoe_runner_offline.so
+|   |   |   |   |-- libascend_dump.a
+|   |   |   |   |-- libascend_dump.so
+|   |   |   |   |-- libascend_ml.so
+|   |   |   |   |-- libascend_ml_detect.so
+|   |   |   |   |-- libascend_protobuf.so -> libascend_protobuf.so.3.13.0.0
+|   |   |   |   |-- libascend_protobuf.so.3.13.0.0
+|   |   |   |   |-- libascend_trace.so
+|   |   |   |   |-- libascend_watchdog.so
+|   |   |   |   |-- libascendalog.so
+|   |   |   |   |-- libascendc_runtime.a
+|   |   |   |   |-- libascendcl.a
+|   |   |   |   |-- libascendcl.so
+|   |   |   |   |-- libascendprofhal.so
+|   |   |   |   |-- libauto_tiling.so
+|   |   |   |   |-- libbuilt_in_flowfunc.so
+|   |   |   |   |-- libc_sec.a
+|   |   |   |   |-- libc_sec.so
+|   |   |   |   |-- libcann_kb.so
+|   |   |   |   |-- libcce.so
+|   |   |   |   |-- libcce_aicore.so
+|   |   |   |   |-- libcce_aicpudev_online.so
+|   |   |   |   |-- libcce_tools.so
+|   |   |   |   |-- libcompress.so
+|   |   |   |   |-- libcompressweight.so
+|   |   |   |   |-- libconstant_folding_ops.so
+|   |   |   |   |-- libdata_flow_base.so
+|   |   |   |   |-- libdatatransfer.so
+|   |   |   |   |-- libdavinci_executor.so
+|   |   |   |   |-- libdevice_register.a
+|   |   |   |   |-- libdgw_client.so
+|   |   |   |   |-- libdgw_client_so.so
+|   |   |   |   |-- libdummy_tls.so
+|   |   |   |   |-- libdvpp_cmdlist.so
+|   |   |   |   |-- libdvpp_op_base.so
+|   |   |   |   |-- liberror_manager.a
+|   |   |   |   |-- liberror_manager.so
+|   |   |   |   |-- libexe_graph.so
+|   |   |   |   |-- libflow_func.so
+|   |   |   |   |-- libflow_graph.so
+|   |   |   |   |-- libfmk_onnx_parser.so
+|   |   |   |   |-- libfmk_parser.so
+|   |   |   |   |-- libge_common.so
+|   |   |   |   |-- libge_common_base.so
+|   |   |   |   |-- libge_compiler.so
+|   |   |   |   |-- libge_executor.so
+|   |   |   |   |-- libge_runner.so
+|   |   |   |   |-- libgert.so
+|   |   |   |   |-- libgraph.so
+|   |   |   |   |-- libgraph_base.so
+|   |   |   |   |-- libgraphtuner_executor.so
+|   |   |   |   |-- libhccd.so
+|   |   |   |   |-- libhccl.so
+|   |   |   |   |-- libhccl_alg.so
+|   |   |   |   |-- libhccl_alg_research.so
+|   |   |   |   |-- libhccl_heterog.so
+|   |   |   |   |-- libhccl_plf.so
+|   |   |   |   |-- libhcom_executor.so
+|   |   |   |   |-- libhcom_gradient_split_tune.so
+|   |   |   |   |-- libhcom_graph_adaptor.so
+|   |   |   |   |-- libhdds_base.so
+|   |   |   |   |-- libhost_aicpu_scheduler.so
+|   |   |   |   |-- libhybrid_executor.so
+|   |   |   |   |-- libindextransform.so
+|   |   |   |   |-- libllm_engine.so
+|   |   |   |   |-- liblowering.so
+|   |   |   |   |-- libmmpa.a
+|   |   |   |   |-- libmmpa.so
+|   |   |   |   |-- libmodel_deployer.so
+|   |   |   |   |-- libms_service_profiler.so -> ../../tools/msserviceprofiler/lib/libms_service_profiler.so
+|   |   |   |   |-- libms_tools_ext.so -> ../../tools/mstx/lib64/libms_tools_ext.so
+|   |   |   |   |-- libmsprofiler.so
+|   |   |   |   |-- libmspti.so -> ../../tools/mspti/lib64/libmspti.so
+|   |   |   |   |-- libnca.so
+|   |   |   |   |-- libnnopbase.so
+|   |   |   |   |-- libnpu_sched_model_loader.so
+|   |   |   |   |-- libop_common.so
+|   |   |   |   |-- libopapi.so -> ../../opp/built-in/op_impl/ai_core/tbe/op_api/lib/linux/aarch64/libopapi.so
+|   |   |   |   |-- libopat.so
+|   |   |   |   |-- libops_host_cpu.so
+|   |   |   |   |-- libopskernel.so
+|   |   |   |   |-- libopt_feature.so
+|   |   |   |   |-- libparser_common.so
+|   |   |   |   |-- libplatform.so
+|   |   |   |   |-- libprofapi.so
+|   |   |   |   |-- libprofimpl.so
+|   |   |   |   |-- libqos_manager.so
+|   |   |   |   |-- libra.so
+|   |   |   |   |-- libra_hdc.so
+|   |   |   |   |-- libra_peer.so
+|   |   |   |   |-- libreader_writer.so
+|   |   |   |   |-- libregister.a
+|   |   |   |   |-- libregister.so
+|   |   |   |   |-- librs.so
+|   |   |   |   |-- librt2_registry.a
+|   |   |   |   |-- libruntime.so
+|   |   |   |   |-- libruntime_common.so
+|   |   |   |   |-- libruntime_kb.so
+|   |   |   |   |-- libruntime_v100.so
+|   |   |   |   |-- libslice.so
+|   |   |   |   |-- libte_fusion.so
+|   |   |   |   |-- libtiling.so
+|   |   |   |   |-- libtiling_api.a
+|   |   |   |   |-- libtprt.so
+|   |   |   |   |-- libtsdclient.so
+|   |   |   |   |-- libtvm.so
+|   |   |   |   |-- libtvm_runtime.so
+|   |   |   |   |-- libudf_dump.so
+|   |   |   |   |-- libudf_profiling.so
+|   |   |   |   |-- llm_datadist-0.0.1-py3-none-any.whl
+|   |   |   |   |-- op_compile_tool-0.1.0-py3-none-any.whl
+|   |   |   |   |-- opc_tool-0.1.0-py3-none-any.whl
+|   |   |   |   |-- plugin
+|   |   |   |   |-- schedule_search-0.1.0-py3-none-any.whl
+|   |   |   |   |-- stub
+|   |   |   |   |-- switch_by_index.o
+|   |   |   |   |-- te-0.4.0-py3-none-any.whl
+|   |   |   |   |-- train_matmul_model.o
+|   |   |   |   |-- train_matmul_model_fp32.o
+|   |   |   |   |-- train_matmul_model_hf32.o
+|   |   |   |   |-- train_matmul_model_int8.o
+|   |   |   |   |-- train_mmad_model.o
+|   |   |   |   |-- train_mmad_model_int8.o
+|   |   |   |   |-- train_mmad_vec_model.o
+|   |   |   |   |-- train_mmad_vec_model_int8.o
+|   |   |   |   |-- vector_multiplication.o
+|   |   |   |   `-- vector_multiplication_fp32.o
+|   |   |   |-- python
+|   |   |   |   `-- func2graph
+|   |   |   |-- runtime -> ../runtime
+|   |   |   |-- script
+|   |   |   |   |-- set_env.sh
+|   |   |   |   `-- uninstall.sh
+|   |   |   |-- simulator
+|   |   |   |   |-- AS31XM1 -> Ascend310B1
+|   |   |   |   |-- Ascend310
+|   |   |   |   |-- Ascend310B1
+|   |   |   |   |-- Ascend310B2 -> Ascend310B1
+|   |   |   |   |-- Ascend310B3 -> Ascend310B1
+|   |   |   |   |-- Ascend310B4 -> Ascend310B1
+|   |   |   |   |-- Ascend310P1
+|   |   |   |   |-- Ascend310P2 -> Ascend310P1
+|   |   |   |   |-- Ascend310P3 -> Ascend310P1
+|   |   |   |   |-- Ascend310P4 -> Ascend310P1
+|   |   |   |   |-- Ascend310P5 -> Ascend310P1
+|   |   |   |   |-- Ascend310P7 -> Ascend310P1
+|   |   |   |   |-- Ascend610
+|   |   |   |   |-- Ascend610Lite
+|   |   |   |   |-- Ascend910A
+|   |   |   |   |-- Ascend910B
+|   |   |   |   |-- Ascend910B1
+|   |   |   |   |-- Ascend910B2 -> Ascend910B1
+|   |   |   |   |-- Ascend910B2C -> Ascend910B1
+|   |   |   |   |-- Ascend910B3 -> Ascend910B1
+|   |   |   |   |-- Ascend910B4 -> Ascend910B1
+|   |   |   |   |-- Ascend910PremiumA
+|   |   |   |   |-- Ascend910ProA
+|   |   |   |   |-- Ascend910ProB
+|   |   |   |   |-- Ascend910_9362 -> Ascend910B1
+|   |   |   |   |-- Ascend910_9372 -> Ascend910B1
+|   |   |   |   |-- Ascend910_9381 -> Ascend910B1
+|   |   |   |   |-- Ascend910_9382 -> Ascend910B1
+|   |   |   |   |-- Ascend910_9391 -> Ascend910B1
+|   |   |   |   |-- Ascend910_9392 -> Ascend910B1
+|   |   |   |   |-- Ascend920A
+|   |   |   |   |-- BS9SX1AA
+|   |   |   |   |-- BS9SX2AA -> Ascend610Lite
+|   |   |   |   |-- BS9SX2AB -> Ascend610Lite
+|   |   |   |   |-- MC61AM21AA -> Ascend610Lite
+|   |   |   |   |-- MC61AM21AB -> Ascend610Lite
+|   |   |   |   |-- ascend035
+|   |   |   |   `-- common
+|   |   |   `-- tikcpp
+|   |   |       |-- ascendc_kernel_cmake
+|   |   |       `-- tikcfw
+|   |   |-- acllib -> runtime
+|   |   |-- arm64-linux -> aarch64-linux
+|   |   |-- atc
+|   |   |   |-- ascend_install.info -> ../compiler/ascend_install.info
+|   |   |   |-- bin -> ../compiler/bin
+|   |   |   |-- ccec_compiler -> ../compiler/ccec_compiler
+|   |   |   |-- conf -> ../compiler/conf
+|   |   |   |-- data
+|   |   |   |   |-- fusion_strategy -> ../../compiler/data/fusion_strategy
+|   |   |   |   `-- platform_config -> ../../compiler/data/platform_config
+|   |   |   |-- include -> ../aarch64-linux/include
+|   |   |   |-- lib64
+|   |   |   |   |-- UpdateModelParam_ascend910B.o -> ../../aarch64-linux/lib64/UpdateModelParam_ascend910B.o
+|   |   |   |   |-- UpdateModelParam_ascend910_93.o -> ../../aarch64-linux/lib64/UpdateModelParam_ascend910_93.o
+|   |   |   |   |-- auto_deploy_utils-0.1.0-py3-none-any.whl -> ../../aarch64-linux/lib64/auto_deploy_utils-0.1.0-py3-none-any.whl
+|   |   |   |   |-- auto_tune-0.1.0-py3-none-any.whl -> ../../aarch64-linux/lib64/auto_tune-0.1.0-py3-none-any.whl
+|   |   |   |   |-- c -> ../../aarch64-linux/lib64/c
+|   |   |   |   |-- dataflow-0.0.1-py3-none-any.whl -> ../../aarch64-linux/lib64/dataflow-0.0.1-py3-none-any.whl
+|   |   |   |   |-- hccl-0.1.0-py3-none-any.whl -> ../../aarch64-linux/lib64/hccl-0.1.0-py3-none-any.whl
+|   |   |   |   |-- hccl_aiv_op_ascend910B.o -> ../../aarch64-linux/lib64/hccl_aiv_op_ascend910B.o
+|   |   |   |   |-- hccl_reduce_op_Ascend310P3.o -> ../../aarch64-linux/lib64/hccl_reduce_op_Ascend310P3.o
+|   |   |   |   |-- hccl_reduce_op_ascend910.o -> ../../aarch64-linux/lib64/hccl_reduce_op_ascend910.o
+|   |   |   |   |-- hccl_reduce_op_ascend910B.o -> ../../aarch64-linux/lib64/hccl_reduce_op_ascend910B.o
+|   |   |   |   |-- kfc_dump_stat_ascend310p3.o -> ../../aarch64-linux/lib64/kfc_dump_stat_ascend310p3.o
+|   |   |   |   |-- kfc_dump_stat_ascend910B.o -> ../../aarch64-linux/lib64/kfc_dump_stat_ascend910B.o
+|   |   |   |   |-- lib_caffe_parser.so -> ../../aarch64-linux/lib64/lib_caffe_parser.so
+|   |   |   |   |-- libacl_audio_mpi.so -> ../../aarch64-linux/lib64/libacl_audio_mpi.so
+|   |   |   |   |-- libacl_cblas.so -> ../../aarch64-linux/lib64/libacl_cblas.so
+|   |   |   |   |-- libacl_dvpp.so -> ../../aarch64-linux/lib64/libacl_dvpp.so
+|   |   |   |   |-- libacl_dvpp_mpi.so -> ../../aarch64-linux/lib64/libacl_dvpp_mpi.so
+|   |   |   |   |-- libacl_dvpp_op.so -> ../../aarch64-linux/lib64/libacl_dvpp_op.so
+|   |   |   |   |-- libacl_hdmi_mpi.so -> ../../aarch64-linux/lib64/libacl_hdmi_mpi.so
+|   |   |   |   |-- libacl_isp_ae_mpi.so -> ../../aarch64-linux/lib64/libacl_isp_ae_mpi.so
+|   |   |   |   |-- libacl_isp_awb_mpi.so -> ../../aarch64-linux/lib64/libacl_isp_awb_mpi.so
+|   |   |   |   |-- libacl_isp_mpi.so -> ../../aarch64-linux/lib64/libacl_isp_mpi.so
+|   |   |   |   |-- libacl_mfusion_mpi.so -> ../../aarch64-linux/lib64/libacl_mfusion_mpi.so
+|   |   |   |   |-- libacl_op_compiler.so -> ../../aarch64-linux/lib64/libacl_op_compiler.so
+|   |   |   |   |-- libacl_retr.so -> ../../aarch64-linux/lib64/libacl_retr.so
+|   |   |   |   |-- libacl_tde_mpi.so -> ../../aarch64-linux/lib64/libacl_tde_mpi.so
+|   |   |   |   |-- libacl_tdt_channel.so -> ../../aarch64-linux/lib64/libacl_tdt_channel.so
+|   |   |   |   |-- libacl_tdt_queue.so -> ../../aarch64-linux/lib64/libacl_tdt_queue.so
+|   |   |   |   |-- libacl_vi_mpi.so -> ../../aarch64-linux/lib64/libacl_vi_mpi.so
+|   |   |   |   |-- libacl_vo_mpi.so -> ../../aarch64-linux/lib64/libacl_vo_mpi.so
+|   |   |   |   |-- libacl_vpss_mpi.so -> ../../aarch64-linux/lib64/libacl_vpss_mpi.so
+|   |   |   |   |-- libadcore.a -> ../../aarch64-linux/lib64/libadcore.a
+|   |   |   |   |-- libadump_server.a -> ../../aarch64-linux/lib64/libadump_server.a
+|   |   |   |   |-- libaicore_utils.so -> ../../aarch64-linux/lib64/libaicore_utils.so
+|   |   |   |   |-- libaicpu_const_folding.so -> ../../aarch64-linux/lib64/libaicpu_const_folding.so
+|   |   |   |   |-- libaicpu_engine_common.so -> ../../aarch64-linux/lib64/libaicpu_engine_common.so
+|   |   |   |   |-- libaihac_autofusion.so -> ../../aarch64-linux/lib64/libaihac_autofusion.so
+|   |   |   |   |-- libaihac_codegen.so -> ../../aarch64-linux/lib64/libaihac_codegen.so
+|   |   |   |   |-- libaihac_ir.so -> ../../aarch64-linux/lib64/libaihac_ir.so
+|   |   |   |   |-- libaihac_ir_register.so -> ../../aarch64-linux/lib64/libaihac_ir_register.so
+|   |   |   |   |-- libaihac_symbolizer.so -> ../../aarch64-linux/lib64/libaihac_symbolizer.so
+|   |   |   |   |-- libamctacl.so -> ../../aarch64-linux/lib64/libamctacl.so
+|   |   |   |   |-- libaoe_compiler.so -> ../../aarch64-linux/lib64/libaoe_compiler.so
+|   |   |   |   |-- libaoe_executor.so -> ../../aarch64-linux/lib64/libaoe_executor.so
+|   |   |   |   |-- libaoe_runner.so -> ../../aarch64-linux/lib64/libaoe_runner.so
+|   |   |   |   |-- libascend_dump.a -> ../../aarch64-linux/lib64/libascend_dump.a
+|   |   |   |   |-- libascend_dump.so -> ../../aarch64-linux/lib64/libascend_dump.so
+|   |   |   |   |-- libascend_protobuf.so -> ../../aarch64-linux/lib64/libascend_protobuf.so.3.13.0.0
+|   |   |   |   |-- libascend_protobuf.so.3.13.0.0 -> ../../aarch64-linux/lib64/libascend_protobuf.so.3.13.0.0
+|   |   |   |   |-- libascend_trace.so -> ../../aarch64-linux/lib64/libascend_trace.so
+|   |   |   |   |-- libascend_watchdog.so -> ../../aarch64-linux/lib64/libascend_watchdog.so
+|   |   |   |   |-- libascendalog.so -> ../../aarch64-linux/lib64/libascendalog.so
+|   |   |   |   |-- libascendc_runtime.a -> ../../aarch64-linux/lib64/libascendc_runtime.a
+|   |   |   |   |-- libascendcl.a -> ../../aarch64-linux/lib64/libascendcl.a
+|   |   |   |   |-- libascendcl.so -> ../../aarch64-linux/lib64/libascendcl.so
+|   |   |   |   |-- libascendprofhal.so -> ../../aarch64-linux/lib64/libascendprofhal.so
+|   |   |   |   |-- libauto_tiling.so -> ../../aarch64-linux/lib64/libauto_tiling.so
+|   |   |   |   |-- libbuilt_in_flowfunc.so -> ../../aarch64-linux/lib64/libbuilt_in_flowfunc.so
+|   |   |   |   |-- libc_sec.a -> ../../aarch64-linux/lib64/libc_sec.a
+|   |   |   |   |-- libc_sec.so -> ../../aarch64-linux/lib64/libc_sec.so
+|   |   |   |   |-- libcann_kb.so -> ../../aarch64-linux/lib64/libcann_kb.so
+|   |   |   |   |-- libcce.so -> ../../aarch64-linux/lib64/libcce.so
+|   |   |   |   |-- libcce_aicore.so -> ../../aarch64-linux/lib64/libcce_aicore.so
+|   |   |   |   |-- libcce_aicpudev_online.so -> ../../aarch64-linux/lib64/libcce_aicpudev_online.so
+|   |   |   |   |-- libcce_tools.so -> ../../aarch64-linux/lib64/libcce_tools.so
+|   |   |   |   |-- libcompress.so -> ../../aarch64-linux/lib64/libcompress.so
+|   |   |   |   |-- libcompressweight.so -> ../../aarch64-linux/lib64/libcompressweight.so
+|   |   |   |   |-- libdata_flow_base.so -> ../../aarch64-linux/lib64/libdata_flow_base.so
+|   |   |   |   |-- libdatatransfer.so -> ../../aarch64-linux/lib64/libdatatransfer.so
+|   |   |   |   |-- libdavinci_executor.so -> ../../aarch64-linux/lib64/libdavinci_executor.so
+|   |   |   |   |-- libdevice_register.a -> ../../aarch64-linux/lib64/libdevice_register.a
+|   |   |   |   |-- libdgw_client.so -> ../../aarch64-linux/lib64/libdgw_client.so
+|   |   |   |   |-- libdgw_client_so.so -> ../../aarch64-linux/lib64/libdgw_client_so.so
+|   |   |   |   |-- libdummy_tls.so -> ../../aarch64-linux/lib64/libdummy_tls.so
+|   |   |   |   |-- libdvpp_cmdlist.so -> ../../aarch64-linux/lib64/libdvpp_cmdlist.so
+|   |   |   |   |-- libdvpp_op_base.so -> ../../aarch64-linux/lib64/libdvpp_op_base.so
+|   |   |   |   |-- liberror_manager.a -> ../../aarch64-linux/lib64/liberror_manager.a
+|   |   |   |   |-- liberror_manager.so -> ../../aarch64-linux/lib64/liberror_manager.so
+|   |   |   |   |-- libexe_graph.so -> ../../aarch64-linux/lib64/libexe_graph.so
+|   |   |   |   |-- libflow_func.so -> ../../aarch64-linux/lib64/libflow_func.so
+|   |   |   |   |-- libflow_graph.so -> ../../aarch64-linux/lib64/libflow_graph.so
+|   |   |   |   |-- libfmk_onnx_parser.so -> ../../aarch64-linux/lib64/libfmk_onnx_parser.so
+|   |   |   |   |-- libfmk_parser.so -> ../../aarch64-linux/lib64/libfmk_parser.so
+|   |   |   |   |-- libge_common.so -> ../../aarch64-linux/lib64/libge_common.so
+|   |   |   |   |-- libge_common_base.so -> ../../aarch64-linux/lib64/libge_common_base.so
+|   |   |   |   |-- libge_compiler.so -> ../../aarch64-linux/lib64/libge_compiler.so
+|   |   |   |   |-- libge_executor.so -> ../../aarch64-linux/lib64/libge_executor.so
+|   |   |   |   |-- libge_runner.so -> ../../aarch64-linux/lib64/libge_runner.so
+|   |   |   |   |-- libgert.so -> ../../aarch64-linux/lib64/libgert.so
+|   |   |   |   |-- libgraph.so -> ../../aarch64-linux/lib64/libgraph.so
+|   |   |   |   |-- libgraph_base.so -> ../../aarch64-linux/lib64/libgraph_base.so
+|   |   |   |   |-- libgraphtuner_executor.so -> ../../aarch64-linux/lib64/libgraphtuner_executor.so
+|   |   |   |   |-- libhccd.so -> ../../aarch64-linux/lib64/libhccd.so
+|   |   |   |   |-- libhccl.so -> ../../aarch64-linux/lib64/libhccl.so
+|   |   |   |   |-- libhccl_alg.so -> ../../aarch64-linux/lib64/libhccl_alg.so
+|   |   |   |   |-- libhccl_alg_research.so -> ../../aarch64-linux/lib64/libhccl_alg_research.so
+|   |   |   |   |-- libhccl_heterog.so -> ../../aarch64-linux/lib64/libhccl_heterog.so
+|   |   |   |   |-- libhccl_plf.so -> ../../aarch64-linux/lib64/libhccl_plf.so
+|   |   |   |   |-- libhcom_executor.so -> ../../aarch64-linux/lib64/libhcom_executor.so
+|   |   |   |   |-- libhcom_graph_adaptor.so -> ../../aarch64-linux/lib64/libhcom_graph_adaptor.so
+|   |   |   |   |-- libhdds_base.so -> ../../aarch64-linux/lib64/libhdds_base.so
+|   |   |   |   |-- libhost_aicpu_scheduler.so -> ../../aarch64-linux/lib64/libhost_aicpu_scheduler.so
+|   |   |   |   |-- libhybrid_executor.so -> ../../aarch64-linux/lib64/libhybrid_executor.so
+|   |   |   |   |-- libindextransform.so -> ../../aarch64-linux/lib64/libindextransform.so
+|   |   |   |   |-- libllm_engine.so -> ../../aarch64-linux/lib64/libllm_engine.so
+|   |   |   |   |-- liblowering.so -> ../../aarch64-linux/lib64/liblowering.so
+|   |   |   |   |-- libmmpa.a -> ../../aarch64-linux/lib64/libmmpa.a
+|   |   |   |   |-- libmmpa.so -> ../../aarch64-linux/lib64/libmmpa.so
+|   |   |   |   |-- libmodel_deployer.so -> ../../aarch64-linux/lib64/libmodel_deployer.so
+|   |   |   |   |-- libmsprofiler.so -> ../../aarch64-linux/lib64/libmsprofiler.so
+|   |   |   |   |-- libnca.so -> ../../aarch64-linux/lib64/libnca.so
+|   |   |   |   |-- libnnopbase.so -> ../../aarch64-linux/lib64/libnnopbase.so
+|   |   |   |   |-- libnpu_sched_model_loader.so -> ../../aarch64-linux/lib64/libnpu_sched_model_loader.so
+|   |   |   |   |-- libop_common.so -> ../../aarch64-linux/lib64/libop_common.so
+|   |   |   |   |-- libops_host_cpu.so -> ../../aarch64-linux/lib64/libops_host_cpu.so
+|   |   |   |   |-- libopskernel.so -> ../../aarch64-linux/lib64/libopskernel.so
+|   |   |   |   |-- libopt_feature.so -> ../../aarch64-linux/lib64/libopt_feature.so
+|   |   |   |   |-- libparser_common.so -> ../../aarch64-linux/lib64/libparser_common.so
+|   |   |   |   |-- libplatform.so -> ../../aarch64-linux/lib64/libplatform.so
+|   |   |   |   |-- libprofapi.so -> ../../aarch64-linux/lib64/libprofapi.so
+|   |   |   |   |-- libprofimpl.so -> ../../aarch64-linux/lib64/libprofimpl.so
+|   |   |   |   |-- libqos_manager.so -> ../../aarch64-linux/lib64/libqos_manager.so
+|   |   |   |   |-- libra.so -> ../../aarch64-linux/lib64/libra.so
+|   |   |   |   |-- libra_hdc.so -> ../../aarch64-linux/lib64/libra_hdc.so
+|   |   |   |   |-- libra_peer.so -> ../../aarch64-linux/lib64/libra_peer.so
+|   |   |   |   |-- libreader_writer.so -> ../../aarch64-linux/lib64/libreader_writer.so
+|   |   |   |   |-- libregister.a -> ../../aarch64-linux/lib64/libregister.a
+|   |   |   |   |-- libregister.so -> ../../aarch64-linux/lib64/libregister.so
+|   |   |   |   |-- librs.so -> ../../aarch64-linux/lib64/librs.so
+|   |   |   |   |-- librt2_registry.a -> ../../aarch64-linux/lib64/librt2_registry.a
+|   |   |   |   |-- libruntime.so -> ../../aarch64-linux/lib64/libruntime.so
+|   |   |   |   |-- libruntime_common.so -> ../../aarch64-linux/lib64/libruntime_common.so
+|   |   |   |   |-- libruntime_kb.so -> ../../aarch64-linux/lib64/libruntime_kb.so
+|   |   |   |   |-- libruntime_v100.so -> ../../aarch64-linux/lib64/libruntime_v100.so
+|   |   |   |   |-- libslice.so -> ../../aarch64-linux/lib64/libslice.so
+|   |   |   |   |-- libte_fusion.so -> ../../aarch64-linux/lib64/libte_fusion.so
+|   |   |   |   |-- libtiling.so -> ../../aarch64-linux/lib64/libtiling.so
+|   |   |   |   |-- libtiling_api.a -> ../../aarch64-linux/lib64/libtiling_api.a
+|   |   |   |   |-- libtprt.so -> ../../aarch64-linux/lib64/libtprt.so
+|   |   |   |   |-- libtsdclient.so -> ../../aarch64-linux/lib64/libtsdclient.so
+|   |   |   |   |-- libtvm.so -> ../../aarch64-linux/lib64/libtvm.so
+|   |   |   |   |-- libtvm_runtime.so -> ../../aarch64-linux/lib64/libtvm_runtime.so
+|   |   |   |   |-- libudf_dump.so -> ../../aarch64-linux/lib64/libudf_dump.so
+|   |   |   |   |-- libudf_profiling.so -> ../../aarch64-linux/lib64/libudf_profiling.so
+|   |   |   |   |-- llm_datadist-0.0.1-py3-none-any.whl -> ../../aarch64-linux/lib64/llm_datadist-0.0.1-py3-none-any.whl
+|   |   |   |   |-- op_compile_tool-0.1.0-py3-none-any.whl -> ../../aarch64-linux/lib64/op_compile_tool-0.1.0-py3-none-any.whl
+|   |   |   |   |-- opc_tool-0.1.0-py3-none-any.whl -> ../../aarch64-linux/lib64/opc_tool-0.1.0-py3-none-any.whl
+|   |   |   |   |-- plugin -> ../../aarch64-linux/lib64/plugin
+|   |   |   |   |-- schedule_search-0.1.0-py3-none-any.whl -> ../../aarch64-linux/lib64/schedule_search-0.1.0-py3-none-any.whl
+|   |   |   |   |-- stub -> ../../aarch64-linux/devlib
+|   |   |   |   |-- switch_by_index.o -> ../../aarch64-linux/lib64/switch_by_index.o
+|   |   |   |   `-- te-0.4.0-py3-none-any.whl -> ../../aarch64-linux/lib64/te-0.4.0-py3-none-any.whl
+|   |   |   |-- python -> ../compiler/python
+|   |   |   |-- scene.info -> ../compiler/scene.info
+|   |   |   |-- script -> ../compiler/script
+|   |   |   `-- version.info -> ../compiler/version.info
+|   |   |-- bin -> aarch64-linux/bin
+|   |   |-- cann_uninstall.sh
+|   |   |-- combo_script
+|   |   |   `-- uninstall.sh
+|   |   |-- compiler
+|   |   |   |-- ascend_install.info
+|   |   |   |-- ascendc -> ../aarch64-linux/ascendc
+|   |   |   |-- bin
+|   |   |   |   |-- amct_inner_graph_build -> ../../aarch64-linux/bin/amct_inner_graph_build
+|   |   |   |   |-- atc -> ../../aarch64-linux/bin/atc
+|   |   |   |   |-- atc.bin -> ../../aarch64-linux/bin/atc.bin
+|   |   |   |   |-- op_compiler -> ../../aarch64-linux/bin/op_compiler
+|   |   |   |   |-- opc -> ../../aarch64-linux/bin/opc
+|   |   |   |   |-- prereq_check.bash
+|   |   |   |   |-- prereq_check.csh
+|   |   |   |   |-- prereq_check.fish
+|   |   |   |   |-- setenv.bash
+|   |   |   |   |-- setenv.csh
+|   |   |   |   `-- setenv.fish
+|   |   |   |-- ccec_compiler
+|   |   |   |   |-- bin -> ../../aarch64-linux/ccec_compiler/bin
+|   |   |   |   |-- include -> ../../aarch64-linux/ccec_compiler/include
+|   |   |   |   `-- lib -> ../../aarch64-linux/ccec_compiler/lib
+|   |   |   |-- conf
+|   |   |   |   |-- Ascend310P_config.json -> ../../aarch64-linux/conf/Ascend310P_config.json
+|   |   |   |   |-- Ascend310_config.json -> ../../aarch64-linux/conf/Ascend310_config.json
+|   |   |   |   |-- Ascend610_config.json -> ../../aarch64-linux/conf/Ascend610_config.json
+|   |   |   |   |-- Hi3796CV300ES_config.json -> ../../aarch64-linux/conf/Hi3796CV300ES_config.json
+|   |   |   |   |-- aipp
+|   |   |   |   |-- atc_param_conf.json -> ../../aarch64-linux/conf/atc_param_conf.json
+|   |   |   |   |-- compile_options_config.json -> ../../aarch64-linux/conf/compile_options_config.json
+|   |   |   |   `-- error_manager
+|   |   |   |-- data
+|   |   |   |   |-- auto_deploy_op_cost
+|   |   |   |   |-- fusion_strategy
+|   |   |   |   |-- mdat_op_cost
+|   |   |   |   `-- platform_config
+|   |   |   |-- include
+|   |   |   |   |-- acl
+|   |   |   |   |-- aclnn
+|   |   |   |   |-- amct
+|   |   |   |   |-- exe_graph
+|   |   |   |   |-- external
+|   |   |   |   |-- flow_graph
+|   |   |   |   |-- ge
+|   |   |   |   |-- graph
+|   |   |   |   |-- hccl
+|   |   |   |   |-- parser
+|   |   |   |   |-- proto
+|   |   |   |   |-- register
+|   |   |   |   |-- securec.h -> ../../aarch64-linux/include/securec.h
+|   |   |   |   |-- securectype.h -> ../../aarch64-linux/include/securectype.h
+|   |   |   |   `-- utils
+|   |   |   |-- lib64
+|   |   |   |   |-- auto_deploy_utils-0.1.0-py3-none-any.whl -> ../../aarch64-linux/lib64/auto_deploy_utils-0.1.0-py3-none-any.whl
+|   |   |   |   |-- auto_tune-0.1.0-py3-none-any.whl -> ../../aarch64-linux/lib64/auto_tune-0.1.0-py3-none-any.whl
+|   |   |   |   |-- dataflow-0.0.1-py3-none-any.whl -> ../../aarch64-linux/lib64/dataflow-0.0.1-py3-none-any.whl
+|   |   |   |   |-- hccl-0.1.0-py3-none-any.whl -> ../../aarch64-linux/lib64/hccl-0.1.0-py3-none-any.whl
+|   |   |   |   |-- hccl_aiv_op_ascend910B.o -> ../../aarch64-linux/lib64/hccl_aiv_op_ascend910B.o
+|   |   |   |   |-- hccl_reduce_op_Ascend310P3.o -> ../../aarch64-linux/lib64/hccl_reduce_op_Ascend310P3.o
+|   |   |   |   |-- hccl_reduce_op_ascend910.o -> ../../aarch64-linux/lib64/hccl_reduce_op_ascend910.o
+|   |   |   |   |-- hccl_reduce_op_ascend910B.o -> ../../aarch64-linux/lib64/hccl_reduce_op_ascend910B.o
+|   |   |   |   |-- lib_caffe_parser.so -> ../../aarch64-linux/lib64/lib_caffe_parser.so
+|   |   |   |   |-- libacl_op_compiler.so -> ../../aarch64-linux/lib64/libacl_op_compiler.so
+|   |   |   |   |-- libacl_tdt_channel.so -> ../../aarch64-linux/lib64/libacl_tdt_channel.so
+|   |   |   |   |-- libaicore_utils.so -> ../../aarch64-linux/lib64/libaicore_utils.so
+|   |   |   |   |-- libaicpu_const_folding.so -> ../../aarch64-linux/lib64/libaicpu_const_folding.so
+|   |   |   |   |-- libaicpu_engine_common.so -> ../../aarch64-linux/lib64/libaicpu_engine_common.so
+|   |   |   |   |-- libaihac_autofusion.so -> ../../aarch64-linux/lib64/libaihac_autofusion.so
+|   |   |   |   |-- libaihac_codegen.so -> ../../aarch64-linux/lib64/libaihac_codegen.so
+|   |   |   |   |-- libaihac_ir.so -> ../../aarch64-linux/lib64/libaihac_ir.so
+|   |   |   |   |-- libaihac_ir_register.so -> ../../aarch64-linux/lib64/libaihac_ir_register.so
+|   |   |   |   |-- libaihac_symbolizer.so -> ../../aarch64-linux/lib64/libaihac_symbolizer.so
+|   |   |   |   |-- libamctacl.so -> ../../aarch64-linux/lib64/libamctacl.so
+|   |   |   |   |-- libaoe_compiler.so -> ../../aarch64-linux/lib64/libaoe_compiler.so
+|   |   |   |   |-- libaoe_executor.so -> ../../aarch64-linux/lib64/libaoe_executor.so
+|   |   |   |   |-- libaoe_runner.so -> ../../aarch64-linux/lib64/libaoe_runner.so
+|   |   |   |   |-- libascend_protobuf.so -> ../../aarch64-linux/lib64/libascend_protobuf.so.3.13.0.0
+|   |   |   |   |-- libascend_protobuf.so.3.13.0.0 -> ../../aarch64-linux/lib64/libascend_protobuf.so.3.13.0.0
+|   |   |   |   |-- libascendalog.so -> ../../aarch64-linux/lib64/libascendalog.so
+|   |   |   |   |-- libauto_tiling.so -> ../../aarch64-linux/lib64/libauto_tiling.so
+|   |   |   |   |-- libc_sec.a -> ../../aarch64-linux/lib64/libc_sec.a
+|   |   |   |   |-- libc_sec.so -> ../../aarch64-linux/lib64/libc_sec.so
+|   |   |   |   |-- libcann_kb.so -> ../../aarch64-linux/lib64/libcann_kb.so
+|   |   |   |   |-- libcce.so -> ../../aarch64-linux/lib64/libcce.so
+|   |   |   |   |-- libcce_aicore.so -> ../../aarch64-linux/lib64/libcce_aicore.so
+|   |   |   |   |-- libcce_aicpudev_online.so -> ../../aarch64-linux/lib64/libcce_aicpudev_online.so
+|   |   |   |   |-- libcce_tools.so -> ../../aarch64-linux/lib64/libcce_tools.so
+|   |   |   |   |-- libcompress.so -> ../../aarch64-linux/lib64/libcompress.so
+|   |   |   |   |-- libcompressweight.so -> ../../aarch64-linux/lib64/libcompressweight.so
+|   |   |   |   |-- libdata_flow_base.so -> ../../aarch64-linux/lib64/libdata_flow_base.so
+|   |   |   |   |-- libdatatransfer.so -> ../../aarch64-linux/lib64/libdatatransfer.so
+|   |   |   |   |-- libdevice_register.a -> ../../aarch64-linux/lib64/libdevice_register.a
+|   |   |   |   |-- liberror_manager.so -> ../../aarch64-linux/lib64/liberror_manager.so
+|   |   |   |   |-- libexe_graph.so -> ../../aarch64-linux/lib64/libexe_graph.so
+|   |   |   |   |-- libflow_graph.so -> ../../aarch64-linux/lib64/libflow_graph.so
+|   |   |   |   |-- libfmk_onnx_parser.so -> ../../aarch64-linux/lib64/libfmk_onnx_parser.so
+|   |   |   |   |-- libfmk_parser.so -> ../../aarch64-linux/lib64/libfmk_parser.so
+|   |   |   |   |-- libge_common.so -> ../../aarch64-linux/lib64/libge_common.so
+|   |   |   |   |-- libge_common_base.so -> ../../aarch64-linux/lib64/libge_common_base.so
+|   |   |   |   |-- libge_compiler.so -> ../../aarch64-linux/lib64/libge_compiler.so
+|   |   |   |   |-- libge_runner.so -> ../../aarch64-linux/lib64/libge_runner.so
+|   |   |   |   |-- libgraph.so -> ../../aarch64-linux/lib64/libgraph.so
+|   |   |   |   |-- libgraph_base.so -> ../../aarch64-linux/lib64/libgraph_base.so
+|   |   |   |   |-- libhccd.so -> ../../aarch64-linux/lib64/libhccd.so
+|   |   |   |   |-- libhccl.so -> ../../aarch64-linux/lib64/libhccl.so
+|   |   |   |   |-- libhccl_alg.so -> ../../aarch64-linux/lib64/libhccl_alg.so
+|   |   |   |   |-- libhccl_alg_research.so -> ../../aarch64-linux/lib64/libhccl_alg_research.so
+|   |   |   |   |-- libhccl_heterog.so -> ../../aarch64-linux/lib64/libhccl_heterog.so
+|   |   |   |   |-- libhccl_plf.so -> ../../aarch64-linux/lib64/libhccl_plf.so
+|   |   |   |   |-- libhcom_executor.so -> ../../aarch64-linux/lib64/libhcom_executor.so
+|   |   |   |   |-- libhcom_graph_adaptor.so -> ../../aarch64-linux/lib64/libhcom_graph_adaptor.so
+|   |   |   |   |-- libhdds_base.so -> ../../aarch64-linux/lib64/libhdds_base.so
+|   |   |   |   |-- libindextransform.so -> ../../aarch64-linux/lib64/libindextransform.so
+|   |   |   |   |-- liblowering.so -> ../../aarch64-linux/lib64/liblowering.so
+|   |   |   |   |-- libmmpa.a -> ../../aarch64-linux/lib64/libmmpa.a
+|   |   |   |   |-- libmmpa.so -> ../../aarch64-linux/lib64/libmmpa.so
+|   |   |   |   |-- libnca.so -> ../../aarch64-linux/lib64/libnca.so
+|   |   |   |   |-- libops_host_cpu.so -> ../../aarch64-linux/lib64/libops_host_cpu.so
+|   |   |   |   |-- libopskernel.so -> ../../aarch64-linux/lib64/libopskernel.so
+|   |   |   |   |-- libopt_feature.so -> ../../aarch64-linux/lib64/libopt_feature.so
+|   |   |   |   |-- libparser_common.so -> ../../aarch64-linux/lib64/libparser_common.so
+|   |   |   |   |-- libplatform.so -> ../../aarch64-linux/lib64/libplatform.so
+|   |   |   |   |-- libra.so -> ../../aarch64-linux/lib64/libra.so
+|   |   |   |   |-- libra_hdc.so -> ../../aarch64-linux/lib64/libra_hdc.so
+|   |   |   |   |-- libra_peer.so -> ../../aarch64-linux/lib64/libra_peer.so
+|   |   |   |   |-- libregister.so -> ../../aarch64-linux/lib64/libregister.so
+|   |   |   |   |-- librs.so -> ../../aarch64-linux/lib64/librs.so
+|   |   |   |   |-- libslice.so -> ../../aarch64-linux/lib64/libslice.so
+|   |   |   |   |-- libte_fusion.so -> ../../aarch64-linux/lib64/libte_fusion.so
+|   |   |   |   |-- libtiling.so -> ../../aarch64-linux/lib64/libtiling.so
+|   |   |   |   |-- libtvm.so -> ../../aarch64-linux/lib64/libtvm.so
+|   |   |   |   |-- libtvm_runtime.so -> ../../aarch64-linux/lib64/libtvm_runtime.so
+|   |   |   |   |-- llm_datadist-0.0.1-py3-none-any.whl -> ../../aarch64-linux/lib64/llm_datadist-0.0.1-py3-none-any.whl
+|   |   |   |   |-- op_compile_tool-0.1.0-py3-none-any.whl -> ../../aarch64-linux/lib64/op_compile_tool-0.1.0-py3-none-any.whl
+|   |   |   |   |-- opc_tool-0.1.0-py3-none-any.whl -> ../../aarch64-linux/lib64/opc_tool-0.1.0-py3-none-any.whl
+|   |   |   |   |-- plugin
+|   |   |   |   |-- schedule_search-0.1.0-py3-none-any.whl -> ../../aarch64-linux/lib64/schedule_search-0.1.0-py3-none-any.whl
+|   |   |   |   |-- stub
+|   |   |   |   |-- switch_by_index.o -> ../../aarch64-linux/lib64/switch_by_index.o
+|   |   |   |   `-- te-0.4.0-py3-none-any.whl -> ../../aarch64-linux/lib64/te-0.4.0-py3-none-any.whl
+|   |   |   |-- python
+|   |   |   |   |-- func2graph
+|   |   |   |   `-- site-packages
+|   |   |   |-- scene.info
+|   |   |   |-- script
+|   |   |   |   |-- check_version_required.awk
+|   |   |   |   |-- cleanup.sh
+|   |   |   |   |-- common_func.inc
+|   |   |   |   |-- common_func_v2.inc
+|   |   |   |   |-- common_func_v3.inc
+|   |   |   |   |-- common_installer.inc
+|   |   |   |   |-- common_interface.bash
+|   |   |   |   |-- common_interface.csh
+|   |   |   |   |-- common_interface.fish
+|   |   |   |   |-- compiler_custom_create_softlink.sh
+|   |   |   |   |-- compiler_custom_install.sh
+|   |   |   |   |-- compiler_custom_remove_softlink.sh
+|   |   |   |   |-- compiler_custom_uninstall.sh
+|   |   |   |   |-- compiler_func.sh
+|   |   |   |   |-- filelist.csv
+|   |   |   |   |-- help.info
+|   |   |   |   |-- install.sh
+|   |   |   |   |-- install_common_parser.sh
+|   |   |   |   |-- multi_version.inc
+|   |   |   |   |-- run_compiler_install.sh
+|   |   |   |   |-- run_compiler_uninstall.sh
+|   |   |   |   |-- run_compiler_upgrade.sh
+|   |   |   |   |-- script_operator.inc
+|   |   |   |   |-- uninstall.sh
+|   |   |   |   |-- ver_check.sh
+|   |   |   |   |-- version_cfg.inc
+|   |   |   |   `-- version_compatiable.inc
+|   |   |   |-- tikcpp
+|   |   |   |   |-- ascendc_compiler
+|   |   |   |   |-- ascendc_kernel_cmake -> ../../aarch64-linux/tikcpp/ascendc_kernel_cmake
+|   |   |   |   `-- tikcfw
+|   |   |   `-- version.info
+|   |   |-- conf -> aarch64-linux/conf
+|   |   |-- create_version_softlink.sh
+|   |   |-- fwkacllib
+|   |   |   |-- ascend_install.info -> ../compiler/ascend_install.info
+|   |   |   |-- bin -> ../compiler/bin
+|   |   |   |-- ccec_compiler -> ../compiler/ccec_compiler
+|   |   |   |-- conf -> ../compiler/conf
+|   |   |   |-- data
+|   |   |   |   |-- fusion_strategy -> ../../compiler/data/fusion_strategy
+|   |   |   |   `-- platform_config -> ../../compiler/data/platform_config
+|   |   |   |-- include -> ../aarch64-linux/include
+|   |   |   |-- lib64
+|   |   |   |   |-- UpdateModelParam_ascend910B.o -> ../../aarch64-linux/lib64/UpdateModelParam_ascend910B.o
+|   |   |   |   |-- UpdateModelParam_ascend910_93.o -> ../../aarch64-linux/lib64/UpdateModelParam_ascend910_93.o
+|   |   |   |   |-- auto_deploy_utils-0.1.0-py3-none-any.whl -> ../../aarch64-linux/lib64/auto_deploy_utils-0.1.0-py3-none-any.whl
+|   |   |   |   |-- auto_tune-0.1.0-py3-none-any.whl -> ../../aarch64-linux/lib64/auto_tune-0.1.0-py3-none-any.whl
+|   |   |   |   |-- c -> ../../aarch64-linux/lib64/c
+|   |   |   |   |-- dataflow-0.0.1-py3-none-any.whl -> ../../aarch64-linux/lib64/dataflow-0.0.1-py3-none-any.whl
+|   |   |   |   |-- hccl-0.1.0-py3-none-any.whl -> ../../aarch64-linux/lib64/hccl-0.1.0-py3-none-any.whl
+|   |   |   |   |-- hccl_aiv_op_ascend910B.o -> ../../aarch64-linux/lib64/hccl_aiv_op_ascend910B.o
+|   |   |   |   |-- hccl_reduce_op_Ascend310P3.o -> ../../aarch64-linux/lib64/hccl_reduce_op_Ascend310P3.o
+|   |   |   |   |-- hccl_reduce_op_ascend910.o -> ../../aarch64-linux/lib64/hccl_reduce_op_ascend910.o
+|   |   |   |   |-- hccl_reduce_op_ascend910B.o -> ../../aarch64-linux/lib64/hccl_reduce_op_ascend910B.o
+|   |   |   |   |-- kfc_dump_stat_ascend310p3.o -> ../../aarch64-linux/lib64/kfc_dump_stat_ascend310p3.o
+|   |   |   |   |-- kfc_dump_stat_ascend910B.o -> ../../aarch64-linux/lib64/kfc_dump_stat_ascend910B.o
+|   |   |   |   |-- lib_caffe_parser.so -> ../../aarch64-linux/lib64/lib_caffe_parser.so
+|   |   |   |   |-- libacl_audio_mpi.so -> ../../aarch64-linux/lib64/libacl_audio_mpi.so
+|   |   |   |   |-- libacl_cblas.so -> ../../aarch64-linux/lib64/libacl_cblas.so
+|   |   |   |   |-- libacl_dvpp.so -> ../../aarch64-linux/lib64/libacl_dvpp.so
+|   |   |   |   |-- libacl_dvpp_mpi.so -> ../../aarch64-linux/lib64/libacl_dvpp_mpi.so
+|   |   |   |   |-- libacl_dvpp_op.so -> ../../aarch64-linux/lib64/libacl_dvpp_op.so
+|   |   |   |   |-- libacl_hdmi_mpi.so -> ../../aarch64-linux/lib64/libacl_hdmi_mpi.so
+|   |   |   |   |-- libacl_isp_ae_mpi.so -> ../../aarch64-linux/lib64/libacl_isp_ae_mpi.so
+|   |   |   |   |-- libacl_isp_awb_mpi.so -> ../../aarch64-linux/lib64/libacl_isp_awb_mpi.so
+|   |   |   |   |-- libacl_isp_mpi.so -> ../../aarch64-linux/lib64/libacl_isp_mpi.so
+|   |   |   |   |-- libacl_mfusion_mpi.so -> ../../aarch64-linux/lib64/libacl_mfusion_mpi.so
+|   |   |   |   |-- libacl_op_compiler.so -> ../../aarch64-linux/lib64/libacl_op_compiler.so
+|   |   |   |   |-- libacl_retr.so -> ../../aarch64-linux/lib64/libacl_retr.so
+|   |   |   |   |-- libacl_tde_mpi.so -> ../../aarch64-linux/lib64/libacl_tde_mpi.so
+|   |   |   |   |-- libacl_tdt_channel.so -> ../../aarch64-linux/lib64/libacl_tdt_channel.so
+|   |   |   |   |-- libacl_tdt_queue.so -> ../../aarch64-linux/lib64/libacl_tdt_queue.so
+|   |   |   |   |-- libacl_vi_mpi.so -> ../../aarch64-linux/lib64/libacl_vi_mpi.so
+|   |   |   |   |-- libacl_vo_mpi.so -> ../../aarch64-linux/lib64/libacl_vo_mpi.so
+|   |   |   |   |-- libacl_vpss_mpi.so -> ../../aarch64-linux/lib64/libacl_vpss_mpi.so
+|   |   |   |   |-- libadcore.a -> ../../aarch64-linux/lib64/libadcore.a
+|   |   |   |   |-- libadump_server.a -> ../../aarch64-linux/lib64/libadump_server.a
+|   |   |   |   |-- libaicore_utils.so -> ../../aarch64-linux/lib64/libaicore_utils.so
+|   |   |   |   |-- libaicpu_const_folding.so -> ../../aarch64-linux/lib64/libaicpu_const_folding.so
+|   |   |   |   |-- libaicpu_engine_common.so -> ../../aarch64-linux/lib64/libaicpu_engine_common.so
+|   |   |   |   |-- libaihac_autofusion.so -> ../../aarch64-linux/lib64/libaihac_autofusion.so
+|   |   |   |   |-- libaihac_codegen.so -> ../../aarch64-linux/lib64/libaihac_codegen.so
+|   |   |   |   |-- libaihac_ir.so -> ../../aarch64-linux/lib64/libaihac_ir.so
+|   |   |   |   |-- libaihac_ir_register.so -> ../../aarch64-linux/lib64/libaihac_ir_register.so
+|   |   |   |   |-- libaihac_symbolizer.so -> ../../aarch64-linux/lib64/libaihac_symbolizer.so
+|   |   |   |   |-- libamctacl.so -> ../../aarch64-linux/lib64/libamctacl.so
+|   |   |   |   |-- libaoe_compiler.so -> ../../aarch64-linux/lib64/libaoe_compiler.so
+|   |   |   |   |-- libaoe_executor.so -> ../../aarch64-linux/lib64/libaoe_executor.so
+|   |   |   |   |-- libaoe_runner.so -> ../../aarch64-linux/lib64/libaoe_runner.so
+|   |   |   |   |-- libascend_dump.a -> ../../aarch64-linux/lib64/libascend_dump.a
+|   |   |   |   |-- libascend_dump.so -> ../../aarch64-linux/lib64/libascend_dump.so
+|   |   |   |   |-- libascend_protobuf.so -> ../../aarch64-linux/lib64/libascend_protobuf.so.3.13.0.0
+|   |   |   |   |-- libascend_protobuf.so.3.13.0.0 -> ../../aarch64-linux/lib64/libascend_protobuf.so.3.13.0.0
+|   |   |   |   |-- libascend_trace.so -> ../../aarch64-linux/lib64/libascend_trace.so
+|   |   |   |   |-- libascend_watchdog.so -> ../../aarch64-linux/lib64/libascend_watchdog.so
+|   |   |   |   |-- libascendalog.so -> ../../aarch64-linux/lib64/libascendalog.so
+|   |   |   |   |-- libascendc_runtime.a -> ../../aarch64-linux/lib64/libascendc_runtime.a
+|   |   |   |   |-- libascendcl.a -> ../../aarch64-linux/lib64/libascendcl.a
+|   |   |   |   |-- libascendcl.so -> ../../aarch64-linux/lib64/libascendcl.so
+|   |   |   |   |-- libascendprofhal.so -> ../../aarch64-linux/lib64/libascendprofhal.so
+|   |   |   |   |-- libauto_tiling.so -> ../../aarch64-linux/lib64/libauto_tiling.so
+|   |   |   |   |-- libbuilt_in_flowfunc.so -> ../../aarch64-linux/lib64/libbuilt_in_flowfunc.so
+|   |   |   |   |-- libc_sec.a -> ../../aarch64-linux/lib64/libc_sec.a
+|   |   |   |   |-- libc_sec.so -> ../../aarch64-linux/lib64/libc_sec.so
+|   |   |   |   |-- libcann_kb.so -> ../../aarch64-linux/lib64/libcann_kb.so
+|   |   |   |   |-- libcce.so -> ../../aarch64-linux/lib64/libcce.so
+|   |   |   |   |-- libcce_aicore.so -> ../../aarch64-linux/lib64/libcce_aicore.so
+|   |   |   |   |-- libcce_aicpudev_online.so -> ../../aarch64-linux/lib64/libcce_aicpudev_online.so
+|   |   |   |   |-- libcce_tools.so -> ../../aarch64-linux/lib64/libcce_tools.so
+|   |   |   |   |-- libcompress.so -> ../../aarch64-linux/lib64/libcompress.so
+|   |   |   |   |-- libcompressweight.so -> ../../aarch64-linux/lib64/libcompressweight.so
+|   |   |   |   |-- libdata_flow_base.so -> ../../aarch64-linux/lib64/libdata_flow_base.so
+|   |   |   |   |-- libdatatransfer.so -> ../../aarch64-linux/lib64/libdatatransfer.so
+|   |   |   |   |-- libdavinci_executor.so -> ../../aarch64-linux/lib64/libdavinci_executor.so
+|   |   |   |   |-- libdevice_register.a -> ../../aarch64-linux/lib64/libdevice_register.a
+|   |   |   |   |-- libdgw_client.so -> ../../aarch64-linux/lib64/libdgw_client.so
+|   |   |   |   |-- libdgw_client_so.so -> ../../aarch64-linux/lib64/libdgw_client_so.so
+|   |   |   |   |-- libdummy_tls.so -> ../../aarch64-linux/lib64/libdummy_tls.so
+|   |   |   |   |-- libdvpp_cmdlist.so -> ../../aarch64-linux/lib64/libdvpp_cmdlist.so
+|   |   |   |   |-- libdvpp_op_base.so -> ../../aarch64-linux/lib64/libdvpp_op_base.so
+|   |   |   |   |-- liberror_manager.a -> ../../aarch64-linux/lib64/liberror_manager.a
+|   |   |   |   |-- liberror_manager.so -> ../../aarch64-linux/lib64/liberror_manager.so
+|   |   |   |   |-- libexe_graph.so -> ../../aarch64-linux/lib64/libexe_graph.so
+|   |   |   |   |-- libflow_func.so -> ../../aarch64-linux/lib64/libflow_func.so
+|   |   |   |   |-- libflow_graph.so -> ../../aarch64-linux/lib64/libflow_graph.so
+|   |   |   |   |-- libfmk_onnx_parser.so -> ../../aarch64-linux/lib64/libfmk_onnx_parser.so
+|   |   |   |   |-- libfmk_parser.so -> ../../aarch64-linux/lib64/libfmk_parser.so
+|   |   |   |   |-- libge_common.so -> ../../aarch64-linux/lib64/libge_common.so
+|   |   |   |   |-- libge_common_base.so -> ../../aarch64-linux/lib64/libge_common_base.so
+|   |   |   |   |-- libge_compiler.so -> ../../aarch64-linux/lib64/libge_compiler.so
+|   |   |   |   |-- libge_executor.so -> ../../aarch64-linux/lib64/libge_executor.so
+|   |   |   |   |-- libge_runner.so -> ../../aarch64-linux/lib64/libge_runner.so
+|   |   |   |   |-- libgert.so -> ../../aarch64-linux/lib64/libgert.so
+|   |   |   |   |-- libgraph.so -> ../../aarch64-linux/lib64/libgraph.so
+|   |   |   |   |-- libgraph_base.so -> ../../aarch64-linux/lib64/libgraph_base.so
+|   |   |   |   |-- libgraphtuner_executor.so -> ../../aarch64-linux/lib64/libgraphtuner_executor.so
+|   |   |   |   |-- libhccd.so -> ../../aarch64-linux/lib64/libhccd.so
+|   |   |   |   |-- libhccl.so -> ../../aarch64-linux/lib64/libhccl.so
+|   |   |   |   |-- libhccl_alg.so -> ../../aarch64-linux/lib64/libhccl_alg.so
+|   |   |   |   |-- libhccl_alg_research.so -> ../../aarch64-linux/lib64/libhccl_alg_research.so
+|   |   |   |   |-- libhccl_heterog.so -> ../../aarch64-linux/lib64/libhccl_heterog.so
+|   |   |   |   |-- libhccl_plf.so -> ../../aarch64-linux/lib64/libhccl_plf.so
+|   |   |   |   |-- libhcom_executor.so -> ../../aarch64-linux/lib64/libhcom_executor.so
+|   |   |   |   |-- libhcom_graph_adaptor.so -> ../../aarch64-linux/lib64/libhcom_graph_adaptor.so
+|   |   |   |   |-- libhdds_base.so -> ../../aarch64-linux/lib64/libhdds_base.so
+|   |   |   |   |-- libhost_aicpu_scheduler.so -> ../../aarch64-linux/lib64/libhost_aicpu_scheduler.so
+|   |   |   |   |-- libhybrid_executor.so -> ../../aarch64-linux/lib64/libhybrid_executor.so
+|   |   |   |   |-- libindextransform.so -> ../../aarch64-linux/lib64/libindextransform.so
+|   |   |   |   |-- libllm_engine.so -> ../../aarch64-linux/lib64/libllm_engine.so
+|   |   |   |   |-- liblowering.so -> ../../aarch64-linux/lib64/liblowering.so
+|   |   |   |   |-- libmmpa.a -> ../../aarch64-linux/lib64/libmmpa.a
+|   |   |   |   |-- libmmpa.so -> ../../aarch64-linux/lib64/libmmpa.so
+|   |   |   |   |-- libmodel_deployer.so -> ../../aarch64-linux/lib64/libmodel_deployer.so
+|   |   |   |   |-- libmsprofiler.so -> ../../aarch64-linux/lib64/libmsprofiler.so
+|   |   |   |   |-- libnca.so -> ../../aarch64-linux/lib64/libnca.so
+|   |   |   |   |-- libnnopbase.so -> ../../aarch64-linux/lib64/libnnopbase.so
+|   |   |   |   |-- libnpu_sched_model_loader.so -> ../../aarch64-linux/lib64/libnpu_sched_model_loader.so
+|   |   |   |   |-- libop_common.so -> ../../aarch64-linux/lib64/libop_common.so
+|   |   |   |   |-- libops_host_cpu.so -> ../../aarch64-linux/lib64/libops_host_cpu.so
+|   |   |   |   |-- libopskernel.so -> ../../aarch64-linux/lib64/libopskernel.so
+|   |   |   |   |-- libopt_feature.so -> ../../aarch64-linux/lib64/libopt_feature.so
+|   |   |   |   |-- libparser_common.so -> ../../aarch64-linux/lib64/libparser_common.so
+|   |   |   |   |-- libplatform.so -> ../../aarch64-linux/lib64/libplatform.so
+|   |   |   |   |-- libprofapi.so -> ../../aarch64-linux/lib64/libprofapi.so
+|   |   |   |   |-- libprofimpl.so -> ../../aarch64-linux/lib64/libprofimpl.so
+|   |   |   |   |-- libqos_manager.so -> ../../aarch64-linux/lib64/libqos_manager.so
+|   |   |   |   |-- libra.so -> ../../aarch64-linux/lib64/libra.so
+|   |   |   |   |-- libra_hdc.so -> ../../aarch64-linux/lib64/libra_hdc.so
+|   |   |   |   |-- libra_peer.so -> ../../aarch64-linux/lib64/libra_peer.so
+|   |   |   |   |-- libreader_writer.so -> ../../aarch64-linux/lib64/libreader_writer.so
+|   |   |   |   |-- libregister.a -> ../../aarch64-linux/lib64/libregister.a
+|   |   |   |   |-- libregister.so -> ../../aarch64-linux/lib64/libregister.so
+|   |   |   |   |-- librs.so -> ../../aarch64-linux/lib64/librs.so
+|   |   |   |   |-- librt2_registry.a -> ../../aarch64-linux/lib64/librt2_registry.a
+|   |   |   |   |-- libruntime.so -> ../../aarch64-linux/lib64/libruntime.so
+|   |   |   |   |-- libruntime_common.so -> ../../aarch64-linux/lib64/libruntime_common.so
+|   |   |   |   |-- libruntime_kb.so -> ../../aarch64-linux/lib64/libruntime_kb.so
+|   |   |   |   |-- libruntime_v100.so -> ../../aarch64-linux/lib64/libruntime_v100.so
+|   |   |   |   |-- libslice.so -> ../../aarch64-linux/lib64/libslice.so
+|   |   |   |   |-- libte_fusion.so -> ../../aarch64-linux/lib64/libte_fusion.so
+|   |   |   |   |-- libtiling.so -> ../../aarch64-linux/lib64/libtiling.so
+|   |   |   |   |-- libtiling_api.a -> ../../aarch64-linux/lib64/libtiling_api.a
+|   |   |   |   |-- libtprt.so -> ../../aarch64-linux/lib64/libtprt.so
+|   |   |   |   |-- libtsdclient.so -> ../../aarch64-linux/lib64/libtsdclient.so
+|   |   |   |   |-- libtvm.so -> ../../aarch64-linux/lib64/libtvm.so
+|   |   |   |   |-- libtvm_runtime.so -> ../../aarch64-linux/lib64/libtvm_runtime.so
+|   |   |   |   |-- libudf_dump.so -> ../../aarch64-linux/lib64/libudf_dump.so
+|   |   |   |   |-- libudf_profiling.so -> ../../aarch64-linux/lib64/libudf_profiling.so
+|   |   |   |   |-- llm_datadist-0.0.1-py3-none-any.whl -> ../../aarch64-linux/lib64/llm_datadist-0.0.1-py3-none-any.whl
+|   |   |   |   |-- op_compile_tool-0.1.0-py3-none-any.whl -> ../../aarch64-linux/lib64/op_compile_tool-0.1.0-py3-none-any.whl
+|   |   |   |   |-- opc_tool-0.1.0-py3-none-any.whl -> ../../aarch64-linux/lib64/opc_tool-0.1.0-py3-none-any.whl
+|   |   |   |   |-- plugin -> ../../aarch64-linux/lib64/plugin
+|   |   |   |   |-- schedule_search-0.1.0-py3-none-any.whl -> ../../aarch64-linux/lib64/schedule_search-0.1.0-py3-none-any.whl
+|   |   |   |   |-- stub -> ../../aarch64-linux/devlib
+|   |   |   |   |-- switch_by_index.o -> ../../aarch64-linux/lib64/switch_by_index.o
+|   |   |   |   `-- te-0.4.0-py3-none-any.whl -> ../../aarch64-linux/lib64/te-0.4.0-py3-none-any.whl
+|   |   |   |-- python -> ../compiler/python
+|   |   |   |-- scene.info -> ../compiler/scene.info
+|   |   |   |-- script -> ../compiler/script
+|   |   |   `-- version.info -> ../compiler/version.info
+|   |   |-- hccl
+|   |   |   |-- ascend_install.info
+|   |   |   |-- bin
+|   |   |   |   |-- prereq_check.bash
+|   |   |   |   |-- prereq_check.csh
+|   |   |   |   |-- prereq_check.fish
+|   |   |   |   |-- setenv.bash
+|   |   |   |   |-- setenv.csh
+|   |   |   |   `-- setenv.fish
+|   |   |   |-- data
+|   |   |   |   `-- fusion_strategy
+|   |   |   |-- include
+|   |   |   |   `-- hccl
+|   |   |   |-- lib64
+|   |   |   |   |-- hccl-0.1.0-py3-none-any.whl -> ../../aarch64-linux/lib64/hccl-0.1.0-py3-none-any.whl
+|   |   |   |   |-- hccl_aiv_op_ascend910B.o -> ../../aarch64-linux/lib64/hccl_aiv_op_ascend910B.o
+|   |   |   |   |-- hccl_reduce_op_Ascend310P3.o -> ../../aarch64-linux/lib64/hccl_reduce_op_Ascend310P3.o
+|   |   |   |   |-- hccl_reduce_op_ascend910.o -> ../../aarch64-linux/lib64/hccl_reduce_op_ascend910.o
+|   |   |   |   |-- hccl_reduce_op_ascend910B.o -> ../../aarch64-linux/lib64/hccl_reduce_op_ascend910B.o
+|   |   |   |   |-- libhccd.so -> ../../aarch64-linux/lib64/libhccd.so
+|   |   |   |   |-- libhccl.so -> ../../aarch64-linux/lib64/libhccl.so
+|   |   |   |   |-- libhccl_alg.so -> ../../aarch64-linux/lib64/libhccl_alg.so
+|   |   |   |   |-- libhccl_alg_research.so -> ../../aarch64-linux/lib64/libhccl_alg_research.so
+|   |   |   |   |-- libhccl_heterog.so -> ../../aarch64-linux/lib64/libhccl_heterog.so
+|   |   |   |   |-- libhccl_plf.so -> ../../aarch64-linux/lib64/libhccl_plf.so
+|   |   |   |   |-- libhcom_executor.so -> ../../aarch64-linux/lib64/libhcom_executor.so
+|   |   |   |   |-- libhcom_graph_adaptor.so -> ../../aarch64-linux/lib64/libhcom_graph_adaptor.so
+|   |   |   |   |-- libhdds_base.so -> ../../aarch64-linux/lib64/libhdds_base.so
+|   |   |   |   |-- libra.so -> ../../aarch64-linux/lib64/libra.so
+|   |   |   |   |-- libra_hdc.so -> ../../aarch64-linux/lib64/libra_hdc.so
+|   |   |   |   |-- libra_peer.so -> ../../aarch64-linux/lib64/libra_peer.so
+|   |   |   |   |-- librs.so -> ../../aarch64-linux/lib64/librs.so
+|   |   |   |   `-- plugin
+|   |   |   |-- python
+|   |   |   |   `-- site-packages
+|   |   |   |-- scene.info
+|   |   |   |-- script
+|   |   |   |   |-- check_version_required.awk
+|   |   |   |   |-- cleanup.sh
+|   |   |   |   |-- common_func.inc
+|   |   |   |   |-- common_func_v2.inc
+|   |   |   |   |-- common_func_v3.inc
+|   |   |   |   |-- common_install.sh
+|   |   |   |   |-- common_installer.inc
+|   |   |   |   |-- common_interface.bash
+|   |   |   |   |-- common_interface.csh
+|   |   |   |   |-- common_interface.fish
+|   |   |   |   |-- common_uninstall.sh
+|   |   |   |   |-- filelist.csv
+|   |   |   |   |-- hccl_custom_create_softlink.sh
+|   |   |   |   |-- hccl_custom_install.sh
+|   |   |   |   |-- hccl_custom_remove_softlink.sh
+|   |   |   |   |-- hccl_custom_uninstall.sh
+|   |   |   |   |-- hccl_func.sh
+|   |   |   |   |-- help.info
+|   |   |   |   |-- install.sh
+|   |   |   |   |-- install_common_parser.sh
+|   |   |   |   |-- multi_version.inc
+|   |   |   |   |-- run_hccl_install.sh
+|   |   |   |   |-- run_hccl_uninstall.sh
+|   |   |   |   |-- run_hccl_upgrade.sh
+|   |   |   |   |-- script_operator.inc
+|   |   |   |   |-- uninstall.sh
+|   |   |   |   |-- ver_check.sh
+|   |   |   |   |-- version_cfg.inc
+|   |   |   |   `-- version_compatiable.inc
+|   |   |   `-- version.info
+|   |   |-- include -> aarch64-linux/include
+|   |   |-- lib64 -> aarch64-linux/lib64
+|   |   |-- mindstudio-toolkit
+|   |   |   |-- ascend_install.info
+|   |   |   |-- scene.info
+|   |   |   |-- script
+|   |   |   |   |-- cann_uninstall.sh
+|   |   |   |   |-- common.sh
+|   |   |   |   |-- custom_latest.sh
+|   |   |   |   |-- filelist.csv
+|   |   |   |   |-- help.info
+|   |   |   |   |-- install.sh
+|   |   |   |   |-- parser_install.sh
+|   |   |   |   `-- uninstall.sh
+|   |   |   |-- version.info
+|   |   |   `-- version_name.info
+|   |   |-- opp
+|   |   |   |-- Ascend
+|   |   |   |   `-- aicpu
+|   |   |   |-- Ascend310
+|   |   |   |   `-- aicpu
+|   |   |   |-- Ascend310P
+|   |   |   |   `-- aicpu
+|   |   |   |-- Ascend310RC
+|   |   |   |   `-- aicpu
+|   |   |   |-- Ascend910
+|   |   |   |   `-- aicpu
+|   |   |   |-- ascend_install.info
+|   |   |   |-- bin
+|   |   |   |   |-- prereq_check.bash
+|   |   |   |   |-- prereq_check.csh
+|   |   |   |   |-- prereq_check.fish
+|   |   |   |   |-- setenv.bash
+|   |   |   |   |-- setenv.csh
+|   |   |   |   `-- setenv.fish
+|   |   |   |-- built-in
+|   |   |   |   |-- Ascend-opp_rt-minios.aarch64.tar.gz
+|   |   |   |   |-- data
+|   |   |   |   |-- framework
+|   |   |   |   |-- op_impl
+|   |   |   |   `-- op_proto
+|   |   |   |-- framework
+|   |   |   |   `-- custom
+|   |   |   |-- include
+|   |   |   |   `-- aclnnop
+|   |   |   |-- lib64
+|   |   |   |   |-- aml
+|   |   |   |   |-- libaclnn_math.so -> ../built-in/op_impl/ai_core/tbe/op_api/lib/linux/aarch64/libaclnn_math.so
+|   |   |   |   |-- libaclnn_ops_infer.so -> ../built-in/op_impl/ai_core/tbe/op_api/lib/linux/aarch64/libaclnn_ops_infer.so
+|   |   |   |   |-- libaclnn_ops_train.so -> ../built-in/op_impl/ai_core/tbe/op_api/lib/linux/aarch64/libaclnn_ops_train.so
+|   |   |   |   |-- libaclnn_rand.so -> ../built-in/op_impl/ai_core/tbe/op_api/lib/linux/aarch64/libaclnn_rand.so
+|   |   |   |   |-- libascend_ml_detect.so -> ../../aarch64-linux/lib64/libascend_ml_detect.so
+|   |   |   |   |-- libconstant_folding_ops.so -> ../../aarch64-linux/lib64/libconstant_folding_ops.so
+|   |   |   |   `-- libopapi.so -> ../built-in/op_impl/ai_core/tbe/op_api/lib/linux/aarch64/libopapi.so
+|   |   |   |-- op_impl
+|   |   |   |   `-- custom
+|   |   |   |-- op_proto
+|   |   |   |   `-- custom
+|   |   |   |-- scene.info
+|   |   |   |-- script
+|   |   |   |   |-- check_version_required.awk
+|   |   |   |   |-- cleanup.sh
+|   |   |   |   |-- common_func.inc
+|   |   |   |   |-- common_func_v2.inc
+|   |   |   |   |-- common_func_v3.inc
+|   |   |   |   |-- common_installer.inc
+|   |   |   |   |-- common_interface.bash
+|   |   |   |   |-- common_interface.csh
+|   |   |   |   |-- common_interface.fish
+|   |   |   |   |-- config.inc
+|   |   |   |   |-- filelist.csv
+|   |   |   |   |-- help.info
+|   |   |   |   |-- install.sh
+|   |   |   |   |-- install_common_parser.sh
+|   |   |   |   |-- multi_version.inc
+|   |   |   |   |-- opp_common.sh
+|   |   |   |   |-- opp_custom_create_softlink.sh
+|   |   |   |   |-- opp_custom_install.sh
+|   |   |   |   |-- opp_custom_remove_softlink.sh
+|   |   |   |   |-- opp_custom_uninstall.sh
+|   |   |   |   |-- opp_install.sh
+|   |   |   |   |-- opp_uninstall.sh
+|   |   |   |   |-- opp_upgrade.sh
+|   |   |   |   |-- script_operator.inc
+|   |   |   |   |-- uninstall.sh
+|   |   |   |   |-- ver_check.sh
+|   |   |   |   |-- version_cfg.inc
+|   |   |   |   `-- version_compatiable.inc
+|   |   |   |-- static_kernel
+|   |   |   |-- test-ops
+|   |   |   |   |-- lib64
+|   |   |   |   |-- scene.info
+|   |   |   |   |-- script
+|   |   |   |   `-- version.info
+|   |   |   |-- vendors
+|   |   |   `-- version.info
+|   |   |-- opp_kernel
+|   |   |   |-- ascend_install.info
+|   |   |   |-- bin
+|   |   |   |   |-- prereq_check.bash
+|   |   |   |   |-- prereq_check.csh
+|   |   |   |   |-- prereq_check.fish
+|   |   |   |   |-- setenv.bash
+|   |   |   |   |-- setenv.csh
+|   |   |   |   `-- setenv.fish
+|   |   |   |-- scene.info
+|   |   |   |-- script
+|   |   |   |   |-- check_version_required.awk
+|   |   |   |   |-- common_func.inc
+|   |   |   |   |-- common_func_v2.inc
+|   |   |   |   |-- common_func_v3.inc
+|   |   |   |   |-- common_installer.inc
+|   |   |   |   |-- common_interface.bash
+|   |   |   |   |-- common_interface.csh
+|   |   |   |   |-- common_interface.fish
+|   |   |   |   |-- filelist.csv
+|   |   |   |   |-- help.info
+|   |   |   |   |-- install.sh
+|   |   |   |   |-- install_common_parser.sh
+|   |   |   |   |-- merge_binary_info_config.py
+|   |   |   |   |-- multi_version.inc
+|   |   |   |   |-- opp_kernel_common.sh
+|   |   |   |   |-- opp_kernel_custom_create_softlink.sh
+|   |   |   |   |-- opp_kernel_custom_install.sh
+|   |   |   |   |-- opp_kernel_custom_remove_softlink.sh
+|   |   |   |   |-- opp_kernel_custom_uninstall.sh
+|   |   |   |   |-- run_opp_kernel_install.sh
+|   |   |   |   |-- run_opp_kernel_uninstall.sh
+|   |   |   |   |-- script_operator.inc
+|   |   |   |   |-- uninstall.sh
+|   |   |   |   |-- ver_check.sh
+|   |   |   |   |-- version_cfg.inc
+|   |   |   |   `-- version_compatiable.inc
+|   |   |   `-- version.info
+|   |   |-- ops -> opp
+|   |   |-- pyACL
+|   |   |   |-- ascend-pyACL_install.info
+|   |   |   |-- python -> ../python
+|   |   |   |-- scene.info
+|   |   |   |-- script
+|   |   |   |   `-- uninstall.sh
+|   |   |   `-- version.info
+|   |   |-- python
+|   |   |   `-- site-packages
+|   |   |       |-- LICENSE
+|   |   |       |-- acl
+|   |   |       |-- acl.so
+|   |   |       |-- analysis
+|   |   |       |-- auto_deploy_utils
+|   |   |       |-- auto_deploy_utils-0.1.0.dist-info
+|   |   |       |-- auto_search
+|   |   |       |-- auto_tune
+|   |   |       |-- auto_tune-0.1.0.dist-info
+|   |   |       |-- auto_tune.egg
+|   |   |       |-- auto_tune_main -> auto_tune
+|   |   |       |-- autofuse
+|   |   |       |-- bin
+|   |   |       |-- dataflow
+|   |   |       |-- dataflow-0.0.1.dist-info
+|   |   |       |-- hccl
+|   |   |       |-- hccl-0.1.0.dist-info
+|   |   |       |-- hccl_parser
+|   |   |       |-- hccl_parser-0.1.dist-info
+|   |   |       |-- llm_datadist
+|   |   |       |-- llm_datadist-0.0.1.dist-info
+|   |   |       |-- ms_service_profiler -> ../../tools/msserviceprofiler/python/ms_service_profiler
+|   |   |       |-- mskpp -> ../../tools/msopt/mskpp
+|   |   |       |-- msmodelslim -> ../../tools/msmodelslim
+|   |   |       |-- msobjdump
+|   |   |       |-- msobjdump-0.1.0.dist-info
+|   |   |       |-- mspti
+|   |   |       |-- mspti-0.0.1.dist-info
+|   |   |       |-- mstx.so -> ../../tools/mstx/lib64/mstx.so
+|   |   |       |-- op_compile_tool
+|   |   |       |-- op_compile_tool-0.1.0.dist-info
+|   |   |       |-- op_gen
+|   |   |       |-- op_gen-0.1.dist-info
+|   |   |       |-- op_test_frame
+|   |   |       |-- op_test_frame-0.1.dist-info
+|   |   |       |-- opc_tool
+|   |   |       |-- opc_tool-0.1.0.dist-info
+|   |   |       |-- operator_cmp -> ../../tools/operator_cmp
+|   |   |       |-- optune_utils
+|   |   |       |-- schedule_search
+|   |   |       |-- schedule_search-0.0.1.dist-info
+|   |   |       |-- schedule_search.egg
+|   |   |       |-- show_kernel_debug_data
+|   |   |       |-- show_kernel_debug_data-0.1.0.dist-info
+|   |   |       |-- tbe
+|   |   |       |-- te
+|   |   |       |-- te-0.4.0.dist-info
+|   |   |       |-- te_fusion
+|   |   |       `-- tik_tune
+|   |   |-- runtime
+|   |   |   |-- ascend_install.info
+|   |   |   |-- bin
+|   |   |   |   |-- deployer_daemon -> ../../aarch64-linux/bin/deployer_daemon
+|   |   |   |   |-- host_cpu_executor_main -> ../../aarch64-linux/bin/host_cpu_executor_main
+|   |   |   |   |-- monitor.sh
+|   |   |   |   |-- npu_executor_main -> ../../aarch64-linux/bin/npu_executor_main
+|   |   |   |   |-- prereq_check.bash
+|   |   |   |   |-- prereq_check.csh
+|   |   |   |   |-- prereq_check.fish
+|   |   |   |   |-- setenv.bash
+|   |   |   |   |-- setenv.csh
+|   |   |   |   |-- setenv.fish
+|   |   |   |   `-- udf_executor -> ../../aarch64-linux/bin/udf_executor
+|   |   |   |-- conf
+|   |   |   |   |-- dump_tool_config.ini -> ../../aarch64-linux/conf/dump_tool_config.ini
+|   |   |   |   |-- error_manager
+|   |   |   |   `-- qos_config.xml -> ../../aarch64-linux/conf/qos_config.xml
+|   |   |   |-- data
+|   |   |   |   |-- ascendcl_config
+|   |   |   |   `-- platform_config
+|   |   |   |-- include
+|   |   |   |   |-- acl
+|   |   |   |   |-- acldvppop
+|   |   |   |   |-- aclnn
+|   |   |   |   |-- aoe
+|   |   |   |   |-- exe_graph
+|   |   |   |   |-- experiment
+|   |   |   |   |-- external
+|   |   |   |   |-- flow_func
+|   |   |   |   |-- ge
+|   |   |   |   |-- graph
+|   |   |   |   |-- kernel_tiling -> ../../aarch64-linux/ascendc/include/highlevel_api/kernel_tiling
+|   |   |   |   |-- llm_datadist
+|   |   |   |   |-- proto
+|   |   |   |   |-- register
+|   |   |   |   |-- securec.h -> ../../aarch64-linux/include/securec.h
+|   |   |   |   |-- securectype.h -> ../../aarch64-linux/include/securectype.h
+|   |   |   |   |-- tiling -> ../../aarch64-linux/ascendc/include/highlevel_api/tiling
+|   |   |   |   `-- utils
+|   |   |   |-- lib64
+|   |   |   |   |-- Ascend-runtime_device-minios.tar.gz
+|   |   |   |   |-- UpdateModelParam_ascend910B.o -> ../../aarch64-linux/lib64/UpdateModelParam_ascend910B.o
+|   |   |   |   |-- UpdateModelParam_ascend910_93.o -> ../../aarch64-linux/lib64/UpdateModelParam_ascend910_93.o
+|   |   |   |   |-- c
+|   |   |   |   |-- kfc_dump_stat_ascend310p3.o -> ../../aarch64-linux/lib64/kfc_dump_stat_ascend310p3.o
+|   |   |   |   |-- kfc_dump_stat_ascend910B.o -> ../../aarch64-linux/lib64/kfc_dump_stat_ascend910B.o
+|   |   |   |   |-- libacl_audio_mpi.so -> ../../aarch64-linux/lib64/libacl_audio_mpi.so
+|   |   |   |   |-- libacl_cblas.so -> ../../aarch64-linux/lib64/libacl_cblas.so
+|   |   |   |   |-- libacl_dvpp.so -> ../../aarch64-linux/lib64/libacl_dvpp.so
+|   |   |   |   |-- libacl_dvpp_mpi.so -> ../../aarch64-linux/lib64/libacl_dvpp_mpi.so
+|   |   |   |   |-- libacl_dvpp_op.so -> ../../aarch64-linux/lib64/libacl_dvpp_op.so
+|   |   |   |   |-- libacl_hdmi_mpi.so -> ../../aarch64-linux/lib64/libacl_hdmi_mpi.so
+|   |   |   |   |-- libacl_isp_ae_mpi.so -> ../../aarch64-linux/lib64/libacl_isp_ae_mpi.so
+|   |   |   |   |-- libacl_isp_awb_mpi.so -> ../../aarch64-linux/lib64/libacl_isp_awb_mpi.so
+|   |   |   |   |-- libacl_isp_mpi.so -> ../../aarch64-linux/lib64/libacl_isp_mpi.so
+|   |   |   |   |-- libacl_mfusion_mpi.so -> ../../aarch64-linux/lib64/libacl_mfusion_mpi.so
+|   |   |   |   |-- libacl_retr.so -> ../../aarch64-linux/lib64/libacl_retr.so
+|   |   |   |   |-- libacl_tde_mpi.so -> ../../aarch64-linux/lib64/libacl_tde_mpi.so
+|   |   |   |   |-- libacl_tdt_queue.so -> ../../aarch64-linux/lib64/libacl_tdt_queue.so
+|   |   |   |   |-- libacl_vi_mpi.so -> ../../aarch64-linux/lib64/libacl_vi_mpi.so
+|   |   |   |   |-- libacl_vo_mpi.so -> ../../aarch64-linux/lib64/libacl_vo_mpi.so
+|   |   |   |   |-- libacl_vpss_mpi.so -> ../../aarch64-linux/lib64/libacl_vpss_mpi.so
+|   |   |   |   |-- libadcore.a -> ../../aarch64-linux/lib64/libadcore.a
+|   |   |   |   |-- libadump_server.a -> ../../aarch64-linux/lib64/libadump_server.a
+|   |   |   |   |-- libascend_dump.a -> ../../aarch64-linux/lib64/libascend_dump.a
+|   |   |   |   |-- libascend_dump.so -> ../../aarch64-linux/lib64/libascend_dump.so
+|   |   |   |   |-- libascend_protobuf.so -> ../../aarch64-linux/lib64/libascend_protobuf.so.3.13.0.0
+|   |   |   |   |-- libascend_protobuf.so.3.13.0.0 -> ../../aarch64-linux/lib64/libascend_protobuf.so.3.13.0.0
+|   |   |   |   |-- libascend_trace.so -> ../../aarch64-linux/lib64/libascend_trace.so
+|   |   |   |   |-- libascend_watchdog.so -> ../../aarch64-linux/lib64/libascend_watchdog.so
+|   |   |   |   |-- libascendalog.so -> ../../aarch64-linux/lib64/libascendalog.so
+|   |   |   |   |-- libascendcl.a -> ../../aarch64-linux/lib64/libascendcl.a
+|   |   |   |   |-- libascendcl.so -> ../../aarch64-linux/lib64/libascendcl.so
+|   |   |   |   |-- libascendprofhal.so -> ../../aarch64-linux/lib64/libascendprofhal.so
+|   |   |   |   |-- libbuilt_in_flowfunc.so -> ../../aarch64-linux/lib64/libbuilt_in_flowfunc.so
+|   |   |   |   |-- libc_sec.a -> ../../aarch64-linux/lib64/libc_sec.a
+|   |   |   |   |-- libc_sec.so -> ../../aarch64-linux/lib64/libc_sec.so
+|   |   |   |   |-- libdata_flow_base.so -> ../../aarch64-linux/lib64/libdata_flow_base.so
+|   |   |   |   |-- libdavinci_executor.so -> ../../aarch64-linux/lib64/libdavinci_executor.so
+|   |   |   |   |-- libdgw_client.so -> ../../aarch64-linux/lib64/libdgw_client.so
+|   |   |   |   |-- libdgw_client_so.so -> ../../aarch64-linux/lib64/libdgw_client_so.so
+|   |   |   |   |-- libdummy_tls.so -> ../../aarch64-linux/lib64/libdummy_tls.so
+|   |   |   |   |-- libdvpp_cmdlist.so -> ../../aarch64-linux/lib64/libdvpp_cmdlist.so
+|   |   |   |   |-- libdvpp_op_base.so -> ../../aarch64-linux/lib64/libdvpp_op_base.so
+|   |   |   |   |-- liberror_manager.a -> ../../aarch64-linux/lib64/liberror_manager.a
+|   |   |   |   |-- liberror_manager.so -> ../../aarch64-linux/lib64/liberror_manager.so
+|   |   |   |   |-- libexe_graph.so -> ../../aarch64-linux/lib64/libexe_graph.so
+|   |   |   |   |-- libflow_func.so -> ../../aarch64-linux/lib64/libflow_func.so
+|   |   |   |   |-- libflow_graph.so -> ../../aarch64-linux/lib64/libflow_graph.so
+|   |   |   |   |-- libge_common.so -> ../../aarch64-linux/lib64/libge_common.so
+|   |   |   |   |-- libge_common_base.so -> ../../aarch64-linux/lib64/libge_common_base.so
+|   |   |   |   |-- libge_executor.so -> ../../aarch64-linux/lib64/libge_executor.so
+|   |   |   |   |-- libgert.so -> ../../aarch64-linux/lib64/libgert.so
+|   |   |   |   |-- libgraph.so -> ../../aarch64-linux/lib64/libgraph.so
+|   |   |   |   |-- libgraph_base.so -> ../../aarch64-linux/lib64/libgraph_base.so
+|   |   |   |   |-- libgraphtuner_executor.so -> ../../aarch64-linux/lib64/libgraphtuner_executor.so
+|   |   |   |   |-- libhost_aicpu_scheduler.so -> ../../aarch64-linux/lib64/libhost_aicpu_scheduler.so
+|   |   |   |   |-- libhybrid_executor.so -> ../../aarch64-linux/lib64/libhybrid_executor.so
+|   |   |   |   |-- libllm_engine.so -> ../../aarch64-linux/lib64/libllm_engine.so
+|   |   |   |   |-- liblowering.so -> ../../aarch64-linux/lib64/liblowering.so
+|   |   |   |   |-- libmmpa.a -> ../../aarch64-linux/lib64/libmmpa.a
+|   |   |   |   |-- libmmpa.so -> ../../aarch64-linux/lib64/libmmpa.so
+|   |   |   |   |-- libmodel_deployer.so -> ../../aarch64-linux/lib64/libmodel_deployer.so
+|   |   |   |   |-- libmsprofiler.so -> ../../aarch64-linux/lib64/libmsprofiler.so
+|   |   |   |   |-- libnnopbase.so -> ../../aarch64-linux/lib64/libnnopbase.so
+|   |   |   |   |-- libnpu_sched_model_loader.so -> ../../aarch64-linux/lib64/libnpu_sched_model_loader.so
+|   |   |   |   |-- libop_common.so -> ../../aarch64-linux/lib64/libop_common.so
+|   |   |   |   |-- libopt_feature.so -> ../../aarch64-linux/lib64/libopt_feature.so
+|   |   |   |   |-- libplatform.so -> ../../aarch64-linux/lib64/libplatform.so
+|   |   |   |   |-- libprofapi.so -> ../../aarch64-linux/lib64/libprofapi.so
+|   |   |   |   |-- libprofimpl.so -> ../../aarch64-linux/lib64/libprofimpl.so
+|   |   |   |   |-- libqos_manager.so -> ../../aarch64-linux/lib64/libqos_manager.so
+|   |   |   |   |-- libreader_writer.so -> ../../aarch64-linux/lib64/libreader_writer.so
+|   |   |   |   |-- libregister.a -> ../../aarch64-linux/lib64/libregister.a
+|   |   |   |   |-- libregister.so -> ../../aarch64-linux/lib64/libregister.so
+|   |   |   |   |-- librt2_registry.a -> ../../aarch64-linux/lib64/librt2_registry.a
+|   |   |   |   |-- libruntime.so -> ../../aarch64-linux/lib64/libruntime.so
+|   |   |   |   |-- libruntime_common.so -> ../../aarch64-linux/lib64/libruntime_common.so
+|   |   |   |   |-- libruntime_kb.so -> ../../aarch64-linux/lib64/libruntime_kb.so
+|   |   |   |   |-- libruntime_v100.so -> ../../aarch64-linux/lib64/libruntime_v100.so
+|   |   |   |   |-- libtiling_api.a -> ../../aarch64-linux/lib64/libtiling_api.a
+|   |   |   |   |-- libtprt.so -> ../../aarch64-linux/lib64/libtprt.so
+|   |   |   |   |-- libtsdclient.so -> ../../aarch64-linux/lib64/libtsdclient.so
+|   |   |   |   |-- libudf_dump.so -> ../../aarch64-linux/lib64/libudf_dump.so
+|   |   |   |   |-- libudf_profiling.so -> ../../aarch64-linux/lib64/libudf_profiling.so
+|   |   |   |   |-- plugin
+|   |   |   |   `-- stub
+|   |   |   |-- scene.info
+|   |   |   |-- script
+|   |   |   |   |-- check_version_required.awk
+|   |   |   |   |-- cleanup.sh
+|   |   |   |   |-- common_func.inc
+|   |   |   |   |-- common_func_v2.inc
+|   |   |   |   |-- common_func_v3.inc
+|   |   |   |   |-- common_installer.inc
+|   |   |   |   |-- common_interface.bash
+|   |   |   |   |-- common_interface.csh
+|   |   |   |   |-- common_interface.fish
+|   |   |   |   |-- filelist.csv
+|   |   |   |   |-- help.info
+|   |   |   |   |-- install.sh
+|   |   |   |   |-- install_common_parser.sh
+|   |   |   |   |-- multi_version.inc
+|   |   |   |   |-- run_runtime_install.sh
+|   |   |   |   |-- run_runtime_uninstall.sh
+|   |   |   |   |-- run_runtime_upgrade.sh
+|   |   |   |   |-- runtime_custom_create_softlink.sh
+|   |   |   |   |-- runtime_custom_install.sh
+|   |   |   |   |-- runtime_custom_remove_softlink.sh
+|   |   |   |   |-- runtime_custom_uninstall.sh
+|   |   |   |   |-- runtime_func.sh
+|   |   |   |   |-- script_operator.inc
+|   |   |   |   |-- uninstall.sh
+|   |   |   |   |-- ver_check.sh
+|   |   |   |   |-- version_cfg.inc
+|   |   |   |   `-- version_compatiable.inc
+|   |   |   `-- version.info
+|   |   |-- test-ops -> ../8.1.RC1/opp/test-ops
+|   |   |-- toolkit
+|   |   |   |-- ascend_install.info
+|   |   |   |-- ascendc -> ../aarch64-linux/ascendc
+|   |   |   |-- bin
+|   |   |   |   |-- ascendc_pack_kernel -> ../../aarch64-linux/bin/ascendc_pack_kernel
+|   |   |   |   |-- prereq_check.bash
+|   |   |   |   |-- prereq_check.csh
+|   |   |   |   |-- prereq_check.fish
+|   |   |   |   |-- setenv.bash
+|   |   |   |   |-- setenv.csh
+|   |   |   |   `-- setenv.fish
+|   |   |   |-- inc
+|   |   |   |   |-- aclnn
+|   |   |   |   |-- base
+|   |   |   |   |-- proto
+|   |   |   |   `-- toolchain
+|   |   |   |-- lib64
+|   |   |   |   |-- device
+|   |   |   |   `-- libascendc_runtime.a -> ../../aarch64-linux/lib64/libascendc_runtime.a
+|   |   |   |-- python
+|   |   |   |   `-- site-packages
+|   |   |   |-- scene.info
+|   |   |   |-- script
+|   |   |   |   |-- check_version_required.awk
+|   |   |   |   |-- cleanup.sh
+|   |   |   |   |-- common.sh
+|   |   |   |   |-- common_func.inc
+|   |   |   |   |-- common_func_v2.inc
+|   |   |   |   |-- common_func_v3.inc
+|   |   |   |   |-- common_installer.inc
+|   |   |   |   |-- common_interface.bash
+|   |   |   |   |-- config.inc
+|   |   |   |   |-- filelist.csv
+|   |   |   |   |-- help.info
+|   |   |   |   |-- install_common_parser.sh
+|   |   |   |   |-- install_msprof_fitter.sh
+|   |   |   |   |-- install_profiling_msprof.sh
+|   |   |   |   |-- multi_version.inc
+|   |   |   |   |-- run_toolkit_uninstall.sh
+|   |   |   |   |-- script_operator.inc
+|   |   |   |   |-- shells.info
+|   |   |   |   |-- toolkit_custom_create_softlink.sh
+|   |   |   |   |-- toolkit_custom_install.sh
+|   |   |   |   |-- toolkit_custom_remove_softlink.sh
+|   |   |   |   |-- toolkit_custom_uninstall.sh
+|   |   |   |   |-- uninstall.sh
+|   |   |   |   |-- version_cfg.inc
+|   |   |   |   `-- version_compatiable.inc
+|   |   |   |-- toolchain
+|   |   |   |   `-- hcc
+|   |   |   |-- tools -> ../tools
+|   |   |   `-- version.info
+|   |   |-- tools
+|   |   |   |-- ait_backend
+|   |   |   |   |-- dump
+|   |   |   |   `-- mindie_torch_dump
+|   |   |   |-- aml
+|   |   |   |   |-- lib64
+|   |   |   |   `-- op_impl
+|   |   |   |-- aoe
+|   |   |   |   |-- ascend_install.info
+|   |   |   |   |-- bin
+|   |   |   |   |-- conf
+|   |   |   |   |-- data
+|   |   |   |   |-- include
+|   |   |   |   |-- lib64
+|   |   |   |   |-- scene.info
+|   |   |   |   |-- script
+|   |   |   |   `-- version.info
+|   |   |   |-- ascend_project
+|   |   |   |   `-- open_install_scripts
+|   |   |   |-- ascend_system_advisor
+|   |   |   |   |-- asys
+|   |   |   |   `-- conf
+|   |   |   |-- ascendc_kernel_sample
+|   |   |   |   `-- README.md
+|   |   |   |-- ascendc_tools
+|   |   |   |   |-- ascendc_npuchk_report.py
+|   |   |   |   `-- ascendc_parse_dumpinfo.py
+|   |   |   |-- ccec_compiler
+|   |   |   |   |-- bin -> ../../aarch64-linux/ccec_compiler/bin
+|   |   |   |   |-- include -> ../../aarch64-linux/ccec_compiler/include
+|   |   |   |   `-- lib -> ../../aarch64-linux/ccec_compiler/lib
+|   |   |   |-- hccl_parser-0.1-py3-none-any.whl
+|   |   |   |-- hccl_test
+|   |   |   |   |-- Makefile
+|   |   |   |   |-- README.md
+|   |   |   |   |-- common
+|   |   |   |   |-- hostfile
+|   |   |   |   `-- opbase_test
+|   |   |   |-- ms_fast_query
+|   |   |   |   |-- ModelZoo.ini
+|   |   |   |   |-- generic_utils.py
+|   |   |   |   |-- model_info_util.py
+|   |   |   |   |-- ms_fast_query.py
+|   |   |   |   |-- msfastquery
+|   |   |   |   |-- op_fused_rules.json
+|   |   |   |   `-- op_info_util.py
+|   |   |   |-- ms_fmk_transplt
+|   |   |   |   |-- __init__.py
+|   |   |   |   |-- analysis
+|   |   |   |   |-- global_analysis
+|   |   |   |   |-- ms_fmk_transplt.py
+|   |   |   |   |-- pytorch_analyse.sh
+|   |   |   |   |-- pytorch_gpu2npu.sh
+|   |   |   |   |-- resource
+|   |   |   |   |-- torch_npu_bridge
+|   |   |   |   |-- transfer
+|   |   |   |   `-- utils
+|   |   |   |-- msaicerr
+|   |   |   |   |-- ms_interface
+|   |   |   |   |-- msaicerr.py
+|   |   |   |   `-- test_single_op.py
+|   |   |   |-- msdebug
+|   |   |   |   |-- bin
+|   |   |   |   `-- lib
+|   |   |   |-- msleaks
+|   |   |   |   |-- bin
+|   |   |   |   `-- lib64
+|   |   |   |-- msmodelslim
+|   |   |   |   |-- mindspore
+|   |   |   |   |-- onnx
+|   |   |   |   `-- pytorch
+|   |   |   |-- msobjdump
+|   |   |   |   `-- msobjdump
+|   |   |   |-- msobjdump-0.1.0-py3-none-any.whl
+|   |   |   |-- msopgen
+|   |   |   |   `-- template
+|   |   |   |-- msopt
+|   |   |   |   |-- bin
+|   |   |   |   |-- lib64
+|   |   |   |   `-- mskpp
+|   |   |   |-- mspti
+|   |   |   |   |-- include
+|   |   |   |   |-- lib64
+|   |   |   |   `-- python
+|   |   |   |-- mssanitizer
+|   |   |   |   |-- bin
+|   |   |   |   |-- include
+|   |   |   |   `-- lib64
+|   |   |   |-- msserviceprofiler
+|   |   |   |   |-- include
+|   |   |   |   |-- lib
+|   |   |   |   `-- python
+|   |   |   |-- mstx
+|   |   |   |   |-- include
+|   |   |   |   `-- lib64
+|   |   |   |-- ncs
+|   |   |   |   |-- ascend_install.info
+|   |   |   |   |-- bin
+|   |   |   |   |-- conf
+|   |   |   |   |-- lib64
+|   |   |   |   |-- script
+|   |   |   |   `-- version.info
+|   |   |   |-- op_gen-0.1-py3-none-any.whl
+|   |   |   |-- op_project_templates
+|   |   |   |   |-- ascendc
+|   |   |   |   |-- cpukernel
+|   |   |   |   |-- op_project_tmpl
+|   |   |   |   `-- tbe
+|   |   |   |-- op_test_frame-0.1-py3-none-any.whl
+|   |   |   |-- opbuild
+|   |   |   |   `-- op_build
+|   |   |   |-- operator_cmp
+|   |   |   |   |-- __init__.py
+|   |   |   |   |-- compare
+|   |   |   |   `-- load_balancing
+|   |   |   |-- profiler
+|   |   |   |   |-- bin
+|   |   |   |   |-- profiler_tool
+|   |   |   |   `-- scripts
+|   |   |   |-- show_kernel_debug_data
+|   |   |   |   `-- show_kernel_debug_data
+|   |   |   |-- show_kernel_debug_data-0.1.0-py3-none-any.whl
+|   |   |   |-- simulator -> ../aarch64-linux/simulator
+|   |   |   |-- stacktrace
+|   |   |   |   `-- scripts
+|   |   |   |-- tikcpp
+|   |   |   |   |-- ascendc_compiler
+|   |   |   |   |-- ascendc_kernel_cmake -> ../../aarch64-linux/tikcpp/ascendc_kernel_cmake
+|   |   |   |   `-- tikcfw
+|   |   |   `-- tikicpulib
+|   |   |       `-- lib
+|   |   `-- var
+|   |       `-- ascend_package_db.info
+|   |-- latest
+|   |   |-- aarch64-linux
+|   |   |   |-- ascend_toolkit_install.info -> ../../8.1.RC1/aarch64-linux/ascend_toolkit_install.info
+|   |   |   |-- ascendc
+|   |   |   |   `-- include
+|   |   |   |-- ascendc_compiler
+|   |   |   |   `-- ascendc_compiler -> ../../../8.1.RC1/aarch64-linux/ascendc_compiler/ascendc_compiler
+|   |   |   |-- bin
+|   |   |   |   |-- akt -> ../../../8.1.RC1/aarch64-linux/bin/akt
+|   |   |   |   |-- amct_inner_graph_build -> ../../../8.1.RC1/aarch64-linux/bin/amct_inner_graph_build
+|   |   |   |   |-- aoe -> ../../../8.1.RC1/aarch64-linux/bin/aoe
+|   |   |   |   |-- asc_dumper -> ../../../8.1.RC1/aarch64-linux/bin/asc_dumper
+|   |   |   |   |-- ascendc_pack_kernel -> ../../../8.1.RC1/aarch64-linux/bin/ascendc_pack_kernel
+|   |   |   |   |-- atc -> ../../../8.1.RC1/aarch64-linux/bin/atc
+|   |   |   |   |-- atc.bin -> ../../../8.1.RC1/aarch64-linux/bin/atc.bin
+|   |   |   |   |-- deployer_daemon -> ../../../8.1.RC1/aarch64-linux/bin/deployer_daemon
+|   |   |   |   |-- host_cpu_executor_main -> ../../../8.1.RC1/aarch64-linux/bin/host_cpu_executor_main
+|   |   |   |   |-- msdebug -> ../../../8.1.RC1/tools/msdebug/bin/msdebug
+|   |   |   |   |-- msleaks -> ../../../8.1.RC1/tools/msleaks/bin/msleaks
+|   |   |   |   |-- msopgen -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/python/site-packages/bin/msopgen
+|   |   |   |   |-- msopst -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/python/site-packages/bin/msopst
+|   |   |   |   |-- msprof -> ../../../8.1.RC1/tools/profiler/bin/msprof
+|   |   |   |   |-- mssanitizer -> ../../../8.1.RC1/tools/mssanitizer/bin/mssanitizer
+|   |   |   |   |-- ncs -> ../../../8.1.RC1/aarch64-linux/bin/ncs
+|   |   |   |   |-- npu_executor_main -> ../../../8.1.RC1/aarch64-linux/bin/npu_executor_main
+|   |   |   |   |-- op_compiler -> ../../../8.1.RC1/aarch64-linux/bin/op_compiler
+|   |   |   |   |-- opc -> ../../../8.1.RC1/aarch64-linux/bin/opc
+|   |   |   |   |-- prereq_check.bash
+|   |   |   |   |-- prereq_check.csh
+|   |   |   |   |-- prereq_check.fish
+|   |   |   |   |-- setenv.bash
+|   |   |   |   |-- setenv.csh
+|   |   |   |   |-- setenv.fish
+|   |   |   |   `-- udf_executor -> ../../../8.1.RC1/aarch64-linux/bin/udf_executor
+|   |   |   |-- ccec_compiler
+|   |   |   |   |-- bin -> ../../../8.1.RC1/aarch64-linux/ccec_compiler/bin
+|   |   |   |   |-- include -> ../../../8.1.RC1/aarch64-linux/ccec_compiler/include
+|   |   |   |   `-- lib -> ../../../8.1.RC1/aarch64-linux/ccec_compiler/lib
+|   |   |   |-- conf
+|   |   |   |   |-- Ascend310P_config.json -> ../../../8.1.RC1/aarch64-linux/conf/Ascend310P_config.json
+|   |   |   |   |-- Ascend310_config.json -> ../../../8.1.RC1/aarch64-linux/conf/Ascend310_config.json
+|   |   |   |   |-- Ascend610_config.json -> ../../../8.1.RC1/aarch64-linux/conf/Ascend610_config.json
+|   |   |   |   |-- Hi3796CV300ES_config.json -> ../../../8.1.RC1/aarch64-linux/conf/Hi3796CV300ES_config.json
+|   |   |   |   |-- aipp
+|   |   |   |   |-- aoe.ini -> ../../../8.1.RC1/aarch64-linux/conf/aoe.ini
+|   |   |   |   |-- atc_param_conf.json -> ../../../8.1.RC1/aarch64-linux/conf/atc_param_conf.json
+|   |   |   |   |-- compile_options_config.json -> ../../../8.1.RC1/aarch64-linux/conf/compile_options_config.json
+|   |   |   |   |-- dump_tool_config.ini -> ../../../8.1.RC1/aarch64-linux/conf/dump_tool_config.ini
+|   |   |   |   |-- error_manager
+|   |   |   |   |-- path.cfg -> ../../../8.1.RC1/aarch64-linux/conf/path.cfg
+|   |   |   |   `-- qos_config.xml -> ../../../8.1.RC1/aarch64-linux/conf/qos_config.xml
+|   |   |   |-- data
+|   |   |   |   |-- ascendcl_config
+|   |   |   |   |-- auto_deploy_op_cost
+|   |   |   |   |-- fusion_strategy
+|   |   |   |   |-- mdat_op_cost
+|   |   |   |   `-- platform_config
+|   |   |   |-- develop
+|   |   |   |   `-- lib64
+|   |   |   |-- devlib
+|   |   |   |   |-- aarch64 -> linux/aarch64
+|   |   |   |   |-- libacl_audio_mpi.so -> linux/aarch64/libacl_audio_mpi.so
+|   |   |   |   |-- libacl_cblas.so -> linux/aarch64/libacl_cblas.so
+|   |   |   |   |-- libacl_dvpp.so -> linux/aarch64/libacl_dvpp.so
+|   |   |   |   |-- libacl_dvpp_mpi.so -> linux/aarch64/libacl_dvpp_mpi.so
+|   |   |   |   |-- libacl_hdmi_mpi.so -> linux/aarch64/libacl_hdmi_mpi.so
+|   |   |   |   |-- libacl_isp_ae_mpi.so -> linux/aarch64/libacl_isp_ae_mpi.so
+|   |   |   |   |-- libacl_isp_awb_mpi.so -> linux/aarch64/libacl_isp_awb_mpi.so
+|   |   |   |   |-- libacl_isp_mpi.so -> linux/aarch64/libacl_isp_mpi.so
+|   |   |   |   |-- libacl_mfusion_mpi.so -> linux/aarch64/libacl_mfusion_mpi.so
+|   |   |   |   |-- libacl_op_compiler.so -> ../../../8.1.RC1/aarch64-linux/devlib/libacl_op_compiler.so
+|   |   |   |   |-- libacl_retr.so -> linux/aarch64/libacl_retr.so
+|   |   |   |   |-- libacl_tde_mpi.so -> linux/aarch64/libacl_tde_mpi.so
+|   |   |   |   |-- libacl_tdt_channel.so -> ../../../8.1.RC1/aarch64-linux/devlib/libacl_tdt_channel.so
+|   |   |   |   |-- libacl_tdt_queue.so -> linux/aarch64/libacl_tdt_queue.so
+|   |   |   |   |-- libacl_vi_mpi.so -> linux/aarch64/libacl_vi_mpi.so
+|   |   |   |   |-- libacl_vo_mpi.so -> linux/aarch64/libacl_vo_mpi.so
+|   |   |   |   |-- libacl_vpss_mpi.so -> linux/aarch64/libacl_vpss_mpi.so
+|   |   |   |   |-- libascend_hal.so -> linux/aarch64/libascend_hal.so
+|   |   |   |   |-- libascendalog.so -> linux/aarch64/libascendalog.so
+|   |   |   |   |-- libascendcl.so -> linux/aarch64/libascendcl.so
+|   |   |   |   |-- libc_sec.so -> linux/aarch64/libc_sec.so
+|   |   |   |   |-- liberror_manager.so -> linux/aarch64/liberror_manager.so
+|   |   |   |   |-- libexe_graph.so -> linux/aarch64/libexe_graph.so
+|   |   |   |   |-- libfmk_onnx_parser.so -> ../../../8.1.RC1/aarch64-linux/devlib/libfmk_onnx_parser.so
+|   |   |   |   |-- libfmk_parser.so -> ../../../8.1.RC1/aarch64-linux/devlib/libfmk_parser.so
+|   |   |   |   |-- libge_common.so -> linux/aarch64/libge_common.so
+|   |   |   |   |-- libge_compiler.so -> ../../../8.1.RC1/aarch64-linux/devlib/libge_compiler.so
+|   |   |   |   |-- libge_runner.so -> ../../../8.1.RC1/aarch64-linux/devlib/libge_runner.so
+|   |   |   |   |-- libgert.so -> linux/aarch64/libgert.so
+|   |   |   |   |-- libgraph.so -> linux/aarch64/libgraph.so
+|   |   |   |   |-- libhybrid_executor.so -> linux/aarch64/libhybrid_executor.so
+|   |   |   |   |-- liblowering.so -> linux/aarch64/liblowering.so
+|   |   |   |   |-- libmsprofiler.so -> linux/aarch64/libmsprofiler.so
+|   |   |   |   |-- libnnopbase.so -> linux/aarch64/libnnopbase.so
+|   |   |   |   |-- libop_common.so -> linux/aarch64/libop_common.so
+|   |   |   |   |-- libregister.so -> linux/aarch64/libregister.so
+|   |   |   |   |-- librt2_registry.a -> linux/aarch64/librt2_registry.a
+|   |   |   |   |-- libtiling_api.a -> linux/aarch64/libtiling_api.a
+|   |   |   |   |-- linux
+|   |   |   |   |-- minios
+|   |   |   |   `-- x86_64 -> linux/x86_64
+|   |   |   |-- include
+|   |   |   |   |-- acl
+|   |   |   |   |-- acldvppop
+|   |   |   |   |-- aclnn
+|   |   |   |   |-- aclnn_kernels
+|   |   |   |   |-- aclnnop
+|   |   |   |   |-- aicpu
+|   |   |   |   |-- amct
+|   |   |   |   |-- aoe
+|   |   |   |   |-- ascendc
+|   |   |   |   |-- base
+|   |   |   |   |-- exe_graph
+|   |   |   |   |-- experiment
+|   |   |   |   |-- external
+|   |   |   |   |-- flow_func
+|   |   |   |   |-- flow_graph
+|   |   |   |   |-- ge
+|   |   |   |   |-- graph
+|   |   |   |   |-- hccl
+|   |   |   |   |-- kernel_tiling -> ../ascendc/include/highlevel_api/kernel_tiling
+|   |   |   |   |-- llm_datadist
+|   |   |   |   |-- msServiceProfiler -> ../../../8.1.RC1/tools/msserviceprofiler/include/msServiceProfiler
+|   |   |   |   |-- mspti -> ../../../8.1.RC1/tools/mspti/include
+|   |   |   |   |-- mstx -> ../../../8.1.RC1/tools/mstx/include/mstx
+|   |   |   |   |-- parser
+|   |   |   |   |-- proto
+|   |   |   |   |-- register
+|   |   |   |   |-- securec.h -> ../../../8.1.RC1/aarch64-linux/include/securec.h
+|   |   |   |   |-- securectype.h -> ../../../8.1.RC1/aarch64-linux/include/securectype.h
+|   |   |   |   |-- tiling -> ../ascendc/include/highlevel_api/tiling
+|   |   |   |   |-- toolchain
+|   |   |   |   |-- utils
+|   |   |   |   `-- version
+|   |   |   |-- install.conf -> ../../8.1.RC1/aarch64-linux/install.conf
+|   |   |   |-- lib64
+|   |   |   |   |-- UpdateModelParam_ascend910B.o -> ../../../8.1.RC1/aarch64-linux/lib64/UpdateModelParam_ascend910B.o
+|   |   |   |   |-- UpdateModelParam_ascend910_93.o -> ../../../8.1.RC1/aarch64-linux/lib64/UpdateModelParam_ascend910_93.o
+|   |   |   |   |-- auto_deploy_utils-0.1.0-py3-none-any.whl -> ../../../8.1.RC1/aarch64-linux/lib64/auto_deploy_utils-0.1.0-py3-none-any.whl
+|   |   |   |   |-- auto_tune-0.1.0-py3-none-any.whl -> ../../../8.1.RC1/aarch64-linux/lib64/auto_tune-0.1.0-py3-none-any.whl
+|   |   |   |   |-- c
+|   |   |   |   |-- d2d_bandwidth_test.o -> ../../../8.1.RC1/aarch64-linux/lib64/d2d_bandwidth_test.o
+|   |   |   |   |-- d2d_bandwidth_test_310b.o -> ../../../8.1.RC1/aarch64-linux/lib64/d2d_bandwidth_test_310b.o
+|   |   |   |   |-- d2d_bandwidth_write_test.o -> ../../../8.1.RC1/aarch64-linux/lib64/d2d_bandwidth_write_test.o
+|   |   |   |   |-- dataflow-0.0.1-py3-none-any.whl -> ../../../8.1.RC1/aarch64-linux/lib64/dataflow-0.0.1-py3-none-any.whl
+|   |   |   |   |-- device
+|   |   |   |   |-- hbm_power.o -> ../../../8.1.RC1/aarch64-linux/lib64/hbm_power.o
+|   |   |   |   |-- hbm_test_0.o -> ../../../8.1.RC1/aarch64-linux/lib64/hbm_test_0.o
+|   |   |   |   |-- hbm_test_1.o -> ../../../8.1.RC1/aarch64-linux/lib64/hbm_test_1.o
+|   |   |   |   |-- hbm_test_2.o -> ../../../8.1.RC1/aarch64-linux/lib64/hbm_test_2.o
+|   |   |   |   |-- hbm_test_3.o -> ../../../8.1.RC1/aarch64-linux/lib64/hbm_test_3.o
+|   |   |   |   |-- hbm_test_4.o -> ../../../8.1.RC1/aarch64-linux/lib64/hbm_test_4.o
+|   |   |   |   |-- hbm_test_5.o -> ../../../8.1.RC1/aarch64-linux/lib64/hbm_test_5.o
+|   |   |   |   |-- hccl-0.1.0-py3-none-any.whl -> ../../../8.1.RC1/aarch64-linux/lib64/hccl-0.1.0-py3-none-any.whl
+|   |   |   |   |-- hccl_aiv_op_ascend910B.o -> ../../../8.1.RC1/aarch64-linux/lib64/hccl_aiv_op_ascend910B.o
+|   |   |   |   |-- hccl_reduce_op_Ascend310P3.o -> ../../../8.1.RC1/aarch64-linux/lib64/hccl_reduce_op_Ascend310P3.o
+|   |   |   |   |-- hccl_reduce_op_ascend910.o -> ../../../8.1.RC1/aarch64-linux/lib64/hccl_reduce_op_ascend910.o
+|   |   |   |   |-- hccl_reduce_op_ascend910B.o -> ../../../8.1.RC1/aarch64-linux/lib64/hccl_reduce_op_ascend910B.o
+|   |   |   |   |-- infer_310b_model.o -> ../../../8.1.RC1/aarch64-linux/lib64/infer_310b_model.o
+|   |   |   |   |-- infer_310b_model_int8.o -> ../../../8.1.RC1/aarch64-linux/lib64/infer_310b_model_int8.o
+|   |   |   |   |-- infer_mmad_model.o -> ../../../8.1.RC1/aarch64-linux/lib64/infer_mmad_model.o
+|   |   |   |   |-- infer_mmad_model_int8.o -> ../../../8.1.RC1/aarch64-linux/lib64/infer_mmad_model_int8.o
+|   |   |   |   |-- infer_mmad_v200_model.o -> ../../../8.1.RC1/aarch64-linux/lib64/infer_mmad_v200_model.o
+|   |   |   |   |-- infer_mmad_v200_model_int8.o -> ../../../8.1.RC1/aarch64-linux/lib64/infer_mmad_v200_model_int8.o
+|   |   |   |   |-- kfc_dump_stat_ascend310p3.o -> ../../../8.1.RC1/aarch64-linux/lib64/kfc_dump_stat_ascend310p3.o
+|   |   |   |   |-- kfc_dump_stat_ascend910B.o -> ../../../8.1.RC1/aarch64-linux/lib64/kfc_dump_stat_ascend910B.o
+|   |   |   |   |-- lib_caffe_parser.so -> ../../../8.1.RC1/aarch64-linux/lib64/lib_caffe_parser.so
+|   |   |   |   |-- libacl_audio_mpi.so -> ../../../8.1.RC1/aarch64-linux/lib64/libacl_audio_mpi.so
+|   |   |   |   |-- libacl_cblas.so -> ../../../8.1.RC1/aarch64-linux/lib64/libacl_cblas.so
+|   |   |   |   |-- libacl_dvpp.so -> ../../../8.1.RC1/aarch64-linux/lib64/libacl_dvpp.so
+|   |   |   |   |-- libacl_dvpp_mpi.so -> ../../../8.1.RC1/aarch64-linux/lib64/libacl_dvpp_mpi.so
+|   |   |   |   |-- libacl_dvpp_op.so -> ../../../8.1.RC1/aarch64-linux/lib64/libacl_dvpp_op.so
+|   |   |   |   |-- libacl_hdmi_mpi.so -> ../../../8.1.RC1/aarch64-linux/lib64/libacl_hdmi_mpi.so
+|   |   |   |   |-- libacl_isp_ae_mpi.so -> ../../../8.1.RC1/aarch64-linux/lib64/libacl_isp_ae_mpi.so
+|   |   |   |   |-- libacl_isp_awb_mpi.so -> ../../../8.1.RC1/aarch64-linux/lib64/libacl_isp_awb_mpi.so
+|   |   |   |   |-- libacl_isp_mpi.so -> ../../../8.1.RC1/aarch64-linux/lib64/libacl_isp_mpi.so
+|   |   |   |   |-- libacl_mfusion_mpi.so -> ../../../8.1.RC1/aarch64-linux/lib64/libacl_mfusion_mpi.so
+|   |   |   |   |-- libacl_op_compiler.so -> ../../../8.1.RC1/aarch64-linux/lib64/libacl_op_compiler.so
+|   |   |   |   |-- libacl_retr.so -> ../../../8.1.RC1/aarch64-linux/lib64/libacl_retr.so
+|   |   |   |   |-- libacl_tde_mpi.so -> ../../../8.1.RC1/aarch64-linux/lib64/libacl_tde_mpi.so
+|   |   |   |   |-- libacl_tdt_channel.so -> ../../../8.1.RC1/aarch64-linux/lib64/libacl_tdt_channel.so
+|   |   |   |   |-- libacl_tdt_queue.so -> ../../../8.1.RC1/aarch64-linux/lib64/libacl_tdt_queue.so
+|   |   |   |   |-- libacl_vi_mpi.so -> ../../../8.1.RC1/aarch64-linux/lib64/libacl_vi_mpi.so
+|   |   |   |   |-- libacl_vo_mpi.so -> ../../../8.1.RC1/aarch64-linux/lib64/libacl_vo_mpi.so
+|   |   |   |   |-- libacl_vpss_mpi.so -> ../../../8.1.RC1/aarch64-linux/lib64/libacl_vpss_mpi.so
+|   |   |   |   |-- libaclnn_math.so -> ../../../8.1.RC1/opp/built-in/op_impl/ai_core/tbe/op_api/lib/linux/aarch64/libaclnn_math.so
+|   |   |   |   |-- libaclnn_ops_infer.so -> ../../../8.1.RC1/opp/built-in/op_impl/ai_core/tbe/op_api/lib/linux/aarch64/libaclnn_ops_infer.so
+|   |   |   |   |-- libaclnn_ops_train.so -> ../../../8.1.RC1/opp/built-in/op_impl/ai_core/tbe/op_api/lib/linux/aarch64/libaclnn_ops_train.so
+|   |   |   |   |-- libaclnn_rand.so -> ../../../8.1.RC1/opp/built-in/op_impl/ai_core/tbe/op_api/lib/linux/aarch64/libaclnn_rand.so
+|   |   |   |   |-- libadcore.a -> ../../../8.1.RC1/aarch64-linux/lib64/libadcore.a
+|   |   |   |   |-- libadump_server.a -> ../../../8.1.RC1/aarch64-linux/lib64/libadump_server.a
+|   |   |   |   |-- libaicore_utils.so -> ../../../8.1.RC1/aarch64-linux/lib64/libaicore_utils.so
+|   |   |   |   |-- libaicpu_const_folding.so -> ../../../8.1.RC1/aarch64-linux/lib64/libaicpu_const_folding.so
+|   |   |   |   |-- libaicpu_engine_common.so -> ../../../8.1.RC1/aarch64-linux/lib64/libaicpu_engine_common.so
+|   |   |   |   |-- libaihac_autofusion.so -> ../../../8.1.RC1/aarch64-linux/lib64/libaihac_autofusion.so
+|   |   |   |   |-- libaihac_codegen.so -> ../../../8.1.RC1/aarch64-linux/lib64/libaihac_codegen.so
+|   |   |   |   |-- libaihac_ir.so -> ../../../8.1.RC1/aarch64-linux/lib64/libaihac_ir.so
+|   |   |   |   |-- libaihac_ir_register.so -> ../../../8.1.RC1/aarch64-linux/lib64/libaihac_ir_register.so
+|   |   |   |   |-- libaihac_symbolizer.so -> ../../../8.1.RC1/aarch64-linux/lib64/libaihac_symbolizer.so
+|   |   |   |   |-- libamctacl.so -> ../../../8.1.RC1/aarch64-linux/lib64/libamctacl.so
+|   |   |   |   |-- libaoe_compiler.so -> ../../../8.1.RC1/aarch64-linux/lib64/libaoe_compiler.so
+|   |   |   |   |-- libaoe_executor.so -> ../../../8.1.RC1/aarch64-linux/lib64/libaoe_executor.so
+|   |   |   |   |-- libaoe_opat.so -> ../../../8.1.RC1/aarch64-linux/lib64/libaoe_opat.so
+|   |   |   |   |-- libaoe_plugin.so -> ../../../8.1.RC1/aarch64-linux/lib64/libaoe_plugin.so
+|   |   |   |   |-- libaoe_runner.so -> ../../../8.1.RC1/aarch64-linux/lib64/libaoe_runner.so
+|   |   |   |   |-- libaoe_tuning.so -> ../../../8.1.RC1/aarch64-linux/lib64/libaoe_tuning.so
+|   |   |   |   |-- libascend_aoe_runner_offline.so -> ../../../8.1.RC1/aarch64-linux/lib64/libascend_aoe_runner_offline.so
+|   |   |   |   |-- libascend_dump.a -> ../../../8.1.RC1/aarch64-linux/lib64/libascend_dump.a
+|   |   |   |   |-- libascend_dump.so -> ../../../8.1.RC1/aarch64-linux/lib64/libascend_dump.so
+|   |   |   |   |-- libascend_ml.so -> ../../../8.1.RC1/aarch64-linux/lib64/libascend_ml.so
+|   |   |   |   |-- libascend_ml_detect.so -> ../../../8.1.RC1/aarch64-linux/lib64/libascend_ml_detect.so
+|   |   |   |   |-- libascend_protobuf.so -> ../../../8.1.RC1/aarch64-linux/lib64/libascend_protobuf.so
+|   |   |   |   |-- libascend_protobuf.so.3.13.0.0 -> ../../../8.1.RC1/aarch64-linux/lib64/libascend_protobuf.so.3.13.0.0
+|   |   |   |   |-- libascend_trace.so -> ../../../8.1.RC1/aarch64-linux/lib64/libascend_trace.so
+|   |   |   |   |-- libascend_watchdog.so -> ../../../8.1.RC1/aarch64-linux/lib64/libascend_watchdog.so
+|   |   |   |   |-- libascendalog.so -> ../../../8.1.RC1/aarch64-linux/lib64/libascendalog.so
+|   |   |   |   |-- libascendc_runtime.a -> ../../../8.1.RC1/aarch64-linux/lib64/libascendc_runtime.a
+|   |   |   |   |-- libascendcl.a -> ../../../8.1.RC1/aarch64-linux/lib64/libascendcl.a
+|   |   |   |   |-- libascendcl.so -> ../../../8.1.RC1/aarch64-linux/lib64/libascendcl.so
+|   |   |   |   |-- libascendprofhal.so -> ../../../8.1.RC1/aarch64-linux/lib64/libascendprofhal.so
+|   |   |   |   |-- libauto_tiling.so -> ../../../8.1.RC1/aarch64-linux/lib64/libauto_tiling.so
+|   |   |   |   |-- libbuilt_in_flowfunc.so -> ../../../8.1.RC1/aarch64-linux/lib64/libbuilt_in_flowfunc.so
+|   |   |   |   |-- libc_sec.a -> ../../../8.1.RC1/aarch64-linux/lib64/libc_sec.a
+|   |   |   |   |-- libc_sec.so -> ../../../8.1.RC1/aarch64-linux/lib64/libc_sec.so
+|   |   |   |   |-- libcann_kb.so -> ../../../8.1.RC1/aarch64-linux/lib64/libcann_kb.so
+|   |   |   |   |-- libcce.so -> ../../../8.1.RC1/aarch64-linux/lib64/libcce.so
+|   |   |   |   |-- libcce_aicore.so -> ../../../8.1.RC1/aarch64-linux/lib64/libcce_aicore.so
+|   |   |   |   |-- libcce_aicpudev_online.so -> ../../../8.1.RC1/aarch64-linux/lib64/libcce_aicpudev_online.so
+|   |   |   |   |-- libcce_tools.so -> ../../../8.1.RC1/aarch64-linux/lib64/libcce_tools.so
+|   |   |   |   |-- libcompress.so -> ../../../8.1.RC1/aarch64-linux/lib64/libcompress.so
+|   |   |   |   |-- libcompressweight.so -> ../../../8.1.RC1/aarch64-linux/lib64/libcompressweight.so
+|   |   |   |   |-- libconstant_folding_ops.so -> ../../../8.1.RC1/aarch64-linux/lib64/libconstant_folding_ops.so
+|   |   |   |   |-- libdata_flow_base.so -> ../../../8.1.RC1/aarch64-linux/lib64/libdata_flow_base.so
+|   |   |   |   |-- libdatatransfer.so -> ../../../8.1.RC1/aarch64-linux/lib64/libdatatransfer.so
+|   |   |   |   |-- libdavinci_executor.so -> ../../../8.1.RC1/aarch64-linux/lib64/libdavinci_executor.so
+|   |   |   |   |-- libdevice_register.a -> ../../../8.1.RC1/aarch64-linux/lib64/libdevice_register.a
+|   |   |   |   |-- libdgw_client.so -> ../../../8.1.RC1/aarch64-linux/lib64/libdgw_client.so
+|   |   |   |   |-- libdgw_client_so.so -> ../../../8.1.RC1/aarch64-linux/lib64/libdgw_client_so.so
+|   |   |   |   |-- libdummy_tls.so -> ../../../8.1.RC1/aarch64-linux/lib64/libdummy_tls.so
+|   |   |   |   |-- libdvpp_cmdlist.so -> ../../../8.1.RC1/aarch64-linux/lib64/libdvpp_cmdlist.so
+|   |   |   |   |-- libdvpp_op_base.so -> ../../../8.1.RC1/aarch64-linux/lib64/libdvpp_op_base.so
+|   |   |   |   |-- liberror_manager.a -> ../../../8.1.RC1/aarch64-linux/lib64/liberror_manager.a
+|   |   |   |   |-- liberror_manager.so -> ../../../8.1.RC1/aarch64-linux/lib64/liberror_manager.so
+|   |   |   |   |-- libexe_graph.so -> ../../../8.1.RC1/aarch64-linux/lib64/libexe_graph.so
+|   |   |   |   |-- libflow_func.so -> ../../../8.1.RC1/aarch64-linux/lib64/libflow_func.so
+|   |   |   |   |-- libflow_graph.so -> ../../../8.1.RC1/aarch64-linux/lib64/libflow_graph.so
+|   |   |   |   |-- libfmk_onnx_parser.so -> ../../../8.1.RC1/aarch64-linux/lib64/libfmk_onnx_parser.so
+|   |   |   |   |-- libfmk_parser.so -> ../../../8.1.RC1/aarch64-linux/lib64/libfmk_parser.so
+|   |   |   |   |-- libge_common.so -> ../../../8.1.RC1/aarch64-linux/lib64/libge_common.so
+|   |   |   |   |-- libge_common_base.so -> ../../../8.1.RC1/aarch64-linux/lib64/libge_common_base.so
+|   |   |   |   |-- libge_compiler.so -> ../../../8.1.RC1/aarch64-linux/lib64/libge_compiler.so
+|   |   |   |   |-- libge_executor.so -> ../../../8.1.RC1/aarch64-linux/lib64/libge_executor.so
+|   |   |   |   |-- libge_runner.so -> ../../../8.1.RC1/aarch64-linux/lib64/libge_runner.so
+|   |   |   |   |-- libgert.so -> ../../../8.1.RC1/aarch64-linux/lib64/libgert.so
+|   |   |   |   |-- libgraph.so -> ../../../8.1.RC1/aarch64-linux/lib64/libgraph.so
+|   |   |   |   |-- libgraph_base.so -> ../../../8.1.RC1/aarch64-linux/lib64/libgraph_base.so
+|   |   |   |   |-- libgraphtuner_executor.so -> ../../../8.1.RC1/aarch64-linux/lib64/libgraphtuner_executor.so
+|   |   |   |   |-- libhccd.so -> ../../../8.1.RC1/aarch64-linux/lib64/libhccd.so
+|   |   |   |   |-- libhccl.so -> ../../../8.1.RC1/aarch64-linux/lib64/libhccl.so
+|   |   |   |   |-- libhccl_alg.so -> ../../../8.1.RC1/aarch64-linux/lib64/libhccl_alg.so
+|   |   |   |   |-- libhccl_alg_research.so -> ../../../8.1.RC1/aarch64-linux/lib64/libhccl_alg_research.so
+|   |   |   |   |-- libhccl_heterog.so -> ../../../8.1.RC1/aarch64-linux/lib64/libhccl_heterog.so
+|   |   |   |   |-- libhccl_plf.so -> ../../../8.1.RC1/aarch64-linux/lib64/libhccl_plf.so
+|   |   |   |   |-- libhcom_executor.so -> ../../../8.1.RC1/aarch64-linux/lib64/libhcom_executor.so
+|   |   |   |   |-- libhcom_gradient_split_tune.so -> ../../../8.1.RC1/aarch64-linux/lib64/libhcom_gradient_split_tune.so
+|   |   |   |   |-- libhcom_graph_adaptor.so -> ../../../8.1.RC1/aarch64-linux/lib64/libhcom_graph_adaptor.so
+|   |   |   |   |-- libhdds_base.so -> ../../../8.1.RC1/aarch64-linux/lib64/libhdds_base.so
+|   |   |   |   |-- libhost_aicpu_scheduler.so -> ../../../8.1.RC1/aarch64-linux/lib64/libhost_aicpu_scheduler.so
+|   |   |   |   |-- libhybrid_executor.so -> ../../../8.1.RC1/aarch64-linux/lib64/libhybrid_executor.so
+|   |   |   |   |-- libindextransform.so -> ../../../8.1.RC1/aarch64-linux/lib64/libindextransform.so
+|   |   |   |   |-- libllm_engine.so -> ../../../8.1.RC1/aarch64-linux/lib64/libllm_engine.so
+|   |   |   |   |-- liblowering.so -> ../../../8.1.RC1/aarch64-linux/lib64/liblowering.so
+|   |   |   |   |-- libmmpa.a -> ../../../8.1.RC1/aarch64-linux/lib64/libmmpa.a
+|   |   |   |   |-- libmmpa.so -> ../../../8.1.RC1/aarch64-linux/lib64/libmmpa.so
+|   |   |   |   |-- libmodel_deployer.so -> ../../../8.1.RC1/aarch64-linux/lib64/libmodel_deployer.so
+|   |   |   |   |-- libms_service_profiler.so -> ../../../8.1.RC1/tools/msserviceprofiler/lib/libms_service_profiler.so
+|   |   |   |   |-- libms_tools_ext.so -> ../../../8.1.RC1/tools/mstx/lib64/libms_tools_ext.so
+|   |   |   |   |-- libmsprofiler.so -> ../../../8.1.RC1/aarch64-linux/lib64/libmsprofiler.so
+|   |   |   |   |-- libmspti.so -> ../../../8.1.RC1/tools/mspti/lib64/libmspti.so
+|   |   |   |   |-- libnca.so -> ../../../8.1.RC1/aarch64-linux/lib64/libnca.so
+|   |   |   |   |-- libnnopbase.so -> ../../../8.1.RC1/aarch64-linux/lib64/libnnopbase.so
+|   |   |   |   |-- libnpu_sched_model_loader.so -> ../../../8.1.RC1/aarch64-linux/lib64/libnpu_sched_model_loader.so
+|   |   |   |   |-- libop_common.so -> ../../../8.1.RC1/aarch64-linux/lib64/libop_common.so
+|   |   |   |   |-- libopapi.so -> ../../../8.1.RC1/opp/built-in/op_impl/ai_core/tbe/op_api/lib/linux/aarch64/libopapi.so
+|   |   |   |   |-- libopat.so -> ../../../8.1.RC1/aarch64-linux/lib64/libopat.so
+|   |   |   |   |-- libops_host_cpu.so -> ../../../8.1.RC1/aarch64-linux/lib64/libops_host_cpu.so
+|   |   |   |   |-- libopskernel.so -> ../../../8.1.RC1/aarch64-linux/lib64/libopskernel.so
+|   |   |   |   |-- libopt_feature.so -> ../../../8.1.RC1/aarch64-linux/lib64/libopt_feature.so
+|   |   |   |   |-- libparser_common.so -> ../../../8.1.RC1/aarch64-linux/lib64/libparser_common.so
+|   |   |   |   |-- libplatform.so -> ../../../8.1.RC1/aarch64-linux/lib64/libplatform.so
+|   |   |   |   |-- libprofapi.so -> ../../../8.1.RC1/aarch64-linux/lib64/libprofapi.so
+|   |   |   |   |-- libprofimpl.so -> ../../../8.1.RC1/aarch64-linux/lib64/libprofimpl.so
+|   |   |   |   |-- libqos_manager.so -> ../../../8.1.RC1/aarch64-linux/lib64/libqos_manager.so
+|   |   |   |   |-- libra.so -> ../../../8.1.RC1/aarch64-linux/lib64/libra.so
+|   |   |   |   |-- libra_hdc.so -> ../../../8.1.RC1/aarch64-linux/lib64/libra_hdc.so
+|   |   |   |   |-- libra_peer.so -> ../../../8.1.RC1/aarch64-linux/lib64/libra_peer.so
+|   |   |   |   |-- libreader_writer.so -> ../../../8.1.RC1/aarch64-linux/lib64/libreader_writer.so
+|   |   |   |   |-- libregister.a -> ../../../8.1.RC1/aarch64-linux/lib64/libregister.a
+|   |   |   |   |-- libregister.so -> ../../../8.1.RC1/aarch64-linux/lib64/libregister.so
+|   |   |   |   |-- librs.so -> ../../../8.1.RC1/aarch64-linux/lib64/librs.so
+|   |   |   |   |-- librt2_registry.a -> ../../../8.1.RC1/aarch64-linux/lib64/librt2_registry.a
+|   |   |   |   |-- libruntime.so -> ../../../8.1.RC1/aarch64-linux/lib64/libruntime.so
+|   |   |   |   |-- libruntime_common.so -> ../../../8.1.RC1/aarch64-linux/lib64/libruntime_common.so
+|   |   |   |   |-- libruntime_kb.so -> ../../../8.1.RC1/aarch64-linux/lib64/libruntime_kb.so
+|   |   |   |   |-- libruntime_v100.so -> ../../../8.1.RC1/aarch64-linux/lib64/libruntime_v100.so
+|   |   |   |   |-- libslice.so -> ../../../8.1.RC1/aarch64-linux/lib64/libslice.so
+|   |   |   |   |-- libte_fusion.so -> ../../../8.1.RC1/aarch64-linux/lib64/libte_fusion.so
+|   |   |   |   |-- libtiling.so -> ../../../8.1.RC1/aarch64-linux/lib64/libtiling.so
+|   |   |   |   |-- libtiling_api.a -> ../../../8.1.RC1/aarch64-linux/lib64/libtiling_api.a
+|   |   |   |   |-- libtprt.so -> ../../../8.1.RC1/aarch64-linux/lib64/libtprt.so
+|   |   |   |   |-- libtsdclient.so -> ../../../8.1.RC1/aarch64-linux/lib64/libtsdclient.so
+|   |   |   |   |-- libtvm.so -> ../../../8.1.RC1/aarch64-linux/lib64/libtvm.so
+|   |   |   |   |-- libtvm_runtime.so -> ../../../8.1.RC1/aarch64-linux/lib64/libtvm_runtime.so
+|   |   |   |   |-- libudf_dump.so -> ../../../8.1.RC1/aarch64-linux/lib64/libudf_dump.so
+|   |   |   |   |-- libudf_profiling.so -> ../../../8.1.RC1/aarch64-linux/lib64/libudf_profiling.so
+|   |   |   |   |-- llm_datadist-0.0.1-py3-none-any.whl -> ../../../8.1.RC1/aarch64-linux/lib64/llm_datadist-0.0.1-py3-none-any.whl
+|   |   |   |   |-- op_compile_tool-0.1.0-py3-none-any.whl -> ../../../8.1.RC1/aarch64-linux/lib64/op_compile_tool-0.1.0-py3-none-any.whl
+|   |   |   |   |-- opc_tool-0.1.0-py3-none-any.whl -> ../../../8.1.RC1/aarch64-linux/lib64/opc_tool-0.1.0-py3-none-any.whl
+|   |   |   |   |-- plugin
+|   |   |   |   |-- schedule_search-0.1.0-py3-none-any.whl -> ../../../8.1.RC1/aarch64-linux/lib64/schedule_search-0.1.0-py3-none-any.whl
+|   |   |   |   |-- stub
+|   |   |   |   |-- switch_by_index.o -> ../../../8.1.RC1/aarch64-linux/lib64/switch_by_index.o
+|   |   |   |   |-- te-0.4.0-py3-none-any.whl -> ../../../8.1.RC1/aarch64-linux/lib64/te-0.4.0-py3-none-any.whl
+|   |   |   |   |-- train_matmul_model.o -> ../../../8.1.RC1/aarch64-linux/lib64/train_matmul_model.o
+|   |   |   |   |-- train_matmul_model_fp32.o -> ../../../8.1.RC1/aarch64-linux/lib64/train_matmul_model_fp32.o
+|   |   |   |   |-- train_matmul_model_hf32.o -> ../../../8.1.RC1/aarch64-linux/lib64/train_matmul_model_hf32.o
+|   |   |   |   |-- train_matmul_model_int8.o -> ../../../8.1.RC1/aarch64-linux/lib64/train_matmul_model_int8.o
+|   |   |   |   |-- train_mmad_model.o -> ../../../8.1.RC1/aarch64-linux/lib64/train_mmad_model.o
+|   |   |   |   |-- train_mmad_model_int8.o -> ../../../8.1.RC1/aarch64-linux/lib64/train_mmad_model_int8.o
+|   |   |   |   |-- train_mmad_vec_model.o -> ../../../8.1.RC1/aarch64-linux/lib64/train_mmad_vec_model.o
+|   |   |   |   |-- train_mmad_vec_model_int8.o -> ../../../8.1.RC1/aarch64-linux/lib64/train_mmad_vec_model_int8.o
+|   |   |   |   |-- vector_multiplication.o -> ../../../8.1.RC1/aarch64-linux/lib64/vector_multiplication.o
+|   |   |   |   `-- vector_multiplication_fp32.o -> ../../../8.1.RC1/aarch64-linux/lib64/vector_multiplication_fp32.o
+|   |   |   |-- python
+|   |   |   |   `-- func2graph
+|   |   |   |-- runtime -> ../../8.1.RC1/aarch64-linux/runtime
+|   |   |   |-- script -> ../../8.1.RC1/aarch64-linux/script
+|   |   |   |-- simulator
+|   |   |   |   |-- AS31XM1 -> Ascend310B1
+|   |   |   |   |-- Ascend310
+|   |   |   |   |-- Ascend310B1
+|   |   |   |   |-- Ascend310B2 -> Ascend310B1
+|   |   |   |   |-- Ascend310B3 -> Ascend310B1
+|   |   |   |   |-- Ascend310B4 -> Ascend310B1
+|   |   |   |   |-- Ascend310P1
+|   |   |   |   |-- Ascend310P2 -> Ascend310P1
+|   |   |   |   |-- Ascend310P3 -> Ascend310P1
+|   |   |   |   |-- Ascend310P4 -> Ascend310P1
+|   |   |   |   |-- Ascend310P5 -> Ascend310P1
+|   |   |   |   |-- Ascend310P7 -> Ascend310P1
+|   |   |   |   |-- Ascend610
+|   |   |   |   |-- Ascend610Lite
+|   |   |   |   |-- Ascend910A
+|   |   |   |   |-- Ascend910B
+|   |   |   |   |-- Ascend910B1
+|   |   |   |   |-- Ascend910B2 -> Ascend910B1
+|   |   |   |   |-- Ascend910B2C -> Ascend910B1
+|   |   |   |   |-- Ascend910B3 -> Ascend910B1
+|   |   |   |   |-- Ascend910B4 -> Ascend910B1
+|   |   |   |   |-- Ascend910PremiumA
+|   |   |   |   |-- Ascend910ProA
+|   |   |   |   |-- Ascend910ProB
+|   |   |   |   |-- Ascend910_9362 -> Ascend910B1
+|   |   |   |   |-- Ascend910_9372 -> Ascend910B1
+|   |   |   |   |-- Ascend910_9381 -> Ascend910B1
+|   |   |   |   |-- Ascend910_9382 -> Ascend910B1
+|   |   |   |   |-- Ascend910_9391 -> Ascend910B1
+|   |   |   |   |-- Ascend910_9392 -> Ascend910B1
+|   |   |   |   |-- Ascend920A
+|   |   |   |   |-- BS9SX1AA
+|   |   |   |   |-- BS9SX2AA -> Ascend610Lite
+|   |   |   |   |-- BS9SX2AB -> Ascend610Lite
+|   |   |   |   |-- MC61AM21AA -> Ascend610Lite
+|   |   |   |   |-- MC61AM21AB -> Ascend610Lite
+|   |   |   |   |-- ascend035
+|   |   |   |   `-- common
+|   |   |   `-- tikcpp
+|   |   |       |-- ascendc_kernel_cmake -> ../../../8.1.RC1/aarch64-linux/tikcpp/ascendc_kernel_cmake
+|   |   |       `-- tikcfw
+|   |   |-- acllib -> ../8.1.RC1/runtime
+|   |   |-- arm64-linux -> aarch64-linux
+|   |   |-- atc -> ../8.1.RC1/atc
+|   |   |-- bin -> aarch64-linux/bin
+|   |   |-- compiler -> ../8.1.RC1/compiler
+|   |   |-- conf -> aarch64-linux/conf
+|   |   |-- fwkacllib -> ../8.1.RC1/fwkacllib
+|   |   |-- hccl -> ../8.1.RC1/hccl
+|   |   |-- include -> aarch64-linux/include
+|   |   |-- lib64 -> aarch64-linux/lib64
+|   |   |-- mindstudio-toolkit -> ../8.1.RC1/mindstudio-toolkit
+|   |   |-- opp -> ../8.1.RC1/opp
+|   |   |-- opp_kernel -> ../8.1.RC1/opp_kernel
+|   |   |-- ops -> ../8.1.RC1/opp
+|   |   |-- platform.ini
+|   |   |-- pyACL -> ../8.1.RC1/pyACL
+|   |   |-- python
+|   |   |   `-- site-packages
+|   |   |       |-- acl
+|   |   |       |-- acl.so -> ../../../8.1.RC1/python/site-packages/acl.so
+|   |   |       |-- auto_deploy_utils -> ../../../8.1.RC1/python/site-packages/auto_deploy_utils
+|   |   |       |-- auto_search -> ../../../8.1.RC1/python/site-packages/auto_search
+|   |   |       |-- auto_tune -> ../../../8.1.RC1/python/site-packages/auto_tune
+|   |   |       |-- auto_tune-0.1.0.dist-info -> ../../../8.1.RC1/python/site-packages/auto_tune-0.1.0.dist-info
+|   |   |       |-- auto_tune.egg
+|   |   |       |-- auto_tune_main -> ../../../8.1.RC1/python/site-packages/auto_tune
+|   |   |       |-- autofuse -> ../../../8.1.RC1/python/site-packages/autofuse
+|   |   |       |-- bin -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/python/site-packages/bin
+|   |   |       |-- dataflow -> ../../../8.1.RC1/python/site-packages/dataflow
+|   |   |       |-- dataflow-0.0.1.dist-info -> ../../../8.1.RC1/python/site-packages/dataflow-0.0.1.dist-info
+|   |   |       |-- hccl -> ../../../8.1.RC1/python/site-packages/hccl
+|   |   |       |-- hccl-0.1.0.dist-info -> ../../../8.1.RC1/python/site-packages/hccl-0.1.0.dist-info
+|   |   |       |-- hccl_parser -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/python/site-packages/hccl_parser
+|   |   |       |-- hccl_parser-0.1.dist-info -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/python/site-packages/hccl_parser-0.1.dist-info
+|   |   |       |-- llm_datadist -> ../../../8.1.RC1/python/site-packages/llm_datadist
+|   |   |       |-- llm_datadist-0.0.1.dist-info -> ../../../8.1.RC1/python/site-packages/llm_datadist-0.0.1.dist-info
+|   |   |       |-- ms_service_profiler -> ../../../8.1.RC1/tools/msserviceprofiler/python/ms_service_profiler
+|   |   |       |-- mskpp -> ../../../8.1.RC1/tools/msopt/mskpp
+|   |   |       |-- msmodelslim -> ../../../8.1.RC1/tools/msmodelslim
+|   |   |       |-- msobjdump -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/python/site-packages/msobjdump
+|   |   |       |-- msobjdump-0.1.0.dist-info -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/python/site-packages/msobjdump-0.1.0.dist-info
+|   |   |       |-- mspti -> ../../../8.1.RC1/python/site-packages/mspti
+|   |   |       |-- mstx.so -> ../../../8.1.RC1/tools/mstx/lib64/mstx.so
+|   |   |       |-- op_compile_tool -> ../../../8.1.RC1/python/site-packages/op_compile_tool
+|   |   |       |-- op_compile_tool-0.1.0.dist-info -> ../../../8.1.RC1/python/site-packages/op_compile_tool-0.1.0.dist-info
+|   |   |       |-- op_gen -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/python/site-packages/op_gen
+|   |   |       |-- op_gen-0.1.dist-info -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/python/site-packages/op_gen-0.1.dist-info
+|   |   |       |-- op_test_frame -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/python/site-packages/op_test_frame
+|   |   |       |-- op_test_frame-0.1.dist-info -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/python/site-packages/op_test_frame-0.1.dist-info
+|   |   |       |-- opc_tool -> ../../../8.1.RC1/python/site-packages/opc_tool
+|   |   |       |-- opc_tool-0.1.0.dist-info -> ../../../8.1.RC1/python/site-packages/opc_tool-0.1.0.dist-info
+|   |   |       |-- operator_cmp -> ../../../8.1.RC1/tools/operator_cmp
+|   |   |       |-- optune_utils -> ../../../8.1.RC1/python/site-packages/optune_utils
+|   |   |       |-- schedule_search -> ../../../8.1.RC1/python/site-packages/schedule_search
+|   |   |       |-- schedule_search-0.0.1.dist-info -> ../../../8.1.RC1/python/site-packages/schedule_search-0.0.1.dist-info
+|   |   |       |-- schedule_search.egg
+|   |   |       |-- show_kernel_debug_data -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/python/site-packages/show_kernel_debug_data
+|   |   |       |-- show_kernel_debug_data-0.1.0.dist-info -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/python/site-packages/show_kernel_debug_data-0.1.0.dist-info
+|   |   |       |-- tbe -> ../../../8.1.RC1/python/site-packages/tbe
+|   |   |       |-- te -> ../../../8.1.RC1/python/site-packages/te
+|   |   |       |-- te-0.4.0.dist-info -> ../../../8.1.RC1/python/site-packages/te-0.4.0.dist-info
+|   |   |       |-- te_fusion -> ../../../8.1.RC1/python/site-packages/te_fusion
+|   |   |       `-- tik_tune -> ../../../8.1.RC1/python/site-packages/tik_tune
+|   |   |-- remove_latest_softlink.sh
+|   |   |-- runtime -> ../8.1.RC1/runtime
+|   |   |-- test-ops -> ../8.1.RC1/opp/test-ops
+|   |   |-- toolkit -> ../8.1.RC1/toolkit
+|   |   |-- tools
+|   |   |   |-- ait_backend -> ../../8.1.RC1/tools/ait_backend
+|   |   |   |-- aml -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/aml
+|   |   |   |-- aoe -> ../../8.1.RC1/tools/aoe
+|   |   |   |-- ascend_project -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/ascend_project
+|   |   |   |-- ascend_system_advisor -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/ascend_system_advisor
+|   |   |   |-- ascendc_kernel_sample -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/ascendc_kernel_sample
+|   |   |   |-- ascendc_tools -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/ascendc_tools
+|   |   |   |-- ccec_compiler -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/ccec_compiler
+|   |   |   |-- hccl_parser-0.1-py3-none-any.whl -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/hccl_parser-0.1-py3-none-any.whl
+|   |   |   |-- hccl_test -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/hccl_test
+|   |   |   |-- ms_fast_query -> ../../8.1.RC1/tools/ms_fast_query
+|   |   |   |-- ms_fmk_transplt -> ../../8.1.RC1/tools/ms_fmk_transplt
+|   |   |   |-- msaicerr -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/msaicerr
+|   |   |   |-- msdebug -> ../../8.1.RC1/tools/msdebug
+|   |   |   |-- msleaks -> ../../8.1.RC1/tools/msleaks
+|   |   |   |-- msmodelslim -> ../../8.1.RC1/tools/msmodelslim
+|   |   |   |-- msobjdump -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/msobjdump
+|   |   |   |-- msobjdump-0.1.0-py3-none-any.whl -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/msobjdump-0.1.0-py3-none-any.whl
+|   |   |   |-- msopgen -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/msopgen
+|   |   |   |-- msopt -> ../../8.1.RC1/tools/msopt
+|   |   |   |-- mspti -> ../../8.1.RC1/tools/mspti
+|   |   |   |-- mssanitizer -> ../../8.1.RC1/tools/mssanitizer
+|   |   |   |-- msserviceprofiler -> ../../8.1.RC1/tools/msserviceprofiler
+|   |   |   |-- mstx -> ../../8.1.RC1/tools/mstx
+|   |   |   |-- ncs -> ../../8.1.RC1/tools/ncs
+|   |   |   |-- op_gen-0.1-py3-none-any.whl -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/op_gen-0.1-py3-none-any.whl
+|   |   |   |-- op_project_templates -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/op_project_templates
+|   |   |   |-- op_test_frame-0.1-py3-none-any.whl -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/op_test_frame-0.1-py3-none-any.whl
+|   |   |   |-- opbuild -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/opbuild
+|   |   |   |-- operator_cmp -> ../../8.1.RC1/tools/operator_cmp
+|   |   |   |-- profiler -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/profiler
+|   |   |   |-- show_kernel_debug_data -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/show_kernel_debug_data
+|   |   |   |-- show_kernel_debug_data-0.1.0-py3-none-any.whl -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/show_kernel_debug_data-0.1.0-py3-none-any.whl
+|   |   |   |-- simulator -> ../aarch64-linux/simulator
+|   |   |   |-- stacktrace -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/stacktrace
+|   |   |   |-- tikcpp -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/tikcpp
+|   |   |   `-- tikicpulib -> /usr/local/Ascend/ascend-toolkit/8.1.RC1/tools/tikicpulib
+|   |   |-- var
+|   |   |   |-- ascend_package_db.info
+|   |   |   |-- manager
+|   |   |   |   |-- check_version_required.awk
+|   |   |   |   |-- common_func.inc
+|   |   |   |   |-- common_func_v2.inc
+|   |   |   |   |-- common_func_v3.inc
+|   |   |   |   |-- common_installer.inc
+|   |   |   |   |-- filelist.csv
+|   |   |   |   |-- install.sh
+|   |   |   |   |-- install_common_parser.sh
+|   |   |   |   |-- manager_func.sh
+|   |   |   |   |-- script_operator.inc
+|   |   |   |   |-- uninstall.sh
+|   |   |   |   |-- version.info
+|   |   |   |   |-- version_cfg.inc
+|   |   |   |   `-- version_compatiable.inc
+|   |   |   |-- manager.info
+|   |   |   |-- manager.sh
+|   |   |   `-- manager_refs
+|   |   `-- version.cfg
+|   `-- set_env.sh
+|-- driver
+|   |-- include
+|   |   |-- ascend_hal_error.h
+|   |   |-- dcmi_interface_api.h
+|   |   |-- dms_device_node_type.h
+|   |   `-- dsmi_common_interface.h
+|   `-- lib64
+|       |-- common
+|       |   |-- libaivault.so
+|       |   |-- libaivaulttee.so
+|       |   |-- libc_sec.so
+|       |   |-- libkmc.so.20
+|       |   |-- libmmpa.so
+|       |   |-- libsdp.so.20
+|       |   `-- libsecurec.so
+|       `-- driver
+|           |-- libadump.so
+|           |-- libaicpu_processer.so
+|           |-- libaicpu_prof.so
+|           |-- libaicpu_scheduler.so
+|           |-- libaicpu_sharder.so
+|           |-- libascend_hal.so
+|           |-- libascend_rdma_lite.so
+|           |-- libdcmi.so
+|           |-- libdrvdsmi_host.so
+|           |-- libqos_manager.so
+|           |-- libqueue_schedule.so
+|           |-- libstackcore.so
+|           |-- libtsd_common.so
+|           |-- libtsd_eventclient.so
+|           `-- libtsdaemon.so
+`-- nnal
+    `-- atb
+        |-- 8.1.RC1
+        |   |-- atb
+        |   |   |-- cxx_abi_0
+        |   |   |-- cxx_abi_1
+        |   |   `-- set_env.sh
+        |   |-- install.sh
+        |   |-- scripts
+        |   |   |-- filelist.csv
+        |   |   `-- uninstall.sh
+        |   |-- version.info
+        |   `-- whl
+        |       |-- torch_atb-0.0.1-cp310-none-any.whl
+        |       `-- torch_atb-0.0.1-cp311-none-any.whl
+        |-- latest -> 8.1.RC1
+        `-- set_env.sh
+
+651 directories, 1405 files

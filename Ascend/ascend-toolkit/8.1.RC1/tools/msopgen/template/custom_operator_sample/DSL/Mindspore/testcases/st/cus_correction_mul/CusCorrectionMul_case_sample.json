@@ -1,0 +1,91 @@
+[{
+    "case_name": "Test_CusCorrectionMul_001",
+    "st_mode": "ms_python_train",
+    "op": "CusCorrectionMul",
+    "calc_expect_func_file": "",
+    "input_desc": [
+        {
+            "name": "x",
+            "format": "NCHW",
+            "type": [
+                "float32",
+                "float16"
+            ],
+            "shape": [
+                64,
+                64,
+                32,
+                32
+            ],
+            "value_range": [
+                [-1,
+                    1
+                ]
+            ],
+            "data_distribute": [
+                "uniform"
+            ]
+        },
+        {
+            "name": "batch_std",
+            "format": "NCHW",
+            "type": [
+                "float32",
+                "float16"
+            ],
+            "shape": [
+                64
+            ],
+            "value_range": [
+                [
+                    1,
+                    2
+                ]
+            ],
+            "data_distribute": [
+                "uniform"
+            ]
+        },
+        {
+            "name": "running_std",
+            "format": "NCHW",
+            "type": [
+                "float32",
+                "float16"
+            ],
+            "shape": [
+                64
+            ],
+            "value_range": [
+                [
+                    1,
+                    2
+                ]
+            ],
+            "data_distribute": [
+                "uniform"
+            ]
+        }
+    ],
+    "output_desc": [
+        {
+            "name": "y",
+            "format": "NCHW",
+            "type": [
+                "float32",
+                "float16"
+            ],
+            "shape": [
+                64,
+                64,
+                32,
+                32
+            ]
+        }
+    ],
+    "attr": [{
+        "name": "channel_axis",
+        "value": 1,
+        "type": "int"
+    }]
+}]

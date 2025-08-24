@@ -1,0 +1,69 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "Rfft1D/d=0,p=1/0,2/0,2",
+        "Rfft1D/d=0,p=0/0,2/0,2",
+        "Rfft1D/d=1,p=1/0,2/0,2",
+        "Rfft1D/d=1,p=0/0,2/0,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "dd72ea179e6316c8a6f89b1a58cdcd89e12a9ff861de66272b3f422bdf1b1fab,485a14d8dd0bee18274a41a5c709e2c0f34423be540f85844d34a00fb8a92219",
+      "inputs": [
+        {
+          "name": "x",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        },
+        {
+          "name": "dft",
+          "index": 1,
+          "dtype": "float32",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "optional"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float32",
+          "format": "ND",
+          "shape": [
+            -2
+          ],
+          "paramType": "required"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "n",
+          "dtype": "int",
+          "value": 0
+        },
+        {
+          "name": "norm",
+          "dtype": "int",
+          "value": 0
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/rfft1_d/Rfft1D_2hs1k6j3os94nskg0n8c712m3j1k9bg4_high_performance.json"
+      }
+    }
+  ]
+}

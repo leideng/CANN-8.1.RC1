@@ -1,0 +1,884 @@
+{
+  "binList": [
+    {
+      "int64Mode": false,
+      "staticKey": "350d3aa23c1a5ff4d9fe14bc49809c6712a7ddcc536075ead072152576729bf9",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "diagonal_matrix",
+          "index": 2,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "q_bias",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "deq_scale",
+          "index": 4,
+          "dtype": "uint64",
+          "format": "NC1HWC0",
+          "ori_format": "NHWC",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "adj_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "adj_x2",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/weight_quant_batchmatmul/WeightQuantBatchmatmul_ND_ND_BIAS_INT8_FP16_true_true_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "77eaf50895c7c2cdc5dd1f7d172f145fd9b5bfcaa042fb6376f4dda0d64d5af5",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "diagonal_matrix",
+          "index": 2,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "q_bias",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "deq_scale",
+          "index": 4,
+          "dtype": "uint64",
+          "format": "NC1HWC0",
+          "ori_format": "NHWC",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "adj_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "adj_x2",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/weight_quant_batchmatmul/WeightQuantBatchmatmul_ND_ND_BIAS_INT8_FP16_true_false_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "ee9ec06238e35a6cd8097093515ce2446dd1a1f72c9db8f68c4aa247ed44e37b",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "diagonal_matrix",
+          "index": 2,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "q_bias",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "deq_scale",
+          "index": 4,
+          "dtype": "uint64",
+          "format": "NC1HWC0",
+          "ori_format": "NHWC",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "adj_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "adj_x2",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/weight_quant_batchmatmul/WeightQuantBatchmatmul_ND_ND_BIAS_INT8_FP16_false_true_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "28d92e9eb523b40047c018488aa1ae8f2955e205cb87e67d681e94b13d16b360",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "diagonal_matrix",
+          "index": 2,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "q_bias",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "deq_scale",
+          "index": 4,
+          "dtype": "uint64",
+          "format": "NC1HWC0",
+          "ori_format": "NHWC",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "bias",
+          "index": 5,
+          "dtype": "float32",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "adj_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "adj_x2",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/weight_quant_batchmatmul/WeightQuantBatchmatmul_ND_ND_BIAS_INT8_FP16_false_false_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "426bd96a8ce8221ed61b294797151c9225588c1b486dd64d0372a737a5668540",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "diagonal_matrix",
+          "index": 2,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "q_bias",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "deq_scale",
+          "index": 4,
+          "dtype": "uint64",
+          "format": "NC1HWC0",
+          "ori_format": "NHWC",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "adj_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "adj_x2",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/weight_quant_batchmatmul/WeightQuantBatchmatmul_ND_ND_INT8_FP16_true_true_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "a43739d130e81187462b5e0277c80f5ecc48f5615951fe7e6dddcb54a9c9a810",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "diagonal_matrix",
+          "index": 2,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "q_bias",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "deq_scale",
+          "index": 4,
+          "dtype": "uint64",
+          "format": "NC1HWC0",
+          "ori_format": "NHWC",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "adj_x1",
+          "dtype": "bool",
+          "value": true
+        },
+        {
+          "name": "adj_x2",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/weight_quant_batchmatmul/WeightQuantBatchmatmul_ND_ND_INT8_FP16_true_false_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "9efad61973ac9c69c4dcba92e1fa2e9ac14bd0546861108b822da074d705522d",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "diagonal_matrix",
+          "index": 2,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "q_bias",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "deq_scale",
+          "index": 4,
+          "dtype": "uint64",
+          "format": "NC1HWC0",
+          "ori_format": "NHWC",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "adj_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "adj_x2",
+          "dtype": "bool",
+          "value": true
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/weight_quant_batchmatmul/WeightQuantBatchmatmul_ND_ND_INT8_FP16_false_true_high_performance.json"
+      }
+    },
+    {
+      "int64Mode": false,
+      "staticKey": "cd01b59cdb53760a91c27d36540d5faf8790c5481c74f649a05b4fe6a8703115",
+      "inputs": [
+        {
+          "name": "x1",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "x2",
+          "index": 1,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "diagonal_matrix",
+          "index": 2,
+          "dtype": "int8",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "q_bias",
+          "index": 3,
+          "dtype": "int32",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        {
+          "name": "deq_scale",
+          "index": 4,
+          "dtype": "uint64",
+          "format": "NC1HWC0",
+          "ori_format": "NHWC",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        },
+        null
+      ],
+      "outputs": [
+        {
+          "name": "y",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "ori_format": "ND",
+          "shape": [
+            -2
+          ],
+          "ori_shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "adj_x1",
+          "dtype": "bool",
+          "value": false
+        },
+        {
+          "name": "adj_x2",
+          "dtype": "bool",
+          "value": false
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/weight_quant_batchmatmul/WeightQuantBatchmatmul_ND_ND_INT8_FP16_false_false_high_performance.json"
+      }
+    }
+  ]
+}

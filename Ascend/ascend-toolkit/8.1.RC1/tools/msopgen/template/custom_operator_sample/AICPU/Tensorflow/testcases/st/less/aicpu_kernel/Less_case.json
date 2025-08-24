@@ -1,0 +1,90 @@
+[
+    {
+        "case_name": "Test_Less_001",
+        "op": "Less",
+        "input_desc": [
+            {
+                "name": "x1",
+                "format": ["ND"],
+                "type": ["int32","float"],
+                "shape": [2,3],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        1.0,
+                        384.0
+                    ]
+                ]
+            },
+            {
+                "name": "x2",
+                "format": ["ND"],
+                "type": ["int32","float"],
+                "shape": [2,3],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        1.0,
+                        384.0
+                    ]
+                ]
+            }
+
+        ],
+        "output_desc": [
+            {
+                "format": ["ND"],
+                "type": ["bool","bool"],
+                "shape": [2,3]
+            }
+        ]
+    },
+    {
+        "case_name": "Test_Less_002",
+        "op": "Less",
+        "input_desc": [
+            {
+                "name": "x1",
+                "format": ["ND"],
+                "type": ["int64","double"],
+                "shape": [3,5],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        1.0,
+                        384.0
+                    ]
+                ]
+            },
+            {
+                "name": "x2",
+                "format": ["ND"],
+                "type": ["int64","double"],
+                "shape": [5],
+                "data_distribute": [
+                    "uniform"
+                ],
+                "value_range": [
+                    [
+                        1.0,
+                        384.0
+                    ]
+                ]
+            }
+
+        ],
+        "output_desc": [
+            {
+                "format": ["ND"],
+                "type": ["bool","bool"],
+                "shape": [3,5]
+            }
+        ]
+    }
+]

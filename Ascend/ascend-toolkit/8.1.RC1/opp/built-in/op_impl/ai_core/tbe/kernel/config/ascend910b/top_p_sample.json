@@ -1,0 +1,64 @@
+{
+  "binList": [
+    {
+      "implMode": "high_performance",
+      "int64Mode": false,
+      "simplifiedKeyMode": 0,
+      "simplifiedKey": [
+        "TopPSample/d=0,p=1/1,2/1,2/3,2",
+        "TopPSample/d=0,p=0/1,2/1,2/3,2",
+        "TopPSample/d=1,p=1/1,2/1,2/3,2",
+        "TopPSample/d=1,p=0/1,2/1,2/3,2"
+      ],
+      "optionalInputMode": "gen_placeholder",
+      "optionalOutputMode": "gen_placeholder",
+      "staticKey": "d669da5c89b3cfd0a7c1d2c1388e0ac6216a493f1d0a7b19ab70f5f6b42c3289,1f130344ba5c7c2f7610db839c0adff7fc5401af8a70ecd2ccf7c050f4fe95eb",
+      "inputs": [
+        {
+          "name": "logit_prob",
+          "index": 0,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        },
+        {
+          "name": "topp",
+          "index": 1,
+          "dtype": "float16",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "indices",
+          "index": 0,
+          "dtype": "int32",
+          "format": "ND",
+          "paramType": "required",
+          "shape": [
+            -2
+          ]
+        }
+      ],
+      "attrs": [
+        {
+          "name": "rand_seed",
+          "dtype": "list_int",
+          "value": null
+        }
+      ],
+      "opMode": "dynamic",
+      "deterministic": "ignore",
+      "binInfo": {
+        "jsonFilePath": "ascend910b/top_p_sample/TopPSample_01c77c4a73c847c86b998039c6400a1b_high_performance.json"
+      }
+    }
+  ]
+}
